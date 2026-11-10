@@ -16,7 +16,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full border-t border-white/10 bg-[#12101a] text-[#8b87a0] relative overflow-hidden">
-      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-12 sm:pt-16 pb-10 flex flex-col gap-12 sm:gap-16">
+      <div className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 pt-12 sm:pt-16 pb-10 flex flex-col gap-12 sm:gap-16">
         
         {/* Massive Editorial Wordmark */}
         <div className="w-full overflow-hidden select-none py-2 sm:py-4 border-b border-white/5" aria-hidden="true">
@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
 
         {/* 4-Column Structured Directory */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 pt-2 text-sm">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 pt-2 text-sm md:text-base">
           
           {/* Column 1: Studio */}
           <div className="flex flex-col gap-3.5">

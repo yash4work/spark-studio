@@ -129,7 +129,7 @@ export default function BundlesSection() {
   return (
     <section 
       id="bundles" 
-      className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 relative flex flex-col gap-14 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-14 border-t border-white/10"
     >
       {/* Head: Title on left, Description on right */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
@@ -142,7 +142,7 @@ export default function BundlesSection() {
           </h2>
         </div>
 
-        <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
+        <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed max-w-md">
           {t('bundles.exclusiveDesc') || 'Production-ready Framer templates bundled for independent creators, studios, and agencies. 100% native, static collection as-is with immediate 1-click remix access.'}
         </p>
       </div>

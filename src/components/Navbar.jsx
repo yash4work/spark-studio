@@ -90,14 +90,14 @@ export default function Navbar() {
       className={`fixed left-0 right-0 z-50 transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] ${
         scrolled 
           ? 'top-3 px-4 sm:px-6 pointer-events-none' 
-          : 'top-0 px-6 sm:px-10 lg:px-16 pointer-events-auto'
+          : 'top-0 px-6 sm:px-10 lg:px-14 xl:px-16 pointer-events-auto'
       }`}
     >
       <div 
         className={`mx-auto flex items-center justify-between transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] ${
           scrolled
-            ? 'max-w-[1180px] pointer-events-auto rounded-full py-2.5 px-6 sm:px-8 bg-[#15131f]/85 backdrop-blur-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)]'
-            : 'max-w-[1440px] w-full py-6 bg-transparent border-none'
+            ? 'max-w-[1360px] pointer-events-auto rounded-full py-2.5 px-6 sm:px-8 bg-[#15131f]/85 backdrop-blur-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)]'
+            : 'max-w-[1680px] w-full py-6 bg-transparent border-none'
         }`}
       >
         {/* Brand Logo & Name */}
@@ -123,7 +123,7 @@ export default function Navbar() {
             <a
               key={item.label}
               href={item.href}
-              className="framer-nav-link text-[14px] text-[#8b87a0] hover:text-[#f7f6fb] px-3 py-1.5 font-medium transition-colors cursor-pointer"
+              className="framer-nav-link text-sm md:text-base text-[#8b87a0] hover:text-[#f7f6fb] px-3 py-1.5 font-medium transition-colors cursor-pointer"
             >
               {item.label}
             </a>
@@ -229,7 +229,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden mt-2 max-w-[1440px] mx-auto rounded-2xl bg-[#1b1826]/95 border border-white/10 backdrop-blur-2xl p-5 shadow-2xl pointer-events-auto"
+            className="md:hidden mt-2 max-w-[1680px] mx-auto rounded-2xl bg-[#1b1826]/95 border border-white/10 backdrop-blur-2xl p-5 shadow-2xl pointer-events-auto"
           >
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-2 pb-4 border-b border-white/10">

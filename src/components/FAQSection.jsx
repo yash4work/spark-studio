@@ -41,7 +41,7 @@ export default function FAQSection() {
   return (
     <section 
       id="faq" 
-      className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 relative flex flex-col md:flex-row items-start justify-between gap-12 md:gap-20 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col md:flex-row items-start justify-between gap-12 md:gap-20 border-t border-white/10"
     >
       {/* Head: Title on left */}
       <div className="w-full md:w-[320px] lg:w-[380px] flex-shrink-0 flex flex-col items-start gap-3">
@@ -54,7 +54,7 @@ export default function FAQSection() {
         >
           {t('faq.title') || 'Frequently asked'}
         </motion.h2>
-        <p className="text-sm text-[#8b87a0] font-normal leading-relaxed">
+        <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed">
           {t('faq.subtitle') || 'Everything you need to know about our Framer templates, bespoke development, and customization services.'}
         </p>
       </div>
@@ -92,7 +92,7 @@ export default function FAQSection() {
                     transition={{ duration: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
                     className="overflow-hidden"
                   >
-                    <div className="pt-4 text-sm sm:text-[15px] text-[#8b87a0] font-normal leading-relaxed">
+                    <div className="pt-4 text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed">
                       {item.a}
                     </div>
                   </motion.div>

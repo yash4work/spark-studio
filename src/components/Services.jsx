@@ -65,7 +65,7 @@ export default function Services() {
   return (
     <section 
       id="services" 
-      className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 relative flex flex-col gap-14 sm:gap-16 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-14 sm:gap-16 border-t border-white/10"
     >
       {/* =========================================================================
           PART 1: HOW WE WORK (4 PROCESS STEPS)
@@ -88,7 +88,7 @@ export default function Services() {
               <h3 className="font-heading font-semibold text-lg text-[#f7f6fb] leading-snug">
                 {step.title}
               </h3>
-              <p className="text-sm text-[#8b87a0] font-normal leading-[1.6]">
+              <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-[1.6]">
                 {step.desc}
               </p>
             </div>
@@ -112,7 +112,7 @@ export default function Services() {
             </h2>
           </div>
 
-          <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
+          <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed max-w-md">
             {t('services.desc', { defaultValue: 'Whether you need a custom Framer website built from scratch, pixel-perfect Figma to Framer development, or full brand customization of any official Framer marketplace template, Spark Studio delivers production-grade web experiences engineered for 95+ PageSpeed scores.' })}
           </p>
         </div>
@@ -137,7 +137,7 @@ export default function Services() {
                 <h3 className="font-heading font-semibold text-xl text-[#f7f6fb] leading-snug group-hover:text-[#8e97f7] transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-sm text-[#8b87a0] font-normal leading-relaxed">
+                <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed">
                   {service.desc}
                 </p>
               </div>

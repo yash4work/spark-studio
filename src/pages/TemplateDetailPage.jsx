@@ -430,7 +430,7 @@ export default function TemplateDetailPage() {
                     <div className="w-5 h-5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-3 h-3" />
                     </div>
-                    <span className="text-sm text-zinc-300 leading-relaxed font-normal">
+                    <span className="text-sm md:text-base text-zinc-300 leading-relaxed font-normal">
                       {feature}
                     </span>
                   </div>
@@ -469,7 +469,7 @@ export default function TemplateDetailPage() {
                   <h3 className="text-base font-bold text-white mb-1 font-heading">
                     {t('detailPage.structuredCmsTitle') || 'Structured CMS Architecture'}
                   </h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">
+                  <p className="text-sm md:text-base text-zinc-400 leading-relaxed">
                     {templateInfo.cmsDesc}
                   </p>
                 </div>

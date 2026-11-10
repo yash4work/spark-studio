@@ -55,7 +55,7 @@ export default function Hero() {
       {/* =========================================================================
           HERO CONTENT (EXACT LEFT ALIGNMENT & 1440PX CONTAINER)
           ========================================================================= */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-36 sm:pt-44 flex flex-col items-start gap-7">
+      <div className="relative z-10 w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 pt-36 sm:pt-44 flex flex-col items-start gap-7">
         
         {/* Eyebrow */}
         <motion.div
@@ -73,7 +73,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 28, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
-          className="text-4xl sm:text-6xl md:text-[64px] font-extrabold text-[#f7f6fb] tracking-[-0.03em] leading-[1.05] max-w-[680px]"
+          className="text-4xl sm:text-6xl md:text-[64px] font-extrabold text-[#f7f6fb] tracking-[-0.03em] leading-[1.05] max-w-[840px]"
         >
           {t('hero.title') || 'Templates engineered to convert & scale.'}
         </motion.h1>
@@ -83,7 +83,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
-          className="text-base sm:text-[17px] text-[#8b87a0] max-w-[540px] font-normal leading-[1.75] tracking-[-0.02em]"
+          className="text-base sm:text-[17px] md:text-lg text-[#8b87a0] max-w-[620px] font-normal leading-[1.75] tracking-[-0.02em]"
         >
           {t('hero.description') || 'Spark Studio designs high-performance Framer templates and custom websites for ambitious startups, creative studios, and modern businesses — visually editable, code-free, and built with 90+ PageSpeed scores out of the box.'}
         </motion.p>
@@ -119,7 +119,7 @@ export default function Hero() {
       </div>
 
       {/* Stats Row with Horizontal Divider Line across width (Exact Match to Image 1) */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-16 pb-16 sm:pb-20">
+      <div className="relative z-10 w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 pt-16 pb-16 sm:pb-20">
         <div className="border-t border-white/10 w-full mb-8" />
 
         <div className="flex flex-wrap items-center gap-8 sm:gap-12">
