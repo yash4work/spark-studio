@@ -69,10 +69,10 @@ export default function ContactSection() {
   return (
     <section 
       id="contact" 
-      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-16 xl:gap-20 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col xl:flex-row items-start justify-between gap-12 lg:gap-16 xl:gap-20 border-t border-white/10"
     >
-      {/* Left Column (Compact Studio Overview & Channels) */}
-      <div className="w-full lg:w-[420px] xl:w-[460px] flex-shrink-0 flex flex-col items-start gap-6">
+      {/* Left Column: Full-width stacked on mobile & tablet (up to 1024px), fixed width on desktop xl+ */}
+      <div className="w-full xl:w-[460px] flex-shrink-0 flex flex-col items-start gap-6">
         <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
           {t('contact.tag') || 'START A CONVERSATION'}
         </p>
@@ -143,8 +143,8 @@ export default function ContactSection() {
         </div>
       </div>
 
-      {/* Right Column: Expanded High-Impact Inquiry Card */}
-      <div className="flex-1 w-full rounded-3xl bg-[#1b1826] border border-white/10 p-8 sm:p-10 lg:p-12 shadow-2xl flex flex-col gap-7 relative overflow-hidden">
+      {/* Right Column: Expanded High-Impact Inquiry Card (100% width on <=1024px, flex-1 on xl+) */}
+      <div className="w-full xl:flex-1 rounded-3xl bg-[#1b1826] border border-white/10 p-8 sm:p-10 lg:p-12 shadow-2xl flex flex-col gap-7 relative overflow-hidden">
         <div>
           <h3 className="font-heading font-semibold text-2xl sm:text-3xl text-[#f7f6fb] mb-2">
             {t('contact.cardTitle') || 'Project Inquiry'}
