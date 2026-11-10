@@ -69,19 +69,19 @@ export default function ContactSection() {
   return (
     <section 
       id="contact" 
-      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-16 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-16 xl:gap-20 border-t border-white/10"
     >
-      {/* Left Column (.framer-1qo52ro) */}
-      <div className="flex-1 flex flex-col items-start gap-5">
+      {/* Left Column (Compact Studio Overview & Channels) */}
+      <div className="w-full lg:w-[420px] xl:w-[460px] flex-shrink-0 flex flex-col items-start gap-6">
         <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
           {t('contact.tag') || 'START A CONVERSATION'}
         </p>
         
-        <h2 className="text-3xl sm:text-4xl md:text-[44px] font-extrabold text-[#f7f6fb] font-heading tracking-[-0.03em] leading-[1.1]">
+        <h2 className="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#f7f6fb] font-heading tracking-[-0.03em] leading-[1.12]">
           {t('contact.title') || 'Let’s build something exceptional together.'}
         </h2>
 
-        <p className="text-sm sm:text-base text-[#8b87a0] font-normal leading-relaxed max-w-xl">
+        <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed">
           {t('contact.subtitle') || 'Questions about a template, a custom integration, or ready to hire us for a custom website? We reply within 24 hours.'}
         </p>
 
@@ -98,7 +98,7 @@ export default function ContactSection() {
               href="mailto:hello@thesparkstudio.digital"
               aria-label="Direct Email"
               title="hello@thesparkstudio.digital"
-              className="w-9 h-9 rounded-xl bg-white/[0.04] hover:bg-[#8e97f7]/15 border border-white/10 hover:border-[#8e97f7]/50 text-[#8b87a0] hover:text-[#8e97f7] flex items-center justify-center transition-all duration-200 group"
+              className="w-10 h-10 rounded-xl bg-white/[0.04] hover:bg-[#8e97f7]/15 border border-white/10 hover:border-[#8e97f7]/50 text-[#8b87a0] hover:text-[#8e97f7] flex items-center justify-center transition-all duration-200 group shadow-sm"
             >
               <MailIcon className="w-4 h-4 transition-transform group-hover:scale-110" />
             </a>
@@ -109,7 +109,7 @@ export default function ContactSection() {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
               title="LinkedIn"
-              className="w-9 h-9 rounded-xl bg-white/[0.04] hover:bg-[#0A66C2]/15 border border-white/10 hover:border-[#0A66C2]/50 text-[#8b87a0] hover:text-[#0A66C2] flex items-center justify-center transition-all duration-200 group"
+              className="w-10 h-10 rounded-xl bg-white/[0.04] hover:bg-[#0A66C2]/15 border border-white/10 hover:border-[#0A66C2]/50 text-[#8b87a0] hover:text-[#0A66C2] flex items-center justify-center transition-all duration-200 group shadow-sm"
             >
               <LinkedInIcon className="w-4 h-4 transition-transform group-hover:scale-110" />
             </a>
@@ -120,7 +120,7 @@ export default function ContactSection() {
               rel="noopener noreferrer"
               aria-label="Microsoft Teams"
               title="Microsoft Teams"
-              className="w-9 h-9 rounded-xl bg-white/[0.04] hover:bg-[#5059C9]/15 border border-white/10 hover:border-[#5059C9]/50 text-[#8b87a0] hover:text-[#7B83EB] flex items-center justify-center transition-all duration-200 group"
+              className="w-10 h-10 rounded-xl bg-white/[0.04] hover:bg-[#5059C9]/15 border border-white/10 hover:border-[#5059C9]/50 text-[#8b87a0] hover:text-[#7B83EB] flex items-center justify-center transition-all duration-200 group shadow-sm"
             >
               <TeamsIcon className="w-4 h-4 transition-transform group-hover:scale-110" />
             </a>
@@ -131,18 +131,22 @@ export default function ContactSection() {
               rel="noopener noreferrer"
               aria-label="Slack"
               title="Slack"
-              className="w-9 h-9 rounded-xl bg-white/[0.04] hover:bg-[#ECB22E]/15 border border-white/10 hover:border-[#ECB22E]/50 text-[#8b87a0] hover:text-[#ECB22E] flex items-center justify-center transition-all duration-200 group"
+              className="w-10 h-10 rounded-xl bg-white/[0.04] hover:bg-[#ECB22E]/15 border border-white/10 hover:border-[#ECB22E]/50 text-[#8b87a0] hover:text-[#ECB22E] flex items-center justify-center transition-all duration-200 group shadow-sm"
             >
               <SlackIcon className="w-4 h-4 transition-transform group-hover:scale-110" />
             </a>
           </div>
+
+          <p className="text-xs font-mono text-[#8b87a0]/80 pt-2">
+            Mon – Fri · Global Remote · Replies within 24h
+          </p>
         </div>
       </div>
 
-      {/* Right Column (Inquiry Card .framer-1u57rmh) */}
-      <div className="w-full lg:w-[520px] rounded-2xl bg-[#1b1826] border border-white/10 p-7 sm:p-9 shadow-2xl flex flex-col gap-6">
+      {/* Right Column: Expanded High-Impact Inquiry Card */}
+      <div className="flex-1 w-full rounded-3xl bg-[#1b1826] border border-white/10 p-8 sm:p-10 lg:p-12 shadow-2xl flex flex-col gap-7 relative overflow-hidden">
         <div>
-          <h3 className="font-heading font-semibold text-2xl text-[#f7f6fb] mb-1.5">
+          <h3 className="font-heading font-semibold text-2xl sm:text-3xl text-[#f7f6fb] mb-2">
             {t('contact.cardTitle') || 'Project Inquiry'}
           </h3>
           <p className="text-sm md:text-base text-[#8b87a0] font-normal">
@@ -151,63 +155,67 @@ export default function ContactSection() {
         </div>
 
         {submitted ? (
-          <div className="py-12 flex flex-col items-center justify-center text-center gap-4">
-            <div className="w-14 h-14 rounded-full bg-[#8e97f7]/15 border border-[#8e97f7]/30 flex items-center justify-center text-[#8e97f7]">
-              <CheckCircle2 className="w-7 h-7" />
+          <div className="py-16 flex flex-col items-center justify-center text-center gap-4">
+            <div className="w-16 h-16 rounded-full bg-[#8e97f7]/15 border border-[#8e97f7]/30 flex items-center justify-center text-[#8e97f7]">
+              <CheckCircle2 className="w-8 h-8" />
             </div>
             <div>
-              <h4 className="font-heading font-bold text-xl text-[#f7f6fb] mb-1">
+              <h4 className="font-heading font-bold text-2xl text-[#f7f6fb] mb-1.5">
                 {t('contact.successTitle') || 'Inquiry Received'}
               </h4>
-              <p className="text-sm md:text-base text-[#8b87a0] max-w-xs">
+              <p className="text-sm md:text-base text-[#8b87a0] max-w-sm">
                 {t('contact.success') || t('contact.successMessage') || 'Thank you! We have received your project details and will reply within 24 hours.'}
               </p>
             </div>
             <button
               type="button"
               onClick={() => setSubmitted(false)}
-              className="mt-2 text-xs font-mono text-[#8e97f7] hover:text-[#f7f6fb] transition-colors cursor-pointer"
+              className="mt-4 px-5 py-2 rounded-xl text-xs font-mono text-[#8e97f7] hover:text-[#f7f6fb] bg-white/[0.04] border border-white/10 hover:border-white/20 transition-all cursor-pointer"
             >
               {t('contact.sendAnother') || 'Send another message'}
             </button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <div>
-              <label htmlFor="contact-name" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
-                {t('contact.formName') || 'Your Name'}
-              </label>
-              <input
-                id="contact-name"
-                name="name"
-                type="text"
-                required
-                aria-label={t('contact.formName') || 'Your Name'}
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                placeholder="Jane Doe"
-                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
-              />
+          <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+            {/* Row 1: Name and Email side-by-side on desktop */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label htmlFor="contact-name" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+                  {t('contact.formName') || 'Your Name'}
+                </label>
+                <input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  required
+                  aria-label={t('contact.formName') || 'Your Name'}
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  placeholder="Jane Doe"
+                  className="w-full px-4 py-3.5 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="contact-email" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+                  {t('contact.formEmail') || 'Email Address'}
+                </label>
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  required
+                  aria-label={t('contact.formEmail') || 'Email Address'}
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  placeholder="jane@studio.com"
+                  className="w-full px-4 py-3.5 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
+                />
+              </div>
             </div>
 
-            <div>
-              <label htmlFor="contact-email" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
-                {t('contact.formEmail') || 'Email Address'}
-              </label>
-              <input
-                id="contact-email"
-                name="email"
-                type="email"
-                required
-                aria-label={t('contact.formEmail') || 'Email Address'}
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                placeholder="jane@studio.com"
-                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
-              />
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* Row 2: Service Needed and Budget side-by-side */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
                 <label htmlFor="contact-project-type" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
                   {t('contact.formType') || 'Service Needed'}
@@ -218,7 +226,7 @@ export default function ContactSection() {
                   aria-label={t('contact.formType') || 'Service Needed'}
                   value={formData.projectType}
                   onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors"
+                  className="w-full px-4 py-3.5 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors cursor-pointer"
                 >
                   {typeOptions.map((opt) => (
                     <option key={opt} value={opt} className="bg-[#1b1826] text-[#f7f6fb]">
@@ -238,7 +246,7 @@ export default function ContactSection() {
                   aria-label={t('contact.formBudget') || 'Budget'}
                   value={formData.budget}
                   onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors"
+                  className="w-full px-4 py-3.5 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors cursor-pointer"
                 >
                   {budgetOptions.map((opt) => (
                     <option key={opt} value={opt} className="bg-[#1b1826] text-[#f7f6fb]">
@@ -249,6 +257,7 @@ export default function ContactSection() {
               </div>
             </div>
 
+            {/* Row 3: Project Overview textarea */}
             <div>
               <label htmlFor="contact-message" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
                 {t('contact.formMessage') || 'Project Overview'}
@@ -257,12 +266,12 @@ export default function ContactSection() {
                 id="contact-message"
                 name="message"
                 required
-                rows={4}
+                rows={5}
                 aria-label={t('contact.formMessage') || 'Project Overview'}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder={t('contact.formMessagePlaceholder') || 'Tell us about your brand, scope, and timeline goals...'}
-                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors resize-none"
+                className="w-full min-h-[140px] px-4 py-3.5 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors resize-none leading-relaxed"
               />
             </div>
 
@@ -270,7 +279,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={loading}
-                className="framer-btn-primary mt-2 w-full py-3.5 rounded-full text-sm font-semibold text-white shadow-[0_10px_25px_-5px_rgba(108,79,232,0.4)] disabled:opacity-50 cursor-pointer"
+                className="framer-btn-primary mt-2 w-full py-4 rounded-full text-base font-semibold text-white shadow-[0_10px_25px_-5px_rgba(108,79,232,0.4)] disabled:opacity-50 cursor-pointer flex items-center justify-center gap-2"
               >
                 {loading ? (
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
