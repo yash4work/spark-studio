@@ -11,6 +11,7 @@ import BundlesSection from '../components/BundlesSection';
 import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
 import Marquee from '../components/Marquee';
+import { ScrollReveal } from '../lib/framer-effects';
 
 export default function HomePage() {
   const { t, i18n } = useTranslation();
@@ -146,14 +147,14 @@ export default function HomePage() {
         jsonLd={homepageJsonLd}
       />
       <Hero />
-      <TechStackBar />
-      <Standards />
-      <AboutSection />
-      <Services />
-      <TemplatesGrid />
-      <BundlesSection />
-      <FAQSection />
-      <ContactSection />
+      <ScrollReveal><TechStackBar /></ScrollReveal>
+      <ScrollReveal><Standards /></ScrollReveal>
+      <ScrollReveal><AboutSection /></ScrollReveal>
+      <ScrollReveal><Services /></ScrollReveal>
+      <ScrollReveal><TemplatesGrid /></ScrollReveal>
+      <ScrollReveal><BundlesSection /></ScrollReveal>
+      <ScrollReveal><FAQSection /></ScrollReveal>
+      <ScrollReveal><ContactSection /></ScrollReveal>
       <Marquee />
     </>
   );
