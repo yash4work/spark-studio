@@ -96,7 +96,7 @@ export default function TechStackBar() {
   ];
 
   return (
-    <div className="w-full relative z-20 py-6 border-y border-white/[0.08] bg-[#15131f]/60 backdrop-blur-md overflow-hidden">
+    <div className="w-full relative z-20 py-5 sm:py-6 border-y border-white/[0.08] bg-[#15131f]/60 backdrop-blur-md overflow-hidden">
       {/* Subtle grid pattern background matching screenshot */}
       <div 
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -106,18 +106,18 @@ export default function TechStackBar() {
         }}
       />
 
-      <div className="max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 flex items-center justify-start lg:justify-center gap-3 overflow-x-auto no-scrollbar scroll-smooth">
+      <div className="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex flex-wrap lg:flex-nowrap items-center justify-center gap-2 sm:gap-2.5 lg:gap-3">
         {stacks.map((item, idx) => (
           <div
             key={idx}
-            className={`flex-shrink-0 flex items-center gap-2.5 px-4 py-2 rounded-xl border transition-all duration-200 cursor-default select-none ${
+            className={`flex-shrink-0 flex items-center gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl border transition-all duration-200 cursor-default select-none ${
               item.isHighlight 
                 ? 'bg-[#8e97f7]/10 border-[#8e97f7]/30 text-[#f7f6fb] hover:border-[#8e97f7]/60 shadow-[0_0_15px_rgba(142,151,247,0.15)]' 
                 : 'bg-white/[0.03] border-white/[0.08] text-[#c8c4dc] hover:text-white hover:border-white/20 hover:bg-white/[0.06]'
             }`}
           >
             <span className="flex-shrink-0">{item.icon}</span>
-            <span className="text-sm md:text-base font-medium tracking-tight whitespace-nowrap">{item.name}</span>
+            <span className="text-xs sm:text-[13px] lg:text-sm font-medium tracking-tight whitespace-nowrap">{item.name}</span>
           </div>
         ))}
       </div>

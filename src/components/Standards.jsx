@@ -45,12 +45,12 @@ export default function Standards() {
       className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative"
     >
       {/* Head: Title on left, Subtitle on right (Exact Framer .framer-1deueaw) */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 pb-4">
-        <h2 className="text-3xl sm:text-4xl md:text-[40px] font-semibold text-[#f7f6fb] font-heading tracking-[-0.02em] leading-tight max-w-xl">
+      <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12 pb-4">
+        <h2 className="text-3xl sm:text-4xl md:text-[40px] font-semibold text-[#f7f6fb] font-heading tracking-[-0.02em] leading-tight w-full lg:max-w-xl">
           {t('standards.title') || 'Engineered without compromise'}
         </h2>
         
-        <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed max-w-md">
+        <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed w-full lg:max-w-md">
           {t('standards.subtitle') || 'Every template is held to the same production standard: enterprise-grade speed, rock-solid responsiveness, seamless customization.'}
         </p>
       </div>

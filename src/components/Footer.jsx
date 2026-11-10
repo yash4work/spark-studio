@@ -99,8 +99,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* 4-Column Structured Directory */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 pt-2 text-sm md:text-base">
+        {/* 4-Column Structured Directory: 2-2 group at 768px (md), 4 columns on lg+ */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 pt-2 text-sm md:text-base">
           
           {/* Column 1: Studio */}
           <div className="flex flex-col gap-3.5">

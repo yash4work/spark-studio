@@ -102,8 +102,8 @@ export default function Services() {
       <div className="w-full flex flex-col gap-10 pt-8 border-t border-white/10">
         
         {/* Head: Title on left, Description on right (Exact Framer .framer-n89iux) */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
-          <div className="flex flex-col items-start gap-2 max-w-xl">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
+          <div className="flex flex-col items-start gap-2 w-full lg:max-w-xl">
             <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
               {t('services.eyebrow', { defaultValue: 'CUSTOM BUILDS' })}
             </p>
@@ -112,7 +112,7 @@ export default function Services() {
             </h2>
           </div>
 
-          <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed max-w-md">
+          <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed w-full lg:max-w-md">
             {t('services.desc', { defaultValue: 'Whether you need a custom Framer website built from scratch, pixel-perfect Figma to Framer development, or full brand customization of any official Framer marketplace template, Spark Studio delivers production-grade web experiences engineered for 95+ PageSpeed scores.' })}
           </p>
         </div>

@@ -103,27 +103,27 @@ export default function Navbar() {
         {/* Brand Logo & Name */}
         <Link 
           to={currentLang === 'en' ? '/' : `/${currentLang}`}
-          className="flex items-center gap-2.5 group cursor-pointer"
+          className="flex items-center gap-2.5 group cursor-pointer shrink-0"
         >
-          <div className="w-7 h-7 flex items-center justify-center">
+          <div className="w-7 h-7 flex items-center justify-center shrink-0">
             <img 
               src="/logo.svg" 
               alt="Spark Studio Logo" 
               className="w-full h-full object-contain group-hover:scale-105 transition-transform"
             />
           </div>
-          <span className="font-heading font-bold text-base tracking-tight text-[#f7f6fb]">
+          <span className="font-heading font-bold text-base tracking-tight text-[#f7f6fb] whitespace-nowrap">
             Spark Studio
           </span>
         </Link>
 
         {/* Desktop Nav Items */}
-        <nav className="hidden md:flex items-center gap-1.5 lg:gap-3">
+        <nav className="hidden lg:flex items-center gap-1 xl:gap-2.5">
           {navItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="framer-nav-link text-sm md:text-base text-[#8b87a0] hover:text-[#f7f6fb] px-3 py-1.5 font-medium transition-colors cursor-pointer"
+              className="framer-nav-link text-xs lg:text-[13.5px] xl:text-[14.5px] text-[#8b87a0] hover:text-[#f7f6fb] px-2 lg:px-2.5 xl:px-3 py-1.5 font-medium transition-colors cursor-pointer whitespace-nowrap"
             >
               {item.label}
             </a>
@@ -131,14 +131,14 @@ export default function Navbar() {
         </nav>
 
         {/* Right Action: Language Switcher & CTA */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-2 xl:gap-3 shrink-0">
           
           {/* Circular Flag Language Dropdown (Exact Match to Image 0) */}
           <div className="relative" ref={dropdownRef}>
             <button
               type="button"
               onClick={() => setLangDropdownOpen(!langDropdownOpen)}
-              className="framer-btn-secondary flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-medium text-[#f7f6fb] border border-white/25 hover:border-white/50 transition-colors cursor-pointer"
+              className="framer-btn-secondary flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono font-medium text-[#f7f6fb] border border-white/25 hover:border-white/50 transition-colors cursor-pointer shrink-0"
               aria-label="Select Language"
             >
               <div className="w-[18px] h-[18px] rounded-full overflow-hidden border border-white/20 shrink-0">
@@ -193,7 +193,7 @@ export default function Navbar() {
           <MagneticButton>
             <a
               href={getNavPath('#contact')}
-              className="framer-btn-secondary px-5 py-2 rounded-full text-[13.5px] font-semibold text-[#f7f6fb] border border-white/25 hover:border-white/60 transition-all cursor-pointer"
+              className="framer-btn-secondary px-3.5 lg:px-4 xl:px-5 py-2 rounded-full text-xs xl:text-[13.5px] font-semibold text-[#f7f6fb] border border-white/25 hover:border-white/60 transition-all cursor-pointer whitespace-nowrap shrink-0"
             >
               <span>{t('nav.cta') || 'Start a project →'}</span>
             </a>
@@ -201,19 +201,20 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="flex md:hidden items-center gap-2">
+        <div className="flex lg:hidden items-center gap-2 shrink-0">
           <button
-            onClick={() => setLangDropdownOpen(!langDropdownOpen)}
-            className="p-2 rounded-full text-[#8b87a0] hover:text-white bg-white/5 border border-white/10"
-            aria-label="Language"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-[#8b87a0] hover:text-white bg-white/5 border border-white/10 cursor-pointer"
+            aria-label="Select language"
           >
-            <div className="w-4 h-4 rounded-full overflow-hidden border border-white/20">
+            <div className="w-4 h-4 rounded-full overflow-hidden border border-white/20 shrink-0">
               <img src={currentLangObj.flag} alt={currentLangObj.code} className="w-full h-full object-cover" />
             </div>
+            <span className="font-mono text-xs uppercase text-[#f7f6fb] font-semibold">{currentLang}</span>
           </button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-full text-[#8b87a0] hover:text-white bg-white/5 border border-white/10"
+            className="p-2 rounded-full text-[#8b87a0] hover:text-white bg-white/5 border border-white/10 cursor-pointer"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5 text-white" /> : <Menu className="w-5 h-5 text-white" />}
@@ -229,10 +230,10 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden mt-2 max-w-[1680px] mx-auto rounded-2xl bg-[#1b1826]/95 border border-white/10 backdrop-blur-2xl p-5 shadow-2xl pointer-events-auto"
+            className="lg:hidden mt-2 max-w-[1680px] mx-auto rounded-2xl bg-[#1b1826]/95 border border-white/10 backdrop-blur-2xl p-5 shadow-2xl pointer-events-auto"
           >
             <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-2 pb-4 border-b border-white/10">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pb-4 border-b border-white/10">
                 {languages.map((lang) => (
                   <button
                     key={lang.code}

@@ -132,8 +132,8 @@ export default function BundlesSection() {
       className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-14 border-t border-white/10"
     >
       {/* Head: Title on left, Description on right */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
-        <div className="flex flex-col items-start gap-2 max-w-xl">
+      <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
+        <div className="flex flex-col items-start gap-2 w-full lg:max-w-xl">
           <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
             {t('bundles.exclusiveEyebrow') || 'EXCLUSIVE BUNDLES & VAULT ACCESS'}
           </p>
@@ -142,7 +142,7 @@ export default function BundlesSection() {
           </h2>
         </div>
 
-        <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed max-w-md">
+        <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed w-full lg:max-w-md">
           {t('bundles.exclusiveDesc') || 'Production-ready Framer templates bundled for independent creators, studios, and agencies. 100% native, static collection as-is with immediate 1-click remix access.'}
         </p>
       </div>
