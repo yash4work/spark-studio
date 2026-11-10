@@ -76,10 +76,10 @@ export default function ContactSection() {
 
         <div className="pt-2 flex flex-col gap-4">
           <a
-            href="mailto:sparkstudio0@outlook.com"
+            href="mailto:hello@thesparkstudio.digital"
             className="font-mono text-base sm:text-lg text-[#8e97f7] hover:text-[#ff6a45] transition-colors inline-block"
           >
-            sparkstudio0@outlook.com →
+            hello@thesparkstudio.digital →
           </a>
 
           <div className="flex items-center gap-6 pt-1 text-xs font-mono text-[#8b87a0]">
@@ -93,7 +93,7 @@ export default function ContactSection() {
               <ArrowUpRight className="w-3 h-3" />
             </a>
             <a
-              href="https://teams.microsoft.com/l/chat/0/0?users=sparkstudio0@outlook.com"
+              href="https://teams.microsoft.com/l/chat/0/0?users=hello@thesparkstudio.digital"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 hover:text-[#f7f6fb] transition-colors"

@@ -58,7 +58,7 @@ export default function HomePage() {
         'logo': 'https://www.thesparkstudio.digital/logo.png',
         'image': 'https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg',
         'description': 'Specialist Framer & Webflow web design studio crafting high-performance custom websites, Next.js web applications, and flagship visual CMS templates.',
-        'email': 'sparkstudio0@outlook.com',
+        'email': 'hello@thesparkstudio.digital',
         'priceRange': '$$',
         'sameAs': [
           'https://www.framer.com/@sparkstudio0'

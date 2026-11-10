@@ -22,7 +22,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'How do we get started?',
-    a: 'Email your project brief directly to sparkstudio0@outlook.com or submit the contact form below. We review your requirements and respond within 24 hours with a fixed quote and start date.'
+    a: 'Email your project brief directly to hello@thesparkstudio.digital or submit the contact form below. We review your requirements and respond within 24 hours with a fixed quote and start date.'
   }
 ];
 

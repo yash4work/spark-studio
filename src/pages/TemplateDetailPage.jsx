@@ -490,7 +490,7 @@ export default function TemplateDetailPage() {
                   We customize any template — or design and build your site from scratch — with the same production standard. Turnaround: 3 to 5 business days.
                 </p>
                 <a
-                  href={`mailto:sparkstudio0@outlook.com?subject=Custom%20Build%20Inquiry%20-%20${encodeURIComponent(templateInfo.name)}`}
+                  href={`mailto:hello@thesparkstudio.digital?subject=Custom%20Build%20Inquiry%20-%20${encodeURIComponent(templateInfo.name)}`}
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-xs font-semibold text-[#f7f6fb] border border-white/20 hover:border-white/40 hover:bg-white/[0.04] transition-all"
                 >
                   <span>Start a custom build →</span>
@@ -508,7 +508,7 @@ export default function TemplateDetailPage() {
                 </p>
                 <div className="pt-2 border-t border-white/[0.05] flex items-center justify-between text-[11px] text-zinc-500 font-mono">
                   <span>Support</span>
-                  <span>sparkstudio0@outlook.com</span>
+                  <span>hello@thesparkstudio.digital</span>
                 </div>
               </div>
 

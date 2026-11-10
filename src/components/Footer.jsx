@@ -27,10 +27,10 @@ export default function Footer() {
 
           <div className="flex items-center gap-6">
             <a
-              href="mailto:sparkstudio0@outlook.com"
+              href="mailto:hello@thesparkstudio.digital"
               className="text-sm md:text-base font-medium text-[#8b87a0] hover:text-[#f7f6fb] transition-colors hidden sm:inline"
             >
-              sparkstudio0@outlook.com
+              hello@thesparkstudio.digital
             </a>
             <a
               href="https://www.linkedin.com/company/sparkstudio0"
@@ -42,7 +42,7 @@ export default function Footer() {
               LinkedIn
             </a>
             <a
-              href="https://teams.microsoft.com/l/chat/0/0?users=sparkstudio0@outlook.com"
+              href="https://teams.microsoft.com/l/chat/0/0?users=hello@thesparkstudio.digital"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Microsoft Teams"
