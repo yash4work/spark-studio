@@ -47,8 +47,8 @@ const VAULT_BUNDLES = [
     badge: 'UNLIMITED CLIENT RIGHTS · SAVE 48%',
     isFeatured: false,
     title: 'Complete Studio Vault (Agency)',
-    price: '$499',
-    regularPrice: '/ $960 commercial value (Save $461 · 48% OFF)',
+    price: '$500',
+    regularPrice: '/ $960 commercial value (Save $460 · 48% OFF)',
     desc: 'Complete 10-template library with unlimited commercial licensing. Ship high-ticket client builds and keep 100% of fees.',
     features: [
       'All 9 paid templates + Slowgrain (10 total)',
@@ -57,7 +57,7 @@ const VAULT_BUNDLES = [
       'Complete component libraries & style tokens',
       'Priority studio developer onboarding'
     ],
-    cta: 'Get Agency Vault — $499',
+    cta: 'Get Agency Vault — $500',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1'
   }
 ];
@@ -148,16 +148,16 @@ export default function BundlesSection() {
           </div>
 
           <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
-            EXCLUSIVE FRAMER BUNDLES &amp; VAULT ACCESS
+            {t('bundles.tag', { defaultValue: 'EXCLUSIVE FRAMER BUNDLES & VAULT ACCESS' })}
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-[38px] font-semibold text-[#f7f6fb] font-heading tracking-[-0.02em] leading-tight">
-            Save up to 48% with curated template bundles.
+            {t('bundles.title', { defaultValue: 'Save up to 48% with curated template bundles.' })}
           </h2>
         </div>
 
         <div className="flex flex-col gap-3 max-w-md">
           <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed">
-            All templates in this section are built exclusively for <strong className="text-white font-medium">Framer</strong>. Designed for independent creators, studios, and agencies — 100% native with immediate 1-click remix access.
+            {t('bundles.subtitle', { defaultValue: 'All templates in this section are built exclusively for Framer. Designed for independent creators, studios, and agencies — 100% native with immediate 1-click remix access.' })}
           </p>
           <a
             href="https://www.framer.com/@sparkstudio0"

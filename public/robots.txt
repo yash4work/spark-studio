@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sparkstudio0.framer.ai/sitemap.xml
+Sitemap: https://www.thesparkstudio.digital/sitemap.xml

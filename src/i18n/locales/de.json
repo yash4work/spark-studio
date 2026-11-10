@@ -190,7 +190,7 @@
     "agencyVault": {
       "badge": "FÜR AGENTUREN · 48 % SPAREN",
       "title": "Kompletter Studio-Vault (Agentur)",
-      "price": "$499",
+      "price": "$500",
       "regularPrice": "$960",
       "features": [
         "Alle 10 Vorlagen mit unbegrenzten Client-Deployments",
@@ -198,7 +198,7 @@
         "Vollständige Komponentenbibliotheken & Design-Assets",
         "Prioritäres Studio-Onboarding"
       ],
-      "cta": "Agentur-Vault holen — $499",
+      "cta": "Agentur-Vault holen — $500",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 
-const BASE_URL = 'https://sparkstudio0.framer.ai';
+const BASE_URL = 'https://www.thesparkstudio.digital';
 const SUPPORTED_LANGS = ['en', 'de', 'es', 'fr'];
 
 export default function SEOHead({ 

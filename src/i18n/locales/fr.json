@@ -190,7 +190,7 @@
     "agencyVault": {
       "badge": "POUR AGENCES · ÉCONOMISEZ 48 %",
       "title": "Vault Studio Complet (Agence)",
-      "price": "$499",
+      "price": "$500",
       "regularPrice": "$960",
       "features": [
         "Tous les 10 templates avec déploiements clients illimités",
@@ -198,7 +198,7 @@
         "Bibliothèques complètes de composants et assets de conception",
         "Onboarding prioritaire avec les créateurs"
       ],
-      "cta": "Obtenir le Vault Agence — 499 €",
+      "cta": "Obtenir le Vault Agence — 500 €",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [

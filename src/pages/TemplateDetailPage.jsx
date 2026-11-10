@@ -187,10 +187,10 @@ export default function TemplateDetailPage() {
     '@graph': [
       {
         '@type': 'Product',
-        '@id': `https://sparkstudio0.framer.ai/templates/${slug}#product`,
+        '@id': `https://www.thesparkstudio.digital/templates/${slug}#product`,
         'name': templateInfo.name,
         'description': templateInfo.headline,
-        'image': `https://sparkstudio0.framer.ai${meta.image}`,
+        'image': meta.image?.startsWith('http') ? meta.image : `https://www.thesparkstudio.digital${meta.image}`,
         'category': 'Software > Website Templates',
         'brand': {
           '@type': 'Brand',
@@ -201,7 +201,7 @@ export default function TemplateDetailPage() {
           'price': meta.numericPrice,
           'priceCurrency': 'USD',
           'availability': 'https://schema.org/InStock',
-          'url': `https://sparkstudio0.framer.ai/templates/${slug}`,
+          'url': `https://www.thesparkstudio.digital/templates/${slug}`,
           'seller': {
             '@type': 'Organization',
             'name': 'Spark Studio'
@@ -215,19 +215,19 @@ export default function TemplateDetailPage() {
             '@type': 'ListItem',
             'position': 1,
             'name': 'Home',
-            'item': `https://sparkstudio0.framer.ai${homeLink}`
+            'item': `https://www.thesparkstudio.digital${homeLink}`
           },
           {
             '@type': 'ListItem',
             'position': 2,
             'name': 'Templates',
-            'item': `https://sparkstudio0.framer.ai${templatesLink}`
+            'item': `https://www.thesparkstudio.digital${templatesLink}`
           },
           {
             '@type': 'ListItem',
             'position': 3,
             'name': templateInfo.name,
-            'item': `https://sparkstudio0.framer.ai/templates/${slug}`
+            'item': `https://www.thesparkstudio.digital/templates/${slug}`
           }
         ]
       }

@@ -190,7 +190,7 @@
     "agencyVault": {
       "badge": "FOR AGENCIES · SAVE 48%",
       "title": "Complete Studio Vault (Agency)",
-      "price": "$499",
+      "price": "$500",
       "regularPrice": "$960",
       "features": [
         "All 10 templates with unlimited commercial client deployments",
@@ -198,7 +198,7 @@
         "Complete component libraries & design assets",
         "Priority studio developer onboarding"
       ],
-      "cta": "Get Agency Vault — $499",
+      "cta": "Get Agency Vault — $500",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
