@@ -18,7 +18,7 @@ const TEMPLATES = [
     techStack: ['Next.js', 'React', 'Tailwind', 'TypeScript', 'Motion'],
     price: 'Custom Build',
     badge: 'Live SaaS',
-    image: '/templates/ai-saas.jpg',
+    image: '/templates/ai-saas.webp',
     demoUrl: 'https://showcase-r5.vercel.app/',
     buyUrl: null
   },
@@ -32,7 +32,7 @@ const TEMPLATES = [
     techStack: ['Next.js', 'React', 'Tailwind', 'TypeScript'],
     price: 'Custom Build',
     badge: 'Live Website',
-    image: '/templates/restaurant.jpg',
+    image: '/templates/restaurant.webp',
     demoUrl: 'https://showcase-r4.vercel.app/',
     buyUrl: null
   },
@@ -46,7 +46,7 @@ const TEMPLATES = [
     techStack: ['Next.js', 'React', 'Tailwind', 'TypeScript'],
     price: 'Custom Build',
     badge: 'Live Portal',
-    image: '/templates/healthcare.jpg',
+    image: '/templates/healthcare.webp',
     demoUrl: 'https://showcase-r6.vercel.app/',
     buyUrl: null
   },
@@ -60,7 +60,7 @@ const TEMPLATES = [
     tagline: 'Generic realtor websites lose leads to Zillow. Mavric Estate is engineered to capture them.',
     price: '$69',
     badge: null,
-    image: '/templates/mavric-estate.png',
+    image: '/templates/mavric-estate.webp',
     demoUrl: 'https://mavric-estate.framer.website/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1'
   },
@@ -72,7 +72,7 @@ const TEMPLATES = [
     tagline: 'High-net-worth buyers don’t browse standard portals — they seek architectural authority.',
     price: '$99',
     badge: 'Agent',
-    image: '/templates/aurelle-estates.png',
+    image: '/templates/aurelle-estates.webp',
     demoUrl: 'https://wandering-variations-344785.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1'
   },
@@ -84,7 +84,7 @@ const TEMPLATES = [
     tagline: 'Most architecture portfolios look like generic image grids. Onyx Atelier is built like an exhibition monograph.',
     price: '$79',
     badge: 'Agent',
-    image: '/templates/onyx-atelier.png',
+    image: '/templates/onyx-atelier.webp',
     demoUrl: 'https://sparkstudio-onyx.framer.website/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/8ef3a777-6fe5-4148-af7e-e1bb1bba39f7?embed=1'
   },
@@ -96,7 +96,7 @@ const TEMPLATES = [
     tagline: 'A quiet, art-book monograph for architecture studios that let photography and material narratives lead.',
     price: '$29',
     badge: 'Agent',
-    image: '/templates/vellum-edition.png',
+    image: '/templates/vellum-edition.webp',
     demoUrl: 'https://unlimited-mind-018782.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1'
   },
@@ -108,7 +108,7 @@ const TEMPLATES = [
     tagline: 'Mass-market shop templates kill artisanal value. Halden Edition is curated for collectible craft.',
     price: '$59',
     badge: null,
-    image: '/templates/halden-edition.png',
+    image: '/templates/halden-edition.webp',
     demoUrl: 'https://past-network-244230.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1'
   },
@@ -120,7 +120,7 @@ const TEMPLATES = [
     tagline: 'Generic online shops feel disposable. Grain & Form makes home decor feel personal and tactile.',
     price: '$58',
     badge: null,
-    image: '/templates/grain-form.png',
+    image: '/templates/grain-form.webp',
     demoUrl: 'https://mindful-account-986092.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1'
   },
@@ -132,7 +132,7 @@ const TEMPLATES = [
     tagline: 'An editorial, museum-grade template for solid timber ateliers, heirloom furniture makers and joinery workshops.',
     price: 'Free',
     badge: null,
-    image: '/templates/slowgrain.png',
+    image: '/templates/slowgrain.webp',
     demoUrl: 'https://prosperous-statuses-272584.framer.app/style-guide',
     buyUrl: null
   },
@@ -189,6 +189,8 @@ const CATEGORIES = [
 export default function TemplatesGrid() {
   const { t, i18n } = useTranslation();
   const [activeFilter, setActiveFilter] = useState('all');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
   const currentLang = i18n.language ? i18n.language.slice(0, 2) : 'en';
 
   useEffect(() => {
@@ -199,14 +201,31 @@ export default function TemplatesGrid() {
     return currentLang === 'en' ? `/templates/${slug}` : `/${currentLang}/templates/${slug}`;
   };
 
+  const handleFilterChange = (catId) => {
+    setActiveFilter(catId);
+    setCurrentPage(1);
+  };
+
   const filteredItems = activeFilter === 'all' 
     ? TEMPLATES 
     : TEMPLATES.filter(item => item.categoryKey === activeFilter);
 
+  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+  const displayedItems = filteredItems.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  const goToPage = (page) => {
+    setCurrentPage(page);
+    const el = document.getElementById('projects');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section 
       id="projects" 
-      className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 relative flex flex-col gap-10 sm:gap-12 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-10 sm:gap-12 border-t border-white/10"
     >
       {/* Head: Title on left, Description on right */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
@@ -215,7 +234,7 @@ export default function TemplatesGrid() {
         </h2>
         
         <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
-          {t('templates.subtitle') || 'From scalable Next.js web applications and SaaS platforms to bespoke client websites and high-performance Framer templates — each build engineered for 95+ PageSpeed scores.'}
+          {t('templates.subtitle') || 'From scalable Next.js web applications and SaaS platforms to bespoke Framer & Webflow client websites and templates — each build engineered for 95+ PageSpeed scores.'}
         </p>
       </div>
 
@@ -226,7 +245,7 @@ export default function TemplatesGrid() {
           return (
             <button
               key={cat.id}
-              onClick={() => setActiveFilter(cat.id)}
+              onClick={() => handleFilterChange(cat.id)}
               className={`px-4 py-2 rounded-full text-[12.5px] font-mono transition-all duration-200 cursor-pointer ${
                 isActive
                   ? 'bg-[#f7f6fb] text-[#15131f] font-semibold shadow-md'
@@ -239,10 +258,10 @@ export default function TemplatesGrid() {
         })}
       </div>
 
-      {/* Templates Grid: EXACT FRAMER 2-COLUMN GRID (grid-cols-1 md:grid-cols-2) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 sm:gap-8">
+      {/* Templates Grid: 3-COLUMN RESPONSIVE GRID (grid-cols-1 md:grid-cols-2 lg:grid-cols-3) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
         <AnimatePresence>
-          {filteredItems.map((template) => (
+          {displayedItems.map((template) => (
             <div
               key={template.slug}
               data-framer-name="Template Card"
@@ -401,25 +420,29 @@ export default function TemplatesGrid() {
           ))}
         </AnimatePresence>
 
-        {/* 8th Pipeline Card (Exact Match to User Image 0) */}
-        {activeFilter === 'all' && (
+        {/* Pipeline Card (Spans full 3 columns with dark contrast overlay) */}
+        {activeFilter === 'all' && currentPage === 1 && (
           <div
             data-framer-name="Pipeline Card"
-            className="framer-pipeline-card md:col-span-2 p-8 sm:p-10 rounded-2xl flex flex-col justify-between gap-5 relative overflow-hidden"
+            className="framer-pipeline-card col-span-1 md:col-span-2 lg:col-span-3 p-8 sm:p-10 rounded-2xl flex flex-col justify-between gap-5 relative overflow-hidden border border-[#8e97f7]/30"
             style={{
-              backgroundColor: '#27204f',
+              backgroundColor: '#171333',
               backgroundImage: `url('/assets/facet-pattern.svg')`,
               backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              border: '1px solid rgba(142, 151, 247, 0.25)'
+              backgroundPosition: 'center'
             }}
           >
+            {/* Dark contrast gradient overlay matching user request */}
+            <div 
+              className="absolute inset-0 bg-gradient-to-r from-[#15131f]/95 via-[#1a1438]/85 to-[#15131f]/90 pointer-events-none z-0" 
+            />
+
             <div className="relative z-10 flex flex-col gap-2.5 max-w-2xl">
               <h3 className="font-heading font-semibold text-2xl sm:text-3xl text-white">
                 Expanding pipeline
               </h3>
               <p className="text-sm sm:text-[15px] text-[#d4d2e8] font-normal leading-relaxed">
-                SaaS, digital commerce and creator portfolios — new templates launching soon. Join the list for early-bird pricing.
+                SaaS products, bespoke Webflow platforms, and creator portfolios — new builds and templates launching weekly. Join the list for early-bird previews.
               </p>
             </div>
 
@@ -436,6 +459,47 @@ export default function TemplatesGrid() {
           </div>
         )}
       </div>
+
+      {/* Pagination Controls */}
+      {totalPages > 1 && (
+        <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10">
+          <p className="text-xs font-mono text-[#8b87a0]">
+            Showing {(currentPage - 1) * itemsPerPage + 1}–{Math.min(currentPage * itemsPerPage, filteredItems.length)} of {filteredItems.length} projects & templates
+          </p>
+
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => goToPage(Math.max(1, currentPage - 1))}
+              disabled={currentPage === 1}
+              className="px-4 py-2 rounded-xl text-xs font-mono border border-white/10 text-[#f7f6fb] hover:bg-white/[0.06] disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+            >
+              ← Previous
+            </button>
+
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+              <button
+                key={pageNum}
+                onClick={() => goToPage(pageNum)}
+                className={`w-9 h-9 rounded-xl text-xs font-mono font-semibold transition-all ${
+                  currentPage === pageNum
+                    ? 'bg-[#8e97f7] text-[#15131f] shadow-[0_0_15px_rgba(142,151,247,0.35)]'
+                    : 'border border-white/10 text-[#8b87a0] hover:text-[#f7f6fb] hover:bg-white/[0.04]'
+                }`}
+              >
+                {pageNum}
+              </button>
+            ))}
+
+            <button
+              onClick={() => goToPage(Math.min(totalPages, currentPage + 1))}
+              disabled={currentPage === totalPages}
+              className="px-4 py-2 rounded-xl text-xs font-mono border border-white/10 text-[#f7f6fb] hover:bg-white/[0.06] disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+            >
+              Next →
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

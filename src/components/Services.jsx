@@ -64,7 +64,7 @@ export default function Services() {
   return (
     <section 
       id="services" 
-      className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 relative flex flex-col gap-14 sm:gap-16 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-14 sm:gap-16 border-t border-white/10"
     >
       {/* =========================================================================
           PART 1: HOW WE WORK (4 PROCESS STEPS)

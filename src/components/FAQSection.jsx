@@ -37,7 +37,7 @@ export default function FAQSection() {
   return (
     <section 
       id="faq" 
-      className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 relative flex flex-col md:flex-row items-start justify-between gap-12 md:gap-20 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col md:flex-row items-start justify-between gap-12 md:gap-20 border-t border-white/10"
     >
       {/* Head: Title on left */}
       <div className="w-full md:w-[320px] lg:w-[380px] flex-shrink-0 flex flex-col items-start gap-3">

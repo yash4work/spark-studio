@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full border-t border-white/10 bg-[#15131f] text-[#8b87a0] relative overflow-hidden">
-      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-12 sm:pt-16 pb-8 flex flex-col gap-10 sm:gap-14">
+      <div className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 pt-12 sm:pt-16 pb-8 flex flex-col gap-10 sm:gap-14">
         
         {/* Massive 184px Wordmark matching Framer Footer Wordmark */}
         <div className="w-full overflow-hidden select-none py-2 sm:py-4">

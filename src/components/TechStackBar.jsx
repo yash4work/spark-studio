@@ -106,7 +106,7 @@ export default function TechStackBar() {
         }}
       />
 
-      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 flex items-center justify-start lg:justify-center gap-3 overflow-x-auto no-scrollbar scroll-smooth">
+      <div className="max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 flex items-center justify-start lg:justify-center gap-3 overflow-x-auto no-scrollbar scroll-smooth">
         {stacks.map((item, idx) => (
           <div
             key={idx}

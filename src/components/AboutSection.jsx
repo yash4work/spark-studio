@@ -7,7 +7,7 @@ export default function AboutSection() {
   return (
     <section 
       id="about" 
-      className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 relative flex flex-col md:flex-row items-start justify-between gap-10 md:gap-16 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col md:flex-row items-start justify-between gap-10 md:gap-16 border-t border-white/10"
     >
       {/* Left Column (.framer-196thwl: flex-1) */}
       <div className="flex-1 flex flex-col items-start gap-4">

@@ -51,52 +51,84 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@graph': [
       {
+        '@type': 'ProfessionalService',
+        '@id': 'https://www.thesparkstudio.digital/#organization',
+        'name': 'Spark Studio',
+        'url': 'https://www.thesparkstudio.digital/',
+        'logo': 'https://www.thesparkstudio.digital/logo.png',
+        'image': 'https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg',
+        'description': 'Specialist Framer & Webflow web design studio crafting high-performance custom websites, Next.js web applications, and flagship visual CMS templates.',
+        'email': 'sparkstudio0@outlook.com',
+        'priceRange': '$$',
+        'sameAs': [
+          'https://www.framer.com/@sparkstudio0'
+        ]
+      },
+      {
         '@type': 'ItemList',
-        'name': 'Spark Studio Framer Templates Catalog',
-        'description': 'Production-ready, high-performance Framer templates for architecture studios, luxury real estate, and digital commerce.',
-        'url': 'https://sparkstudio0.framer.ai/',
-        'numberOfItems': 7,
+        'name': 'Spark Studio Work & Templates Catalog',
+        'description': 'Production-ready Next.js web applications, bespoke Framer and Webflow client websites, and high-performance digital templates.',
+        'url': 'https://www.thesparkstudio.digital/#projects',
+        'numberOfItems': 10,
         'itemListElement': [
           {
             '@type': 'ListItem',
             'position': 1,
-            'url': 'https://sparkstudio0.framer.ai/templates/mavric-estate',
-            'name': 'Mavric Estate — Framer Template'
+            'url': 'https://showcase-r5.vercel.app/',
+            'name': 'AI SaaS Platform — Next.js Web Application'
           },
           {
             '@type': 'ListItem',
             'position': 2,
-            'url': 'https://sparkstudio0.framer.ai/templates/aurelle-estates',
-            'name': 'Aurelle Estates — Framer Template'
+            'url': 'https://showcase-r4.vercel.app/',
+            'name': 'Luxury Restaurant — Next.js Hospitality Website'
           },
           {
             '@type': 'ListItem',
             'position': 3,
-            'url': 'https://sparkstudio0.framer.ai/templates/onyx-atelier',
-            'name': 'Onyx Atelier — Framer Template'
+            'url': 'https://showcase-r6.vercel.app/',
+            'name': 'Premium Healthcare — Clinical Patient Portal'
           },
           {
             '@type': 'ListItem',
             'position': 4,
-            'url': 'https://sparkstudio0.framer.ai/templates/vellum-edition',
-            'name': 'Vellum Edition — Framer Template'
+            'url': 'https://www.thesparkstudio.digital/templates/mavric-estate',
+            'name': 'Mavric Estate — Framer Template'
           },
           {
             '@type': 'ListItem',
             'position': 5,
-            'url': 'https://sparkstudio0.framer.ai/templates/halden-edition',
-            'name': 'Halden Edition — Framer Template'
+            'url': 'https://www.thesparkstudio.digital/templates/aurelle-estates',
+            'name': 'Aurelle Estates — Framer Template'
           },
           {
             '@type': 'ListItem',
             'position': 6,
-            'url': 'https://sparkstudio0.framer.ai/templates/grain-form',
-            'name': 'Grain & Form — Framer Template'
+            'url': 'https://www.thesparkstudio.digital/templates/onyx-atelier',
+            'name': 'Onyx Atelier — Framer Template'
           },
           {
             '@type': 'ListItem',
             'position': 7,
-            'url': 'https://sparkstudio0.framer.ai/templates/slowgrain',
+            'url': 'https://www.thesparkstudio.digital/templates/vellum-edition',
+            'name': 'Vellum Edition — Framer Template'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 8,
+            'url': 'https://www.thesparkstudio.digital/templates/halden-edition',
+            'name': 'Halden Edition — Framer Template'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 9,
+            'url': 'https://www.thesparkstudio.digital/templates/grain-form',
+            'name': 'Grain & Form — Framer Template'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 10,
+            'url': 'https://www.thesparkstudio.digital/templates/slowgrain',
             'name': 'SLOWGRAIN — Framer Template'
           }
         ]

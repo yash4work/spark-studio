@@ -20,13 +20,36 @@ export default function Hero() {
         <LiquidGradientShader 
           className="w-full h-full absolute inset-0"
           mouseEnabled={true}
+          uniforms={{
+            colors: [
+              'rgb(10, 8, 22)',
+              'rgb(28, 45, 175)',
+              'rgb(80, 55, 215)',
+              'rgb(135, 75, 225)',
+              'rgb(230, 160, 75)'
+            ],
+            distBias: -0.42,
+            scale: 0.65,
+            speed: 0.08,
+            turbAmp: 0.45,
+            exposure: 1.0,
+            contrast: 1.15
+          }}
         />
 
         {/* Glow Side & Dark Vignette Overlay so typography stays sharp and readable */}
         <div 
           className="absolute inset-0 w-full h-full pointer-events-none"
           style={{
-            background: 'linear-gradient(90deg, rgba(21, 19, 31, 0.85) 0%, rgba(21, 19, 31, 0.5) 45%, rgba(21, 19, 31, 0.1) 100%)'
+            background: 'linear-gradient(90deg, rgba(21, 19, 31, 0.88) 0%, rgba(21, 19, 31, 0.55) 45%, rgba(21, 19, 31, 0.15) 100%)'
+          }}
+        />
+
+        {/* Right-edge Vignette: Tames and shrinks bright yellow on the right side */}
+        <div 
+          className="absolute inset-0 w-full h-full pointer-events-none"
+          style={{
+            background: 'radial-gradient(ellipse 65% 55% at 90% 25%, rgba(21, 19, 31, 0.45) 0%, rgba(21, 19, 31, 0.85) 75%, #15131f 100%)'
           }}
         />
 
@@ -40,9 +63,9 @@ export default function Hero() {
       </div>
 
       {/* =========================================================================
-          HERO CONTENT (EXACT LEFT ALIGNMENT & 1440PX CONTAINER)
+          HERO CONTENT (EXPANDED CONTAINER)
           ========================================================================= */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-36 sm:pt-44 flex flex-col items-start gap-7">
+      <div className="relative z-10 w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 pt-36 sm:pt-44 flex flex-col items-start gap-7">
         
         {/* Eyebrow */}
         <motion.div
@@ -51,7 +74,7 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }}
         >
           <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
-            {t('hero.eyebrow') || 'WEBSITES · CUSTOM SOFTWARE · FRAMER & REACT ENGINEERING'}
+            {t('hero.eyebrow') || 'FRAMER & WEBFLOW SPECIALISTS · CUSTOM SOFTWARE & DESIGN SYSTEMS'}
           </p>
         </motion.div>
 
@@ -60,9 +83,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 28, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
-          className="text-4xl sm:text-6xl md:text-[64px] font-extrabold text-[#f7f6fb] tracking-[-0.03em] leading-[1.05] max-w-[760px]"
+          className="text-4xl sm:text-6xl md:text-[64px] font-extrabold text-[#f7f6fb] tracking-[-0.03em] leading-[1.05] max-w-[840px]"
         >
-          {t('hero.title') || 'Websites & custom software engineered to scale.'}
+          {t('hero.title') || 'Framer & Webflow websites engineered to convert.'}
         </motion.h1>
 
         {/* Subtitle */}
@@ -70,9 +93,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
-          className="text-base sm:text-[17px] text-[#8b87a0] max-w-[580px] font-normal leading-[1.75] tracking-[-0.02em]"
+          className="text-base sm:text-[17px] text-[#8b87a0] max-w-[620px] font-normal leading-[1.75] tracking-[-0.02em]"
         >
-          {t('hero.description') || 'Spark Studio designs and builds high-performance websites, custom SaaS platforms, and bespoke digital experiences using Next.js, React, Webflow, and Framer — visually stunning, code-free for your marketing team, and built with 90+ PageSpeed scores out of the box.'}
+          {t('hero.description') || 'Spark Studio designs and builds visual, high-performance websites in Framer and Webflow that marketing teams can update in seconds — backed by custom Next.js software when you need deeper product power. 95+ PageSpeed guaranteed.'}
         </motion.p>
 
         {/* CTA Buttons with Magnetic Physics */}
@@ -106,7 +129,7 @@ export default function Hero() {
       </div>
 
       {/* Stats Row with Horizontal Divider Line across width */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-16 pb-16 sm:pb-20">
+      <div className="relative z-10 w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 pt-16 pb-16 sm:pb-20">
         <div className="border-t border-white/10 w-full mb-8" />
 
         <div className="flex flex-wrap items-center gap-8 sm:gap-12">
@@ -126,17 +149,17 @@ export default function Hero() {
               <ScrambleText text={t('hero.stat2Val') || '100%'} />
             </span>
             <span className="font-mono text-xs uppercase tracking-[0.05em] text-[#8b87a0]">
-              {t('hero.stat2Label') || 'Production Ready'}
+              {t('hero.stat2Label') || 'Visual CMS & Code'}
             </span>
           </div>
 
           {/* Stat 3 */}
           <div className="flex flex-col items-start">
             <span className="text-3xl sm:text-[44px] font-extrabold text-[#f7f6fb] font-heading leading-none mb-1">
-              <ScrambleText text={t('hero.stat3Val') || 'Multi-Stack'} />
+              <ScrambleText text={t('hero.stat3Val') || 'Specialists'} />
             </span>
             <span className="font-mono text-xs uppercase tracking-[0.05em] text-[#8b87a0]">
-              {t('hero.stat3Label') || 'Next.js · React · Framer · Webflow'}
+              {t('hero.stat3Label') || 'Framer · Webflow · Next.js'}
             </span>
           </div>
         </div>

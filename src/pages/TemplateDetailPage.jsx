@@ -28,8 +28,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://mavric-estate.framer.website/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1',
     remixUrl: 'https://framer.com/remix/A2wFOoozRxj7JhGKve5x',
-    image: '/templates/mavric-estate.png',
-    gallery: ['/templates/mavric-estate.png', '/assets/template1.png', '/assets/template2.png']
+    image: '/templates/mavric-estate.webp',
+    gallery: ['/templates/mavric-estate.webp', '/assets/template1.webp', '/assets/template2.webp']
   },
   'aurelle-estates': {
     price: '$99',
@@ -40,8 +40,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://wandering-variations-344785.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1',
     remixUrl: 'https://framer.com/remix/kktBLW5OAcjQ8farEylL',
-    image: '/templates/aurelle-estates.png',
-    gallery: ['/templates/aurelle-estates.png', '/assets/template2.png', '/assets/template3.png']
+    image: '/templates/aurelle-estates.webp',
+    gallery: ['/templates/aurelle-estates.webp', '/assets/template2.webp', '/assets/template3.webp']
   },
   'onyx-atelier': {
     price: '$79',
@@ -52,8 +52,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://active-strengthening-218427.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1',
     remixUrl: 'https://framer.com/remix/qdTLRcAS411L53TOswm9',
-    image: '/templates/onyx-atelier.png',
-    gallery: ['/templates/onyx-atelier.png', '/assets/template3.png', '/assets/template4.png']
+    image: '/templates/onyx-atelier.webp',
+    gallery: ['/templates/onyx-atelier.webp', '/assets/template3.webp', '/assets/template4.webp']
   },
   'vellum-edition': {
     price: '$29',
@@ -64,8 +64,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://unlimited-mind-018782.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1',
     remixUrl: 'https://framer.com/remix/bedsbRAX0HralLdA1OFW',
-    image: '/templates/vellum-edition.png',
-    gallery: ['/templates/vellum-edition.png', '/assets/template4.png', '/assets/template1.png']
+    image: '/templates/vellum-edition.webp',
+    gallery: ['/templates/vellum-edition.webp', '/assets/template4.webp', '/assets/template1.webp']
   },
   'halden-edition': {
     price: '$59',
@@ -76,8 +76,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://past-network-244230.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1',
     remixUrl: 'https://framer.com/remix/y995Rq0IottjMfWKZwpL',
-    image: '/templates/halden-edition.png',
-    gallery: ['/templates/halden-edition.png', '/assets/template2.png', '/assets/template4.png']
+    image: '/templates/halden-edition.webp',
+    gallery: ['/templates/halden-edition.webp', '/assets/template2.webp', '/assets/template4.webp']
   },
   'grain-form': {
     price: '$58',
@@ -88,8 +88,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://mindful-account-986092.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1',
     remixUrl: 'https://framer.com/remix/uJLrxhYatV1KDfmU9tMs',
-    image: '/templates/grain-form.png',
-    gallery: ['/templates/grain-form.png', '/assets/template1.png', '/assets/template3.png']
+    image: '/templates/grain-form.webp',
+    gallery: ['/templates/grain-form.webp', '/assets/template1.webp', '/assets/template3.webp']
   },
   'slowgrain': {
     price: 'Free',
@@ -100,8 +100,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://prosperous-statuses-272584.framer.app/style-guide',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1',
     remixUrl: 'https://framer.com/remix/52YnIzlJOEXddxCP5O1n',
-    image: '/templates/slowgrain.png',
-    gallery: ['/templates/slowgrain.png', '/assets/template3.png', '/assets/template2.png']
+    image: '/templates/slowgrain.webp',
+    gallery: ['/templates/slowgrain.webp', '/assets/template3.webp', '/assets/template2.webp']
   },
   'terra': {
     price: '$69',
@@ -113,7 +113,7 @@ const TEMPLATE_META = {
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1',
     remixUrl: 'https://www.framer.com/marketplace/templates/terra/',
     image: 'https://framerusercontent.com/images/H2DMerPuJWTvVUiihF3BX14Wdo.png',
-    gallery: ['https://framerusercontent.com/images/H2DMerPuJWTvVUiihF3BX14Wdo.png', '/assets/template1.png', '/assets/template2.png']
+    gallery: ['https://framerusercontent.com/images/H2DMerPuJWTvVUiihF3BX14Wdo.png', '/assets/template1.webp', '/assets/template2.webp']
   },
   'sasso-architect': {
     price: '$69',
@@ -125,7 +125,7 @@ const TEMPLATE_META = {
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/ec2dbd50-66e1-44d5-b412-588da7f013d8?embed=1',
     remixUrl: 'https://www.framer.com/marketplace/templates/sasso-architect/',
     image: 'https://framerusercontent.com/images/vXQOoXIJexVdw0e3emiEMLvyOds.png',
-    gallery: ['https://framerusercontent.com/images/vXQOoXIJexVdw0e3emiEMLvyOds.png', '/assets/template2.png', '/assets/template3.png']
+    gallery: ['https://framerusercontent.com/images/vXQOoXIJexVdw0e3emiEMLvyOds.png', '/assets/template2.webp', '/assets/template3.webp']
   },
   'tessovra': {
     price: '$69',
@@ -137,7 +137,7 @@ const TEMPLATE_META = {
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/02daec5f-f201-48aa-8636-d120270b5adc?embed=1',
     remixUrl: 'https://www.framer.com/marketplace/templates/tessovra/',
     image: 'https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png',
-    gallery: ['https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png', '/assets/template1.png', '/assets/template3.png']
+    gallery: ['https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png', '/assets/template1.webp', '/assets/template3.webp']
   }
 };
 
@@ -371,7 +371,7 @@ export default function TemplateDetailPage() {
                 alt={`${templateInfo.name} — Framer Template Showcase`}
                 className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {
-                  e.target.src = '/assets/template1.png';
+                  e.target.src = '/assets/template1.webp';
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
@@ -386,7 +386,7 @@ export default function TemplateDetailPage() {
                     alt={`Preview thumbnail ${i + 1}`}
                     className="w-full h-full object-cover object-top"
                     onError={(e) => {
-                      e.target.src = '/assets/template2.png';
+                      e.target.src = '/assets/template2.webp';
                     }}
                   />
                 </div>
@@ -552,7 +552,7 @@ export default function TemplateDetailPage() {
                       alt={item.info?.name}
                       className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       onError={(e) => {
-                        e.target.src = '/assets/template1.png';
+                        e.target.src = '/assets/template1.webp';
                       }}
                     />
                   </Link>
