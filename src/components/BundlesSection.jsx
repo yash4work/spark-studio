@@ -7,16 +7,16 @@ import { MagneticButton, TiltCard } from '../lib/framer-effects';
 const VAULT_BUNDLES = [
   {
     id: 'pick-any-3',
-    badge: 'FLEXIBLE CHOICE · SAVE 48%',
+    badge: 'FLEXIBLE CHOICE',
     isFeatured: false,
     title: 'Pick Any 3 Starter Pack',
     price: '$99',
-    regularPrice: '/ $190 regular value (Save $91 · 48% OFF)',
+    regularPrice: '/ Save up to $148 (60% OFF)',
     desc: 'Choose any 3 templates from our active catalog. Ideal for freelancers with upcoming client projects.',
     features: [
       'Any 3 production Framer templates',
       'Instant 1-click duplicate & remix links',
-      'Global design tokens & typography presets',
+      'Companion Figma source files (.fig)',
       'Dynamic CMS archives & responsive UI',
       'Single production site per template'
     ],
@@ -25,39 +25,39 @@ const VAULT_BUNDLES = [
   },
   {
     id: 'solo-vault',
-    badge: 'MOST POPULAR · SAVE $288 (48% OFF)',
+    badge: 'MOST POPULAR · SAVE $313 (68% OFF)',
     isFeatured: true,
     title: 'Complete Studio Vault (Solo)',
-    price: '$312',
-    regularPrice: '/ $600 retail value',
-    desc: 'Instant access to all 9 premium paid templates + Slowgrain. Complete high-status design vault for ambitious creators.',
+    price: '$149',
+    regularPrice: '/ $462 retail value',
+    desc: 'Instant access to all 7 premium paid templates + Slowgrain. Complete high-status design vault for ambitious creators.',
     features: [
-      'All 9 paid templates + Slowgrain (Free)',
-      'Aurelle ($99) + Onyx ($79) + Mavric ($69)',
-      'TERRA ($69) + SASSO ($69) + TESSOVRA ($69)',
-      'Halden ($59) + Grain & Form ($58) + Vellum ($29)',
-      'Complete component libraries & style tokens',
+      'All 7 paid templates + Slowgrain (Free)',
+      'Aurelle ($99) + Onyx ($79) + Tessovra ($69)',
+      'Mavric ($69) + Halden ($59) + Grain & Form ($58)',
+      'Vellum Edition ($29) included',
+      'Full companion Figma UI kits & specs',
       'Commercial solo license per template'
     ],
-    cta: 'Unlock Full Vault — $312',
+    cta: 'Unlock Full Vault — $149',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1'
   },
   {
     id: 'agency-vault',
-    badge: 'UNLIMITED CLIENT RIGHTS · SAVE 48%',
+    badge: 'UNLIMITED CLIENT RIGHTS',
     isFeatured: false,
     title: 'Complete Studio Vault (Agency)',
-    price: '$500',
-    regularPrice: '/ $960 commercial value (Save $460 · 48% OFF)',
-    desc: 'Complete 10-template library with unlimited commercial licensing. Ship high-ticket client builds and keep 100% of fees.',
+    price: '$249',
+    regularPrice: '/ $1,200+ commercial value',
+    desc: 'Complete 8-template library with unlimited commercial licensing. Ship high-ticket client builds and keep 100% of fees.',
     features: [
-      'All 9 paid templates + Slowgrain (10 total)',
+      'All 7 paid templates + Slowgrain',
       'Unlimited commercial client deployments',
       'Keep 100% of client project revenue',
-      'Complete component libraries & style tokens',
+      'All companion Figma files & design assets',
       'Priority studio developer onboarding'
     ],
-    cta: 'Get Agency Vault — $500',
+    cta: 'Get Agency Vault — $249',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1'
   }
 ];
@@ -65,7 +65,7 @@ const VAULT_BUNDLES = [
 const NICHE_PACKS = [
   {
     id: 'real-estate-duo',
-    tag: 'REAL ESTATE · SAVE $69 (41% OFF)',
+    tag: 'REAL ESTATE · SAVE $69',
     title: 'Luxury Real Estate Flagship Duo',
     price: '$99',
     regularPrice: '/ $168 regular value',
@@ -81,7 +81,7 @@ const NICHE_PACKS = [
   },
   {
     id: 'architecture-duo',
-    tag: 'ARCHITECTURE · SAVE $39 (36% OFF)',
+    tag: 'ARCHITECTURE · SAVE $39',
     title: 'Monograph Architecture Duo',
     price: '$69',
     regularPrice: '/ $108 regular value',
@@ -97,11 +97,11 @@ const NICHE_PACKS = [
   },
   {
     id: 'artisan-suite',
-    tag: 'COMMERCE & CRAFT · SAVE $67 (36% OFF)',
+    tag: 'COMMERCE & CRAFT · SAVE $67',
     title: 'Artisan Living & E-Commerce Suite',
     price: '$119',
     regularPrice: '/ $186 regular value',
-    desc: 'TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for creative ateliers & boutiques.',
+    desc: 'TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for bespoke ateliers & boutiques.',
     features: [
       'TESSOVRA ($69) luxury flagship commerce layout',
       'Halden Edition ($59) collectible craft showcase',
@@ -120,60 +120,36 @@ export default function BundlesSection() {
     initLemonSqueezy();
   }, []);
 
+  const rawVault = t('bundles.vaultList', { returnObjects: true });
+  const vaultBundles = Array.isArray(rawVault) && rawVault.length > 0 ? rawVault : VAULT_BUNDLES;
+
+  const rawNiche = t('bundles.nicheList', { returnObjects: true });
+  const nichePacks = Array.isArray(rawNiche) && rawNiche.length > 0 ? rawNiche : NICHE_PACKS;
+
   return (
     <section 
       id="bundles" 
-      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-14 border-t border-white/10"
+      className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 relative flex flex-col gap-14 border-t border-white/10"
     >
       {/* Head: Title on left, Description on right */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
-        <div className="flex flex-col items-start gap-3 max-w-xl">
-          {/* Framer Only / Specific Badge + Official Profile Link */}
-          <div className="flex items-center gap-2.5 flex-wrap">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium tracking-wide bg-[#8e97f7]/15 border border-[#8e97f7]/40 text-[#a5adfc] shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-[#8e97f7] animate-pulse" />
-              100% Framer Only · Curated Vault
-            </span>
-            <a
-              href="https://www.framer.com/@sparkstudio0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-[#8b87a0] hover:text-[#f7f6fb] bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 transition-colors"
-            >
-              <span>Framer Profile @sparkstudio0</span>
-              <svg className="w-3 h-3 text-[#8e97f7]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          </div>
-
+        <div className="flex flex-col items-start gap-2 max-w-xl">
           <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
-            {t('bundles.tag', { defaultValue: 'EXCLUSIVE FRAMER BUNDLES & VAULT ACCESS' })}
+            {t('bundles.exclusiveEyebrow') || 'EXCLUSIVE BUNDLES & VAULT ACCESS'}
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-[38px] font-semibold text-[#f7f6fb] font-heading tracking-[-0.02em] leading-tight">
-            {t('bundles.title', { defaultValue: 'Save up to 48% with curated template bundles.' })}
+            {t('bundles.exclusiveTitle') || 'Save up to 68% with curated template bundles.'}
           </h2>
         </div>
 
-        <div className="flex flex-col gap-3 max-w-md">
-          <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed">
-            {t('bundles.subtitle', { defaultValue: 'All templates in this section are built exclusively for Framer. Designed for independent creators, studios, and agencies — 100% native with immediate 1-click remix access.' })}
-          </p>
-          <a
-            href="https://www.framer.com/@sparkstudio0"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs font-mono text-[#8e97f7] hover:text-white transition-colors self-start"
-          >
-            <span>Explore all templates on official Framer profile</span>
-            <span>→</span>
-          </a>
-        </div>
+        <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
+          {t('bundles.exclusiveDesc') || 'Production-ready Framer templates bundled for independent creators, studios, and agencies. 100% native, static collection as-is with immediate 1-click remix access.'}
+        </p>
       </div>
 
       {/* Row 1: The 3 Main Vault Packs with 3D Tilt */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-        {VAULT_BUNDLES.map((bundle) => (
+        {vaultBundles.map((bundle) => (
           <TiltCard 
             key={bundle.id}
             className={`p-8 rounded-2xl flex flex-col justify-between transition-all duration-300 ${
@@ -239,15 +215,15 @@ export default function BundlesSection() {
       <div className="pt-8 border-t border-white/10 flex flex-col gap-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <h3 className="text-2xl font-heading font-semibold text-[#f7f6fb]">
-            Category-Wise Niche Packs
+            {t('bundles.nicheTitle') || 'Category-Wise Niche Packs'}
           </h3>
           <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
-            TARGETED PAIRS FOR SPECIFIC INDUSTRIES
+            {t('bundles.nicheEyebrow') || 'TARGETED PAIRS FOR SPECIFIC INDUSTRIES'}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {NICHE_PACKS.map((pack) => (
+          {nichePacks.map((pack) => (
             <TiltCard 
               key={pack.id}
               className="p-8 rounded-2xl bg-[#1b1826] border border-white/10 hover:border-[#8e97f7]/40 flex flex-col justify-between gap-6 transition-all duration-300"

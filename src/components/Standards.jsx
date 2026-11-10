@@ -4,43 +4,45 @@ import { motion } from 'framer-motion';
 const STANDARDS_LIST = [
   {
     num: '01',
-    title: '95+ Core Web Vitals',
-    desc: 'Optimized DOM structures, lightweight scripts, and auto-compressed assets for lightning-fast load times and strong Google ranking signals.'
+    title: '90+ Core Web Vitals',
+    desc: 'Optimized DOM structure, lightweight scripts and auto-compressed WebP images for instant load times and strong Google ranking signals.'
   },
   {
     num: '02',
-    title: 'Visual CMS & Code Agility',
-    desc: 'Framer and Webflow for visual marketing velocity; Next.js and React 19 for custom software scalability.'
+    title: '100% visual editing, zero code',
+    desc: "Modify colors, swap typography, update imagery and rearrange sections through Framer's intuitive native interface."
   },
   {
     num: '03',
-    title: 'Modular scalable architecture',
-    desc: 'Add dozens of case studies, posts, properties, or products in seconds, with automatically formatted dynamic pages and filters.'
+    title: 'Modular dynamic CMS',
+    desc: 'Add dozens of case studies, posts, properties or products in seconds, with automatically formatted detail pages and category filters.'
   },
   {
     num: '04',
     title: 'Precision responsive breakpoints',
-    desc: 'Every layout hand-tuned across desktop, tablet, and mobile breakpoints for seamless readability and zero layout shift.'
+    desc: 'Every layout hand-tuned across desktop (1440px), tablet (810px) and mobile (390px) for seamless readability.'
   },
   {
     num: '05',
-    title: 'Design token & style guide architecture',
-    desc: 'Organized component libraries with fluid variants, design tokens, and reusable style variables matching production standards 1:1.'
+    title: 'Companion Figma source systems',
+    desc: 'Organized Figma files with auto-layouts and reusable style variables matching the Framer build 1:1.'
   },
   {
     num: '06',
     title: 'AEO & modern SEO, built in',
-    desc: 'Pre-configured semantic HTML hierarchy, JSON-LD schema, customizable OpenGraph metadata, and clean heading trees.'
+    desc: 'Pre-configured semantic HTML hierarchy, customizable OpenGraph metadata and clean structured heading trees.'
   }
 ];
 
 export default function Standards() {
   const { t } = useTranslation();
+  const rawStandards = t('standards.items', { returnObjects: true });
+  const standardsList = Array.isArray(rawStandards) && rawStandards.length > 0 ? rawStandards : STANDARDS_LIST;
 
   return (
     <section 
       id="standards" 
-      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative"
+      className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 relative"
     >
       {/* Head: Title on left, Subtitle on right (Exact Framer .framer-1deueaw) */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 pb-4">
@@ -48,14 +50,14 @@ export default function Standards() {
           {t('standards.title') || 'Engineered without compromise'}
         </h2>
         
-        <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed max-w-md">
+        <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
           {t('standards.subtitle') || 'Every template is held to the same production standard: enterprise-grade speed, rock-solid responsiveness, seamless customization.'}
         </p>
       </div>
 
       {/* Rows Container matching Framer .framer-11u7tcu & .framer-1qk6cf2 */}
       <div className="w-full flex flex-col border-t border-white/10">
-        {STANDARDS_LIST.map((std) => (
+        {standardsList.map((std) => (
           <div
             key={std.num}
             data-framer-name="Standard Row"
@@ -76,7 +78,7 @@ export default function Standards() {
             </div>
 
             {/* Std Description: flex-1 */}
-            <p className="flex-1 text-[14px] md:text-base text-[#8b87a0] font-normal leading-relaxed">
+            <p className="flex-1 text-[14px] text-[#8b87a0] font-normal leading-relaxed">
               {std.desc}
             </p>
           </div>

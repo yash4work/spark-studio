@@ -28,8 +28,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://mavric-estate.framer.website/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1',
     remixUrl: 'https://framer.com/remix/A2wFOoozRxj7JhGKve5x',
-    image: '/templates/mavric-estate.webp',
-    gallery: ['/templates/mavric-estate.webp', '/assets/template1.webp', '/assets/template2.webp']
+    image: '/templates/mavric-estate.png',
+    gallery: ['/templates/mavric-estate.png', '/assets/template1.png', '/assets/template2.png']
   },
   'aurelle-estates': {
     price: '$99',
@@ -40,8 +40,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://wandering-variations-344785.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1',
     remixUrl: 'https://framer.com/remix/kktBLW5OAcjQ8farEylL',
-    image: '/templates/aurelle-estates.webp',
-    gallery: ['/templates/aurelle-estates.webp', '/assets/template2.webp', '/assets/template3.webp']
+    image: '/templates/aurelle-estates.png',
+    gallery: ['/templates/aurelle-estates.png', '/assets/template2.png', '/assets/template3.png']
   },
   'onyx-atelier': {
     price: '$79',
@@ -52,8 +52,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://active-strengthening-218427.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1',
     remixUrl: 'https://framer.com/remix/qdTLRcAS411L53TOswm9',
-    image: '/templates/onyx-atelier.webp',
-    gallery: ['/templates/onyx-atelier.webp', '/assets/template3.webp', '/assets/template4.webp']
+    image: '/templates/onyx-atelier.png',
+    gallery: ['/templates/onyx-atelier.png', '/assets/template3.png', '/assets/template4.png']
   },
   'vellum-edition': {
     price: '$29',
@@ -64,8 +64,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://unlimited-mind-018782.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1',
     remixUrl: 'https://framer.com/remix/bedsbRAX0HralLdA1OFW',
-    image: '/templates/vellum-edition.webp',
-    gallery: ['/templates/vellum-edition.webp', '/assets/template4.webp', '/assets/template1.webp']
+    image: '/templates/vellum-edition.png',
+    gallery: ['/templates/vellum-edition.png', '/assets/template4.png', '/assets/template1.png']
   },
   'halden-edition': {
     price: '$59',
@@ -76,8 +76,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://past-network-244230.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1',
     remixUrl: 'https://framer.com/remix/y995Rq0IottjMfWKZwpL',
-    image: '/templates/halden-edition.webp',
-    gallery: ['/templates/halden-edition.webp', '/assets/template2.webp', '/assets/template4.webp']
+    image: '/templates/halden-edition.png',
+    gallery: ['/templates/halden-edition.png', '/assets/template2.png', '/assets/template4.png']
   },
   'grain-form': {
     price: '$58',
@@ -88,8 +88,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://mindful-account-986092.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1',
     remixUrl: 'https://framer.com/remix/uJLrxhYatV1KDfmU9tMs',
-    image: '/templates/grain-form.webp',
-    gallery: ['/templates/grain-form.webp', '/assets/template1.webp', '/assets/template3.webp']
+    image: '/templates/grain-form.png',
+    gallery: ['/templates/grain-form.png', '/assets/template1.png', '/assets/template3.png']
   },
   'slowgrain': {
     price: 'Free',
@@ -100,8 +100,8 @@ const TEMPLATE_META = {
     demoUrl: 'https://prosperous-statuses-272584.framer.app/style-guide',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1',
     remixUrl: 'https://framer.com/remix/52YnIzlJOEXddxCP5O1n',
-    image: '/templates/slowgrain.webp',
-    gallery: ['/templates/slowgrain.webp', '/assets/template3.webp', '/assets/template2.webp']
+    image: '/templates/slowgrain.png',
+    gallery: ['/templates/slowgrain.png', '/assets/template3.png', '/assets/template2.png']
   },
   'terra': {
     price: '$69',
@@ -113,7 +113,7 @@ const TEMPLATE_META = {
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1',
     remixUrl: 'https://www.framer.com/marketplace/templates/terra/',
     image: 'https://framerusercontent.com/images/H2DMerPuJWTvVUiihF3BX14Wdo.png',
-    gallery: ['https://framerusercontent.com/images/H2DMerPuJWTvVUiihF3BX14Wdo.png', '/assets/template1.webp', '/assets/template2.webp']
+    gallery: ['https://framerusercontent.com/images/H2DMerPuJWTvVUiihF3BX14Wdo.png', '/assets/template1.png', '/assets/template2.png']
   },
   'sasso-architect': {
     price: '$69',
@@ -125,7 +125,7 @@ const TEMPLATE_META = {
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/ec2dbd50-66e1-44d5-b412-588da7f013d8?embed=1',
     remixUrl: 'https://www.framer.com/marketplace/templates/sasso-architect/',
     image: 'https://framerusercontent.com/images/vXQOoXIJexVdw0e3emiEMLvyOds.png',
-    gallery: ['https://framerusercontent.com/images/vXQOoXIJexVdw0e3emiEMLvyOds.png', '/assets/template2.webp', '/assets/template3.webp']
+    gallery: ['https://framerusercontent.com/images/vXQOoXIJexVdw0e3emiEMLvyOds.png', '/assets/template2.png', '/assets/template3.png']
   },
   'tessovra': {
     price: '$69',
@@ -137,7 +137,7 @@ const TEMPLATE_META = {
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/02daec5f-f201-48aa-8636-d120270b5adc?embed=1',
     remixUrl: 'https://www.framer.com/marketplace/templates/tessovra/',
     image: 'https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png',
-    gallery: ['https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png', '/assets/template1.webp', '/assets/template3.webp']
+    gallery: ['https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png', '/assets/template1.png', '/assets/template3.png']
   }
 };
 
@@ -158,13 +158,17 @@ export default function TemplateDetailPage() {
   if (!meta || !templateInfo) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center">
-        <h1 className="text-3xl font-bold text-white mb-4">Template Not Found</h1>
-        <p className="text-zinc-400 mb-6">The requested template could not be located.</p>
+        <h1 className="text-3xl font-bold text-white mb-4">
+          {t('detailPage.notFoundTitle') || 'Template Not Found'}
+        </h1>
+        <p className="text-zinc-400 mb-6">
+          {t('detailPage.notFoundDesc') || 'The requested template could not be located.'}
+        </p>
         <Link
           to={currentLang === 'en' ? '/' : `/${currentLang}`}
           className="px-6 py-3 rounded-full bg-white text-black font-semibold text-sm"
         >
-          Return to Studio Home
+          {t('detailPage.returnHome') || 'Return to Studio Home'}
         </Link>
       </div>
     );
@@ -187,10 +191,10 @@ export default function TemplateDetailPage() {
     '@graph': [
       {
         '@type': 'Product',
-        '@id': `https://www.thesparkstudio.digital/templates/${slug}#product`,
+        '@id': `https://thesparkstudio.digital/templates/${slug}#product`,
         'name': templateInfo.name,
         'description': templateInfo.headline,
-        'image': meta.image?.startsWith('http') ? meta.image : `https://www.thesparkstudio.digital${meta.image}`,
+        'image': `https://thesparkstudio.digital${meta.image}`,
         'category': 'Software > Website Templates',
         'brand': {
           '@type': 'Brand',
@@ -201,7 +205,7 @@ export default function TemplateDetailPage() {
           'price': meta.numericPrice,
           'priceCurrency': 'USD',
           'availability': 'https://schema.org/InStock',
-          'url': `https://www.thesparkstudio.digital/templates/${slug}`,
+          'url': `https://thesparkstudio.digital/templates/${slug}`,
           'seller': {
             '@type': 'Organization',
             'name': 'Spark Studio'
@@ -214,20 +218,20 @@ export default function TemplateDetailPage() {
           {
             '@type': 'ListItem',
             'position': 1,
-            'name': 'Home',
-            'item': `https://www.thesparkstudio.digital${homeLink}`
+            'name': t('detailPage.breadcrumbHome') || 'Home',
+            'item': `https://thesparkstudio.digital${homeLink}`
           },
           {
             '@type': 'ListItem',
             'position': 2,
-            'name': 'Templates',
-            'item': `https://www.thesparkstudio.digital${templatesLink}`
+            'name': t('detailPage.breadcrumbTemplates') || 'Templates',
+            'item': `https://thesparkstudio.digital${templatesLink}`
           },
           {
             '@type': 'ListItem',
             'position': 3,
             'name': templateInfo.name,
-            'item': `https://www.thesparkstudio.digital/templates/${slug}`
+            'item': `https://thesparkstudio.digital${currentLang === 'en' ? '' : `/${currentLang}`}/templates/${slug}`
           }
         ]
       }
@@ -247,7 +251,7 @@ export default function TemplateDetailPage() {
   return (
     <div className="min-h-screen pt-28 pb-20">
       <SEOHead
-        title={`${templateInfo.name} — Framer Template by Spark Studio`}
+        title={`${templateInfo.name} ${t('detailPage.metaTitleSuffix') || '— Framer Template by Spark Studio'}`}
         description={templateInfo.headline}
         image={meta.image}
         jsonLd={productJsonLd}
@@ -258,11 +262,11 @@ export default function TemplateDetailPage() {
         {/* Breadcrumb Navigation */}
         <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 mb-8">
           <Link to={homeLink} className="hover:text-white transition-colors">
-            Home
+            {t('detailPage.breadcrumbHome') || 'Home'}
           </Link>
           <span>/</span>
           <a href={templatesLink} className="hover:text-white transition-colors">
-            Templates
+            {t('detailPage.breadcrumbTemplates') || 'Templates'}
           </a>
           <span>/</span>
           <span className="text-white font-medium">{templateInfo.name}</span>
@@ -274,7 +278,7 @@ export default function TemplateDetailPage() {
           className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-white mb-8 transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
-          <span>← {currentLang === 'de' ? 'Alle Vorlagen' : currentLang === 'es' ? 'Todas las plantillas' : currentLang === 'fr' ? 'Tous les templates' : 'All templates'}</span>
+          <span>{t('detailPage.allTemplatesBack') || (currentLang === 'de' ? '← Alle Vorlagen' : currentLang === 'es' ? '← Todas las plantillas' : currentLang === 'fr' ? '← Tous les templates' : '← All templates')}</span>
         </a>
 
         {/* Header Hero Area */}
@@ -297,16 +301,16 @@ export default function TemplateDetailPage() {
             {/* Quick Specs Badges */}
             <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-zinc-400 mb-10">
               <span className="px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08]">
-                Built natively in Framer
+                {t('detailPage.builtNatively') || 'Built natively in Framer'}
               </span>
               <span className="px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08]">
-                Fully responsive
+                {t('detailPage.fullyResponsive') || 'Fully responsive'}
               </span>
               <span className="px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08]">
-                CMS-ready
+                {t('detailPage.cmsReady') || 'CMS-ready'}
               </span>
               <span className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-semibold">
-                90+ Core Web Vitals
+                {t('detailPage.coreWebVitals') || '90+ Core Web Vitals'}
               </span>
             </div>
 
@@ -315,7 +319,7 @@ export default function TemplateDetailPage() {
               <div className="flex items-baseline justify-between mb-6 pb-6 border-b border-white/10">
                 <div>
                   <span className="text-xs font-mono text-[#8b87a0] uppercase tracking-wider block mb-1">
-                    Template License
+                    {t('detailPage.templateLicense') || 'Template License'}
                   </span>
                   <span className="text-3xl font-extrabold text-[#f7f6fb] font-mono">
                     {localizedPrice}
@@ -324,7 +328,7 @@ export default function TemplateDetailPage() {
                 <div className="text-right">
                   <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#8e97f7] bg-[#8e97f7]/10 px-3 py-1 rounded-full border border-[#8e97f7]/20">
                     <Check className="w-3 h-3" />
-                    Instant 1-Click Remix
+                    {t('detailPage.instantRemix') || 'Instant 1-Click Remix'}
                   </span>
                 </div>
               </div>
@@ -340,10 +344,10 @@ export default function TemplateDetailPage() {
                 >
                   <ShoppingBag className="w-4 h-4" />
                   <span>
-                    {currentLang === 'de' ? `Vorlage kaufen — ${localizedPrice}`
+                    {t('detailPage.purchaseBtn', { price: localizedPrice }) || (currentLang === 'de' ? `Vorlage kaufen — ${localizedPrice}`
                       : currentLang === 'es' ? `Comprar plantilla — ${localizedPrice}`
                       : currentLang === 'fr' ? `Acheter le template — ${localizedPrice}`
-                      : `Purchase Template — ${localizedPrice}`}
+                      : `Purchase Template — ${localizedPrice}`)}
                   </span>
                 </a>
 
@@ -354,7 +358,7 @@ export default function TemplateDetailPage() {
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-[#f7f6fb] bg-white/[0.04] hover:bg-white/[0.08] border border-white/20 transition-colors"
                   >
-                    <span>Live Demo</span>
+                    <span>{t('detailPage.liveDemo') || 'Live Demo'}</span>
                     <ArrowUpRight className="w-4 h-4" />
                   </a>
                 )}
@@ -371,7 +375,7 @@ export default function TemplateDetailPage() {
                 alt={`${templateInfo.name} — Framer Template Showcase`}
                 className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {
-                  e.target.src = '/assets/template1.webp';
+                  e.target.src = '/assets/template1.png';
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
@@ -386,7 +390,7 @@ export default function TemplateDetailPage() {
                     alt={`Preview thumbnail ${i + 1}`}
                     className="w-full h-full object-cover object-top"
                     onError={(e) => {
-                      e.target.src = '/assets/template2.webp';
+                      e.target.src = '/assets/template2.png';
                     }}
                   />
                 </div>
@@ -426,7 +430,7 @@ export default function TemplateDetailPage() {
                     <div className="w-5 h-5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-3 h-3" />
                     </div>
-                    <span className="text-sm md:text-base text-zinc-300 leading-relaxed font-normal">
+                    <span className="text-sm text-zinc-300 leading-relaxed font-normal">
                       {feature}
                     </span>
                   </div>
@@ -463,9 +467,9 @@ export default function TemplateDetailPage() {
                 <Database className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
                 <div>
                   <h3 className="text-base font-bold text-white mb-1 font-heading">
-                    Structured CMS Architecture
+                    {t('detailPage.structuredCmsTitle') || 'Structured CMS Architecture'}
                   </h3>
-                  <p className="text-sm md:text-base text-zinc-400 leading-relaxed">
+                  <p className="text-sm text-zinc-400 leading-relaxed">
                     {templateInfo.cmsDesc}
                   </p>
                 </div>
@@ -481,19 +485,19 @@ export default function TemplateDetailPage() {
               {/* Custom build banner */}
               <div className="p-6 rounded-[20px] bg-[#1b1826] border border-white/10">
                 <span className="text-xs font-mono uppercase tracking-[0.05em] text-[#8e97f7] font-bold block mb-2">
-                  CUSTOM BUILDS
+                  {t('detailPage.customBuildsEyebrow') || 'CUSTOM BUILDS'}
                 </span>
                 <h3 className="text-xl font-bold text-[#f7f6fb] mb-2 font-heading">
-                  Want this tailored to your brand?
+                  {t('detailPage.customBuildsTitle') || 'Want this tailored to your brand?'}
                 </h3>
                 <p className="text-xs text-[#8b87a0] leading-relaxed mb-6">
-                  We customize any template — or design and build your site from scratch — with the same production standard. Turnaround: 3 to 5 business days.
+                  {t('detailPage.customBuildsDesc') || 'We customize any template — or design and build your site from scratch — with the same production standard. Turnaround: 3 to 5 business days.'}
                 </p>
                 <a
-                  href={`mailto:hello@thesparkstudio.digital?subject=Custom%20Build%20Inquiry%20-%20${encodeURIComponent(templateInfo.name)}`}
+                  href={`mailto:sparkstudio0@outlook.com?subject=Custom%20Build%20Inquiry%20-%20${encodeURIComponent(templateInfo.name)}`}
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-xs font-semibold text-[#f7f6fb] border border-white/20 hover:border-white/40 hover:bg-white/[0.04] transition-all"
                 >
-                  <span>Start a custom build →</span>
+                  <span>{t('detailPage.startCustomBuild') || 'Start a custom build →'}</span>
                 </a>
               </div>
 
@@ -501,14 +505,14 @@ export default function TemplateDetailPage() {
               <div className="p-5 rounded-xl bg-white/[0.02] border border-white/[0.05] space-y-3 text-xs text-zinc-400">
                 <div className="flex items-center gap-2 text-zinc-300 font-medium">
                   <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                  <span>Commercial License Included</span>
+                  <span>{t('detailPage.licenseIncluded') || 'Commercial License Included'}</span>
                 </div>
                 <p className="text-[11px] leading-relaxed">
-                  Single production site deployment per license. 100% code-free visual canvas editing.
+                  {t('detailPage.licenseDesc') || 'Single production site deployment per license. 100% code-free visual canvas editing.'}
                 </p>
                 <div className="pt-2 border-t border-white/[0.05] flex items-center justify-between text-[11px] text-zinc-500 font-mono">
-                  <span>Support</span>
-                  <span>hello@thesparkstudio.digital</span>
+                  <span>{t('detailPage.support') || 'Support'}</span>
+                  <span>sparkstudio0@outlook.com</span>
                 </div>
               </div>
 
@@ -522,17 +526,17 @@ export default function TemplateDetailPage() {
           <div className="flex items-center justify-between mb-10">
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 block mb-1">
-                STUDIO CATALOG
+                {t('detailPage.studioCatalog') || 'STUDIO CATALOG'}
               </span>
               <h2 className="text-2xl sm:text-4xl font-bold text-white font-heading">
-                More from the studio
+                {t('detailPage.moreFromStudio') || 'More from the studio'}
               </h2>
             </div>
             <a
               href={templatesLink}
               className="text-xs font-semibold text-zinc-400 hover:text-white transition-colors"
             >
-              All templates →
+              {t('detailPage.allTemplatesLink') || 'All templates →'}
             </a>
           </div>
 
@@ -552,7 +556,7 @@ export default function TemplateDetailPage() {
                       alt={item.info?.name}
                       className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       onError={(e) => {
-                        e.target.src = '/assets/template1.webp';
+                        e.target.src = '/assets/template1.png';
                       }}
                     />
                   </Link>
@@ -580,7 +584,7 @@ export default function TemplateDetailPage() {
                     to={currentLang === 'en' ? `/templates/${item.slug}` : `/${currentLang}/templates/${item.slug}`}
                     className="text-xs font-semibold text-zinc-300 hover:text-white transition-colors"
                   >
-                    View →
+                    {t('detailPage.viewLink') || 'View →'}
                   </Link>
                 </div>
               </div>

@@ -41,6 +41,38 @@
         "title": "Arquitectura CMS dinámica y modular",
         "desc": "Colecciones con filtros dinámicos, calculadoras interactivas y componentes flexibles concebidos para crecer con su empresa."
       }
+    ],
+    "items": [
+      {
+        "num": "01",
+        "title": "90+ Core Web Vitals",
+        "desc": "Estructura DOM optimizada, scripts ligeros e imágenes WebP con compresión automática para tiempos de carga inmediatos y mejor posicionamiento en Google."
+      },
+      {
+        "num": "02",
+        "title": "Edición 100% visual, cero código",
+        "desc": "Modifique colores, cambie tipografías, reemplace imágenes y reorganice secciones mediante la interfaz nativa e intuitiva de Framer."
+      },
+      {
+        "num": "03",
+        "title": "CMS dinámico y modular",
+        "desc": "Añada decenas de casos de estudio, publicaciones, inmuebles o productos en segundos, con páginas de detalle formateadas y filtros automáticos."
+      },
+      {
+        "num": "04",
+        "title": "Breakpoints adaptativos de precisión",
+        "desc": "Cada diseño ajustado minuciosamente para escritorio (1440px), tablet (810px) y móvil (390px) garantizando una legibilidad perfecta."
+      },
+      {
+        "num": "05",
+        "title": "Archivos fuente complementarios en Figma",
+        "desc": "Archivos organizados en Figma con auto-layouts y variables de estilo reutilizables que coinciden 1:1 con el desarrollo en Framer."
+      },
+      {
+        "num": "06",
+        "title": "AEO y SEO moderno integrados",
+        "desc": "Jerarquía semántica HTML preconfigurada, metadatos OpenGraph personalizables y árbol de encabezados estructurado y limpio."
+      }
     ]
   },
   "services": {
@@ -50,36 +82,62 @@
     "items": [
       {
         "title": "Personalización de Plantilla",
-        "price": "$499 – $899",
+        "price": "499 € – 899 €",
         "turnaround": "Plazo: 3–5 días",
         "desc": "Adaptación tipográfica y paleta de color, cambio de logotipo, migración de contenido, adición de secciones a medida y auditoría responsive."
       },
       {
         "title": "Desarrollo de Sitio Framer a Medida",
-        "price": "$2,500 – $6,000+",
+        "price": "2.500 € – 6.000 €+",
         "turnaround": "Plazo: 2–3 semanas",
         "desc": "Diseño UI/UX exclusivo, componentes nativos en Framer, microinteracciones fluidas, arquitectura CMS dinámica y optimización Core Web Vitals."
       },
       {
         "title": "Conversión de Figma a Framer",
-        "price": "$1,500 – $3,500",
+        "price": "1.500 € – 3.500 €",
         "turnaround": "Plazo: 7–10 días",
         "desc": "Traducción 1:1 pixel-perfect de sus diseños en Figma a páginas interactivas y listas para producción en Framer con componentes dinámicos."
       },
       {
         "title": "Optimización de Velocidad y Rendimiento en Framer",
-        "price": "$350 – $600",
+        "price": "350 € – 600 €",
         "turnaround": "Plazo: 2–3 días",
         "desc": "Consolidación tipográfica, compresión AVIF/WebP, carga diferida de scripts y corrección de cambios de diseño para garantizar PageSpeed 90+."
       }
-    ]
+    ],
+    "processEyebrow": "CÓMO TRABAJAMOS",
+    "processSteps": [
+      {
+        "num": "01",
+        "title": "Descubrimiento",
+        "desc": "Una breve llamada para entender sus objetivos, público y alcance — seguida de una propuesta transparente."
+      },
+      {
+        "num": "02",
+        "title": "Diseño",
+        "desc": "Moodboard, pantallas principales y sistema de diseño, revisados conjuntamente antes de construir."
+      },
+      {
+        "num": "03",
+        "title": "Desarrollo",
+        "desc": "Construcción nativa en Framer con CMS, animaciones fluidas y puntos de ruptura adaptados a cada dispositivo."
+      },
+      {
+        "num": "04",
+        "title": "Lanzamiento",
+        "desc": "Dominio, SEO, analítica y sesión de entrega para que su equipo gestione el contenido con total autonomía."
+      }
+    ],
+    "eyebrow": "PROYECTOS A MEDIDA",
+    "replyNotice": "Respondemos en menos de 24 horas",
+    "cta": "Iniciar un proyecto →"
   },
   "templates": {
     "tag": "PLANTILLAS",
     "title": "Plantillas profesionales y flagships digitales",
     "subtitle": "Desarrolladas con interacciones fluidas, estructuras CMS dinámicas y mantenimiento cero.",
     "viewTemplate": "Ver plantilla →",
-    "liveDemo": "Demo en vivo ↗",
+    "liveDemo": "Demo en vivo",
     "buyNow": "Comprar ahora",
     "allTemplates": "Todas las plantillas →",
     "items": [
@@ -91,7 +149,8 @@
         "price": "69 €",
         "image": "/templates/mavric-estate.png",
         "demoUrl": "https://mavric-estate.framer.website/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1",
+        "categoryKey": "real-estate"
       },
       {
         "slug": "aurelle-estates",
@@ -101,7 +160,8 @@
         "price": "99 €",
         "image": "/templates/aurelle-estates.png",
         "demoUrl": "https://wandering-variations-344785.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1",
+        "categoryKey": "real-estate"
       },
       {
         "slug": "onyx-atelier",
@@ -111,7 +171,8 @@
         "price": "79 €",
         "image": "/templates/onyx-atelier.png",
         "demoUrl": "https://active-strengthening-218427.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1",
+        "categoryKey": "architecture"
       },
       {
         "slug": "vellum-edition",
@@ -121,7 +182,8 @@
         "price": "29 €",
         "image": "/templates/vellum-edition.png",
         "demoUrl": "https://unlimited-mind-018782.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1",
+        "categoryKey": "craft"
       },
       {
         "slug": "halden-edition",
@@ -131,7 +193,8 @@
         "price": "59 €",
         "image": "/templates/halden-edition.png",
         "demoUrl": "https://past-network-244230.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1",
+        "categoryKey": "real-estate"
       },
       {
         "slug": "grain-form",
@@ -141,7 +204,8 @@
         "price": "58 €",
         "image": "/templates/grain-form.png",
         "demoUrl": "https://mindful-account-986092.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1",
+        "categoryKey": "architecture"
       },
       {
         "slug": "slowgrain",
@@ -151,19 +215,82 @@
         "price": "Gratis",
         "image": "/templates/slowgrain.png",
         "demoUrl": "https://prosperous-statuses-272584.framer.app/style-guide",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1",
+        "categoryKey": "craft"
+      },
+      {
+        "slug": "terra",
+        "name": "TERRA",
+        "category": "Tienda editorial para estudios de muebles y galerías",
+        "categoryKey": "craft",
+        "tagline": "Una plantilla editorial serena creada para estudios de mobiliario, artesanos de objetos y galerías de diseño moderno.",
+        "price": "69 €",
+        "badge": "Agent",
+        "image": "https://framerusercontent.com/images/H2DMerPuJWTvVUiihF3BX14Wdo.png",
+        "demoUrl": "https://vibrant-checkbox-000943.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1"
+      },
+      {
+        "slug": "sasso-architect",
+        "name": "SASSO Architect",
+        "category": "Monografía de estudio de arquitectura e interiorismo",
+        "categoryKey": "architecture",
+        "tagline": "Estudio de Arquitectura e Interiorismo — Monografía digital de referencia para estudios boutique de arquitectura y diseño espacial.",
+        "price": "69 €",
+        "badge": "Agent",
+        "image": "https://framerusercontent.com/images/vXQOoXIJexVdw0e3emiEMLvyOds.png",
+        "demoUrl": "https://small-bookings-302943.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/ec2dbd50-66e1-44d5-b412-588da7f013d8?embed=1"
+      },
+      {
+        "slug": "tessovra",
+        "name": "TESSOVRA",
+        "category": "Showroom e-commerce de azulejos y superficies",
+        "categoryKey": "craft",
+        "tagline": "Showroom de Azulejos y Superficies — E-commerce arquitectónico creado para materiales táctiles e interiores de autor.",
+        "price": "69 €",
+        "badge": "Agent",
+        "image": "https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png",
+        "demoUrl": "https://hilarious-variations-838642.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/02daec5f-f201-48aa-8636-d120270b5adc?embed=1"
       }
-    ]
+    ],
+    "categories": [
+      {
+        "id": "all",
+        "label": "Todas las plantillas"
+      },
+      {
+        "id": "real-estate",
+        "label": "Inmobiliaria y hogar"
+      },
+      {
+        "id": "architecture",
+        "label": "Arquitectura y espacios"
+      },
+      {
+        "id": "craft",
+        "label": "Artesanía y comercio"
+      }
+    ],
+    "pipeline": {
+      "title": "Catálogo en expansión",
+      "desc": "SaaS, comercio digital y portfolios creativos — nuevas plantillas muy pronto. Únase a la lista para precios anticipados.",
+      "cta": "Recibir avisos de lanzamiento →"
+    },
+    "viewDetails": "Ver detalles",
+    "freeRemix": "Remix gratis",
+    "badgeAgent": "Agent"
   },
   "bundles": {
     "tag": "PACKS Y AHORRO",
-    "title": "Ahorre hasta un 48% con packs exclusivos de plantillas.",
+    "title": "Ahorre hasta un 68% con packs exclusivos de plantillas.",
     "subtitle": "Combinaciones estratégicas y el catálogo completo del estudio con licencias comerciales.",
     "pickAny3": {
       "badge": "MÁS POPULAR",
       "title": "Pack Inicial Elige 3 Plantillas",
       "price": "$99",
-      "regularPrice": "$190",
+      "regularPrice": "$216",
       "features": [
         "Elija 3 plantillas cualesquiera de nuestro catálogo",
         "Licencia comercial completa por plantilla",
@@ -174,36 +301,36 @@
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
     },
     "soloVault": {
-      "badge": "MEJOR VALOR · AHORRE $288 (48% DTO)",
+      "badge": "MEJOR VALOR",
       "title": "Vault Completo de Estudio (Solo)",
-      "price": "$312",
-      "regularPrice": "$600",
+      "price": "$149",
+      "regularPrice": "$392",
       "features": [
-        "Acceso inmediato a TODAS las 9 plantillas + Slowgrain",
+        "Acceso inmediato a TODAS las 7 plantillas + Slowgrain",
         "Licencia comercial individual por plantilla",
         "Sistemas de tokens de diseño y guías de estilo",
         "Canal directo de asistencia técnica"
       ],
-      "cta": "Desbloquear Vault Completo — $312",
+      "cta": "Desbloquear Vault Completo — $149",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
     },
     "agencyVault": {
-      "badge": "PARA AGENCIAS · AHORRE 48%",
+      "badge": "PARA AGENCIAS",
       "title": "Vault Completo de Estudio (Agencia)",
-      "price": "$500",
-      "regularPrice": "$960",
+      "price": "$249",
+      "regularPrice": "$590",
       "features": [
-        "Todas las 10 plantillas con despliegues ilimitados en clientes",
+        "Todas las plantillas con despliegues ilimitados en clientes",
         "Conserve el 100% de los ingresos de sus proyectos",
-        "Bibliotecas completas de componentes y recursos de diseño",
+        "Archivos Figma y recursos de diseño complementarios",
         "Incorporación prioritaria con desarrolladores"
       ],
-      "cta": "Obtener Vault de Agencia — $500",
+      "cta": "Obtener Vault de Agencia — $249",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
       {
-        "tag": "INMOBILIARIA · AHORRE 69 $ (41% DTO)",
+        "tag": "INMOBILIARIA · AHORRE 69 $",
         "title": "Duo Inmobiliario de Alto Nivel",
         "price": "$99",
         "regularPrice": "$168",
@@ -212,7 +339,7 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
-        "tag": "ARQUITECTURA · AHORRE 39 $ (36% DTO)",
+        "tag": "ARQUITECTURA · AHORRE 39 $",
         "title": "Duo Monográfico de Arquitectura",
         "price": "$69",
         "regularPrice": "$108",
@@ -221,12 +348,124 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {
-        "tag": "COMERCIO Y ARTESANÍA · AHORRE 67 $ (36% DTO)",
+        "tag": "COMERCIO Y ARTESANÍA · AHORRE 67 $",
         "title": "Suite de E-Commerce y Creación Artesanal",
         "price": "$119",
         "regularPrice": "$186",
         "desc": "TESSOVRA (69 €) + Halden Edition (59 €) + Grain & Form (58 €) (+ Slowgrain Gratis). Seleccionado para talleres y tiendas boutique.",
         "cta": "Obtener Suite Artesanal — $119",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
+      }
+    ],
+    "exclusiveEyebrow": "PACKS EXCLUSIVOS Y ACCESO AL VAULT",
+    "exclusiveTitle": "Ahorre hasta un 68% con packs exclusivos de plantillas.",
+    "exclusiveDesc": "Plantillas en Framer listas para producción agrupadas para creadores independientes, estudios y agencias. 100% nativas, colección estática con acceso inmediato a remix en 1 clic.",
+    "nicheTitle": "Packs Temáticos por Categoría",
+    "nicheEyebrow": "COMBINACIONES ESTRATÉGICAS PARA SECTORES ESPECÍFICOS",
+    "vaultList": [
+      {
+        "id": "pick-any-3",
+        "badge": "ELECCIÓN FLEXIBLE",
+        "isFeatured": false,
+        "title": "Pack Inicial Elige 3 Plantillas",
+        "price": "99 €",
+        "regularPrice": "/ Ahorra hasta 148 € (60% DTO)",
+        "desc": "Elija 3 plantillas cualesquiera de nuestro catálogo. Ideal para profesionales con proyectos inminentes de clientes.",
+        "features": [
+          "3 plantillas en Framer para producción a elegir",
+          "Enlaces directos de duplicación y remix en 1 clic",
+          "Archivos fuente complementarios en Figma (.fig)",
+          "Colecciones dinámicas CMS e interfaz responsive",
+          "Uso en un sitio web de producción por plantilla"
+        ],
+        "cta": "Elegir 3 plantillas — 99 €",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
+      },
+      {
+        "id": "solo-vault",
+        "badge": "MÁS POPULAR · AHORRA 313 € (68% DTO)",
+        "isFeatured": true,
+        "title": "Vault Completo de Estudio (Solo)",
+        "price": "149 €",
+        "regularPrice": "/ 462 € valor habitual",
+        "desc": "Acceso inmediato a las 7 plantillas de pago + Slowgrain. La biblioteca de diseño más exclusiva para creadores ambiciosos.",
+        "features": [
+          "Las 7 plantillas de pago + Slowgrain (Gratis)",
+          "Aurelle (99 €) + Onyx (79 €) + Tessovra (69 €)",
+          "Mavric (69 €) + Halden (59 €) + Grain & Form (58 €)",
+          "Vellum Edition (29 €) incluida",
+          "Kits de UI y especificaciones completas en Figma",
+          "Licencia comercial individual por plantilla"
+        ],
+        "cta": "Desbloquear Vault Completo — 149 €",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
+      },
+      {
+        "id": "agency-vault",
+        "badge": "DERECHOS ILIMITADOS PARA CLIENTES",
+        "isFeatured": false,
+        "title": "Vault Completo de Estudio (Agencia)",
+        "price": "249 €",
+        "regularPrice": "/ 1.200 €+ valor comercial",
+        "desc": "Colección íntegra de 8 plantillas con licencias comerciales ilimitadas. Entregue proyectos premium a clientes y retenga el 100% de sus honorarios.",
+        "features": [
+          "Las 7 plantillas de pago + Slowgrain",
+          "Despliegues comerciales ilimitados para clientes",
+          "Conserve el 100% de los ingresos de sus proyectos",
+          "Todos los archivos Figma y recursos de diseño",
+          "Soporte prioritario e incorporación guiada"
+        ],
+        "cta": "Conseguir Vault para Agencias — 249 €",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
+      }
+    ],
+    "nicheList": [
+      {
+        "id": "real-estate-duo",
+        "tag": "INMOBILIARIA · AHORRA 69 €",
+        "title": "Dúo Inmobiliario de Alto Lujo",
+        "price": "99 €",
+        "regularPrice": "/ 168 € valor habitual",
+        "desc": "Aurelle Estates (99 €) + Mavric Estate (69 €). El kit definitivo para inmobiliarias de lujo, promotores y agentes exclusivos.",
+        "features": [
+          "Aurelle Estates (99 €) plantilla para residencias de lujo",
+          "Mavric Estate (69 €) portal para agentes y propiedades",
+          "Colecciones CMS dinámicas completas incluidas",
+          "Edición 100% visual sin escribir una sola línea de código"
+        ],
+        "cta": "Conseguir Dúo Inmobiliario — 99 €",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
+      },
+      {
+        "id": "architecture-duo",
+        "tag": "ARQUITECTURA · AHORRA 39 €",
+        "title": "Dúo Monografía de Arquitectura",
+        "price": "69 €",
+        "regularPrice": "/ 108 € valor habitual",
+        "desc": "Onyx Atelier (79 €) + Vellum Edition (29 €). Concebido para estudios de arquitectura, paisajismo y publicaciones monográficas.",
+        "features": [
+          "Onyx Atelier (79 €) portfolio oscuro de estilo exposición",
+          "Vellum Edition (29 €) monografía sobria tipo libro de arte",
+          "Sistemas de composición de alto contraste y galerías",
+          "Velocidad de 95+ en Core Web Vitals sin configuraciones"
+        ],
+        "cta": "Conseguir Dúo Arquitectura — 69 €",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
+      },
+      {
+        "id": "artisan-suite",
+        "tag": "COMERCIO Y ARTESANÍA · AHORRA 67 €",
+        "title": "Suite Hogar de Autor y E-Commerce",
+        "price": "119 €",
+        "regularPrice": "/ 186 € valor habitual",
+        "desc": "TESSOVRA (69 €) + Halden Edition (59 €) + Grain & Form (58 €) (+ Slowgrain Gratis). Ideal para talleres artesanos y boutiques.",
+        "features": [
+          "TESSOVRA (69 €) tienda insignia para superficies de lujo",
+          "Halden Edition (59 €) catálogo para piezas de colección",
+          "Grain & Form (58 €) escaparate de decoración y cerámica",
+          "Tokens de diseño SLOWGRAIN de nivel museístico incluidos"
+        ],
+        "cta": "Conseguir Suite Artesanal — 119 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
       }
     ]
@@ -250,7 +489,7 @@
       },
       {
         "question": "¿Cómo iniciamos la colaboración?",
-        "answer": "Envíe el brief de su proyecto directamente a hello@thesparkstudio.digital. Revisaremos sus requerimientos y le responderemos en menos de 24 horas con un presupuesto cerrado y fecha de inicio."
+        "answer": "Envíe el brief de su proyecto directamente a sparkstudio0@outlook.com. Revisaremos sus requerimientos y le responderemos en menos de 24 horas con un presupuesto cerrado y fecha de inicio."
       }
     ]
   },
@@ -258,7 +497,7 @@
     "tag": "INICIAR CONVERSACIÓN",
     "title": "Creemos algo excepcional juntos.",
     "subtitle": "¿Tiene dudas sobre una plantilla, una integración específica o desea encargarnos un sitio web a medida? Le responderemos en menos de 24 horas.",
-    "email": "hello@thesparkstudio.digital",
+    "email": "sparkstudio0@outlook.com",
     "formName": "Su Nombre",
     "formEmail": "Correo Electrónico",
     "formType": "Tipo de Proyecto",
@@ -271,22 +510,51 @@
     ],
     "formBudget": "Rango de Presupuesto",
     "budgetOptions": [
-      "< $1,000",
-      "$1,000 – $3,000",
-      "$3,000 – $6,000",
-      "$6,000+"
+      "< 1.000 €",
+      "1.000 € – 3.000 €",
+      "3.000 € – 6.000 €",
+      "6.000 €+"
     ],
     "formMessage": "Cuéntenos sobre su proyecto...",
     "submitBtn": "Enviar Consulta →",
     "sending": "Enviando...",
     "success": "¡Muchas gracias! Su mensaje ha sido enviado. Le responderemos en menos de 24 horas.",
     "directChannels": "Canales Directos",
-    "responseTime": "Respuesta garantizada en 24h"
+    "responseTime": "Respuesta garantizada en 24h",
+    "cardTitle": "Consulta de Proyecto",
+    "cardDesc": "Cuéntenos sobre su marca, el alcance del proyecto y los plazos.",
+    "formMessagePlaceholder": "Cuéntenos sobre su marca, el alcance previsto y sus objetivos de entrega...",
+    "successTitle": "Consulta Recibida",
+    "successMessage": "¡Muchas gracias! Hemos recibido la información de su proyecto y responderemos en menos de 24 horas.",
+    "sendAnother": "Enviar otro mensaje"
   },
   "footer": {
-    "tagline": "Plantillas Framer de alto rendimiento y sitios web a medida para marcas ambiciosas en todo el mundo.",
-    "rights": "© 2026 Spark Studio. All rights reserved.",
-    "builtWith": "Construido con capas nativas en Framer · Optimizado para Core Web Vitals"
+    "tagline": "Sitios web de alto rendimiento, software a medida y flagships digitales diseñados para marcas ambiciosas en todo el mundo.",
+    "statusAvailable": "Disponible para nuevos proyectos",
+    "statusReplies": "Respuesta en menos de 24h",
+    "colStudio": "Estudio",
+    "colServices": "Capacidades",
+    "colTemplates": "Plantillas y Packs",
+    "colConnect": "Consultas y Canales",
+    "links": {
+      "projects": "Proyectos destacados",
+      "services": "Servicios y tarifas",
+      "standards": "Estándares de ingeniería",
+      "about": "Sobre Spark Studio",
+      "faq": "Preguntas y proceso",
+      "contact": "Iniciar un proyecto",
+      "webDesign": "Sitios web y CMS a medida",
+      "customSoftware": "Software y SaaS a medida",
+      "figmaToCode": "De Figma a código de producción",
+      "speedOpt": "Optimización Core Web Vitals",
+      "framerRebrand": "Personalización de plantillas",
+      "allTemplates": "Todas las plantillas",
+      "theVault": "The Spark Vault",
+      "nichePacks": "Packs especializados",
+      "framerProfile": "Perfil en Framer Marketplace"
+    },
+    "rights": "© 2026 Spark Studio. Todos los derechos reservados.",
+    "builtWith": "Optimizado para 95+ Core Web Vitals · Arquitectura web de alta conversión"
   },
   "templateDetails": {
     "mavric-estate": {
@@ -319,14 +587,15 @@
       "category": "Inmobiliaria editorial de alto nivel",
       "headline": "Los compradores de alto patrimonio buscan autoridad arquitectónica, no portales masivos.",
       "overviewTitle": "RESUMEN",
-      "overview": "Plantilla editorial exclusiva para agencias inmobiliarias prime, residencias históricas y family offices.",
+      "overview": "Aurelle Estates es una plantilla inmobiliaria editorial de ultra lujo diseñada para agencias de prestigio, propiedades prime y firmas de asesoramiento patrimonial. Desarrollada con tipografía de alto contraste, exposiciones espaciales dignas de una galería y microinteracciones fluidas que elevan el valor de cada inmueble.",
       "featuresTitle": "Características para agencias inmobiliarias prime",
       "features": [
-        "Presentación monográfica editorial para propiedades de lujo.",
-        "Cuadrícula multimedia adaptativa con proporciones equilibradas.",
-        "Directorio de asesores y socios con contacto directo.",
-        "Guías de vecindarios con mapas de estilo de vida.",
-        "Sección exclusiva para propiedades privadas fuera de mercado (Off-Market)."
+        "Expositor Monográfico de Propiedades — Diseños editoriales exclusivos concebidos como monografías arquitectónicas.",
+        "Malla Multimedia Dinámica Multi-Dispositivo — Equilibrio fluido de proporciones para fotografía inmobiliaria cinematográfica.",
+        "Directorios de Asesores y Socios — Perfiles de equipo completos con derivación directa de consultas de compra y venta.",
+        "Mapas de Barrio Interactivos — Guías seleccionadas que destacan el estilo de vida, la gastronomía y la cultura de la zona.",
+        "Acceso a Propiedades Exclusivas y Off-Market — Mecanismos específicos de captación de clientes potenciales para listados privados.",
+        "Formulario Dinámico de Valoración — Entrada sin fricciones para propietarios de inmuebles de alto valor."
       ],
       "includedTitle": "Qué incluye",
       "included": [
@@ -343,14 +612,15 @@
       "category": "Arquitectura monolítica e interiorismo",
       "headline": "La mayoría de portfolios de arquitectura son rejillas de fotos sin alma. Onyx Atelier está concebido como una monografía de galería.",
       "overviewTitle": "RESUMEN",
-      "overview": "Diseñado para estudios de arquitectura y urbanismo que destacan por su rigor material y conceptual.",
+      "overview": "Onyx Atelier es una plantilla de portfolio tipográfica y brutalista diseñada para estudios de arquitectura, diseñadores de monografías espaciales y despachos de interiorismo. Creada para enfatizar la escala, la textura de los materiales y el rigor conceptual.",
       "featuresTitle": "Características para firmas de arquitectura",
       "features": [
-        "Motor de casos de estudio por capítulos con planos y renders a sangre.",
-        "Escala tipográfica Bodoni Moda y rigor suizo.",
-        "Fichas técnicas con materiales, metros cuadrados y año de entrega.",
-        "Visor de planos en alta resolución con zoom interactivo.",
-        "Filtro por tipología (Residencial, Cultural, Comercial)."
+        "Motor de Casos de Estudio Monográficos — Presentación de proyectos por capítulos con planos a sangre y perspectivas renderizadas.",
+        "Escala Tipográfica Suiza y Bodoni Moda — Ritmo tipográfico editorial concebido para realzar la intención espacial.",
+        "Etiquetas de Materialidad y Especificaciones — Sistema de etiquetas para materiales constructivos, metros cuadrados y año.",
+        "Visor Interactivo de Planos en Lightbox — Visualizador de alta definición con zoom y navegación panorámica.",
+        "Filtro de Proyectos por Tipología y Escala — Clasificación por Residencial, Comercial, Cultural o Experimental.",
+        "Estética de Exposición Monocromática — Tono oscuro atemporal que cede todo el protagonismo a los renders arquitectónicos."
       ],
       "includedTitle": "Qué incluye",
       "included": [
@@ -367,13 +637,14 @@
       "category": "Portfolio editorial de arquitectura",
       "headline": "Una monografía sobria tipo libro de arte para estudios de arquitectura donde manda la fotografía y la materia.",
       "overviewTitle": "RESUMEN",
-      "overview": "Inspirado en publicaciones suizas de coleccionista y un minimalismo cálido y táctil.",
+      "overview": "Vellum Edition es una plantilla tipo monografía de libro de arte para estudios de lujo sobrio, talleres de interiorismo y arquitectos residenciales. Inspirada en publicaciones arquitectónicas suizas y en un minimalismo cálido y táctil.",
       "featuresTitle": "Características principales",
       "features": [
-        "Casos de estudio en 4 capítulos: Contexto, Materialidad, Forma, Vivencia.",
-        "Paleta sobria tono piedra y pergamino.",
-        "Narrativa visual asimétrica de gran impacto.",
-        "Testimonios integrados como citas editoriales."
+        "Casos de Estudio en 4 Capítulos — Estructura narrativa detallada: Contexto, Materialidad, Forma y Experiencia.",
+        "Paleta Editorial de Cal y Pergamino — Tonos cálidos de piedra y papel diseñados para una lectura pausada y reflexiva.",
+        "Storyboarding Fotográfico Asimétrico — Ritmo medido entre planos arquitectónicos generales y texturas en detalle.",
+        "Monólogos y Testimonios de Clientes — Reseñas editoriales integradas de forma orgánica en la historia de cada proyecto.",
+        "Ritmo Monográfico Impecable en Móviles — Umbrales de desplazamiento e interacciones táctiles calibradas con precisión."
       ],
       "includedTitle": "Sistema de Diseño y Especificaciones",
       "included": [
@@ -390,7 +661,7 @@
       "category": "Estudio de mobiliario y objetos de diseño",
       "headline": "Las tiendas genéricas devalúan la artesanía. Halden Edition está pensada para piezas de colección.",
       "overviewTitle": "RESUMEN",
-      "overview": "Pensado para ebanisterías de autor, creadores de mobiliario y talleres que realizan piezas a medida.",
+      "overview": "Halden Edition es una plantilla de escaparate y comercio electrónico diseñada para ebanisterías de autor, artesanos consagrados y talleres de mobiliario. Enfatiza las vetas de la madera, los ensambles tradicionales y los encargos a medida.",
       "featuresTitle": "Características para talleres y creadores",
       "features": [
         "Cronología del taller con procedencia de las maderas.",
@@ -414,7 +685,7 @@
       "category": "Decoración artesanal y comercio táctil",
       "headline": "Las tiendas online habituales se sienten impersonales. Grain & Form aporta calidez y textura al hogar.",
       "overviewTitle": "RESUMEN",
-      "overview": "Plantilla para marcas de decoración, cerámica y objetos del hogar con encuadres en arco distintivos.",
+      "overview": "Grain & Form es una plantilla para artículos del hogar de autor y decoración artesanal. Diseñada con tonos tierra cálidos, marcos en arco distintivos y composiciones táctiles que hacen que los objetos se sientan valiosos y cuidados.",
       "featuresTitle": "Características para objetos artesanos",
       "features": [
         "Marcos en arco y cuadrículas fluidas.",
@@ -438,7 +709,7 @@
       "category": "Madera maciza y ebanistería tradicional",
       "headline": "Plantilla editorial en nivel de museo para talleres de madera maciza y ebanistas.",
       "overviewTitle": "RESUMEN",
-      "overview": "Un homenaje a los ensambles japoneses y a la sobriedad escandinava.",
+      "overview": "SLOWGRAIN es un tributo a los ensambles de la carpintería japonesa y a la calma escandinava. Diseñada para ebanistas de alto nivel, estudios de madera y talleres que desean transmitir maestría silenciosa.",
       "featuresTitle": "Puntos clave:",
       "features": [
         "Estética Wabi-Sabi y proporciones equilibradas.",
@@ -462,12 +733,15 @@
       "category": "Tienda editorial para estudios de diseño y mobiliario",
       "headline": "Plantilla de tienda editorial y serena diseñada para estudios de muebles, creadores de objetos y galerías de diseño contemporáneo.",
       "overviewTitle": "RESUMEN",
-      "overview": "TERRA está diseñada para marcas que buscan que sus piezas se sientan seleccionadas con mimo y sin saturación. Con fotografía a gran escala y paleta sobria.",
+      "overview": "TERRA está hecha para estudios de mobiliario, creadores de objetos, galerías de diseño y marcas del hogar que buscan que sus piezas se sientan seleccionadas con mimo y sin saturación. Destaca por su fotografía a gran formato, amplios espacios en blanco y una paleta sobria de tiza, berenjena y lila suave.",
       "featuresTitle": "Características destacadas",
       "features": [
-        "Carrito deslizable front-end — Carrito lateral fluido con contador de artículos y subtotal interactivo.",
-        "Filtros dinámicos de catálogo — Filtrado por categoría, material, acabado y rango de precio.",
-        "Ficha de producto de nivel editorial — Panel de compra fijo, muestras de acabados y especificaciones técnicas."
+        "Carrito Deslizable Front-End — Carrito lateral fluido con contador de artículos, selector de cantidades y cálculo de subtotal.",
+        "Filtros Interactivos de Colección — Filtrado cómodo por categoría, material, acabado y rango de precio.",
+        "Páginas de Producto Monográficas — Panel de compra fijo, muestras de acabados, plano con dimensiones acotadas y acordeones técnicos.",
+        "Explorador de Estancias «In Good Company» — Escena de habitación interactiva con marcadores numerados por producto.",
+        "Estudios de Exposición Fijados y Movimiento Sutil — Efectos de zoom anclados, suave paralaje y transiciones de cabecera.",
+        "Skill de Agente Framer AI Integrado — Sistema terra-design-system integrado para iteraciones de diseño automatizadas."
       ],
       "includedTitle": "Qué incluye",
       "included": [
@@ -484,12 +758,14 @@
       "category": "Monografía digital para estudios de arquitectura e interiorismo",
       "headline": "Estudio de arquitectura e interiorismo — Flagship digital de grado monográfico para estudios boutique y ateliers espaciales.",
       "overviewTitle": "RESUMEN",
-      "overview": "Diseñado para arquitectos y estudios que gestionan proyectos de alto valor. Inspirado en las monografías arquitectónicas suizas.",
+      "overview": "Diseñado para arquitectos y estudios espaciales que gestionan proyectos de envergadura y alto valor. Inspirado en las monografías de arquitectura suiza; transmite contención estructural, calidad material y permanencia.",
       "featuresTitle": "Características arquitectónicas clave",
       "features": [
-        "Cualificación de encargos y reservas — Formulario estructurado por tipología, alcance, ubicación y presupuesto.",
-        "Casos de estudio monográficos — Planos de arquitectura, dibujos axonométricos y paletas táctiles de materiales.",
-        "3 Colecciones CMS dinámicas — Proyectos de arquitectura, disciplinas del estudio y diario de notas."
+        "Cualificación de Encargos y Reservas — Formulario estructurado por pasos (Tipología, Alcance, Ubicación y Presupuesto).",
+        "Casos de Estudio Monográficos — Planos de arquitectura, dibujos axonométricos y muestras táctiles de materiales.",
+        "3 Colecciones CMS Dinámicas — Proyectos de Arquitectura (/work/:slug), Disciplinas (/expertise/:slug) y Diario de Notas (/journal/:slug).",
+        "Cadencia Tipográfica Suiza — Combinación editorial de la serifa Tinos con la precisión técnica de la sans Geist.",
+        "Skill de Agente Framer AI Integrado — Sistema sasso-design-system integrado para personalizaciones de marca arquitectónica."
       ],
       "includedTitle": "Qué incluye",
       "included": [
@@ -506,12 +782,14 @@
       "category": "Showroom y ecommerce de cerámica y superficies",
       "headline": "Showroom y comercio electrónico de azulejos y superficies — Comercio electrónico arquitectónico diseñado para superficies táctiles, interiores a medida y talleres de diseño.",
       "overviewTitle": "RESUMEN",
-      "overview": "Template de comercio electrónico inmersivo diseñado para marcas prémium donde la textura física y la calidad de los materiales son determinantes.",
+      "overview": "Template de comercio electrónico y showroom inmersivo diseñado para marcas prémium donde la textura física y la procedencia de los materiales son decisivas en la compra.",
       "featuresTitle": "Funcionalidades del showroom",
       "features": [
-        "Calculador de superficie y cajas — Cálculo instantáneo de metros cuadrados con margen de corte y redondeo por cajas.",
-        "Moodboard interactivo — Guarda acabados en tu tablero y envía solicitudes de presupuesto en un clic.",
-        "Carrito lateral integrado — Pide muestras de materiales con selector de cantidades."
+        "Calculador de Superficie y Cajas — Cálculo automático de metros cuadrados con margen recomendado para recortes y redondeo de cajas.",
+        "Moodboard Interactivo y Solicitud de Presupuesto — Guarde acabados en su tablero personal y envíe solicitudes de cotización al instante.",
+        "Carrito Lateral Nativo Front-End — Solicite muestras físicas de materiales, ajuste unidades y consulte subtotales con fluidez.",
+        "Comparativa de Superficies Antes/Después — Comparador interactivo deslizable entre diferentes acabados.",
+        "Mega-Menú y Diario Arquitectónico en CMS — Casos de estudio en profundidad y guías editoriales de estilo de estancias."
       ],
       "includedTitle": "Qué incluye",
       "included": [
@@ -523,5 +801,51 @@
       "cmsTitle": "19 páginas incluidas",
       "cmsDesc": "Inicio, Tienda, Producto (CMS), Carrito, Moodboard, Muestras, Showroom, Solicitudes y 404."
     }
+  },
+  "about": {
+    "eyebrow": "SOBRE SPARK STUDIO",
+    "title": "Las plantillas web no deberían parecer copias genéricas producidas en masa.",
+    "p1": "Somos un estudio multidisciplinar de diseño digital que crea plantillas Framer de alto calibre y experiencias digitales a medida — para fundadores, agencias creativas y marcas ambiciosas de cualquier sector, desde startups SaaS en plena expansión hasta estudios espaciales de lujo y portfolios editoriales.",
+    "p2": "Cada plantilla que publicamos está construida como una web hecha a medida: tipografía editorial, microinteracciones sutiles y arquitectura CMS impecable. Lista para usar este fin de semana o desarrollada desde cero para su marca — la excelencia del diseño se mantiene inquebrantable."
+  },
+  "marquee": {
+    "items": [
+      "Plantillas concebidas para convertir y escalar",
+      "Diseño web exclusivo a medida",
+      "Plantillas listas para producción",
+      "90+ Core Web Vitals"
+    ]
+  },
+  "cursor": {
+    "view": "Ver"
+  },
+  "detailPage": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbTemplates": "Plantillas",
+    "allTemplatesBack": "← Todas las plantillas",
+    "builtNatively": "Construida nativamente en Framer",
+    "fullyResponsive": "Totalmente adaptable",
+    "cmsReady": "Integración CMS nativa",
+    "coreWebVitals": "90+ Core Web Vitals",
+    "templateLicense": "Licencia de Plantilla",
+    "instantRemix": "Remix inmediato en 1 clic",
+    "purchaseBtn": "Comprar plantilla — {{price}}",
+    "liveDemo": "Demo en vivo",
+    "structuredCmsTitle": "Arquitectura CMS Estructurada",
+    "customBuildsEyebrow": "PROYECTOS A MEDIDA",
+    "customBuildsTitle": "¿Desea adaptarla a su identidad corporativa?",
+    "customBuildsDesc": "Personalizamos cualquier plantilla — o diseñamos y desarrollamos su web desde cero — con el mismo estándar de producción. Plazo: 3 a 5 días laborables.",
+    "startCustomBuild": "Encargar proyecto a medida →",
+    "licenseIncluded": "Licencia Comercial Incluida",
+    "licenseDesc": "Implementación en un sitio web de producción por licencia. Edición visual 100% libre de código.",
+    "support": "Soporte",
+    "studioCatalog": "CATÁLOGO DEL ESTUDIO",
+    "moreFromStudio": "Más creaciones del estudio",
+    "allTemplatesLink": "Todas las plantillas →",
+    "viewLink": "Ver →",
+    "notFoundTitle": "Plantilla no encontrada",
+    "notFoundDesc": "No se ha podido localizar la plantilla solicitada.",
+    "returnHome": "Volver al inicio del estudio",
+    "metaTitleSuffix": "— Plantilla Framer de Spark Studio"
   }
 }

@@ -28,43 +28,44 @@ const PROCESS_STEPS = [
 const SERVICES_LIST = [
   {
     num: '01',
-    title: 'Next.js & React Full-Stack Web Applications ($2,500 – $7,500+)',
-    desc: 'Scalable web applications, SaaS frontends, client dashboards, and interactive web tools engineered with Next.js, React 19, TypeScript, and Tailwind CSS. Turnaround: 2–4 weeks.'
+    title: 'Template Customization ($499 – $899)',
+    desc: 'Brand typography, color palette, logo swap, content migration, custom section additions, responsive breakpoint audit. Turnaround: 3–5 days.'
   },
   {
     num: '02',
-    title: 'Custom Framer & Webflow Websites ($2,000 – $5,500+)',
-    desc: 'Custom UI/UX design, fluid animations, dynamic visual CMS architecture, and responsive breakpoints tailored for ambitious brands and high-converting marketing sites. Turnaround: 2–3 weeks.'
+    title: 'Bespoke Framer Website Development ($2,500 – $6,000+)',
+    desc: 'Custom UI/UX design, native Framer component build, fluid animations, dynamic CMS architecture, Core Web Vitals optimization. Turnaround: 2–3 weeks.'
   },
   {
     num: '03',
-    title: 'Figma to Code (React / Next.js / Webflow / Framer) ($1,200 – $3,500)',
-    desc: '1:1 pixel-perfect translation of Figma design systems into clean, modular, production-grade code with responsive layouts and zero visual drift. Turnaround: 7–10 days.'
+    title: 'Figma to Framer Conversion ($1,500 – $3,500)',
+    desc: '1:1 pixel-perfect translation of your Figma files into interactive, production-ready Framer pages with interactive components. Turnaround: 7–10 days.'
   },
   {
     num: '04',
-    title: 'Custom Software & Frontend Engineering ($3,000 – $8,000+)',
-    desc: 'Custom user interfaces, interactive product configurators, complex calculators, and custom API integrations built for performance and scale.'
-  },
-  {
-    num: '05',
-    title: 'Performance & Core Web Vitals Optimization ($350 – $750)',
-    desc: 'Asset compression to WebP/AVIF, font consolidation, script deferral, and layout shift fixes to guarantee 95+ PageSpeed scores. Turnaround: 24–48 hours.'
-  },
-  {
-    num: '06',
-    title: 'Framer Template Customization & Rebranding ($499 – $999)',
-    desc: 'Brand typography, color palette, logo swap, content migration, custom section additions, and responsive audit for any Framer marketplace template. Turnaround: 3–5 days.'
+    title: 'Framer Speed Boost / Performance ($350 – $600)',
+    desc: 'Font weight consolidation, image compression, script deferral, and layout shift fixes to guarantee 90+ mobile PageSpeed scores. Turnaround: 24–48 hours.'
   }
 ];
 
 export default function Services() {
   const { t } = useTranslation();
+  const rawSteps = t('services.processSteps', { returnObjects: true });
+  const stepsList = Array.isArray(rawSteps) && rawSteps.length > 0 ? rawSteps : PROCESS_STEPS;
+
+  const rawServices = t('services.items', { returnObjects: true });
+  const servicesList = Array.isArray(rawServices) && rawServices.length > 0
+    ? rawServices.map((s, idx) => ({
+        num: s.num || `0${idx + 1}`,
+        title: s.price ? `${s.title} (${s.price})` : s.title,
+        desc: s.turnaround ? `${s.desc} ${s.turnaround}.` : s.desc
+      }))
+    : SERVICES_LIST;
 
   return (
     <section 
       id="services" 
-      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-14 sm:gap-16 border-t border-white/10"
+      className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 relative flex flex-col gap-14 sm:gap-16 border-t border-white/10"
     >
       {/* =========================================================================
           PART 1: HOW WE WORK (4 PROCESS STEPS)
@@ -76,7 +77,7 @@ export default function Services() {
 
         {/* 4 Steps Grid (.framer-1oa197) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
-          {PROCESS_STEPS.map((step) => (
+          {stepsList.map((step) => (
             <div
               key={step.num}
               className="flex flex-col items-start gap-2.5"
@@ -87,7 +88,7 @@ export default function Services() {
               <h3 className="font-heading font-semibold text-lg text-[#f7f6fb] leading-snug">
                 {step.title}
               </h3>
-              <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-[1.6]">
+              <p className="text-sm text-[#8b87a0] font-normal leading-[1.6]">
                 {step.desc}
               </p>
             </div>
@@ -100,25 +101,25 @@ export default function Services() {
           ========================================================================= */}
       <div className="w-full flex flex-col gap-10 pt-8 border-t border-white/10">
         
-        {/* Head: Title on left, Description on right */}
+        {/* Head: Title on left, Description on right (Exact Framer .framer-n89iux) */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
           <div className="flex flex-col items-start gap-2 max-w-xl">
             <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
-              {t('services.eyebrow', { defaultValue: 'CAPABILITIES & SERVICES' })}
+              {t('services.eyebrow', { defaultValue: 'CUSTOM BUILDS' })}
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-[38px] font-semibold text-[#f7f6fb] font-heading tracking-[-0.02em] leading-tight">
-              {t('services.title', { defaultValue: 'Websites, Custom Software & Digital Engineering' })}
+              {t('services.title', { defaultValue: 'Framer Development & Template Customization Studio' })}
             </h2>
           </div>
 
-          <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed max-w-md">
-            {t('services.desc', { defaultValue: 'From scalable Next.js web applications and Webflow marketing hubs to custom Framer websites and high-converting templates, Spark Studio delivers production-grade digital products engineered for 95+ PageSpeed scores.' })}
+          <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
+            {t('services.desc', { defaultValue: 'Whether you need a custom Framer website built from scratch, pixel-perfect Figma to Framer development, or full brand customization of any official Framer marketplace template, Spark Studio delivers production-grade web experiences engineered for 95+ PageSpeed scores.' })}
           </p>
         </div>
 
         {/* 4 Service Cards Grid (2x2 with 3D Tilt and Cursor Spotlight) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {SERVICES_LIST.map((service) => (
+          {servicesList.map((service) => (
             <TiltCard
               key={service.num}
               className="framer-service-card p-8 rounded-2xl bg-[#1b1826] border border-white/10 flex flex-col justify-between gap-6 group cursor-pointer"
@@ -136,7 +137,7 @@ export default function Services() {
                 <h3 className="font-heading font-semibold text-xl text-[#f7f6fb] leading-snug group-hover:text-[#8e97f7] transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed">
+                <p className="text-sm text-[#8b87a0] font-normal leading-relaxed">
                   {service.desc}
                 </p>
               </div>
@@ -147,14 +148,14 @@ export default function Services() {
         {/* Bottom Action Bar in Framer: We reply within 24 hours + Start a project button with magnetic pull */}
         <div className="flex items-center justify-between pt-2">
           <span className="font-mono text-xs text-[#8b87a0]">
-            We reply within 24 hours
+            {t('services.replyNotice') || 'We reply within 24 hours'}
           </span>
           <MagneticButton>
             <a
               href="#contact"
               className="framer-btn-primary px-6 py-2.5 rounded-full text-xs font-semibold text-white cursor-pointer shadow-md"
             >
-              <span>Start a project →</span>
+              <span>{t('services.cta') || 'Start a project →'}</span>
             </a>
           </MagneticButton>
         </div>

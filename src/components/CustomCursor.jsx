@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, useSpring, useMotionValue } from 'framer-motion';
 
 export default function CustomCursor() {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [cursorMode, setCursorMode] = useState('default'); // 'default' | 'hover' | 'view'
 
@@ -123,7 +125,7 @@ export default function CustomCursor() {
             transition: 'opacity 0.2s ease, transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1)'
           }}
         >
-          View
+          {t('cursor.view') || 'View'}
         </span>
       </motion.div>
 

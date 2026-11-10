@@ -1,6 +1,7 @@
+import { useTranslation } from 'react-i18next';
 import { Sparkles } from 'lucide-react';
 
-const MARQUEE_ITEMS = [
+const DEFAULT_MARQUEE_ITEMS = [
   'Templates engineered to convert & scale',
   'Custom website design',
   'Production-ready templates',
@@ -12,6 +13,12 @@ const MARQUEE_ITEMS = [
 ];
 
 export default function Marquee() {
+  const { t } = useTranslation();
+  const rawItems = t('marquee.items', { returnObjects: true });
+  const baseItems = Array.isArray(rawItems) && rawItems.length > 0
+    ? rawItems.concat(rawItems)
+    : DEFAULT_MARQUEE_ITEMS;
+
   return (
     <div 
       className="w-full overflow-hidden select-none py-10 sm:py-16 relative"
@@ -36,7 +43,7 @@ export default function Marquee() {
       `}</style>
 
       <div className="spark-mq-track flex items-center">
-        {MARQUEE_ITEMS.concat(MARQUEE_ITEMS).map((text, idx) => (
+        {baseItems.concat(baseItems).map((text, idx) => (
           <div key={idx} className="flex items-center gap-8 sm:gap-12 px-4 sm:px-6 shrink-0">
             <span 
               className="font-heading font-extrabold text-5xl sm:text-7xl md:text-[88px] leading-tight tracking-[-0.02em] uppercase whitespace-nowrap"

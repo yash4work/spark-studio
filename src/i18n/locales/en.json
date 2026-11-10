@@ -9,44 +9,76 @@
     "cta": "Start a project →"
   },
   "hero": {
-    "eyebrow": "WEBSITES · CUSTOM SOFTWARE · FRAMER & REACT ENGINEERING",
-    "title": "Websites & custom software engineered to scale.",
-    "description": "Spark Studio designs and builds high-performance websites, custom SaaS platforms, and custom digital experiences using Next.js, React, Webflow, and Framer — visually stunning, code-free for your marketing team, and built with 90+ PageSpeed scores out of the box.",
-    "exploreCta": "Explore our work ↓",
-    "customCta": "Hire us for custom builds →",
-    "stat1Val": "95+",
+    "eyebrow": "PREMIUM FRAMER TEMPLATES & CUSTOM WEB DESIGN",
+    "title": "Templates engineered to convert & scale.",
+    "description": "Spark Studio designs high-performance Framer templates and custom websites for ambitious startups, creative studios, and modern businesses — visually editable, code-free, and built with 90+ PageSpeed scores out of the box.",
+    "exploreCta": "Explore templates ↓",
+    "customCta": "Hire us for custom work →",
+    "stat1Val": "90+",
     "stat1Label": "Core Web Vitals",
-    "stat2Val": "100%",
-    "stat2Label": "Production Ready",
-    "stat3Val": "Multi-Stack",
-    "stat3Label": "Next.js · React · Framer · Webflow"
+    "stat2Val": "0",
+    "stat2Label": "Code required",
+    "stat3Val": "1-click",
+    "stat3Label": "Framer remix"
   },
   "standards": {
     "tag": "STANDARDS",
     "title": "Engineered without compromise",
-    "subtitle": "Every website, custom application, and template is held to the same production standard: enterprise-grade speed, rock-solid responsiveness, seamless maintenance.",
+    "subtitle": "Every template is held to the same production standard: enterprise-grade speed, rock-solid responsiveness, seamless customization.",
     "cards": [
       {
         "num": "01",
-        "title": "95+ Core Web Vitals",
-        "desc": "Optimized DOM structure, lightweight scripts and auto-compressed WebP assets for instant load times and strong Google ranking signals."
+        "title": "90+ Core Web Vitals",
+        "desc": "Optimized DOM structure, lightweight scripts and auto-compressed WebP images for instant load times and strong Google ranking signals."
       },
       {
         "num": "02",
-        "title": "Visual CMS & Full-Stack Agility",
-        "desc": "Visual editing via Framer & Webflow for marketing teams, alongside scalable Next.js and React codebases for complex software."
+        "title": "100% visual editing, zero code",
+        "desc": "Modify colors, swap typography, update imagery and rearrange components directly on Framer’s canvas — no developer needed."
       },
       {
         "num": "03",
-        "title": "Modular scalable architecture",
+        "title": "Modular dynamic CMS architecture",
         "desc": "Filterable collections, real-time calculators and interactive components built to scale effortlessly with your growing business."
+      }
+    ],
+    "items": [
+      {
+        "num": "01",
+        "title": "90+ Core Web Vitals",
+        "desc": "Optimized DOM structure, lightweight scripts and auto-compressed WebP images for instant load times and strong Google ranking signals."
+      },
+      {
+        "num": "02",
+        "title": "100% visual editing, zero code",
+        "desc": "Modify colors, swap typography, update imagery and rearrange sections through Framer's intuitive native interface."
+      },
+      {
+        "num": "03",
+        "title": "Modular dynamic CMS",
+        "desc": "Add dozens of case studies, posts, properties or products in seconds, with automatically formatted detail pages and category filters."
+      },
+      {
+        "num": "04",
+        "title": "Precision responsive breakpoints",
+        "desc": "Every layout hand-tuned across desktop (1440px), tablet (810px) and mobile (390px) for seamless readability."
+      },
+      {
+        "num": "05",
+        "title": "Companion Figma source systems",
+        "desc": "Organized Figma files with auto-layouts and reusable style variables matching the Framer build 1:1."
+      },
+      {
+        "num": "06",
+        "title": "AEO & modern SEO, built in",
+        "desc": "Pre-configured semantic HTML hierarchy, customizable OpenGraph metadata and clean structured heading trees."
       }
     ]
   },
   "services": {
     "tag": "SERVICES",
-    "title": "Websites, Custom Software & Digital Engineering",
-    "subtitle": "From scalable Next.js web applications and Webflow marketing hubs to custom Framer websites and high-converting templates, Spark Studio delivers production-grade digital products engineered for 95+ PageSpeed scores.",
+    "title": "Framer Development & Template Customization Studio",
+    "subtitle": "Whether you need a bespoke Framer website built from scratch, pixel-perfect Figma to Framer development, or full brand customization of any official Framer marketplace template, Spark Studio delivers production-grade web experiences engineered for 95+ PageSpeed scores.",
     "items": [
       {
         "title": "Template Customization",
@@ -55,7 +87,7 @@
         "desc": "Brand typography, color palette, logo swap, content migration, custom section additions, responsive breakpoint audit."
       },
       {
-        "title": "Custom Framer Website Development",
+        "title": "Bespoke Framer Website Development",
         "price": "$2,500 – $6,000+",
         "turnaround": "Turnaround: 2–3 weeks",
         "desc": "Custom UI/UX design, native Framer component build, fluid animations, dynamic CMS architecture, Core Web Vitals optimization."
@@ -72,14 +104,40 @@
         "turnaround": "Turnaround: 2–3 days",
         "desc": "Font weight consolidation, image compression, script deferral, and layout shift fixes to guarantee 90+ mobile PageSpeed scores."
       }
-    ]
+    ],
+    "processEyebrow": "HOW WE WORK",
+    "processSteps": [
+      {
+        "num": "01",
+        "title": "Discover",
+        "desc": "A short call to understand your goals, audience and scope — followed by a clear proposal."
+      },
+      {
+        "num": "02",
+        "title": "Design",
+        "desc": "Moodboard, key screens and a design system, reviewed together before anything is built."
+      },
+      {
+        "num": "03",
+        "title": "Build",
+        "desc": "A native Framer build with CMS, motion and responsive breakpoints hand-tuned for every device."
+      },
+      {
+        "num": "04",
+        "title": "Launch",
+        "desc": "Domain, SEO, analytics and a handover walkthrough so your team can edit with confidence."
+      }
+    ],
+    "eyebrow": "CUSTOM BUILDS",
+    "replyNotice": "We reply within 24 hours",
+    "cta": "Start a project →"
   },
   "templates": {
     "tag": "TEMPLATES",
     "title": "Production-ready templates & digital flagships",
     "subtitle": "Engineered with fluid interactions, dynamic CMS structures, and zero maintenance.",
     "viewTemplate": "View template →",
-    "liveDemo": "Live demo ↗",
+    "liveDemo": "Live demo",
     "buyNow": "Buy now",
     "allTemplates": "All templates →",
     "items": [
@@ -91,7 +149,8 @@
         "price": "$69",
         "image": "/templates/mavric-estate.png",
         "demoUrl": "https://mavric-estate.framer.website/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1",
+        "categoryKey": "real-estate"
       },
       {
         "slug": "aurelle-estates",
@@ -101,7 +160,8 @@
         "price": "$99",
         "image": "/templates/aurelle-estates.png",
         "demoUrl": "https://wandering-variations-344785.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1",
+        "categoryKey": "real-estate"
       },
       {
         "slug": "onyx-atelier",
@@ -111,7 +171,8 @@
         "price": "$79",
         "image": "/templates/onyx-atelier.png",
         "demoUrl": "https://active-strengthening-218427.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1",
+        "categoryKey": "architecture"
       },
       {
         "slug": "vellum-edition",
@@ -121,7 +182,8 @@
         "price": "$29",
         "image": "/templates/vellum-edition.png",
         "demoUrl": "https://unlimited-mind-018782.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1",
+        "categoryKey": "craft"
       },
       {
         "slug": "halden-edition",
@@ -131,7 +193,8 @@
         "price": "$59",
         "image": "/templates/halden-edition.png",
         "demoUrl": "https://past-network-244230.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1",
+        "categoryKey": "real-estate"
       },
       {
         "slug": "grain-form",
@@ -141,7 +204,8 @@
         "price": "$58",
         "image": "/templates/grain-form.png",
         "demoUrl": "https://mindful-account-986092.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1"
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1",
+        "categoryKey": "architecture"
       },
       {
         "slug": "slowgrain",
@@ -151,19 +215,82 @@
         "price": "Free",
         "image": "/templates/slowgrain.png",
         "demoUrl": "https://prosperous-statuses-272584.framer.app/style-guide",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1",
+        "categoryKey": "craft"
+      },
+      {
+        "slug": "terra",
+        "name": "TERRA",
+        "category": "Editorial store for furniture & design galleries",
+        "categoryKey": "craft",
+        "tagline": "A quiet, editorial store template engineered for furniture studios, object makers, and contemporary design galleries.",
+        "price": "$69",
+        "badge": "Agent",
+        "image": "https://framerusercontent.com/images/H2DMerPuJWTvVUiihF3BX14Wdo.png",
+        "demoUrl": "https://vibrant-checkbox-000943.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1"
+      },
+      {
+        "slug": "sasso-architect",
+        "name": "SASSO Architect",
+        "category": "Architecture & interior studio monograph",
+        "categoryKey": "architecture",
+        "tagline": "Architecture & Interior Studio — Monograph-grade digital flagship for boutique architecture studios, spatial ateliers, and interior practices.",
+        "price": "$69",
+        "badge": "Agent",
+        "image": "https://framerusercontent.com/images/vXQOoXIJexVdw0e3emiEMLvyOds.png",
+        "demoUrl": "https://small-bookings-302943.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/ec2dbd50-66e1-44d5-b412-588da7f013d8?embed=1"
+      },
+      {
+        "slug": "tessovra",
+        "name": "TESSOVRA",
+        "category": "Tile & surface ecommerce showroom",
+        "categoryKey": "craft",
+        "tagline": "Tile & Surface Ecommerce Showroom — Architectural ecommerce crafted for tactile surfaces, bespoke interiors, and design ateliers.",
+        "price": "$69",
+        "badge": "Agent",
+        "image": "https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png",
+        "demoUrl": "https://hilarious-variations-838642.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/02daec5f-f201-48aa-8636-d120270b5adc?embed=1"
       }
-    ]
+    ],
+    "categories": [
+      {
+        "id": "all",
+        "label": "All templates"
+      },
+      {
+        "id": "real-estate",
+        "label": "Real estate & living"
+      },
+      {
+        "id": "architecture",
+        "label": "Architecture & spatial"
+      },
+      {
+        "id": "craft",
+        "label": "Craft & commerce"
+      }
+    ],
+    "pipeline": {
+      "title": "Expanding pipeline",
+      "desc": "SaaS, digital commerce and creator portfolios — new templates launching soon. Join the list for early-bird pricing.",
+      "cta": "Get launch alerts →"
+    },
+    "viewDetails": "View details",
+    "freeRemix": "Free remix",
+    "badgeAgent": "Agent"
   },
   "bundles": {
     "tag": "BUNDLE & SAVE",
-    "title": "Save up to 48% with curated template bundles.",
+    "title": "Save up to 68% with curated template bundles.",
     "subtitle": "Strategic pairings and complete studio collections with full commercial licenses.",
     "pickAny3": {
       "badge": "MOST POPULAR",
       "title": "Pick Any 3 Starter Pack",
       "price": "$99",
-      "regularPrice": "$190",
+      "regularPrice": "$216",
       "features": [
         "Pick any 3 templates from our entire catalog",
         "Full commercial license per template",
@@ -174,36 +301,36 @@
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
     },
     "soloVault": {
-      "badge": "BEST VALUE · SAVE $288 (48% OFF)",
+      "badge": "BEST VALUE",
       "title": "Complete Studio Vault (Solo)",
-      "price": "$312",
-      "regularPrice": "$600",
+      "price": "$149",
+      "regularPrice": "$392",
       "features": [
-        "Instant access to ALL 9 current templates + Slowgrain",
+        "Instant access to ALL 7 current templates + Slowgrain",
         "Commercial solo license per template",
         "Design token systems & style guides",
         "Direct developer support channel"
       ],
-      "cta": "Unlock Full Vault — $312",
+      "cta": "Unlock Full Vault — $149",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
     },
     "agencyVault": {
-      "badge": "FOR AGENCIES · SAVE 48%",
+      "badge": "FOR AGENCIES",
       "title": "Complete Studio Vault (Agency)",
-      "price": "$500",
-      "regularPrice": "$960",
+      "price": "$249",
+      "regularPrice": "$590",
       "features": [
-        "All 10 templates with unlimited commercial client deployments",
+        "All templates with unlimited commercial client deployments",
         "Keep 100% of client project revenue",
-        "Complete component libraries & design assets",
+        "All companion Figma files & design assets",
         "Priority studio developer onboarding"
       ],
-      "cta": "Get Agency Vault — $500",
+      "cta": "Get Agency Vault — $249",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
       {
-        "tag": "REAL ESTATE · SAVE $69 (41% OFF)",
+        "tag": "REAL ESTATE · SAVE $69",
         "title": "Luxury Real Estate Flagship Duo",
         "price": "$99",
         "regularPrice": "$168",
@@ -212,7 +339,7 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
-        "tag": "ARCHITECTURE · SAVE $39 (36% OFF)",
+        "tag": "ARCHITECTURE · SAVE $39",
         "title": "Monograph Architecture Duo",
         "price": "$69",
         "regularPrice": "$108",
@@ -221,11 +348,123 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {
-        "tag": "COMMERCE & CRAFT · SAVE $67 (36% OFF)",
+        "tag": "COMMERCE & CRAFT · SAVE $67",
         "title": "Artisan Living & E-Commerce Suite",
         "price": "$119",
         "regularPrice": "$186",
-        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for creative ateliers & boutiques.",
+        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for bespoke ateliers & boutiques.",
+        "cta": "Get Artisan Suite — $119",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
+      }
+    ],
+    "exclusiveEyebrow": "EXCLUSIVE BUNDLES & VAULT ACCESS",
+    "exclusiveTitle": "Save up to 68% with curated template bundles.",
+    "exclusiveDesc": "Production-ready Framer templates bundled for independent creators, studios, and agencies. 100% native, static collection as-is with immediate 1-click remix access.",
+    "nicheTitle": "Category-Wise Niche Packs",
+    "nicheEyebrow": "TARGETED PAIRS FOR SPECIFIC INDUSTRIES",
+    "vaultList": [
+      {
+        "id": "pick-any-3",
+        "badge": "FLEXIBLE CHOICE",
+        "isFeatured": false,
+        "title": "Pick Any 3 Starter Pack",
+        "price": "$99",
+        "regularPrice": "/ Save up to $148 (60% OFF)",
+        "desc": "Choose any 3 templates from our active catalog. Ideal for freelancers with upcoming client projects.",
+        "features": [
+          "Any 3 production Framer templates",
+          "Instant 1-click duplicate & remix links",
+          "Companion Figma source files (.fig)",
+          "Dynamic CMS archives & responsive UI",
+          "Single production site per template"
+        ],
+        "cta": "Choose Any 3 — $99",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
+      },
+      {
+        "id": "solo-vault",
+        "badge": "MOST POPULAR · SAVE $313 (68% OFF)",
+        "isFeatured": true,
+        "title": "Complete Studio Vault (Solo)",
+        "price": "$149",
+        "regularPrice": "/ $462 retail value",
+        "desc": "Instant access to all 7 premium paid templates + Slowgrain. Complete high-status design vault for ambitious creators.",
+        "features": [
+          "All 7 paid templates + Slowgrain (Free)",
+          "Aurelle ($99) + Onyx ($79) + Tessovra ($69)",
+          "Mavric ($69) + Halden ($59) + Grain & Form ($58)",
+          "Vellum Edition ($29) included",
+          "Full companion Figma UI kits & specs",
+          "Commercial solo license per template"
+        ],
+        "cta": "Unlock Full Vault — $149",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
+      },
+      {
+        "id": "agency-vault",
+        "badge": "UNLIMITED CLIENT RIGHTS",
+        "isFeatured": false,
+        "title": "Complete Studio Vault (Agency)",
+        "price": "$249",
+        "regularPrice": "/ $1,200+ commercial value",
+        "desc": "Complete 8-template library with unlimited commercial licensing. Ship high-ticket client builds and keep 100% of fees.",
+        "features": [
+          "All 7 paid templates + Slowgrain",
+          "Unlimited commercial client deployments",
+          "Keep 100% of client project revenue",
+          "All companion Figma files & design assets",
+          "Priority studio developer onboarding"
+        ],
+        "cta": "Get Agency Vault — $249",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
+      }
+    ],
+    "nicheList": [
+      {
+        "id": "real-estate-duo",
+        "tag": "REAL ESTATE · SAVE $69",
+        "title": "Luxury Real Estate Flagship Duo",
+        "price": "$99",
+        "regularPrice": "/ $168 regular value",
+        "desc": "Aurelle Estates ($99) + Mavric Estate ($69). The definitive toolkit for luxury brokerages, property developers, and agents.",
+        "features": [
+          "Aurelle Estates ($99) luxury residence template",
+          "Mavric Estate ($69) agent & listing portal",
+          "Complete dynamic CMS collections included",
+          "100% visual editing with zero code required"
+        ],
+        "cta": "Get Real Estate Duo — $99",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
+      },
+      {
+        "id": "architecture-duo",
+        "tag": "ARCHITECTURE · SAVE $39",
+        "title": "Monograph Architecture Duo",
+        "price": "$69",
+        "regularPrice": "/ $108 regular value",
+        "desc": "Onyx Atelier ($79) + Vellum Edition ($29). Engineered for architectural practices, spatial design studios, and monographs.",
+        "features": [
+          "Onyx Atelier ($79) exhibition-style dark portfolio",
+          "Vellum Edition ($29) quiet art-book monograph",
+          "High-contrast layout systems and gallery grids",
+          "Core Web Vitals 95+ speed out of the box"
+        ],
+        "cta": "Get Architecture Duo — $69",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
+      },
+      {
+        "id": "artisan-suite",
+        "tag": "COMMERCE & CRAFT · SAVE $67",
+        "title": "Artisan Living & E-Commerce Suite",
+        "price": "$119",
+        "regularPrice": "/ $186 regular value",
+        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for bespoke ateliers & boutiques.",
+        "features": [
+          "TESSOVRA ($69) luxury flagship commerce layout",
+          "Halden Edition ($59) collectible craft showcase",
+          "Grain & Form ($58) artisan homeware catalog",
+          "SLOWGRAIN museum-grade design tokens included"
+        ],
         "cta": "Get Artisan Suite — $119",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
       }
@@ -242,7 +481,7 @@
       },
       {
         "question": "What is the typical turnaround time?",
-        "answer": "Template customizations are completed in 3 to 5 business days. Custom website builds take 2 to 3 weeks depending on scope."
+        "answer": "Template customizations are completed in 3 to 5 business days. Bespoke website builds take 2 to 3 weeks depending on scope."
       },
       {
         "question": "How do you optimize Framer site speed?",
@@ -250,7 +489,7 @@
       },
       {
         "question": "How do we get started?",
-        "answer": "Email your project brief directly to hello@thesparkstudio.digital. We review your requirements and respond within 24 hours with a fixed quote and start date."
+        "answer": "Email your project brief directly to sparkstudio0@outlook.com. We review your requirements and respond within 24 hours with a fixed quote and start date."
       }
     ]
   },
@@ -258,13 +497,13 @@
     "tag": "START A CONVERSATION",
     "title": "Let’s build something exceptional together.",
     "subtitle": "Questions about a template, a custom integration, or ready to hire us for a custom website? We reply within 24 hours.",
-    "email": "hello@thesparkstudio.digital",
+    "email": "sparkstudio0@outlook.com",
     "formName": "Your Name",
     "formEmail": "Email Address",
     "formType": "Project Type",
     "typeOptions": [
       "Template Customization ($499+)",
-      "Custom Website Build ($2,500+)",
+      "Bespoke Website Build ($2,500+)",
       "Figma to Framer ($1,500+)",
       "Speed Optimization ($350+)",
       "Other / Question"
@@ -281,12 +520,41 @@
     "sending": "Sending...",
     "success": "Thank you! Your message has been sent. We reply within 24 hours.",
     "directChannels": "Direct Channels",
-    "responseTime": "Guaranteed 24h response time"
+    "responseTime": "Guaranteed 24h response time",
+    "cardTitle": "Project Inquiry",
+    "cardDesc": "Tell us about your brand, scope, and timeline.",
+    "formMessagePlaceholder": "Tell us about your brand, scope, and timeline goals...",
+    "successTitle": "Inquiry Received",
+    "successMessage": "Thank you! We have received your project details and will reply within 24 hours.",
+    "sendAnother": "Send another message"
   },
   "footer": {
-    "tagline": "High-performance Framer templates and custom websites, built for ambitious brands worldwide.",
+    "tagline": "High-performance websites, custom software, and digital flagships engineered for ambitious brands worldwide.",
+    "statusAvailable": "Available for new client builds",
+    "statusReplies": "Replies within 24h",
+    "colStudio": "Studio",
+    "colServices": "Capabilities",
+    "colTemplates": "Templates & Bundles",
+    "colConnect": "Inquiries & Channels",
+    "links": {
+      "projects": "Selected Work",
+      "services": "Services & Pricing",
+      "standards": "Engineering Standards",
+      "about": "About Spark Studio",
+      "faq": "FAQ & Process",
+      "contact": "Start a Project",
+      "webDesign": "Custom Websites & CMS",
+      "customSoftware": "Custom Software & SaaS",
+      "figmaToCode": "Figma to Production Code",
+      "speedOpt": "Core Web Vitals Optimization",
+      "framerRebrand": "Template Customization",
+      "allTemplates": "All Templates",
+      "theVault": "The Spark Vault",
+      "nichePacks": "Specialized Bundles",
+      "framerProfile": "Framer Marketplace Profile"
+    },
     "rights": "© 2026 Spark Studio. All rights reserved.",
-    "builtWith": "Built with native Framer layers · Optimized for Core Web Vitals"
+    "builtWith": "Engineered for 95+ Core Web Vitals · High-Conversion Web Architecture"
   },
   "templateDetails": {
     "mavric-estate": {
@@ -393,7 +661,7 @@
       "category": "Custom furniture & object studio",
       "headline": "Mass-market shop templates kill artisanal value. Halden Edition is curated for collectible craft.",
       "overviewTitle": "OVERVIEW",
-      "overview": "Halden Edition is an e-commerce and showcase template engineered for heirloom furniture ateliers, master craftsmen, and studio makers. Highlighting timber grains, joinery details, and made-to-order custom commissions.",
+      "overview": "Halden Edition is an e-commerce and showcase template engineered for heirloom furniture ateliers, master craftsmen, and studio makers. Highlighting timber grains, joinery details, and made-to-order bespoke commissions.",
       "featuresTitle": "Original Features Built for Makers & Object Studios",
       "features": [
         "Craft Timeline & Workshop Journal — Narrative section demonstrating joinery methods and tree-to-table provenance.",
@@ -410,7 +678,7 @@
         "Framer remix link with commercial license"
       ],
       "cmsTitle": "13 Production Pages",
-      "cmsDesc": "Catalog, Product Detail CMS, Workshop Journal, Custom Commission Form, Stockists, About."
+      "cmsDesc": "Catalog, Product Detail CMS, Workshop Journal, Bespoke Commission Form, Stockists, About."
     },
     "grain-form": {
       "name": "Grain & Form",
@@ -441,12 +709,12 @@
       "category": "Solid timber & heirloom furniture",
       "headline": "An editorial, museum-grade template for solid timber ateliers, heirloom furniture makers and joinery workshops.",
       "overviewTitle": "OVERVIEW",
-      "overview": "SLOWGRAIN is an ode to Japanese joinery and Scandinavian calm. Engineered for high-end furniture makers, timber studios, and custom carpenters who want their website to exude quiet mastery.",
+      "overview": "SLOWGRAIN is an ode to Japanese joinery and Scandinavian calm. Engineered for high-end furniture makers, timber studios, and bespoke carpenters who want their website to exude quiet mastery.",
       "featuresTitle": "Key Highlights:",
       "features": [
         "Japanese Joinery & Wabi-Sabi Aesthetics — Subtle organic grain textures, minimal borders, and breathing room.",
         "Solid Timber Provenance Tracker — Highlight wood origins, drying times, and sustainable harvesting notes.",
-        "Custom Project Inquiries — Form builder structured for custom furniture briefs and dimensions.",
+        "Bespoke Project Inquiries — Form builder structured for custom furniture briefs and dimensions.",
         "Interactive Timber Selector — Visual swatch preview for White Oak, Walnut, Ash, and Smoked Elm.",
         "Completely Free Edition Available — Launch your atelier online today with 0 upfront template fees."
       ],
@@ -457,8 +725,8 @@
         "Material index & timber specifications",
         "Direct contact & custom inquiry engine"
       ],
-      "cmsTitle": "Custom Pages & Custom Projects:",
-      "cmsDesc": "Atelier, Furniture CMS, Joinery Process, Custom Commission Inquiries, Style Guide."
+      "cmsTitle": "Custom Pages & Bespoke Projects:",
+      "cmsDesc": "Atelier, Furniture CMS, Joinery Process, Bespoke Commission Inquiries, Style Guide."
     },
     "terra": {
       "name": "TERRA",
@@ -512,7 +780,7 @@
     "tessovra": {
       "name": "TESSOVRA",
       "category": "Tile & surface ecommerce showroom",
-      "headline": "Tile & Surface Ecommerce Showroom — Architectural ecommerce crafted for tactile surfaces, custom interiors, and design ateliers.",
+      "headline": "Tile & Surface Ecommerce Showroom — Architectural ecommerce crafted for tactile surfaces, bespoke interiors, and design ateliers.",
       "overviewTitle": "OVERVIEW",
       "overview": "High-impact ecommerce and showroom template engineered for premium brands where physical touch and material provenance drive the purchase decision.",
       "featuresTitle": "Showroom Ecommerce Features",
@@ -533,5 +801,51 @@
       "cmsTitle": "19 Included Routes",
       "cmsDesc": "Home, Shop Catalog (CMS), Product Detail (CMS), Cart Drawer, Moodboard, Samples, Showroom, Inquiries, Journal (CMS), 404."
     }
+  },
+  "about": {
+    "eyebrow": "ABOUT SPARK STUDIO",
+    "title": "Website templates shouldn’t look like generic cookie-cutter clones.",
+    "p1": "We’re a multi-disciplinary digital design studio crafting high-caliber Framer templates and custom digital experiences — for founders, creative agencies, and ambitious brands across every industry, from high-growth SaaS startups to luxury spatial studios and editorial portfolios.",
+    "p2": "Every template we launch is built like a full custom website: editorial typography, subtle micro-interactions, bulletproof CMS architecture. Pre-built for this weekend, or built from scratch for your brand — the design foundation holds either way."
+  },
+  "marquee": {
+    "items": [
+      "Templates engineered to convert & scale",
+      "Custom website design",
+      "Production-ready templates",
+      "90+ Core Web Vitals"
+    ]
+  },
+  "cursor": {
+    "view": "View"
+  },
+  "detailPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbTemplates": "Templates",
+    "allTemplatesBack": "← All templates",
+    "builtNatively": "Built natively in Framer",
+    "fullyResponsive": "Fully responsive",
+    "cmsReady": "CMS-ready",
+    "coreWebVitals": "90+ Core Web Vitals",
+    "templateLicense": "Template License",
+    "instantRemix": "Instant 1-Click Remix",
+    "purchaseBtn": "Purchase Template — {{price}}",
+    "liveDemo": "Live Demo",
+    "structuredCmsTitle": "Structured CMS Architecture",
+    "customBuildsEyebrow": "CUSTOM BUILDS",
+    "customBuildsTitle": "Want this tailored to your brand?",
+    "customBuildsDesc": "We customize any template — or design and build your site from scratch — with the same production standard. Turnaround: 3 to 5 business days.",
+    "startCustomBuild": "Start a custom build →",
+    "licenseIncluded": "Commercial License Included",
+    "licenseDesc": "Single production site deployment per license. 100% code-free visual canvas editing.",
+    "support": "Support",
+    "studioCatalog": "STUDIO CATALOG",
+    "moreFromStudio": "More from the studio",
+    "allTemplatesLink": "All templates →",
+    "viewLink": "View →",
+    "notFoundTitle": "Template Not Found",
+    "notFoundDesc": "The requested template could not be located.",
+    "returnHome": "Return to Studio Home",
+    "metaTitleSuffix": "— Framer Template by Spark Studio"
   }
 }

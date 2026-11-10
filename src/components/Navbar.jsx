@@ -90,14 +90,14 @@ export default function Navbar() {
       className={`fixed left-0 right-0 z-50 transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] ${
         scrolled 
           ? 'top-3 px-4 sm:px-6 pointer-events-none' 
-          : 'top-0 px-6 sm:px-10 lg:px-14 xl:px-16 pointer-events-auto'
+          : 'top-0 px-6 sm:px-10 lg:px-16 pointer-events-auto'
       }`}
     >
       <div 
         className={`mx-auto flex items-center justify-between transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] ${
           scrolled
-            ? 'max-w-[1360px] pointer-events-auto rounded-full py-2.5 px-6 sm:px-8 bg-[#15131f]/85 backdrop-blur-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)]'
-            : 'max-w-[1680px] w-full py-6 bg-transparent border-none'
+            ? 'max-w-[1180px] pointer-events-auto rounded-full py-2.5 px-6 sm:px-8 bg-[#15131f]/85 backdrop-blur-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)]'
+            : 'max-w-[1440px] w-full py-6 bg-transparent border-none'
         }`}
       >
         {/* Brand Logo & Name */}
@@ -123,7 +123,7 @@ export default function Navbar() {
             <a
               key={item.label}
               href={item.href}
-              className="framer-nav-link text-[14px] md:text-[16px] text-[#8b87a0] hover:text-[#f7f6fb] px-3 py-1.5 font-medium transition-colors cursor-pointer"
+              className="framer-nav-link text-[14px] text-[#8b87a0] hover:text-[#f7f6fb] px-3 py-1.5 font-medium transition-colors cursor-pointer"
             >
               {item.label}
             </a>
@@ -195,7 +195,7 @@ export default function Navbar() {
               href={getNavPath('#contact')}
               className="framer-btn-secondary px-5 py-2 rounded-full text-[13.5px] font-semibold text-[#f7f6fb] border border-white/25 hover:border-white/60 transition-all cursor-pointer"
             >
-              <span>Start a project →</span>
+              <span>{t('nav.cta') || 'Start a project →'}</span>
             </a>
           </MagneticButton>
         </div>
@@ -273,7 +273,7 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="framer-btn-primary w-full py-2.5 rounded-full text-xs font-semibold text-white shadow-lg"
                 >
-                  <span>Start a project →</span>
+                  <span>{t('nav.cta') || 'Start a project →'}</span>
                 </a>
               </div>
             </div>
