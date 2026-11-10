@@ -21,7 +21,7 @@ export default function ContactSection() {
   const contact = t('contact', { returnObjects: true });
   const typeOptions = contact?.typeOptions || [
     'Template Customization ($499+)',
-    'Bespoke Website Build ($2,500+)',
+    'Custom Website Build ($2,500+)',
     'Figma to Framer ($1,500+)',
     'Speed Optimization ($350+)',
     'Other / Question'

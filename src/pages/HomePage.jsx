@@ -67,7 +67,7 @@ export default function HomePage() {
       {
         '@type': 'ItemList',
         'name': 'Spark Studio Work & Templates Catalog',
-        'description': 'Production-ready Next.js web applications, bespoke Framer and Webflow client websites, and high-performance digital templates.',
+        'description': 'Production-ready Next.js web applications, custom Framer and Webflow client websites, and high-performance digital templates.',
         'url': 'https://www.thesparkstudio.digital/#projects',
         'numberOfItems': 10,
         'itemListElement': [

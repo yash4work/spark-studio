@@ -26,7 +26,7 @@ const TEMPLATES = [
     slug: 'luxury-restaurant',
     name: 'Luxury Restaurant',
     type: 'custom',
-    category: 'Bespoke Hospitality Website',
+    category: 'Custom Hospitality Website',
     categoryKey: 'websites',
     tagline: 'Crafting Culinary Poetry — A premium restaurant landing page crafted to showcase fine dining through immersive storytelling and fluid table reservations.',
     techStack: ['Next.js', 'React', 'Tailwind', 'TypeScript'],
@@ -167,7 +167,7 @@ const TEMPLATES = [
     name: 'TESSOVRA',
     category: 'Tile & surface ecommerce showroom',
     categoryKey: 'craft',
-    tagline: 'Tile & Surface Ecommerce Showroom — Architectural ecommerce crafted for tactile surfaces, bespoke interiors, and design ateliers.',
+    tagline: 'Tile & Surface Ecommerce Showroom — Architectural ecommerce crafted for tactile surfaces, custom interiors, and design ateliers.',
     price: '$69',
     badge: 'Agent',
     image: 'https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png',
@@ -180,7 +180,7 @@ const TEMPLATES = [
 const CATEGORIES = [
   { id: 'all', label: 'All projects & templates' },
   { id: 'software', label: 'Custom Software & SaaS' },
-  { id: 'websites', label: 'Bespoke Websites' },
+  { id: 'websites', label: 'Custom Websites' },
   { id: 'real-estate', label: 'Real estate & living' },
   { id: 'architecture', label: 'Architecture & spatial' },
   { id: 'craft', label: 'Craft & commerce' }
@@ -234,7 +234,7 @@ export default function TemplatesGrid() {
         </h2>
         
         <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
-          {t('templates.subtitle') || 'From scalable Next.js web applications and SaaS platforms to bespoke Framer & Webflow client websites and templates — each build engineered for 95+ PageSpeed scores.'}
+          {t('templates.subtitle') || 'From scalable Next.js web applications and SaaS platforms to custom Framer & Webflow client websites and templates — each build engineered for 95+ PageSpeed scores.'}
         </p>
       </div>
 
@@ -442,7 +442,7 @@ export default function TemplatesGrid() {
                 Expanding pipeline
               </h3>
               <p className="text-sm sm:text-[15px] text-[#d4d2e8] font-normal leading-relaxed">
-                SaaS products, bespoke Webflow platforms, and creator portfolios — new builds and templates launching weekly. Join the list for early-bird previews.
+                SaaS products, custom Webflow platforms, and creator portfolios — new builds and templates launching weekly. Join the list for early-bird previews.
               </p>
             </div>
 

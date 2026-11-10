@@ -51,7 +51,7 @@ export default function AboutSection() {
           transition={{ duration: 0.7, delay: 0.25, ease: [0.2, 0.8, 0.2, 1] }}
           className="text-sm sm:text-[15px] text-[#8b87a0] font-normal leading-[1.65]"
         >
-          {t('about.p2', { defaultValue: 'We bridge the gap between visual agility and software engineering. Whether engineering a bespoke Next.js web application, deploying a conversion-driven Webflow site, or crafting an editorial Framer experience, our standards remain uncompromising: 90+ PageSpeed scores, clean modular architectures, and fluid micro-interactions.' })}
+          {t('about.p2', { defaultValue: 'We bridge the gap between visual agility and software engineering. Whether engineering a custom Next.js web application, deploying a conversion-driven Webflow site, or crafting an editorial Framer experience, our standards remain uncompromising: 90+ PageSpeed scores, clean modular architectures, and fluid micro-interactions.' })}
         </motion.p>
       </div>
     </section>

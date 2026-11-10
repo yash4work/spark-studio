@@ -33,7 +33,7 @@ const SERVICES_LIST = [
   },
   {
     num: '02',
-    title: 'Bespoke Framer & Webflow Websites ($2,000 – $5,500+)',
+    title: 'Custom Framer & Webflow Websites ($2,000 – $5,500+)',
     desc: 'Custom UI/UX design, fluid animations, dynamic visual CMS architecture, and responsive breakpoints tailored for ambitious brands and high-converting marketing sites. Turnaround: 2–3 weeks.'
   },
   {
@@ -44,7 +44,7 @@ const SERVICES_LIST = [
   {
     num: '04',
     title: 'Custom Software & Frontend Engineering ($3,000 – $8,000+)',
-    desc: 'Bespoke user interfaces, interactive product configurators, complex calculators, and custom API integrations built for performance and scale.'
+    desc: 'Custom user interfaces, interactive product configurators, complex calculators, and custom API integrations built for performance and scale.'
   },
   {
     num: '05',
@@ -112,7 +112,7 @@ export default function Services() {
           </div>
 
           <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
-            {t('services.desc', { defaultValue: 'From scalable Next.js web applications and Webflow marketing hubs to bespoke Framer websites and high-converting templates, Spark Studio delivers production-grade digital products engineered for 95+ PageSpeed scores.' })}
+            {t('services.desc', { defaultValue: 'From scalable Next.js web applications and Webflow marketing hubs to custom Framer websites and high-converting templates, Spark Studio delivers production-grade digital products engineered for 95+ PageSpeed scores.' })}
           </p>
         </div>
 

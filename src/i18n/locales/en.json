@@ -11,7 +11,7 @@
   "hero": {
     "eyebrow": "WEBSITES · CUSTOM SOFTWARE · FRAMER & REACT ENGINEERING",
     "title": "Websites & custom software engineered to scale.",
-    "description": "Spark Studio designs and builds high-performance websites, custom SaaS platforms, and bespoke digital experiences using Next.js, React, Webflow, and Framer — visually stunning, code-free for your marketing team, and built with 90+ PageSpeed scores out of the box.",
+    "description": "Spark Studio designs and builds high-performance websites, custom SaaS platforms, and custom digital experiences using Next.js, React, Webflow, and Framer — visually stunning, code-free for your marketing team, and built with 90+ PageSpeed scores out of the box.",
     "exploreCta": "Explore our work ↓",
     "customCta": "Hire us for custom builds →",
     "stat1Val": "95+",
@@ -46,7 +46,7 @@
   "services": {
     "tag": "SERVICES",
     "title": "Websites, Custom Software & Digital Engineering",
-    "subtitle": "From scalable Next.js web applications and Webflow marketing hubs to bespoke Framer websites and high-converting templates, Spark Studio delivers production-grade digital products engineered for 95+ PageSpeed scores.",
+    "subtitle": "From scalable Next.js web applications and Webflow marketing hubs to custom Framer websites and high-converting templates, Spark Studio delivers production-grade digital products engineered for 95+ PageSpeed scores.",
     "items": [
       {
         "title": "Template Customization",
@@ -55,7 +55,7 @@
         "desc": "Brand typography, color palette, logo swap, content migration, custom section additions, responsive breakpoint audit."
       },
       {
-        "title": "Bespoke Framer Website Development",
+        "title": "Custom Framer Website Development",
         "price": "$2,500 – $6,000+",
         "turnaround": "Turnaround: 2–3 weeks",
         "desc": "Custom UI/UX design, native Framer component build, fluid animations, dynamic CMS architecture, Core Web Vitals optimization."
@@ -225,7 +225,7 @@
         "title": "Artisan Living & E-Commerce Suite",
         "price": "$119",
         "regularPrice": "$186",
-        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for bespoke ateliers & boutiques.",
+        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for creative ateliers & boutiques.",
         "cta": "Get Artisan Suite — $119",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
       }
@@ -242,7 +242,7 @@
       },
       {
         "question": "What is the typical turnaround time?",
-        "answer": "Template customizations are completed in 3 to 5 business days. Bespoke website builds take 2 to 3 weeks depending on scope."
+        "answer": "Template customizations are completed in 3 to 5 business days. Custom website builds take 2 to 3 weeks depending on scope."
       },
       {
         "question": "How do you optimize Framer site speed?",
@@ -264,7 +264,7 @@
     "formType": "Project Type",
     "typeOptions": [
       "Template Customization ($499+)",
-      "Bespoke Website Build ($2,500+)",
+      "Custom Website Build ($2,500+)",
       "Figma to Framer ($1,500+)",
       "Speed Optimization ($350+)",
       "Other / Question"
@@ -393,7 +393,7 @@
       "category": "Custom furniture & object studio",
       "headline": "Mass-market shop templates kill artisanal value. Halden Edition is curated for collectible craft.",
       "overviewTitle": "OVERVIEW",
-      "overview": "Halden Edition is an e-commerce and showcase template engineered for heirloom furniture ateliers, master craftsmen, and studio makers. Highlighting timber grains, joinery details, and made-to-order bespoke commissions.",
+      "overview": "Halden Edition is an e-commerce and showcase template engineered for heirloom furniture ateliers, master craftsmen, and studio makers. Highlighting timber grains, joinery details, and made-to-order custom commissions.",
       "featuresTitle": "Original Features Built for Makers & Object Studios",
       "features": [
         "Craft Timeline & Workshop Journal — Narrative section demonstrating joinery methods and tree-to-table provenance.",
@@ -410,7 +410,7 @@
         "Framer remix link with commercial license"
       ],
       "cmsTitle": "13 Production Pages",
-      "cmsDesc": "Catalog, Product Detail CMS, Workshop Journal, Bespoke Commission Form, Stockists, About."
+      "cmsDesc": "Catalog, Product Detail CMS, Workshop Journal, Custom Commission Form, Stockists, About."
     },
     "grain-form": {
       "name": "Grain & Form",
@@ -441,12 +441,12 @@
       "category": "Solid timber & heirloom furniture",
       "headline": "An editorial, museum-grade template for solid timber ateliers, heirloom furniture makers and joinery workshops.",
       "overviewTitle": "OVERVIEW",
-      "overview": "SLOWGRAIN is an ode to Japanese joinery and Scandinavian calm. Engineered for high-end furniture makers, timber studios, and bespoke carpenters who want their website to exude quiet mastery.",
+      "overview": "SLOWGRAIN is an ode to Japanese joinery and Scandinavian calm. Engineered for high-end furniture makers, timber studios, and custom carpenters who want their website to exude quiet mastery.",
       "featuresTitle": "Key Highlights:",
       "features": [
         "Japanese Joinery & Wabi-Sabi Aesthetics — Subtle organic grain textures, minimal borders, and breathing room.",
         "Solid Timber Provenance Tracker — Highlight wood origins, drying times, and sustainable harvesting notes.",
-        "Bespoke Project Inquiries — Form builder structured for custom furniture briefs and dimensions.",
+        "Custom Project Inquiries — Form builder structured for custom furniture briefs and dimensions.",
         "Interactive Timber Selector — Visual swatch preview for White Oak, Walnut, Ash, and Smoked Elm.",
         "Completely Free Edition Available — Launch your atelier online today with 0 upfront template fees."
       ],
@@ -457,8 +457,8 @@
         "Material index & timber specifications",
         "Direct contact & custom inquiry engine"
       ],
-      "cmsTitle": "Custom Pages & Bespoke Projects:",
-      "cmsDesc": "Atelier, Furniture CMS, Joinery Process, Bespoke Commission Inquiries, Style Guide."
+      "cmsTitle": "Custom Pages & Custom Projects:",
+      "cmsDesc": "Atelier, Furniture CMS, Joinery Process, Custom Commission Inquiries, Style Guide."
     },
     "terra": {
       "name": "TERRA",
@@ -512,7 +512,7 @@
     "tessovra": {
       "name": "TESSOVRA",
       "category": "Tile & surface ecommerce showroom",
-      "headline": "Tile & Surface Ecommerce Showroom — Architectural ecommerce crafted for tactile surfaces, bespoke interiors, and design ateliers.",
+      "headline": "Tile & Surface Ecommerce Showroom — Architectural ecommerce crafted for tactile surfaces, custom interiors, and design ateliers.",
       "overviewTitle": "OVERVIEW",
       "overview": "High-impact ecommerce and showroom template engineered for premium brands where physical touch and material provenance drive the purchase decision.",
       "featuresTitle": "Showroom Ecommerce Features",

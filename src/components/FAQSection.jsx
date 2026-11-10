@@ -18,7 +18,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'What is the typical turnaround time?',
-    a: 'Template customizations and speed optimizations are completed in 3 to 5 business days. Bespoke websites and custom web applications take 2 to 4 weeks depending on scope.'
+    a: 'Template customizations and speed optimizations are completed in 3 to 5 business days. Custom websites and full web applications take 2 to 4 weeks depending on scope.'
   },
   {
     q: 'How do we get started?',
@@ -51,7 +51,7 @@ export default function FAQSection() {
           Frequently asked
         </motion.h2>
         <p className="text-sm text-[#8b87a0] font-normal leading-relaxed">
-          Everything you need to know about our custom software development, bespoke websites, Framer builds, and engagement models.
+          Everything you need to know about our custom software development, custom websites, Framer builds, and engagement models.
         </p>
       </div>
 

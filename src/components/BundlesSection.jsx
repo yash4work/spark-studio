@@ -101,7 +101,7 @@ const NICHE_PACKS = [
     title: 'Artisan Living & E-Commerce Suite',
     price: '$119',
     regularPrice: '/ $186 regular value',
-    desc: 'TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for bespoke ateliers & boutiques.',
+    desc: 'TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for creative ateliers & boutiques.',
     features: [
       'TESSOVRA ($69) luxury flagship commerce layout',
       'Halden Edition ($59) collectible craft showcase',
@@ -127,18 +127,48 @@ export default function BundlesSection() {
     >
       {/* Head: Title on left, Description on right */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
-        <div className="flex flex-col items-start gap-2 max-w-xl">
+        <div className="flex flex-col items-start gap-3 max-w-xl">
+          {/* Framer Only / Specific Badge + Official Profile Link */}
+          <div className="flex items-center gap-2.5 flex-wrap">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium tracking-wide bg-[#8e97f7]/15 border border-[#8e97f7]/40 text-[#a5adfc] shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-[#8e97f7] animate-pulse" />
+              100% Framer Only · Curated Vault
+            </span>
+            <a
+              href="https://www.framer.com/@sparkstudio0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-[#8b87a0] hover:text-[#f7f6fb] bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 transition-colors"
+            >
+              <span>Framer Profile @sparkstudio0</span>
+              <svg className="w-3 h-3 text-[#8e97f7]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+
           <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
-            EXCLUSIVE BUNDLES & VAULT ACCESS
+            EXCLUSIVE FRAMER BUNDLES &amp; VAULT ACCESS
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-[38px] font-semibold text-[#f7f6fb] font-heading tracking-[-0.02em] leading-tight">
             Save up to 68% with curated template bundles.
           </h2>
         </div>
 
-        <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
-          Production-ready Framer templates bundled for independent creators, studios, and agencies. 100% native, static collection as-is with immediate 1-click remix access.
-        </p>
+        <div className="flex flex-col gap-3 max-w-md">
+          <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed">
+            All templates in this section are built exclusively for <strong className="text-white font-medium">Framer</strong>. Designed for independent creators, studios, and agencies — 100% native with immediate 1-click remix access.
+          </p>
+          <a
+            href="https://www.framer.com/@sparkstudio0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-xs font-mono text-[#8e97f7] hover:text-white transition-colors self-start"
+          >
+            <span>Explore all templates on official Framer profile</span>
+            <span>→</span>
+          </a>
+        </div>
       </div>
 
       {/* Row 1: The 3 Main Vault Packs with 3D Tilt */}

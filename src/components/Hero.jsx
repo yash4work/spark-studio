@@ -20,36 +20,13 @@ export default function Hero() {
         <LiquidGradientShader 
           className="w-full h-full absolute inset-0"
           mouseEnabled={true}
-          uniforms={{
-            colors: [
-              'rgb(10, 8, 22)',
-              'rgb(28, 45, 175)',
-              'rgb(80, 55, 215)',
-              'rgb(135, 75, 225)',
-              'rgb(230, 160, 75)'
-            ],
-            distBias: -0.42,
-            scale: 0.65,
-            speed: 0.08,
-            turbAmp: 0.45,
-            exposure: 1.0,
-            contrast: 1.15
-          }}
         />
 
-        {/* Glow Side & Dark Vignette Overlay so typography stays sharp and readable */}
+        {/* Glow Side Overlay so typography stays sharp and readable */}
         <div 
           className="absolute inset-0 w-full h-full pointer-events-none"
           style={{
-            background: 'linear-gradient(90deg, rgba(21, 19, 31, 0.88) 0%, rgba(21, 19, 31, 0.55) 45%, rgba(21, 19, 31, 0.15) 100%)'
-          }}
-        />
-
-        {/* Right-edge Vignette: Tames and shrinks bright yellow on the right side */}
-        <div 
-          className="absolute inset-0 w-full h-full pointer-events-none"
-          style={{
-            background: 'radial-gradient(ellipse 65% 55% at 90% 25%, rgba(21, 19, 31, 0.45) 0%, rgba(21, 19, 31, 0.85) 75%, #15131f 100%)'
+            background: 'linear-gradient(90deg, rgba(21, 19, 31, 0.85) 0%, rgba(21, 19, 31, 0.45) 50%, rgba(21, 19, 31, 0) 100%)'
           }}
         />
 
@@ -57,7 +34,7 @@ export default function Hero() {
         <div 
           className="absolute inset-0 w-full h-full pointer-events-none"
           style={{
-            background: 'linear-gradient(rgba(21, 19, 31, 0.15) 0%, rgba(21, 19, 31, 0.35) 40%, rgba(21, 19, 31, 0.75) 75%, #15131f 100%)'
+            background: 'linear-gradient(rgba(21, 19, 31, 0.1) 0%, rgba(21, 19, 31, 0.25) 40%, rgba(21, 19, 31, 0.7) 70%, #15131f 100%)'
           }}
         />
       </div>
