@@ -28,23 +28,33 @@ const PROCESS_STEPS = [
 const SERVICES_LIST = [
   {
     num: '01',
-    title: 'Template Customization ($499 – $899)',
-    desc: 'Brand typography, color palette, logo swap, content migration, custom section additions, responsive breakpoint audit. Turnaround: 3–5 days.'
+    title: 'Next.js & React Full-Stack Web Applications ($2,500 – $7,500+)',
+    desc: 'Scalable web applications, SaaS frontends, client dashboards, and interactive web tools engineered with Next.js, React 19, TypeScript, and Tailwind CSS. Turnaround: 2–4 weeks.'
   },
   {
     num: '02',
-    title: 'Bespoke Framer Website Development ($2,500 – $6,000+)',
-    desc: 'Custom UI/UX design, native Framer component build, fluid animations, dynamic CMS architecture, Core Web Vitals optimization. Turnaround: 2–3 weeks.'
+    title: 'Bespoke Framer & Webflow Websites ($2,000 – $5,500+)',
+    desc: 'Custom UI/UX design, fluid animations, dynamic visual CMS architecture, and responsive breakpoints tailored for ambitious brands and high-converting marketing sites. Turnaround: 2–3 weeks.'
   },
   {
     num: '03',
-    title: 'Figma to Framer Conversion ($1,500 – $3,500)',
-    desc: '1:1 pixel-perfect translation of your Figma files into interactive, production-ready Framer pages with interactive components. Turnaround: 7–10 days.'
+    title: 'Figma to Code (React / Next.js / Webflow / Framer) ($1,200 – $3,500)',
+    desc: '1:1 pixel-perfect translation of Figma design systems into clean, modular, production-grade code with responsive layouts and zero visual drift. Turnaround: 7–10 days.'
   },
   {
     num: '04',
-    title: 'Framer Speed Boost / Performance ($350 – $600)',
-    desc: 'Font weight consolidation, image compression, script deferral, and layout shift fixes to guarantee 90+ mobile PageSpeed scores. Turnaround: 24–48 hours.'
+    title: 'Custom Software & Frontend Engineering ($3,000 – $8,000+)',
+    desc: 'Bespoke user interfaces, interactive product configurators, complex calculators, and custom API integrations built for performance and scale.'
+  },
+  {
+    num: '05',
+    title: 'Performance & Core Web Vitals Optimization ($350 – $750)',
+    desc: 'Asset compression to WebP/AVIF, font consolidation, script deferral, and layout shift fixes to guarantee 95+ PageSpeed scores. Turnaround: 24–48 hours.'
+  },
+  {
+    num: '06',
+    title: 'Framer Template Customization & Rebranding ($499 – $999)',
+    desc: 'Brand typography, color palette, logo swap, content migration, custom section additions, and responsive audit for any Framer marketplace template. Turnaround: 3–5 days.'
   }
 ];
 
@@ -90,19 +100,19 @@ export default function Services() {
           ========================================================================= */}
       <div className="w-full flex flex-col gap-10 pt-8 border-t border-white/10">
         
-        {/* Head: Title on left, Description on right (Exact Framer .framer-n89iux) */}
+        {/* Head: Title on left, Description on right */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
           <div className="flex flex-col items-start gap-2 max-w-xl">
             <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
-              {t('services.eyebrow', { defaultValue: 'CUSTOM BUILDS' })}
+              {t('services.eyebrow', { defaultValue: 'CAPABILITIES & SERVICES' })}
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-[38px] font-semibold text-[#f7f6fb] font-heading tracking-[-0.02em] leading-tight">
-              {t('services.title', { defaultValue: 'Framer Development & Template Customization Studio' })}
+              {t('services.title', { defaultValue: 'Websites, Custom Software & Digital Engineering' })}
             </h2>
           </div>
 
           <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
-            {t('services.desc', { defaultValue: 'Whether you need a custom Framer website built from scratch, pixel-perfect Figma to Framer development, or full brand customization of any official Framer marketplace template, Spark Studio delivers production-grade web experiences engineered for 95+ PageSpeed scores.' })}
+            {t('services.desc', { defaultValue: 'From scalable Next.js web applications and Webflow marketing hubs to bespoke Framer websites and high-converting templates, Spark Studio delivers production-grade digital products engineered for 95+ PageSpeed scores.' })}
           </p>
         </div>
 

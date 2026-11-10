@@ -4,33 +4,33 @@ import { motion } from 'framer-motion';
 const STANDARDS_LIST = [
   {
     num: '01',
-    title: '90+ Core Web Vitals',
-    desc: 'Optimized DOM structure, lightweight scripts and auto-compressed WebP images for instant load times and strong Google ranking signals.'
+    title: '95+ Core Web Vitals',
+    desc: 'Optimized DOM structures, lightweight scripts, and auto-compressed assets for lightning-fast load times and strong Google ranking signals.'
   },
   {
     num: '02',
-    title: '100% visual editing, zero code',
-    desc: "Modify colors, swap typography, update imagery and rearrange sections through Framer's intuitive native interface."
+    title: 'Visual CMS & Code Agility',
+    desc: 'Framer and Webflow for visual marketing velocity; Next.js and React 19 for custom software scalability.'
   },
   {
     num: '03',
-    title: 'Modular dynamic CMS',
-    desc: 'Add dozens of case studies, posts, properties or products in seconds, with automatically formatted detail pages and category filters.'
+    title: 'Modular scalable architecture',
+    desc: 'Add dozens of case studies, posts, properties, or products in seconds, with automatically formatted dynamic pages and filters.'
   },
   {
     num: '04',
     title: 'Precision responsive breakpoints',
-    desc: 'Every layout hand-tuned across desktop (1440px), tablet (810px) and mobile (390px) for seamless readability.'
+    desc: 'Every layout hand-tuned across desktop, tablet, and mobile breakpoints for seamless readability and zero layout shift.'
   },
   {
     num: '05',
-    title: 'Companion Figma source systems',
-    desc: 'Organized Figma files with auto-layouts and reusable style variables matching the Framer build 1:1.'
+    title: 'Companion Figma design systems',
+    desc: 'Organized Figma component libraries with auto-layouts and reusable style variables matching production code 1:1.'
   },
   {
     num: '06',
     title: 'AEO & modern SEO, built in',
-    desc: 'Pre-configured semantic HTML hierarchy, customizable OpenGraph metadata and clean structured heading trees.'
+    desc: 'Pre-configured semantic HTML hierarchy, JSON-LD schema, customizable OpenGraph metadata, and clean heading trees.'
   }
 ];
 

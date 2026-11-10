@@ -7,6 +7,51 @@ import { AnimatePresence } from 'framer-motion';
 import { MagneticButton } from '../lib/framer-effects';
 
 const TEMPLATES = [
+  // --- REAL CLIENT WEBSITES & CUSTOM SOFTWARE ---
+  {
+    slug: 'ai-saas',
+    name: 'AI SaaS Platform',
+    type: 'custom',
+    category: 'Web Application & SaaS',
+    categoryKey: 'software',
+    tagline: 'AI That Works While You Sleep — A high-converting AI SaaS platform engineered with Next.js, React, and Tailwind CSS for workflow automation.',
+    techStack: ['Next.js', 'React', 'Tailwind', 'TypeScript', 'Motion'],
+    price: 'Custom Build',
+    badge: 'Live SaaS',
+    image: '/templates/ai-saas.jpg',
+    demoUrl: 'https://showcase-r5.vercel.app/',
+    buyUrl: null
+  },
+  {
+    slug: 'luxury-restaurant',
+    name: 'Luxury Restaurant',
+    type: 'custom',
+    category: 'Bespoke Hospitality Website',
+    categoryKey: 'websites',
+    tagline: 'Crafting Culinary Poetry — A premium restaurant landing page crafted to showcase fine dining through immersive storytelling and fluid table reservations.',
+    techStack: ['Next.js', 'React', 'Tailwind', 'TypeScript'],
+    price: 'Custom Build',
+    badge: 'Live Website',
+    image: '/templates/restaurant.jpg',
+    demoUrl: 'https://showcase-r4.vercel.app/',
+    buyUrl: null
+  },
+  {
+    slug: 'premium-healthcare',
+    name: 'Premium Healthcare',
+    type: 'custom',
+    category: 'Healthcare & Patient Portal',
+    categoryKey: 'websites',
+    tagline: 'Expert Care You Can Trust — A modern healthcare website designed to build patient trust through a clean interface and intuitive appointment booking.',
+    techStack: ['Next.js', 'React', 'Tailwind', 'TypeScript'],
+    price: 'Custom Build',
+    badge: 'Live Portal',
+    image: '/templates/healthcare.jpg',
+    demoUrl: 'https://showcase-r6.vercel.app/',
+    buyUrl: null
+  },
+
+  // --- FRAMER TEMPLATES & DIGITAL FLAGSHIPS ---
   {
     slug: 'mavric-estate',
     name: 'Mavric Estate',
@@ -133,7 +178,9 @@ const TEMPLATES = [
 ];
 
 const CATEGORIES = [
-  { id: 'all', label: 'All templates' },
+  { id: 'all', label: 'All projects & templates' },
+  { id: 'software', label: 'Custom Software & SaaS' },
+  { id: 'websites', label: 'Bespoke Websites' },
   { id: 'real-estate', label: 'Real estate & living' },
   { id: 'architecture', label: 'Architecture & spatial' },
   { id: 'craft', label: 'Craft & commerce' }
@@ -161,14 +208,14 @@ export default function TemplatesGrid() {
       id="projects" 
       className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 relative flex flex-col gap-10 sm:gap-12 border-t border-white/10"
     >
-      {/* Head: Title on left, Description on right (Exact Framer .framer-z922t7) */}
+      {/* Head: Title on left, Description on right */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
         <h2 className="text-3xl sm:text-4xl md:text-[38px] font-semibold text-[#f7f6fb] font-heading tracking-[-0.02em] leading-tight max-w-xl">
-          {t('templates.title') || 'Production-ready templates & digital flagships'}
+          {t('templates.title') || 'Selected work, custom software & flagship templates'}
         </h2>
         
         <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
-          {t('templates.subtitle') || 'Flagship Framer templates, built with modular CMS collections and fluid responsive interactions — each one ready to adapt to any brand.'}
+          {t('templates.subtitle') || 'From scalable Next.js web applications and SaaS platforms to bespoke client websites and high-performance Framer templates — each build engineered for 95+ PageSpeed scores.'}
         </p>
       </div>
 
@@ -202,48 +249,98 @@ export default function TemplatesGrid() {
               className="framer-template-card group rounded-2xl bg-[#1b1826] border border-white/10 flex flex-col overflow-hidden cursor-pointer"
             >
               {/* Image Preview Box */}
-              <Link 
-                to={getTemplateLink(template.slug)} 
-                className="relative block aspect-[16/10] overflow-hidden bg-[#15131f] border-b border-white/10"
-                data-framer-name="Card Media"
-              >
-                <div data-framer-background-image-wrapper="true" className="w-full h-full">
-                  <img
-                    src={template.image}
-                    alt={`${template.name} — Framer Template by Spark Studio`}
-                    className="framer-card-img w-full h-full object-cover object-top"
-                    loading="lazy"
-                    onError={(e) => {
-                      e.target.src = '/assets/template1.png';
-                    }}
-                  />
-                </div>
-
-                {template.badge && (
-                  <div className="absolute top-3.5 right-3.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[10px] font-mono font-semibold uppercase tracking-wider text-white">
-                    {template.badge}
+              {template.type === 'custom' ? (
+                <a 
+                  href={template.demoUrl} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block aspect-[16/10] overflow-hidden bg-[#15131f] border-b border-white/10"
+                  data-framer-name="Card Media"
+                >
+                  <div data-framer-background-image-wrapper="true" className="w-full h-full">
+                    <img
+                      src={template.image}
+                      alt={`${template.name} — Custom Project by Spark Studio`}
+                      className="framer-card-img w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
                   </div>
-                )}
-              </Link>
+
+                  {template.badge && (
+                    <div className="absolute top-3.5 right-3.5 px-3 py-1 rounded-full bg-[#8e97f7]/25 backdrop-blur-md border border-[#8e97f7]/40 text-[10px] font-mono font-semibold uppercase tracking-wider text-[#f7f6fb]">
+                      {template.badge}
+                    </div>
+                  )}
+                </a>
+              ) : (
+                <Link 
+                  to={getTemplateLink(template.slug)} 
+                  className="relative block aspect-[16/10] overflow-hidden bg-[#15131f] border-b border-white/10"
+                  data-framer-name="Card Media"
+                >
+                  <div data-framer-background-image-wrapper="true" className="w-full h-full">
+                    <img
+                      src={template.image}
+                      alt={`${template.name} — Framer Template by Spark Studio`}
+                      className="framer-card-img w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                      onError={(e) => {
+                        e.target.src = '/assets/template1.png';
+                      }}
+                    />
+                  </div>
+
+                  {template.badge && (
+                    <div className="absolute top-3.5 right-3.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[10px] font-mono font-semibold uppercase tracking-wider text-white">
+                      {template.badge}
+                    </div>
+                  )}
+                </Link>
+              )}
 
               {/* Card Content */}
               <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between gap-5">
                 <div className="flex flex-col gap-2">
-                  <span className="text-[11px] font-mono uppercase tracking-[0.05em] text-[#8e97f7]">
-                    {template.category}
-                  </span>
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-mono uppercase tracking-[0.05em] text-[#8e97f7]">
+                      {template.category}
+                    </span>
+                    {template.techStack && (
+                      <span className="text-[10px] font-mono text-[#8b87a0]">
+                        {template.techStack.slice(0, 3).join(' · ')}
+                      </span>
+                    )}
+                  </div>
 
                   <div data-framer-name="Card Title">
-                    <Link to={getTemplateLink(template.slug)} className="block">
-                      <h3 className="framer-card-title text-xl sm:text-2xl font-heading font-semibold text-[#f7f6fb]">
-                        {template.name}
-                      </h3>
-                    </Link>
+                    {template.type === 'custom' ? (
+                      <a href={template.demoUrl} target="_blank" rel="noopener noreferrer" className="block group-hover:text-[#8e97f7] transition-colors">
+                        <h3 className="framer-card-title text-xl sm:text-2xl font-heading font-semibold text-[#f7f6fb]">
+                          {template.name}
+                        </h3>
+                      </a>
+                    ) : (
+                      <Link to={getTemplateLink(template.slug)} className="block group-hover:text-[#8e97f7] transition-colors">
+                        <h3 className="framer-card-title text-xl sm:text-2xl font-heading font-semibold text-[#f7f6fb]">
+                          {template.name}
+                        </h3>
+                      </Link>
+                    )}
                   </div>
 
                   <p className="text-sm text-[#8b87a0] font-normal leading-relaxed line-clamp-2">
                     {template.tagline}
                   </p>
+
+                  {template.techStack && (
+                    <div className="flex flex-wrap gap-1.5 pt-1.5">
+                      {template.techStack.map((tech, idx) => (
+                        <span key={idx} className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-white/[0.04] border border-white/10 text-[#c8c4dc]">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 {/* Card Meta Row */}
@@ -270,19 +367,32 @@ export default function TemplatesGrid() {
                   )}
 
                   <div className="flex items-center gap-2">
-                    {template.buyUrl && (
-                      <a
-                        href={template.buyUrl}
-                        onClick={(e) => handleLemonCheckout(e, template.buyUrl)}
-                        className="lemonsqueezy-button hidden"
-                        aria-hidden="true"
-                      >
-                        Buy
-                      </a>
+                    {template.type === 'custom' ? (
+                      <MagneticButton>
+                        <a
+                          href="#contact"
+                          className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#8e97f7]/15 text-[#8e97f7] hover:bg-[#8e97f7]/30 transition-all border border-[#8e97f7]/30"
+                        >
+                          Request build →
+                        </a>
+                      </MagneticButton>
+                    ) : (
+                      <>
+                        {template.buyUrl && (
+                          <a
+                            href={template.buyUrl}
+                            onClick={(e) => handleLemonCheckout(e, template.buyUrl)}
+                            className="lemonsqueezy-button hidden"
+                            aria-hidden="true"
+                          >
+                            Buy
+                          </a>
+                        )}
+                        <span className="font-mono text-sm font-semibold text-[#f7f6fb]">
+                          {template.price === 'Free' ? 'Free remix' : template.price}
+                        </span>
+                      </>
                     )}
-                    <span className="font-mono text-sm font-semibold text-[#f7f6fb]">
-                      {template.price === 'Free' ? 'Free remix' : template.price}
-                    </span>
                   </div>
                 </div>
 

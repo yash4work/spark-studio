@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { MagneticButton, ScrambleText } from '../lib/framer-effects';
+import LiquidGradientShader from './LiquidGradientShader';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -9,45 +10,31 @@ export default function Hero() {
     <section className="relative min-h-[92vh] flex flex-col justify-between overflow-hidden bg-[#15131f]">
       
       {/* =========================================================================
-          EXACT FRAMER FULL-WIDTH HERO GLOW & LIQUID AURORA SHADER (.framer-euz5iv)
+          INTERACTIVE WEBGL2 LIQUID GRADIENT SHADER BACKGROUND
           ========================================================================= */}
       <div 
-        className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden select-none z-0"
+        className="absolute inset-0 w-full h-full overflow-hidden select-none z-0"
         aria-hidden="true"
       >
-        {/* Layer 1: Ambient Mesh Radial Gradient Fallback */}
+        {/* Real-time Interactive WebGL2 Liquid Gradient Shader */}
+        <LiquidGradientShader 
+          className="w-full h-full absolute inset-0"
+          mouseEnabled={true}
+        />
+
+        {/* Glow Side & Dark Vignette Overlay so typography stays sharp and readable */}
         <div 
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-full pointer-events-none"
           style={{
-            background: 'radial-gradient(60% 60% at 75% 20%, rgba(108, 79, 232, 0.8) 0%, rgba(75, 59, 190, 0.5) 35%, rgba(21, 19, 31, 0) 75%), radial-gradient(50% 50% at 20% 30%, rgba(59, 130, 246, 0.25) 0%, rgba(21, 19, 31, 0) 70%)'
+            background: 'linear-gradient(90deg, rgba(21, 19, 31, 0.85) 0%, rgba(21, 19, 31, 0.5) 45%, rgba(21, 19, 31, 0.1) 100%)'
           }}
         />
 
-        {/* Layer 2: The Liquid Aurora WebGL Shader covering the FULL SCREEN (100% width) */}
+        {/* Glow Fade Overlay with seamless bottom blend */}
         <div 
-          className="absolute inset-0 w-full h-full opacity-85 transition-opacity duration-1000 ease-out"
+          className="absolute inset-0 w-full h-full pointer-events-none"
           style={{
-            backgroundImage: `url('/assets/hero-shader.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center 20%',
-            backgroundRepeat: 'no-repeat',
-            filter: 'contrast(1.12) brightness(1.04)'
-          }}
-        />
-
-        {/* Layer 3: Glow Side Overlay (Framers .framer-w52f8q) */}
-        <div 
-          className="absolute inset-0 w-full h-full"
-          style={{
-            background: 'linear-gradient(90deg, rgba(21, 19, 31, 0.82) 0%, rgba(21, 19, 31, 0.45) 55%, rgba(21, 19, 31, 0.05) 100%)'
-          }}
-        />
-
-        {/* Layer 4: Glow Fade Overlay with seamless 100% bottom blend (Eliminating Image 4 seam) */}
-        <div 
-          className="absolute inset-0 w-full h-full"
-          style={{
-            background: 'linear-gradient(rgba(21, 19, 31, 0.2) 0%, rgba(21, 19, 31, 0.4) 40%, rgba(21, 19, 31, 0.75) 75%, #15131f 100%)'
+            background: 'linear-gradient(rgba(21, 19, 31, 0.15) 0%, rgba(21, 19, 31, 0.35) 40%, rgba(21, 19, 31, 0.75) 75%, #15131f 100%)'
           }}
         />
       </div>
@@ -64,7 +51,7 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }}
         >
           <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
-            {t('hero.eyebrow') || 'PREMIUM FRAMER TEMPLATES & CUSTOM WEB DESIGN'}
+            {t('hero.eyebrow') || 'WEBSITES · CUSTOM SOFTWARE · FRAMER & REACT ENGINEERING'}
           </p>
         </motion.div>
 
@@ -73,9 +60,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 28, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
-          className="text-4xl sm:text-6xl md:text-[64px] font-extrabold text-[#f7f6fb] tracking-[-0.03em] leading-[1.05] max-w-[680px]"
+          className="text-4xl sm:text-6xl md:text-[64px] font-extrabold text-[#f7f6fb] tracking-[-0.03em] leading-[1.05] max-w-[760px]"
         >
-          {t('hero.title') || 'Templates engineered to convert & scale.'}
+          {t('hero.title') || 'Websites & custom software engineered to scale.'}
         </motion.h1>
 
         {/* Subtitle */}
@@ -83,12 +70,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
-          className="text-base sm:text-[17px] text-[#8b87a0] max-w-[540px] font-normal leading-[1.75] tracking-[-0.02em]"
+          className="text-base sm:text-[17px] text-[#8b87a0] max-w-[580px] font-normal leading-[1.75] tracking-[-0.02em]"
         >
-          {t('hero.description') || 'Spark Studio designs high-performance Framer templates and custom websites for ambitious startups, creative studios, and modern businesses — visually editable, code-free, and built with 90+ PageSpeed scores out of the box.'}
+          {t('hero.description') || 'Spark Studio designs and builds high-performance websites, custom SaaS platforms, and bespoke digital experiences using Next.js, React, Webflow, and Framer — visually stunning, code-free for your marketing team, and built with 90+ PageSpeed scores out of the box.'}
         </motion.p>
 
-        {/* CTA Buttons with Magnetic Physics (Exact match to Image 1: Explore templates / Hire us for custom work) */}
+        {/* CTA Buttons with Magnetic Physics */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -101,7 +88,7 @@ export default function Hero() {
               href="#projects"
               className="framer-btn-primary px-8 py-3.5 rounded-[40px] text-[15px] cursor-pointer"
             >
-              <span>Explore templates</span>
+              <span>Explore our work</span>
             </a>
           </MagneticButton>
 
@@ -111,14 +98,14 @@ export default function Hero() {
               href="#contact"
               className="framer-btn-secondary px-8 py-3.5 rounded-[40px] text-[15px] cursor-pointer"
             >
-              <span>Hire us for custom work</span>
+              <span>Hire us for custom builds</span>
             </a>
           </MagneticButton>
         </motion.div>
 
       </div>
 
-      {/* Stats Row with Horizontal Divider Line across width (Exact Match to Image 1) */}
+      {/* Stats Row with Horizontal Divider Line across width */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-16 pb-16 sm:pb-20">
         <div className="border-t border-white/10 w-full mb-8" />
 
@@ -126,7 +113,7 @@ export default function Hero() {
           {/* Stat 1 */}
           <div className="flex flex-col items-start pr-8 sm:pr-12 border-r border-white/10">
             <span className="text-3xl sm:text-[44px] font-extrabold text-[#f7f6fb] font-heading leading-none mb-1">
-              <ScrambleText text={t('hero.stat1Val') || '90+'} />
+              <ScrambleText text={t('hero.stat1Val') || '95+'} />
             </span>
             <span className="font-mono text-xs uppercase tracking-[0.05em] text-[#8b87a0]">
               {t('hero.stat1Label') || 'Core Web Vitals'}
@@ -136,20 +123,20 @@ export default function Hero() {
           {/* Stat 2 */}
           <div className="flex flex-col items-start pr-8 sm:pr-12 border-r border-white/10">
             <span className="text-3xl sm:text-[44px] font-extrabold text-[#f7f6fb] font-heading leading-none mb-1">
-              <ScrambleText text={t('hero.stat2Val') || '0'} />
+              <ScrambleText text={t('hero.stat2Val') || '100%'} />
             </span>
             <span className="font-mono text-xs uppercase tracking-[0.05em] text-[#8b87a0]">
-              {t('hero.stat2Label') || 'Code required'}
+              {t('hero.stat2Label') || 'Production Ready'}
             </span>
           </div>
 
           {/* Stat 3 */}
           <div className="flex flex-col items-start">
             <span className="text-3xl sm:text-[44px] font-extrabold text-[#f7f6fb] font-heading leading-none mb-1">
-              <ScrambleText text={t('hero.stat3Val') || '1-click'} />
+              <ScrambleText text={t('hero.stat3Val') || 'Multi-Stack'} />
             </span>
             <span className="font-mono text-xs uppercase tracking-[0.05em] text-[#8b87a0]">
-              {t('hero.stat3Label') || 'Framer remix'}
+              {t('hero.stat3Label') || 'Next.js · React · Framer · Webflow'}
             </span>
           </div>
         </div>

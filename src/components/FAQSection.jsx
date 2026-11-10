@@ -5,20 +5,24 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const FAQ_ITEMS = [
   {
-    q: 'Can you customize any Framer template?',
-    a: 'Yes. We adapt and customize any official Framer marketplace template or third-party theme—adjusting brand palettes, typography, custom CMS fields, and third-party integrations.'
+    q: 'What platforms and technologies do you specialize in?',
+    a: 'We specialize in modern web engineering and visual development: Next.js, React, Tailwind CSS, TypeScript, Framer, and Webflow. We match the optimal stack to your project—whether you need a scalable full-stack web application or an easily editable visual CMS.'
+  },
+  {
+    q: 'Can you build custom software, web applications, and marketing websites?',
+    a: 'Yes. We build custom web applications, SaaS dashboards, and client portals in Next.js and React, alongside high-converting marketing websites and design systems in Framer and Webflow.'
+  },
+  {
+    q: 'Do you convert Figma designs to production code?',
+    a: 'Yes. We translate Figma design systems 1:1 into interactive, production-ready React/Next.js code or Framer/Webflow pages with fluid micro-interactions, responsive breakpoints, and zero layout shift.'
   },
   {
     q: 'What is the typical turnaround time?',
-    a: 'Template customizations are completed in 3 to 5 business days. Bespoke website builds take 2 to 3 weeks depending on scope.'
-  },
-  {
-    q: 'How do you optimize Framer site speed?',
-    a: 'We eliminate render-blocking fonts, compress assets to AVIF/WebP, and streamline responsive breakpoint trees to consistently achieve 95+ scores on Google PageSpeed Insights.'
+    a: 'Template customizations and speed optimizations are completed in 3 to 5 business days. Bespoke websites and custom web applications take 2 to 4 weeks depending on scope.'
   },
   {
     q: 'How do we get started?',
-    a: 'Email your project brief directly to sparkstudio0@outlook.com. We review your requirements and respond within 24 hours with a fixed quote and start date.'
+    a: 'Email your project brief directly to sparkstudio0@outlook.com or submit the contact form below. We review your requirements and respond within 24 hours with a fixed quote and start date.'
   }
 ];
 
@@ -47,7 +51,7 @@ export default function FAQSection() {
           Frequently asked
         </motion.h2>
         <p className="text-sm text-[#8b87a0] font-normal leading-relaxed">
-          Everything you need to know about our Framer templates, bespoke development, and customization services.
+          Everything you need to know about our custom software development, bespoke websites, Framer builds, and engagement models.
         </p>
       </div>
 

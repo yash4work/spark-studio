@@ -9,44 +9,44 @@
     "cta": "Start a project →"
   },
   "hero": {
-    "eyebrow": "PREMIUM FRAMER TEMPLATES & CUSTOM WEB DESIGN",
-    "title": "Templates engineered to convert & scale.",
-    "description": "Spark Studio designs high-performance Framer templates and custom websites for ambitious startups, creative studios, and modern businesses — visually editable, code-free, and built with 90+ PageSpeed scores out of the box.",
-    "exploreCta": "Explore templates ↓",
-    "customCta": "Hire us for custom work →",
-    "stat1Val": "90+",
+    "eyebrow": "WEBSITES · CUSTOM SOFTWARE · FRAMER & REACT ENGINEERING",
+    "title": "Websites & custom software engineered to scale.",
+    "description": "Spark Studio designs and builds high-performance websites, custom SaaS platforms, and bespoke digital experiences using Next.js, React, Webflow, and Framer — visually stunning, code-free for your marketing team, and built with 90+ PageSpeed scores out of the box.",
+    "exploreCta": "Explore our work ↓",
+    "customCta": "Hire us for custom builds →",
+    "stat1Val": "95+",
     "stat1Label": "Core Web Vitals",
-    "stat2Val": "0",
-    "stat2Label": "Code required",
-    "stat3Val": "1-click",
-    "stat3Label": "Framer remix"
+    "stat2Val": "100%",
+    "stat2Label": "Production Ready",
+    "stat3Val": "Multi-Stack",
+    "stat3Label": "Next.js · React · Framer · Webflow"
   },
   "standards": {
     "tag": "STANDARDS",
     "title": "Engineered without compromise",
-    "subtitle": "Every template is held to the same production standard: enterprise-grade speed, rock-solid responsiveness, seamless customization.",
+    "subtitle": "Every website, custom application, and template is held to the same production standard: enterprise-grade speed, rock-solid responsiveness, seamless maintenance.",
     "cards": [
       {
         "num": "01",
-        "title": "90+ Core Web Vitals",
-        "desc": "Optimized DOM structure, lightweight scripts and auto-compressed WebP images for instant load times and strong Google ranking signals."
+        "title": "95+ Core Web Vitals",
+        "desc": "Optimized DOM structure, lightweight scripts and auto-compressed WebP assets for instant load times and strong Google ranking signals."
       },
       {
         "num": "02",
-        "title": "100% visual editing, zero code",
-        "desc": "Modify colors, swap typography, update imagery and rearrange components directly on Framer’s canvas — no developer needed."
+        "title": "Visual CMS & Full-Stack Agility",
+        "desc": "Visual editing via Framer & Webflow for marketing teams, alongside scalable Next.js and React codebases for complex software."
       },
       {
         "num": "03",
-        "title": "Modular dynamic CMS architecture",
+        "title": "Modular scalable architecture",
         "desc": "Filterable collections, real-time calculators and interactive components built to scale effortlessly with your growing business."
       }
     ]
   },
   "services": {
     "tag": "SERVICES",
-    "title": "Framer Development & Template Customization Studio",
-    "subtitle": "Whether you need a bespoke Framer website built from scratch, pixel-perfect Figma to Framer development, or full brand customization of any official Framer marketplace template, Spark Studio delivers production-grade web experiences engineered for 95+ PageSpeed scores.",
+    "title": "Websites, Custom Software & Digital Engineering",
+    "subtitle": "From scalable Next.js web applications and Webflow marketing hubs to bespoke Framer websites and high-converting templates, Spark Studio delivers production-grade digital products engineered for 95+ PageSpeed scores.",
     "items": [
       {
         "title": "Template Customization",

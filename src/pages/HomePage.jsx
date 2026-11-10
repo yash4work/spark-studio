@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import SEOHead from '../components/SEOHead';
 import Hero from '../components/Hero';
+import TechStackBar from '../components/TechStackBar';
 import Standards from '../components/Standards';
 import AboutSection from '../components/AboutSection';
 import Services from '../components/Services';
@@ -21,15 +22,15 @@ export default function HomePage() {
     ? 'Spark Studio — Plantillas Framer de Alto Rendimiento y Diseño Web a Medida'
     : currentLang === 'fr'
     ? 'Spark Studio — Templates Framer Haute Performance & Sites Web Sur Mesure'
-    : 'Spark Studio — High-Performance Framer Templates & Custom Websites';
+    : 'Spark Studio — Websites, Custom Software & Framer Engineering';
 
   const description = currentLang === 'de'
-    ? 'Spark Studio entwickelt schnelle Framer-Templates und individuelle Websites für Start-ups und Unternehmen — 99+ PageSpeed, einfach zu bearbeiten.'
+    ? 'Spark Studio entwickelt schnelle Framer-Templates, Web-Apps und individuelle Websites für Start-ups — 99+ PageSpeed.'
     : currentLang === 'es'
-    ? 'Spark Studio diseña plantillas Framer de alto rendimiento y sitios web a medida para startups y creadores — fácil de editar, sin código, con 99+ PageSpeed.'
+    ? 'Spark Studio diseña aplicaciones web, sitios a medida y plantillas Framer de alto rendimiento para startups — con 99+ PageSpeed.'
     : currentLang === 'fr'
-    ? 'Spark Studio conçoit des templates Framer haute performance et des sites sur mesure pour startups et créateurs — édition visuelle sans code, avec scores 90+.'
-    : 'Spark Studio designs high-performance Framer templates and custom websites for startups and creators — easy to edit, code-free, with 99+ PageSpeed scores.';
+    ? 'Spark Studio conçoit des applications web sur mesure, des templates Framer et des sites haute performance avec scores 90+.'
+    : 'Spark Studio designs and engineers high-performance custom websites, web applications, and Framer/Webflow platforms for ambitious startups and businesses — built with 90+ PageSpeed scores.';
 
   // Dynamic FAQ structured data for the active language
   const faqItems = t('faq.items', { returnObjects: true }) || [];
@@ -113,6 +114,7 @@ export default function HomePage() {
         jsonLd={homepageJsonLd}
       />
       <Hero />
+      <TechStackBar />
       <Standards />
       <AboutSection />
       <Services />
