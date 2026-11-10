@@ -1,0 +1,96 @@
+{
+  "$schema": "https://ai-catalog.org/schema/v1.json",
+  "name": "Spark Studio",
+  "description": "High-performance Framer templates, bespoke visual CMS websites, and custom software development studio.",
+  "url": "https://www.thesparkstudio.digital",
+  "version": "1.0.0",
+  "provider": {
+    "name": "Spark Studio",
+    "url": "https://www.thesparkstudio.digital",
+    "email": "hello@thesparkstudio.digital"
+  },
+  "capabilities": [
+    {
+      "id": "framer-templates",
+      "name": "Framer Templates Catalog",
+      "type": "catalog",
+      "description": "Production-ready, high-converting Framer templates with native AI Agent skills and dynamic CMS collections.",
+      "url": "https://www.thesparkstudio.digital/#templates"
+    },
+    {
+      "id": "custom-engineering",
+      "name": "Custom Framer & Web Development",
+      "type": "service",
+      "description": "Full-stack web engineering, Figma to Framer migration, and Core Web Vitals performance optimization.",
+      "url": "https://www.thesparkstudio.digital/#services"
+    }
+  ],
+  "resources": [
+    {
+      "name": "Onyx Atelier",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/onyx-atelier",
+      "description": "Monolithic dark luxury architecture and design studio portfolio template."
+    },
+    {
+      "name": "Mavric Estate",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/mavric-estate",
+      "description": "Editorial luxury real estate and architectural development showcase template."
+    },
+    {
+      "name": "TESSOVRA",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/tessovra",
+      "description": "Architectural tile, stone, and luxury surface showroom template."
+    },
+    {
+      "name": "TERRA",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/terra",
+      "description": "Minimalist artisan furniture, joinery workshop, and object showcase template."
+    },
+    {
+      "name": "SASSO Architect",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/sasso-architect",
+      "description": "Bespoke architectural monograph portfolio with publication-grade layout."
+    },
+    {
+      "name": "SOLUM",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/solum",
+      "description": "Tactile Scandinavian craft, furniture monograph, and studio showcase template."
+    },
+    {
+      "name": "Aurelle Estates",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/aurelle-estates",
+      "description": "Ultra-luxury real estate broker and development agency flagship template."
+    },
+    {
+      "name": "Vellum Edition",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/vellum-edition",
+      "description": "Editorial monograph portfolio for architectural and interior practices."
+    },
+    {
+      "name": "Halden Edition",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/halden-edition",
+      "description": "Nordic minimalist furniture, objects, and atelier showroom template."
+    },
+    {
+      "name": "Grain & Form",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/grain-form",
+      "description": "Artisan solid timber and Scandinavian furniture studio template."
+    },
+    {
+      "name": "Slowgrain",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/slowgrain",
+      "description": "Heirloom woodworking and bespoke cabinetry portfolio template."
+    }
+  ]
+}

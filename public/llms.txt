@@ -1,0 +1,33 @@
+# Spark Studio
+
+> Spark Studio designs and engineers high-performance Framer templates, visual CMS platforms, and custom software for founders, architecture studios, and luxury brands worldwide.
+
+Spark Studio builds production-ready digital flagships engineered for 95+ PageSpeed scores, zero-code editing, and native Framer AI Agent skills.
+
+## Core Templates
+
+- [Onyx Atelier](https://www.thesparkstudio.digital/templates/onyx-atelier): Monolithic dark luxury architecture and design studio portfolio template with custom smooth interactions.
+- [Mavric Estate](https://www.thesparkstudio.digital/templates/mavric-estate): Editorial luxury real estate agency and architectural property showcase with dynamic CMS filters.
+- [TESSOVRA](https://www.thesparkstudio.digital/templates/tessovra): Architectural stone, surface, and luxury tile showroom template with interactive specifiers.
+- [TERRA](https://www.thesparkstudio.digital/templates/terra): Quiet, editorial furniture and object design atelier showcase with tactile layout.
+- [SASSO Architect](https://www.thesparkstudio.digital/templates/sasso-architect): Bespoke architectural monograph portfolio engineered for high-ticket design firms.
+- [SOLUM](https://www.thesparkstudio.digital/templates/solum): Tactile craft, joinery workshop, and artisan lighting monograph with interactive making timeline.
+- [Aurelle Estates](https://www.thesparkstudio.digital/templates/aurelle-estates): Ultra-luxury flagship real estate brokerage and development portfolio template.
+- [Vellum Edition](https://www.thesparkstudio.digital/templates/vellum-edition): Editorial monograph typography and studio portfolio for architects and interior designers.
+- [Halden Edition](https://www.thesparkstudio.digital/templates/halden-edition): Nordic minimalist furniture atelier, objects catalogue, and studio template.
+- [Grain & Form](https://www.thesparkstudio.digital/templates/grain-form): Solid timber craft, bespoke joinery, and Scandinavian furniture studio template.
+- [Slowgrain](https://www.thesparkstudio.digital/templates/slowgrain): Heirloom solid timber furniture and architectural craft portfolio template.
+
+## Services & Custom Engineering
+
+- [Custom Framer Development](https://www.thesparkstudio.digital/#services): Bespoke Framer website design and engineering with fluid 60fps micro-interactions and dynamic CMS.
+- [Figma to Framer Conversion](https://www.thesparkstudio.digital/#services): Pixel-perfect migration of Figma design systems into responsive, production-ready Framer platforms.
+- [Framer Template Customization](https://www.thesparkstudio.digital/#services): End-to-end brand adaptation, typography, color palettes, and custom section builds.
+- [Core Web Vitals & PageSpeed Optimization](https://www.thesparkstudio.digital/#services): Asset compression, code trimming, and performance engineering targeting 95+ scores.
+
+## Company & Contact
+
+- [Home](https://www.thesparkstudio.digital/): Spark Studio official digital flagship.
+- [Inquiry & Contact](https://www.thesparkstudio.digital/#contact): Submit project briefs or schedule a scoping call directly.
+- [Official Framer Profile](https://www.framer.com/@thesparkstudio/): Verified Framer Creator catalog and template remixes.
+- [Email Contact](mailto:hello@thesparkstudio.digital): Direct project brief inquiries (hello@thesparkstudio.digital).
