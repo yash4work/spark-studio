@@ -48,7 +48,7 @@ export default function Standards() {
           {t('standards.title') || 'Engineered without compromise'}
         </h2>
         
-        <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
+        <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed max-w-md">
           {t('standards.subtitle') || 'Every template is held to the same production standard: enterprise-grade speed, rock-solid responsiveness, seamless customization.'}
         </p>
       </div>
@@ -76,7 +76,7 @@ export default function Standards() {
             </div>
 
             {/* Std Description: flex-1 */}
-            <p className="flex-1 text-[14px] text-[#8b87a0] font-normal leading-relaxed">
+            <p className="flex-1 text-[14px] md:text-base text-[#8b87a0] font-normal leading-relaxed">
               {std.desc}
             </p>
           </div>

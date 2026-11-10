@@ -117,7 +117,7 @@ export default function TechStackBar() {
             }`}
           >
             <span className="flex-shrink-0">{item.icon}</span>
-            <span className="text-sm font-medium tracking-tight whitespace-nowrap">{item.name}</span>
+            <span className="text-sm md:text-base font-medium tracking-tight whitespace-nowrap">{item.name}</span>
           </div>
         ))}
       </div>

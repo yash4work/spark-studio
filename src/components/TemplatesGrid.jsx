@@ -233,7 +233,7 @@ export default function TemplatesGrid() {
           {t('templates.title') || 'Selected work, custom software & flagship templates'}
         </h2>
         
-        <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
+        <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed max-w-md">
           {t('templates.subtitle') || 'From scalable Next.js web applications and SaaS platforms to custom Framer & Webflow client websites and templates — each build engineered for 95+ PageSpeed scores.'}
         </p>
       </div>
@@ -347,7 +347,7 @@ export default function TemplatesGrid() {
                     )}
                   </div>
 
-                  <p className="text-sm text-[#8b87a0] font-normal leading-relaxed line-clamp-2">
+                  <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed line-clamp-2">
                     {template.tagline}
                   </p>
 
@@ -441,7 +441,7 @@ export default function TemplatesGrid() {
               <h3 className="font-heading font-semibold text-2xl sm:text-3xl text-white">
                 Expanding pipeline
               </h3>
-              <p className="text-sm sm:text-[15px] text-[#d4d2e8] font-normal leading-relaxed">
+              <p className="text-sm md:text-base text-[#d4d2e8] font-normal leading-relaxed">
                 SaaS products, custom Webflow platforms, and creator portfolios — new builds and templates launching weekly. Join the list for early-bird previews.
               </p>
             </div>

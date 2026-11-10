@@ -39,7 +39,7 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
-          className="text-sm sm:text-[15px] text-[#8b87a0] font-normal leading-[1.65]"
+          className="text-sm md:text-base text-[#8b87a0] font-normal leading-[1.7]"
         >
           {t('about.p1', { defaultValue: 'Spark Studio is a modern design & software engineering studio crafting high-caliber custom websites, web applications, and Framer/Webflow platforms — for founders, creative agencies, and ambitious businesses across every industry, from high-growth SaaS platforms to luxury hospitality and editorial flagships.' })}
         </motion.p>
@@ -49,7 +49,7 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.25, ease: [0.2, 0.8, 0.2, 1] }}
-          className="text-sm sm:text-[15px] text-[#8b87a0] font-normal leading-[1.65]"
+          className="text-sm md:text-base text-[#8b87a0] font-normal leading-[1.7]"
         >
           {t('about.p2', { defaultValue: 'We bridge the gap between visual agility and software engineering. Whether engineering a custom Next.js web application, deploying a conversion-driven Webflow site, or crafting an editorial Framer experience, our standards remain uncompromising: 90+ PageSpeed scores, clean modular architectures, and fluid micro-interactions.' })}
         </motion.p>

@@ -120,7 +120,7 @@ export default function ContactSection() {
           <h3 className="font-heading font-semibold text-2xl text-[#f7f6fb] mb-1.5">
             Project Inquiry
           </h3>
-          <p className="text-sm text-[#8b87a0] font-normal">
+          <p className="text-sm md:text-base text-[#8b87a0] font-normal">
             Tell us about your brand, scope, and timeline.
           </p>
         </div>
@@ -134,7 +134,7 @@ export default function ContactSection() {
               <h4 className="font-heading font-bold text-xl text-[#f7f6fb] mb-1">
                 Inquiry Received
               </h4>
-              <p className="text-sm text-[#8b87a0] max-w-xs">
+              <p className="text-sm md:text-base text-[#8b87a0] max-w-xs">
                 Thank you! We have received your project details and will reply within 24 hours.
               </p>
             </div>
@@ -158,7 +158,7 @@ export default function ContactSection() {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 placeholder="Jane Doe"
-                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
               />
             </div>
 
@@ -172,7 +172,7 @@ export default function ContactSection() {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 placeholder="jane@studio.com"
-                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
               />
             </div>
 
@@ -184,7 +184,7 @@ export default function ContactSection() {
                 <select
                   value={formData.projectType}
                   onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors"
+                  className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors"
                 >
                   {typeOptions.map((opt) => (
                     <option key={opt} value={opt} className="bg-[#1b1826] text-[#f7f6fb]">
@@ -201,7 +201,7 @@ export default function ContactSection() {
                 <select
                   value={formData.budget}
                   onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors"
+                  className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors"
                 >
                   {budgetOptions.map((opt) => (
                     <option key={opt} value={opt} className="bg-[#1b1826] text-[#f7f6fb]">
@@ -222,7 +222,7 @@ export default function ContactSection() {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder="Tell us about your brand, scope, and timeline goals..."
-                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors resize-none"
               />
             </div>
 
@@ -230,7 +230,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={loading}
-                className="framer-btn-primary mt-2 w-full py-3.5 rounded-full text-sm font-semibold text-white shadow-[0_10px_25px_-5px_rgba(108,79,232,0.4)] disabled:opacity-50 cursor-pointer"
+                className="framer-btn-primary mt-2 w-full py-3.5 rounded-full text-sm md:text-base font-semibold text-white shadow-[0_10px_25px_-5px_rgba(108,79,232,0.4)] disabled:opacity-50 cursor-pointer"
               >
                 {loading ? (
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />

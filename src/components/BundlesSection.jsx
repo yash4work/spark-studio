@@ -156,7 +156,7 @@ export default function BundlesSection() {
         </div>
 
         <div className="flex flex-col gap-3 max-w-md">
-          <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed">
+          <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed">
             All templates in this section are built exclusively for <strong className="text-white font-medium">Framer</strong>. Designed for independent creators, studios, and agencies — 100% native with immediate 1-click remix access.
           </p>
           <a

@@ -50,7 +50,7 @@ export default function FAQSection() {
         >
           Frequently asked
         </motion.h2>
-        <p className="text-sm text-[#8b87a0] font-normal leading-relaxed">
+        <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed">
           Everything you need to know about our custom software development, custom websites, Framer builds, and engagement models.
         </p>
       </div>
@@ -88,7 +88,7 @@ export default function FAQSection() {
                     transition={{ duration: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
                     className="overflow-hidden"
                   >
-                    <div className="pt-4 text-sm sm:text-[15px] text-[#8b87a0] font-normal leading-relaxed">
+                    <div className="pt-4 text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed">
                       {item.a}
                     </div>
                   </motion.div>

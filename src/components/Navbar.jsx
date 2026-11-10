@@ -123,7 +123,7 @@ export default function Navbar() {
             <a
               key={item.label}
               href={item.href}
-              className="framer-nav-link text-[14px] text-[#8b87a0] hover:text-[#f7f6fb] px-3 py-1.5 font-medium transition-colors cursor-pointer"
+              className="framer-nav-link text-[14px] md:text-[16px] text-[#8b87a0] hover:text-[#f7f6fb] px-3 py-1.5 font-medium transition-colors cursor-pointer"
             >
               {item.label}
             </a>

@@ -87,7 +87,7 @@ export default function Services() {
               <h3 className="font-heading font-semibold text-lg text-[#f7f6fb] leading-snug">
                 {step.title}
               </h3>
-              <p className="text-sm text-[#8b87a0] font-normal leading-[1.6]">
+              <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-[1.6]">
                 {step.desc}
               </p>
             </div>
@@ -111,7 +111,7 @@ export default function Services() {
             </h2>
           </div>
 
-          <p className="text-sm sm:text-[14.5px] text-[#8b87a0] font-normal leading-relaxed max-w-md">
+          <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed max-w-md">
             {t('services.desc', { defaultValue: 'From scalable Next.js web applications and Webflow marketing hubs to custom Framer websites and high-converting templates, Spark Studio delivers production-grade digital products engineered for 95+ PageSpeed scores.' })}
           </p>
         </div>
@@ -136,7 +136,7 @@ export default function Services() {
                 <h3 className="font-heading font-semibold text-xl text-[#f7f6fb] leading-snug group-hover:text-[#8e97f7] transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-sm text-[#8b87a0] font-normal leading-relaxed">
+                <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed">
                   {service.desc}
                 </p>
               </div>

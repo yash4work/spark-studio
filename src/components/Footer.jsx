@@ -21,14 +21,14 @@ export default function Footer() {
 
         {/* Middle Row: Tagline on Left, Social Links on Right */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pt-2">
-          <p className="text-sm sm:text-[14px] text-[#8b87a0] max-w-xl font-normal leading-relaxed">
+          <p className="text-sm md:text-base text-[#8b87a0] max-w-xl font-normal leading-relaxed">
             {t('footer.tagline') || 'High-performance Framer templates and custom websites, built for ambitious brands worldwide.'}
           </p>
 
           <div className="flex items-center gap-6">
             <a
               href="mailto:sparkstudio0@outlook.com"
-              className="text-sm font-medium text-[#8b87a0] hover:text-[#f7f6fb] transition-colors hidden sm:inline"
+              className="text-sm md:text-base font-medium text-[#8b87a0] hover:text-[#f7f6fb] transition-colors hidden sm:inline"
             >
               sparkstudio0@outlook.com
             </a>
@@ -37,7 +37,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-sm font-medium text-[#8b87a0] hover:text-[#f7f6fb] transition-colors"
+              className="text-sm md:text-base font-medium text-[#8b87a0] hover:text-[#f7f6fb] transition-colors"
             >
               LinkedIn
             </a>
@@ -46,7 +46,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Microsoft Teams"
-              className="text-sm font-medium text-[#8b87a0] hover:text-[#f7f6fb] transition-colors"
+              className="text-sm md:text-base font-medium text-[#8b87a0] hover:text-[#f7f6fb] transition-colors"
             >
               Teams
             </a>
@@ -55,7 +55,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Slack"
-              className="text-sm font-medium text-[#8b87a0] hover:text-[#f7f6fb] transition-colors"
+              className="text-sm md:text-base font-medium text-[#8b87a0] hover:text-[#f7f6fb] transition-colors"
             >
               Slack
             </a>
