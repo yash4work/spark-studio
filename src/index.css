@@ -1,0 +1,257 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  --color-canvas: #15131f;
+  --color-surface: #1b1826;
+  --color-border-subtle: rgba(247, 246, 251, 0.1);
+  --color-border-glow: rgba(142, 151, 247, 0.35);
+  --color-text-primary: #f7f6fb;
+  --color-text-muted: #8b87a0;
+  --color-brand-purple: #6c4fe8;
+  --color-brand-lilac: #8e97f7;
+  --color-brand-coral: #ff6a45;
+}
+
+@layer base {
+  * {
+    border-color: rgba(247, 246, 251, 0.1);
+  }
+  
+  html {
+    background-color: #15131f;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #15131f;
+    color: #8b87a0;
+    font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #f7f6fb;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Cursor Hide on Desktop */
+html.spark-cursor, html.spark-cursor * {
+  cursor: none !important;
+}
+
+@media (pointer: coarse) {
+  html.spark-cursor, html.spark-cursor * {
+    cursor: auto !important;
+  }
+}
+
+/* Selection */
+::selection {
+  background: rgb(108, 79, 232);
+  color: #f7f6fb;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #15131f;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b263d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #41395c;
+}
+
+/* ==========================================================================
+   BUTTON HOVER EFFECTS (EXACT FRAMER SPEC)
+   ========================================================================== */
+
+/* Primary Gradient CTA */
+.framer-btn-primary {
+  background: linear-gradient(120deg, rgb(108, 79, 232) 0%, rgb(255, 106, 69) 100%);
+  color: #f7f6fb;
+  border-radius: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.35s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.framer-btn-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 35px -6px rgba(108, 79, 232, 0.65), 0 0 25px rgba(255, 106, 69, 0.35);
+  filter: brightness(1.08);
+}
+
+.framer-btn-primary:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+/* Secondary Outline CTA */
+.framer-btn-secondary {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(247, 246, 251, 0.25);
+  border-radius: 40px;
+  color: #f7f6fb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  cursor: pointer;
+}
+
+.framer-btn-secondary:hover {
+  border-color: rgba(247, 246, 251, 0.65);
+  background-color: rgba(247, 246, 251, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+.framer-btn-secondary:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+/* Nav Link Hover Underline */
+.framer-nav-link {
+  position: relative;
+  transition: color 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.framer-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 1px;
+  background: rgb(142, 151, 247);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.framer-nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+/* ==========================================================================
+   STANDARDS ROWS (EXACT FRAMER .framer-1qk6cf2 HOVER)
+   ========================================================================== */
+.framer-standard-row {
+  transition: background-color 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), padding 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.4s ease !important;
+}
+
+.framer-std-num, .framer-std-title {
+  transition: color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@media (hover: hover) {
+  .framer-standard-row:hover {
+    background-color: rgba(247, 246, 251, 0.035) !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    border-bottom-color: rgba(142, 151, 247, 0.35) !important;
+  }
+  .framer-standard-row:hover .framer-std-num {
+    color: rgb(255, 106, 69) !important;
+    transform: scale(1.08);
+  }
+  .framer-standard-row:hover .framer-std-title {
+    color: rgb(142, 151, 247) !important;
+    transform: translateX(6px);
+  }
+}
+
+/* ==========================================================================
+   TEMPLATES CARDS (EXACT FRAMER CARD HOVER)
+   ========================================================================== */
+.framer-template-card {
+  transition: border-color 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+.framer-template-card:hover {
+  border-color: rgba(142, 151, 247, 0.4) !important;
+  box-shadow: 0 30px 80px -30px rgba(108, 79, 232, 0.55), 0 0 20px rgba(142, 151, 247, 0.15) !important;
+  transform: translateY(-4px);
+}
+
+.framer-card-img {
+  transition: transform 1.4s cubic-bezier(0.2, 0.8, 0.2, 1), filter 1s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+.framer-template-card:hover .framer-card-img {
+  transform: scale(1.06);
+}
+
+.framer-card-title {
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.3s ease !important;
+}
+
+.framer-template-card:hover .framer-card-title {
+  transform: translateX(6px);
+  color: rgb(142, 151, 247);
+}
+
+/* Pipeline 8th Card Glow Animation */
+@keyframes rotateGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.framer-pipeline-card {
+  position: relative;
+  isolation: isolate;
+  background-color: #1b1826;
+  border-radius: 16px;
+  border: 1px solid rgba(247, 246, 251, 0.12);
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  overflow: hidden;
+}
+
+.framer-pipeline-card:hover {
+  border-color: rgba(142, 151, 247, 0.5) !important;
+  box-shadow: 0 30px 80px -30px rgba(108, 79, 232, 0.55);
+  transform: translateY(-4px);
+}
+
+/* Service Card Hover */
+.framer-service-card {
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.framer-service-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(142, 151, 247, 0.4) !important;
+  box-shadow: 0 20px 50px -15px rgba(108, 79, 232, 0.35);
+}
+
+.framer-service-card .service-arrow {
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.3s ease;
+}
+
+.framer-service-card:hover .service-arrow {
+  transform: translate(3px, -3px);
+  color: #f7f6fb;
+}

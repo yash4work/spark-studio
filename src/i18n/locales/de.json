@@ -1,0 +1,528 @@
+{
+  "nav": {
+    "projects": "Vorlagen",
+    "services": "Leistungen",
+    "standards": "Standards",
+    "about": "Über uns",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "cta": "Projekt anfragen →"
+  },
+  "hero": {
+    "eyebrow": "PREMIUM FRAMER TEMPLATES & INDIVIDUELLES WEBDESIGN",
+    "title": "Websites mit Höchstgeschwindigkeit, entwickelt in Framer.",
+    "description": "Spark Studio entwickelt maßgeschneiderte Framer-Websites und einsatzbereite Templates für ambitionierte Start-ups, Studios und moderne Unternehmen — ohne Programmieraufwand, mit 99+ PageSpeed.",
+    "exploreCta": "Vorlagen entdecken ↓",
+    "customCta": "Individuelles Projekt anfragen →",
+    "stat1Val": "90+",
+    "stat1Label": "Core Web Vitals",
+    "stat2Val": "0",
+    "stat2Label": "Code erforderlich",
+    "stat3Val": "1-Klick",
+    "stat3Label": "Framer Remix"
+  },
+  "standards": {
+    "tag": "STANDARDS",
+    "title": "Entwickelt ohne Kompromisse",
+    "subtitle": "Jede Vorlage folgt demselben Qualitätsstandard: erstklassige Ladezeiten, absolute Responsivität und nahtlose Anpassbarkeit.",
+    "cards": [
+      {
+        "num": "01",
+        "title": "90+ Core Web Vitals",
+        "desc": "Optimierte DOM-Struktur, schlanke Skripte und komprimierte WebP-Bilder für minimale Ladezeiten und Top-Google-Rankings."
+      },
+      {
+        "num": "02",
+        "title": "100% visuelle Bearbeitung, kein Code",
+        "desc": "Farben anpassen, Schriften austauschen, Bilder aktualisieren und Bereiche direkt auf der Framer-Arbeitsfläche verschieben – ohne Entwickler."
+      },
+      {
+        "num": "03",
+        "title": "Modulare dynamische CMS-Architektur",
+        "desc": "Filterbare Sammlungen, interaktive Rechner und flexible Komponenten, die sich problemlos mit Ihrem Wachstum skalieren lassen."
+      }
+    ]
+  },
+  "services": {
+    "tag": "LEISTUNGEN",
+    "title": "Framer Entwicklung & Template-Anpassung",
+    "subtitle": "Ob maßgeschneiderte Framer-Website von Grund auf, pixelgenaue Figma-zu-Framer-Umsetzung oder individuelle Anpassung bestehender Framer-Templates — Spark Studio liefert erstklassige Web-Erlebnisse mit garantierten 95+ PageSpeed-Werten.",
+    "items": [
+      {
+        "title": "Vorlagen-Anpassung",
+        "price": "$499 – $899",
+        "turnaround": "Dauer: 3–5 Tage",
+        "desc": "Anpassung von Schriften und Farben, Logo-Tausch, Inhaltsübertragung, zusätzliche Abschnitte und Prüfung aller Bildschirmgrößen."
+      },
+      {
+        "title": "Individuelle Framer-Website",
+        "price": "$2,500 – $6,000+",
+        "turnaround": "Dauer: 2–3 Wochen",
+        "desc": "Individuelles UI/UX-Design, native Framer-Komponenten, flüssige Animationen, dynamisches CMS und maximale Performance-Optimierung."
+      },
+      {
+        "title": "Figma-zu-Framer-Umsetzung",
+        "price": "$1,500 – $3,500",
+        "turnaround": "Dauer: 7–10 Tage",
+        "desc": "Pixelgenaue 1:1-Übersetzung Ihrer Figma-Designs in interaktive, einsatzbereite Framer-Seiten mit sauberen Komponenten."
+      },
+      {
+        "title": "Framer-Performance-Optimierung",
+        "price": "$350 – $600",
+        "turnaround": "Dauer: 2–3 Tage",
+        "desc": "Konsolidierung von Webfonts, Bildkomprimierung in AVIF/WebP, Skript-Optimierung und Behebung von Layout-Shifts für 90+ PageSpeed."
+      }
+    ]
+  },
+  "templates": {
+    "tag": "VORLAGEN",
+    "title": "Einsatzbereite Vorlagen & digitale Flaggschiffe",
+    "subtitle": "Entwickelt mit flüssigen Interaktionen, dynamischen CMS-Strukturen und null Wartungsaufwand.",
+    "viewTemplate": "Vorlage ansehen →",
+    "liveDemo": "Live-Demo ↗",
+    "buyNow": "Jetzt kaufen",
+    "allTemplates": "Alle Vorlagen →",
+    "items": [
+      {
+        "slug": "mavric-estate",
+        "name": "Mavric Estate",
+        "category": "Modernes Immobilien-CMS & Makler",
+        "tagline": "Generische Makler-Websites verlieren Leads an große Immobilienportale. Mavric Estate wurde entwickelt, um qualifizierte Anfragen zu gewinnen.",
+        "price": "69 €",
+        "image": "/templates/mavric-estate.png",
+        "demoUrl": "https://mavric-estate.framer.website/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1"
+      },
+      {
+        "slug": "aurelle-estates",
+        "name": "Aurelle Estates",
+        "category": "Redaktionelle Luxus-Immobilien",
+        "tagline": "Vermögende Käufer suchen keine Standardportale — sie erwarten architektonische Autorität.",
+        "price": "99 €",
+        "image": "/templates/aurelle-estates.png",
+        "demoUrl": "https://wandering-variations-344785.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
+      },
+      {
+        "slug": "onyx-atelier",
+        "name": "Onyx Atelier",
+        "category": "Monolithische Architektur & Interieur",
+        "tagline": "Die meisten Architektur-Portfolios sind simple Bilder-Raster. Onyx Atelier ist wie eine Ausstellungsmonografie aufgebaut.",
+        "price": "79 €",
+        "image": "/templates/onyx-atelier.png",
+        "demoUrl": "https://active-strengthening-218427.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
+      },
+      {
+        "slug": "vellum-edition",
+        "name": "Vellum Edition",
+        "category": "Redaktionelles Architektur-Portfolio",
+        "tagline": "Eine ruhige Kunstbuch-Monografie für Architekturbüros, bei denen Fotografie und Materialität führen.",
+        "price": "29 €",
+        "image": "/templates/vellum-edition.png",
+        "demoUrl": "https://unlimited-mind-018782.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
+      },
+      {
+        "slug": "halden-edition",
+        "name": "Halden Edition",
+        "category": "Individuelles Möbel- & Objektstudio",
+        "tagline": "Massenmarkt-Shop-Templates zerstören handwerklichen Wert. Halden Edition ist für Sammlerstücke kuratiert.",
+        "price": "59 €",
+        "image": "/templates/halden-edition.png",
+        "demoUrl": "https://past-network-244230.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1"
+      },
+      {
+        "slug": "grain-form",
+        "name": "Grain & Form",
+        "category": "Handgefertigte Wohnkultur & E-Commerce",
+        "tagline": "Generische Online-Shops wirken austauschbar. Grain & Form verleiht Wohnkultur Haptik und Persönlichkeit.",
+        "price": "58 €",
+        "image": "/templates/grain-form.png",
+        "demoUrl": "https://mindful-account-986092.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1"
+      },
+      {
+        "slug": "slowgrain",
+        "name": "SLOWGRAIN",
+        "category": "Massivholz & traditionelles Handwerk",
+        "tagline": "Eine redaktionelle Vorlage in Museumsqualität für Massivholz-Ateliers und Schreinereien.",
+        "price": "Kostenlos",
+        "image": "/templates/slowgrain.png",
+        "demoUrl": "https://prosperous-statuses-272584.framer.app/style-guide",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1"
+      }
+    ]
+  },
+  "bundles": {
+    "tag": "BUNDLE & SPAREN",
+    "title": "Bis zu 68% sparen mit kuratierten Vorlagen-Paketen.",
+    "subtitle": "Gezielte Zusammenstellungen und die vollständige Studio-Sammlung mit umfassenden kommerziellen Lizenzen.",
+    "pickAny3": {
+      "badge": "BELIEBTESTE WAHL",
+      "title": "Wähle beliebige 3 Starter-Pack",
+      "price": "$99",
+      "regularPrice": "$216",
+      "features": [
+        "Wähle beliebige 3 Vorlagen aus unserem Gesamtkatalog",
+        "Volle kommerzielle Lizenz pro Vorlage",
+        "Sofortige 1-Klick Framer-Remix-Links",
+        "Inklusive lebenslanger Updates"
+      ],
+      "cta": "Beliebige 3 wählen — $99",
+      "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
+    },
+    "soloVault": {
+      "badge": "BESTER WERT",
+      "title": "Kompletter Studio-Vault (Solo)",
+      "price": "$149",
+      "regularPrice": "$392",
+      "features": [
+        "Sofortiger Zugriff auf ALLE 7 aktuellen Vorlagen + Slowgrain",
+        "Kommerzielle Solo-Lizenz pro Vorlage",
+        "Design-Token-Systeme und Styleguides",
+        "Direkter Entwickler-Support-Kanal"
+      ],
+      "cta": "Gesamten Vault freischalten — $149",
+      "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
+    },
+    "agencyVault": {
+      "badge": "FÜR AGENTUREN",
+      "title": "Kompletter Studio-Vault (Agentur)",
+      "price": "$249",
+      "regularPrice": "$590",
+      "features": [
+        "Alle Vorlagen mit unbegrenzten Client-Deployments",
+        "100% der Projekt-Umsätze behalten",
+        "Alle zugehörigen Figma-Dateien & Assets",
+        "Prioritäres Studio-Onboarding"
+      ],
+      "cta": "Agentur-Vault holen — $249",
+      "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
+    },
+    "nichePacks": [
+      {
+        "tag": "IMMOBILIEN · 69 $ SPAREN",
+        "title": "Luxus-Immobilien Flaggschiff-Duo",
+        "price": "$99",
+        "regularPrice": "$168",
+        "desc": "Aurelle Estates ($99) + Mavric Estate ($69). Das maßgebliche Toolkit für Luxusmakler und Projektentwickler.",
+        "cta": "Immobilien-Duo holen — $99",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
+      },
+      {
+        "tag": "ARCHITEKTUR · 39 $ SPAREN",
+        "title": "Monografie-Architektur-Duo",
+        "price": "$69",
+        "regularPrice": "$108",
+        "desc": "Onyx Atelier ($79) + Vellum Edition ($29). Entwickelt für Architekturbüros, Raumplaner und Monografien.",
+        "cta": "Architektur-Duo holen — $69",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
+      },
+      {
+        "tag": "HANDWERK & HANDEL · 67 $ SPAREN",
+        "title": "Handwerk & E-Commerce Suite",
+        "price": "$119",
+        "regularPrice": "$186",
+        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Kuratiert für Ateliers und Boutiquen.",
+        "cta": "Handwerks-Suite holen — $119",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
+      }
+    ]
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Häufige Fragen",
+    "subtitle": "Direkte Antworten zu unseren Vorlagen, zum Anpassungsprozess und zu unserer Studio-Entwicklung.",
+    "items": [
+      {
+        "question": "Können Sie jede Framer-Vorlage individuell anpassen?",
+        "answer": "Ja. Wir passen offizielle Framer-Marketplace-Vorlagen und Themes von Drittanbietern individuell an – einschließlich Markenfarben, Typografie, eigener CMS-Felder und externer Integrationen."
+      },
+      {
+        "question": "Wie lange dauert die Umsetzung in der Regel?",
+        "answer": "Die Anpassung einer Vorlage dauert in der Regel 3 bis 5 Werktage. Individuell entwickelte Websites benötigen je nach Umfang etwa 2 bis 3 Wochen."
+      },
+      {
+        "question": "Wie optimieren Sie die Ladegeschwindigkeit von Framer-Websites?",
+        "answer": "Wir optimieren Webfonts, komprimieren Bilder in moderne AVIF- und WebP-Formate und verbessern responsive Breakpoints, um regelmäßig PageSpeed-Werte von über 95 zu erreichen."
+      },
+      {
+        "question": "Wie können wir starten?",
+        "answer": "Senden Sie Ihr Projektbriefing an sparkstudio0@outlook.com. Wir prüfen Ihre Anforderungen und melden uns innerhalb von 24 Stunden mit einem klaren Angebot und einem möglichen Starttermin."
+      }
+    ]
+  },
+  "contact": {
+    "tag": "KONTAKT AUFNEHMEN",
+    "title": "Bereit für Ihr nächstes Webprojekt?",
+    "subtitle": "Fragen zu einer Vorlage, einer individuellen Integration oder bereit für eine maßgeschneiderte Website? Wir antworten innerhalb von 24 Stunden.",
+    "email": "sparkstudio0@outlook.com",
+    "formName": "Ihr Name",
+    "formEmail": "E-Mail-Adresse",
+    "formType": "Projekttyp",
+    "typeOptions": [
+      "Template-Anpassung (ab 499 €)",
+      "Individuelle Website (ab 2.500 €)",
+      "Figma zu Framer (ab 1.500 €)",
+      "Speed-Optimierung (ab 350 €)",
+      "Sonstiges / Frage"
+    ],
+    "formBudget": "Budgetrahmen",
+    "budgetOptions": [
+      "< $1,000",
+      "$1,000 – $3,000",
+      "$3,000 – $6,000",
+      "$6,000+"
+    ],
+    "formMessage": "Beschreiben Sie Ihr Projekt...",
+    "submitBtn": "Anfrage senden →",
+    "sending": "Wird gesendet...",
+    "success": "Vielen Dank! Ihre Nachricht wurde gesendet. Wir antworten innerhalb von 24 Stunden.",
+    "directChannels": "Direkte Kanäle",
+    "responseTime": "Garantierte Antwort innerhalb von 24h"
+  },
+  "footer": {
+    "tagline": "High-Performance Framer-Templates und individuelle Websites für anspruchsvolle Marken weltweit.",
+    "rights": "© 2026 Spark Studio. All rights reserved.",
+    "builtWith": "Entwickelt mit nativen Framer-Ebenen · Optimiert für Core Web Vitals"
+  },
+  "templateDetails": {
+    "mavric-estate": {
+      "name": "Mavric Estate",
+      "category": "Modernes Immobilien-CMS & Makler",
+      "headline": "Generische Makler-Websites verlieren Leads an große Immobilienportale. Mavric Estate wurde entwickelt, um qualifizierte Anfragen zu gewinnen.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Mavric Estate ist eine konversionsstarke, video-optimierte Immobilien-Vorlage für zukunftsorientierte Maklerbüros und Projektentwickler. Sie verbindet cineastische Interaktionen mit nützlichen Conversion-Tools – direkt in Framer ohne Code-Wartung.",
+      "featuresTitle": "Originale Features für moderne Immobilienmakler",
+      "features": [
+        "Integrierter Echtzeit-Hypothekenrechner — Interaktives Berechnungstool direkt auf den Objektdetailseiten.",
+        "3-Clip Video-Hero-Reel — Hochwertiger animierter Einstieg für erstklassige Agentur-Wirkung.",
+        "Filterbarer CMS-Immobilienkatalog — Sofortiges Umschalten (Kauf / Miete), Preisfilter und Standort-Tags.",
+        "Gepinnte horizontale Bereichs-Showcase — Horizontale Schiebebereiche für Stadtteile und Highlights.",
+        "Interaktive Hover-Cards — Vorschaukarten mit Kennzahlen und sofortigem Besichtigungs-CTA.",
+        "Gezielte Lead-Weiterleitung — Passende Formulare für Besichtigungen, Bewertungen oder Anfragen."
+      ],
+      "includedTitle": "Was enthalten ist",
+      "included": [
+        "Komplettes produktionsbereites Framer-Projekt mit 5 dynamischen CMS-Kollektionen",
+        "Schritt-für-Schritt Einrichtungsanleitung",
+        "Kostenlose lebenslange Updates",
+        "Direkter Entwickler-Support von Spark Studio"
+      ],
+      "cmsTitle": "5 Dynamische CMS-Kollektionen",
+      "cmsDesc": "Immobilien, Nachbarschaften, Makler, Kundenbewertungen, FAQ-Akkordeons."
+    },
+    "aurelle-estates": {
+      "name": "Aurelle Estates",
+      "category": "Redaktionelle Luxus-Immobilien",
+      "headline": "Vermögende Käufer suchen keine Standardportale — sie erwarten architektonische Autorität.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Aurelle Estates ist eine exklusive redaktionelle Immobilienvorlage für renommierte Maklerbüros, Spitzenanwesen und private Vermögensberatungen.",
+      "featuresTitle": "Originale Features für Luxus-Maklerbüros",
+      "features": [
+        "Monografische Objektpräsentation im Buch-Stil.",
+        "Dynamisches Medienraster über alle Bildschirmgrößen.",
+        "Berater- und Partner-Portfolios mit direkter Kontaktweiterleitung.",
+        "Interaktive Nachbarschafts-Guides mit Gastronomie und Lifestyle-Tipps.",
+        "Exklusiver Bereich für diskrete Off-Market-Objekte."
+      ],
+      "includedTitle": "Was enthalten ist",
+      "included": [
+        "12 Produktionsseiten in Framer",
+        "Dynamische CMS-Kollektionen für Objekte und Berater",
+        "Vollständiges Design-System",
+        "Kommerzielle Einzellizenz"
+      ],
+      "cmsTitle": "12 Produktionsseiten",
+      "cmsDesc": "Startseite, Objektverzeichnis, Objekt-Detail-CMS, Standorte, Team, Kontakt."
+    },
+    "onyx-atelier": {
+      "name": "Onyx Atelier",
+      "category": "Monolithische Architektur & Interieur",
+      "headline": "Die meisten Architektur-Portfolios sind simple Bilder-Raster. Onyx Atelier ist wie eine Ausstellungsmonografie aufgebaut.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Onyx Atelier ist ein minimalistisches Portfolio für Architekturbüros, Raumplaner und Interior-Designer mit Fokus auf Materialität und Form.",
+      "featuresTitle": "Originale Features für Architekturbüros",
+      "features": [
+        "Kapitelbasierte Fallstudien-Präsentation mit Konstruktionszeichnungen.",
+        "Bodoni Moda & Schweizer Typografieraster.",
+        "Material- und Spezifikations-Badges (Baujahr, m², Bauweise).",
+        "Hochauflösende Planansicht mit Zoomfunktion.",
+        "Typologie-Filter (Wohnbau, Gewerbe, Kultur)."
+      ],
+      "includedTitle": "Was enthalten ist",
+      "included": [
+        "9 produktionsbereite Seiten",
+        "Dynamisches CMS für Projekte & Magazin",
+        "Typografiesystem",
+        "Lebenslange Updates"
+      ],
+      "cmsTitle": "9 Produktionsseiten",
+      "cmsDesc": "Monografie-Index, Fallstudien-CMS, Büroprofil, Methodik, Kontakt."
+    },
+    "vellum-edition": {
+      "name": "Vellum Edition",
+      "category": "Redaktionelles Architektur-Portfolio",
+      "headline": "Eine ruhige Kunstbuch-Monografie für Architekturbüros, bei denen Fotografie und Materialität führen.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Vellum Edition ist inspiriert von bibliophilen Schweizer Architekturbänden und zeitloser, warmer Zurückhaltung.",
+      "featuresTitle": "Hauptmerkmale",
+      "features": [
+        "4-Kapitel-Fallstudien: Kontext, Materialität, Form, Raumerlebnis.",
+        "Kalkweiß- & Pergament-Farbpalette für kontemplatives Betrachten.",
+        "Asymmetrisches Bild-Storyboarding.",
+        "Kundenstimmen als redaktionelle Zitate eingebunden."
+      ],
+      "includedTitle": "Design-System & Spezifikationen",
+      "included": [
+        "Redaktionelle Framer-Vorlage",
+        "Typografieskala mit Serif/Sans",
+        "Dynamisches CMS",
+        "95+ PageSpeed-Garantie"
+      ],
+      "cmsTitle": "Design-System & Spezifikationen",
+      "cmsDesc": "4-Kapitel-Fallstudien, voll responsive, PageSpeed optimiert."
+    },
+    "halden-edition": {
+      "name": "Halden Edition",
+      "category": "Individuelles Möbel- & Objektstudio",
+      "headline": "Massenmarkt-Shop-Templates zerstören handwerklichen Wert. Halden Edition ist für Sammlerstücke kuratiert.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Halden Edition rückt Holzmaserung, Holzverbindungen und maßgefertigte Auftragsarbeiten in den Mittelpunkt.",
+      "featuresTitle": "Originale Features für Manufakturen & Möbelstudios",
+      "features": [
+        "Werkstatt-Tagebuch mit Herkunftsnachweis.",
+        "Technische Maßblätter und Risszeichnungen für Planer.",
+        "Anfrageformular für Sonderanfertigungen mit Holzauswahl.",
+        "Integrierter Warenkorb & Checkout.",
+        "13 Produktionsseiten."
+      ],
+      "includedTitle": "Was enthalten ist",
+      "included": [
+        "13 produktionsbereite Seiten",
+        "Produkte & Werkstatt CMS",
+        "Anfrage-Modals",
+        "Framer Remix Link"
+      ],
+      "cmsTitle": "13 Produktionsseiten",
+      "cmsDesc": "Katalog, Produktdetails CMS, Werkstatt-Tagebuch, Sonderanfertigungen, Über uns."
+    },
+    "grain-form": {
+      "name": "Grain & Form",
+      "category": "Handgefertigte Wohnkultur & E-Commerce",
+      "headline": "Generische Online-Shops wirken austauschbar. Grain & Form verleiht Wohnkultur Haptik und Persönlichkeit.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Grain & Form verbindet warme Erdtöne, charakteristische Bogenrahmen und taktile Layouts.",
+      "featuresTitle": "Originale Features für handgefertigte Wohnaccessoires",
+      "features": [
+        "Charakteristische Bogenrahmen & flexible Raster.",
+        "Taktiler Warenkorb-Drawer mit Echtzeit-Berechnung.",
+        "Material-Guides für Glasuren, Leinen und Edelhölzer.",
+        "Kuratierte Lookbooks mit anklickbaren Hotspots.",
+        "Multi-Währungs-Unterstützung."
+      ],
+      "includedTitle": "Was enthalten ist",
+      "included": [
+        "12 Seiten mit E-Commerce",
+        "Kollektionen CMS",
+        "Interaktive Lookbooks",
+        "Video-Anleitung"
+      ],
+      "cmsTitle": "Seiten & Bereiche",
+      "cmsDesc": "Shop, Lookbook, Produktdetails CMS, Geschichten, FAQ, Kontakt."
+    },
+    "slowgrain": {
+      "name": "SLOWGRAIN",
+      "category": "Massivholz & traditionelles Handwerk",
+      "headline": "Eine redaktionelle Vorlage in Museumsqualität für Massivholz-Ateliers und Schreinereien.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "SLOWGRAIN ist eine Hommage an japanische Holzverbindungen und skandinavische Ruhe.",
+      "featuresTitle": "Haupt-Highlights:",
+      "features": [
+        "Japanische Holzbau- & Wabi-Sabi-Ästhetik.",
+        "Herkunftsnachweis für Holzarten und Trockenzeiten.",
+        "Strukturierte Anfrage für Sondermaße.",
+        "Interaktive Holzarten-Vorschau (Eiche, Nussbaum, Esche).",
+        "Kostenlose Edition direkt verfügbar."
+      ],
+      "includedTitle": "Enthaltene Seiten:",
+      "included": [
+        "Atelier-Startseite mit Entstehungsgeschichte",
+        "Möbel-Showcase CMS",
+        "Holzarten-Index",
+        "Kontaktformular"
+      ],
+      "cmsTitle": "Individuelle Seiten & Sonderprojekte:",
+      "cmsDesc": "Atelier, Möbel CMS, Verbindungstechniken, Maßanfertigungen, Styleguide."
+    },
+    "terra": {
+      "name": "TERRA",
+      "category": "Editorial-Shop für Möbelstudios & Designgalerien",
+      "headline": "Ein ruhiges, redaktionelles Store-Template für Möbelstudios, Objektdesigner und zeitgenössische Designgalerien.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "TERRA wurde für Möbelstudios, Objektdesigner und Designgalerien entwickelt, die Wert auf eine kuratierte und harmonische Produktpräsentation legen.",
+      "featuresTitle": "Hauptfunktionen",
+      "features": [
+        "Front-End-Warenkorb — Sanft ausfahrender Warenkorb mit Stückzahlanzeige und Zwischensumme.",
+        "Interaktive Kollektionsfilter — Filtern nach Kategorie, Material, Finish und Preis.",
+        "Monografische Produktseiten — Fixierte Kaufleiste, Farbmuster, Maßzeichnungen und technische Akkordeons.",
+        "Raum-Explorer — Interaktive Raumszene mit nummerierten Produktmarkierungen."
+      ],
+      "includedTitle": "Das ist enthalten",
+      "included": [
+        "Vollständiges Framer-Projekt mit dynamischem CMS",
+        "Schritt-für-Schritt-Dokumentation & Styleguide",
+        "Kostenlose lebenslange Updates",
+        "Direkter Support von Spark Studio0"
+      ],
+      "cmsTitle": "Enthaltene Seiten",
+      "cmsDesc": "Startseite, Kollektion, Produkt (CMS), Warenkorb, Kontakt, Styleguide, Rechtliches & 404."
+    },
+    "sasso-architect": {
+      "name": "SASSO Architect",
+      "category": "Digitale Architektur-Monografie für Studios & Ateliers",
+      "headline": "Architektur- & Innenarchitektur-Studio — Flaggschiff auf Monografie-Niveau für Boutique-Architekturbüros, Raumateliers und Interieur-Praxen.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Entwickelt für Architekten und Raumgestalter mit anspruchsvollen Projekten. Inspiriert von Schweizer Architektur-Monografien; fokussiert auf Materialität und Beständigkeit.",
+      "featuresTitle": "Architektonische Kernfunktionen",
+      "features": [
+        "Projektanfrage-Qualifizierung — Strukturierte Mehrschritt-Erfassung (Typologie, Umfang, Standort, Budget).",
+        "Monografische Fallstudien — Baupläne, axonometrische Zeichnungen und taktile Materialpaletten.",
+        "3 dynamische CMS-Sammlungen — Architekturprojekte, Studio-Disziplinen und Journal."
+      ],
+      "includedTitle": "Das ist enthalten",
+      "included": [
+        "Vollständiges Framer-Projekt mit 3 dynamischen CMS-Sammlungen",
+        "8 vorinstallierte architektonische Fallstudien & Dokumentation",
+        "Kostenlose lebenslange Updates",
+        "Direkter Support von Spark Studio0"
+      ],
+      "cmsTitle": "24 Produktionsrouten",
+      "cmsDesc": "Startseite, Projekte, Studio, Kontakt, Karriere, Impressum, Datenschutz, 404 und CMS-Routen."
+    },
+    "tessovra": {
+      "name": "TESSOVRA",
+      "category": "E-Commerce-Showroom für Fliesen & Oberflächen",
+      "headline": "Fliesen- & Oberflächen-Showroom — Architektonischer E-Commerce für taktile Oberflächen, maßgeschneiderte Innenräume und Design-Ateliers.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Bildstarkes E-Commerce- und Showroom-Template für anspruchsvolle Marken mit Fokus auf physische Produkte und hochwertige Materialien.",
+      "featuresTitle": "Showroom-Funktionen",
+      "features": [
+        "Flächen- & Paket-Kalkulator — Quadratmeterberechnung inklusive Verschnittzugabe und automatischer Rundung.",
+        "Interaktives Moodboard — Favoriten sammeln und Preisanfragen mit einem Klick versenden.",
+        "Nativer Front-End-Warenkorb — Komfortable Musterbestellung und Mengenregelung."
+      ],
+      "includedTitle": "Das ist enthalten",
+      "included": [
+        "Vollständiges Framer-Projekt mit 2 dynamischen CMS-Sammlungen",
+        "Interaktive Rechner und Moodboard-Generator",
+        "Kostenlose lebenslange Updates",
+        "Direkter Support von Spark Studio0"
+      ],
+      "cmsTitle": "19 enthaltene Seiten",
+      "cmsDesc": "Startseite, Shop, Produkt (CMS), Warenkorb, Moodboard, Muster, Showroom, Anfrage und 404."
+    }
+  }
+}

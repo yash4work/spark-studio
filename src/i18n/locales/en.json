@@ -1,0 +1,537 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "services": "Services",
+    "standards": "Standards",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "Start a project →"
+  },
+  "hero": {
+    "eyebrow": "PREMIUM FRAMER TEMPLATES & CUSTOM WEB DESIGN",
+    "title": "Templates engineered to convert & scale.",
+    "description": "Spark Studio designs high-performance Framer templates and custom websites for ambitious startups, creative studios, and modern businesses — visually editable, code-free, and built with 90+ PageSpeed scores out of the box.",
+    "exploreCta": "Explore templates ↓",
+    "customCta": "Hire us for custom work →",
+    "stat1Val": "90+",
+    "stat1Label": "Core Web Vitals",
+    "stat2Val": "0",
+    "stat2Label": "Code required",
+    "stat3Val": "1-click",
+    "stat3Label": "Framer remix"
+  },
+  "standards": {
+    "tag": "STANDARDS",
+    "title": "Engineered without compromise",
+    "subtitle": "Every template is held to the same production standard: enterprise-grade speed, rock-solid responsiveness, seamless customization.",
+    "cards": [
+      {
+        "num": "01",
+        "title": "90+ Core Web Vitals",
+        "desc": "Optimized DOM structure, lightweight scripts and auto-compressed WebP images for instant load times and strong Google ranking signals."
+      },
+      {
+        "num": "02",
+        "title": "100% visual editing, zero code",
+        "desc": "Modify colors, swap typography, update imagery and rearrange components directly on Framer’s canvas — no developer needed."
+      },
+      {
+        "num": "03",
+        "title": "Modular dynamic CMS architecture",
+        "desc": "Filterable collections, real-time calculators and interactive components built to scale effortlessly with your growing business."
+      }
+    ]
+  },
+  "services": {
+    "tag": "SERVICES",
+    "title": "Framer Development & Template Customization Studio",
+    "subtitle": "Whether you need a bespoke Framer website built from scratch, pixel-perfect Figma to Framer development, or full brand customization of any official Framer marketplace template, Spark Studio delivers production-grade web experiences engineered for 95+ PageSpeed scores.",
+    "items": [
+      {
+        "title": "Template Customization",
+        "price": "$499 – $899",
+        "turnaround": "Turnaround: 3–5 days",
+        "desc": "Brand typography, color palette, logo swap, content migration, custom section additions, responsive breakpoint audit."
+      },
+      {
+        "title": "Bespoke Framer Website Development",
+        "price": "$2,500 – $6,000+",
+        "turnaround": "Turnaround: 2–3 weeks",
+        "desc": "Custom UI/UX design, native Framer component build, fluid animations, dynamic CMS architecture, Core Web Vitals optimization."
+      },
+      {
+        "title": "Figma to Framer Conversion",
+        "price": "$1,500 – $3,500",
+        "turnaround": "Turnaround: 7–10 days",
+        "desc": "1:1 pixel-perfect translation of your Figma files into interactive, production-ready Framer pages with interactive components."
+      },
+      {
+        "title": "Framer Speed Boost / Performance",
+        "price": "$350 – $600",
+        "turnaround": "Turnaround: 2–3 days",
+        "desc": "Font weight consolidation, image compression, script deferral, and layout shift fixes to guarantee 90+ mobile PageSpeed scores."
+      }
+    ]
+  },
+  "templates": {
+    "tag": "TEMPLATES",
+    "title": "Production-ready templates & digital flagships",
+    "subtitle": "Engineered with fluid interactions, dynamic CMS structures, and zero maintenance.",
+    "viewTemplate": "View template →",
+    "liveDemo": "Live demo ↗",
+    "buyNow": "Buy now",
+    "allTemplates": "All templates →",
+    "items": [
+      {
+        "slug": "mavric-estate",
+        "name": "Mavric Estate",
+        "category": "Modern real estate CMS & realtor",
+        "tagline": "Generic realtor websites lose leads to Zillow. Mavric Estate is engineered to capture them.",
+        "price": "$69",
+        "image": "/templates/mavric-estate.png",
+        "demoUrl": "https://mavric-estate.framer.website/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1"
+      },
+      {
+        "slug": "aurelle-estates",
+        "name": "Aurelle Estates",
+        "category": "Editorial luxury real estate",
+        "tagline": "High-net-worth buyers don’t browse standard portals — they seek architectural authority.",
+        "price": "$99",
+        "image": "/templates/aurelle-estates.png",
+        "demoUrl": "https://wandering-variations-344785.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
+      },
+      {
+        "slug": "onyx-atelier",
+        "name": "Onyx Atelier",
+        "category": "Monolithic architecture & interior",
+        "tagline": "Most architecture portfolios look like generic image grids. Onyx Atelier is built like an exhibition monograph.",
+        "price": "$79",
+        "image": "/templates/onyx-atelier.png",
+        "demoUrl": "https://active-strengthening-218427.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
+      },
+      {
+        "slug": "vellum-edition",
+        "name": "Vellum Edition",
+        "category": "Editorial architecture portfolio",
+        "tagline": "A quiet, art-book monograph for architecture studios that let photography and material narratives lead.",
+        "price": "$29",
+        "image": "/templates/vellum-edition.png",
+        "demoUrl": "https://unlimited-mind-018782.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
+      },
+      {
+        "slug": "halden-edition",
+        "name": "Halden Edition",
+        "category": "Custom furniture & object studio",
+        "tagline": "Mass-market shop templates kill artisanal value. Halden Edition is curated for collectible craft.",
+        "price": "$59",
+        "image": "/templates/halden-edition.png",
+        "demoUrl": "https://past-network-244230.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1"
+      },
+      {
+        "slug": "grain-form",
+        "name": "Grain & Form",
+        "category": "Artisan homeware & tactile commerce",
+        "tagline": "Generic online shops feel disposable. Grain & Form makes home decor feel personal and tactile.",
+        "price": "$58",
+        "image": "/templates/grain-form.png",
+        "demoUrl": "https://mindful-account-986092.framer.app/",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1"
+      },
+      {
+        "slug": "slowgrain",
+        "name": "SLOWGRAIN",
+        "category": "Solid timber & heirloom furniture",
+        "tagline": "An editorial, museum-grade template for solid timber ateliers, heirloom furniture makers and joinery workshops.",
+        "price": "Free",
+        "image": "/templates/slowgrain.png",
+        "demoUrl": "https://prosperous-statuses-272584.framer.app/style-guide",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1"
+      }
+    ]
+  },
+  "bundles": {
+    "tag": "BUNDLE & SAVE",
+    "title": "Save up to 68% with curated template bundles.",
+    "subtitle": "Strategic pairings and complete studio collections with full commercial licenses.",
+    "pickAny3": {
+      "badge": "MOST POPULAR",
+      "title": "Pick Any 3 Starter Pack",
+      "price": "$99",
+      "regularPrice": "$216",
+      "features": [
+        "Pick any 3 templates from our entire catalog",
+        "Full commercial license per template",
+        "Instant 1-click Framer remix links",
+        "Lifetime updates included"
+      ],
+      "cta": "Choose Any 3 — $99",
+      "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
+    },
+    "soloVault": {
+      "badge": "BEST VALUE",
+      "title": "Complete Studio Vault (Solo)",
+      "price": "$149",
+      "regularPrice": "$392",
+      "features": [
+        "Instant access to ALL 7 current templates + Slowgrain",
+        "Commercial solo license per template",
+        "Design token systems & style guides",
+        "Direct developer support channel"
+      ],
+      "cta": "Unlock Full Vault — $149",
+      "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
+    },
+    "agencyVault": {
+      "badge": "FOR AGENCIES",
+      "title": "Complete Studio Vault (Agency)",
+      "price": "$249",
+      "regularPrice": "$590",
+      "features": [
+        "All templates with unlimited commercial client deployments",
+        "Keep 100% of client project revenue",
+        "All companion Figma files & design assets",
+        "Priority studio developer onboarding"
+      ],
+      "cta": "Get Agency Vault — $249",
+      "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
+    },
+    "nichePacks": [
+      {
+        "tag": "REAL ESTATE · SAVE $69",
+        "title": "Luxury Real Estate Flagship Duo",
+        "price": "$99",
+        "regularPrice": "$168",
+        "desc": "Aurelle Estates ($99) + Mavric Estate ($69). The definitive toolkit for luxury brokerages, property developers, and agents.",
+        "cta": "Get Real Estate Duo — $99",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
+      },
+      {
+        "tag": "ARCHITECTURE · SAVE $39",
+        "title": "Monograph Architecture Duo",
+        "price": "$69",
+        "regularPrice": "$108",
+        "desc": "Onyx Atelier ($79) + Vellum Edition ($29). Engineered for architectural practices, spatial design studios, and monographs.",
+        "cta": "Get Architecture Duo — $69",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
+      },
+      {
+        "tag": "COMMERCE & CRAFT · SAVE $67",
+        "title": "Artisan Living & E-Commerce Suite",
+        "price": "$119",
+        "regularPrice": "$186",
+        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for bespoke ateliers & boutiques.",
+        "cta": "Get Artisan Suite — $119",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
+      }
+    ]
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Frequently asked",
+    "subtitle": "Direct answers regarding our templates, customization process, and studio engineering.",
+    "items": [
+      {
+        "question": "Can you customize any Framer template?",
+        "answer": "Yes. We adapt and customize any official Framer marketplace template or third-party theme—adjusting brand palettes, typography, custom CMS fields, and third-party integrations."
+      },
+      {
+        "question": "What is the typical turnaround time?",
+        "answer": "Template customizations are completed in 3 to 5 business days. Bespoke website builds take 2 to 3 weeks depending on scope."
+      },
+      {
+        "question": "How do you optimize Framer site speed?",
+        "answer": "We eliminate render-blocking fonts, compress assets to AVIF/WebP, and streamline responsive breakpoint trees to consistently achieve 95+ scores on Google PageSpeed Insights."
+      },
+      {
+        "question": "How do we get started?",
+        "answer": "Email your project brief directly to sparkstudio0@outlook.com. We review your requirements and respond within 24 hours with a fixed quote and start date."
+      }
+    ]
+  },
+  "contact": {
+    "tag": "START A CONVERSATION",
+    "title": "Let’s build something exceptional together.",
+    "subtitle": "Questions about a template, a custom integration, or ready to hire us for a custom website? We reply within 24 hours.",
+    "email": "sparkstudio0@outlook.com",
+    "formName": "Your Name",
+    "formEmail": "Email Address",
+    "formType": "Project Type",
+    "typeOptions": [
+      "Template Customization ($499+)",
+      "Bespoke Website Build ($2,500+)",
+      "Figma to Framer ($1,500+)",
+      "Speed Optimization ($350+)",
+      "Other / Question"
+    ],
+    "formBudget": "Budget Range",
+    "budgetOptions": [
+      "< $1,000",
+      "$1,000 – $3,000",
+      "$3,000 – $6,000",
+      "$6,000+"
+    ],
+    "formMessage": "Tell us about your project...",
+    "submitBtn": "Send Inquiry →",
+    "sending": "Sending...",
+    "success": "Thank you! Your message has been sent. We reply within 24 hours.",
+    "directChannels": "Direct Channels",
+    "responseTime": "Guaranteed 24h response time"
+  },
+  "footer": {
+    "tagline": "High-performance Framer templates and custom websites, built for ambitious brands worldwide.",
+    "rights": "© 2026 Spark Studio. All rights reserved.",
+    "builtWith": "Built with native Framer layers · Optimized for Core Web Vitals"
+  },
+  "templateDetails": {
+    "mavric-estate": {
+      "name": "Mavric Estate",
+      "category": "Modern real estate CMS & realtor",
+      "headline": "Generic realtor websites lose leads to Zillow. Mavric Estate is engineered to capture them.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "Mavric Estate is a high-converting, video-ready real estate agency template built for forward-thinking brokerages, modern realtors, and property developers. Blending fluid cinema-grade interactions with high-utility conversion tools. Built natively in Framer with zero code maintenance.",
+      "featuresTitle": "Original Features Built for Modern Agents",
+      "features": [
+        "Built-In Real-Time Mortgage Calculator — Interactive calculation tool directly integrated into property detail pages.",
+        "3-Clip Video Hero Reel — High-impact motion entrance setting an immediate tier-one agency tone.",
+        "Filterable CMS Property Catalog — Instant status toggling (For Sale / To Rent), price filters, and locality tags.",
+        "Pinned Horizontal Area Showcase — Horizontal sliding sections spotlighting signature neighborhoods and amenities.",
+        "Interactive Flip-on-Hover Cards — Preview cards displaying key specs and instant viewing CTA on hover.",
+        "Multi-Intent Lead Routing — Tailored forms for walkthrough bookings, seller appraisals, or inquiries."
+      ],
+      "includedTitle": "What's Included",
+      "included": [
+        "Complete production-ready Framer project with 5 dynamic CMS collections",
+        "Step-by-step setup documentation",
+        "Free lifetime updates",
+        "Direct customer support from Spark Studio"
+      ],
+      "cmsTitle": "5 Dynamic CMS Collections",
+      "cmsDesc": "Properties, Neighbourhoods, Agents, Client Reviews, FAQ Accordions."
+    },
+    "aurelle-estates": {
+      "name": "Aurelle Estates",
+      "category": "Editorial luxury real estate",
+      "headline": "High-net-worth buyers don’t browse standard portals — they seek architectural authority.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "Aurelle Estates is an ultra-luxury editorial real estate template crafted for prestigious brokerages, prime estates, and private wealth advisory firms. Designed with high-contrast typography, gallery-grade spatial showcases, and smooth micro-interactions that elevate property perception.",
+      "featuresTitle": "Original Features Built for Luxury Brokerages",
+      "features": [
+        "Private Monograph Property Showcase — High-end editorial layouts designed like architectural monographs.",
+        "Multi-Breakpoint Dynamic Media Grid — Fluid aspect ratio balancing for cinematic property photography.",
+        "Advisor & Partner Portfolios — Full team profile directories with direct inquiry routing.",
+        "Interactive Neighborhood Maps — Curated guides highlighting local lifestyle, dining, and culture.",
+        "Off-Market & Private Viewing Gate — Dedicated lead generation mechanisms for exclusive listings.",
+        "Dynamic Valuation & Appraisal Form — Frictionless onboarding for prospective high-value sellers."
+      ],
+      "includedTitle": "What's Included",
+      "included": [
+        "12 Production-ready Framer pages",
+        "Dynamic property and advisor CMS collections",
+        "Full responsive design tokens and style guide",
+        "Commercial license for single production site"
+      ],
+      "cmsTitle": "12 Production Pages",
+      "cmsDesc": "Home, Properties Index, Property Detail CMS, Neighborhoods, Advisors, About, Journal, Inquiries."
+    },
+    "onyx-atelier": {
+      "name": "Onyx Atelier",
+      "category": "Monolithic architecture & interior",
+      "headline": "Most architecture portfolios look like generic image grids. Onyx Atelier is built like an exhibition monograph.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "Onyx Atelier is a brutalist, typography-forward portfolio template for architectural practices, interior monograph designers, and spatial planning studios. Built to emphasize scale, materiality, and conceptual discipline.",
+      "featuresTitle": "Original Features Built for Architectural Practices",
+      "features": [
+        "Monograph Case Study Engine — Chapter-based project presentation with full-bleed drawings and render spreads.",
+        "Bodoni Moda & Swiss Typography Scale — Editorial typographic rhythm designed to showcase spatial intent.",
+        "Materiality & Specification Badges — Tagging system for structural materials, square meterage, and completion year.",
+        "Interactive Drawing Lightbox — High-resolution plan viewer with pan and zoom capabilities.",
+        "Project Filter by Typology & Scale — Filter by Residential, Commercial, Cultural, or Experimental.",
+        "Monochrome Exhibition Aesthetic — Timeless dark aesthetic that lets architectural rendering take the center stage."
+      ],
+      "includedTitle": "What's Included",
+      "included": [
+        "9 Production-ready Framer pages",
+        "Dynamic Projects and Journal CMS collections",
+        "Typography system and component library",
+        "Lifetime access and updates"
+      ],
+      "cmsTitle": "9 Production Pages",
+      "cmsDesc": "Monograph Index, Case Study CMS, Firm Profile, Methodology, Press, Contact."
+    },
+    "vellum-edition": {
+      "name": "Vellum Edition",
+      "category": "Editorial architecture portfolio",
+      "headline": "A quiet, art-book monograph for architecture studios that let photography and material narratives lead.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "Vellum Edition is an art-book monograph template for quiet luxury practices, interior ateliers, and residential architects. Inspired by collectible Swiss architectural publications and warm tactile minimalism.",
+      "featuresTitle": "Key Features",
+      "features": [
+        "4-Chapter Case Studies — Detailed storytelling narrative structure: Context, Materiality, Form, Experience.",
+        "Limewash & Editorial Palette — Warm stone and parchment tones engineered for contemplative viewing.",
+        "Asymmetric Image Storyboarding — Curated pacing of wide architectural photography and macro texture crops.",
+        "Client Review Monologue — Editorial testimonials integrated into project narratives.",
+        "Mobile-Perfect Monograph Pacing — Carefully calibrated scroll thresholds and touch interactions."
+      ],
+      "includedTitle": "Design System & Specifications",
+      "included": [
+        "Editorial Framer template with custom layout components",
+        "Full typography scale with serif & sans pairings",
+        "Dynamic case study CMS collection",
+        "Fast performance guarantee: 95+ PageSpeed score"
+      ],
+      "cmsTitle": "Design System & Specifications",
+      "cmsDesc": "4-Chapter case studies, full responsive layouts, light/dark responsive tuning, instant duplicate."
+    },
+    "halden-edition": {
+      "name": "Halden Edition",
+      "category": "Custom furniture & object studio",
+      "headline": "Mass-market shop templates kill artisanal value. Halden Edition is curated for collectible craft.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "Halden Edition is an e-commerce and showcase template engineered for heirloom furniture ateliers, master craftsmen, and studio makers. Highlighting timber grains, joinery details, and made-to-order bespoke commissions.",
+      "featuresTitle": "Original Features Built for Makers & Object Studios",
+      "features": [
+        "Craft Timeline & Workshop Journal — Narrative section demonstrating joinery methods and tree-to-table provenance.",
+        "Product Specifier & Dimension Sheets — Dimensional line drawings and technical data sheets for architects and interior designers.",
+        "Made-to-Order Custom Commission Inquiries — Specialized quoting forms with finish selection and wood specie choices.",
+        "Seamless LemonSqueezy / Stripe Integration — Instant buy buttons and digital cart drawer.",
+        "13 Production Pages — Complete e-commerce and atelier story journey."
+      ],
+      "includedTitle": "What's Included",
+      "included": [
+        "13 Production-ready Framer pages",
+        "Products and Workshop Stories CMS",
+        "Custom order modal and lead forms",
+        "Framer remix link with commercial license"
+      ],
+      "cmsTitle": "13 Production Pages",
+      "cmsDesc": "Catalog, Product Detail CMS, Workshop Journal, Bespoke Commission Form, Stockists, About."
+    },
+    "grain-form": {
+      "name": "Grain & Form",
+      "category": "Artisan homeware & tactile commerce",
+      "headline": "Generic online shops feel disposable. Grain & Form makes home decor feel personal and tactile.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "Grain & Form is a lifestyle homeware and artisan decor template. Designed with warm earth tones, signature arch frames, and tactile catalog arrangements that make physical goods feel precious and considered.",
+      "featuresTitle": "Original Features Built for Artisan Homeware",
+      "features": [
+        "Signature Arch Frames & Fluid Grids — Distinctive architectural framing around product photography.",
+        "Tactile Cart Drawer UI — Smooth slide-over shopping bag with real-time total calculations.",
+        "Artisan Material Guides — Informative cards detailing ceramic glazes, natural linens, and wood finishes.",
+        "Curated Lookbooks — Editorial spreads with clickable hotspots linking to featured products.",
+        "Multi-Currency Display Support — Built-in currency format switching for international sales."
+      ],
+      "includedTitle": "What's Included",
+      "included": [
+        "12 Production pages with e-commerce integration",
+        "Collections and Products CMS collections",
+        "Lookbook interactive components",
+        "Setup documentation and video guide"
+      ],
+      "cmsTitle": "Pages & Sections",
+      "cmsDesc": "Shop, Lookbook, Product Detail CMS, Maker Stories, FAQs, Contact."
+    },
+    "slowgrain": {
+      "name": "SLOWGRAIN",
+      "category": "Solid timber & heirloom furniture",
+      "headline": "An editorial, museum-grade template for solid timber ateliers, heirloom furniture makers and joinery workshops.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "SLOWGRAIN is an ode to Japanese joinery and Scandinavian calm. Engineered for high-end furniture makers, timber studios, and bespoke carpenters who want their website to exude quiet mastery.",
+      "featuresTitle": "Key Highlights:",
+      "features": [
+        "Japanese Joinery & Wabi-Sabi Aesthetics — Subtle organic grain textures, minimal borders, and breathing room.",
+        "Solid Timber Provenance Tracker — Highlight wood origins, drying times, and sustainable harvesting notes.",
+        "Bespoke Project Inquiries — Form builder structured for custom furniture briefs and dimensions.",
+        "Interactive Timber Selector — Visual swatch preview for White Oak, Walnut, Ash, and Smoked Elm.",
+        "Completely Free Edition Available — Launch your atelier online today with 0 upfront template fees."
+      ],
+      "includedTitle": "Pages Included:",
+      "included": [
+        "Complete atelier homepage with story timeline",
+        "Object showcase CMS",
+        "Material index & timber specifications",
+        "Direct contact & custom inquiry engine"
+      ],
+      "cmsTitle": "Custom Pages & Bespoke Projects:",
+      "cmsDesc": "Atelier, Furniture CMS, Joinery Process, Bespoke Commission Inquiries, Style Guide."
+    },
+    "terra": {
+      "name": "TERRA",
+      "category": "Editorial store for furniture & design galleries",
+      "headline": "A quiet, editorial store template engineered for furniture studios, object makers, and contemporary design galleries.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "TERRA is made for furniture studios, object makers, design galleries, and homeware brands that want pieces to feel curated, not crowded. Features large photography, generous whitespace, and a restrained palette of chalk, aubergine, and pale lilac.",
+      "featuresTitle": "Flagship Features",
+      "features": [
+        "Front-End Cart Drawer — Smooth slide-out cart with badge count, quantity controls, and subtotal.",
+        "Interactive Collection Filtering — Filter by category, material, finish, and price with drawer controls.",
+        "Monograph-Grade Product Pages — Sticky purchase panel, finish swatches, dimensions drawing, specs accordions, and mobile sticky Add-to-Cart.",
+        "\"In Good Company\" Room Explorer — Interactive room scene with numbered product markers.",
+        "Pinned Exhibition Studies & Motion — Sticky zoom studies, soft parallax, and header fades.",
+        "Embedded Framer AI Agent Skill — Integrated terra-design-system skill for automated design iteration."
+      ],
+      "includedTitle": "What's Included",
+      "included": [
+        "Complete production-ready Framer project with dynamic CMS",
+        "Step-by-step setup documentation & style guide",
+        "Free lifetime updates",
+        "Direct customer support from Spark Studio0"
+      ],
+      "cmsTitle": "Pages Included",
+      "cmsDesc": "Home, Collection, Product (CMS), Cart, Contact, Style Guide, Guide, Legal & 404."
+    },
+    "sasso-architect": {
+      "name": "SASSO Architect",
+      "category": "Architecture & interior studio monograph",
+      "headline": "Architecture & Interior Studio — Monograph-grade digital flagship for boutique architecture studios, spatial ateliers, and interior practices.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "Engineered for architects and spatial studios commanding high commission valuations. Inspired by Swiss architectural monographs; communicative of structural restraint, materiality, and permanence.",
+      "featuresTitle": "Core Architectural Features",
+      "features": [
+        "Commission Booking Qualification — Structured multi-step intake (Typology, Scope, Location, Budget).",
+        "Monograph Project Case Studies — Architectural plans, axonometric drawings, and tactile material palettes.",
+        "3 Dynamic CMS Collections — Architectural Projects (/work/:slug), Studio Disciplines (/expertise/:slug), and Field Notes Journal (/journal/:slug).",
+        "Swiss Typographic Cadence — Pairings of Tinos editorial serif and Geist precision technical sans.",
+        "Embedded Framer AI Agent Skill — Integrated sasso-design-system skill for architectural branding."
+      ],
+      "includedTitle": "What's Included",
+      "included": [
+        "Complete production-ready Framer project with 3 dynamic CMS collections",
+        "8 pre-built architectural case studies & documentation",
+        "Free lifetime updates",
+        "Direct customer support from Spark Studio0"
+      ],
+      "cmsTitle": "24 Production Routes Included",
+      "cmsDesc": "Home, Work, Studio, Contact & Commissions, Careers, Imprint, Privacy, 404, plus CMS routes."
+    },
+    "tessovra": {
+      "name": "TESSOVRA",
+      "category": "Tile & surface ecommerce showroom",
+      "headline": "Tile & Surface Ecommerce Showroom — Architectural ecommerce crafted for tactile surfaces, bespoke interiors, and design ateliers.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "High-impact ecommerce and showroom template engineered for premium brands where physical touch and material provenance drive the purchase decision.",
+      "featuresTitle": "Showroom Ecommerce Features",
+      "features": [
+        "Area & Pack Box Calculator — Instant square meter calculation with recommended cutting waste allowance and automated box rounding.",
+        "Interactive Moodboard & Quote Request — Save finishes to private moodboard and dispatch instant trade quote requests.",
+        "Native Front-End Cart Drawer — Order physical sample swatches, adjust quantities, and inspect subtotal.",
+        "Before/After Surface Comparison & Quick View — Interactive swipe comparison between finishes.",
+        "Mega-Menu & CMS Architectural Journal — In-depth architectural case studies and editorial room styling guides."
+      ],
+      "includedTitle": "What's Included",
+      "included": [
+        "Complete production-ready Framer project with 2 dynamic CMS collections",
+        "Interactive calculators and moodboard generator",
+        "Free lifetime updates",
+        "Direct customer support from Spark Studio0"
+      ],
+      "cmsTitle": "19 Included Routes",
+      "cmsDesc": "Home, Shop Catalog (CMS), Product Detail (CMS), Cart Drawer, Moodboard, Samples, Showroom, Inquiries, Journal (CMS), 404."
+    }
+  }
+}
