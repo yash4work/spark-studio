@@ -141,22 +141,82 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sparkstudio0.framer.ai/templates/slowgrain</loc>
+    <loc>https://www.thesparkstudio.digital/templates/slowgrain</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sparkstudio0.framer.ai/de/templates/slowgrain</loc>
+    <loc>https://www.thesparkstudio.digital/de/templates/slowgrain</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sparkstudio0.framer.ai/es/templates/slowgrain</loc>
+    <loc>https://www.thesparkstudio.digital/es/templates/slowgrain</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sparkstudio0.framer.ai/fr/templates/slowgrain</loc>
+    <loc>https://www.thesparkstudio.digital/fr/templates/slowgrain</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/templates/terra</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/de/templates/terra</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/es/templates/terra</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/fr/templates/terra</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/templates/sasso-architect</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/de/templates/sasso-architect</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/es/templates/sasso-architect</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/fr/templates/sasso-architect</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/templates/tessovra</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/de/templates/tessovra</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/es/templates/tessovra</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/fr/templates/tessovra</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

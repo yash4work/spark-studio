@@ -157,13 +157,13 @@
   },
   "bundles": {
     "tag": "PACKS Y AHORRO",
-    "title": "Ahorre hasta un 68% con packs exclusivos de plantillas.",
+    "title": "Ahorre hasta un 48% con packs exclusivos de plantillas.",
     "subtitle": "Combinaciones estratégicas y el catálogo completo del estudio con licencias comerciales.",
     "pickAny3": {
       "badge": "MÁS POPULAR",
       "title": "Pack Inicial Elige 3 Plantillas",
       "price": "$99",
-      "regularPrice": "$216",
+      "regularPrice": "$190",
       "features": [
         "Elija 3 plantillas cualesquiera de nuestro catálogo",
         "Licencia comercial completa por plantilla",
@@ -174,36 +174,36 @@
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
     },
     "soloVault": {
-      "badge": "MEJOR VALOR",
+      "badge": "MEJOR VALOR · AHORRE $288 (48% DTO)",
       "title": "Vault Completo de Estudio (Solo)",
-      "price": "$149",
-      "regularPrice": "$392",
+      "price": "$312",
+      "regularPrice": "$600",
       "features": [
-        "Acceso inmediato a TODAS las 7 plantillas + Slowgrain",
+        "Acceso inmediato a TODAS las 9 plantillas + Slowgrain",
         "Licencia comercial individual por plantilla",
         "Sistemas de tokens de diseño y guías de estilo",
         "Canal directo de asistencia técnica"
       ],
-      "cta": "Desbloquear Vault Completo — $149",
+      "cta": "Desbloquear Vault Completo — $312",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
     },
     "agencyVault": {
-      "badge": "PARA AGENCIAS",
+      "badge": "PARA AGENCIAS · AHORRE 48%",
       "title": "Vault Completo de Estudio (Agencia)",
-      "price": "$249",
-      "regularPrice": "$590",
+      "price": "$499",
+      "regularPrice": "$960",
       "features": [
-        "Todas las plantillas con despliegues ilimitados en clientes",
+        "Todas las 10 plantillas con despliegues ilimitados en clientes",
         "Conserve el 100% de los ingresos de sus proyectos",
-        "Archivos Figma y recursos de diseño complementarios",
+        "Bibliotecas completas de componentes y recursos de diseño",
         "Incorporación prioritaria con desarrolladores"
       ],
-      "cta": "Obtener Vault de Agencia — $249",
+      "cta": "Obtener Vault de Agencia — $499",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
       {
-        "tag": "INMOBILIARIA · AHORRE 69 $",
+        "tag": "INMOBILIARIA · AHORRE 69 $ (41% DTO)",
         "title": "Duo Inmobiliario de Alto Nivel",
         "price": "$99",
         "regularPrice": "$168",
@@ -212,7 +212,7 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
-        "tag": "ARQUITECTURA · AHORRE 39 $",
+        "tag": "ARQUITECTURA · AHORRE 39 $ (36% DTO)",
         "title": "Duo Monográfico de Arquitectura",
         "price": "$69",
         "regularPrice": "$108",
@@ -221,7 +221,7 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {
-        "tag": "COMERCIO Y ARTESANÍA · AHORRE 67 $",
+        "tag": "COMERCIO Y ARTESANÍA · AHORRE 67 $ (36% DTO)",
         "title": "Suite de E-Commerce y Creación Artesanal",
         "price": "$119",
         "regularPrice": "$186",

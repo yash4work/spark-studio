@@ -157,13 +157,13 @@
   },
   "bundles": {
     "tag": "BUNDLE & SAVE",
-    "title": "Save up to 68% with curated template bundles.",
+    "title": "Save up to 48% with curated template bundles.",
     "subtitle": "Strategic pairings and complete studio collections with full commercial licenses.",
     "pickAny3": {
       "badge": "MOST POPULAR",
       "title": "Pick Any 3 Starter Pack",
       "price": "$99",
-      "regularPrice": "$216",
+      "regularPrice": "$190",
       "features": [
         "Pick any 3 templates from our entire catalog",
         "Full commercial license per template",
@@ -174,36 +174,36 @@
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
     },
     "soloVault": {
-      "badge": "BEST VALUE",
+      "badge": "BEST VALUE · SAVE $288 (48% OFF)",
       "title": "Complete Studio Vault (Solo)",
-      "price": "$149",
-      "regularPrice": "$392",
+      "price": "$312",
+      "regularPrice": "$600",
       "features": [
-        "Instant access to ALL 7 current templates + Slowgrain",
+        "Instant access to ALL 9 current templates + Slowgrain",
         "Commercial solo license per template",
         "Design token systems & style guides",
         "Direct developer support channel"
       ],
-      "cta": "Unlock Full Vault — $149",
+      "cta": "Unlock Full Vault — $312",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
     },
     "agencyVault": {
-      "badge": "FOR AGENCIES",
+      "badge": "FOR AGENCIES · SAVE 48%",
       "title": "Complete Studio Vault (Agency)",
-      "price": "$249",
-      "regularPrice": "$590",
+      "price": "$499",
+      "regularPrice": "$960",
       "features": [
-        "All templates with unlimited commercial client deployments",
+        "All 10 templates with unlimited commercial client deployments",
         "Keep 100% of client project revenue",
-        "All companion Figma files & design assets",
+        "Complete component libraries & design assets",
         "Priority studio developer onboarding"
       ],
-      "cta": "Get Agency Vault — $249",
+      "cta": "Get Agency Vault — $499",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
       {
-        "tag": "REAL ESTATE · SAVE $69",
+        "tag": "REAL ESTATE · SAVE $69 (41% OFF)",
         "title": "Luxury Real Estate Flagship Duo",
         "price": "$99",
         "regularPrice": "$168",
@@ -212,7 +212,7 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
-        "tag": "ARCHITECTURE · SAVE $39",
+        "tag": "ARCHITECTURE · SAVE $39 (36% OFF)",
         "title": "Monograph Architecture Duo",
         "price": "$69",
         "regularPrice": "$108",
@@ -221,7 +221,7 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {
-        "tag": "COMMERCE & CRAFT · SAVE $67",
+        "tag": "COMMERCE & CRAFT · SAVE $67 (36% OFF)",
         "title": "Artisan Living & E-Commerce Suite",
         "price": "$119",
         "regularPrice": "$186",

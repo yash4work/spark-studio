@@ -7,16 +7,16 @@ import { MagneticButton, TiltCard } from '../lib/framer-effects';
 const VAULT_BUNDLES = [
   {
     id: 'pick-any-3',
-    badge: 'FLEXIBLE CHOICE',
+    badge: 'FLEXIBLE CHOICE · SAVE 48%',
     isFeatured: false,
     title: 'Pick Any 3 Starter Pack',
     price: '$99',
-    regularPrice: '/ Save up to $148 (60% OFF)',
+    regularPrice: '/ $190 regular value (Save $91 · 48% OFF)',
     desc: 'Choose any 3 templates from our active catalog. Ideal for freelancers with upcoming client projects.',
     features: [
       'Any 3 production Framer templates',
       'Instant 1-click duplicate & remix links',
-      'Companion Figma source files (.fig)',
+      'Global design tokens & typography presets',
       'Dynamic CMS archives & responsive UI',
       'Single production site per template'
     ],
@@ -25,39 +25,39 @@ const VAULT_BUNDLES = [
   },
   {
     id: 'solo-vault',
-    badge: 'MOST POPULAR · SAVE $313 (68% OFF)',
+    badge: 'MOST POPULAR · SAVE $288 (48% OFF)',
     isFeatured: true,
     title: 'Complete Studio Vault (Solo)',
-    price: '$149',
-    regularPrice: '/ $462 retail value',
-    desc: 'Instant access to all 7 premium paid templates + Slowgrain. Complete high-status design vault for ambitious creators.',
+    price: '$312',
+    regularPrice: '/ $600 retail value',
+    desc: 'Instant access to all 9 premium paid templates + Slowgrain. Complete high-status design vault for ambitious creators.',
     features: [
-      'All 7 paid templates + Slowgrain (Free)',
-      'Aurelle ($99) + Onyx ($79) + Tessovra ($69)',
-      'Mavric ($69) + Halden ($59) + Grain & Form ($58)',
-      'Vellum Edition ($29) included',
-      'Full companion Figma UI kits & specs',
+      'All 9 paid templates + Slowgrain (Free)',
+      'Aurelle ($99) + Onyx ($79) + Mavric ($69)',
+      'TERRA ($69) + SASSO ($69) + TESSOVRA ($69)',
+      'Halden ($59) + Grain & Form ($58) + Vellum ($29)',
+      'Complete component libraries & style tokens',
       'Commercial solo license per template'
     ],
-    cta: 'Unlock Full Vault — $149',
+    cta: 'Unlock Full Vault — $312',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1'
   },
   {
     id: 'agency-vault',
-    badge: 'UNLIMITED CLIENT RIGHTS',
+    badge: 'UNLIMITED CLIENT RIGHTS · SAVE 48%',
     isFeatured: false,
     title: 'Complete Studio Vault (Agency)',
-    price: '$249',
-    regularPrice: '/ $1,200+ commercial value',
-    desc: 'Complete 8-template library with unlimited commercial licensing. Ship high-ticket client builds and keep 100% of fees.',
+    price: '$499',
+    regularPrice: '/ $960 commercial value (Save $461 · 48% OFF)',
+    desc: 'Complete 10-template library with unlimited commercial licensing. Ship high-ticket client builds and keep 100% of fees.',
     features: [
-      'All 7 paid templates + Slowgrain',
+      'All 9 paid templates + Slowgrain (10 total)',
       'Unlimited commercial client deployments',
       'Keep 100% of client project revenue',
-      'All companion Figma files & design assets',
+      'Complete component libraries & style tokens',
       'Priority studio developer onboarding'
     ],
-    cta: 'Get Agency Vault — $249',
+    cta: 'Get Agency Vault — $499',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1'
   }
 ];
@@ -65,7 +65,7 @@ const VAULT_BUNDLES = [
 const NICHE_PACKS = [
   {
     id: 'real-estate-duo',
-    tag: 'REAL ESTATE · SAVE $69',
+    tag: 'REAL ESTATE · SAVE $69 (41% OFF)',
     title: 'Luxury Real Estate Flagship Duo',
     price: '$99',
     regularPrice: '/ $168 regular value',
@@ -81,7 +81,7 @@ const NICHE_PACKS = [
   },
   {
     id: 'architecture-duo',
-    tag: 'ARCHITECTURE · SAVE $39',
+    tag: 'ARCHITECTURE · SAVE $39 (36% OFF)',
     title: 'Monograph Architecture Duo',
     price: '$69',
     regularPrice: '/ $108 regular value',
@@ -97,7 +97,7 @@ const NICHE_PACKS = [
   },
   {
     id: 'artisan-suite',
-    tag: 'COMMERCE & CRAFT · SAVE $67',
+    tag: 'COMMERCE & CRAFT · SAVE $67 (36% OFF)',
     title: 'Artisan Living & E-Commerce Suite',
     price: '$119',
     regularPrice: '/ $186 regular value',
@@ -151,7 +151,7 @@ export default function BundlesSection() {
             EXCLUSIVE FRAMER BUNDLES &amp; VAULT ACCESS
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-[38px] font-semibold text-[#f7f6fb] font-heading tracking-[-0.02em] leading-tight">
-            Save up to 68% with curated template bundles.
+            Save up to 48% with curated template bundles.
           </h2>
         </div>
 

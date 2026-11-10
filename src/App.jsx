@@ -16,6 +16,9 @@ const VALID_SLUGS = [
   'halden-edition',
   'grain-form',
   'slowgrain',
+  'terra',
+  'sasso-architect',
+  'tessovra',
 ];
 
 // Language synchronizer & hash scroll restoration
