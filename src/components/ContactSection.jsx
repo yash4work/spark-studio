@@ -174,12 +174,15 @@ export default function ContactSection() {
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div>
-              <label className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+              <label htmlFor="contact-name" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
                 {t('contact.formName') || 'Your Name'}
               </label>
               <input
+                id="contact-name"
+                name="name"
                 type="text"
                 required
+                aria-label={t('contact.formName') || 'Your Name'}
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 placeholder="Jane Doe"
@@ -188,12 +191,15 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+              <label htmlFor="contact-email" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
                 {t('contact.formEmail') || 'Email Address'}
               </label>
               <input
+                id="contact-email"
+                name="email"
                 type="email"
                 required
+                aria-label={t('contact.formEmail') || 'Email Address'}
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 placeholder="jane@studio.com"
@@ -203,10 +209,13 @@ export default function ContactSection() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+                <label htmlFor="contact-project-type" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
                   {t('contact.formType') || 'Service Needed'}
                 </label>
                 <select
+                  id="contact-project-type"
+                  name="projectType"
+                  aria-label={t('contact.formType') || 'Service Needed'}
                   value={formData.projectType}
                   onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors"
@@ -220,10 +229,13 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+                <label htmlFor="contact-budget" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
                   {t('contact.formBudget') || 'Budget'}
                 </label>
                 <select
+                  id="contact-budget"
+                  name="budget"
+                  aria-label={t('contact.formBudget') || 'Budget'}
                   value={formData.budget}
                   onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors"
@@ -238,12 +250,15 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+              <label htmlFor="contact-message" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
                 {t('contact.formMessage') || 'Project Overview'}
               </label>
               <textarea
+                id="contact-message"
+                name="message"
                 required
                 rows={4}
+                aria-label={t('contact.formMessage') || 'Project Overview'}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder={t('contact.formMessagePlaceholder') || 'Tell us about your brand, scope, and timeline goals...'}

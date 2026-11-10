@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Allow: /.well-known/ard.json
+Allow: /llms.txt
+Allow: /ai-catalog.json
 
 Sitemap: https://www.thesparkstudio.digital/sitemap.xml

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://agenticresourcediscovery.org/schemas/v1.json",
+  "ard_version": "1.0",
+  "publisher": {
+    "name": "Spark Studio",
+    "domain": "thesparkstudio.digital",
+    "url": "https://thesparkstudio.digital",
+    "email": "hello@thesparkstudio.digital"
+  },
+  "resources": [
+    {
+      "id": "urn:air:thesparkstudio.digital:catalog:templates",
+      "displayName": "Spark Studio Framer Templates Catalog",
+      "type": "catalog",
+      "description": "High-performance production-ready Framer templates for architecture studios, luxury real estate, and digital commerce.",
+      "url": "https://thesparkstudio.digital/#templates",
+      "representativeQueries": [
+        "Framer real estate templates",
+        "Architecture studio portfolio Framer template",
+        "Luxury interior design website template",
+        "High performance Framer template"
+      ]
+    },
+    {
+      "id": "urn:air:thesparkstudio.digital:service:custom-web-engineering",
+      "displayName": "Custom Web & SaaS Engineering Services",
+      "type": "service",
+      "description": "Bespoke website design, Next.js web application development, Figma to Framer translation, and Core Web Vitals speed optimization.",
+      "url": "https://thesparkstudio.digital/#services",
+      "representativeQueries": [
+        "Hire Framer developer",
+        "Next.js web development agency",
+        "Figma to Framer pixel-perfect conversion",
+        "Framer speed optimization 95+ PageSpeed"
+      ]
+    },
+    {
+      "id": "urn:air:thesparkstudio.digital:documentation:llms-txt",
+      "displayName": "Spark Studio LLMs Context & Documentation",
+      "type": "documentation",
+      "description": "Standardized documentation and machine-readable context for AI coding and search agents.",
+      "url": "https://thesparkstudio.digital/llms.txt",
+      "representativeQueries": [
+        "Spark Studio documentation",
+        "Spark Studio AI context llms.txt"
+      ]
+    },
+    {
+      "id": "urn:air:thesparkstudio.digital:catalog:ai-catalog",
+      "displayName": "Spark Studio AI Catalog",
+      "type": "catalog",
+      "description": "Machine-readable resource and template catalog for autonomous AI agents.",
+      "url": "https://thesparkstudio.digital/ai-catalog.json",
+      "representativeQueries": [
+        "Spark Studio AI catalog json"
+      ]
+    }
+  ]
+}
