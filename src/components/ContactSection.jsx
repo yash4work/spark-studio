@@ -149,39 +149,43 @@ export default function ContactSection() {
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div>
-              <label className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+              <label htmlFor="contact-name" className="block text-xs font-mono uppercase tracking-wider text-[#a8a3bf] mb-2">
                 Your Name
               </label>
               <input
+                id="contact-name"
                 type="text"
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 placeholder="Jane Doe"
-                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#a8a3bf]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+              <label htmlFor="contact-email" className="block text-xs font-mono uppercase tracking-wider text-[#a8a3bf] mb-2">
                 Email Address
               </label>
               <input
+                id="contact-email"
                 type="email"
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 placeholder="jane@studio.com"
-                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
+                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#a8a3bf]/50 focus:outline-none focus:border-[#8e97f7] transition-colors"
               />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+                <label htmlFor="contact-service" className="block text-xs font-mono uppercase tracking-wider text-[#a8a3bf] mb-2">
                   Service Needed
                 </label>
                 <select
+                  id="contact-service"
+                  aria-label="Select Service Needed"
                   value={formData.projectType}
                   onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors"
@@ -195,10 +199,12 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+                <label htmlFor="contact-budget" className="block text-xs font-mono uppercase tracking-wider text-[#a8a3bf] mb-2">
                   Budget
                 </label>
                 <select
+                  id="contact-budget"
+                  aria-label="Select Budget Range"
                   value={formData.budget}
                   onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors"
@@ -213,16 +219,17 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+              <label htmlFor="contact-message" className="block text-xs font-mono uppercase tracking-wider text-[#a8a3bf] mb-2">
                 Project Overview
               </label>
               <textarea
+                id="contact-message"
                 required
                 rows={4}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder="Tell us about your brand, scope, and timeline goals..."
-                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#8b87a0]/50 focus:outline-none focus:border-[#8e97f7] transition-colors resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] placeholder-[#a8a3bf]/50 focus:outline-none focus:border-[#8e97f7] transition-colors resize-none"
               />
             </div>
 

@@ -370,6 +370,7 @@ export default function TemplatesGrid() {
                         href={template.demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`Live demo for ${template.title}`}
                         className="inline-flex items-center gap-1.5 text-[13.5px] font-medium text-[#f7f6fb] hover:text-[#8e97f7] transition-colors cursor-pointer"
                       >
                         <span>Live demo</span>

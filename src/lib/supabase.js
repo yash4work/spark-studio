@@ -1,5 +1,3 @@
-import { createClient } from '@supabase/supabase-js';
-
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://placeholder.supabase.co';
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'placeholder-anon-key';
 
@@ -9,7 +7,15 @@ export const isSupabaseConfigured = Boolean(
   !import.meta.env.VITE_SUPABASE_URL.includes('placeholder')
 );
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+let supabaseClient = null;
+
+export async function getSupabase() {
+  if (!supabaseClient && isSupabaseConfigured) {
+    const { createClient } = await import('@supabase/supabase-js');
+    supabaseClient = createClient(supabaseUrl, supabaseAnonKey);
+  }
+  return supabaseClient;
+}
 
 /**
  * Save contact form inquiry to Supabase table 'inquiries', falling back safely to localStorage/memory
@@ -23,9 +29,12 @@ export async function saveInquiry(data) {
 
   if (isSupabaseConfigured) {
     try {
-      const { error, data: inserted } = await supabase.from('inquiries').insert([payload]);
-      if (error) throw error;
-      return { success: true, data: inserted, mode: 'cloud' };
+      const client = await getSupabase();
+      if (client) {
+        const { error, data: inserted } = await client.from('inquiries').insert([payload]);
+        if (error) throw error;
+        return { success: true, data: inserted, mode: 'cloud' };
+      }
     } catch (err) {
       console.warn('Supabase insert failed, saving locally:', err);
     }
@@ -52,7 +61,8 @@ export async function uploadToStorage(bucketName, path, file) {
   if (!isSupabaseConfigured) {
     return { error: 'Supabase storage not configured', data: null };
   }
-  return await supabase.storage.from(bucketName).upload(path, file);
+  const client = await getSupabase();
+  return await client.storage.from(bucketName).upload(path, file);
 }
 
 /**
@@ -60,11 +70,10 @@ export async function uploadToStorage(bucketName, path, file) {
  */
 export function getStoragePublicUrl(bucketName, path) {
   if (!isSupabaseConfigured) {
-    // Return relative path or empty if not configured
     return path.startsWith('/') ? path : `/${path}`;
   }
-  const { data } = supabase.storage.from(bucketName).getPublicUrl(path);
-  return data?.publicUrl || path;
+  // If not initialized yet, construct standard public CDN url pattern
+  return `${supabaseUrl}/storage/v1/object/public/${bucketName}/${path}`;
 }
 
 /**
@@ -84,5 +93,6 @@ export async function listStorageFiles(bucketName, folder = '') {
   if (!isSupabaseConfigured) {
     return { data: [], error: 'Supabase storage not configured' };
   }
-  return await supabase.storage.from(bucketName).list(folder);
+  const client = await getSupabase();
+  return await client.storage.from(bucketName).list(folder);
 }

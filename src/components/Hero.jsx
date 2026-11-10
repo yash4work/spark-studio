@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import { MagneticButton, ScrambleText } from '../lib/framer-effects';
 import LiquidGradientShader from './LiquidGradientShader';
 
@@ -45,41 +44,28 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 pt-36 sm:pt-44 flex flex-col items-start gap-7">
         
         {/* Eyebrow */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }}
-        >
+        <div>
           <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
             {t('hero.eyebrow') || 'FRAMER & WEBFLOW SPECIALISTS · CUSTOM SOFTWARE & DESIGN SYSTEMS'}
           </p>
-        </motion.div>
+        </div>
 
         {/* Headline */}
-        <motion.h1
-          initial={{ opacity: 0, y: 28, scale: 0.98 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.9, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
+        <h1
           className="text-4xl sm:text-6xl md:text-[64px] font-extrabold text-[#f7f6fb] tracking-[-0.03em] leading-[1.05] max-w-[840px]"
         >
           {t('hero.title') || 'Framer & Webflow websites engineered to convert.'}
-        </motion.h1>
+        </h1>
 
         {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
-          className="text-base sm:text-[17px] text-[#8b87a0] max-w-[620px] font-normal leading-[1.75] tracking-[-0.02em]"
+        <p
+          className="text-base sm:text-[17px] text-[#9e9ab3] max-w-[620px] font-normal leading-[1.75] tracking-[-0.02em]"
         >
           {t('hero.description') || 'Spark Studio designs and builds visual, high-performance websites in Framer and Webflow that marketing teams can update in seconds — backed by custom Next.js software when you need deeper product power. 95+ PageSpeed guaranteed.'}
-        </motion.p>
+        </p>
 
         {/* CTA Buttons with Magnetic Physics */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.45, ease: [0.2, 0.8, 0.2, 1] }}
+        <div
           className="flex flex-wrap items-center gap-4 pt-2"
         >
           {/* Primary CTA */}
@@ -101,7 +87,7 @@ export default function Hero() {
               <span>Hire us for custom builds</span>
             </a>
           </MagneticButton>
-        </motion.div>
+        </div>
 
       </div>
 
