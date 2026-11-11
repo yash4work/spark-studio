@@ -1,6 +1,7 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, useLocation, useParams, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { trackPageView } from './lib/analytics';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
@@ -25,6 +26,11 @@ const VALID_SLUGS = [
 function RouteManager() {
   const location = useLocation();
   const { i18n } = useTranslation();
+
+  // Track SPA route changes in Google Analytics
+  useEffect(() => {
+    trackPageView(location.pathname + location.search);
+  }, [location.pathname, location.search]);
 
   // Synchronize language based on URL prefix
   useEffect(() => {

@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import SEOHead from '../components/SEOHead';
 import { initLemonSqueezy, handleLemonCheckout } from '../lib/lemonsqueezy';
+import { trackEvent } from '../lib/analytics';
 import { getTemplateStorageUrl } from '../lib/supabase';
 import { motion } from 'framer-motion';
 
@@ -153,6 +154,14 @@ export default function TemplateDetailPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
     initLemonSqueezy();
+    if (meta) {
+      trackEvent('view_item', {
+        item_id: slug,
+        item_name: templateInfo?.title || slug,
+        price: meta.numericPrice,
+        currency: 'USD'
+      });
+    }
   }, [slug]);
 
   if (!meta || !templateInfo) {
@@ -336,7 +345,15 @@ export default function TemplateDetailPage() {
               <div className="flex flex-col sm:flex-row items-center gap-4">
                 <a
                   href={meta.buyUrl}
-                  onClick={(e) => handleLemonCheckout(e, meta.buyUrl)}
+                  onClick={(e) => {
+                    trackEvent('begin_checkout', {
+                      item_id: slug,
+                      item_name: templateInfo?.name || slug,
+                      price: meta.numericPrice,
+                      currency: 'USD'
+                    });
+                    handleLemonCheckout(e, meta.buyUrl);
+                  }}
                   className="lemonsqueezy-button w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-white transition-all shadow-lg hover:opacity-90 active:scale-[0.99]"
                   style={{
                     background: 'linear-gradient(120deg, rgb(108, 79, 232) 0%, rgb(255, 106, 69) 100%)'
