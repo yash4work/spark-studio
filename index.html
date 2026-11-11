@@ -23,7 +23,10 @@
       gtag('js', new Date());
       (function() {
         var gaId = '%VITE_GA_MEASUREMENT_ID%';
-        if (gaId && gaId.indexOf('%') === -1) {
+        if (!gaId || gaId.indexOf('%') !== -1) {
+          gaId = 'G-FQYVH9WRCQ';
+        }
+        if (gaId) {
           window.__GA_MEASUREMENT_ID__ = gaId;
           var s = document.createElement('script');
           s.async = true;

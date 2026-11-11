@@ -2,7 +2,7 @@
  * Google Analytics 4 (GA4) & Tracking Helper for Spark Studio
  */
 
-export const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID || '';
+export const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID || 'G-FQYVH9WRCQ';
 
 /**
  * Tracks a pageview in Google Analytics for SPA route changes.
