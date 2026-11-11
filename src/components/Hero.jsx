@@ -71,7 +71,7 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
           className="text-4xl sm:text-6xl md:text-[64px] font-extrabold text-[#f7f6fb] tracking-[-0.03em] leading-[1.05] max-w-[840px]"
         >
-          {t('hero.title') || 'Templates engineered to convert & scale.'}
+          {t('hero.title') || 'High-Performance Framer Websites & Templates Engineered to Scale.'}
         </motion.h1>
 
         {/* Subtitle */}
