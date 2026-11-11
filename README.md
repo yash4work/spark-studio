@@ -42,3 +42,17 @@ dev/            Scraping/inspection scripts used during development
   `RouteManager` in `src/App.jsx`.
 - Template detail pages are lazy-loaded and validated against `VALID_SLUGS`
   in `src/App.jsx`.
+
+## Contact Form & Email Delivery Pipeline
+
+The contact form in `src/components/ContactSection.jsx` delivers inquiries straight to **Zoho Mail**:
+
+- **Target Inbox:** `hello@thesparkstudio.digital` / `yashparmar@thesparkstudio.digital` (Zoho Mail)
+- **Email Relay:** [FormSubmit](https://formsubmit.co) AJAX endpoint (`https://formsubmit.co/ajax/hello@thesparkstudio.digital`)
+  - Form activated for `https://www.thesparkstudio.digital/` (confirmation token: `2d6f508ef2845b9fc01eef8596816b63`)
+  - Configured with `_template: "table"` for clean lead formatting and `_captcha: "false"`.
+  - Dynamic subject lines formatted as: `New Lead: <Name> - <ProjectType>`.
+- **Dual Persistence:**
+  - Concurrent cloud persistence via Supabase (`saveInquiry` in `src/lib/supabase.js`)
+  - Graceful fallback to client-side `localStorage` (`spark_inquiries`)
+- **Event Tracking:** Dispatches Google Analytics 4 (`generate_lead`) event upon submission.
