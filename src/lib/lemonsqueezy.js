@@ -10,7 +10,8 @@ export function initLemonSqueezy() {
     if (typeof window.createLemonSqueezy === 'function') {
       window.createLemonSqueezy();
     }
-    if (window.LemonSqueezy && typeof window.LemonSqueezy.Setup === 'function') {
+    if (window.LemonSqueezy && typeof window.LemonSqueezy.Setup === 'function' && !window.__ls_setup_done) {
+      window.__ls_setup_done = true;
       window.LemonSqueezy.Setup({
         eventHandler: (event) => {
           if (event && event.event === 'Checkout.Success' && typeof window.gtag === 'function') {
@@ -28,6 +29,13 @@ export function initLemonSqueezy() {
   }
 }
 
+if (typeof window !== 'undefined' && !window.__ls_ready_listener) {
+  window.__ls_ready_listener = true;
+  window.addEventListener('lemonSqueezyReady', () => {
+    initLemonSqueezy();
+  });
+}
+
 export function handleLemonCheckout(e, checkoutUrl) {
   if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
     try {
@@ -36,6 +44,9 @@ export function handleLemonCheckout(e, checkoutUrl) {
       });
     } catch {}
   }
+
+  initLemonSqueezy();
+
   if (typeof window !== 'undefined' && window.LemonSqueezy?.Url?.Open) {
     try {
       e?.preventDefault?.();
