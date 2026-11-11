@@ -302,7 +302,7 @@ export default function TemplateDetailPage() {
         jsonLd={productJsonLd}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16">
         
         {/* Breadcrumb Navigation */}
         <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 mb-8">
