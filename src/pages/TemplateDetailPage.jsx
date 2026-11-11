@@ -178,6 +178,34 @@ const TEMPLATE_META = {
   }
 };
 
+const TEMPLATE_ARTICLE_MAP = {
+  'onyx-atelier': {
+    slug: 'onyx-atelier-framer-architecture-template-review',
+    badge: 'Architectural Teardown',
+    title: 'Onyx Atelier: In-Depth Monograph & Lighting Review'
+  },
+  'slowgrain': {
+    slug: 'slowgrain-solum-framer-architecture-template-free-review',
+    badge: 'Free Template Review',
+    title: 'SLOWGRAIN (Solum): 100% Free Architectural Portfolio Teardown'
+  },
+  'sasso-architect': {
+    slug: 'sasso-architect-framer-template-review',
+    badge: 'Boutique Firm Review',
+    title: 'SASSO Architect: Monograph Flagship & Spatial Layout Teardown'
+  },
+  'aurelle-estates': {
+    slug: 'aurelle-estates-framer-architecture-template-review',
+    badge: 'Luxury Property Review',
+    title: 'Aurelle Estates: Luxury Architecture & Property Teardown'
+  },
+  'vellum-edition': {
+    slug: 'vellum-edition-framer-architecture-template-review',
+    badge: 'Art-Book Review',
+    title: 'Vellum Edition: Quiet Art-Book Monograph Teardown'
+  }
+};
+
 export default function TemplateDetailPage() {
   const { slug } = useParams();
   const { t, i18n } = useTranslation();
@@ -432,6 +460,32 @@ export default function TemplateDetailPage() {
                 )}
               </div>
             </div>
+
+            {/* Architectural Teardown Link Banner */}
+            {TEMPLATE_ARTICLE_MAP[slug] && (
+              <div className="mt-4 p-4 rounded-2xl bg-gradient-to-r from-purple-500/15 via-purple-500/5 to-transparent border border-purple-500/25 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-inner">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-300 shrink-0">
+                    <Sparkles className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-purple-300 block font-semibold">
+                      {TEMPLATE_ARTICLE_MAP[slug].badge}
+                    </span>
+                    <span className="text-xs font-semibold text-white">
+                      {TEMPLATE_ARTICLE_MAP[slug].title}
+                    </span>
+                  </div>
+                </div>
+                <Link
+                  to={currentLang === 'en' ? `/blog/${TEMPLATE_ARTICLE_MAP[slug].slug}` : `/${currentLang}/blog/${TEMPLATE_ARTICLE_MAP[slug].slug}`}
+                  className="inline-flex items-center gap-1.5 text-xs font-mono text-purple-300 hover:text-white transition-colors shrink-0 px-3 py-1.5 rounded-lg bg-purple-500/20 hover:bg-purple-500/30"
+                >
+                  <span>Read Review</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            )}
 
           </div>
 

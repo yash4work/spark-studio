@@ -26,6 +26,11 @@ const TEMPLATE_SLUGS = [
 ];
 
 const BLOG_SLUGS = [
+  'onyx-atelier-framer-architecture-template-review',
+  'slowgrain-solum-framer-architecture-template-free-review',
+  'sasso-architect-framer-template-review',
+  'aurelle-estates-framer-architecture-template-review',
+  'vellum-edition-framer-architecture-template-review',
   'how-we-achieve-90-plus-pagespeed-on-framer-sites',
   'top-framer-templates-for-real-estate-and-architecture-2026',
   'figma-to-framer-agency-migration-guide'
