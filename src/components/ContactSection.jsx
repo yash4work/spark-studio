@@ -50,7 +50,31 @@ export default function ContactSection() {
     setLoading(true);
 
     try {
-      await saveInquiry(formData);
+      // 1. Send inquiry email directly to hello@thesparkstudio.digital via FormSubmit
+      const emailPromise = fetch('https://formsubmit.co/ajax/hello@thesparkstudio.digital', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          projectType: formData.projectType,
+          budget: formData.budget,
+          message: formData.message,
+          _subject: `New Lead: ${formData.name} - ${formData.projectType}`,
+          _template: 'table',
+          _captcha: 'false'
+        })
+      });
+
+      // 2. Concurrently persist in Supabase / LocalStorage backup
+      await Promise.allSettled([
+        emailPromise,
+        saveInquiry(formData)
+      ]);
+
       trackEvent('generate_lead', {
         project_type: formData.projectType,
         budget: formData.budget,
