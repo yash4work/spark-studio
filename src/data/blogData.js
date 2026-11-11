@@ -8,9 +8,9 @@ export const BLOG_POSTS = [
     date: 'November 2026',
     isoDate: '2026-11-05',
     author: {
-      name: 'Yash Parmar',
-      role: 'Lead Framer Architect at Spark Studio',
-      avatar: '/assets/spark_studio_logo_dark.png'
+      name: 'Spark Studio Engineering',
+      role: 'Performance & Architecture Team',
+      avatar: '/assets/spark_studio_avatar.jpg'
     },
     excerpt: 'A comprehensive technical teardown of DOM flattening, WebP next-gen asset pipelines, script deferral, and eliminating cumulative layout shifts in production Framer builds.',
     featuredImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
@@ -90,7 +90,7 @@ If your current site scores under 70, implementing these four principles will im
     author: {
       name: 'Spark Studio Curation Team',
       role: 'Design & Spatial Architecture Team',
-      avatar: '/assets/spark_studio_logo_dark.png'
+      avatar: '/assets/spark_studio_avatar.jpg'
     },
     excerpt: 'Why generic WordPress real estate themes and IDX wrappers lose high-net-worth buyers, and how bespoke editorial Framer flagships capture qualified property inquiries.',
     featuredImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
@@ -170,9 +170,9 @@ Each of these templates is built natively in Framer with 100% visual editing, ze
     date: 'October 2026',
     isoDate: '2026-10-24',
     author: {
-      name: 'Yash Parmar',
-      role: 'Lead Framer Architect at Spark Studio',
-      avatar: '/assets/spark_studio_logo_dark.png'
+      name: 'Spark Studio Engineering',
+      role: 'Performance & Architecture Team',
+      avatar: '/assets/spark_studio_avatar.jpg'
     },
     excerpt: 'How modern creative agencies eliminate developer handoff bottlenecks, cut turnaround times from 6 weeks to 5 days, and ship production-ready responsive sites effortlessly.',
     featuredImage: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80',

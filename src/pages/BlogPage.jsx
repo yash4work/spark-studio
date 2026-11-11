@@ -52,7 +52,7 @@ export default function BlogPage() {
         jsonLd={blogSchema}
       />
 
-      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14">
+      <div className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16">
         
         {/* Header Hero Area */}
         <div className="max-w-3xl mb-14 sm:mb-20">
@@ -139,10 +139,17 @@ export default function BlogPage() {
               </div>
 
               {/* Bottom Footer & CTA */}
-              <div className="px-6 sm:px-7 pb-6 pt-0 border-t border-white/5 flex items-center justify-between">
+              <div className="px-6 sm:px-7 py-4 sm:py-5 border-t border-white/10 flex items-center justify-between">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[10px] font-bold text-white overflow-hidden">
-                    <img src={post.author.avatar} alt={post.author.name} className="w-full h-full object-cover" onError={(e) => { e.target.style.display = 'none'; }} />
+                  <div className="w-7 h-7 rounded-full overflow-hidden border border-white/20 bg-[#15131f] shrink-0 shadow-sm">
+                    <img
+                      src={post.author.avatar || '/assets/spark_studio_avatar.jpg'}
+                      alt={post.author.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.src = '/assets/spark_studio_avatar.jpg';
+                      }}
+                    />
                   </div>
                   <span className="text-xs font-mono text-[#c3bfdb]">
                     {post.author.name}

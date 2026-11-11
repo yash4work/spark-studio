@@ -206,8 +206,15 @@ export default function BlogPostPage() {
           {/* Author and Share Bar */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 py-5 border-y border-white/10">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-white/10 overflow-hidden flex items-center justify-center">
-                <img src={post.author.avatar} alt={post.author.name} className="w-full h-full object-cover" />
+              <div className="w-10 h-10 rounded-full border border-white/20 overflow-hidden bg-[#15131f] flex items-center justify-center shrink-0 shadow-sm">
+                <img
+                  src={post.author.avatar || '/assets/spark_studio_avatar.jpg'}
+                  alt={post.author.name}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.src = '/assets/spark_studio_avatar.jpg';
+                  }}
+                />
               </div>
               <div>
                 <span className="text-sm font-semibold text-[#f7f6fb] block font-heading">
