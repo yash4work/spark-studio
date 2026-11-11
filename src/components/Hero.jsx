@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { MagneticButton, ScrambleText } from '../lib/framer-effects';
+import LiquidGradientShader from './LiquidGradientShader';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -24,15 +25,10 @@ export default function Hero() {
         />
 
         {/* Layer 2: The Liquid Aurora WebGL Shader covering the FULL SCREEN (100% width) */}
-        <div 
-          className="absolute inset-0 w-full h-full opacity-85 transition-opacity duration-1000 ease-out"
-          style={{
-            backgroundImage: `url('/assets/hero-shader.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center 20%',
-            backgroundRepeat: 'no-repeat',
-            filter: 'contrast(1.12) brightness(1.04)'
-          }}
+        <LiquidGradientShader 
+          className="absolute inset-0 w-full h-full opacity-85"
+          fallbackImage="/assets/hero-shader.png"
+          mouseEnabled={true}
         />
 
         {/* Layer 3: Glow Side Overlay (Framers .framer-w52f8q) */}
