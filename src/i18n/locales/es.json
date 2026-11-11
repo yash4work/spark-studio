@@ -924,5 +924,63 @@
     "notFoundDesc": "No se ha podido localizar la plantilla solicitada.",
     "returnHome": "Volver al inicio del estudio",
     "metaTitleSuffix": "— Plantilla Framer de Spark Studio"
+  },
+  "blog": {
+    "eyebrow": "Recursos y Análisis del Estudio",
+    "title": "Análisis de ingeniería y guías de Framer.",
+    "subtitle": "Guías prácticas sobre cómo lograr 90+ en Core Web Vitals, migrar de Figma a Framer y construir arquitectura web de alta conversión para marcas ambiciosas.",
+    "categories": {
+      "all": "Todos los artículos",
+      "engineering": "Ingeniería y Rendimiento",
+      "templates": "Análisis de plantillas",
+      "agency": "Flujos de trabajo"
+    },
+    "readGuide": "Leer guía",
+    "readArticle": "Leer →",
+    "breadcrumbHome": "Inicio",
+    "breadcrumbBlog": "Blog",
+    "backToArticles": "← Volver a artículos",
+    "shareGuide": "Compartir guía",
+    "linkCopied": "¡Enlace copiado!",
+    "topics": "Temas:",
+    "moreInsights": "Más análisis y recursos",
+    "viewAllArticles": "Ver todos los artículos →",
+    "ctaEyebrow": "¿Listo para mejorar su presencia digital?",
+    "ctaTitle": "¿Necesita un sitio con 90+ PageSpeed diseñado para convertir?",
+    "ctaDesc": "Diseñamos sitios web y aplicaciones Framer a medida con tiempos de carga inferiores a un segundo y excelentes Core Web Vitals.",
+    "ctaBtn": "Iniciar un proyecto",
+    "articleCtaEyebrow": "Desarrollado por Spark Studio",
+    "articleCtaTitle": "¿Desea que diseñemos su próximo sitio web en Framer?",
+    "articleCtaDesc": "Ya sea una plataforma creada desde cero o una plantilla Framer optimizada a 90+ PageSpeed, entregamos proyectos listos en días.",
+    "articleCtaSchedule": "Agendar consulta",
+    "articleCtaExplore": "Explorar plantillas"
+  },
+  "blogSection": {
+    "tag": "ANÁLISIS Y GUÍAS",
+    "title": "Estándares de ingeniería, análisis y guías de Framer.",
+    "exploreAll": "Explorar todos los recursos"
+  },
+  "blogPosts": {
+    "how-we-achieve-90-plus-pagespeed-on-framer-sites": {
+      "title": "Cómo logramos 90+ PageSpeed y Core Web Vitals en sitios web Framer",
+      "category": "Ingeniería y Rendimiento",
+      "readTime": "6 min de lectura",
+      "date": "Noviembre 2026",
+      "excerpt": "Un desglose técnico exhaustivo sobre aplanamiento del DOM, canalizaciones de recursos WebP, aplazamiento de scripts y eliminación de cambios de diseño acumulativos."
+    },
+    "top-framer-templates-for-real-estate-and-architecture-2026": {
+      "title": "Las mejores plantillas Framer de alta conversión para bienes raíces y arquitectura en 2026",
+      "category": "Análisis de Plantillas",
+      "readTime": "5 min de lectura",
+      "date": "Noviembre 2026",
+      "excerpt": "Por qué los temas genéricos de WordPress pierden compradores de alto patrimonio y cómo los escaparates editoriales en Framer capturan consultas cualificadas."
+    },
+    "figma-to-framer-agency-migration-guide": {
+      "title": "De Figma a Framer: La guía completa de migración y entrega para agencias",
+      "category": "Flujos de Trabajo",
+      "readTime": "7 min de lectura",
+      "date": "Octubre 2026",
+      "excerpt": "Cómo las agencias creativas eliminan los cuellos de botella del desarrollo, reducen los tiempos de entrega de 6 semanas a 5 días y lanzan sitios impecables."
+    }
   }
 }

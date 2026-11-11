@@ -923,5 +923,63 @@
     "notFoundDesc": "The requested template could not be located.",
     "returnHome": "Return to Studio Home",
     "metaTitleSuffix": "— Framer Template by Spark Studio"
+  },
+  "blog": {
+    "eyebrow": "Studio Insights & Resources",
+    "title": "Engineering teardowns & Framer playbooks.",
+    "subtitle": "Practical guides on achieving 90+ Core Web Vitals, migrating from Figma to Framer, and building conversion-driven web architecture for ambitious brands.",
+    "categories": {
+      "all": "All Articles & Teardowns",
+      "engineering": "Engineering & Speed",
+      "templates": "Template Teardowns",
+      "agency": "Agency Workflows"
+    },
+    "readGuide": "Read Guide",
+    "readArticle": "Read →",
+    "breadcrumbHome": "Home",
+    "breadcrumbBlog": "Blog",
+    "backToArticles": "← Back to all articles",
+    "shareGuide": "Share Guide",
+    "linkCopied": "Link Copied!",
+    "topics": "Topics:",
+    "moreInsights": "More Insights & Teardowns",
+    "viewAllArticles": "View all articles →",
+    "ctaEyebrow": "Ready to Upgrade Your Digital Presence?",
+    "ctaTitle": "Need a 90+ PageSpeed site engineered for high conversions?",
+    "ctaDesc": "We design custom Framer websites and web applications with guaranteed sub-second load times and rock-solid Core Web Vitals.",
+    "ctaBtn": "Start a Project",
+    "articleCtaEyebrow": "Built by Spark Studio",
+    "articleCtaTitle": "Want us to engineer your next high-performance Framer site?",
+    "articleCtaDesc": "Whether you need a custom client platform built from scratch or want an existing Framer template tuned to 90+ Core Web Vitals, we ship production-grade sites in days.",
+    "articleCtaSchedule": "Schedule Consultation",
+    "articleCtaExplore": "Explore Templates"
+  },
+  "blogSection": {
+    "tag": "INSIGHTS & PLAYBOOKS",
+    "title": "Engineering standards, teardowns & Framer playbooks.",
+    "exploreAll": "Explore all resources"
+  },
+  "blogPosts": {
+    "how-we-achieve-90-plus-pagespeed-on-framer-sites": {
+      "title": "How We Achieve 90+ PageSpeed & Core Web Vitals on Framer Websites",
+      "category": "Engineering & Speed",
+      "readTime": "6 min read",
+      "date": "November 2026",
+      "excerpt": "A comprehensive technical teardown of DOM flattening, WebP next-gen asset pipelines, script deferral, and eliminating cumulative layout shifts in production Framer builds."
+    },
+    "top-framer-templates-for-real-estate-and-architecture-2026": {
+      "title": "Top High-Converting Framer Templates for Real Estate & Architecture in 2026",
+      "category": "Template Teardown",
+      "readTime": "5 min read",
+      "date": "November 2026",
+      "excerpt": "Why generic WordPress real estate themes and IDX wrappers lose high-net-worth buyers, and how bespoke editorial Framer flagships capture qualified property inquiries."
+    },
+    "figma-to-framer-agency-migration-guide": {
+      "title": "Figma to Framer: The Complete Agency Migration & Handoff Guide",
+      "category": "Agency Workflow",
+      "readTime": "7 min read",
+      "date": "October 2026",
+      "excerpt": "How modern creative agencies eliminate developer handoff bottlenecks, cut turnaround times from 6 weeks to 5 days, and ship production-ready responsive sites effortlessly."
+    }
   }
 }

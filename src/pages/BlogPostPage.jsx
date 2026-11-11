@@ -7,7 +7,7 @@ import { getPostBySlug, BLOG_POSTS } from '../data/blogData';
 
 export default function BlogPostPage() {
   const { slug } = useParams();
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [copied, setCopied] = useState(false);
 
@@ -22,17 +22,28 @@ export default function BlogPostPage() {
   if (!post) {
     return (
       <div className="min-h-screen pt-36 pb-20 flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-3xl font-bold text-white mb-4">Article Not Found</h1>
-        <p className="text-[#8b87a0] mb-8">The requested guide or teardown could not be located.</p>
+        <h1 className="text-3xl font-bold text-white mb-4">
+          {t('blog.notFoundTitle') || 'Article Not Found'}
+        </h1>
+        <p className="text-[#8b87a0] mb-8">
+          {t('blog.notFoundDesc') || 'The requested guide or teardown could not be located.'}
+        </p>
         <Link
           to={`${homePrefix}/blog`}
           className="px-6 py-3 rounded-full bg-white text-black font-semibold text-sm"
         >
-          Return to Blog & Resources
+          {t('blog.returnToBlog') || 'Return to Blog & Resources'}
         </Link>
       </div>
     );
   }
+
+  const postTitle = t(`blogPosts.${slug}.title`) || post.title;
+  const postExcerpt = t(`blogPosts.${slug}.excerpt`) || post.excerpt;
+  const postCategory = t(`blogPosts.${slug}.category`) || post.category;
+  const postDate = t(`blogPosts.${slug}.date`) || post.date;
+  const postReadTime = t(`blogPosts.${slug}.readTime`) || post.readTime;
+  const postContent = t(`blogPosts.${slug}.content`) || post.content;
 
   const handleShare = () => {
     if (navigator.clipboard) {
@@ -48,8 +59,8 @@ export default function BlogPostPage() {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    'headline': post.title,
-    'description': post.excerpt,
+    'headline': postTitle,
+    'description': postExcerpt,
     'image': post.featuredImage,
     'datePublished': post.isoDate,
     'dateModified': post.isoDate,
@@ -148,8 +159,8 @@ export default function BlogPostPage() {
   return (
     <div className="min-h-screen pt-28 pb-24 text-[#8b87a0]">
       <SEOHead
-        title={`${post.title} — Spark Studio Insights`}
-        description={post.excerpt}
+        title={`${postTitle} — Spark Studio Insights`}
+        description={postExcerpt}
         image={post.featuredImage}
         jsonLd={articleSchema}
       />
@@ -159,14 +170,14 @@ export default function BlogPostPage() {
         {/* Breadcrumb Navigation */}
         <div className="flex items-center gap-2 text-xs font-mono text-[#8b87a0] mb-8">
           <Link to={homePrefix || '/'} className="hover:text-white transition-colors">
-            Home
+            {t('blog.breadcrumbHome') || 'Home'}
           </Link>
           <span>/</span>
           <Link to={`${homePrefix}/blog`} className="hover:text-white transition-colors">
-            Blog
+            {t('blog.breadcrumbBlog') || 'Blog'}
           </Link>
           <span>/</span>
-          <span className="text-white truncate max-w-[240px] sm:max-w-none">{post.title}</span>
+          <span className="text-white truncate max-w-[240px] sm:max-w-none">{postTitle}</span>
         </div>
 
         {/* Back Link */}
@@ -175,32 +186,32 @@ export default function BlogPostPage() {
           className="inline-flex items-center gap-2 text-xs font-mono text-[#8b87a0] hover:text-white mb-8 transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
-          <span>← Back to all articles</span>
+          <span>{t('blog.backToArticles') || '← Back to all articles'}</span>
         </Link>
 
         {/* Article Header */}
         <header className="mb-10">
           <div className="flex flex-wrap items-center gap-3 mb-6">
             <span className="px-3.5 py-1 rounded-full text-xs font-mono tracking-wider font-semibold bg-[#8e97f7]/10 text-[#8e97f7] border border-[#8e97f7]/25">
-              {post.category}
+              {postCategory}
             </span>
             <span className="flex items-center gap-1.5 text-xs font-mono text-[#8b87a0]">
               <Clock className="w-3.5 h-3.5 text-white/40" />
-              {post.readTime}
+              {postReadTime}
             </span>
             <span className="text-white/20">·</span>
             <span className="flex items-center gap-1.5 text-xs font-mono text-[#8b87a0]">
               <Calendar className="w-3.5 h-3.5 text-white/40" />
-              {post.date}
+              {postDate}
             </span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#f7f6fb] tracking-tight leading-[1.1] mb-6 font-heading">
-            {post.title}
+            {postTitle}
           </h1>
 
           <p className="text-lg sm:text-xl text-[#8b87a0] font-normal leading-relaxed mb-8">
-            {post.excerpt}
+            {postExcerpt}
           </p>
 
           {/* Author and Share Bar */}
@@ -233,12 +244,12 @@ export default function BlogPostPage() {
               {copied ? (
                 <>
                   <Check className="w-3.5 h-3.5 text-emerald-400" />
-                  <span className="text-emerald-400">Link Copied!</span>
+                  <span className="text-emerald-400">{t('blog.linkCopied') || 'Link Copied!'}</span>
                 </>
               ) : (
                 <>
                   <Share2 className="w-3.5 h-3.5" />
-                  <span>Share Guide</span>
+                  <span>{t('blog.shareGuide') || 'Share Guide'}</span>
                 </>
               )}
             </button>
@@ -249,19 +260,21 @@ export default function BlogPostPage() {
         <div className="rounded-[24px] overflow-hidden border border-white/10 mb-12 aspect-[16/9] shadow-2xl">
           <img
             src={post.featuredImage}
-            alt={post.title}
+            alt={postTitle}
             className="w-full h-full object-cover"
           />
         </div>
 
         {/* Article Body */}
         <div className="prose prose-invert max-w-none mb-16">
-          {renderFormattedContent(post.content)}
+          {renderFormattedContent(postContent)}
         </div>
 
         {/* Tags */}
         <div className="flex flex-wrap items-center gap-2 py-6 border-t border-white/10 mb-12">
-          <span className="text-xs font-mono text-[#8b87a0] mr-2">Topics:</span>
+          <span className="text-xs font-mono text-[#8b87a0] mr-2">
+            {t('blog.topics') || 'Topics:'}
+          </span>
           {post.tags.map((tag) => (
             <span
               key={tag}
@@ -276,13 +289,13 @@ export default function BlogPostPage() {
         <div className="p-8 sm:p-10 rounded-[24px] bg-[#1a1727] border border-white/10 mb-16">
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#8e97f7] mb-2 font-semibold">
             <Sparkles className="w-4 h-4" />
-            <span>Built by Spark Studio</span>
+            <span>{t('blog.articleCtaEyebrow') || 'Built by Spark Studio'}</span>
           </div>
           <h3 className="text-2xl font-bold text-[#f7f6fb] font-heading mb-3">
-            Want us to engineer your next high-performance Framer site?
+            {t('blog.articleCtaTitle') || 'Want us to engineer your next high-performance Framer site?'}
           </h3>
           <p className="text-sm text-[#8b87a0] leading-relaxed mb-6 max-w-2xl">
-            Whether you need a custom client platform built from scratch or want an existing Framer template tuned to 90+ Core Web Vitals, we ship production-grade sites in days.
+            {t('blog.articleCtaDesc') || 'Whether you need a custom client platform built from scratch or want an existing Framer template tuned to 90+ Core Web Vitals, we ship production-grade sites in days.'}
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <a
@@ -292,14 +305,14 @@ export default function BlogPostPage() {
                 background: 'linear-gradient(120deg, rgb(108, 79, 232) 0%, rgb(255, 106, 69) 100%)'
               }}
             >
-              <span>Schedule Consultation</span>
+              <span>{t('blog.articleCtaSchedule') || 'Schedule Consultation'}</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
             <a
               href={`${homePrefix}/#templates`}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold text-[#f7f6fb] bg-white/[0.04] hover:bg-white/[0.08] border border-white/20 transition-colors"
             >
-              <span>Explore Templates</span>
+              <span>{t('blog.articleCtaExplore') || 'Explore Templates'}</span>
             </a>
           </div>
         </div>
@@ -308,40 +321,49 @@ export default function BlogPostPage() {
         <div className="pt-12 border-t border-white/10">
           <div className="flex items-center justify-between mb-8">
             <h3 className="text-2xl font-bold text-[#f7f6fb] font-heading">
-              More Insights & Teardowns
+              {t('blog.moreInsights') || 'More Insights & Teardowns'}
             </h3>
             <Link
               to={`${homePrefix}/blog`}
               className="text-xs font-mono text-[#8e97f7] hover:text-[#ff6a45] transition-colors"
             >
-              View all articles →
+              {t('blog.viewAllArticles') || 'View all articles →'}
             </Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {otherPosts.map((p) => (
-              <Link
-                key={p.slug}
-                to={`${homePrefix}/blog/${p.slug}`}
-                className="group p-6 rounded-2xl bg-[#171523] border border-white/10 hover:border-[#8e97f7]/40 transition-all flex flex-col justify-between"
-              >
-                <div>
-                  <span className="text-[11px] font-mono text-[#8e97f7] block mb-2 font-semibold">
-                    {p.category}
-                  </span>
-                  <h4 className="text-lg font-bold text-[#f7f6fb] font-heading group-hover:text-[#8e97f7] transition-colors leading-snug mb-2">
-                    {p.title}
-                  </h4>
-                  <p className="text-xs text-[#8b87a0] line-clamp-2 leading-relaxed">
-                    {p.excerpt}
-                  </p>
-                </div>
-                <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/5 text-xs font-mono text-[#8b87a0]">
-                  <span>{p.readTime}</span>
-                  <span className="text-[#8e97f7] group-hover:translate-x-1 transition-transform">Read →</span>
-                </div>
-              </Link>
-            ))}
+            {otherPosts.map((p) => {
+              const otherTitle = t(`blogPosts.${p.slug}.title`) || p.title;
+              const otherExcerpt = t(`blogPosts.${p.slug}.excerpt`) || p.excerpt;
+              const otherCategory = t(`blogPosts.${p.slug}.category`) || p.category;
+              const otherReadTime = t(`blogPosts.${p.slug}.readTime`) || p.readTime;
+
+              return (
+                <Link
+                  key={p.slug}
+                  to={`${homePrefix}/blog/${p.slug}`}
+                  className="group p-6 rounded-2xl bg-[#171523] border border-white/10 hover:border-[#8e97f7]/40 transition-all flex flex-col justify-between"
+                >
+                  <div>
+                    <span className="text-[11px] font-mono text-[#8e97f7] block mb-2 font-semibold">
+                      {otherCategory}
+                    </span>
+                    <h4 className="text-lg font-bold text-[#f7f6fb] font-heading group-hover:text-[#8e97f7] transition-colors leading-snug mb-2">
+                      {otherTitle}
+                    </h4>
+                    <p className="text-xs text-[#8b87a0] line-clamp-2 leading-relaxed">
+                      {otherExcerpt}
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/5 text-xs font-mono text-[#8b87a0]">
+                    <span>{otherReadTime}</span>
+                    <span className="text-[#8e97f7] group-hover:translate-x-1 transition-transform">
+                      {t('blog.readArticle') || 'Read →'}
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
 

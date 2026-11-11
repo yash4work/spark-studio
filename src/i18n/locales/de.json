@@ -924,5 +924,63 @@
     "notFoundDesc": "Die angeforderte Vorlage konnte nicht gefunden werden.",
     "returnHome": "Zurück zur Startseite",
     "metaTitleSuffix": "— Framer-Vorlage von Spark Studio"
+  },
+  "blog": {
+    "eyebrow": "Studio-Einblicke & Ressourcen",
+    "title": "Engineering-Analysen & Framer-Playbooks.",
+    "subtitle": "Praxisnahe Anleitungen zur Erzielung von 90+ Core Web Vitals, Migration von Figma zu Framer und Konvertierungsarchitektur für moderne Marken.",
+    "categories": {
+      "all": "Alle Artikel & Analysen",
+      "engineering": "Engineering & Performance",
+      "templates": "Vorlagen-Analysen",
+      "agency": "Agentur-Workflows"
+    },
+    "readGuide": "Leitfaden lesen",
+    "readArticle": "Lesen →",
+    "breadcrumbHome": "Startseite",
+    "breadcrumbBlog": "Blog",
+    "backToArticles": "← Alle Artikel",
+    "shareGuide": "Guide teilen",
+    "linkCopied": "Link kopiert!",
+    "topics": "Themen:",
+    "moreInsights": "Weitere Einblicke & Analysen",
+    "viewAllArticles": "Alle Artikel anzeigen →",
+    "ctaEyebrow": "Bereit für einen überlegenen Webauftritt?",
+    "ctaTitle": "Benötigen Sie eine 90+ PageSpeed Website mit hoher Konversion?",
+    "ctaDesc": "Wir entwickeln individuelle Framer-Websites und Webanwendungen mit garantierten Ladezeiten unter einer Sekunde und stabilen Core Web Vitals.",
+    "ctaBtn": "Projekt anfragen",
+    "articleCtaEyebrow": "Entwickelt von Spark Studio",
+    "articleCtaTitle": "Sollen wir Ihre nächste High-Performance-Website entwickeln?",
+    "articleCtaDesc": "Ob maßgeschneiderte Plattform von Grund auf oder Optimierung einer Framer-Vorlage auf 90+ PageSpeed — wir liefern produktionsreife Ergebnisse in Tagen.",
+    "articleCtaSchedule": "Beratung anfragen",
+    "articleCtaExplore": "Vorlagen erkunden"
+  },
+  "blogSection": {
+    "tag": "EINBLICKE & LEITFÄDEN",
+    "title": "Engineering-Standards, Analysen & Framer-Playbooks.",
+    "exploreAll": "Alle Ressourcen erkunden"
+  },
+  "blogPosts": {
+    "how-we-achieve-90-plus-pagespeed-on-framer-sites": {
+      "title": "Wie wir 90+ PageSpeed & Core Web Vitals auf Framer-Websites erzielen",
+      "category": "Engineering & Performance",
+      "readTime": "6 Min. Lesezeit",
+      "date": "November 2026",
+      "excerpt": "Ein detaillierter technischer Leitfaden zur DOM-Optimierung, modernen WebP-Pipelines, Skript-Verzögerung und Vermeidung von Cumulative Layout Shifts in Framer-Produktionsumgebungen."
+    },
+    "top-framer-templates-for-real-estate-and-architecture-2026": {
+      "title": "Die besten Framer-Vorlagen für Immobilien & Architektur im Jahr 2026",
+      "category": "Vorlagen-Analyse",
+      "readTime": "5 Min. Lesezeit",
+      "date": "November 2026",
+      "excerpt": "Warum generische WordPress-Themes solvente Käufer verlieren und wie redaktionelle Framer-Showcases qualifizierte Immobilienanfragen sichern."
+    },
+    "figma-to-framer-agency-migration-guide": {
+      "title": "Figma zu Framer: Der vollständige Migrations- und Handoff-Leitfaden für Agenturen",
+      "category": "Agentur-Workflows",
+      "readTime": "7 Min. Lesezeit",
+      "date": "Oktober 2026",
+      "excerpt": "Wie moderne Kreativagenturen Entwickler-Engpässe überwinden, Projektlaufzeiten von 6 Wochen auf 5 Tage senken und produktionsreife Websites veröffentlichen."
+    }
   }
 }
