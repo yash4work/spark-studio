@@ -8,8 +8,13 @@ import CustomCursor from './components/CustomCursor';
 import HomePage from './pages/HomePage';
 
 const TemplateDetailPage = lazy(() => import('./pages/TemplateDetailPage'));
+const BlogPage = lazy(() => import('./pages/BlogPage'));
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 
 const VALID_SLUGS = [
+  'ai-saas',
+  'luxury-restaurant',
+  'premium-healthcare',
   'mavric-estate',
   'aurelle-estates',
   'onyx-atelier',
@@ -139,21 +144,29 @@ export default function App() {
           <Routes>
             {/* English Routes */}
             <Route path="/" element={<HomePage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/templates/:slug" element={<TemplateDetailPage />} />
             <Route path="/:slug" element={<SlugRouteHandler />} />
 
             {/* German Routes */}
             <Route path="/de" element={<HomePage />} />
+            <Route path="/de/blog" element={<BlogPage />} />
+            <Route path="/de/blog/:slug" element={<BlogPostPage />} />
             <Route path="/de/templates/:slug" element={<TemplateDetailPage />} />
             <Route path="/de/:slug" element={<LocalizedSlugRouteHandler />} />
 
             {/* Spanish Routes */}
             <Route path="/es" element={<HomePage />} />
+            <Route path="/es/blog" element={<BlogPage />} />
+            <Route path="/es/blog/:slug" element={<BlogPostPage />} />
             <Route path="/es/templates/:slug" element={<TemplateDetailPage />} />
             <Route path="/es/:slug" element={<LocalizedSlugRouteHandler />} />
 
             {/* French Routes */}
             <Route path="/fr" element={<HomePage />} />
+            <Route path="/fr/blog" element={<BlogPage />} />
+            <Route path="/fr/blog/:slug" element={<BlogPostPage />} />
             <Route path="/fr/templates/:slug" element={<TemplateDetailPage />} />
             <Route path="/fr/:slug" element={<LocalizedSlugRouteHandler />} />
 

@@ -76,10 +76,13 @@ export default function Navbar() {
     }
   };
 
+  const blogHref = currentLang === 'en' ? '/blog' : `/${currentLang}/blog`;
+
   const navItems = [
     { label: t('nav.projects') || 'Projects', href: getNavPath('#projects') },
     { label: t('nav.services') || 'Services', href: getNavPath('#services') },
     { label: t('nav.standards') || 'Standards', href: getNavPath('#standards') },
+    { label: t('nav.resources') || 'Resources', href: blogHref },
     { label: t('nav.about') || 'About', href: getNavPath('#about') },
     { label: t('nav.faq') || 'FAQ', href: getNavPath('#faq') },
     { label: t('nav.contact') || 'Contact', href: getNavPath('#contact') },

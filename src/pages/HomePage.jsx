@@ -8,6 +8,7 @@ import AboutSection from '../components/AboutSection';
 import Services from '../components/Services';
 import TemplatesGrid from '../components/TemplatesGrid';
 import BundlesSection from '../components/BundlesSection';
+import BlogSection from '../components/BlogSection';
 import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
 import Marquee from '../components/Marquee';
@@ -75,19 +76,19 @@ export default function HomePage() {
           {
             '@type': 'ListItem',
             'position': 1,
-            'url': 'https://showcase-r5.vercel.app/',
+            'url': 'https://www.thesparkstudio.digital/templates/ai-saas',
             'name': 'AI SaaS Platform — Next.js Web Application'
           },
           {
             '@type': 'ListItem',
             'position': 2,
-            'url': 'https://showcase-r4.vercel.app/',
+            'url': 'https://www.thesparkstudio.digital/templates/luxury-restaurant',
             'name': 'Luxury Restaurant — Next.js Hospitality Website'
           },
           {
             '@type': 'ListItem',
             'position': 3,
-            'url': 'https://showcase-r6.vercel.app/',
+            'url': 'https://www.thesparkstudio.digital/templates/premium-healthcare',
             'name': 'Premium Healthcare — Clinical Patient Portal'
           },
           {
@@ -153,6 +154,7 @@ export default function HomePage() {
       <ScrollReveal><Services /></ScrollReveal>
       <ScrollReveal><TemplatesGrid /></ScrollReveal>
       <ScrollReveal><BundlesSection /></ScrollReveal>
+      <ScrollReveal><BlogSection /></ScrollReveal>
       <ScrollReveal><FAQSection /></ScrollReveal>
       <ScrollReveal><ContactSection /></ScrollReveal>
       <Marquee />

@@ -124,6 +124,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href={currentLang === 'en' ? '/blog' : `/${currentLang}/blog`} className="hover:text-[#f7f6fb] transition-colors">
+                  {t('footer.links.blog') || 'Resources & Teardowns'}
+                </a>
+              </li>
+              <li>
                 <a href={getSectionHref('#about')} className="hover:text-[#f7f6fb] transition-colors">
                   {t('footer.links.about') || 'About Spark Studio'}
                 </a>

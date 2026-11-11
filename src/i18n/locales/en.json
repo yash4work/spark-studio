@@ -3,6 +3,7 @@
     "projects": "Projects",
     "services": "Services",
     "standards": "Standards",
+    "resources": "Resources",
     "about": "About",
     "faq": "FAQ",
     "contact": "Contact",
@@ -557,6 +558,81 @@
     "builtWith": "Engineered for 95+ Core Web Vitals · High-Conversion Web Architecture"
   },
   "templateDetails": {
+    "ai-saas": {
+      "name": "AI SaaS Platform",
+      "category": "Web Application & SaaS",
+      "headline": "AI That Works While You Sleep — A high-converting AI SaaS platform engineered with Next.js, React, and Tailwind CSS.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "A production-grade, high-converting AI SaaS platform engineered with Next.js, React, and Tailwind CSS. Built for workflow automation, AI agents, and enterprise developer tools with high-converting pricing tiers, live product demos, and frictionless user onboarding.",
+      "featuresTitle": "Original Features Built for SaaS Products",
+      "features": [
+        "Next.js App Router Architecture — Instant page transitions, server-side rendering, and sub-second TTFB.",
+        "Interactive Workflow Automation Demos — Visual workflow canvas highlighting product capability.",
+        "Tiered Subscription Pricing Matrix — High-conversion comparison grids with monthly and annual toggles.",
+        "Dark Mode First Architectural Palette — Crafted for modern developer and AI tool aesthetics.",
+        "Enterprise Security & Compliance Blocks — SOC2, GDPR, and enterprise trust signals built-in.",
+        "Developer API Documentation Preview — Interactive code syntax tabs and live integration guides."
+      ],
+      "includedTitle": "What's Included",
+      "included": [
+        "Complete production-ready Next.js & React codebase",
+        "Full Tailwind CSS design system with custom components",
+        "Figma UI kit and responsive breakpoints",
+        "Direct deployment setup on Vercel or AWS"
+      ],
+      "cmsTitle": "Structured Architecture",
+      "cmsDesc": "Changelog, Documentation, Product Features, Customer Stories, Pricing Tiers."
+    },
+    "luxury-restaurant": {
+      "name": "Luxury Restaurant",
+      "category": "Custom Hospitality Website",
+      "headline": "Crafting Culinary Poetry — A premium restaurant landing page crafted to showcase fine dining through immersive storytelling and fluid reservations.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "A Michelin-tier hospitality and fine dining website crafted to elevate culinary perception. Features immersive full-bleed imagery, seasonal tasting menu showcase, and fluid table reservation booking flows.",
+      "featuresTitle": "Original Features Built for Fine Dining & Hospitality",
+      "features": [
+        "Interactive Seasonal Tasting Menu — Dynamic category navigation for lunch, dinner, and wine pairings.",
+        "Table Reservation Booking Flow — Integrated OpenTable / Resy booking integration.",
+        "Private Dining & Events Showcase — Dedicated inquiry forms for weddings and executive private dinners.",
+        "Cinematic Culinary Reel — Full-bleed video and photography showcase with smooth parallax.",
+        "Sommelier & Chef Monograph — Storytelling sections spotlighting executive chefs and cellar curation.",
+        "Location, Valet & Hours Module — Dynamic hours status with interactive Google Maps."
+      ],
+      "includedTitle": "What's Included",
+      "included": [
+        "Production-ready Next.js & React website codebase",
+        "Dynamic seasonal menu management structure",
+        "Integrated reservation and inquiry modal",
+        "Lifetime code updates and setup guide"
+      ],
+      "cmsTitle": "Structured Architecture",
+      "cmsDesc": "Seasonal Menus, Wine Cellar, Private Dining Events, Press & Accolades."
+    },
+    "premium-healthcare": {
+      "name": "Premium Healthcare",
+      "category": "Healthcare & Patient Portal",
+      "headline": "Expert Care You Can Trust — A modern healthcare website designed to build patient trust through a clean interface and intuitive booking.",
+      "overviewTitle": "OVERVIEW",
+      "overview": "A clinical-grade healthcare and wellness website engineered for private medical clinics, dental specialists, and wellness centers. Designed with reassuring clinical clarity, accessibility standards, and intuitive appointment booking.",
+      "featuresTitle": "Original Features Built for Medical & Clinical Practices",
+      "features": [
+        "Interactive Doctor & Specialist Directory — Searchable bios, credentials, and specialties.",
+        "Frictionless Patient Appointment Flow — Multi-step consultation booking system.",
+        "Treatments & Procedures Library — Comprehensive patient education guides with FAQs.",
+        "Patient Trust & Verified Testimonials — HIPAA-compliant reviews and patient outcome stories.",
+        "Insurance & Financing Accordions — Transparent insurance carrier verification and cost calculators.",
+        "Telehealth & Remote Care Portal — Video consultation scheduling and intake forms."
+      ],
+      "includedTitle": "What's Included",
+      "included": [
+        "Production-ready Next.js & React clinical website",
+        "Structured doctor profiles and treatment catalogs",
+        "Patient intake and appointment inquiry forms",
+        "Full accessibility and Core Web Vitals optimization"
+      ],
+      "cmsTitle": "Structured Architecture",
+      "cmsDesc": "Doctors & Specialists, Treatments & Services, Patient FAQs, Clinical Insights."
+    },
     "mavric-estate": {
       "name": "Mavric Estate",
       "category": "Modern real estate CMS & realtor",

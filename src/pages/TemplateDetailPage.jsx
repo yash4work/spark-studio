@@ -20,6 +20,42 @@ import { getTemplateStorageUrl } from '../lib/supabase';
 import { motion } from 'framer-motion';
 
 const TEMPLATE_META = {
+  'ai-saas': {
+    isCustom: true,
+    price: 'Custom Build',
+    priceDe: 'Individuelle Entwicklung',
+    priceEs: 'Desarrollo a medida',
+    priceFr: 'Développement sur mesure',
+    numericPrice: '2490.00',
+    demoUrl: 'https://showcase-r5.vercel.app/',
+    buyUrl: null,
+    image: '/templates/ai-saas.webp',
+    gallery: ['/templates/ai-saas.webp', '/assets/template1.png', '/assets/template2.png']
+  },
+  'luxury-restaurant': {
+    isCustom: true,
+    price: 'Custom Build',
+    priceDe: 'Individuelle Entwicklung',
+    priceEs: 'Desarrollo a medida',
+    priceFr: 'Développement sur mesure',
+    numericPrice: '1890.00',
+    demoUrl: 'https://showcase-r4.vercel.app/',
+    buyUrl: null,
+    image: '/templates/restaurant.webp',
+    gallery: ['/templates/restaurant.webp', '/assets/template2.png', '/assets/template3.png']
+  },
+  'premium-healthcare': {
+    isCustom: true,
+    price: 'Custom Build',
+    priceDe: 'Individuelle Entwicklung',
+    priceEs: 'Desarrollo a medida',
+    priceFr: 'Développement sur mesure',
+    numericPrice: '1990.00',
+    demoUrl: 'https://showcase-r6.vercel.app/',
+    buyUrl: null,
+    image: '/templates/healthcare.webp',
+    gallery: ['/templates/healthcare.webp', '/assets/template3.png', '/assets/template4.png']
+  },
   'mavric-estate': {
     price: '$69',
     priceDe: '69 €',
@@ -328,7 +364,7 @@ export default function TemplateDetailPage() {
               <div className="flex items-baseline justify-between mb-6 pb-6 border-b border-white/10">
                 <div>
                   <span className="text-xs font-mono text-[#8b87a0] uppercase tracking-wider block mb-1">
-                    {t('detailPage.templateLicense') || 'Template License'}
+                    {meta.isCustom ? 'Build Format' : (t('detailPage.templateLicense') || 'Template License')}
                   </span>
                   <span className="text-3xl font-extrabold text-[#f7f6fb] font-mono">
                     {localizedPrice}
@@ -337,36 +373,51 @@ export default function TemplateDetailPage() {
                 <div className="text-right">
                   <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#8e97f7] bg-[#8e97f7]/10 px-3 py-1 rounded-full border border-[#8e97f7]/20">
                     <Check className="w-3 h-3" />
-                    {t('detailPage.instantRemix') || 'Instant 1-Click Remix'}
+                    {meta.isCustom ? 'Full Codebase & Setup' : (t('detailPage.instantRemix') || 'Instant 1-Click Remix')}
                   </span>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row items-center gap-4">
-                <a
-                  href={meta.buyUrl}
-                  onClick={(e) => {
-                    trackEvent('begin_checkout', {
-                      item_id: slug,
-                      item_name: templateInfo?.name || slug,
-                      price: meta.numericPrice,
-                      currency: 'USD'
-                    });
-                    handleLemonCheckout(e, meta.buyUrl);
-                  }}
-                  className="lemonsqueezy-button w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-white transition-all shadow-lg hover:opacity-90 active:scale-[0.99]"
-                  style={{
-                    background: 'linear-gradient(120deg, rgb(108, 79, 232) 0%, rgb(255, 106, 69) 100%)'
-                  }}
-                >
-                  <ShoppingBag className="w-4 h-4" />
-                  <span>
-                    {t('detailPage.purchaseBtn', { price: localizedPrice }) || (currentLang === 'de' ? `Vorlage kaufen — ${localizedPrice}`
-                      : currentLang === 'es' ? `Comprar plantilla — ${localizedPrice}`
-                      : currentLang === 'fr' ? `Acheter le template — ${localizedPrice}`
-                      : `Purchase Template — ${localizedPrice}`)}
-                  </span>
-                </a>
+                {meta.buyUrl ? (
+                  <a
+                    href={meta.buyUrl}
+                    onClick={(e) => {
+                      trackEvent('begin_checkout', {
+                        item_id: slug,
+                        item_name: templateInfo?.name || slug,
+                        price: meta.numericPrice,
+                        currency: 'USD'
+                      });
+                      handleLemonCheckout(e, meta.buyUrl);
+                    }}
+                    className="lemonsqueezy-button w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-white transition-all shadow-lg hover:opacity-90 active:scale-[0.99]"
+                    style={{
+                      background: 'linear-gradient(120deg, rgb(108, 79, 232) 0%, rgb(255, 106, 69) 100%)'
+                    }}
+                  >
+                    <ShoppingBag className="w-4 h-4" />
+                    <span>
+                      {t('detailPage.purchaseBtn', { price: localizedPrice }) || (currentLang === 'de' ? `Vorlage kaufen — ${localizedPrice}`
+                        : currentLang === 'es' ? `Comprar plantilla — ${localizedPrice}`
+                        : currentLang === 'fr' ? `Acheter le template — ${localizedPrice}`
+                        : `Purchase Template — ${localizedPrice}`)}
+                    </span>
+                  </a>
+                ) : (
+                  <a
+                    href={`mailto:hello@thesparkstudio.digital?subject=Custom%20Build%20Inquiry%20-%20${encodeURIComponent(templateInfo.name)}`}
+                    className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-white transition-all shadow-lg hover:opacity-90 active:scale-[0.99]"
+                    style={{
+                      background: 'linear-gradient(120deg, rgb(108, 79, 232) 0%, rgb(255, 106, 69) 100%)'
+                    }}
+                  >
+                    <Sparkles className="w-4 h-4" />
+                    <span>
+                      {meta.price === 'Free' ? 'Download Free Template' : 'Commission Similar Build →'}
+                    </span>
+                  </a>
+                )}
 
                 {meta.demoUrl && (
                   <a
@@ -511,7 +562,7 @@ export default function TemplateDetailPage() {
                   {t('detailPage.customBuildsDesc') || 'We customize any template — or design and build your site from scratch — with the same production standard. Turnaround: 3 to 5 business days.'}
                 </p>
                 <a
-                  href={`mailto:sparkstudio0@outlook.com?subject=Custom%20Build%20Inquiry%20-%20${encodeURIComponent(templateInfo.name)}`}
+                  href={`mailto:hello@thesparkstudio.digital?subject=Custom%20Build%20Inquiry%20-%20${encodeURIComponent(templateInfo.name)}`}
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-xs font-semibold text-[#f7f6fb] border border-white/20 hover:border-white/40 hover:bg-white/[0.04] transition-all"
                 >
                   <span>{t('detailPage.startCustomBuild') || 'Start a custom build →'}</span>
@@ -529,7 +580,7 @@ export default function TemplateDetailPage() {
                 </p>
                 <div className="pt-2 border-t border-white/[0.05] flex items-center justify-between text-[11px] text-zinc-500 font-mono">
                   <span>{t('detailPage.support') || 'Support'}</span>
-                  <span>sparkstudio0@outlook.com</span>
+                  <span>hello@thesparkstudio.digital</span>
                 </div>
               </div>
 
