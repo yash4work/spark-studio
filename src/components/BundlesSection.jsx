@@ -82,9 +82,9 @@ const NICHE_PACKS = [
   },
   {
     id: 'architecture-duo',
-    tag: 'ARCHITECTURE · SAVE $49 (42% OFF)',
+    tag: 'ARCHITECTURE · SAVE $19 (16% OFF)',
     title: 'Monograph Architecture Duo',
-    price: '$69',
+    price: '$99',
     regularPrice: '/ $118 regular value',
     desc: 'Onyx Atelier ($79) + Vellum Edition ($39). Engineered for architectural practices, spatial design studios, and monographs.',
     features: [
@@ -93,7 +93,7 @@ const NICHE_PACKS = [
       'High-contrast layout systems and gallery grids',
       'Core Web Vitals 95+ speed out of the box'
     ],
-    cta: 'Get Architecture Duo — $69',
+    cta: 'Get Architecture Duo — $99',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1'
   },
   {

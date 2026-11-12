@@ -443,9 +443,9 @@
       },
       {
         "id": "architecture-duo",
-        "tag": "ARCHITECTURE · ÉCONOMISEZ 49 € (42 % DTO)",
+        "tag": "ARCHITECTURE · ÉCONOMISEZ 19 € (16 % DTO)",
         "title": "Duo Monographie d’Architecture",
-        "price": "69 €",
+        "price": "99 €",
         "regularPrice": "/ 118 € valeur catalogue",
         "desc": "Onyx Atelier (79 €) + Vellum Edition (39 €). Pensé pour les agences d’architecture, concepteurs d’espace et monographies.",
         "features": [
@@ -454,7 +454,7 @@
           "Grilles typographiques à fort contraste et mises en page",
           "Score 95+ Core Web Vitals garanti sans réglages complexes"
         ],
-        "cta": "Obtenir le Duo Architecture — 69 €",
+        "cta": "Obtenir le Duo Architecture — 99 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {

@@ -64,13 +64,14 @@ Aurelle ($99) + Onyx ($79) + Tessovra ($69) + Mavric ($69) + Halden ($59) + Grai
 | Pack ID | Pack Name | Included Templates | Combined Retail | Sale Price | Absolute Savings | Effective Discount | Lemon Squeezy UUID |
 |---|---|---|---|---|---|---|---|
 | `real-estate-duo` | **Luxury Real Estate Flagship Duo** | Aurelle Estates ($99) + Mavric Estate ($69) | **$168** | **$99** (99 €) | $69 (69 €) | **41.07% (~41% OFF)** | `e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98` |
-| `architecture-duo` | **Monograph Architecture Duo** | Onyx Atelier ($79) + Vellum Edition ($39) | **$118** *(was $108)* | **$69** (69 €) | **$49** *(was $39)* | **41.53% (~42% OFF)** | `2daaa04b-a936-499a-abec-1d66c1c4f859` |
+| `architecture-duo` | **Monograph Architecture Duo** | Onyx Atelier ($79) + Vellum Edition ($39) | **$118** *(was $108)* | **$99** (99 €) | **$19** *(was $49)* | **16.10% (~16% OFF)** | `2daaa04b-a936-499a-abec-1d66c1c4f859` |
 | `artisan-suite` | **Artisan Living & E-Commerce Suite** | TESSOVRA ($69) + Halden ($59) + Grain & Form ($58) + Slowgrain ($0) | **$186** | **$119** (119 €) | $67 (67 €) | **36.02% (~36% OFF)** | `bc9f4aac-c012-4609-8b58-2781198aba64` |
 
 #### Monograph Architecture Duo Recalculation Detail
-- **Previous Calculation:** Onyx Atelier ($79) + Vellum Edition ($29) = $108 retail value. At $69 price: Savings = $39 (36.11% OFF).
-- **Updated Calculation:** Onyx Atelier ($79) + Vellum Edition ($39) = **$118** retail value. At $69 price: Savings = **$49** (**41.53% ~ 42% OFF**).
-- **Compliance:** 41.53% < 48% maximum discount cap.
+- **Standalone Value:** Onyx Atelier ($79) + Vellum Edition ($39) = **$118** total retail value.
+- **Price Protection for Onyx:** Onyx Atelier is our premium flagship template. To preserve its premium value ahead of the upcoming Onyx Pro/Plus launch and never undercut its $79 standalone price, the bundle is priced at **$99** (99 €).
+- **Savings:** **$19** savings (**16.10% ~ 16% OFF**).
+- **Compliance:** 16.10% is well within the 48% maximum discount cap, and matches the sister duo (`real-estate-duo` at $99).
 
 ---
 
