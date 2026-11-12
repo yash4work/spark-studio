@@ -281,7 +281,9 @@
       "placeholder": "Entrez votre email pour les alertes...",
       "cta": "Recevoir les alertes",
       "loading": "Inscription...",
-      "success": "Vous êtes sur la liste d'accès anticipé ! Nous vous informerons dès le lancement des nouveaux templates et d'Onyx Pro.",
+      "successTitle": "Vous êtes sur la liste d'accès anticipé !",
+      "successDesc": "Nous vous informerons en priorité lors de la sortie des nouveaux templates et d'Onyx Pro.",
+      "success": "Vous êtes sur la liste d'accès anticipé !",
       "error": "Veuillez saisir une adresse email valide."
     },
     "viewDetails": "Voir les détails",

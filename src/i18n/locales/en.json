@@ -281,7 +281,9 @@
       "placeholder": "Enter your email for launch alerts...",
       "cta": "Get launch alerts",
       "loading": "Joining...",
-      "success": "You're on the early-bird list! We'll notify you as soon as new releases and Onyx Pro drop.",
+      "successTitle": "You're on the early-bird list!",
+      "successDesc": "We'll alert you first when new releases & Onyx Pro go live.",
+      "success": "You're on the early-bird list!",
       "error": "Please enter a valid email address."
     },
     "viewDetails": "View details",

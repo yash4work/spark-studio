@@ -281,7 +281,9 @@
       "placeholder": "Introduce tu email para avisos...",
       "cta": "Recibir avisos de lanzamiento",
       "loading": "Uniéndose...",
-      "success": "¡Estás en la lista de acceso anticipado! Te avisaremos en cuanto lancemos nuevas plantillas y Onyx Pro.",
+      "successTitle": "¡Estás en la lista de acceso anticipado!",
+      "successDesc": "Te avisaremos primero cuando lancemos nuevas plantillas y Onyx Pro.",
+      "success": "¡Estás en la lista de acceso anticipado!",
       "error": "Por favor, introduce una dirección de correo válida."
     },
     "viewDetails": "Ver detalles",

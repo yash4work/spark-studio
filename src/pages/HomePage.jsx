@@ -32,7 +32,7 @@ export default function HomePage() {
     ? 'Spark Studio diseña aplicaciones web, sitios a medida y plantillas Framer de alto rendimiento para startups — con 99+ PageSpeed.'
     : currentLang === 'fr'
     ? 'Spark Studio conçoit des applications web sur mesure, des templates Framer et des sites haute performance avec scores 90+.'
-    : 'Spark Studio designs and engineers high-performance custom websites, web applications, and Framer/Webflow platforms for ambitious startups and businesses — built with 90+ PageSpeed scores.';
+    : 'Spark Studio designs and engineers high-performance custom websites, web applications, and bespoke Framer platforms for ambitious startups and businesses — built with 90+ PageSpeed scores.';
 
   // Dynamic FAQ structured data for the active language
   const faqItems = t('faq.items', { returnObjects: true }) || [];
@@ -59,7 +59,7 @@ export default function HomePage() {
         'url': 'https://www.thesparkstudio.digital/',
         'logo': 'https://www.thesparkstudio.digital/logo.png',
         'image': 'https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg',
-        'description': 'Specialist Framer & Webflow web design studio crafting high-performance custom websites, Next.js web applications, and flagship visual CMS templates.',
+        'description': 'Specialist Framer web design studio crafting high-performance custom websites, Next.js web applications, and flagship visual CMS templates.',
         'email': 'hello@thesparkstudio.digital',
         'priceRange': '$$',
         'sameAs': [
@@ -69,7 +69,7 @@ export default function HomePage() {
       {
         '@type': 'ItemList',
         'name': 'Spark Studio Work & Templates Catalog',
-        'description': 'Production-ready Next.js web applications, custom Framer and Webflow client websites, and high-performance digital templates.',
+        'description': 'Production-ready Next.js web applications, bespoke Framer client websites, and high-performance digital templates.',
         'url': 'https://www.thesparkstudio.digital/#projects',
         'numberOfItems': 10,
         'itemListElement': [

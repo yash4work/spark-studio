@@ -220,7 +220,7 @@ export default function TemplatesGrid() {
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!cleanEmail || !emailRegex.test(cleanEmail)) {
-      setPipelineError(t('projects.pipeline.error') || 'Please enter a valid email address.');
+      setPipelineError(t('templates.pipeline.error') || t('projects.pipeline.error') || 'Please enter a valid email address.');
       setPipelineStatus('error');
       return;
     }
@@ -309,7 +309,7 @@ export default function TemplatesGrid() {
         </h2>
         
         <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed max-w-md">
-          {t('templates.subtitle') || 'From scalable Next.js web applications and SaaS platforms to custom Framer & Webflow client websites and templates — each build engineered for 95+ PageSpeed scores.'}
+          {t('templates.subtitle') || 'From scalable Next.js web applications and SaaS platforms to bespoke Framer client websites and templates — each build engineered for 95+ PageSpeed scores.'}
         </p>
       </div>
 
@@ -515,13 +515,13 @@ export default function TemplatesGrid() {
 
             <div className="relative z-10 flex flex-col gap-2.5 max-w-xl">
               <span className="text-[11px] font-mono text-[#8e97f7] uppercase tracking-wider block">
-                {t('projects.pipeline.tag') || 'EARLY ACCESS · UPCOMING RELEASES'}
+                {t('templates.pipeline.tag') || t('projects.pipeline.tag') || 'EARLY ACCESS · UPCOMING RELEASES'}
               </span>
               <h3 className="font-heading font-semibold text-2xl sm:text-3xl text-white">
-                {t('projects.pipeline.title') || 'Expanding pipeline'}
+                {t('templates.pipeline.title') || t('projects.pipeline.title') || 'Expanding pipeline'}
               </h3>
               <p className="text-sm md:text-base text-[#d4d2e8] font-normal leading-relaxed">
-                {t('projects.pipeline.desc') || 'SaaS products, bespoke Framer platforms, and upcoming releases like Onyx Pro — new builds and templates launching weekly. Join the list for early-bird previews.'}
+                {t('templates.pipeline.desc') || t('projects.pipeline.desc') || 'SaaS products, bespoke Framer platforms, and upcoming releases like Onyx Pro — new builds and templates launching weekly. Join the list for early-bird previews.'}
               </p>
             </div>
 
@@ -533,10 +533,10 @@ export default function TemplatesGrid() {
                   </div>
                   <div className="flex flex-col text-xs sm:text-sm">
                     <span className="font-semibold text-white">
-                      {t('projects.pipeline.success') || "You're on the early-bird list!"}
+                      {t('templates.pipeline.successTitle') || t('templates.pipeline.success') || t('projects.pipeline.successTitle') || t('projects.pipeline.success') || "You're on the early-bird list!"}
                     </span>
                     <span className="text-emerald-400/80 text-[11px] sm:text-xs">
-                      We'll alert you first when new releases & Onyx Pro go live.
+                      {t('templates.pipeline.successDesc') || t('projects.pipeline.successDesc') || "We'll alert you first when new releases & Onyx Pro go live."}
                     </span>
                   </div>
                 </div>
@@ -551,7 +551,11 @@ export default function TemplatesGrid() {
                           setPipelineEmail(e.target.value);
                           if (pipelineStatus === 'error') setPipelineStatus('idle');
                         }}
-                        placeholder={t('projects.pipeline.placeholder') || 'Enter your email for launch alerts...'}
+                        placeholder={t('templates.pipeline.placeholder') || t('projects.pipeline.placeholder') || 'Enter your email for launch alerts...'}
+                        aria-label={t('templates.pipeline.placeholder') || t('projects.pipeline.placeholder') || 'Enter your email for launch alerts...'}
+                        autoComplete="email"
+                        inputMode="email"
+                        required
                         className="w-full h-12 px-4 rounded-xl sm:rounded-full bg-white/[0.06] hover:bg-white/[0.09] focus:bg-white/[0.12] border border-white/15 focus:border-[#8e97f7] text-sm text-[#f7f6fb] placeholder-[#8b87a0] outline-none transition-all duration-200"
                         disabled={pipelineStatus === 'loading'}
                       />
@@ -560,17 +564,18 @@ export default function TemplatesGrid() {
                       <button
                         type="submit"
                         disabled={pipelineStatus === 'loading'}
+                        aria-label={t('templates.pipeline.cta') || t('projects.pipeline.cta') || 'Get launch alerts'}
                         className="w-full sm:w-auto h-12 px-6 rounded-xl sm:rounded-full framer-btn-primary font-semibold text-xs text-white flex items-center justify-center gap-2 cursor-pointer shadow-[0_10px_25px_-5px_rgba(108,79,232,0.4)] disabled:opacity-50 transition-all"
                       >
                         {pipelineStatus === 'loading' ? (
                           <>
                             <Loader2 className="w-3.5 h-3.5 animate-spin" />
-                            <span>{t('projects.pipeline.loading') || 'Joining...'}</span>
+                            <span>{t('templates.pipeline.loading') || t('projects.pipeline.loading') || 'Joining...'}</span>
                           </>
                         ) : (
                           <>
                             <Bell className="w-3.5 h-3.5" />
-                            <span>{t('projects.pipeline.cta') || 'Get launch alerts'}</span>
+                            <span>{t('templates.pipeline.cta') || t('projects.pipeline.cta') || 'Get launch alerts'}</span>
                           </>
                         )}
                       </button>
@@ -578,7 +583,7 @@ export default function TemplatesGrid() {
                   </div>
                   {pipelineStatus === 'error' && (
                     <p className="text-xs text-rose-400 font-mono px-2">
-                      {pipelineError || t('projects.pipeline.error')}
+                      {pipelineError || t('templates.pipeline.error') || t('projects.pipeline.error')}
                     </p>
                   )}
                 </form>

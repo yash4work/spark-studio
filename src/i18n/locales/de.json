@@ -281,7 +281,9 @@
       "placeholder": "E-Mail für Launch-Updates eingeben...",
       "cta": "Launch-Alerts erhalten",
       "loading": "Wird eingetragen...",
-      "success": "Sie sind auf der Early-Bird-Liste! Wir benachrichtigen Sie sofort, wenn neue Releases und Onyx Pro verfügbar sind.",
+      "successTitle": "Sie sind auf der Early-Bird-Liste!",
+      "successDesc": "Wir benachrichtigen Sie zuerst, wenn neue Releases & Onyx Pro online gehen.",
+      "success": "Sie sind auf der Early-Bird-Liste!",
       "error": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
     },
     "viewDetails": "Details ansehen",

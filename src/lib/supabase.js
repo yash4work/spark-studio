@@ -1,10 +1,11 @@
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://placeholder.supabase.co';
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'placeholder-anon-key';
+const env = (typeof import.meta !== 'undefined' && import.meta.env) ? import.meta.env : (typeof process !== 'undefined' && process.env) || {};
+const supabaseUrl = env.VITE_SUPABASE_URL || 'https://placeholder.supabase.co';
+const supabaseAnonKey = env.VITE_SUPABASE_ANON_KEY || 'placeholder-anon-key';
 
 export const isSupabaseConfigured = Boolean(
-  import.meta.env.VITE_SUPABASE_URL && 
-  import.meta.env.VITE_SUPABASE_ANON_KEY &&
-  !import.meta.env.VITE_SUPABASE_URL.includes('placeholder')
+  env.VITE_SUPABASE_URL && 
+  env.VITE_SUPABASE_ANON_KEY &&
+  !env.VITE_SUPABASE_URL.includes('placeholder')
 );
 
 let supabaseClient = null;
@@ -43,7 +44,16 @@ export async function saveInquiry(data) {
   // Graceful local cache fallback
   try {
     if (typeof window !== 'undefined' && window.localStorage) {
-      const existing = JSON.parse(localStorage.getItem('spark_inquiries') || '[]');
+      let existing = [];
+      try {
+        const raw = localStorage.getItem('spark_inquiries');
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) existing = parsed;
+        }
+      } catch {
+        existing = [];
+      }
       existing.push(payload);
       localStorage.setItem('spark_inquiries', JSON.stringify(existing));
     }
@@ -93,8 +103,17 @@ export async function saveSubscriber(email, source = 'expanding_pipeline') {
   // Graceful local cache fallback
   try {
     if (typeof window !== 'undefined' && window.localStorage) {
-      const existing = JSON.parse(localStorage.getItem('spark_subscribers') || '[]');
-      if (!existing.some(s => s.email === cleanEmail)) {
+      let existing = [];
+      try {
+        const raw = localStorage.getItem('spark_subscribers');
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) existing = parsed;
+        }
+      } catch {
+        existing = [];
+      }
+      if (!existing.some(s => s && s.email === cleanEmail)) {
         existing.push(payload);
         localStorage.setItem('spark_subscribers', JSON.stringify(existing));
       }
