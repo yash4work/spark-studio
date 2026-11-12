@@ -24,8 +24,8 @@ const STANDARDS_LIST = [
   },
   {
     num: '05',
-    title: 'Companion Figma source systems',
-    desc: 'Organized Figma files with auto-layouts and reusable style variables matching the Framer build 1:1.'
+    title: 'Design token & style guide architecture',
+    desc: 'Organized component libraries with fluid variants, design tokens, and reusable style variables matching production standards 1:1.'
   },
   {
     num: '06',

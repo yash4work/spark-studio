@@ -180,7 +180,7 @@
         "name": "Vellum Edition",
         "category": "Portfolio editorial de arquitectura",
         "tagline": "Una monografía sobria tipo libro de arte para estudios de arquitectura donde manda la fotografía y la materia.",
-        "price": "29 €",
+        "price": "39 €",
         "image": "/templates/vellum-edition.png",
         "demoUrl": "https://unlimited-mind-018782.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1",
@@ -285,13 +285,13 @@
   },
   "bundles": {
     "tag": "PACKS Y AHORRO",
-    "title": "Ahorre hasta un 68% con packs exclusivos de plantillas.",
+    "title": "Ahorre hasta un 48% con packs exclusivos de plantillas.",
     "subtitle": "Combinaciones estratégicas y el catálogo completo del estudio con licencias comerciales.",
     "pickAny3": {
-      "badge": "MÁS POPULAR",
+      "badge": "ELECCIÓN FLEXIBLE · AHORRA 48%",
       "title": "Pack Inicial Elige 3 Plantillas",
       "price": "$99",
-      "regularPrice": "$216",
+      "regularPrice": "$190",
       "features": [
         "Elija 3 plantillas cualesquiera de nuestro catálogo",
         "Licencia comercial completa por plantilla",
@@ -302,36 +302,36 @@
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
     },
     "soloVault": {
-      "badge": "MEJOR VALOR",
+      "badge": "MEJOR VALOR · AHORRA 288 $ (48% DTO)",
       "title": "Vault Completo de Estudio (Solo)",
-      "price": "$149",
-      "regularPrice": "$392",
+      "price": "$312",
+      "regularPrice": "$600",
       "features": [
-        "Acceso inmediato a TODAS las 7 plantillas + Slowgrain",
+        "Acceso inmediato a TODAS las 9 plantillas + Slowgrain",
         "Licencia comercial individual por plantilla",
-        "Sistemas de tokens de diseño y guías de estilo",
+        "Sistemas de tokens de diseño y componentes",
         "Canal directo de asistencia técnica"
       ],
-      "cta": "Desbloquear Vault Completo — $149",
+      "cta": "Desbloquear Vault Completo — $312",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
     },
     "agencyVault": {
-      "badge": "PARA AGENCIAS",
+      "badge": "PARA AGENCIAS · 48% DTO",
       "title": "Vault Completo de Estudio (Agencia)",
-      "price": "$249",
-      "regularPrice": "$590",
+      "price": "$500",
+      "regularPrice": "$960",
       "features": [
-        "Todas las plantillas con despliegues ilimitados en clientes",
+        "Todas las 10 plantillas con despliegues ilimitados en clientes",
         "Conserve el 100% de los ingresos de sus proyectos",
-        "Archivos Figma y recursos de diseño complementarios",
+        "Bibliotecas completas de componentes y tokens",
         "Incorporación prioritaria con desarrolladores"
       ],
-      "cta": "Obtener Vault de Agencia — $249",
+      "cta": "Obtener Vault de Agencia — $500",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
       {
-        "tag": "INMOBILIARIA · AHORRE 69 $",
+        "tag": "INMOBILIARIA · AHORRE 69 $ (41% DTO)",
         "title": "Duo Inmobiliario de Alto Nivel",
         "price": "$99",
         "regularPrice": "$168",
@@ -340,16 +340,16 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
-        "tag": "ARQUITECTURA · AHORRE 39 $",
+        "tag": "ARQUITECTURA · AHORRE 49 $ (42% DTO)",
         "title": "Duo Monográfico de Arquitectura",
         "price": "$69",
-        "regularPrice": "$108",
-        "desc": "Onyx Atelier (79 €) + Vellum Edition (29 €). Diseñado para firmas de arquitectura, estudios de interiorismo y monografías.",
+        "regularPrice": "$118",
+        "desc": "Onyx Atelier (79 €) + Vellum Edition (39 €). Diseñado para firmas de arquitectura, estudios de interiorismo y monografías.",
         "cta": "Obtener Duo de Arquitectura — $69",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {
-        "tag": "COMERCIO Y ARTESANÍA · AHORRE 67 $",
+        "tag": "COMERCIO Y ARTESANÍA · AHORRE 67 $ (36% DTO)",
         "title": "Suite de E-Commerce y Creación Artesanal",
         "price": "$119",
         "regularPrice": "$186",
@@ -359,23 +359,23 @@
       }
     ],
     "exclusiveEyebrow": "PACKS EXCLUSIVOS Y ACCESO AL VAULT",
-    "exclusiveTitle": "Ahorre hasta un 68% con packs exclusivos de plantillas.",
+    "exclusiveTitle": "Ahorre hasta un 48% con packs exclusivos de plantillas.",
     "exclusiveDesc": "Plantillas en Framer listas para producción agrupadas para creadores independientes, estudios y agencias. 100% nativas, colección estática con acceso inmediato a remix en 1 clic.",
     "nicheTitle": "Packs Temáticos por Categoría",
     "nicheEyebrow": "COMBINACIONES ESTRATÉGICAS PARA SECTORES ESPECÍFICOS",
     "vaultList": [
       {
         "id": "pick-any-3",
-        "badge": "ELECCIÓN FLEXIBLE",
+        "badge": "ELECCIÓN FLEXIBLE · AHORRA 48%",
         "isFeatured": false,
         "title": "Pack Inicial Elige 3 Plantillas",
         "price": "99 €",
-        "regularPrice": "/ Ahorra hasta 148 € (60% DTO)",
+        "regularPrice": "/ 190 € valor habitual (Ahorra 91 € · 48% DTO)",
         "desc": "Elija 3 plantillas cualesquiera de nuestro catálogo. Ideal para profesionales con proyectos inminentes de clientes.",
         "features": [
           "3 plantillas en Framer para producción a elegir",
           "Enlaces directos de duplicación y remix en 1 clic",
-          "Archivos fuente complementarios en Figma (.fig)",
+          "Tokens de diseño globales y ajustes de tipografía",
           "Colecciones dinámicas CMS e interfaz responsive",
           "Uso en un sitio web de producción por plantilla"
         ],
@@ -384,46 +384,46 @@
       },
       {
         "id": "solo-vault",
-        "badge": "MÁS POPULAR · AHORRA 313 € (68% DTO)",
+        "badge": "MÁS POPULAR · AHORRA 288 € (48% DTO)",
         "isFeatured": true,
         "title": "Vault Completo de Estudio (Solo)",
-        "price": "149 €",
-        "regularPrice": "/ 462 € valor habitual",
-        "desc": "Acceso inmediato a las 7 plantillas de pago + Slowgrain. La biblioteca de diseño más exclusiva para creadores ambiciosos.",
+        "price": "312 €",
+        "regularPrice": "/ 600 € valor habitual",
+        "desc": "Acceso inmediato a las 9 plantillas de pago + Slowgrain. La biblioteca de diseño más exclusiva para creadores ambiciosos.",
         "features": [
-          "Las 7 plantillas de pago + Slowgrain (Gratis)",
-          "Aurelle (99 €) + Onyx (79 €) + Tessovra (69 €)",
-          "Mavric (69 €) + Halden (59 €) + Grain & Form (58 €)",
-          "Vellum Edition (29 €) incluida",
-          "Kits de UI y especificaciones completas en Figma",
+          "Las 9 plantillas de pago + Slowgrain (Gratis)",
+          "Aurelle (99 €) + Onyx (79 €) + Mavric (69 €)",
+          "TERRA (69 €) + SASSO (69 €) + TESSOVRA (69 €)",
+          "Halden (59 €) + Grain & Form (58 €) + Vellum (39 €)",
+          "Bibliotecas completas de componentes y tokens",
           "Licencia comercial individual por plantilla"
         ],
-        "cta": "Desbloquear Vault Completo — 149 €",
+        "cta": "Desbloquear Vault Completo — 312 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
       },
       {
         "id": "agency-vault",
-        "badge": "DERECHOS ILIMITADOS PARA CLIENTES",
+        "badge": "DERECHOS ILIMITADOS PARA CLIENTES · 48% DTO",
         "isFeatured": false,
         "title": "Vault Completo de Estudio (Agencia)",
-        "price": "249 €",
-        "regularPrice": "/ 1.200 €+ valor comercial",
-        "desc": "Colección íntegra de 8 plantillas con licencias comerciales ilimitadas. Entregue proyectos premium a clientes y retenga el 100% de sus honorarios.",
+        "price": "500 €",
+        "regularPrice": "/ 960 € valor comercial (Ahorra 460 € · 48% DTO)",
+        "desc": "Colección íntegra de 10 plantillas con licencias comerciales ilimitadas. Entregue proyectos premium a clientes y retenga el 100% de sus honorarios.",
         "features": [
-          "Las 7 plantillas de pago + Slowgrain",
+          "Las 9 plantillas de pago + Slowgrain (10 en total)",
           "Despliegues comerciales ilimitados para clientes",
           "Conserve el 100% de los ingresos de sus proyectos",
-          "Todos los archivos Figma y recursos de diseño",
+          "Bibliotecas completas de componentes y tokens",
           "Soporte prioritario e incorporación guiada"
         ],
-        "cta": "Conseguir Vault para Agencias — 249 €",
+        "cta": "Conseguir Vault para Agencias — 500 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
       }
     ],
     "nicheList": [
       {
         "id": "real-estate-duo",
-        "tag": "INMOBILIARIA · AHORRA 69 €",
+        "tag": "INMOBILIARIA · AHORRA 69 € (41% DTO)",
         "title": "Dúo Inmobiliario de Alto Lujo",
         "price": "99 €",
         "regularPrice": "/ 168 € valor habitual",
@@ -439,14 +439,14 @@
       },
       {
         "id": "architecture-duo",
-        "tag": "ARQUITECTURA · AHORRA 39 €",
+        "tag": "ARQUITECTURA · AHORRA 49 € (42% DTO)",
         "title": "Dúo Monografía de Arquitectura",
         "price": "69 €",
-        "regularPrice": "/ 108 € valor habitual",
-        "desc": "Onyx Atelier (79 €) + Vellum Edition (29 €). Concebido para estudios de arquitectura, paisajismo y publicaciones monográficas.",
+        "regularPrice": "/ 118 € valor habitual",
+        "desc": "Onyx Atelier (79 €) + Vellum Edition (39 €). Concebido para estudios de arquitectura, paisajismo y publicaciones monográficas.",
         "features": [
           "Onyx Atelier (79 €) portfolio oscuro de estilo exposición",
-          "Vellum Edition (29 €) monografía sobria tipo libro de arte",
+          "Vellum Edition (39 €) monografía sobria tipo libro de arte",
           "Sistemas de composición de alto contraste y galerías",
           "Velocidad de 95+ en Core Web Vitals sin configuraciones"
         ],
@@ -455,7 +455,7 @@
       },
       {
         "id": "artisan-suite",
-        "tag": "COMERCIO Y ARTESANÍA · AHORRA 67 €",
+        "tag": "COMERCIO Y ARTESANÍA · AHORRA 67 € (36% DTO)",
         "title": "Suite Hogar de Autor y E-Commerce",
         "price": "119 €",
         "regularPrice": "/ 186 € valor habitual",
@@ -1015,7 +1015,7 @@
       "category": "Análisis de Plantillas",
       "readTime": "6 min de lectura",
       "date": "Noviembre 2026",
-      "excerpt": "Revisión arquitectónica de Vellum Edition: una plantilla monográfica de $29 tipo libro de arte para estudios de arquitectura donde la fotografía y la materia son protagonistas."
+      "excerpt": "Revisión arquitectónica de Vellum Edition: una plantilla monográfica de 39 € tipo libro de arte para estudios de arquitectura donde la fotografía y la materia son protagonistas."
     }
   }
 }

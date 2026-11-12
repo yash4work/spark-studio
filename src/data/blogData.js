@@ -12,13 +12,13 @@ export const BLOG_POSTS = [
       role: "Spatial Design & Systems Team",
       avatar: "/assets/spark_studio_avatar.jpg"
     },
-    excerpt: "An architectural review of Vellum Edition: a quiet, $29 art-book monograph Framer template for architecture studios that let photography and material narratives lead.",
+    excerpt: "An architectural review of Vellum Edition: a quiet, $39 art-book monograph Framer template for architecture studios that let photography and material narratives lead.",
     featuredImage: "/templates/vellum-edition.webp",
     tags: ["Vellum Edition","Architecture","Art Book","Minimalism","Framer Template"],
     content: `
 ## What Is Vellum Edition?
 
-**Vellum Edition** is an art-book monograph Framer template designed for architectural practices, spatial photographers, and interior ateliers that believe silence speaks louder than noise. At an accessible price of just **$29**, Vellum provides a sophisticated editorial aesthetic that usually costs thousands in bespoke development.
+**Vellum Edition** is an art-book monograph Framer template designed for architectural practices, spatial photographers, and interior ateliers that believe silence speaks louder than noise. At an accessible price of just **$39**, Vellum provides a sophisticated editorial aesthetic that usually costs thousands in bespoke development.
 
 Inspired by physical Swiss monographs and Japanese architectural journals, Vellum removes all gratuitous decorative elements to let pure spatial photography and tactile materiality lead.
 
@@ -29,7 +29,7 @@ Inspired by physical Swiss monographs and Japanese architectural journals, Vellu
 | Specification | Details |
 | :--- | :--- |
 | **Product Name** | Vellum Edition |
-| **Price** | $29 (Commercial License) |
+| **Price** | $39 (Commercial License) |
 | **Primary Niche** | Architecture Photographers, Spatial Designers, Independent Ateliers |
 | **Platform** | Framer (Native Visual Canvas) |
 | **CMS Collections** | 3 (Visual Monographs, Material Observations, Studio Notes) |
@@ -66,7 +66,7 @@ Absolutely. Interior designers with rich photography collections find Vellum to 
 
 1. Preview the [Live Interactive Demo](https://unlimited-mind-018782.framer.app/)
 2. View Full Template Specs at [Vellum Edition Details](/templates/vellum-edition)
-3. Instant 1-Click Remix on Lemon Squeezy for $29
+3. Instant 1-Click Remix on Lemon Squeezy for $39
 `
   },
   {

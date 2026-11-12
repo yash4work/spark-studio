@@ -32,7 +32,9 @@ src/
 public/         Static files served as-is (favicon, logo, templates, flags)
 supabase/       Database schema (schema.sql)
 docs/
-  screenshots/  Reference screenshots of the live site
+  bundle-pricing.md          Catalog pricing, vault bundles & 48% discount documentation
+  contact-form-pipeline.md   Contact form delivery & Zoho Mail pipeline
+  screenshots/               Reference screenshots of the live site
 dev/            Scraping/inspection scripts used during development
                 (not part of the shipped app — see dev/README.md)
 ```

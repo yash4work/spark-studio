@@ -180,7 +180,7 @@
         "name": "Vellum Edition",
         "category": "Editorial architecture portfolio",
         "tagline": "A quiet, art-book monograph for architecture studios that let photography and material narratives lead.",
-        "price": "$29",
+        "price": "$39",
         "image": "/templates/vellum-edition.png",
         "demoUrl": "https://unlimited-mind-018782.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1",
@@ -285,13 +285,13 @@
   },
   "bundles": {
     "tag": "BUNDLE & SAVE",
-    "title": "Save up to 68% with curated template bundles.",
+    "title": "Save up to 48% with curated template bundles.",
     "subtitle": "Strategic pairings and complete studio collections with full commercial licenses.",
     "pickAny3": {
-      "badge": "MOST POPULAR",
+      "badge": "FLEXIBLE CHOICE · SAVE 48%",
       "title": "Pick Any 3 Starter Pack",
       "price": "$99",
-      "regularPrice": "$216",
+      "regularPrice": "$190",
       "features": [
         "Pick any 3 templates from our entire catalog",
         "Full commercial license per template",
@@ -302,36 +302,36 @@
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
     },
     "soloVault": {
-      "badge": "BEST VALUE",
+      "badge": "MOST POPULAR · SAVE $288 (48% OFF)",
       "title": "Complete Studio Vault (Solo)",
-      "price": "$149",
-      "regularPrice": "$392",
+      "price": "$312",
+      "regularPrice": "$600",
       "features": [
-        "Instant access to ALL 7 current templates + Slowgrain",
+        "Instant access to ALL 9 current templates + Slowgrain",
         "Commercial solo license per template",
-        "Design token systems & style guides",
+        "Complete component libraries & style tokens",
         "Direct developer support channel"
       ],
-      "cta": "Unlock Full Vault — $149",
+      "cta": "Unlock Full Vault — $312",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
     },
     "agencyVault": {
-      "badge": "FOR AGENCIES",
+      "badge": "UNLIMITED CLIENT RIGHTS · SAVE 48%",
       "title": "Complete Studio Vault (Agency)",
-      "price": "$249",
-      "regularPrice": "$590",
+      "price": "$500",
+      "regularPrice": "$960",
       "features": [
-        "All templates with unlimited commercial client deployments",
+        "All 10 templates with unlimited commercial client deployments",
         "Keep 100% of client project revenue",
-        "All companion Figma files & design assets",
+        "Complete component libraries & style tokens",
         "Priority studio developer onboarding"
       ],
-      "cta": "Get Agency Vault — $249",
+      "cta": "Get Agency Vault — $500",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
       {
-        "tag": "REAL ESTATE · SAVE $69",
+        "tag": "REAL ESTATE · SAVE $69 (41% OFF)",
         "title": "Luxury Real Estate Flagship Duo",
         "price": "$99",
         "regularPrice": "$168",
@@ -340,16 +340,16 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
-        "tag": "ARCHITECTURE · SAVE $39",
+        "tag": "ARCHITECTURE · SAVE $49 (42% OFF)",
         "title": "Monograph Architecture Duo",
         "price": "$69",
-        "regularPrice": "$108",
-        "desc": "Onyx Atelier ($79) + Vellum Edition ($29). Engineered for architectural practices, spatial design studios, and monographs.",
+        "regularPrice": "$118",
+        "desc": "Onyx Atelier ($79) + Vellum Edition ($39). Engineered for architectural practices, spatial design studios, and monographs.",
         "cta": "Get Architecture Duo — $69",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {
-        "tag": "COMMERCE & CRAFT · SAVE $67",
+        "tag": "COMMERCE & CRAFT · SAVE $67 (36% OFF)",
         "title": "Artisan Living & E-Commerce Suite",
         "price": "$119",
         "regularPrice": "$186",
@@ -359,23 +359,23 @@
       }
     ],
     "exclusiveEyebrow": "EXCLUSIVE BUNDLES & VAULT ACCESS",
-    "exclusiveTitle": "Save up to 68% with curated template bundles.",
+    "exclusiveTitle": "Save up to 48% with curated template bundles.",
     "exclusiveDesc": "Production-ready Framer templates bundled for independent creators, studios, and agencies. 100% native, static collection as-is with immediate 1-click remix access.",
     "nicheTitle": "Category-Wise Niche Packs",
     "nicheEyebrow": "TARGETED PAIRS FOR SPECIFIC INDUSTRIES",
     "vaultList": [
       {
         "id": "pick-any-3",
-        "badge": "FLEXIBLE CHOICE",
+        "badge": "FLEXIBLE CHOICE · SAVE 48%",
         "isFeatured": false,
         "title": "Pick Any 3 Starter Pack",
         "price": "$99",
-        "regularPrice": "/ Save up to $148 (60% OFF)",
+        "regularPrice": "/ $190 regular value (Save $91 · 48% OFF)",
         "desc": "Choose any 3 templates from our active catalog. Ideal for freelancers with upcoming client projects.",
         "features": [
           "Any 3 production Framer templates",
           "Instant 1-click duplicate & remix links",
-          "Companion Figma source files (.fig)",
+          "Global design tokens & typography presets",
           "Dynamic CMS archives & responsive UI",
           "Single production site per template"
         ],
@@ -384,46 +384,46 @@
       },
       {
         "id": "solo-vault",
-        "badge": "MOST POPULAR · SAVE $313 (68% OFF)",
+        "badge": "MOST POPULAR · SAVE $288 (48% OFF)",
         "isFeatured": true,
         "title": "Complete Studio Vault (Solo)",
-        "price": "$149",
-        "regularPrice": "/ $462 retail value",
-        "desc": "Instant access to all 7 premium paid templates + Slowgrain. Complete high-status design vault for ambitious creators.",
+        "price": "$312",
+        "regularPrice": "/ $600 retail value",
+        "desc": "Instant access to all 9 premium paid templates + Slowgrain. Complete high-status design vault for ambitious creators.",
         "features": [
-          "All 7 paid templates + Slowgrain (Free)",
-          "Aurelle ($99) + Onyx ($79) + Tessovra ($69)",
-          "Mavric ($69) + Halden ($59) + Grain & Form ($58)",
-          "Vellum Edition ($29) included",
-          "Full companion Figma UI kits & specs",
+          "All 9 paid templates + Slowgrain (Free)",
+          "Aurelle ($99) + Onyx ($79) + Mavric ($69)",
+          "TERRA ($69) + SASSO ($69) + TESSOVRA ($69)",
+          "Halden ($59) + Grain & Form ($58) + Vellum ($39)",
+          "Complete component libraries & style tokens",
           "Commercial solo license per template"
         ],
-        "cta": "Unlock Full Vault — $149",
+        "cta": "Unlock Full Vault — $312",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
       },
       {
         "id": "agency-vault",
-        "badge": "UNLIMITED CLIENT RIGHTS",
+        "badge": "UNLIMITED CLIENT RIGHTS · SAVE 48%",
         "isFeatured": false,
         "title": "Complete Studio Vault (Agency)",
-        "price": "$249",
-        "regularPrice": "/ $1,200+ commercial value",
-        "desc": "Complete 8-template library with unlimited commercial licensing. Ship high-ticket client builds and keep 100% of fees.",
+        "price": "$500",
+        "regularPrice": "/ $960 commercial value (Save $460 · 48% OFF)",
+        "desc": "Complete 10-template library with unlimited commercial licensing. Ship high-ticket client builds and keep 100% of fees.",
         "features": [
-          "All 7 paid templates + Slowgrain",
+          "All 9 paid templates + Slowgrain (10 total)",
           "Unlimited commercial client deployments",
           "Keep 100% of client project revenue",
-          "All companion Figma files & design assets",
+          "Complete component libraries & style tokens",
           "Priority studio developer onboarding"
         ],
-        "cta": "Get Agency Vault — $249",
+        "cta": "Get Agency Vault — $500",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
       }
     ],
     "nicheList": [
       {
         "id": "real-estate-duo",
-        "tag": "REAL ESTATE · SAVE $69",
+        "tag": "REAL ESTATE · SAVE $69 (41% OFF)",
         "title": "Luxury Real Estate Flagship Duo",
         "price": "$99",
         "regularPrice": "/ $168 regular value",
@@ -439,14 +439,14 @@
       },
       {
         "id": "architecture-duo",
-        "tag": "ARCHITECTURE · SAVE $39",
+        "tag": "ARCHITECTURE · SAVE $49 (42% OFF)",
         "title": "Monograph Architecture Duo",
         "price": "$69",
-        "regularPrice": "/ $108 regular value",
-        "desc": "Onyx Atelier ($79) + Vellum Edition ($29). Engineered for architectural practices, spatial design studios, and monographs.",
+        "regularPrice": "/ $118 regular value",
+        "desc": "Onyx Atelier ($79) + Vellum Edition ($39). Engineered for architectural practices, spatial design studios, and monographs.",
         "features": [
           "Onyx Atelier ($79) exhibition-style dark portfolio",
-          "Vellum Edition ($29) quiet art-book monograph",
+          "Vellum Edition ($39) quiet art-book monograph",
           "High-contrast layout systems and gallery grids",
           "Core Web Vitals 95+ speed out of the box"
         ],
@@ -455,7 +455,7 @@
       },
       {
         "id": "artisan-suite",
-        "tag": "COMMERCE & CRAFT · SAVE $67",
+        "tag": "COMMERCE & CRAFT · SAVE $67 (36% OFF)",
         "title": "Artisan Living & E-Commerce Suite",
         "price": "$119",
         "regularPrice": "/ $186 regular value",
@@ -1014,7 +1014,7 @@
       "category": "Template Teardown",
       "readTime": "6 min read",
       "date": "November 2026",
-      "excerpt": "An architectural review of Vellum Edition: a quiet, $29 art-book monograph Framer template for architecture studios that let photography and material narratives lead."
+      "excerpt": "An architectural review of Vellum Edition: a quiet, $39 art-book monograph Framer template for architecture studios that let photography and material narratives lead."
     }
   }
 }

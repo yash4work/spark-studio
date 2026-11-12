@@ -180,7 +180,7 @@
         "name": "Vellum Edition",
         "category": "Portfolio d’architecture éditorial",
         "tagline": "Une monographie paisible au format livre d’art pour agences d’architecture où l’image et la matière priment.",
-        "price": "29 €",
+        "price": "39 €",
         "image": "/templates/vellum-edition.png",
         "demoUrl": "https://unlimited-mind-018782.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1",
@@ -285,13 +285,13 @@
   },
   "bundles": {
     "tag": "PACKS ÉCONOMIQUES",
-    "title": "Économisez jusqu’à 68 % avec nos packs de templates sélectionnés.",
+    "title": "Économisez jusqu’à 48 % avec nos packs de templates sélectionnés.",
     "subtitle": "Combinaisons stratégiques et collection complète du studio avec licences commerciales incluses.",
     "pickAny3": {
-      "badge": "LE PLUS POPULAIRE",
+      "badge": "CHOIX SUR MESURE · ÉCONOMISEZ 48 %",
       "title": "Pack Découverte 3 Templates",
       "price": "$99",
-      "regularPrice": "$216",
+      "regularPrice": "$190",
       "features": [
         "Choisissez 3 templates au choix dans tout le catalogue",
         "Licence commerciale complète par template",
@@ -302,54 +302,54 @@
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
     },
     "soloVault": {
-      "badge": "MEILLEURE OFFRE",
+      "badge": "MEILLEURE OFFRE · ÉCONOMISEZ 288 $ (-48 %)",
       "title": "Vault Studio Complet (Solo)",
-      "price": "$149",
-      "regularPrice": "$392",
+      "price": "$312",
+      "regularPrice": "$600",
       "features": [
-        "Accès immédiat aux 7 templates actuels + Slowgrain",
+        "Accès immédiat aux 9 templates actuels + Slowgrain",
         "Licence commerciale solo par template",
-        "Systèmes de tokens de design & guides de styles",
+        "Systèmes de tokens de design & bibliothèques",
         "Canal de support direct avec le créateur"
       ],
-      "cta": "Débloquer le Vault Complet — 149 €",
+      "cta": "Débloquer le Vault Complet — $312",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
     },
     "agencyVault": {
-      "badge": "POUR AGENCES",
+      "badge": "POUR AGENCES · ÉCONOMISEZ 48 %",
       "title": "Vault Studio Complet (Agence)",
-      "price": "$249",
-      "regularPrice": "$590",
+      "price": "$500",
+      "regularPrice": "$960",
       "features": [
-        "Tous les templates avec déploiements clients illimités",
+        "Tous les 10 templates avec déploiements clients illimités",
         "Conservez 100 % des revenus de vos projets clients",
-        "Tous les fichiers Figma et assets de conception",
+        "Toutes les bibliothèques de composants et design tokens",
         "Onboarding prioritaire avec les créateurs"
       ],
-      "cta": "Obtenir le Vault Agence — 249 €",
+      "cta": "Obtenir le Vault Agence — $500",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
       {
-        "tag": "IMMOBILIER · ÉCONOMISEZ 69 €",
+        "tag": "IMMOBILIER · ÉCONOMISEZ 69 € (41 % DTO)",
         "title": "Duo Flagship Immobilier de Prestige",
         "price": "$99",
         "regularPrice": "$168",
         "desc": "Aurelle Estates (99 €) + Mavric Estate (69 €). La panoplie idéale pour agences immobilières de prestige et promoteurs.",
-        "cta": "Obtenir le Duo Immobilier — 99 €",
+        "cta": "Obtenir le Duo Immobilier — $99",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
-        "tag": "ARCHITECTURE · ÉCONOMISEZ 39 €",
+        "tag": "ARCHITECTURE · ÉCONOMISEZ 49 € (42 % DTO)",
         "title": "Duo Monographie Architecture",
         "price": "$69",
-        "regularPrice": "$108",
-        "desc": "Onyx Atelier (79 €) + Vellum Edition (29 €). Conçu sur mesure pour agences d’architecture, designers d’espace et portfolios.",
-        "cta": "Obtenir le Duo Architecture — 69 €",
+        "regularPrice": "$118",
+        "desc": "Onyx Atelier (79 €) + Vellum Edition (39 €). Conçu sur mesure pour agences d’architecture, designers d’espace et portfolios.",
+        "cta": "Obtenir le Duo Architecture — $69",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {
-        "tag": "ARTISANAT & COMMERCE · ÉCONOMISEZ 67 €",
+        "tag": "ARTISANAT & COMMERCE · ÉCONOMISEZ 67 € (36 % DTO)",
         "title": "Suite Artisanat d’Art & E-Commerce",
         "price": "$119",
         "regularPrice": "$186",
@@ -359,23 +359,23 @@
       }
     ],
     "exclusiveEyebrow": "PACKS EXCLUSIFS & ACCÈS AU VAULT",
-    "exclusiveTitle": "Économisez jusqu’à 68 % avec nos packs de templates sélectionnés.",
+    "exclusiveTitle": "Économisez jusqu’à 48 % avec nos packs de templates sélectionnés.",
     "exclusiveDesc": "Templates Framer prêts pour la production réunis pour créateurs indépendants, studios et agences. 100 % natifs, collection complète avec accès remix immédiat en 1 clic.",
     "nicheTitle": "Packs Thématiques par Secteur",
     "nicheEyebrow": "DUOS CIBLÉS POUR INDUSTRIES SPÉCIFIQUES",
     "vaultList": [
       {
         "id": "pick-any-3",
-        "badge": "CHOIX SUR MESURE",
+        "badge": "CHOIX SUR MESURE · ÉCONOMISEZ 48 %",
         "isFeatured": false,
         "title": "Pack Découverte 3 Templates",
         "price": "99 €",
-        "regularPrice": "/ Jusqu’à 148 € d’économie (-60 %)",
+        "regularPrice": "/ 190 € valeur catalogue (91 € d’économie · -48 %)",
         "desc": "Choisissez 3 templates au choix dans notre catalogue. Idéal pour freelances avec des projets clients immédiats.",
         "features": [
           "3 templates Framer pour la production au choix",
           "Liens de duplication et de remix instantanés en 1 clic",
-          "Fichiers sources Figma associés (.fig)",
+          "Tokens de design globaux et presets typographiques",
           "Archives CMS dynamiques et responsive soigné",
           "Déploiement pour un site en production par template"
         ],
@@ -384,46 +384,46 @@
       },
       {
         "id": "solo-vault",
-        "badge": "LE PLUS POPULAIRE · ÉCONOMISEZ 313 € (-68 %)",
+        "badge": "LE PLUS POPULAIRE · ÉCONOMISEZ 288 € (-48 %)",
         "isFeatured": true,
         "title": "Vault Studio Complet (Solo)",
-        "price": "149 €",
-        "regularPrice": "/ 462 € valeur catalogue",
-        "desc": "Accès immédiat aux 7 templates payants + Slowgrain. La suite de design la plus complète pour créateurs exigeants.",
+        "price": "312 €",
+        "regularPrice": "/ 600 € valeur catalogue",
+        "desc": "Accès immédiat aux 9 templates payants + Slowgrain. La suite de design la plus complète pour créateurs exigeants.",
         "features": [
-          "Les 7 templates payants + Slowgrain (Gratuit)",
-          "Aurelle (99 €) + Onyx (79 €) + Tessovra (69 €)",
-          "Mavric (69 €) + Halden (59 €) + Grain & Form (58 €)",
-          "Vellum Edition (29 €) incluse",
-          "Kits UI Figma complets et design tokens",
+          "Les 9 templates payants + Slowgrain (Gratuit)",
+          "Aurelle (99 €) + Onyx (79 €) + Mavric (69 €)",
+          "TERRA (69 €) + SASSO (69 €) + TESSOVRA (69 €)",
+          "Halden (59 €) + Grain & Form (58 €) + Vellum (39 €)",
+          "Bibliothèques de composants complètes & design tokens",
           "Licence commerciale individuelle par template"
         ],
-        "cta": "Débloquer le Vault Complet — 149 €",
+        "cta": "Débloquer le Vault Complet — 312 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
       },
       {
         "id": "agency-vault",
-        "badge": "DROITS CLIENTS ILLIMITÉS",
+        "badge": "DROITS CLIENTS ILLIMITÉS · -48 %",
         "isFeatured": false,
         "title": "Vault Studio Complet (Agence)",
-        "price": "249 €",
-        "regularPrice": "/ 1 200 €+ valeur commerciale",
-        "desc": "Bibliothèque intégrale des 8 templates avec licence commerciale illimitée. Livrez des projets clients d’élite et conservez 100 % de vos revenus.",
+        "price": "500 €",
+        "regularPrice": "/ 960 € valeur commerciale (Économisez 460 € · -48 %)",
+        "desc": "Bibliothèque intégrale des 10 templates avec licence commerciale illimitée. Livrez des projets clients d’élite et conservez 100 % de vos revenus.",
         "features": [
-          "Les 7 templates payants + Slowgrain",
+          "Les 9 templates payants + Slowgrain (10 au total)",
           "Déploiements commerciaux illimités pour vos clients",
           "Conservez 100 % des revenus générés par vos clients",
-          "Tous les fichiers Figma et ressources associées",
+          "Bibliothèques de composants complètes & design tokens",
           "Intégration et support développeur prioritaire"
         ],
-        "cta": "Obtenir le Vault Agence — 249 €",
+        "cta": "Obtenir le Vault Agence — 500 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
       }
     ],
     "nicheList": [
       {
         "id": "real-estate-duo",
-        "tag": "IMMOBILIER · ÉCONOMISEZ 69 €",
+        "tag": "IMMOBILIER · ÉCONOMISEZ 69 € (41 % DTO)",
         "title": "Duo Flagship Immobilier de Prestige",
         "price": "99 €",
         "regularPrice": "/ 168 € valeur catalogue",
@@ -439,14 +439,14 @@
       },
       {
         "id": "architecture-duo",
-        "tag": "ARCHITECTURE · ÉCONOMISEZ 39 €",
+        "tag": "ARCHITECTURE · ÉCONOMISEZ 49 € (42 % DTO)",
         "title": "Duo Monographie d’Architecture",
         "price": "69 €",
-        "regularPrice": "/ 108 € valeur catalogue",
-        "desc": "Onyx Atelier (79 €) + Vellum Edition (29 €). Pensé pour les agences d’architecture, concepteurs d’espace et monographies.",
+        "regularPrice": "/ 118 € valeur catalogue",
+        "desc": "Onyx Atelier (79 €) + Vellum Edition (39 €). Pensé pour les agences d’architecture, concepteurs d’espace et monographies.",
         "features": [
           "Onyx Atelier (79 €) portfolio sombre d’esprit galerie",
-          "Vellum Edition (29 €) monographie épurée type livre d’art",
+          "Vellum Edition (39 €) monographie épurée type livre d’art",
           "Grilles typographiques à fort contraste et mises en page",
           "Score 95+ Core Web Vitals garanti sans réglages complexes"
         ],
@@ -455,7 +455,7 @@
       },
       {
         "id": "artisan-suite",
-        "tag": "COMMERCE & ARTISANAT · ÉCONOMISEZ 67 €",
+        "tag": "COMMERCE & ARTISANAT · ÉCONOMISEZ 67 € (36 % DTO)",
         "title": "Suite Artisanat d’Art & E-Commerce",
         "price": "119 €",
         "regularPrice": "/ 186 € valeur catalogue",
@@ -1015,7 +1015,7 @@
       "category": "Analyse de Templates",
       "readTime": "6 min de lecture",
       "date": "Novembre 2026",
-      "excerpt": "Analyse de Vellum Edition : un template Framer épuré à 29 $ façon livre d'art pour les agences d'architecture qui privilégient la photographie et la matière."
+      "excerpt": "Analyse de Vellum Edition : un template Framer épuré à 39 $ façon livre d'art pour les agences d'architecture qui privilégient la photographie et la matière."
     }
   }
 }

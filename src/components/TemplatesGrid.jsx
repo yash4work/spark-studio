@@ -94,7 +94,7 @@ const TEMPLATES = [
     category: 'Editorial architecture portfolio',
     categoryKey: 'craft',
     tagline: 'A quiet, art-book monograph for architecture studios that let photography and material narratives lead.',
-    price: '$29',
+    price: '$39',
     badge: 'Agent',
     image: '/templates/vellum-edition.webp',
     demoUrl: 'https://unlimited-mind-018782.framer.app/',

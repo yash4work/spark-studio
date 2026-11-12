@@ -180,7 +180,7 @@
         "name": "Vellum Edition",
         "category": "Redaktionelles Architektur-Portfolio",
         "tagline": "Eine ruhige Kunstbuch-Monografie für Architekturbüros, bei denen Fotografie und Materialität führen.",
-        "price": "29 €",
+        "price": "39 €",
         "image": "/templates/vellum-edition.png",
         "demoUrl": "https://unlimited-mind-018782.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1",
@@ -285,13 +285,13 @@
   },
   "bundles": {
     "tag": "BUNDLE & SPAREN",
-    "title": "Bis zu 68% sparen mit kuratierten Vorlagen-Paketen.",
+    "title": "Bis zu 48 % sparen mit kuratierten Vorlagen-Paketen.",
     "subtitle": "Gezielte Zusammenstellungen und die vollständige Studio-Sammlung mit umfassenden kommerziellen Lizenzen.",
     "pickAny3": {
-      "badge": "BELIEBTESTE WAHL",
+      "badge": "FLEXIBLE AUSWAHL · 48 % SPAREN",
       "title": "Wähle beliebige 3 Starter-Pack",
       "price": "$99",
-      "regularPrice": "$216",
+      "regularPrice": "$190",
       "features": [
         "Wähle beliebige 3 Vorlagen aus unserem Gesamtkatalog",
         "Volle kommerzielle Lizenz pro Vorlage",
@@ -302,36 +302,36 @@
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
     },
     "soloVault": {
-      "badge": "BESTER WERT",
+      "badge": "BESTER WERT · 288 $ SPAREN (48 % RABATT)",
       "title": "Kompletter Studio-Vault (Solo)",
-      "price": "$149",
-      "regularPrice": "$392",
+      "price": "$312",
+      "regularPrice": "$600",
       "features": [
-        "Sofortiger Zugriff auf ALLE 7 aktuellen Vorlagen + Slowgrain",
+        "Sofortiger Zugriff auf ALLE 9 aktuellen Vorlagen + Slowgrain",
         "Kommerzielle Solo-Lizenz pro Vorlage",
         "Design-Token-Systeme und Styleguides",
         "Direkter Entwickler-Support-Kanal"
       ],
-      "cta": "Gesamten Vault freischalten — $149",
+      "cta": "Gesamten Vault freischalten — $312",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
     },
     "agencyVault": {
-      "badge": "FÜR AGENTUREN",
+      "badge": "FÜR AGENTUREN · 48 % SPAREN",
       "title": "Kompletter Studio-Vault (Agentur)",
-      "price": "$249",
-      "regularPrice": "$590",
+      "price": "$500",
+      "regularPrice": "$960",
       "features": [
-        "Alle Vorlagen mit unbegrenzten Client-Deployments",
+        "Alle 10 Vorlagen mit unbegrenzten Client-Deployments",
         "100% der Projekt-Umsätze behalten",
-        "Alle zugehörigen Figma-Dateien & Assets",
+        "Vollständige Komponentenbibliotheken & Design-Assets",
         "Prioritäres Studio-Onboarding"
       ],
-      "cta": "Agentur-Vault holen — $249",
+      "cta": "Agentur-Vault holen — $500",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
       {
-        "tag": "IMMOBILIEN · 69 $ SPAREN",
+        "tag": "IMMOBILIEN · 69 $ SPAREN (41 % RABATT)",
         "title": "Luxus-Immobilien Flaggschiff-Duo",
         "price": "$99",
         "regularPrice": "$168",
@@ -340,16 +340,16 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
-        "tag": "ARCHITEKTUR · 39 $ SPAREN",
+        "tag": "ARCHITEKTUR · 49 $ SPAREN (42 % RABATT)",
         "title": "Monografie-Architektur-Duo",
         "price": "$69",
-        "regularPrice": "$108",
-        "desc": "Onyx Atelier ($79) + Vellum Edition ($29). Entwickelt für Architekturbüros, Raumplaner und Monografien.",
+        "regularPrice": "$118",
+        "desc": "Onyx Atelier ($79) + Vellum Edition ($39). Entwickelt für Architekturbüros, Raumplaner und Monografien.",
         "cta": "Architektur-Duo holen — $69",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {
-        "tag": "HANDWERK & HANDEL · 67 $ SPAREN",
+        "tag": "HANDWERK & HANDEL · 67 $ SPAREN (36 % RABATT)",
         "title": "Handwerk & E-Commerce Suite",
         "price": "$119",
         "regularPrice": "$186",
@@ -359,23 +359,23 @@
       }
     ],
     "exclusiveEyebrow": "EXKLUSIVE BUNDLES & VAULT-ZUGANG",
-    "exclusiveTitle": "Bis zu 68% sparen mit kuratierten Vorlagen-Paketen.",
+    "exclusiveTitle": "Bis zu 48 % sparen mit kuratierten Vorlagen-Paketen.",
     "exclusiveDesc": "Produktionsreife Framer-Vorlagen gebündelt für unabhängige Kreative, Studios und Agenturen. 100% nativ, statische Sammlung mit sofortigem 1-Klick-Remix-Zugriff.",
     "nicheTitle": "Branchenspezifische Nischen-Pakete",
     "nicheEyebrow": "GEZIELTE DUOS FÜR SPEZIFISCHE BRANCHEN",
     "vaultList": [
       {
         "id": "pick-any-3",
-        "badge": "FLEXIBLE WAHL",
+        "badge": "FLEXIBLE AUSWAHL · 48 % SPAREN",
         "isFeatured": false,
         "title": "Wähle beliebige 3 Starter-Paket",
         "price": "99 €",
-        "regularPrice": "/ Bis zu 148 € sparen (60% RABATT)",
+        "regularPrice": "/ 190 € regulärer Wert (91 € sparen · 48 % RABATT)",
         "desc": "Wählen Sie beliebige 3 Vorlagen aus unserem Gesamtkatalog. Ideal für Freelancer mit anstehenden Kundenprojekten.",
         "features": [
           "Beliebige 3 produktionsreife Framer-Vorlagen",
           "Sofortige 1-Klick-Duplizierungs- & Remix-Links",
-          "Passende Figma-Quelldateien (.fig)",
+          "Globale Design-Tokens & Typografie-Vorgaben",
           "Dynamische CMS-Archive & responsive Benutzeroberfläche",
           "Eine Produktions-Website pro Vorlage"
         ],
@@ -384,46 +384,46 @@
       },
       {
         "id": "solo-vault",
-        "badge": "BELIEBTESTE WAHL · 313 € SPAREN (68% RABATT)",
+        "badge": "BELIEBTESTE WAHL · 288 € SPAREN (48 % RABATT)",
         "isFeatured": true,
         "title": "Kompletter Studio-Vault (Solo)",
-        "price": "149 €",
-        "regularPrice": "/ 462 € regulärer Wert",
-        "desc": "Sofortiger Zugriff auf alle 7 Premium-Vorlagen + Slowgrain. Das ultimative High-End-Design-Vault für anspruchsvolle Entwickler.",
+        "price": "312 €",
+        "regularPrice": "/ 600 € regulärer Wert",
+        "desc": "Sofortiger Zugriff auf alle 9 Premium-Vorlagen + Slowgrain. Das ultimative High-End-Design-Vault für anspruchsvolle Entwickler.",
         "features": [
-          "Alle 7 Premium-Vorlagen + Slowgrain (Gratis)",
-          "Aurelle (99 €) + Onyx (79 €) + Tessovra (69 €)",
-          "Mavric (69 €) + Halden (59 €) + Grain & Form (58 €)",
-          "Vellum Edition (29 €) inklusive",
-          "Vollständige Figma-UI-Kits & Design-Tokens",
+          "Alle 9 Premium-Vorlagen + Slowgrain (Gratis)",
+          "Aurelle (99 €) + Onyx (79 €) + Mavric (69 €)",
+          "TERRA (69 €) + SASSO (69 €) + TESSOVRA (69 €)",
+          "Halden (59 €) + Grain & Form (58 €) + Vellum (39 €)",
+          "Vollständige Komponentenbibliotheken & Design-Tokens",
           "Kommerzielle Solo-Lizenz pro Vorlage"
         ],
-        "cta": "Gesamten Vault freischalten — 149 €",
+        "cta": "Gesamten Vault freischalten — 312 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
       },
       {
         "id": "agency-vault",
-        "badge": "UNBEGRENZTE KUNDENRECHTE",
+        "badge": "UNBEGRENZTE KUNDENRECHTE · 48 % SPAREN",
         "isFeatured": false,
         "title": "Kompletter Studio-Vault (Agentur)",
-        "price": "249 €",
-        "regularPrice": "/ 1.200 €+ kommerzieller Wert",
-        "desc": "Vollständige 8-Vorlagen-Bibliothek mit unbegrenzter kommerzieller Lizenz. Setzen Sie hochkarätige Kundenprojekte um und behalten Sie 100% der Einnahmen.",
+        "price": "500 €",
+        "regularPrice": "/ 960 € kommerzieller Wert (460 € sparen · 48 % RABATT)",
+        "desc": "Vollständige 10-Vorlagen-Bibliothek mit unbegrenzter kommerzieller Lizenz. Setzen Sie hochkarätige Kundenprojekte um und behalten Sie 100% der Einnahmen.",
         "features": [
-          "Alle 7 Premium-Vorlagen + Slowgrain",
+          "Alle 9 Premium-Vorlagen + Slowgrain (10 insgesamt)",
           "Unbegrenzte kommerzielle Kunden-Deployments",
           "100% der Einnahmen aus Kundenprojekten verbleiben bei Ihnen",
-          "Alle passenden Figma-Dateien & Design-Assets",
+          "Vollständige Komponentenbibliotheken & Design-Assets",
           "Prioritärer Entwickler-Support und Onboarding"
         ],
-        "cta": "Agentur-Vault sichern — 249 €",
+        "cta": "Agentur-Vault sichern — 500 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
       }
     ],
     "nicheList": [
       {
         "id": "real-estate-duo",
-        "tag": "IMMOBILIEN · 69 € SPAREN",
+        "tag": "IMMOBILIEN · 69 € SPAREN (41 % RABATT)",
         "title": "Luxus-Immobilien Flaggschiff-Duo",
         "price": "99 €",
         "regularPrice": "/ 168 € regulärer Wert",
@@ -439,14 +439,14 @@
       },
       {
         "id": "architecture-duo",
-        "tag": "ARCHITEKTUR · 39 € SPAREN",
+        "tag": "ARCHITEKTUR · 49 € SPAREN (42 % RABATT)",
         "title": "Monografie-Architektur-Duo",
         "price": "69 €",
-        "regularPrice": "/ 108 € regulärer Wert",
-        "desc": "Onyx Atelier (79 €) + Vellum Edition (29 €). Entwickelt für Architekturbüros, Raumdesign-Studios und Werkmonografien.",
+        "regularPrice": "/ 118 € regulärer Wert",
+        "desc": "Onyx Atelier (79 €) + Vellum Edition (39 €). Entwickelt für Architekturbüros, Raumdesign-Studios und Werkmonografien.",
         "features": [
           "Onyx Atelier (79 €) dunkles Ausstellungs-Portfolio",
-          "Vellum Edition (29 €) zurückhaltende Kunstbuch-Monografie",
+          "Vellum Edition (39 €) zurückhaltende Kunstbuch-Monografie",
           "Kontraststarke Rastersysteme und Galerie-Ansichten",
           "Core Web Vitals 95+ Ladezeiten ab Werk"
         ],
@@ -455,7 +455,7 @@
       },
       {
         "id": "artisan-suite",
-        "tag": "HANDEL & HANDWERK · 67 € SPAREN",
+        "tag": "HANDEL & HANDWERK · 67 € SPAREN (36 % RABATT)",
         "title": "Artisan Living & E-Commerce Suite",
         "price": "119 €",
         "regularPrice": "/ 186 € regulärer Wert",
@@ -1015,7 +1015,7 @@
       "category": "Vorlagen-Analyse",
       "readTime": "6 Min. Lesezeit",
       "date": "November 2026",
-      "excerpt": "Architektur-Test von Vellum Edition: eine ruhige $29 Kunstbuch-Framer-Vorlage für Architekturbüros, bei denen Fotografie und Materialerzählungen im Mittelpunkt stehen."
+      "excerpt": "Architektur-Test von Vellum Edition: eine ruhige 39 € Kunstbuch-Framer-Vorlage für Architekturbüros, bei denen Fotografie und Materialerzählungen im Mittelpunkt stehen."
     }
   }
 }

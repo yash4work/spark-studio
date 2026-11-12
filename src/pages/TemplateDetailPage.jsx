@@ -93,11 +93,11 @@ const TEMPLATE_META = {
     gallery: ['/templates/onyx-atelier.png', '/assets/template3.png', '/assets/template4.png']
   },
   'vellum-edition': {
-    price: '$29',
-    priceDe: '29 €',
-    priceEs: '29 €',
-    priceFr: '29 €',
-    numericPrice: '29.00',
+    price: '$39',
+    priceDe: '39 €',
+    priceEs: '39 €',
+    priceFr: '39 €',
+    numericPrice: '39.00',
     demoUrl: 'https://unlimited-mind-018782.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1',
     remixUrl: 'https://framer.com/remix/bedsbRAX0HralLdA1OFW',
