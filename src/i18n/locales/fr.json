@@ -302,31 +302,34 @@
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
     },
     "soloVault": {
-      "badge": "MEILLEURE OFFRE · ÉCONOMISEZ 288 $ (-48 %)",
+      "badge": "MEILLEURE OFFRE · ÉCONOMISEZ 227 $ (-48 %)",
       "title": "Vault Studio Complet (Solo)",
-      "price": "$312",
-      "regularPrice": "$600",
+      "price": "$245",
+      "regularPrice": "$472",
       "features": [
-        "Accès immédiat aux 9 templates actuels + Slowgrain",
+        "Accès immédiat aux 7 templates payants + Slowgrain",
+        "Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum",
         "Licence commerciale solo par template",
         "Systèmes de tokens de design & bibliothèques",
         "Canal de support direct avec le créateur"
       ],
-      "cta": "Débloquer le Vault Complet — $312",
+      "cta": "Débloquer le Vault Complet — $245",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
     },
     "agencyVault": {
       "badge": "POUR AGENCES · ÉCONOMISEZ 48 %",
       "title": "Vault Studio Complet (Agence)",
-      "price": "$500",
+      "price": "$499",
       "regularPrice": "$960",
       "features": [
-        "Tous les 10 templates avec déploiements clients illimités",
+        "Tous les 7 templates + Slowgrain (8 au total)",
+        "Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum",
+        "Déploiements commerciaux illimités pour vos clients",
         "Conservez 100 % des revenus de vos projets clients",
         "Toutes les bibliothèques de composants et design tokens",
         "Onboarding prioritaire avec les créateurs"
       ],
-      "cta": "Obtenir le Vault Agence — $500",
+      "cta": "Obtenir le Vault Agence — $499",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
@@ -384,21 +387,21 @@
       },
       {
         "id": "solo-vault",
-        "badge": "LE PLUS POPULAIRE · ÉCONOMISEZ 288 € (-48 %)",
+        "badge": "LE PLUS POPULAIRE · ÉCONOMISEZ 227 € (-48 %)",
         "isFeatured": true,
         "title": "Vault Studio Complet (Solo)",
-        "price": "312 €",
-        "regularPrice": "/ 600 € valeur catalogue",
-        "desc": "Accès immédiat aux 9 templates payants + Slowgrain. La suite de design la plus complète pour créateurs exigeants.",
+        "price": "245 €",
+        "regularPrice": "/ 472 € valeur catalogue",
+        "desc": "Accès immédiat aux 7 templates payants + Slowgrain (Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum). La suite de design la plus complète pour créateurs exigeants.",
         "features": [
-          "Les 9 templates payants + Slowgrain (Gratuit)",
-          "Aurelle (99 €) + Onyx (79 €) + Mavric (69 €)",
-          "TERRA (69 €) + SASSO (69 €) + TESSOVRA (69 €)",
-          "Halden (59 €) + Grain & Form (58 €) + Vellum (39 €)",
+          "Les 7 templates payants + Slowgrain (Gratuit)",
+          "Aurelle (99 €) + Onyx (79 €) + Tessovra (69 €)",
+          "Mavric (69 €) + Halden (59 €) + Grain & Form (58 €)",
+          "Vellum Edition (39 €) incluse",
           "Bibliothèques de composants complètes & design tokens",
           "Licence commerciale individuelle par template"
         ],
-        "cta": "Débloquer le Vault Complet — 312 €",
+        "cta": "Débloquer le Vault Complet — 245 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
       },
       {
@@ -406,17 +409,18 @@
         "badge": "DROITS CLIENTS ILLIMITÉS · -48 %",
         "isFeatured": false,
         "title": "Vault Studio Complet (Agence)",
-        "price": "500 €",
-        "regularPrice": "/ 960 € valeur commerciale (Économisez 460 € · -48 %)",
-        "desc": "Bibliothèque intégrale des 10 templates avec licence commerciale illimitée. Livrez des projets clients d’élite et conservez 100 % de vos revenus.",
+        "price": "499 €",
+        "regularPrice": "/ 960 € valeur commerciale (Économisez 461 € · -48 %)",
+        "desc": "Bibliothèque intégrale des 7 templates avec licence commerciale illimitée. Livrez des projets clients d’élite et conservez 100 % de vos revenus.",
         "features": [
-          "Les 9 templates payants + Slowgrain (10 au total)",
+          "Les 7 templates payants + Slowgrain (8 au total)",
+          "Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum",
           "Déploiements commerciaux illimités pour vos clients",
           "Conservez 100 % des revenus générés par vos clients",
           "Bibliothèques de composants complètes & design tokens",
           "Intégration et support développeur prioritaire"
         ],
-        "cta": "Obtenir le Vault Agence — 500 €",
+        "cta": "Obtenir le Vault Agence — 499 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
       }
     ],

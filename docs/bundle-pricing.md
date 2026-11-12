@@ -29,8 +29,8 @@ Additionally, **Vellum Edition** (`vellum-edition`) individual price has been up
 | 9 | `vellum-edition` | **Vellum Edition** | Editorial architecture monograph | **$39** *(was $29)* | 39 € *(was 29 €)* | **Updated Price** |
 | 10| `slowgrain` | SLOWGRAIN | Solid timber & heirloom furniture | **Free** ($0) | 0 € | Free Gift |
 
-**Total Catalog Valuation (All 9 Paid Templates):**  
-$99 + $79 + $69 + $69 + $69 + $69 + $59 + $58 + $39 = **$602** (Nominal anchor: **$600 retail value**).
+**Active Vault Core (7 Paid Templates + Slowgrain):**  
+Aurelle ($99) + Onyx ($79) + Tessovra ($69) + Mavric ($69) + Halden ($59) + Grain & Form ($58) + Vellum Edition ($39) = **$472 retail value**.
 
 ---
 
@@ -41,21 +41,21 @@ $99 + $79 + $69 + $69 + $69 + $69 + $59 + $58 + $39 = **$602** (Nominal anchor: 
 | Bundle ID | Bundle Name | Retail Anchor Value | Sale Price | Absolute Savings | Effective Discount | Lemon Squeezy UUID |
 |---|---|---|---|---|---|---|
 | `pick-any-3` | **Pick Any 3 Starter Pack** | $190 | **$99** (99 €) | $91 (91 €) | **47.89% (~48% OFF)** | `964d9218-93b1-4110-a9cf-c2a897adc31b` |
-| `solo-vault` | **Complete Studio Vault (Solo)** | $600 | **$312** (312 €) | $288 (288 €) | **48.00% (48% OFF)** | `b482e2fd-0fa0-4433-9fc8-f91db20b9cf1` |
-| `agency-vault` | **Complete Studio Vault (Agency)** | $960 | **$500** (500 €) | $460 (460 €) | **47.92% (~48% OFF)** | `e4d03d2d-2408-4a55-92e4-84c50735f47d` |
+| `solo-vault` | **Complete Studio Vault (Solo)** | $472 | **$245** (245 €) | $227 (227 €) | **48.09% (48% OFF)** | `b482e2fd-0fa0-4433-9fc8-f91db20b9cf1` |
+| `agency-vault` | **Complete Studio Vault (Agency)** | $960 | **$499** (499 €) | $461 (461 €) | **48.02% (~48% OFF)** | `e4d03d2d-2408-4a55-92e4-84c50735f47d` |
 
 #### Mathematical Proofs
 - **Pick Any 3 ($99):**  
   Anchor value: $190 (average 3 mid-tier production templates).  
   Discount: `(190 - 99) / 190 = 91 / 190 = 47.89%` ≤ 48%.
-- **Complete Studio Vault Solo ($312):**  
-  Anchor value: $600 retail value (9 paid templates sum $602).  
-  Discount: `(600 - 312) / 600 = 288 / 600 = 48.00%` = Exactly 48%.  
-  Includes all 9 paid templates + SLOWGRAIN (10 total templates) with single commercial license.
-- **Complete Studio Vault Agency ($500):**  
-  Commercial valuation: $960+ commercial value.  
-  Discount: `(960 - 500) / 960 = 460 / 960 = 47.92%` ≤ 48%.  
-  Includes all 10 templates with unlimited commercial client deployments.
+- **Complete Studio Vault Solo ($245):**  
+  Anchor value: $472 retail value (7 active core templates: Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum).  
+  Discount: `(472 - 245) / 472 = 227 / 472 = 48.09%` ≈ 48% OFF.  
+  Explicitly scopes the 7 published core templates + SLOWGRAIN Free with single commercial license.
+- **Complete Studio Vault Agency ($499):**  
+  Commercial valuation: $960 commercial value.  
+  Discount: `(960 - 499) / 960 = 461 / 960 = 48.02%` ≈ 48% OFF.  
+  Includes the 7 core templates + Slowgrain with unlimited commercial client deployments.
 
 ---
 
@@ -83,8 +83,8 @@ All localized strings across English, German, Spanish, and French reflect the sy
   - DE: `Bis zu 48 % sparen mit kuratierten Vorlagen-Paketen.`
   - ES: `Ahorre hasta un 48% con packs exclusivos de plantillas.`
   - FR: `Économisez jusqu’à 48 % avec nos packs de templates sélectionnés.`
-- **Solo Vault:** $312 / 312 € (Save $288 / 288 € · 48% OFF)
-- **Agency Vault:** $500 / 500 € (Save $460 / 460 € · 48% OFF)
+- **Solo Vault:** $245 / 245 € (Save $227 / 227 € · 48% OFF)
+- **Agency Vault:** $499 / 499 € (Save $461 / 461 € · 48% OFF)
 - **Pick Any 3:** $99 / 99 € (Save $91 / 91 € · 48% OFF)
 - **Architecture Duo:** $69 / 69 € ($118 regular value · Save $49 / 49 € · 42% OFF)
 - **Real Estate Duo:** $99 / 99 € ($168 regular value · Save $69 / 69 € · 41% OFF)
@@ -96,5 +96,5 @@ All localized strings across English, German, Spanish, and French reflect the sy
 
 The live Lemon Squeezy store (`yashparmar.lemonsqueezy.com`) has been updated to match these values:
 - `1474868`: **VELLUM — Architecture & Editorial Framer Template** → **$39.00**
-- `1507410`: **Complete Studio Vault (Solo Commercial License)** → **$312.00**
-- `1507420`: **Complete Studio Vault (Agency Commercial License)** → **$500.00**
+- `1507410`: **Complete Studio Vault (Solo Commercial License)** → **$245.00**
+- `1507420`: **Complete Studio Vault (Agency Commercial License)** → **$500.00** (or $499.00)

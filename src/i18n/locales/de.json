@@ -302,31 +302,34 @@
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
     },
     "soloVault": {
-      "badge": "BESTER WERT · 288 $ SPAREN (48 % RABATT)",
+      "badge": "BESTER WERT · 227 $ SPAREN (48 % RABATT)",
       "title": "Kompletter Studio-Vault (Solo)",
-      "price": "$312",
-      "regularPrice": "$600",
+      "price": "$245",
+      "regularPrice": "$472",
       "features": [
-        "Sofortiger Zugriff auf ALLE 9 aktuellen Vorlagen + Slowgrain",
+        "Sofortiger Zugriff auf 7 Premium-Vorlagen + Slowgrain",
+        "Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum",
         "Kommerzielle Solo-Lizenz pro Vorlage",
-        "Design-Token-Systeme und Styleguides",
+        "Vollständige Komponentenbibliotheken & Design-Tokens",
         "Direkter Entwickler-Support-Kanal"
       ],
-      "cta": "Gesamten Vault freischalten — $312",
+      "cta": "Gesamten Vault freischalten — $245",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
     },
     "agencyVault": {
       "badge": "FÜR AGENTUREN · 48 % SPAREN",
       "title": "Kompletter Studio-Vault (Agentur)",
-      "price": "$500",
+      "price": "$499",
       "regularPrice": "$960",
       "features": [
-        "Alle 10 Vorlagen mit unbegrenzten Client-Deployments",
+        "Alle 7 Vorlagen + Slowgrain (8 insgesamt)",
+        "Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum",
+        "Unbegrenzte kommerzielle Kunden-Deployments",
         "100% der Projekt-Umsätze behalten",
         "Vollständige Komponentenbibliotheken & Design-Assets",
         "Prioritäres Studio-Onboarding"
       ],
-      "cta": "Agentur-Vault holen — $500",
+      "cta": "Agentur-Vault holen — $499",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
@@ -384,21 +387,21 @@
       },
       {
         "id": "solo-vault",
-        "badge": "BELIEBTESTE WAHL · 288 € SPAREN (48 % RABATT)",
+        "badge": "BELIEBTESTE WAHL · 227 € SPAREN (48 % RABATT)",
         "isFeatured": true,
         "title": "Kompletter Studio-Vault (Solo)",
-        "price": "312 €",
-        "regularPrice": "/ 600 € regulärer Wert",
-        "desc": "Sofortiger Zugriff auf alle 9 Premium-Vorlagen + Slowgrain. Das ultimative High-End-Design-Vault für anspruchsvolle Entwickler.",
+        "price": "245 €",
+        "regularPrice": "/ 472 € regulärer Wert",
+        "desc": "Sofortiger Zugriff auf alle 7 Premium-Vorlagen + Slowgrain (Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum). Das ultimative High-End-Design-Vault für anspruchsvolle Entwickler.",
         "features": [
-          "Alle 9 Premium-Vorlagen + Slowgrain (Gratis)",
-          "Aurelle (99 €) + Onyx (79 €) + Mavric (69 €)",
-          "TERRA (69 €) + SASSO (69 €) + TESSOVRA (69 €)",
-          "Halden (59 €) + Grain & Form (58 €) + Vellum (39 €)",
+          "Alle 7 Premium-Vorlagen + Slowgrain (Gratis)",
+          "Aurelle (99 €) + Onyx (79 €) + Tessovra (69 €)",
+          "Mavric (69 €) + Halden (59 €) + Grain & Form (58 €)",
+          "Vellum Edition (39 €) inklusive",
           "Vollständige Komponentenbibliotheken & Design-Tokens",
           "Kommerzielle Solo-Lizenz pro Vorlage"
         ],
-        "cta": "Gesamten Vault freischalten — 312 €",
+        "cta": "Gesamten Vault freischalten — 245 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
       },
       {
@@ -406,17 +409,18 @@
         "badge": "UNBEGRENZTE KUNDENRECHTE · 48 % SPAREN",
         "isFeatured": false,
         "title": "Kompletter Studio-Vault (Agentur)",
-        "price": "500 €",
-        "regularPrice": "/ 960 € kommerzieller Wert (460 € sparen · 48 % RABATT)",
-        "desc": "Vollständige 10-Vorlagen-Bibliothek mit unbegrenzter kommerzieller Lizenz. Setzen Sie hochkarätige Kundenprojekte um und behalten Sie 100% der Einnahmen.",
+        "price": "499 €",
+        "regularPrice": "/ 960 € kommerzieller Wert (461 € sparen · 48 % RABATT)",
+        "desc": "Vollständige 7-Vorlagen-Bibliothek mit unbegrenzter kommerzieller Lizenz. Setzen Sie hochkarätige Kundenprojekte um und behalten Sie 100% der Einnahmen.",
         "features": [
-          "Alle 9 Premium-Vorlagen + Slowgrain (10 insgesamt)",
+          "Alle 7 Premium-Vorlagen + Slowgrain (8 insgesamt)",
+          "Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum",
           "Unbegrenzte kommerzielle Kunden-Deployments",
           "100% der Einnahmen aus Kundenprojekten verbleiben bei Ihnen",
           "Vollständige Komponentenbibliotheken & Design-Assets",
           "Prioritärer Entwickler-Support und Onboarding"
         ],
-        "cta": "Agentur-Vault sichern — 500 €",
+        "cta": "Agentur-Vault sichern — 499 €",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
       }
     ],

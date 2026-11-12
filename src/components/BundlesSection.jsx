@@ -25,21 +25,21 @@ const VAULT_BUNDLES = [
   },
   {
     id: 'solo-vault',
-    badge: 'MOST POPULAR · SAVE $288 (48% OFF)',
+    badge: 'MOST POPULAR · SAVE $227 (48% OFF)',
     isFeatured: true,
     title: 'Complete Studio Vault (Solo)',
-    price: '$312',
-    regularPrice: '/ $600 retail value',
-    desc: 'Instant access to all 9 premium paid templates + Slowgrain. Complete high-status design vault for ambitious creators.',
+    price: '$245',
+    regularPrice: '/ $472 retail value',
+    desc: 'Instant access to all 7 premium paid templates + Slowgrain (Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum). Complete high-status design vault for ambitious creators.',
     features: [
-      'All 9 paid templates + Slowgrain (Free)',
-      'Aurelle ($99) + Onyx ($79) + Mavric ($69)',
-      'TERRA ($69) + SASSO ($69) + TESSOVRA ($69)',
-      'Halden ($59) + Grain & Form ($58) + Vellum ($39)',
+      'All 7 paid templates + Slowgrain (Free)',
+      'Aurelle ($99) + Onyx ($79) + Tessovra ($69)',
+      'Mavric ($69) + Halden ($59) + Grain & Form ($58)',
+      'Vellum Edition ($39) included',
       'Complete component libraries & style tokens',
       'Commercial solo license per template'
     ],
-    cta: 'Unlock Full Vault — $312',
+    cta: 'Unlock Full Vault — $245',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1'
   },
   {
@@ -47,17 +47,18 @@ const VAULT_BUNDLES = [
     badge: 'UNLIMITED CLIENT RIGHTS · SAVE 48%',
     isFeatured: false,
     title: 'Complete Studio Vault (Agency)',
-    price: '$500',
-    regularPrice: '/ $960 commercial value (Save $460 · 48% OFF)',
-    desc: 'Complete 10-template library with unlimited commercial licensing. Ship high-ticket client builds and keep 100% of fees.',
+    price: '$499',
+    regularPrice: '/ $960 commercial value (Save $461 · 48% OFF)',
+    desc: 'Complete 7-template library with unlimited commercial licensing. Ship high-ticket client builds and keep 100% of fees.',
     features: [
-      'All 9 paid templates + Slowgrain (10 total)',
+      'All 7 paid templates + Slowgrain (8 total)',
+      'Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum',
       'Unlimited commercial client deployments',
       'Keep 100% of client project revenue',
       'Complete component libraries & style tokens',
       'Priority studio developer onboarding'
     ],
-    cta: 'Get Agency Vault — $500',
+    cta: 'Get Agency Vault — $499',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1'
   }
 ];
