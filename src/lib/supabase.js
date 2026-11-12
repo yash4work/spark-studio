@@ -69,11 +69,37 @@ export async function saveInquiry(data) {
  */
 export async function saveSubscriber(email, source = 'expanding_pipeline') {
   const cleanEmail = (email || '').trim().toLowerCase();
+  if (!cleanEmail) {
+    return { success: false, error: 'Email is required' };
+  }
+
   const payload = {
     email: cleanEmail,
     source,
     created_at: new Date().toISOString(),
   };
+
+  // Local persistence cache backup: always runs so spark_subscribers is preserved
+  try {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      let existing = [];
+      try {
+        const raw = localStorage.getItem('spark_subscribers');
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) existing = parsed;
+        }
+      } catch {
+        existing = [];
+      }
+      if (!existing.some(s => s && s.email === cleanEmail)) {
+        existing.push(payload);
+        localStorage.setItem('spark_subscribers', JSON.stringify(existing));
+      }
+    }
+  } catch (e) {
+    console.warn('LocalStorage write unavailable for subscriber, keeping in-memory:', e);
+  }
 
   if (isSupabaseConfigured) {
     try {
@@ -98,28 +124,6 @@ export async function saveSubscriber(email, source = 'expanding_pipeline') {
     } catch (err) {
       console.warn('Supabase subscriber insert failed, saving locally:', err);
     }
-  }
-
-  // Graceful local cache fallback
-  try {
-    if (typeof window !== 'undefined' && window.localStorage) {
-      let existing = [];
-      try {
-        const raw = localStorage.getItem('spark_subscribers');
-        if (raw) {
-          const parsed = JSON.parse(raw);
-          if (Array.isArray(parsed)) existing = parsed;
-        }
-      } catch {
-        existing = [];
-      }
-      if (!existing.some(s => s && s.email === cleanEmail)) {
-        existing.push(payload);
-        localStorage.setItem('spark_subscribers', JSON.stringify(existing));
-      }
-    }
-  } catch (e) {
-    console.warn('LocalStorage write unavailable for subscriber, keeping in-memory:', e);
   }
 
   return { success: true, fallback: true, mode: 'local' };

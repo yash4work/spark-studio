@@ -1,5 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // 1. Verify i18n keys across all 4 locales (supports both templates.pipeline and projects.pipeline)
 const locales = ['en', 'de', 'es', 'fr'];
@@ -19,7 +22,7 @@ const requiredPipelineKeys = [
 let allPassed = true;
 
 for (const lang of locales) {
-  const filePath = path.resolve(`src/i18n/locales/${lang}.json`);
+  const filePath = path.resolve(__dirname, `../src/i18n/locales/${lang}.json`);
   const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
   const pipeline = content.templates?.pipeline || content.projects?.pipeline;
   if (!pipeline) {

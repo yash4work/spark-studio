@@ -51,6 +51,11 @@ async function testSub() {
   if (!res5.success) throw new Error('Failed under SSR');
   console.log('[PASS] Safe operation in SSR environment without window');
 
+  // 6. Empty / whitespace email input rejection
+  let res6 = await saveSubscriber('   ', 'expanding_pipeline');
+  if (res6.success) throw new Error('Empty email should not be accepted');
+  console.log('[PASS] Empty or whitespace email safely rejected without throwing');
+
   console.log('ALL saveSubscriber TESTS PASSED SUCCESSFULLY!');
 }
 

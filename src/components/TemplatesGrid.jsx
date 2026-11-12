@@ -203,10 +203,12 @@ export default function TemplatesGrid() {
   const [pipelineStatus, setPipelineStatus] = useState('idle'); // 'idle' | 'loading' | 'success' | 'error'
   const [pipelineError, setPipelineError] = useState('');
 
-  // Auto-detect if visitor previously subscribed in this browser
+  // Auto-detect if visitor previously subscribed in this browser (supports both localStorage and cookie flag)
   useEffect(() => {
     try {
-      if (typeof window !== 'undefined' && localStorage.getItem('spark_pipeline_subscribed')) {
+      const hasStorage = typeof window !== 'undefined' && localStorage.getItem('spark_pipeline_subscribed');
+      const hasCookie = typeof document !== 'undefined' && document.cookie.split(';').some(c => c.trim().startsWith('spark_pipeline_subscribed='));
+      if (hasStorage || hasCookie) {
         setPipelineStatus('success');
       }
     } catch {
@@ -254,14 +256,18 @@ export default function TemplatesGrid() {
 
       // 3. Analytics event tracking
       trackEvent('newsletter_subscribe', {
-        source: 'expanding_pipeline',
-        email: cleanEmail
+        source: 'expanding_pipeline'
       });
 
       setPipelineStatus('success');
       setPipelineEmail('');
       try {
-        localStorage.setItem('spark_pipeline_subscribed', 'true');
+        if (typeof window !== 'undefined' && window.localStorage) {
+          localStorage.setItem('spark_pipeline_subscribed', 'true');
+        }
+        if (typeof document !== 'undefined') {
+          document.cookie = 'spark_pipeline_subscribed=true; path=/; max-age=31536000; SameSite=Lax';
+        }
       } catch {
         // safe fallback
       }
@@ -556,16 +562,16 @@ export default function TemplatesGrid() {
                         autoComplete="email"
                         inputMode="email"
                         required
-                        className="w-full h-12 px-4 rounded-xl sm:rounded-full bg-white/[0.06] hover:bg-white/[0.09] focus:bg-white/[0.12] border border-white/15 focus:border-[#8e97f7] text-sm text-[#f7f6fb] placeholder-[#8b87a0] outline-none transition-all duration-200"
+                        className="w-full h-12 px-5 rounded-full bg-white/[0.06] hover:bg-white/[0.09] focus:bg-white/[0.12] border border-white/15 focus:border-[#8e97f7] text-sm text-[#f7f6fb] placeholder-[#8b87a0] outline-none transition-all duration-200"
                         disabled={pipelineStatus === 'loading'}
                       />
                     </div>
-                    <MagneticButton className="shrink-0">
+                    <MagneticButton className="w-full sm:w-auto shrink-0">
                       <button
                         type="submit"
                         disabled={pipelineStatus === 'loading'}
                         aria-label={t('templates.pipeline.cta') || t('projects.pipeline.cta') || 'Get launch alerts'}
-                        className="w-full sm:w-auto h-12 px-6 rounded-xl sm:rounded-full framer-btn-primary font-semibold text-xs text-white flex items-center justify-center gap-2 cursor-pointer shadow-[0_10px_25px_-5px_rgba(108,79,232,0.4)] disabled:opacity-50 transition-all"
+                        className="w-full sm:w-auto h-12 px-6 rounded-full framer-btn-primary font-semibold text-xs text-white flex items-center justify-center gap-2 cursor-pointer shadow-[0_10px_25px_-5px_rgba(108,79,232,0.4)] disabled:opacity-50 transition-all"
                       >
                         {pipelineStatus === 'loading' ? (
                           <>

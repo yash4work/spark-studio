@@ -42,9 +42,12 @@ export function MagneticButton({ children, className = '', style = {}, ...rest }
   const sx = useSpring(x, { stiffness: 220, damping: 16, mass: 0.4 });
   const sy = useSpring(y, { stiffness: 220, damping: 16, mass: 0.4 });
 
+  const hasFullWidth = className.includes('w-full');
+
   return (
     <motion.div
-      style={{ display: 'inline-block', x: sx, y: sy }}
+      className={hasFullWidth ? 'w-full sm:w-auto inline-block' : 'inline-block'}
+      style={{ display: hasFullWidth ? undefined : 'inline-block', x: sx, y: sy }}
       onMouseMove={(e) => {
         if (!isFine()) return;
         const r = e.currentTarget.getBoundingClientRect();
