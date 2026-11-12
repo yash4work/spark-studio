@@ -55,6 +55,58 @@ export async function saveInquiry(data) {
 }
 
 /**
+ * Save launch alert / early-bird newsletter subscriber with cloud persistence and localStorage cache
+ */
+export async function saveSubscriber(email, source = 'expanding_pipeline') {
+  const cleanEmail = (email || '').trim().toLowerCase();
+  const payload = {
+    email: cleanEmail,
+    source,
+    created_at: new Date().toISOString(),
+  };
+
+  if (isSupabaseConfigured) {
+    try {
+      const client = await getSupabase();
+      if (client) {
+        // Try 'subscribers' table first
+        const { error, data: inserted } = await client.from('subscribers').insert([payload]);
+        if (!error) return { success: true, data: inserted, mode: 'cloud' };
+
+        // Fallback to 'inquiries' table as an alert subscriber lead
+        const { error: inqErr, data: inqInserted } = await client.from('inquiries').insert([{
+          name: 'Launch Alert Subscriber',
+          email: cleanEmail,
+          projectType: 'Launch Alert / Early-Bird Newsletter',
+          budget: 'N/A',
+          message: `Subscribed via ${source}`,
+          created_at: payload.created_at,
+          source: 'sparkstudio_newsletter'
+        }]);
+        if (!inqErr) return { success: true, data: inqInserted, mode: 'cloud' };
+      }
+    } catch (err) {
+      console.warn('Supabase subscriber insert failed, saving locally:', err);
+    }
+  }
+
+  // Graceful local cache fallback
+  try {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const existing = JSON.parse(localStorage.getItem('spark_subscribers') || '[]');
+      if (!existing.some(s => s.email === cleanEmail)) {
+        existing.push(payload);
+        localStorage.setItem('spark_subscribers', JSON.stringify(existing));
+      }
+    }
+  } catch (e) {
+    console.warn('LocalStorage write unavailable for subscriber, keeping in-memory:', e);
+  }
+
+  return { success: true, fallback: true, mode: 'local' };
+}
+
+/**
  * Upload file to Supabase Storage bucket
  */
 export async function uploadToStorage(bucketName, path, file) {

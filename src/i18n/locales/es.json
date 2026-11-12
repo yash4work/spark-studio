@@ -275,9 +275,14 @@
       }
     ],
     "pipeline": {
+      "tag": "ACCESO ANTICIPADO · PRÓXIMOS LANZAMIENTOS",
       "title": "Catálogo en expansión",
-      "desc": "SaaS, comercio digital y portfolios creativos — nuevas plantillas muy pronto. Únase a la lista para precios anticipados.",
-      "cta": "Recibir avisos de lanzamiento →"
+      "desc": "Productos SaaS, plataformas Framer a medida y próximos lanzamientos como Onyx Pro — nuevas plantillas cada semana. Únase a la lista para avances exclusivos.",
+      "placeholder": "Introduce tu email para avisos...",
+      "cta": "Recibir avisos de lanzamiento",
+      "loading": "Uniéndose...",
+      "success": "¡Estás en la lista de acceso anticipado! Te avisaremos en cuanto lancemos nuevas plantillas y Onyx Pro.",
+      "error": "Por favor, introduce una dirección de correo válida."
     },
     "viewDetails": "Ver detalles",
     "freeRemix": "Remix gratis",

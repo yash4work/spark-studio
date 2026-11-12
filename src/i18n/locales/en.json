@@ -275,9 +275,14 @@
       }
     ],
     "pipeline": {
+      "tag": "EARLY ACCESS · UPCOMING RELEASES",
       "title": "Expanding pipeline",
-      "desc": "SaaS, digital commerce and creator portfolios — new templates launching soon. Join the list for early-bird pricing.",
-      "cta": "Get launch alerts →"
+      "desc": "SaaS products, bespoke Framer platforms, and upcoming releases like Onyx Pro — new builds and templates launching weekly. Join the list for early-bird previews.",
+      "placeholder": "Enter your email for launch alerts...",
+      "cta": "Get launch alerts",
+      "loading": "Joining...",
+      "success": "You're on the early-bird list! We'll notify you as soon as new releases and Onyx Pro drop.",
+      "error": "Please enter a valid email address."
     },
     "viewDetails": "View details",
     "freeRemix": "Free remix",

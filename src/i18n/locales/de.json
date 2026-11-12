@@ -275,9 +275,14 @@
       }
     ],
     "pipeline": {
+      "tag": "VORABZUGANG · KOMMENDE RELEASES",
       "title": "Pipeline wird erweitert",
-      "desc": "SaaS, digitaler Handel und Portfolios für Kreative — neue Vorlagen starten bald. Jetzt eintragen für Early-Bird-Preise.",
-      "cta": "Launch-Updates erhalten →"
+      "desc": "SaaS-Plattformen, maßgeschneiderte Framer-Systeme und kommende Releases wie Onyx Pro — wöchentlich neue Vorlagen. Tragen Sie sich für exklusive Previews ein.",
+      "placeholder": "E-Mail für Launch-Updates eingeben...",
+      "cta": "Launch-Alerts erhalten",
+      "loading": "Wird eingetragen...",
+      "success": "Sie sind auf der Early-Bird-Liste! Wir benachrichtigen Sie sofort, wenn neue Releases und Onyx Pro verfügbar sind.",
+      "error": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
     },
     "viewDetails": "Details ansehen",
     "freeRemix": "Kostenloser Remix",

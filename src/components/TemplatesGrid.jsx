@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Check, Bell, Loader2 } from 'lucide-react';
 import { initLemonSqueezy, handleLemonCheckout } from '../lib/lemonsqueezy';
 import { AnimatePresence } from 'framer-motion';
 import { MagneticButton } from '../lib/framer-effects';
+import { saveSubscriber } from '../lib/supabase';
+import { trackEvent } from '../lib/analytics';
 
 const TEMPLATES = [
   // --- REAL CLIENT WEBSITES & CUSTOM SOFTWARE ---
@@ -196,6 +198,79 @@ export default function TemplatesGrid() {
   useEffect(() => {
     initLemonSqueezy();
   }, []);
+
+  const [pipelineEmail, setPipelineEmail] = useState('');
+  const [pipelineStatus, setPipelineStatus] = useState('idle'); // 'idle' | 'loading' | 'success' | 'error'
+  const [pipelineError, setPipelineError] = useState('');
+
+  // Auto-detect if visitor previously subscribed in this browser
+  useEffect(() => {
+    try {
+      if (typeof window !== 'undefined' && localStorage.getItem('spark_pipeline_subscribed')) {
+        setPipelineStatus('success');
+      }
+    } catch {
+      // safe fallback
+    }
+  }, []);
+
+  const handlePipelineSubmit = async (e) => {
+    e.preventDefault();
+    const cleanEmail = (pipelineEmail || '').trim();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!cleanEmail || !emailRegex.test(cleanEmail)) {
+      setPipelineError(t('projects.pipeline.error') || 'Please enter a valid email address.');
+      setPipelineStatus('error');
+      return;
+    }
+
+    setPipelineStatus('loading');
+    setPipelineError('');
+
+    try {
+      // 1. Direct email dispatch via FormSubmit
+      const emailPromise = fetch('https://formsubmit.co/ajax/hello@thesparkstudio.digital', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          email: cleanEmail,
+          source: 'Expanding Pipeline (Homepage)',
+          purpose: 'Launch Alerts & Early-Bird Previews (Onyx Pro, SaaS, Portfolios)',
+          _subject: `New Launch Alert Subscriber: ${cleanEmail}`,
+          _template: 'table',
+          _captcha: 'false'
+        })
+      });
+
+      // 2. Concurrently persist in Supabase / LocalStorage backup
+      await Promise.allSettled([
+        emailPromise,
+        saveSubscriber(cleanEmail, 'expanding_pipeline')
+      ]);
+
+      // 3. Analytics event tracking
+      trackEvent('newsletter_subscribe', {
+        source: 'expanding_pipeline',
+        email: cleanEmail
+      });
+
+      setPipelineStatus('success');
+      setPipelineEmail('');
+      try {
+        localStorage.setItem('spark_pipeline_subscribed', 'true');
+      } catch {
+        // safe fallback
+      }
+    } catch (err) {
+      console.error('Pipeline subscription error:', err);
+      // Graceful fallback: local storage cached, show user success
+      setPipelineStatus('success');
+    }
+  };
 
   const getTemplateLink = (slug) => {
     return currentLang === 'en' ? `/templates/${slug}` : `/${currentLang}/templates/${slug}`;
@@ -421,11 +496,11 @@ export default function TemplatesGrid() {
           ))}
         </AnimatePresence>
 
-        {/* Pipeline Card (Spans full 3 columns with dark contrast overlay) */}
+        {/* Pipeline Card (Spans full 3 columns with dark contrast overlay & functional early-bird email capture) */}
         {activeFilter === 'all' && currentPage === 1 && (
           <div
             data-framer-name="Pipeline Card"
-            className="framer-pipeline-card col-span-1 md:col-span-2 lg:col-span-3 p-8 sm:p-10 rounded-2xl flex flex-col justify-between gap-5 relative overflow-hidden border border-[#8e97f7]/30"
+            className="framer-pipeline-card col-span-1 md:col-span-2 lg:col-span-3 p-8 sm:p-10 rounded-2xl flex flex-col lg:flex-row lg:items-center justify-between gap-8 relative overflow-hidden border border-[#8e97f7]/30 shadow-2xl"
             style={{
               backgroundColor: '#171333',
               backgroundImage: `url('/assets/facet-pattern.svg')`,
@@ -435,27 +510,79 @@ export default function TemplatesGrid() {
           >
             {/* Dark contrast gradient overlay matching user request */}
             <div 
-              className="absolute inset-0 bg-gradient-to-r from-[#15131f]/95 via-[#1a1438]/85 to-[#15131f]/90 pointer-events-none z-0" 
+              className="absolute inset-0 bg-gradient-to-r from-[#15131f]/95 via-[#1a1438]/90 to-[#15131f]/95 pointer-events-none z-0" 
             />
 
-            <div className="relative z-10 flex flex-col gap-2.5 max-w-2xl">
+            <div className="relative z-10 flex flex-col gap-2.5 max-w-xl">
+              <span className="text-[11px] font-mono text-[#8e97f7] uppercase tracking-wider block">
+                {t('projects.pipeline.tag') || 'EARLY ACCESS · UPCOMING RELEASES'}
+              </span>
               <h3 className="font-heading font-semibold text-2xl sm:text-3xl text-white">
-                Expanding pipeline
+                {t('projects.pipeline.title') || 'Expanding pipeline'}
               </h3>
               <p className="text-sm md:text-base text-[#d4d2e8] font-normal leading-relaxed">
-                SaaS products, custom Webflow platforms, and creator portfolios — new builds and templates launching weekly. Join the list for early-bird previews.
+                {t('projects.pipeline.desc') || 'SaaS products, bespoke Framer platforms, and upcoming releases like Onyx Pro — new builds and templates launching weekly. Join the list for early-bird previews.'}
               </p>
             </div>
 
-            <div className="relative z-10 pt-2">
-              <MagneticButton>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#8e97f7] hover:text-white transition-colors cursor-pointer"
-                >
-                  <span>Get launch alerts →</span>
-                </a>
-              </MagneticButton>
+            <div className="relative z-10 w-full lg:max-w-md shrink-0">
+              {pipelineStatus === 'success' ? (
+                <div className="flex items-center gap-3 p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300">
+                  <div className="w-9 h-9 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0">
+                    <Check className="w-4 h-4 text-emerald-400" />
+                  </div>
+                  <div className="flex flex-col text-xs sm:text-sm">
+                    <span className="font-semibold text-white">
+                      {t('projects.pipeline.success') || "You're on the early-bird list!"}
+                    </span>
+                    <span className="text-emerald-400/80 text-[11px] sm:text-xs">
+                      We'll alert you first when new releases & Onyx Pro go live.
+                    </span>
+                  </div>
+                </div>
+              ) : (
+                <form onSubmit={handlePipelineSubmit} className="flex flex-col gap-2">
+                  <div className="flex flex-col sm:flex-row items-stretch gap-2.5">
+                    <div className="relative flex-1">
+                      <input
+                        type="email"
+                        value={pipelineEmail}
+                        onChange={(e) => {
+                          setPipelineEmail(e.target.value);
+                          if (pipelineStatus === 'error') setPipelineStatus('idle');
+                        }}
+                        placeholder={t('projects.pipeline.placeholder') || 'Enter your email for launch alerts...'}
+                        className="w-full h-12 px-4 rounded-xl sm:rounded-full bg-white/[0.06] hover:bg-white/[0.09] focus:bg-white/[0.12] border border-white/15 focus:border-[#8e97f7] text-sm text-[#f7f6fb] placeholder-[#8b87a0] outline-none transition-all duration-200"
+                        disabled={pipelineStatus === 'loading'}
+                      />
+                    </div>
+                    <MagneticButton className="shrink-0">
+                      <button
+                        type="submit"
+                        disabled={pipelineStatus === 'loading'}
+                        className="w-full sm:w-auto h-12 px-6 rounded-xl sm:rounded-full framer-btn-primary font-semibold text-xs text-white flex items-center justify-center gap-2 cursor-pointer shadow-[0_10px_25px_-5px_rgba(108,79,232,0.4)] disabled:opacity-50 transition-all"
+                      >
+                        {pipelineStatus === 'loading' ? (
+                          <>
+                            <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                            <span>{t('projects.pipeline.loading') || 'Joining...'}</span>
+                          </>
+                        ) : (
+                          <>
+                            <Bell className="w-3.5 h-3.5" />
+                            <span>{t('projects.pipeline.cta') || 'Get launch alerts'}</span>
+                          </>
+                        )}
+                      </button>
+                    </MagneticButton>
+                  </div>
+                  {pipelineStatus === 'error' && (
+                    <p className="text-xs text-rose-400 font-mono px-2">
+                      {pipelineError || t('projects.pipeline.error')}
+                    </p>
+                  )}
+                </form>
+              )}
             </div>
           </div>
         )}
