@@ -75,7 +75,7 @@ export default function BlogPostPage() {
     },
     'publisher': {
       '@type': 'Organization',
-      'name': 'Spark Studio',
+      'name': 'The Spark Studio',
       'logo': {
         '@type': 'ImageObject',
         'url': 'https://www.thesparkstudio.digital/logo.png'
@@ -159,7 +159,7 @@ export default function BlogPostPage() {
   return (
     <div className="min-h-screen pt-28 pb-24 text-[#8b87a0]">
       <SEOHead
-        title={`${postTitle} — Spark Studio Insights`}
+        title={`${postTitle} — The Spark Studio Insights`}
         description={postExcerpt}
         image={post.featuredImage}
         jsonLd={articleSchema}
@@ -289,7 +289,7 @@ export default function BlogPostPage() {
         <div className="p-8 sm:p-10 rounded-[24px] bg-[#1a1727] border border-white/10 mb-16">
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#8e97f7] mb-2 font-semibold">
             <Sparkles className="w-4 h-4" />
-            <span>{t('blog.articleCtaEyebrow') || 'Built by Spark Studio'}</span>
+            <span>{t('blog.articleCtaEyebrow') || 'Built by The Spark Studio'}</span>
           </div>
           <h3 className="text-2xl font-bold text-[#f7f6fb] font-heading mb-3">
             {t('blog.articleCtaTitle') || 'Want us to engineer your next high-performance Framer site?'}

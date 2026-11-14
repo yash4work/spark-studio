@@ -26,7 +26,7 @@ export default function Footer() {
               fontFamily: '"Bricolage Grotesque", sans-serif'
             }}
           >
-            SPARK STUDIO
+            THE SPARK STUDIO
           </h2>
         </div>
 
@@ -67,7 +67,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              title="Spark Studio on LinkedIn"
+              title="The Spark Studio on LinkedIn"
               className="w-10 h-10 rounded-xl bg-white/[0.04] hover:bg-[#0A66C2]/15 border border-white/10 hover:border-[#0A66C2]/50 text-[#8b87a0] hover:text-[#0A66C2] flex items-center justify-center transition-all duration-200 group shadow-sm"
             >
               <LinkedInIcon className="w-4 h-4 transition-transform group-hover:scale-110" />
@@ -130,7 +130,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href={getSectionHref('#about')} className="hover:text-[#f7f6fb] transition-colors">
-                  {t('footer.links.about') || 'About Spark Studio'}
+                  {t('footer.links.about') || 'About The Spark Studio'}
                 </a>
               </li>
               <li>
@@ -249,7 +249,7 @@ export default function Footer() {
         {/* Bottom Row: Copyright on Left, Accurate Tech Subtext on Right */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono text-[#8b87a0]">
           <div>
-            {t('footer.rights') || '© 2026 Spark Studio. All rights reserved.'}
+            {t('footer.rights') || '© 2026 The Spark Studio. All rights reserved.'}
           </div>
           <div className="flex items-center gap-2 text-[#8b87a0]/80">
             <span>{t('footer.builtWith') || 'Engineered for 95+ Core Web Vitals · High-Conversion Web Architecture'}</span>

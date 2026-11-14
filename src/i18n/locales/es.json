@@ -12,7 +12,7 @@
   "hero": {
     "eyebrow": "PLANTILLAS FRAMER PREMIUM Y DISEÑO WEB A MEDIDA",
     "title": "Plantillas diseñadas para convertir y escalar.",
-    "description": "Spark Studio diseña plantillas Framer de alto rendimiento y sitios web a medida para startups ambiciosas, estudios creativos y empresas modernas: editables visualmente, sin código y con puntuaciones PageSpeed 90+ garantizadas desde el primer día.",
+    "description": "The Spark Studio diseña plantillas Framer de alto rendimiento y sitios web a medida para startups ambiciosas, estudios creativos y empresas modernas: editables visualmente, sin código y con puntuaciones PageSpeed 90+ garantizadas desde el primer día.",
     "exploreCta": "Explorar plantillas ↓",
     "customCta": "Solicitar proyecto a medida →",
     "stat1Val": "90+",
@@ -79,7 +79,7 @@
   "services": {
     "tag": "SERVICIOS",
     "title": "Estudio de Desarrollo y Personalización en Framer",
-    "subtitle": "Tanto si necesita un sitio web en Framer creado desde cero, una conversión pixel-perfect de Figma a Framer, o la personalización de cualquier plantilla de Framer, Spark Studio entrega proyectos de calidad profesional con puntuaciones superiores a 95 en PageSpeed.",
+    "subtitle": "Tanto si necesita un sitio web en Framer creado desde cero, una conversión pixel-perfect de Figma a Framer, o la personalización de cualquier plantilla de Framer, The Spark Studio entrega proyectos de calidad profesional con puntuaciones superiores a 95 en PageSpeed.",
     "items": [
       {
         "title": "Personalización de Plantilla",
@@ -552,7 +552,7 @@
       "projects": "Proyectos destacados",
       "services": "Servicios y tarifas",
       "standards": "Estándares de ingeniería",
-      "about": "Sobre Spark Studio",
+      "about": "Sobre The Spark Studio",
       "faq": "Preguntas y proceso",
       "contact": "Iniciar un proyecto",
       "webDesign": "Sitios web y CMS a medida",
@@ -566,7 +566,7 @@
       "framerProfile": "Perfil en Framer Marketplace",
       "blog": "Recursos y Guías"
     },
-    "rights": "© 2026 Spark Studio. Todos los derechos reservados.",
+    "rights": "© 2026 The Spark Studio. Todos los derechos reservados.",
     "builtWith": "Optimizado para 95+ Core Web Vitals · Arquitectura web de alta conversión"
   },
   "templateDetails": {
@@ -590,7 +590,7 @@
         "Proyecto Framer completo con 5 colecciones CMS dinámicas",
         "Guía de configuración paso a paso",
         "Actualizaciones de por vida gratis",
-        "Soporte directo de Spark Studio"
+        "Soporte directo de The Spark Studio"
       ],
       "cmsTitle": "5 Colecciones CMS Dinámicas",
       "cmsDesc": "Inmuebles, Zonas, Asesores, Opiniones de clientes, Preguntas frecuentes."
@@ -761,7 +761,7 @@
         "Proyecto completo en Framer con CMS dinámico",
         "Documentación paso a paso y guía de estilo",
         "Actualizaciones gratuitas de por vida",
-        "Soporte directo de Spark Studio0"
+        "Soporte directo de The Spark Studio"
       ],
       "cmsTitle": "Páginas incluidas",
       "cmsDesc": "Inicio, Colección, Producto (CMS), Carrito, Contacto, Guía de estilo, Legal y 404."
@@ -785,7 +785,7 @@
         "Proyecto completo en Framer con 3 colecciones CMS dinámicas",
         "8 estudios de caso arquitectónicos preconfigurados",
         "Actualizaciones gratuitas de por vida",
-        "Soporte directo de Spark Studio0"
+        "Soporte directo de The Spark Studio"
       ],
       "cmsTitle": "24 rutas de producción",
       "cmsDesc": "Inicio, Proyectos, Estudio, Contacto, Carreras, Aviso legal, Privacidad, 404 y rutas CMS."
@@ -809,7 +809,7 @@
         "Proyecto completo en Framer con 2 colecciones CMS dinámicas",
         "Calculadoras interactivas y generador de moodboards",
         "Actualizaciones gratuitas de por vida",
-        "Soporte directo de Spark Studio0"
+        "Soporte directo de The Spark Studio"
       ],
       "cmsTitle": "19 páginas incluidas",
       "cmsDesc": "Inicio, Tienda, Producto (CMS), Carrito, Moodboard, Muestras, Showroom, Solicitudes y 404."
@@ -891,7 +891,7 @@
     }
   },
   "about": {
-    "eyebrow": "SOBRE SPARK STUDIO",
+    "eyebrow": "SOBRE THE SPARK STUDIO",
     "title": "Las plantillas web no deberían parecer copias genéricas producidas en masa.",
     "p1": "Somos un estudio multidisciplinar de diseño digital que crea plantillas Framer de alto calibre y experiencias digitales a medida — para fundadores, agencias creativas y marcas ambiciosas de cualquier sector, desde startups SaaS en plena expansión hasta estudios espaciales de lujo y portfolios editoriales.",
     "p2": "Cada plantilla que publicamos está construida como una web hecha a medida: tipografía editorial, microinteracciones sutiles y arquitectura CMS impecable. Lista para usar este fin de semana o desarrollada desde cero para su marca — la excelencia del diseño se mantiene inquebrantable."
@@ -934,7 +934,7 @@
     "notFoundTitle": "Plantilla no encontrada",
     "notFoundDesc": "No se ha podido localizar la plantilla solicitada.",
     "returnHome": "Volver al inicio del estudio",
-    "metaTitleSuffix": "— Plantilla Framer de Spark Studio"
+    "metaTitleSuffix": "— Plantilla Framer de The Spark Studio"
   },
   "blog": {
     "eyebrow": "Recursos y Análisis del Estudio",
@@ -960,7 +960,7 @@
     "ctaTitle": "¿Necesita un sitio con 90+ PageSpeed diseñado para convertir?",
     "ctaDesc": "Diseñamos sitios web y aplicaciones Framer a medida con tiempos de carga inferiores a un segundo y excelentes Core Web Vitals.",
     "ctaBtn": "Iniciar un proyecto",
-    "articleCtaEyebrow": "Desarrollado por Spark Studio",
+    "articleCtaEyebrow": "Desarrollado por The Spark Studio",
     "articleCtaTitle": "¿Desea que diseñemos su próximo sitio web en Framer?",
     "articleCtaDesc": "Ya sea una plataforma creada desde cero o una plantilla Framer optimizada a 90+ PageSpeed, entregamos proyectos listos en días.",
     "articleCtaSchedule": "Agendar consulta",

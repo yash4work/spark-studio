@@ -1,5 +1,5 @@
 /**
- * Google Analytics 4 (GA4) & Tracking Helper for Spark Studio
+ * Google Analytics 4 (GA4) & Tracking Helper for The Spark Studio
  */
 
 export const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID || 'G-FQYVH9WRCQ';

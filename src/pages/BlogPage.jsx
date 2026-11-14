@@ -22,12 +22,12 @@ export default function BlogPage() {
   const blogSchema = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    'name': 'Spark Studio Insights & Framer Resources',
-    'description': 'Technical teardowns, Core Web Vitals optimization guides, and production Framer web design insights from Spark Studio.',
+    'name': 'The Spark Studio Insights & Framer Resources',
+    'description': 'Technical teardowns, Core Web Vitals optimization guides, and production Framer web design insights from The Spark Studio.',
     'url': `https://www.thesparkstudio.digital${homePrefix}/blog`,
     'publisher': {
       '@type': 'Organization',
-      'name': 'Spark Studio',
+      'name': 'The Spark Studio',
       'logo': 'https://www.thesparkstudio.digital/logo.png'
     },
     'blogPost': BLOG_POSTS.map((post) => ({
@@ -46,8 +46,8 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen pt-28 pb-24 text-[#8b87a0]">
       <SEOHead
-        title={t('blog.title') ? `${t('blog.title')} — Spark Studio` : "Resources, Tutorials & Engineering Teardowns — Spark Studio"}
-        description={t('blog.subtitle') || "In-depth tutorials, performance teardowns, and design resources on Framer, 90+ PageSpeed optimization, and digital architecture from Spark Studio."}
+        title={t('blog.title') ? `${t('blog.title')} — The Spark Studio` : "Resources, Tutorials & Engineering Teardowns — The Spark Studio"}
+        description={t('blog.subtitle') || "In-depth tutorials, performance teardowns, and design resources on Framer, 90+ PageSpeed optimization, and digital architecture from The Spark Studio."}
         image="/assets/spark-studio-og-image.jpg"
         jsonLd={blogSchema}
       />

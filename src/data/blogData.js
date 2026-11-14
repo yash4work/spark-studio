@@ -8,7 +8,7 @@ export const BLOG_POSTS = [
     date: "November 2026",
     isoDate: "2026-11-07",
     author: {
-      name: "Spark Studio Architecture",
+      name: "The Spark Studio Architecture",
       role: "Spatial Design & Systems Team",
       avatar: "/assets/spark_studio_avatar.jpg"
     },
@@ -78,7 +78,7 @@ Absolutely. Interior designers with rich photography collections find Vellum to 
     date: "November 2026",
     isoDate: "2026-11-08",
     author: {
-      name: "Spark Studio Architecture",
+      name: "The Spark Studio Architecture",
       role: "Spatial Design & Systems Team",
       avatar: "/assets/spark_studio_avatar.jpg"
     },
@@ -156,7 +156,7 @@ Yes. You can display prices in USD, EUR, GBP, or mark them as "Price Upon Reques
     date: "November 2026",
     isoDate: "2026-11-09",
     author: {
-      name: "Spark Studio Architecture",
+      name: "The Spark Studio Architecture",
       role: "Spatial Design & Systems Team",
       avatar: "/assets/spark_studio_avatar.jpg"
     },
@@ -236,7 +236,7 @@ Yes. SASSO supports native video embeds, Vimeo/YouTube spatial reels, and self-h
     date: "November 2026",
     isoDate: "2026-11-10",
     author: {
-      name: "Spark Studio Architecture",
+      name: "The Spark Studio Architecture",
       role: "Spatial Design & Systems Team",
       avatar: "/assets/spark_studio_avatar.jpg"
     },
@@ -302,7 +302,7 @@ No manual HTML editing:
 ## Frequently Asked Questions (FAQ)
 
 ### Is SLOWGRAIN really completely free?
-Yes. Spark Studio released SLOWGRAIN as an open architectural contribution to empower independent designers, craftsmen, and small practices to have an uncompromising digital presence without high upfront costs.
+Yes. The Spark Studio released SLOWGRAIN as an open architectural contribution to empower independent designers, craftsmen, and small practices to have an uncompromising digital presence without high upfront costs.
 
 ### Can I connect my own custom domain?
 Yes. You can clone SLOWGRAIN into your free or paid Framer account, connect your custom domain (e.g., yourstudio.com), and publish immediately.
@@ -328,7 +328,7 @@ None. SLOWGRAIN is built with 100% native Framer components, ensuring zero exter
     date: "November 2026",
     isoDate: "2026-11-10",
     author: {
-      name: "Spark Studio Architecture",
+      name: "The Spark Studio Architecture",
       role: "Spatial Design & Systems Team",
       avatar: "/assets/spark_studio_avatar.jpg"
     },
@@ -340,7 +340,7 @@ None. SLOWGRAIN is built with 100% native Framer components, ensuring zero exter
 
 **Onyx Atelier** is a premium, monograph-grade Framer template specifically engineered for high-end architecture practices, interior design ateliers, and spatial studios. Unlike conventional website templates that rely on generic image tiles and commercial blog layouts, Onyx Atelier is built like an architectural exhibition monograph—giving physical structures, tactile materiality, and light a museum-grade presence online.
 
-Built natively in Framer by Spark Studio, Onyx Atelier requires **zero lines of code to customize**, supports instant 1-click remixing, and benchmarks at **98/100 on Google Core Web Vitals** out of the box.
+Built natively in Framer by The Spark Studio, Onyx Atelier requires **zero lines of code to customize**, supports instant 1-click remixing, and benchmarks at **98/100 on Google Core Web Vitals** out of the box.
 
 ---
 
@@ -438,7 +438,7 @@ Ready to elevate your architecture firm's digital flagship?
     date: 'November 2026',
     isoDate: '2026-11-05',
     author: {
-      name: 'Spark Studio Engineering',
+      name: 'The Spark Studio Engineering',
       role: 'Performance & Architecture Team',
       avatar: '/assets/spark_studio_avatar.jpg'
     },
@@ -454,7 +454,7 @@ In 2026, Google's Core Web Vitals are not just SEO vanity metrics; they directly
 2. **Uncompressed High-Res Imagery**: Photographers and designers routinely drop 12MB raw PNGs into canvas image frames, ballooning the Largest Contentful Paint (LCP).
 3. **Third-Party Script Blocking**: Embedding un-deferred analytics, chat widgets, and marketing trackers in the document \`<head>\` halts the main thread before the first contentful paint.
 
-At Spark Studio, our engineering standard requires **every single template and client website to benchmark at 90+ on Google PageSpeed Insights** across both mobile and desktop. Here is the exact production protocol we execute to achieve this.
+At The Spark Studio, our engineering standard requires **every single template and client website to benchmark at 90+ on Google PageSpeed Insights** across both mobile and desktop. Here is the exact production protocol we execute to achieve this.
 
 ---
 
@@ -518,7 +518,7 @@ If your current site scores under 70, implementing these four principles will im
     date: 'November 2026',
     isoDate: '2026-11-08',
     author: {
-      name: 'Spark Studio Curation Team',
+      name: 'The Spark Studio Curation Team',
       role: 'Design & Spatial Architecture Team',
       avatar: '/assets/spark_studio_avatar.jpg'
     },
@@ -600,7 +600,7 @@ Each of these templates is built natively in Framer with 100% visual editing, ze
     date: 'October 2026',
     isoDate: '2026-10-24',
     author: {
-      name: 'Spark Studio Engineering',
+      name: 'The Spark Studio Engineering',
       role: 'Performance & Architecture Team',
       avatar: '/assets/spark_studio_avatar.jpg'
     },
@@ -667,7 +667,7 @@ By adopting Framer as your agency's primary production canvas:
 - Clients can edit text and images themselves without breaking layouts.
 - You eliminate developer overhead on standard marketing sites.
 
-At Spark Studio, we specialize in partnering with agencies to migrate their Figma designs into high-performance Framer flagships. [Contact us today to collaborate on your next client build.](/contact)
+At The Spark Studio, we specialize in partnering with agencies to migrate their Figma designs into high-performance Framer flagships. [Contact us today to collaborate on your next client build.](/contact)
 `
   }
 ];

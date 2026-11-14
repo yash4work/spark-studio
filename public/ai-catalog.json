@@ -1,11 +1,11 @@
 {
   "$schema": "https://ai-catalog.org/schema/v1.json",
-  "name": "Spark Studio",
+  "name": "The Spark Studio",
   "description": "High-performance Framer templates, bespoke visual CMS websites, and custom software development studio.",
   "url": "https://www.thesparkstudio.digital",
   "version": "1.0.0",
   "provider": {
-    "name": "Spark Studio",
+    "name": "The Spark Studio",
     "url": "https://www.thesparkstudio.digital",
     "email": "hello@thesparkstudio.digital"
   },

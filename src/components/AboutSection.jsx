@@ -18,7 +18,7 @@ export default function AboutSection() {
           transition={{ duration: 0.6, ease: [0.2, 0.8, 0.2, 1] }}
           className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]"
         >
-          {t('about.eyebrow', { defaultValue: 'ABOUT SPARK STUDIO' })}
+          {t('about.eyebrow', { defaultValue: 'ABOUT THE SPARK STUDIO' })}
         </motion.p>
         
         <motion.h3 

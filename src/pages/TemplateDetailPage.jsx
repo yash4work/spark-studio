@@ -271,7 +271,7 @@ export default function TemplateDetailPage() {
         'category': 'Software > Website Templates',
         'brand': {
           '@type': 'Brand',
-          'name': 'Spark Studio'
+          'name': 'The Spark Studio'
         },
         'offers': {
           '@type': 'Offer',
@@ -281,7 +281,7 @@ export default function TemplateDetailPage() {
           'url': `https://thesparkstudio.digital/templates/${slug}`,
           'seller': {
             '@type': 'Organization',
-            'name': 'Spark Studio'
+            'name': 'The Spark Studio'
           }
         }
       },
@@ -324,7 +324,7 @@ export default function TemplateDetailPage() {
   return (
     <div className="min-h-screen pt-28 pb-20">
       <SEOHead
-        title={`${templateInfo.name} ${t('detailPage.metaTitleSuffix') || '— Framer Template by Spark Studio'}`}
+        title={`${templateInfo.name} ${t('detailPage.metaTitleSuffix') || '— Framer Template by The Spark Studio'}`}
         description={templateInfo.headline}
         image={meta.image}
         jsonLd={productJsonLd}

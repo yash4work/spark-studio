@@ -113,7 +113,7 @@ export default function Services() {
           </div>
 
           <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed w-full lg:max-w-md">
-            {t('services.desc', { defaultValue: 'Whether you need a custom Framer website built from scratch, pixel-perfect Figma to Framer development, or full brand customization of any official Framer marketplace template, Spark Studio delivers production-grade web experiences engineered for 95+ PageSpeed scores.' })}
+            {t('services.desc', { defaultValue: 'Whether you need a custom Framer website built from scratch, pixel-perfect Figma to Framer development, or full brand customization of any official Framer marketplace template, The Spark Studio delivers production-grade web experiences engineered for 95+ PageSpeed scores.' })}
           </p>
         </div>
 

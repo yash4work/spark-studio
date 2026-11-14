@@ -111,12 +111,12 @@ export default function Navbar() {
           <div className="w-7 h-7 flex items-center justify-center shrink-0">
             <img 
               src="/logo.svg" 
-              alt="Spark Studio Logo" 
+              alt="The Spark Studio Logo" 
               className="w-full h-full object-contain group-hover:scale-105 transition-transform"
             />
           </div>
           <span className="font-heading font-bold text-base tracking-tight text-[#f7f6fb] whitespace-nowrap">
-            Spark Studio
+            The Spark Studio
           </span>
         </Link>
 

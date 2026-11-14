@@ -360,7 +360,7 @@ export default function TemplatesGrid() {
                   <div data-framer-background-image-wrapper="true" className="w-full h-full">
                     <img
                       src={template.image}
-                      alt={`${template.name} — Custom Project by Spark Studio`}
+                      alt={`${template.name} — Custom Project by The Spark Studio`}
                       className="framer-card-img w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                     />
@@ -381,7 +381,7 @@ export default function TemplatesGrid() {
                   <div data-framer-background-image-wrapper="true" className="w-full h-full">
                     <img
                       src={template.image}
-                      alt={`${template.name} — Framer Template by Spark Studio`}
+                      alt={`${template.name} — Framer Template by The Spark Studio`}
                       className="framer-card-img w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                       onError={(e) => {

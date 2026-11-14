@@ -1,8 +1,8 @@
-# Spark Studio
+# The Spark Studio
 
-> Spark Studio designs and engineers high-performance Framer templates, visual CMS platforms, and custom software for founders, architecture studios, and luxury brands worldwide.
+> The Spark Studio designs and engineers high-performance Framer templates, visual CMS platforms, and custom software for founders, architecture studios, and luxury brands worldwide.
 
-Spark Studio builds production-ready digital flagships engineered for 95+ PageSpeed scores, zero-code editing, and native Framer AI Agent skills.
+The Spark Studio builds production-ready digital flagships engineered for 95+ PageSpeed scores, zero-code editing, and native Framer AI Agent skills.
 
 ## Core Templates
 
@@ -27,7 +27,7 @@ Spark Studio builds production-ready digital flagships engineered for 95+ PageSp
 
 ## Company & Contact
 
-- [Home](https://www.thesparkstudio.digital/): Spark Studio official digital flagship.
+- [Home](https://www.thesparkstudio.digital/): The Spark Studio official digital flagship.
 - [Inquiry & Contact](https://www.thesparkstudio.digital/#contact): Submit project briefs or schedule a scoping call directly.
 - [Official Framer Profile](https://www.framer.com/@thesparkstudio/): Verified Framer Creator catalog and template remixes.
 - [Email Contact](mailto:hello@thesparkstudio.digital): Direct project brief inquiries (hello@thesparkstudio.digital).

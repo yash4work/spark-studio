@@ -12,7 +12,7 @@
   "hero": {
     "eyebrow": "TEMPLATES FRAMER HAUT DE GAMME & DESIGN WEB SUR MESURE",
     "title": "Des sites conçus pour convertir et performer.",
-    "description": "Spark Studio conçoit des templates Framer haute performance et des sites sur mesure pour startups ambitieuses, studios créatifs et entreprises modernes — modifiables visuellement, sans code, avec des scores PageSpeed 90+ garantis dès le lancement.",
+    "description": "The Spark Studio conçoit des templates Framer haute performance et des sites sur mesure pour startups ambitieuses, studios créatifs et entreprises modernes — modifiables visuellement, sans code, avec des scores PageSpeed 90+ garantis dès le lancement.",
     "exploreCta": "Explorer les templates ↓",
     "customCta": "Demander un projet sur mesure →",
     "stat1Val": "90+",
@@ -79,7 +79,7 @@
   "services": {
     "tag": "SERVICES",
     "title": "Studio de Développement Framer & Personnalisation de Templates",
-    "subtitle": "Que vous ayez besoin d’un site Framer sur mesure conçu de zéro, d’une intégration pixel-perfect de Figma vers Framer, ou de la personnalisation complète d’un template officiel, Spark Studio conçoit des expériences digitales d’élite affichant 95+ sur Google PageSpeed.",
+    "subtitle": "Que vous ayez besoin d’un site Framer sur mesure conçu de zéro, d’une intégration pixel-perfect de Figma vers Framer, ou de la personnalisation complète d’un template officiel, The Spark Studio conçoit des expériences digitales d’élite affichant 95+ sur Google PageSpeed.",
     "items": [
       {
         "title": "Personnalisation de template",
@@ -552,7 +552,7 @@
       "projects": "Projets récents",
       "services": "Services & Tarifs",
       "standards": "Standards d’ingénierie",
-      "about": "À propos de Spark Studio",
+      "about": "À propos de The Spark Studio",
       "faq": "FAQ & Méthode",
       "contact": "Démarrer un projet",
       "webDesign": "Sites web & CMS sur mesure",
@@ -566,7 +566,7 @@
       "framerProfile": "Profil officiel Framer",
       "blog": "Ressources & Guides"
     },
-    "rights": "© 2026 Spark Studio. Tous droits réservés.",
+    "rights": "© 2026 The Spark Studio. Tous droits réservés.",
     "builtWith": "Optimisé pour 95+ Core Web Vitals · Architecture web haute conversion"
   },
   "templateDetails": {
@@ -590,7 +590,7 @@
         "Projet Framer complet avec 5 collections CMS dynamiques",
         "Guide d’installation pas à pas",
         "Mises à jour gratuites à vie",
-        "Support direct de Spark Studio"
+        "Support direct de The Spark Studio"
       ],
       "cmsTitle": "5 Collections CMS Dynamiques",
       "cmsDesc": "Biens, Quartiers, Conseillers, Avis clients, FAQ accordéons."
@@ -761,7 +761,7 @@
         "Projet Framer complet avec CMS dynamique",
         "Guide de style et documentation complète",
         "Mises à jour gratuites à vie",
-        "Support direct par Spark Studio0"
+        "Support direct par The Spark Studio"
       ],
       "cmsTitle": "Pages incluses",
       "cmsDesc": "Accueil, Collection, Produit (CMS), Panier, Contact, Guide de style, Mentions légales et 404."
@@ -785,7 +785,7 @@
         "Projet Framer complet avec 3 collections CMS dynamiques",
         "8 études de cas prêtes à l'emploi",
         "Mises à jour gratuites à vie",
-        "Support direct par Spark Studio0"
+        "Support direct par The Spark Studio"
       ],
       "cmsTitle": "24 pages incluses",
       "cmsDesc": "Accueil, Projets, Agence, Contact, Carrières, Mentions légales, Confidentialité, 404 et CMS."
@@ -809,7 +809,7 @@
         "Projet Framer complet avec 2 collections CMS dynamiques",
         "Calculateurs et générateur de moodboard intégrés",
         "Mises à jour gratuites à vie",
-        "Support direct par Spark Studio0"
+        "Support direct par The Spark Studio"
       ],
       "cmsTitle": "19 pages incluses",
       "cmsDesc": "Accueil, Catalogue, Produit (CMS), Panier, Moodboard, Échantillons, Showroom, Devis et 404."
@@ -891,7 +891,7 @@
     }
   },
   "about": {
-    "eyebrow": "À PROPOS DE SPARK STUDIO",
+    "eyebrow": "À PROPOS DE THE SPARK STUDIO",
     "title": "Les templates de sites ne devraient pas ressembler à des copies génériques.",
     "p1": "Nous sommes un studio de design digital pluridisciplinaire créant des templates Framer de haut niveau et des expériences digitales sur mesure — pour fondateurs, agences créatives et marques ambitieuses de tous secteurs, des startups SaaS en forte croissance aux studios d’architecture d'intérieur et portfolios éditoriaux.",
     "p2": "Chaque template que nous lançons est pensé comme un site conçu sur mesure : typographie éditoriale, micro-interactions subtiles et architecture CMS robuste. Prêt à l’emploi dès ce week-end ou créé de zéro pour votre marque — les fondations de design restent irréprochables."
@@ -934,7 +934,7 @@
     "notFoundTitle": "Template introuvable",
     "notFoundDesc": "Le template demandé n'a pas pu être trouvé.",
     "returnHome": "Retour à l’accueil du studio",
-    "metaTitleSuffix": "— Template Framer par Spark Studio"
+    "metaTitleSuffix": "— Template Framer par The Spark Studio"
   },
   "blog": {
     "eyebrow": "Ressources et Analyses du Studio",
@@ -960,7 +960,7 @@
     "ctaTitle": "Besoin d'un site 90+ PageSpeed conçu pour convertir ?",
     "ctaDesc": "Nous concevons des sites Framer sur mesure et des applications web avec des temps de chargement ultra-rapides et des Core Web Vitals optimisés.",
     "ctaBtn": "Démarrer un projet",
-    "articleCtaEyebrow": "Conçu par Spark Studio",
+    "articleCtaEyebrow": "Conçu par The Spark Studio",
     "articleCtaTitle": "Confiez-nous l'ingénierie de votre prochain site Framer.",
     "articleCtaDesc": "Qu'il s'agisse d'une plateforme personnalisée ou de l'optimisation d'un template à 90+ PageSpeed, nous livrons des projets prêts pour la production en quelques jours.",
     "articleCtaSchedule": "Planifier une consultation",

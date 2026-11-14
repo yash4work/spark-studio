@@ -81,7 +81,7 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
           className="text-base sm:text-[17px] md:text-lg text-[#8b87a0] max-w-[620px] font-normal leading-[1.75] tracking-[-0.02em]"
         >
-          {t('hero.description') || 'Spark Studio designs high-performance Framer templates and custom websites for ambitious startups, creative studios, and modern businesses — visually editable, code-free, and built with 90+ PageSpeed scores out of the box.'}
+          {t('hero.description') || 'The Spark Studio designs high-performance Framer templates and custom websites for ambitious startups, creative studios, and modern businesses — visually editable, code-free, and built with 90+ PageSpeed scores out of the box.'}
         </motion.p>
 
         {/* CTA Buttons with Magnetic Physics (Exact match to Image 1: Explore templates / Hire us for custom work) */}

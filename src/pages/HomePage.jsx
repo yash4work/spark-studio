@@ -19,20 +19,20 @@ export default function HomePage() {
   const currentLang = i18n.language ? i18n.language.slice(0, 2) : 'en';
 
   const title = currentLang === 'de'
-    ? 'Spark Studio — High-Performance Framer Vorlagen & Webdesign'
+    ? 'The Spark Studio — High-Performance Framer Vorlagen & Webdesign'
     : currentLang === 'es'
-    ? 'Spark Studio — Plantillas Framer de Alto Rendimiento y Diseño Web a Medida'
+    ? 'The Spark Studio — Plantillas Framer de Alto Rendimiento y Diseño Web a Medida'
     : currentLang === 'fr'
-    ? 'Spark Studio — Templates Framer Haute Performance & Sites Web Sur Mesure'
-    : 'Spark Studio — Websites, Custom Software & Framer Engineering';
+    ? 'The Spark Studio — Templates Framer Haute Performance & Sites Web Sur Mesure'
+    : 'The Spark Studio — Websites, Custom Software & Framer Engineering';
 
   const description = currentLang === 'de'
-    ? 'Spark Studio entwickelt schnelle Framer-Templates, Web-Apps und individuelle Websites für Start-ups — 99+ PageSpeed.'
+    ? 'The Spark Studio entwickelt schnelle Framer-Templates, Web-Apps und individuelle Websites für Start-ups — 99+ PageSpeed.'
     : currentLang === 'es'
-    ? 'Spark Studio diseña aplicaciones web, sitios a medida y plantillas Framer de alto rendimiento para startups — con 99+ PageSpeed.'
+    ? 'The Spark Studio diseña aplicaciones web, sitios a medida y plantillas Framer de alto rendimiento para startups — con 99+ PageSpeed.'
     : currentLang === 'fr'
-    ? 'Spark Studio conçoit des applications web sur mesure, des templates Framer et des sites haute performance avec scores 90+.'
-    : 'Spark Studio designs and engineers high-performance custom websites, web applications, and bespoke Framer platforms for ambitious startups and businesses — built with 90+ PageSpeed scores.';
+    ? 'The Spark Studio conçoit des applications web sur mesure, des templates Framer et des sites haute performance avec scores 90+.'
+    : 'The Spark Studio designs and engineers high-performance custom websites, web applications, and bespoke Framer platforms for ambitious startups and businesses — built with 90+ PageSpeed scores.';
 
   // Dynamic FAQ structured data for the active language
   const faqItems = t('faq.items', { returnObjects: true }) || [];
@@ -55,7 +55,8 @@ export default function HomePage() {
       {
         '@type': 'ProfessionalService',
         '@id': 'https://www.thesparkstudio.digital/#organization',
-        'name': 'Spark Studio',
+        'name': 'The Spark Studio',
+        'alternateName': ['Spark Studio', 'thesparkstudio.digital'],
         'url': 'https://www.thesparkstudio.digital/',
         'logo': 'https://www.thesparkstudio.digital/logo.png',
         'image': 'https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg',
@@ -68,7 +69,7 @@ export default function HomePage() {
       },
       {
         '@type': 'ItemList',
-        'name': 'Spark Studio Work & Templates Catalog',
+        'name': 'The Spark Studio Work & Templates Catalog',
         'description': 'Production-ready Next.js web applications, bespoke Framer client websites, and high-performance digital templates.',
         'url': 'https://www.thesparkstudio.digital/#projects',
         'numberOfItems': 10,

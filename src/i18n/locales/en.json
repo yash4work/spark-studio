@@ -12,7 +12,7 @@
   "hero": {
     "eyebrow": "PREMIUM FRAMER TEMPLATES & CUSTOM WEB DESIGN",
     "title": "High-Performance Framer Websites & Templates Engineered to Scale.",
-    "description": "Spark Studio designs high-performance Framer templates and custom websites for ambitious startups, creative studios, and modern businesses — visually editable, code-free, and built with 90+ PageSpeed scores out of the box.",
+    "description": "The Spark Studio designs high-performance Framer templates and custom websites for ambitious startups, creative studios, and modern businesses — visually editable, code-free, and built with 90+ PageSpeed scores out of the box.",
     "exploreCta": "Explore templates ↓",
     "customCta": "Hire us for custom work →",
     "stat1Val": "90+",
@@ -79,7 +79,7 @@
   "services": {
     "tag": "SERVICES",
     "title": "Framer Development & Template Customization Studio",
-    "subtitle": "Whether you need a bespoke Framer website built from scratch, pixel-perfect Figma to Framer development, or full brand customization of any official Framer marketplace template, Spark Studio delivers production-grade web experiences engineered for 95+ PageSpeed scores.",
+    "subtitle": "Whether you need a bespoke Framer website built from scratch, pixel-perfect Figma to Framer development, or full brand customization of any official Framer marketplace template, The Spark Studio delivers production-grade web experiences engineered for 95+ PageSpeed scores.",
     "items": [
       {
         "title": "Template Customization",
@@ -552,7 +552,7 @@
       "projects": "Selected Work",
       "services": "Services & Pricing",
       "standards": "Engineering Standards",
-      "about": "About Spark Studio",
+      "about": "About The Spark Studio",
       "faq": "FAQ & Process",
       "contact": "Start a Project",
       "webDesign": "Custom Websites & CMS",
@@ -565,7 +565,7 @@
       "nichePacks": "Specialized Bundles",
       "framerProfile": "Framer Marketplace Profile"
     },
-    "rights": "© 2026 Spark Studio. All rights reserved.",
+    "rights": "© 2026 The Spark Studio. All rights reserved.",
     "builtWith": "Engineered for 95+ Core Web Vitals · High-Conversion Web Architecture"
   },
   "templateDetails": {
@@ -664,7 +664,7 @@
         "Complete production-ready Framer project with 5 dynamic CMS collections",
         "Step-by-step setup documentation",
         "Free lifetime updates",
-        "Direct customer support from Spark Studio"
+        "Direct customer support from The Spark Studio"
       ],
       "cmsTitle": "5 Dynamic CMS Collections",
       "cmsDesc": "Properties, Neighbourhoods, Agents, Client Reviews, FAQ Accordions."
@@ -835,7 +835,7 @@
         "Complete production-ready Framer project with dynamic CMS",
         "Step-by-step setup documentation & style guide",
         "Free lifetime updates",
-        "Direct customer support from Spark Studio0"
+        "Direct customer support from The Spark Studio"
       ],
       "cmsTitle": "Pages Included",
       "cmsDesc": "Home, Collection, Product (CMS), Cart, Contact, Style Guide, Guide, Legal & 404."
@@ -859,7 +859,7 @@
         "Complete production-ready Framer project with 3 dynamic CMS collections",
         "8 pre-built architectural case studies & documentation",
         "Free lifetime updates",
-        "Direct customer support from Spark Studio0"
+        "Direct customer support from The Spark Studio"
       ],
       "cmsTitle": "24 Production Routes Included",
       "cmsDesc": "Home, Work, Studio, Contact & Commissions, Careers, Imprint, Privacy, 404, plus CMS routes."
@@ -883,14 +883,14 @@
         "Complete production-ready Framer project with 2 dynamic CMS collections",
         "Interactive calculators and moodboard generator",
         "Free lifetime updates",
-        "Direct customer support from Spark Studio0"
+        "Direct customer support from The Spark Studio"
       ],
       "cmsTitle": "19 Included Routes",
       "cmsDesc": "Home, Shop Catalog (CMS), Product Detail (CMS), Cart Drawer, Moodboard, Samples, Showroom, Inquiries, Journal (CMS), 404."
     }
   },
   "about": {
-    "eyebrow": "ABOUT SPARK STUDIO",
+    "eyebrow": "ABOUT THE SPARK STUDIO",
     "title": "Website templates shouldn’t look like generic cookie-cutter clones.",
     "p1": "We’re a multi-disciplinary digital design studio crafting high-caliber Framer templates and custom digital experiences — for founders, creative agencies, and ambitious brands across every industry, from high-growth SaaS startups to luxury spatial studios and editorial portfolios.",
     "p2": "Every template we launch is built like a full custom website: editorial typography, subtle micro-interactions, bulletproof CMS architecture. Pre-built for this weekend, or built from scratch for your brand — the design foundation holds either way."
@@ -933,7 +933,7 @@
     "notFoundTitle": "Template Not Found",
     "notFoundDesc": "The requested template could not be located.",
     "returnHome": "Return to Studio Home",
-    "metaTitleSuffix": "— Framer Template by Spark Studio"
+    "metaTitleSuffix": "— Framer Template by The Spark Studio"
   },
   "blog": {
     "eyebrow": "Studio Insights & Resources",
@@ -959,7 +959,7 @@
     "ctaTitle": "Need a 90+ PageSpeed site engineered for high conversions?",
     "ctaDesc": "We design custom Framer websites and web applications with guaranteed sub-second load times and rock-solid Core Web Vitals.",
     "ctaBtn": "Start a Project",
-    "articleCtaEyebrow": "Built by Spark Studio",
+    "articleCtaEyebrow": "Built by The Spark Studio",
     "articleCtaTitle": "Want us to engineer your next high-performance Framer site?",
     "articleCtaDesc": "Whether you need a custom client platform built from scratch or want an existing Framer template tuned to 90+ Core Web Vitals, we ship production-grade sites in days.",
     "articleCtaSchedule": "Schedule Consultation",
