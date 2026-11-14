@@ -258,17 +258,20 @@ export default function TemplateDetailPage() {
   // Dynamic template image resolving with Supabase support
   const mainImage = getTemplateStorageUrl(slug, 'cover.png', meta.image);
 
+  const canonicalTemplateUrl = `https://www.thesparkstudio.digital${currentLang === 'en' ? '' : `/${currentLang}`}/templates/${slug}`;
+
   // Product + Breadcrumb JSON-LD structured data for rich snippets & AI engines
   const productJsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'Product',
-        '@id': `https://thesparkstudio.digital/templates/${slug}#product`,
+        '@id': `${canonicalTemplateUrl}#product`,
         'name': templateInfo.name,
         'description': templateInfo.headline,
-        'image': `https://thesparkstudio.digital${meta.image}`,
+        'image': `https://www.thesparkstudio.digital${meta.image}`,
         'category': 'Software > Website Templates',
+        'inLanguage': currentLang,
         'brand': {
           '@type': 'Brand',
           'name': 'The Spark Studio'
@@ -278,7 +281,7 @@ export default function TemplateDetailPage() {
           'price': meta.numericPrice,
           'priceCurrency': 'USD',
           'availability': 'https://schema.org/InStock',
-          'url': `https://thesparkstudio.digital/templates/${slug}`,
+          'url': canonicalTemplateUrl,
           'seller': {
             '@type': 'Organization',
             'name': 'The Spark Studio'
@@ -292,19 +295,19 @@ export default function TemplateDetailPage() {
             '@type': 'ListItem',
             'position': 1,
             'name': t('detailPage.breadcrumbHome') || 'Home',
-            'item': `https://thesparkstudio.digital${homeLink}`
+            'item': `https://www.thesparkstudio.digital${homeLink}`
           },
           {
             '@type': 'ListItem',
             'position': 2,
             'name': t('detailPage.breadcrumbTemplates') || 'Templates',
-            'item': `https://thesparkstudio.digital${templatesLink}`
+            'item': `https://www.thesparkstudio.digital${templatesLink}`
           },
           {
             '@type': 'ListItem',
             'position': 3,
             'name': templateInfo.name,
-            'item': `https://thesparkstudio.digital${currentLang === 'en' ? '' : `/${currentLang}`}/templates/${slug}`
+            'item': canonicalTemplateUrl
           }
         ]
       }
@@ -675,7 +678,7 @@ export default function TemplateDetailPage() {
                   >
                     <img
                       src={item.meta.image}
-                      alt={item.info?.name}
+                      alt={item.info?.name ? `${item.info.name} — Framer Template by The Spark Studio` : 'The Spark Studio Framer Template'}
                       className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       onError={(e) => {
                         e.target.src = '/assets/template1.png';

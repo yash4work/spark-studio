@@ -36,69 +36,99 @@ const BLOG_SLUGS = [
   'figma-to-framer-agency-migration-guide'
 ];
 
-const LANGUAGES = ['', '/de', '/es', '/fr'];
+const LANGUAGES = [
+  { code: 'en', prefix: '' },
+  { code: 'de', prefix: '/de' },
+  { code: 'es', prefix: '/es' },
+  { code: 'fr', prefix: '/fr' }
+];
 
-const urls = [];
-
-// 1. Homepages
-LANGUAGES.forEach((lang) => {
-  urls.push({
-    loc: `${BASE_URL}${lang || '/'}`,
-    changefreq: 'daily',
-    priority: '1.0',
-    lastmod: today
+// Helper to generate alternate hreflang links
+function getAlternates(getPath) {
+  const links = LANGUAGES.map(lang => {
+    const full = `${BASE_URL}${getPath(lang.prefix)}`;
+    return `    <xhtml:link rel="alternate" hreflang="${lang.code}" href="${full}" />`;
   });
+  const xDefault = `${BASE_URL}${getPath('')}`;
+  links.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${xDefault}" />`);
+  return links.join('\n');
+}
+
+const entries = [];
+
+// 1. Homepages (/, /de, /es, /fr)
+LANGUAGES.forEach(active => {
+  const loc = `${BASE_URL}${active.prefix || '/'}`;
+  const alternates = getAlternates(prefix => prefix || '/');
+  entries.push(`  <url>
+    <loc>${loc}</loc>
+${alternates}
+    <image:image>
+      <image:loc>${BASE_URL}/assets/spark-studio-og-image.jpg</image:loc>
+      <image:title>The Spark Studio</image:title>
+    </image:image>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>`);
 });
 
-// 2. Blog Hub
-LANGUAGES.forEach((lang) => {
-  urls.push({
-    loc: `${BASE_URL}${lang}/blog`,
-    changefreq: 'daily',
-    priority: '0.9',
-    lastmod: today
-  });
+// 2. Blog Hub (/blog, /de/blog, /es/blog, /fr/blog)
+LANGUAGES.forEach(active => {
+  const loc = `${BASE_URL}${active.prefix}/blog`;
+  const alternates = getAlternates(prefix => `${prefix}/blog`);
+  entries.push(`  <url>
+    <loc>${loc}</loc>
+${alternates}
+    <image:image>
+      <image:loc>${BASE_URL}/assets/spark-studio-og-image.jpg</image:loc>
+      <image:title>The Spark Studio Blog &amp; Insights</image:title>
+    </image:image>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>`);
 });
 
 // 3. Blog Articles
-BLOG_SLUGS.forEach((slug) => {
-  LANGUAGES.forEach((lang) => {
-    urls.push({
-      loc: `${BASE_URL}${lang}/blog/${slug}`,
-      changefreq: 'weekly',
-      priority: '0.85',
-      lastmod: today
-    });
+BLOG_SLUGS.forEach(slug => {
+  LANGUAGES.forEach(active => {
+    const loc = `${BASE_URL}${active.prefix}/blog/${slug}`;
+    const alternates = getAlternates(prefix => `${prefix}/blog/${slug}`);
+    entries.push(`  <url>
+    <loc>${loc}</loc>
+${alternates}
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>`);
   });
 });
 
 // 4. Template Detail Pages
-TEMPLATE_SLUGS.forEach((slug) => {
-  LANGUAGES.forEach((lang) => {
-    urls.push({
-      loc: `${BASE_URL}${lang}/templates/${slug}`,
-      changefreq: 'weekly',
-      priority: '0.8',
-      lastmod: today
-    });
+TEMPLATE_SLUGS.forEach(slug => {
+  LANGUAGES.forEach(active => {
+    const loc = `${BASE_URL}${active.prefix}/templates/${slug}`;
+    const alternates = getAlternates(prefix => `${prefix}/templates/${slug}`);
+    entries.push(`  <url>
+    <loc>${loc}</loc>
+${alternates}
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`);
   });
 });
 
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${urls
-  .map(
-    (u) => `  <url>
-    <loc>${u.loc}</loc>
-    <lastmod>${u.lastmod}</lastmod>
-    <changefreq>${u.changefreq}</changefreq>
-    <priority>${u.priority}</priority>
-  </url>`
-  )
-  .join('\n')}
-</urlset>`;
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${entries.join('\n')}
+</urlset>
+`;
 
 const publicPath = path.join(rootDir, 'public', 'sitemap.xml');
 fs.writeFileSync(publicPath, sitemapXml, 'utf8');
 
-console.log(`Generated sitemap.xml with ${urls.length} URLs at ${publicPath}`);
+console.log(`Generated multilingual sitemap with ${entries.length} URLs and complete hreflang cross-linking at ${publicPath}`);

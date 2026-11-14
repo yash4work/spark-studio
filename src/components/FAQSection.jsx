@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const FAQ_ITEMS = [
   {
-    q: 'Can you customize any Framer template?',
-    a: 'Yes. We adapt and customize any official Framer marketplace template or third-party theme—adjusting brand palettes, typography, custom CMS fields, and third-party integrations.'
+    q: 'Can The Spark Studio customize any Framer template?',
+    a: 'Yes. At The Spark Studio, we adapt and customize any official Framer marketplace template or third-party theme—adjusting brand palettes, typography, custom CMS fields, and third-party integrations.'
   },
   {
     q: 'What is the typical turnaround time?',
@@ -14,11 +14,11 @@ const FAQ_ITEMS = [
   },
   {
     q: 'How do you optimize Framer site speed?',
-    a: 'We eliminate render-blocking fonts, compress assets to AVIF/WebP, and streamline responsive breakpoint trees to consistently achieve 95+ scores on Google PageSpeed Insights.'
+    a: 'At The Spark Studio, we eliminate render-blocking fonts, compress assets to AVIF/WebP, and streamline responsive breakpoint trees to consistently achieve 95+ scores on Google PageSpeed Insights.'
   },
   {
     q: 'How do we get started?',
-    a: 'Email your project brief directly to sparkstudio0@outlook.com. We review your requirements and respond within 24 hours with a fixed quote and start date.'
+    a: 'Email your project brief directly to The Spark Studio at sparkstudio0@outlook.com. We review your requirements and respond within 24 hours with a fixed quote and start date.'
   }
 ];
 

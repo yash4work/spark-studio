@@ -25,6 +25,13 @@ The Spark Studio builds production-ready digital flagships engineered for 95+ Pa
 - [Framer Template Customization](https://www.thesparkstudio.digital/#services): End-to-end brand adaptation, typography, color palettes, and custom section builds.
 - [Core Web Vitals & PageSpeed Optimization](https://www.thesparkstudio.digital/#services): Asset compression, code trimming, and performance engineering targeting 95+ scores.
 
+## Regional & International Editions
+
+- [The Spark Studio Global (English)](https://www.thesparkstudio.digital/): Main international flagship.
+- [The Spark Studio DACH (Deutsch)](https://www.thesparkstudio.digital/de): Offizielle deutsche Edition für Deutschland, Österreich und die Schweiz.
+- [The Spark Studio Iberoamérica (Español)](https://www.thesparkstudio.digital/es): Edición oficial en español para España y Latinoamérica.
+- [The Spark Studio Francophonie (Français)](https://www.thesparkstudio.digital/fr): Édition officielle en français pour la France, la Belgique, la Suisse et le Canada.
+
 ## Company & Contact
 
 - [Home](https://www.thesparkstudio.digital/): The Spark Studio official digital flagship.

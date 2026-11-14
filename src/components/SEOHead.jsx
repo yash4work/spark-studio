@@ -66,6 +66,7 @@ export default function SEOHead({
     setMeta('property', 'og:url', fullCanonical);
     setMeta('name', 'twitter:url', fullCanonical);
     setMeta('property', 'og:type', type);
+    setMeta('property', 'og:site_name', 'The Spark Studio');
 
     // 3. Update canonical link
     let canonical = document.querySelector('link[rel="canonical"]');
@@ -76,9 +77,17 @@ export default function SEOHead({
     }
     canonical.setAttribute('href', fullCanonical);
 
-    // 4. Update html lang attribute
+    // 4. Update html lang attribute and OpenGraph locale
     const currentLang = i18n.language ? i18n.language.slice(0, 2) : 'en';
     document.documentElement.lang = currentLang;
+
+    const localeMap = {
+      en: 'en_US',
+      de: 'de_DE',
+      es: 'es_ES',
+      fr: 'fr_FR'
+    };
+    setMeta('property', 'og:locale', localeMap[currentLang] || 'en_US');
 
     // 5. Update dynamic hreflang alternate tags
     // Strip language prefix to find canonical base route

@@ -310,7 +310,7 @@
     },
     "soloVault": {
       "badge": "MOST POPULAR · SAVE $227 (48% OFF)",
-      "title": "Complete Studio Vault (Solo)",
+      "title": "The Spark Studio Complete Vault (Solo)",
       "price": "$245",
       "regularPrice": "$472",
       "features": [
@@ -325,7 +325,7 @@
     },
     "agencyVault": {
       "badge": "UNLIMITED CLIENT RIGHTS · SAVE 48%",
-      "title": "Complete Studio Vault (Agency)",
+      "title": "The Spark Studio Complete Vault (Agency)",
       "price": "$499",
       "regularPrice": "$960",
       "features": [
@@ -489,7 +489,7 @@
     "items": [
       {
         "question": "Can you customize any Framer template?",
-        "answer": "Yes. We adapt and customize any official Framer marketplace template or third-party theme—adjusting brand palettes, typography, custom CMS fields, and third-party integrations."
+        "answer": "Yes. At The Spark Studio, we adapt and customize any official Framer marketplace template or third-party theme—adjusting brand palettes, typography, custom CMS fields, and third-party integrations."
       },
       {
         "question": "What is the typical turnaround time?",
@@ -497,11 +497,11 @@
       },
       {
         "question": "How do you optimize Framer site speed?",
-        "answer": "We eliminate render-blocking fonts, compress assets to AVIF/WebP, and streamline responsive breakpoint trees to consistently achieve 95+ scores on Google PageSpeed Insights."
+        "answer": "At The Spark Studio, we eliminate render-blocking fonts, compress assets to AVIF/WebP, and streamline responsive breakpoint trees to consistently achieve 95+ scores on Google PageSpeed Insights."
       },
       {
         "question": "How do we get started?",
-        "answer": "Email your project brief directly to sparkstudio0@outlook.com. We review your requirements and respond within 24 hours with a fixed quote and start date."
+        "answer": "Email your project brief directly to The Spark Studio at sparkstudio0@outlook.com. We review your requirements and respond within 24 hours with a fixed quote and start date."
       }
     ]
   },
@@ -563,7 +563,8 @@
       "allTemplates": "All Templates",
       "theVault": "The Spark Vault",
       "nichePacks": "Specialized Bundles",
-      "framerProfile": "Framer Marketplace Profile"
+      "framerProfile": "Framer Marketplace Profile",
+      "blog": "Resources & Teardowns"
     },
     "rights": "© 2026 The Spark Studio. All rights reserved.",
     "builtWith": "Engineered for 95+ Core Web Vitals · High-Conversion Web Architecture"
@@ -589,7 +590,7 @@
         "Complete production-ready Next.js & React codebase",
         "Full Tailwind CSS design system with custom components",
         "Figma UI kit and responsive breakpoints",
-        "Direct deployment setup on Vercel or AWS"
+        "Direct codebase support from The Spark Studio"
       ],
       "cmsTitle": "Structured Architecture",
       "cmsDesc": "Changelog, Documentation, Product Features, Customer Stories, Pricing Tiers."
@@ -614,7 +615,7 @@
         "Production-ready Next.js & React website codebase",
         "Dynamic seasonal menu management structure",
         "Integrated reservation and inquiry modal",
-        "Lifetime code updates and setup guide"
+        "Direct technical support from The Spark Studio & setup guide"
       ],
       "cmsTitle": "Structured Architecture",
       "cmsDesc": "Seasonal Menus, Wine Cellar, Private Dining Events, Press & Accolades."
@@ -639,7 +640,7 @@
         "Production-ready Next.js & React clinical website",
         "Structured doctor profiles and treatment catalogs",
         "Patient intake and appointment inquiry forms",
-        "Full accessibility and Core Web Vitals optimization"
+        "Direct technical support from The Spark Studio & Core Web Vitals optimization"
       ],
       "cmsTitle": "Structured Architecture",
       "cmsDesc": "Doctors & Specialists, Treatments & Services, Patient FAQs, Clinical Insights."
@@ -689,7 +690,7 @@
         "12 Production-ready Framer pages",
         "Dynamic property and advisor CMS collections",
         "Full responsive design tokens and style guide",
-        "Commercial license for single production site"
+        "Direct support from The Spark Studio & commercial license"
       ],
       "cmsTitle": "12 Production Pages",
       "cmsDesc": "Home, Properties Index, Property Detail CMS, Neighborhoods, Advisors, About, Journal, Inquiries."
@@ -714,7 +715,7 @@
         "9 Production-ready Framer pages",
         "Dynamic Projects and Journal CMS collections",
         "Typography system and component library",
-        "Lifetime access and updates"
+        "Direct developer support from The Spark Studio & lifetime updates"
       ],
       "cmsTitle": "9 Production Pages",
       "cmsDesc": "Monograph Index, Case Study CMS, Firm Profile, Methodology, Press, Contact."
@@ -738,7 +739,7 @@
         "Editorial Framer template with custom layout components",
         "Full typography scale with serif & sans pairings",
         "Dynamic case study CMS collection",
-        "Fast performance guarantee: 95+ PageSpeed score"
+        "The Spark Studio speed guarantee: 95+ PageSpeed score"
       ],
       "cmsTitle": "Design System & Specifications",
       "cmsDesc": "4-Chapter case studies, full responsive layouts, light/dark responsive tuning, instant duplicate."
@@ -762,7 +763,7 @@
         "13 Production-ready Framer pages",
         "Products and Workshop Stories CMS",
         "Custom order modal and lead forms",
-        "Framer remix link with commercial license"
+        "Direct support from The Spark Studio & commercial license"
       ],
       "cmsTitle": "13 Production Pages",
       "cmsDesc": "Catalog, Product Detail CMS, Workshop Journal, Bespoke Commission Form, Stockists, About."
@@ -786,7 +787,7 @@
         "12 Production pages with e-commerce integration",
         "Collections and Products CMS collections",
         "Lookbook interactive components",
-        "Setup documentation and video guide"
+        "Setup documentation & direct support from The Spark Studio"
       ],
       "cmsTitle": "Pages & Sections",
       "cmsDesc": "Shop, Lookbook, Product Detail CMS, Maker Stories, FAQs, Contact."
@@ -810,7 +811,7 @@
         "Complete atelier homepage with story timeline",
         "Object showcase CMS",
         "Material index & timber specifications",
-        "Direct contact & custom inquiry engine"
+        "Direct contact & craft support from The Spark Studio"
       ],
       "cmsTitle": "Custom Pages & Bespoke Projects:",
       "cmsDesc": "Atelier, Furniture CMS, Joinery Process, Bespoke Commission Inquiries, Style Guide."
@@ -892,8 +893,8 @@
   "about": {
     "eyebrow": "ABOUT THE SPARK STUDIO",
     "title": "Website templates shouldn’t look like generic cookie-cutter clones.",
-    "p1": "We’re a multi-disciplinary digital design studio crafting high-caliber Framer templates and custom digital experiences — for founders, creative agencies, and ambitious brands across every industry, from high-growth SaaS startups to luxury spatial studios and editorial portfolios.",
-    "p2": "Every template we launch is built like a full custom website: editorial typography, subtle micro-interactions, bulletproof CMS architecture. Pre-built for this weekend, or built from scratch for your brand — the design foundation holds either way."
+    "p1": "At The Spark Studio, we’re a multi-disciplinary digital design studio crafting high-caliber Framer templates and custom digital experiences — for founders, creative agencies, and ambitious brands across every industry, from high-growth SaaS startups to luxury spatial studios and editorial portfolios.",
+    "p2": "Every template released by The Spark Studio is built like a full custom website: editorial typography, subtle micro-interactions, bulletproof CMS architecture. Pre-built for this weekend, or built from scratch for your brand — the design foundation holds either way."
   },
   "marquee": {
     "items": [
@@ -966,7 +967,7 @@
     "articleCtaExplore": "Explore Templates"
   },
   "blogSection": {
-    "tag": "INSIGHTS & PLAYBOOKS",
+    "tag": "THE SPARK STUDIO INSIGHTS",
     "title": "Engineering standards, teardowns & Framer playbooks.",
     "exploreAll": "Explore all resources"
   },

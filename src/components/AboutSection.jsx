@@ -41,7 +41,7 @@ export default function AboutSection() {
           transition={{ duration: 0.7, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
           className="text-sm md:text-base text-[#8b87a0] font-normal leading-[1.65]"
         >
-          {t('about.p1', { defaultValue: 'We’re a multi-disciplinary digital design studio crafting high-caliber Framer templates and custom digital experiences — for founders, creative agencies, and ambitious brands across every industry, from high-growth SaaS startups to luxury spatial studios and editorial portfolios.' })}
+          {t('about.p1', { defaultValue: 'At The Spark Studio, we’re a multi-disciplinary digital design studio crafting high-caliber Framer templates and custom digital experiences — for founders, creative agencies, and ambitious brands across every industry, from high-growth SaaS startups to luxury spatial studios and editorial portfolios.' })}
         </motion.p>
         
         <motion.p 
@@ -51,7 +51,7 @@ export default function AboutSection() {
           transition={{ duration: 0.7, delay: 0.25, ease: [0.2, 0.8, 0.2, 1] }}
           className="text-sm md:text-base text-[#8b87a0] font-normal leading-[1.65]"
         >
-          {t('about.p2', { defaultValue: 'Every template we launch is built like a full custom website: editorial typography, subtle micro-interactions, bulletproof CMS architecture. Pre-built for this weekend, or built from scratch for your brand — the design foundation holds either way.' })}
+          {t('about.p2', { defaultValue: 'Every template released by The Spark Studio is built like a full custom website: editorial typography, subtle micro-interactions, bulletproof CMS architecture. Pre-built for this weekend, or built from scratch for your brand — the design foundation holds either way.' })}
         </motion.p>
       </div>
     </section>

@@ -22,20 +22,28 @@ export default function BlogPage() {
   const blogSchema = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    'name': 'The Spark Studio Insights & Framer Resources',
-    'description': 'Technical teardowns, Core Web Vitals optimization guides, and production Framer web design insights from The Spark Studio.',
+    'name': currentLang === 'de'
+      ? 'The Spark Studio Analysen & Framer-Ressourcen'
+      : currentLang === 'es'
+      ? 'The Spark Studio Recursos y Análisis de Framer'
+      : currentLang === 'fr'
+      ? 'The Spark Studio Analyses & Ressources Framer'
+      : 'The Spark Studio Insights & Framer Resources',
+    'description': t('blog.subtitle') || 'Technical teardowns, Core Web Vitals optimization guides, and production Framer web design insights from The Spark Studio.',
     'url': `https://www.thesparkstudio.digital${homePrefix}/blog`,
+    'inLanguage': currentLang,
     'publisher': {
       '@type': 'Organization',
       'name': 'The Spark Studio',
       'logo': 'https://www.thesparkstudio.digital/logo.png'
     },
-    'blogPost': BLOG_POSTS.map((post) => ({
+    'blogPost': filteredPosts.map((post) => ({
       '@type': 'BlogPosting',
       'headline': t(`blogPosts.${post.slug}.title`) || post.title,
       'description': t(`blogPosts.${post.slug}.excerpt`) || post.excerpt,
       'datePublished': post.isoDate,
       'url': `https://www.thesparkstudio.digital${homePrefix}/blog/${post.slug}`,
+      'inLanguage': currentLang,
       'author': {
         '@type': 'Person',
         'name': post.author.name
@@ -109,7 +117,7 @@ export default function BlogPage() {
                   <Link to={getPostUrl(post.slug)} className="block aspect-[16/10] overflow-hidden relative">
                     <img
                       src={post.featuredImage}
-                      alt={postTitle}
+                      alt={`${postTitle} — The Spark Studio`}
                       className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                       loading="lazy"
                     />

@@ -33,16 +33,20 @@ export default function HomePage() {
     ? 'The Spark Studio conçoit des applications web sur mesure, des templates Framer et des sites haute performance avec scores 90+.'
     : 'The Spark Studio designs and engineers high-performance custom websites, web applications, and bespoke Framer platforms for ambitious startups and businesses — built with 90+ PageSpeed scores.';
 
+  const homePrefix = currentLang === 'en' ? '' : `/${currentLang}`;
+  const localizedUrl = `https://www.thesparkstudio.digital${homePrefix || '/'}`;
+
   // Dynamic FAQ structured data for the active language
   const faqItems = t('faq.items', { returnObjects: true }) || [];
   const faqSchema = {
     '@type': 'FAQPage',
+    'inLanguage': currentLang,
     'mainEntity': Array.isArray(faqItems) ? faqItems.map((item) => ({
       '@type': 'Question',
-      'name': item.question,
+      'name': item.question || item.q,
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': item.answer
+        'text': item.answer || item.a
       }
     })) : []
   };
@@ -53,84 +57,92 @@ export default function HomePage() {
     '@graph': [
       {
         '@type': 'ProfessionalService',
-        '@id': 'https://www.thesparkstudio.digital/#organization',
+        '@id': `${localizedUrl}#organization`,
         'name': 'The Spark Studio',
         'alternateName': ['Spark Studio', 'thesparkstudio.digital'],
-        'url': 'https://www.thesparkstudio.digital/',
+        'url': localizedUrl,
         'logo': 'https://www.thesparkstudio.digital/logo.png',
         'image': 'https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg',
-        'description': 'Specialist Framer web design studio crafting high-performance custom websites, Next.js web applications, and flagship visual CMS templates.',
-        'email': 'hello@thesparkstudio.digital',
+        'description': description,
+        'inLanguage': currentLang,
+        'email': 'sparkstudio0@outlook.com',
         'priceRange': '$$',
         'sameAs': [
-          'https://www.framer.com/@sparkstudio0'
+          'https://www.framer.com/@sparkstudio0',
+          'https://www.linkedin.com/company/sparkstudio0'
         ]
       },
       {
         '@type': 'ItemList',
-        'name': 'The Spark Studio Work & Templates Catalog',
-        'description': 'Production-ready Next.js web applications, bespoke Framer client websites, and high-performance digital templates.',
-        'url': 'https://www.thesparkstudio.digital/#projects',
+        'name': currentLang === 'de'
+          ? 'The Spark Studio Portfolio & Vorlagen-Katalog'
+          : currentLang === 'es'
+          ? 'The Spark Studio Catálogo de Plantillas y Proyectos'
+          : currentLang === 'fr'
+          ? 'The Spark Studio Catalogue de Templates et Projets'
+          : 'The Spark Studio Work & Templates Catalog',
+        'description': description,
+        'url': `${localizedUrl}#projects`,
         'numberOfItems': 10,
         'itemListElement': [
           {
             '@type': 'ListItem',
             'position': 1,
-            'url': 'https://www.thesparkstudio.digital/templates/ai-saas',
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/ai-saas`,
             'name': 'AI SaaS Platform — Next.js Web Application'
           },
           {
             '@type': 'ListItem',
             'position': 2,
-            'url': 'https://www.thesparkstudio.digital/templates/luxury-restaurant',
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/luxury-restaurant`,
             'name': 'Luxury Restaurant — Next.js Hospitality Website'
           },
           {
             '@type': 'ListItem',
             'position': 3,
-            'url': 'https://www.thesparkstudio.digital/templates/premium-healthcare',
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/premium-healthcare`,
             'name': 'Premium Healthcare — Clinical Patient Portal'
           },
           {
             '@type': 'ListItem',
             'position': 4,
-            'url': 'https://www.thesparkstudio.digital/templates/mavric-estate',
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/mavric-estate`,
             'name': 'Mavric Estate — Framer Template'
           },
           {
             '@type': 'ListItem',
             'position': 5,
-            'url': 'https://www.thesparkstudio.digital/templates/aurelle-estates',
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/aurelle-estates`,
             'name': 'Aurelle Estates — Framer Template'
           },
           {
             '@type': 'ListItem',
             'position': 6,
-            'url': 'https://www.thesparkstudio.digital/templates/onyx-atelier',
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/onyx-atelier`,
             'name': 'Onyx Atelier — Framer Template'
           },
           {
             '@type': 'ListItem',
             'position': 7,
-            'url': 'https://www.thesparkstudio.digital/templates/vellum-edition',
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/vellum-edition`,
             'name': 'Vellum Edition — Framer Template'
           },
           {
             '@type': 'ListItem',
             'position': 8,
-            'url': 'https://www.thesparkstudio.digital/templates/halden-edition',
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/halden-edition`,
             'name': 'Halden Edition — Framer Template'
           },
           {
             '@type': 'ListItem',
             'position': 9,
-            'url': 'https://www.thesparkstudio.digital/templates/grain-form',
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/grain-form`,
             'name': 'Grain & Form — Framer Template'
           },
           {
             '@type': 'ListItem',
             'position': 10,
-            'url': 'https://www.thesparkstudio.digital/templates/slowgrain',
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/slowgrain`,
             'name': 'SLOWGRAIN — Framer Template'
           }
         ]

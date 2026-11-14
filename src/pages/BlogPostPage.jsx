@@ -55,15 +55,20 @@ export default function BlogPostPage() {
 
   const otherPosts = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 2);
 
+  const fullImage = post.featuredImage?.startsWith('http')
+    ? post.featuredImage
+    : `https://www.thesparkstudio.digital${post.featuredImage}`;
+
   // Article JSON-LD Structured Data
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     'headline': postTitle,
     'description': postExcerpt,
-    'image': post.featuredImage,
+    'image': fullImage,
     'datePublished': post.isoDate,
     'dateModified': post.isoDate,
+    'inLanguage': currentLang,
     'mainEntityOfPage': {
       '@type': 'WebPage',
       '@id': `https://www.thesparkstudio.digital${homePrefix}/blog/${post.slug}`
@@ -260,7 +265,7 @@ export default function BlogPostPage() {
         <div className="rounded-[24px] overflow-hidden border border-white/10 mb-12 aspect-[16/9] shadow-2xl">
           <img
             src={post.featuredImage}
-            alt={postTitle}
+            alt={`${postTitle} — The Spark Studio Insights`}
             className="w-full h-full object-cover"
           />
         </div>

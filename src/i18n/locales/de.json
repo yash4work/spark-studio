@@ -310,7 +310,7 @@
     },
     "soloVault": {
       "badge": "BESTER WERT · 227 $ SPAREN (48 % RABATT)",
-      "title": "Kompletter Studio-Vault (Solo)",
+      "title": "The Spark Studio Vault Komplett (Solo)",
       "price": "$245",
       "regularPrice": "$472",
       "features": [
@@ -325,7 +325,7 @@
     },
     "agencyVault": {
       "badge": "FÜR AGENTUREN · 48 % SPAREN",
-      "title": "Kompletter Studio-Vault (Agentur)",
+      "title": "The Spark Studio Vault Komplett (Agentur)",
       "price": "$499",
       "regularPrice": "$960",
       "features": [
@@ -489,7 +489,7 @@
     "items": [
       {
         "question": "Können Sie jede Framer-Vorlage individuell anpassen?",
-        "answer": "Ja. Wir passen offizielle Framer-Marketplace-Vorlagen und Themes von Drittanbietern individuell an – einschließlich Markenfarben, Typografie, eigener CMS-Felder und externer Integrationen."
+        "answer": "Ja. Bei The Spark Studio passen wir offizielle Framer-Marketplace-Vorlagen und Themes von Drittanbietern individuell an – einschließlich Markenfarben, Typografie, eigener CMS-Felder und externer Integrationen."
       },
       {
         "question": "Wie lange dauert die Umsetzung in der Regel?",
@@ -497,11 +497,11 @@
       },
       {
         "question": "Wie optimieren Sie die Ladegeschwindigkeit von Framer-Websites?",
-        "answer": "Wir optimieren Webfonts, komprimieren Bilder in moderne AVIF- und WebP-Formate und verbessern responsive Breakpoints, um regelmäßig PageSpeed-Werte von über 95 zu erreichen."
+        "answer": "Bei The Spark Studio optimieren wir Webfonts, komprimieren Bilder in moderne AVIF- und WebP-Formate und verbessern responsive Breakpoints, um regelmäßig PageSpeed-Werte von über 95 zu erreichen."
       },
       {
         "question": "Wie können wir starten?",
-        "answer": "Senden Sie Ihr Projektbriefing an sparkstudio0@outlook.com. Wir prüfen Ihre Anforderungen und melden uns innerhalb von 24 Stunden mit einem klaren Angebot und einem möglichen Starttermin."
+        "answer": "Senden Sie Ihr Projektbriefing direkt an The Spark Studio unter sparkstudio0@outlook.com. Wir prüfen Ihre Anforderungen und melden uns innerhalb von 24 Stunden mit einem klaren Angebot und einem möglichen Starttermin."
       }
     ]
   },
@@ -615,7 +615,7 @@
         "12 Produktionsseiten in Framer",
         "Dynamische CMS-Kollektionen für Objekte und Berater",
         "Vollständiges Design-System",
-        "Kommerzielle Einzellizenz"
+        "Direkter Support von The Spark Studio & Einzel-Site-Lizenz"
       ],
       "cmsTitle": "12 Produktionsseiten",
       "cmsDesc": "Startseite, Objektverzeichnis, Objekt-Detail-CMS, Standorte, Team, Kontakt."
@@ -640,7 +640,7 @@
         "9 produktionsbereite Seiten",
         "Dynamisches CMS für Projekte & Magazin",
         "Typografiesystem",
-        "Lebenslange Updates"
+        "Direkter Entwickler-Support von The Spark Studio & lebenslange Updates"
       ],
       "cmsTitle": "9 Produktionsseiten",
       "cmsDesc": "Monografie-Index, Fallstudien-CMS, Büroprofil, Methodik, Kontakt."
@@ -664,7 +664,7 @@
         "Redaktionelle Framer-Vorlage",
         "Typografieskala mit Serif/Sans",
         "Dynamisches CMS",
-        "95+ PageSpeed-Garantie"
+        "The Spark Studio Performance-Garantie: 95+ PageSpeed-Score"
       ],
       "cmsTitle": "Design-System & Spezifikationen",
       "cmsDesc": "4-Kapitel-Fallstudien, voll responsive, PageSpeed optimiert."
@@ -688,7 +688,7 @@
         "13 produktionsbereite Seiten",
         "Produkte & Werkstatt CMS",
         "Anfrage-Modals",
-        "Framer Remix Link"
+        "Direkter Support von The Spark Studio & kommerzielle Lizenz"
       ],
       "cmsTitle": "13 Produktionsseiten",
       "cmsDesc": "Katalog, Produktdetails CMS, Werkstatt-Tagebuch, Sonderanfertigungen, Über uns."
@@ -712,7 +712,7 @@
         "12 Seiten mit E-Commerce",
         "Kollektionen CMS",
         "Interaktive Lookbooks",
-        "Video-Anleitung"
+        "Setup-Dokumentation & direkter Support von The Spark Studio"
       ],
       "cmsTitle": "Seiten & Bereiche",
       "cmsDesc": "Shop, Lookbook, Produktdetails CMS, Geschichten, FAQ, Kontakt."
@@ -736,7 +736,7 @@
         "Atelier-Startseite mit Entstehungsgeschichte",
         "Möbel-Showcase CMS",
         "Holzarten-Index",
-        "Kontaktformular"
+        "Direkter Kontakt & Support von The Spark Studio"
       ],
       "cmsTitle": "Individuelle Seiten & Sonderprojekte:",
       "cmsDesc": "Atelier, Möbel CMS, Verbindungstechniken, Maßanfertigungen, Styleguide."
@@ -834,7 +834,7 @@
         "Complete production-ready Next.js & React codebase",
         "Full Tailwind CSS design system with custom components",
         "Figma UI kit and responsive breakpoints",
-        "Direct deployment setup on Vercel or AWS"
+        "Direkter Codebase-Support von The Spark Studio"
       ],
       "cmsTitle": "Structured Architecture",
       "cmsDesc": "Changelog, Documentation, Product Features, Customer Stories, Pricing Tiers."
@@ -859,7 +859,7 @@
         "Production-ready Next.js & React website codebase",
         "Dynamic seasonal menu management structure",
         "Integrated reservation and inquiry modal",
-        "Lifetime code updates and setup guide"
+        "Direkter technischer Support von The Spark Studio & Setup-Anleitung"
       ],
       "cmsTitle": "Structured Architecture",
       "cmsDesc": "Seasonal Menus, Wine Cellar, Private Dining Events, Press & Accolades."
@@ -884,7 +884,7 @@
         "Production-ready Next.js & React clinical website",
         "Structured doctor profiles and treatment catalogs",
         "Patient intake and appointment inquiry forms",
-        "Full accessibility and Core Web Vitals optimization"
+        "Direkter technischer Support von The Spark Studio & Core Web Vitals Optimierung"
       ],
       "cmsTitle": "Structured Architecture",
       "cmsDesc": "Doctors & Specialists, Treatments & Services, Patient FAQs, Clinical Insights."
@@ -893,8 +893,8 @@
   "about": {
     "eyebrow": "ÜBER THE SPARK STUDIO",
     "title": "Website-Vorlagen sollten nicht wie generische Standard-Klone aussehen.",
-    "p1": "Wir sind ein multidisziplinäres digitales Designstudio, das hochkarätige Framer-Vorlagen und individuelle digitale Erlebnisse entwickelt — für Gründer, Kreativagenturen und anspruchsvolle Marken jeder Branche, von wachstumsstarken SaaS-Startups bis hin zu exklusiven Raumstudios und redaktionellen Portfolios.",
-    "p2": "Jede Vorlage, die wir veröffentlichen, ist wie eine vollwertige individuelle Website aufgebaut: redaktionelle Typografie, subtile Mikro-Interaktionen und eine grundsolide CMS-Architektur. Vorgefertigt für dieses Wochenende oder von Grund auf für Ihre Marke maßgeschneidert — das Designfundament überzeugt in jedem Fall."
+    "p1": "The Spark Studio ist ein multidisziplinäres digitales Designstudio, das hochkarätige Framer-Vorlagen und individuelle digitale Erlebnisse entwickelt — für Gründer, Kreativagenturen und anspruchsvolle Marken jeder Branche, von wachstumsstarken SaaS-Startups bis hin zu exklusiven Raumstudios und redaktionellen Portfolios.",
+    "p2": "Jede von The Spark Studio veröffentlichte Vorlage ist wie eine vollwertige individuelle Website aufgebaut: redaktionelle Typografie, subtile Mikro-Interaktionen und eine grundsolide CMS-Architektur. Vorgefertigt für dieses Wochenende oder von Grund auf für Ihre Marke maßgeschneidert — das Designfundament überzeugt in jedem Fall."
   },
   "marquee": {
     "items": [
@@ -967,7 +967,7 @@
     "articleCtaExplore": "Vorlagen erkunden"
   },
   "blogSection": {
-    "tag": "EINBLICKE & LEITFÄDEN",
+    "tag": "THE SPARK STUDIO ANALYSEN",
     "title": "Engineering-Standards, Analysen & Framer-Playbooks.",
     "exploreAll": "Alle Ressourcen erkunden"
   },

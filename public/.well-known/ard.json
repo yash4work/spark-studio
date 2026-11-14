@@ -4,7 +4,7 @@
   "publisher": {
     "name": "The Spark Studio",
     "domain": "thesparkstudio.digital",
-    "url": "https://thesparkstudio.digital",
+    "url": "https://www.thesparkstudio.digital",
     "email": "hello@thesparkstudio.digital"
   },
   "resources": [
@@ -13,7 +13,7 @@
       "displayName": "The Spark Studio Framer Templates Catalog",
       "type": "catalog",
       "description": "High-performance production-ready Framer templates for architecture studios, luxury real estate, and digital commerce.",
-      "url": "https://thesparkstudio.digital/#templates",
+      "url": "https://www.thesparkstudio.digital/#templates",
       "representativeQueries": [
         "Framer real estate templates",
         "Architecture studio portfolio Framer template",
@@ -26,7 +26,7 @@
       "displayName": "Custom Web & SaaS Engineering Services",
       "type": "service",
       "description": "Bespoke website design, Next.js web application development, Figma to Framer translation, and Core Web Vitals speed optimization.",
-      "url": "https://thesparkstudio.digital/#services",
+      "url": "https://www.thesparkstudio.digital/#services",
       "representativeQueries": [
         "Hire Framer developer",
         "Next.js web development agency",
@@ -39,7 +39,7 @@
       "displayName": "The Spark Studio LLMs Context & Documentation",
       "type": "documentation",
       "description": "Standardized documentation and machine-readable context for AI coding and search agents.",
-      "url": "https://thesparkstudio.digital/llms.txt",
+      "url": "https://www.thesparkstudio.digital/llms.txt",
       "representativeQueries": [
         "The Spark Studio documentation",
         "The Spark Studio AI context llms.txt"
@@ -50,7 +50,7 @@
       "displayName": "The Spark Studio AI Catalog",
       "type": "catalog",
       "description": "Machine-readable resource and template catalog for autonomous AI agents.",
-      "url": "https://thesparkstudio.digital/ai-catalog.json",
+      "url": "https://www.thesparkstudio.digital/ai-catalog.json",
       "representativeQueries": [
         "The Spark Studio AI catalog json"
       ]
