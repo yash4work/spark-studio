@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import SEOHead from '../components/SEOHead';
 import Hero from '../components/Hero';
