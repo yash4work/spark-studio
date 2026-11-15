@@ -58,6 +58,8 @@ export default function BlogPostPage() {
     ? post.featuredImage
     : `https://www.thesparkstudio.digital${post.featuredImage}`;
 
+  const canonicalPostUrl = `https://www.thesparkstudio.digital${homePrefix}/blog/${post.slug}`;
+
   // Article JSON-LD Structured Data
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -70,7 +72,7 @@ export default function BlogPostPage() {
     'inLanguage': currentLang,
     'mainEntityOfPage': {
       '@type': 'WebPage',
-      '@id': `https://www.thesparkstudio.digital${homePrefix}/blog/${post.slug}`
+      '@id': canonicalPostUrl
     },
     'author': {
       '@type': 'Person',
@@ -117,10 +119,13 @@ export default function BlogPostPage() {
         const linkUrl = token.slice(token.indexOf('](') + 2, -1);
         const isInternal = linkUrl.startsWith('/') || linkUrl.startsWith('#');
         if (isInternal) {
+          const targetUrl = linkUrl.startsWith('/') && homePrefix && !linkUrl.startsWith(homePrefix)
+            ? `${homePrefix}${linkUrl}`
+            : linkUrl;
           parts.push(
             <Link
               key={match.index}
-              to={linkUrl}
+              to={targetUrl}
               className="text-[#8e97f7] hover:text-[#a5adff] underline underline-offset-4 font-medium transition-colors"
             >
               {linkText}
@@ -171,12 +176,19 @@ export default function BlogPostPage() {
       }
     };
 
+    const parseTableRow = (rowStr) => {
+      let s = rowStr.trim();
+      if (s.startsWith('|')) s = s.slice(1);
+      if (s.endsWith('|')) s = s.slice(0, -1);
+      return s.split('|').map((c) => c.trim());
+    };
+
     const flushTable = () => {
       if (inTable && tableRows.length > 0) {
-        const contentRows = tableRows.filter((r) => !/^[|\s:-]+$/.test(r));
+        const contentRows = tableRows.filter((r) => !/^\|?(\s*:?-+:?\s*\|?)+$/.test(r.trim()));
         if (contentRows.length > 0) {
-          const headerCells = contentRows[0].split('|').map((s) => s.trim()).filter(Boolean);
-          const bodyRows = contentRows.slice(1).map((r) => r.split('|').map((s) => s.trim()).filter(Boolean));
+          const headerCells = parseTableRow(contentRows[0]);
+          const bodyRows = contentRows.slice(1).map(parseTableRow);
           elements.push(
             <div key={`table-${elements.length}`} className="my-8 overflow-x-auto rounded-xl border border-white/10 bg-[#161423]">
               <table className="w-full text-left border-collapse text-sm">
@@ -221,7 +233,7 @@ export default function BlogPostPage() {
         flushTable();
         elements.push(
           <h2 key={index} className="text-2xl sm:text-3xl font-extrabold text-[#f7f6fb] font-heading mt-12 mb-4 tracking-tight">
-            {trimmed.replace('## ', '')}
+            {parseInlineMarkdown(trimmed.replace('## ', ''))}
           </h2>
         );
       } else if (trimmed.startsWith('### ')) {
@@ -229,8 +241,16 @@ export default function BlogPostPage() {
         flushTable();
         elements.push(
           <h3 key={index} className="text-xl sm:text-2xl font-bold text-[#f7f6fb] font-heading mt-8 mb-3">
-            {trimmed.replace('### ', '')}
+            {parseInlineMarkdown(trimmed.replace('### ', ''))}
           </h3>
+        );
+      } else if (trimmed.startsWith('#### ')) {
+        flushList();
+        flushTable();
+        elements.push(
+          <h4 key={index} className="text-lg sm:text-xl font-bold text-[#f7f6fb] font-heading mt-6 mb-2">
+            {parseInlineMarkdown(trimmed.replace('#### ', ''))}
+          </h4>
         );
       } else if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
         flushTable();
@@ -252,9 +272,9 @@ export default function BlogPostPage() {
             <span className="font-mono text-xs font-bold text-[#8e97f7] bg-[#8e97f7]/10 px-2 py-0.5 rounded border border-[#8e97f7]/20 shrink-0 mt-0.5">
               {numMatch ? numMatch[1] : '•'}.
             </span>
-            <p className="text-sm sm:text-base text-[#c3bfdb] leading-relaxed">
+            <div className="text-sm sm:text-base text-[#c3bfdb] leading-relaxed">
               {numMatch ? parseInlineMarkdown(numMatch[2]) : parseInlineMarkdown(trimmed)}
-            </p>
+            </div>
           </div>
         );
       } else if (trimmed.length > 0) {
@@ -282,6 +302,7 @@ export default function BlogPostPage() {
         title={`${postTitle} — The Spark Studio Insights`}
         description={postExcerpt}
         image={post.featuredImage}
+        canonicalUrl={canonicalPostUrl}
         jsonLd={articleSchema}
       />
 

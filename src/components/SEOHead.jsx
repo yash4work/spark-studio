@@ -10,7 +10,8 @@ export default function SEOHead({
   description, 
   image = '/assets/spark-studio-og-image.jpg', 
   type = 'website',
-  jsonLd = null 
+  jsonLd = null,
+  canonicalUrl = null
 }) {
   const { i18n } = useTranslation();
   const location = useLocation();
@@ -62,7 +63,7 @@ export default function SEOHead({
     setMeta('property', 'og:image', fullImageUrl);
     setMeta('name', 'twitter:image', fullImageUrl);
 
-    const fullCanonical = `${BASE_URL}${location.pathname}`;
+    const fullCanonical = canonicalUrl || `${BASE_URL}${location.pathname}`;
     setMeta('property', 'og:url', fullCanonical);
     setMeta('name', 'twitter:url', fullCanonical);
     setMeta('property', 'og:type', type);
@@ -91,7 +92,7 @@ export default function SEOHead({
 
     // 5. Update dynamic hreflang alternate tags
     // Strip language prefix to find canonical base route
-    let barePath = location.pathname;
+    let barePath = canonicalUrl ? new URL(canonicalUrl, BASE_URL).pathname : location.pathname;
     for (const l of ['de', 'es', 'fr']) {
       if (barePath.startsWith(`/${l}/`)) {
         barePath = barePath.substring(3);
@@ -147,7 +148,7 @@ export default function SEOHead({
       const existing = document.getElementById(scriptId);
       if (existing) existing.remove();
     };
-  }, [title, description, image, type, jsonLd, location.pathname, i18n.language]);
+  }, [title, description, image, type, jsonLd, canonicalUrl, location.pathname, i18n.language]);
 
   return null;
 }

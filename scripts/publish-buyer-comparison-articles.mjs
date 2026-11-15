@@ -21,7 +21,7 @@ const ARTICLES = [
       avatar: '/assets/spark_studio_avatar.jpg'
     },
     excerpt: 'The definitive 2026 comparison guide to the 10 best Framer templates for architecture practices, interior ateliers, and spatial designers. Benchmarking monograph layouts, Day/Night contrast switchers, CMS flexibility, and 95+ Core Web Vitals speed.',
-    featuredImage: '/templates/onyx-atelier.png',
+    featuredImage: '/templates/onyx-atelier.webp',
     tags: ['Architecture', 'Framer Templates', 'Best Architecture Template', 'Interior Design', 'Studio Portfolios', 'Spatial Design', 'Core Web Vitals', 'Web Design 2026'],
     i18n: {
       en: {

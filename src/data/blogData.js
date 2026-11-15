@@ -13,7 +13,7 @@ export const BLOG_POSTS = [
       avatar: "/assets/spark_studio_avatar.jpg"
     },
     excerpt: "An executive buyer's guide comparing the best Framer templates for luxury real estate brokers, boutique brokerages, and high-end property developers. How editorial storytelling, sub-second mobile speeds, and VIP inquiry funnels outperform commoditized MLS/IDX websites.",
-    featuredImage: "/templates/mavric-estate.png",
+    featuredImage: "/templates/mavric-estate.webp",
     tags: ["Luxury Real Estate","Real Estate Templates","Framer Real Estate","Brokers","High-End Property","Aurelle Estates","Mavric Estate","Lead Generation"],
     content: `## The Broker's Dilemma: Why Commoditized MLS Websites Lose High-Net-Worth Buyers
 
@@ -156,7 +156,7 @@ Yes. Framer features a built-in CMS with an intuitive spreadsheet-style interfac
       avatar: "/assets/spark_studio_avatar.jpg"
     },
     excerpt: "The definitive 2026 comparison guide to the 10 best Framer templates for architecture practices, interior ateliers, and spatial designers. Benchmarking monograph layouts, Day/Night contrast switchers, CMS flexibility, and 95+ Core Web Vitals speed.",
-    featuredImage: "/templates/onyx-atelier.png",
+    featuredImage: "/templates/onyx-atelier.webp",
     tags: ["Architecture","Framer Templates","Best Architecture Template","Interior Design","Studio Portfolios","Spatial Design","Core Web Vitals","Web Design 2026"],
     content: `## Why Generic Web Design Fails Architects in 2026
 

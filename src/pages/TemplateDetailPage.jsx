@@ -352,6 +352,7 @@ export default function TemplateDetailPage() {
         title={`${templateInfo.name} ${t('detailPage.metaTitleSuffix') || '— Framer Template by The Spark Studio'}`}
         description={templateInfo.headline}
         image={meta.image}
+        canonicalUrl={canonicalTemplateUrl}
         jsonLd={productJsonLd}
       />
 
