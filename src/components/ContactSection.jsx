@@ -4,7 +4,6 @@ import { Send, CheckCircle2 } from 'lucide-react';
 import { LinkedInIcon, TeamsIcon, SlackIcon, MailIcon } from './SocialIcons';
 import { saveInquiry } from '../lib/supabase';
 import { trackEvent } from '../lib/analytics';
-import { motion } from 'framer-motion';
 import { MagneticButton } from '../lib/framer-effects';
 
 export default function ContactSection() {
