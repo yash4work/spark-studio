@@ -200,6 +200,31 @@ const TEMPLATE_ARTICLE_MAP = {
     slug: 'vellum-edition-framer-architecture-template-review',
     badge: 'Art-Book Review',
     title: 'Vellum Edition: Quiet Art-Book Monograph Teardown'
+  },
+  'mavric-estate': {
+    slug: 'best-luxury-real-estate-framer-templates-for-brokers',
+    badge: 'Broker Comparison Guide',
+    title: 'Best Luxury Real Estate Framer Templates for Brokers (2026)'
+  },
+  'terra': {
+    slug: 'top-10-framer-templates-for-architects-and-design-studios-2026',
+    badge: 'Architect Buyer Guide',
+    title: 'Top 10 Framer Templates for Architects & Design Studios (2026)'
+  },
+  'tessovra': {
+    slug: 'top-10-framer-templates-for-architects-and-design-studios-2026',
+    badge: 'Spatial Atelier Guide',
+    title: 'Top 10 Framer Templates for Architects & Design Studios (2026)'
+  },
+  'halden-edition': {
+    slug: 'top-10-framer-templates-for-architects-and-design-studios-2026',
+    badge: 'Minimalist Architecture Guide',
+    title: 'Top 10 Framer Templates for Architects & Design Studios (2026)'
+  },
+  'grain-form': {
+    slug: 'top-10-framer-templates-for-architects-and-design-studios-2026',
+    badge: 'Spatial Design Guide',
+    title: 'Top 10 Framer Templates for Architects & Design Studios (2026)'
   }
 };
 
