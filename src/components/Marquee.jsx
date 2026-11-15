@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { Sparkles } from 'lucide-react';
 
 const DEFAULT_MARQUEE_ITEMS = [
   'Templates engineered to convert & scale',

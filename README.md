@@ -1,4 +1,4 @@
-# SparkStudio Web
+# The Spark Studio — Official Website & Framer Template Showcase
 
 A React + Vite marketing site with i18n (EN/DE/ES/FR), Supabase, and Lemon Squeezy checkout.
 

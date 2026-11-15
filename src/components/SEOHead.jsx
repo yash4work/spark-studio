@@ -32,7 +32,7 @@ export default function SEOHead({
           document.head.appendChild(el);
         }
         el.setAttribute('content', content || '');
-      } catch (err) {
+      } catch {
         // Fallback safely if querySelector has special characters
         const metas = Array.from(document.querySelectorAll('meta'));
         let el = metas.find(m => m.getAttribute(attr) === val);

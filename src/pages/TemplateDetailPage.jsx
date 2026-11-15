@@ -1,23 +1,20 @@
 import { useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { 
   ArrowLeft, 
   ArrowUpRight, 
   ShoppingBag, 
   Check, 
-  Layers, 
   Sparkles, 
   ShieldCheck, 
   FileText, 
-  Database,
-  ExternalLink 
+  Database 
 } from 'lucide-react';
 import SEOHead from '../components/SEOHead';
 import { initLemonSqueezy, handleLemonCheckout } from '../lib/lemonsqueezy';
 import { trackEvent } from '../lib/analytics';
 import { getTemplateStorageUrl } from '../lib/supabase';
-import { motion } from 'framer-motion';
 
 const TEMPLATE_META = {
   'ai-saas': {
@@ -209,7 +206,6 @@ const TEMPLATE_ARTICLE_MAP = {
 export default function TemplateDetailPage() {
   const { slug } = useParams();
   const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
 
   const currentLang = i18n.language ? i18n.language.slice(0, 2) : 'en';
   const meta = TEMPLATE_META[slug];
@@ -226,6 +222,7 @@ export default function TemplateDetailPage() {
         currency: 'USD'
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slug]);
 
   if (!meta || !templateInfo) {
@@ -269,7 +266,7 @@ export default function TemplateDetailPage() {
         '@id': `${canonicalTemplateUrl}#product`,
         'name': templateInfo.name,
         'description': templateInfo.headline,
-        'image': `https://www.thesparkstudio.digital${meta.image}`,
+        'image': meta.image.startsWith('http') ? meta.image : `https://www.thesparkstudio.digital${meta.image}`,
         'category': 'Software > Website Templates',
         'inLanguage': currentLang,
         'brand': {

@@ -35,7 +35,10 @@ export default function BlogPage() {
     'publisher': {
       '@type': 'Organization',
       'name': 'The Spark Studio',
-      'logo': 'https://www.thesparkstudio.digital/logo.png'
+      'logo': {
+        '@type': 'ImageObject',
+        'url': 'https://www.thesparkstudio.digital/logo.png'
+      }
     },
     'blogPost': filteredPosts.map((post) => ({
       '@type': 'BlogPosting',

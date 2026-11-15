@@ -68,6 +68,7 @@ export default function HomePage() {
         'email': 'sparkstudio0@outlook.com',
         'priceRange': '$$',
         'sameAs': [
+          'https://www.framer.com/@thesparkstudio',
           'https://www.framer.com/@sparkstudio0',
           'https://www.linkedin.com/company/sparkstudio0'
         ]
@@ -83,7 +84,7 @@ export default function HomePage() {
           : 'The Spark Studio Work & Templates Catalog',
         'description': description,
         'url': `${localizedUrl}#projects`,
-        'numberOfItems': 10,
+        'numberOfItems': 13,
         'itemListElement': [
           {
             '@type': 'ListItem',
@@ -144,6 +145,24 @@ export default function HomePage() {
             'position': 10,
             'url': `https://www.thesparkstudio.digital${homePrefix}/templates/slowgrain`,
             'name': 'SLOWGRAIN — Framer Template'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 11,
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/terra`,
+            'name': 'TERRA — Framer Template'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 12,
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/sasso-architect`,
+            'name': 'SASSO Architect — Framer Template'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 13,
+            'url': `https://www.thesparkstudio.digital${homePrefix}/templates/tessovra`,
+            'name': 'TESSOVRA — Framer Template'
           }
         ]
       },

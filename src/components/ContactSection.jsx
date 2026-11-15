@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Send, CheckCircle2, ArrowUpRight } from 'lucide-react';
+import { Send, CheckCircle2 } from 'lucide-react';
 import { LinkedInIcon, TeamsIcon, SlackIcon, MailIcon } from './SocialIcons';
 import { saveInquiry } from '../lib/supabase';
 import { trackEvent } from '../lib/analytics';
@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { MagneticButton } from '../lib/framer-effects';
 
 export default function ContactSection() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const contact = t('contact', { returnObjects: true });
   const typeOptions = contact?.typeOptions || [
@@ -37,13 +37,14 @@ export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    if (typeOptions?.length > 0 && !typeOptions.includes(formData.projectType)) {
-      setFormData((prev) => ({ ...prev, projectType: typeOptions[0] }));
-    }
-    if (budgetOptions?.length > 0 && !budgetOptions.includes(formData.budget)) {
-      setFormData((prev) => ({ ...prev, budget: budgetOptions[1] || budgetOptions[0] }));
-    }
-  }, [typeOptions, budgetOptions]);
+    setFormData((prev) => {
+      const newProjectType = typeOptions.includes(prev.projectType) ? prev.projectType : typeOptions[0];
+      const newBudget = budgetOptions.includes(prev.budget) ? prev.budget : (budgetOptions[1] || budgetOptions[0]);
+      if (newProjectType === prev.projectType && newBudget === prev.budget) return prev;
+      return { ...prev, projectType: newProjectType, budget: newBudget };
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [i18n.language]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
