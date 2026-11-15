@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowLeft, Clock, Calendar, Share2, Check, Sparkles, ArrowRight, Tag, BookOpen } from 'lucide-react';
+import { ArrowLeft, Clock, Calendar, Share2, Check, Sparkles, ArrowRight } from 'lucide-react';
 import SEOHead from '../components/SEOHead';
 import { getPostBySlug, BLOG_POSTS } from '../data/blogData';
 
 export default function BlogPostPage() {
   const { slug } = useParams();
   const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
   const [copied, setCopied] = useState(false);
 
   const post = getPostBySlug(slug);

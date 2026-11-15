@@ -1,4 +1,4 @@
-# Spark Studio — Bundle Pricing & Discount Architecture
+# The Spark Studio — Bundle Pricing & Discount Architecture
 
 > **Last Updated:** November 2026  
 > **Status:** Active Production  
@@ -8,7 +8,7 @@
 
 ## 1. Executive Summary
 
-All template bundles and studio vaults in Spark Studio are strictly capped at a **maximum discount of 48%** relative to individual catalog prices. The previous legacy cap of 68% has been revised down to 48% across all code, internationalization locales (EN, DE, ES, FR), documentation, and active Lemon Squeezy payment checkouts.
+All template bundles and studio vaults in The Spark Studio are strictly capped at a **maximum discount of 48%** relative to individual catalog prices. The previous legacy cap of 68% has been revised down to 48% across all code, internationalization locales (EN, DE, ES, FR), documentation, and active Lemon Squeezy payment checkouts.
 
 Additionally, **Vellum Edition** (`vellum-edition`) individual price has been updated from **$29** to **$39** (39 €), and all bundle combinations incorporating Vellum Edition have been mathematically recalculated.
 

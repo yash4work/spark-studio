@@ -1,5 +1,5 @@
 -- ==============================================================================
--- Spark Studio — Supabase Database & Storage Setup
+-- The Spark Studio — Supabase Database & Storage Setup
 -- ==============================================================================
 
 -- 1. Create inquiries table for contact form submissions
