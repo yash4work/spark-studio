@@ -1,4 +1,13 @@
 {
+  "deliveryError": "No se pudo enviar. Inténtalo de nuevo.",
+  "notFound": {
+    "title": "404 - Página no encontrada — The Spark Studio",
+    "desc": "La página solicitada no se ha podido encontrar.",
+    "heading": "Página no encontrada",
+    "message": "La página que buscas no existe o ha sido movida.",
+    "returnHome": "Volver al Studio",
+    "exploreBlog": "Explorar artículos"
+  },
   "nav": {
     "projects": "Proyectos",
     "services": "Servicios",
@@ -172,7 +181,7 @@
         "price": "79 €",
         "image": "/templates/onyx-atelier.png",
         "demoUrl": "https://active-strengthening-218427.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/8ef3a777-6fe5-4148-af7e-e1bb1bba39f7?embed=1",
         "categoryKey": "architecture"
       },
       {

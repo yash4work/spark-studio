@@ -53,7 +53,7 @@ export function handleLemonCheckout(e, checkoutUrl) {
       window.LemonSqueezy.Url.Open(checkoutUrl);
       return;
     } catch {
-      // Fall through to regular navigation
+      window.location.assign(checkoutUrl);
     }
   }
   // Default behavior will open href directly

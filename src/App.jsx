@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage';
 const TemplateDetailPage = lazy(() => import('./pages/TemplateDetailPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 const VALID_SLUGS = [
   'ai-saas',
@@ -75,22 +76,25 @@ function RouteManager() {
   return null;
 }
 
-// Route handler allowing direct /:slug template access with fallback
+// Route handler allowing direct /:slug template access with redirect to canonical /templates/:slug
 function SlugRouteHandler() {
   const { slug } = useParams();
+  const location = useLocation();
   if (VALID_SLUGS.includes(slug)) {
-    return <TemplateDetailPage />;
+    return <Navigate to={`/templates/${slug}${location.search}${location.hash}`} replace />;
   }
-  return <Navigate to="/" replace />;
+  return <NotFoundPage />;
 }
 
-// Localized slug handler allowing direct /:lang/:slug template access
+// Localized slug handler allowing direct /:lang/:slug template access with redirect to canonical /:lang/templates/:slug
 function LocalizedSlugRouteHandler() {
-  const { lang, slug } = useParams();
+  const { slug } = useParams();
+  const location = useLocation();
+  const lang = location.pathname.split("/")[1];
   if (VALID_SLUGS.includes(slug)) {
-    return <TemplateDetailPage />;
+    return <Navigate to={`/${lang}/templates/${slug}${location.search}${location.hash}`} replace />;
   }
-  return <Navigate to={`/${lang}`} replace />;
+  return <NotFoundPage />;
 }
 
 // Scroll Progress Bar component from Framer Spark Core
@@ -171,7 +175,7 @@ export default function App() {
             <Route path="/fr/:slug" element={<LocalizedSlugRouteHandler />} />
 
             {/* Fallback */}
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>
       </main>

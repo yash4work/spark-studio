@@ -1,4 +1,13 @@
 {
+  "deliveryError": "Envoi impossible. Veuillez réessayer.",
+  "notFound": {
+    "title": "404 - Page introuvable — The Spark Studio",
+    "desc": "La page demandée est introuvable.",
+    "heading": "Page introuvable",
+    "message": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "returnHome": "Retour au Studio",
+    "exploreBlog": "Explorer les articles"
+  },
   "nav": {
     "projects": "Templates",
     "services": "Services",
@@ -172,7 +181,7 @@
         "price": "79 €",
         "image": "/templates/onyx-atelier.png",
         "demoUrl": "https://active-strengthening-218427.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/8ef3a777-6fe5-4148-af7e-e1bb1bba39f7?embed=1",
         "categoryKey": "architecture"
       },
       {

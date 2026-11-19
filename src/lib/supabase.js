@@ -19,11 +19,15 @@ export async function getSupabase() {
 }
 
 /**
- * Save contact form inquiry to Supabase table 'inquiries', falling back safely to localStorage/memory
+ * Save contact form inquiry to Supabase table 'inquiries'
  */
 export async function saveInquiry(data) {
   const payload = {
-    ...data,
+    name: data.name,
+    email: data.email,
+    project_type: data.projectType || data.project_type || 'General Inquiry',
+    budget: data.budget,
+    message: data.message,
     created_at: new Date().toISOString(),
     source: 'sparkstudio_web',
   };
@@ -37,35 +41,15 @@ export async function saveInquiry(data) {
         return { success: true, data: inserted, mode: 'cloud' };
       }
     } catch (err) {
-      console.warn('Supabase insert failed, saving locally:', err);
+      console.warn('Supabase insert failed:', err);
     }
   }
 
-  // Graceful local cache fallback
-  try {
-    if (typeof window !== 'undefined' && window.localStorage) {
-      let existing = [];
-      try {
-        const raw = localStorage.getItem('spark_inquiries');
-        if (raw) {
-          const parsed = JSON.parse(raw);
-          if (Array.isArray(parsed)) existing = parsed;
-        }
-      } catch {
-        existing = [];
-      }
-      existing.push(payload);
-      localStorage.setItem('spark_inquiries', JSON.stringify(existing));
-    }
-  } catch (e) {
-    console.warn('LocalStorage write unavailable, keeping in-memory:', e);
-  }
-
-  return { success: true, fallback: true, mode: 'local' };
+  return { success: false, mode: 'unavailable' };
 }
 
 /**
- * Save launch alert / early-bird newsletter subscriber with cloud persistence and localStorage cache
+ * Save launch alert / early-bird newsletter subscriber to Supabase table 'subscribers'
  */
 export async function saveSubscriber(email, source = 'expanding_pipeline') {
   const cleanEmail = (email || '').trim().toLowerCase();
@@ -79,54 +63,20 @@ export async function saveSubscriber(email, source = 'expanding_pipeline') {
     created_at: new Date().toISOString(),
   };
 
-  // Local persistence cache backup: always runs so spark_subscribers is preserved
-  try {
-    if (typeof window !== 'undefined' && window.localStorage) {
-      let existing = [];
-      try {
-        const raw = localStorage.getItem('spark_subscribers');
-        if (raw) {
-          const parsed = JSON.parse(raw);
-          if (Array.isArray(parsed)) existing = parsed;
-        }
-      } catch {
-        existing = [];
-      }
-      if (!existing.some(s => s && s.email === cleanEmail)) {
-        existing.push(payload);
-        localStorage.setItem('spark_subscribers', JSON.stringify(existing));
-      }
-    }
-  } catch (e) {
-    console.warn('LocalStorage write unavailable for subscriber, keeping in-memory:', e);
-  }
-
   if (isSupabaseConfigured) {
     try {
       const client = await getSupabase();
       if (client) {
-        // Try 'subscribers' table first
+        // Direct insert into 'subscribers' table (no fallback to inquiries)
         const { error, data: inserted } = await client.from('subscribers').insert([payload]);
-        if (!error) return { success: true, data: inserted, mode: 'cloud' };
-
-        // Fallback to 'inquiries' table as an alert subscriber lead
-        const { error: inqErr, data: inqInserted } = await client.from('inquiries').insert([{
-          name: 'Launch Alert Subscriber',
-          email: cleanEmail,
-          projectType: 'Launch Alert / Early-Bird Newsletter',
-          budget: 'N/A',
-          message: `Subscribed via ${source}`,
-          created_at: payload.created_at,
-          source: 'sparkstudio_newsletter'
-        }]);
-        if (!inqErr) return { success: true, data: inqInserted, mode: 'cloud' };
+        if (!error || error.code === '23505') return { success: true, data: inserted, mode: 'cloud' };
       }
     } catch (err) {
-      console.warn('Supabase subscriber insert failed, saving locally:', err);
+      console.warn('Supabase subscriber insert failed:', err);
     }
   }
 
-  return { success: true, fallback: true, mode: 'local' };
+  return { success: false, mode: 'unavailable' };
 }
 
 /**

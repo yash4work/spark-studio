@@ -9,7 +9,7 @@ This document details the configuration and architecture of the contact and lead
 When a prospective client submits the inquiry form in `src/components/ContactSection.jsx`, the following three actions execute concurrently:
 
 1. **Email Relay to Zoho Mail**: Form data is posted to FormSubmit's AJAX endpoint, which formats and delivers an email notification directly to `hello@thesparkstudio.digital`.
-2. **Database & Local Storage Backup**: Data is saved to the Supabase `inquiries` table (or cached in browser `localStorage` under `spark_inquiries` if offline or unconfigured).
+2. **Database Persistence**: Data is saved directly to the Supabase `inquiries` table via `saveInquiry` in `src/lib/supabase.js`.
 3. **Analytics Tracking**: A GA4 `generate_lead` event is recorded with the lead's selected project type and budget.
 
 ```
@@ -19,7 +19,7 @@ Client Form Submit
        │         └─► Delivered to Zoho Mail (hello@thesparkstudio.digital)
        │
        ├──► 2. saveInquiry(formData) (src/lib/supabase.js)
-       │         └─► Supabase 'inquiries' table (with localStorage fallback)
+       │         └─► Supabase 'inquiries' table
        │
        └──► 3. trackEvent('generate_lead', { project_type, budget })
                  └─► Google Analytics 4

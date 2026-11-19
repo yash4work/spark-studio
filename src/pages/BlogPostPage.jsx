@@ -21,28 +21,41 @@ export default function BlogPostPage() {
   if (!post) {
     return (
       <div className="min-h-screen pt-36 pb-20 flex flex-col items-center justify-center text-center px-4">
+        <SEOHead
+          title={`${t('blog.notFoundTitle', { defaultValue: 'Article Not Found' })} — The Spark Studio`}
+          description={t('blog.notFoundDesc', { defaultValue: 'The requested guide or teardown could not be located.' })}
+          noindex={true}
+        />
         <h1 className="text-3xl font-bold text-white mb-4">
-          {t('blog.notFoundTitle') || 'Article Not Found'}
+          {t('blog.notFoundTitle', { defaultValue: 'Article Not Found' })}
         </h1>
-        <p className="text-[#8b87a0] mb-8">
-          {t('blog.notFoundDesc') || 'The requested guide or teardown could not be located.'}
+        <p className="text-[#8b87a0] mb-8 max-w-md">
+          {t('blog.notFoundDesc', { defaultValue: 'The requested guide or teardown could not be located.' })}
         </p>
-        <Link
-          to={`${homePrefix}/blog`}
-          className="px-6 py-3 rounded-full bg-white text-black font-semibold text-sm"
-        >
-          {t('blog.returnToBlog') || 'Return to Blog & Resources'}
-        </Link>
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <Link
+            to={homePrefix || '/'}
+            className="px-6 py-3 rounded-full bg-white text-black font-semibold text-sm hover:bg-white/90 transition-all"
+          >
+            {t('detailPage.returnHome', { defaultValue: 'Return to Studio Home' })}
+          </Link>
+          <Link
+            to={`${homePrefix}/blog`}
+            className="px-6 py-3 rounded-full bg-white/[0.06] hover:bg-white/[0.1] text-white border border-white/15 font-semibold text-sm transition-all"
+          >
+            {t('blog.returnToBlog', { defaultValue: 'Return to Blog & Resources' })}
+          </Link>
+        </div>
       </div>
     );
   }
 
-  const postTitle = t(`blogPosts.${slug}.title`) || post.title;
-  const postExcerpt = t(`blogPosts.${slug}.excerpt`) || post.excerpt;
-  const postCategory = t(`blogPosts.${slug}.category`) || post.category;
-  const postDate = t(`blogPosts.${slug}.date`) || post.date;
-  const postReadTime = t(`blogPosts.${slug}.readTime`) || post.readTime;
-  const postContent = t(`blogPosts.${slug}.content`) || post.content;
+  const postTitle = t(`blogPosts.${slug}.title`, { defaultValue: post.title });
+  const postExcerpt = t(`blogPosts.${slug}.excerpt`, { defaultValue: post.excerpt });
+  const postCategory = t(`blogPosts.${slug}.category`, { defaultValue: post.category });
+  const postDate = t(`blogPosts.${slug}.date`, { defaultValue: post.date });
+  const postReadTime = t(`blogPosts.${slug}.readTime`, { defaultValue: post.readTime });
+  const postContent = t(`blogPosts.${slug}.content`, { defaultValue: post.content });
 
   const handleShare = () => {
     if (navigator.clipboard) {

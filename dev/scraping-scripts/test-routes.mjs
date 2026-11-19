@@ -23,7 +23,7 @@ const routes = [
 async function run() {
   console.log("Starting vite preview on port 4173...");
   const server = spawn('npx', ['vite', 'preview', '--port', '4173'], {
-    cwd: 'C:/Users/Dell/sparkstudio-web',
+    cwd: new URL('../../', import.meta.url),
     shell: true
   });
 

@@ -11,7 +11,8 @@ export default function SEOHead({
   image = '/assets/spark-studio-og-image.jpg', 
   type = 'website',
   jsonLd = null,
-  canonicalUrl = null
+  canonicalUrl = null,
+  noindex = false
 }) {
   const { i18n } = useTranslation();
   const location = useLocation();
@@ -45,6 +46,12 @@ export default function SEOHead({
         el.setAttribute('content', content || '');
       }
     };
+
+    if (noindex) {
+      setMeta('name', 'robots', 'noindex, nofollow');
+    } else {
+      setMeta('name', 'robots', 'index, follow');
+    }
 
     if (description) {
       setMeta('name', 'description', description);

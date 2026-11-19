@@ -33,6 +33,7 @@ export default function ContactSection() {
   });
 
   const [loading, setLoading] = useState(false);
+  const [deliveryError, setDeliveryError] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
@@ -47,6 +48,7 @@ export default function ContactSection() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setDeliveryError(false);
     setLoading(true);
 
     try {
@@ -69,11 +71,12 @@ export default function ContactSection() {
         })
       });
 
-      // 2. Concurrently persist in Supabase / LocalStorage backup
-      await Promise.allSettled([
-        emailPromise,
+      // 2. Concurrently persist in Supabase
+      const [mail, database] = await Promise.allSettled([
+        emailPromise.then(async response => response.ok && String((await response.json()).success) === 'true'),
         saveInquiry(formData)
       ]);
+      if (mail.value !== true && database.value?.mode !== 'cloud') throw new Error('Delivery failed');
 
       trackEvent('generate_lead', {
         project_type: formData.projectType,
@@ -89,7 +92,7 @@ export default function ContactSection() {
       });
     } catch (err) {
       console.error('Submission error:', err);
-      setSubmitted(true);
+      setDeliveryError(true);
     } finally {
       setLoading(false);
     }
@@ -304,6 +307,7 @@ export default function ContactSection() {
               />
             </div>
 
+            {deliveryError && <p role="alert">{t("deliveryError")}</p>}
             <MagneticButton className="w-full">
               <button
                 type="submit"

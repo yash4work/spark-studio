@@ -2,10 +2,26 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "rewrites": [
+  "cleanUrls": true,
+  "headers": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:slug(ai-saas|luxury-restaurant|premium-healthcare|mavric-estate|aurelle-estates|onyx-atelier|vellum-edition|halden-edition|grain-form|slowgrain|terra|sasso-architect|tessovra)",
+      "destination": "/templates/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(de|es|fr)/:slug(ai-saas|luxury-restaurant|premium-healthcare|mavric-estate|aurelle-estates|onyx-atelier|vellum-edition|halden-edition|grain-form|slowgrain|terra|sasso-architect|tessovra)",
+      "destination": "/:lang/templates/:slug",
+      "permanent": true
     }
   ]
 }

@@ -84,7 +84,7 @@ const TEMPLATE_META = {
     priceFr: '79 €',
     numericPrice: '79.00',
     demoUrl: 'https://active-strengthening-218427.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1',
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/8ef3a777-6fe5-4148-af7e-e1bb1bba39f7?embed=1',
     remixUrl: 'https://framer.com/remix/qdTLRcAS411L53TOswm9',
     image: '/templates/onyx-atelier.png',
     gallery: ['/templates/onyx-atelier.png', '/assets/template3.png', '/assets/template4.png']
@@ -132,7 +132,7 @@ const TEMPLATE_META = {
     priceFr: 'Gratuit',
     numericPrice: '0.00',
     demoUrl: 'https://prosperous-statuses-272584.framer.app/style-guide',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1',
+    buyUrl: null,
     remixUrl: 'https://framer.com/remix/52YnIzlJOEXddxCP5O1n',
     image: '/templates/slowgrain.png',
     gallery: ['/templates/slowgrain.png', '/assets/template3.png', '/assets/template2.png']
@@ -253,6 +253,11 @@ export default function TemplateDetailPage() {
   if (!meta || !templateInfo) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center">
+        <SEOHead
+          title={`${t('detailPage.notFoundTitle') || 'Template Not Found'} — The Spark Studio`}
+          description={t('detailPage.notFoundDesc') || 'The requested template could not be located.'}
+          noindex={true}
+        />
         <h1 className="text-3xl font-bold text-white mb-4">
           {t('detailPage.notFoundTitle') || 'Template Not Found'}
         </h1>
@@ -433,7 +438,9 @@ export default function TemplateDetailPage() {
               </div>
 
               <div className="flex flex-col sm:flex-row items-center gap-4">
-                {meta.buyUrl ? (
+                {slug === "slowgrain" ? (
+                  <a className="framer-btn-primary" href={meta.remixUrl}>{localizedPrice} · SLOWGRAIN ↗</a>
+                ) : meta.buyUrl ? (
                   <a
                     href={meta.buyUrl}
                     onClick={(e) => {

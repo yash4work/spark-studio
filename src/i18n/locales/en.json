@@ -1,4 +1,13 @@
 {
+  "deliveryError": "Delivery failed. Please try again.",
+  "notFound": {
+    "title": "404 - Page Not Found — The Spark Studio",
+    "desc": "The page you are looking for does not exist or has been moved.",
+    "heading": "Page Not Found",
+    "message": "The page you are looking for does not exist or has been moved.",
+    "returnHome": "Return to Studio Home",
+    "exploreBlog": "Explore Articles"
+  },
   "nav": {
     "projects": "Projects",
     "services": "Services",
@@ -172,7 +181,7 @@
         "price": "$79",
         "image": "/templates/onyx-atelier.png",
         "demoUrl": "https://active-strengthening-218427.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/8ef3a777-6fe5-4148-af7e-e1bb1bba39f7?embed=1",
         "categoryKey": "architecture"
       },
       {

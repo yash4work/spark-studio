@@ -248,11 +248,12 @@ export default function TemplatesGrid() {
         })
       });
 
-      // 2. Concurrently persist in Supabase / LocalStorage backup
-      await Promise.allSettled([
-        emailPromise,
+      // 2. Concurrently persist in Supabase
+      const [mail, database] = await Promise.allSettled([
+        emailPromise.then(async response => response.ok && String((await response.json()).success) === 'true'),
         saveSubscriber(cleanEmail, 'expanding_pipeline')
       ]);
+      if (mail.value !== true && database.value?.mode !== 'cloud') throw new Error('Delivery failed');
 
       // 3. Analytics event tracking
       trackEvent('newsletter_subscribe', {
@@ -273,8 +274,8 @@ export default function TemplatesGrid() {
       }
     } catch (err) {
       console.error('Pipeline subscription error:', err);
-      // Graceful fallback: local storage cached, show user success
-      setPipelineStatus('success');
+      setPipelineError(t('deliveryError'));
+      setPipelineStatus('error');
     }
   };
 

@@ -54,7 +54,7 @@ The contact form in `src/components/ContactSection.jsx` delivers inquiries strai
   - Form activated for `https://www.thesparkstudio.digital/` (confirmation token: `2d6f508ef2845b9fc01eef8596816b63`)
   - Configured with `_template: "table"` for clean lead formatting and `_captcha: "false"`.
   - Dynamic subject lines formatted as: `New Lead: <Name> - <ProjectType>`.
-- **Dual Persistence:**
+- **Dual Delivery & Persistence:**
   - Concurrent cloud persistence via Supabase (`saveInquiry` in `src/lib/supabase.js`)
-  - Graceful fallback to client-side `localStorage` (`spark_inquiries`)
+  - Direct relay via FormSubmit to Zoho Mail (`hello@thesparkstudio.digital`)
 - **Event Tracking:** Dispatches Google Analytics 4 (`generate_lead`) event upon submission.

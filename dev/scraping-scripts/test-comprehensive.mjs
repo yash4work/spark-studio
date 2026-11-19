@@ -3,7 +3,7 @@ import path from 'path';
 import http from 'http';
 import { spawn } from 'child_process';
 
-const baseDir = 'C:/Users/Dell/sparkstudio-web';
+const baseDir = path.resolve(import.meta.dirname, '../..');
 let totalPassed = 0;
 let totalFailed = 0;
 
@@ -100,12 +100,12 @@ console.log('\n3. Verifying Direct Channels (Email, LinkedIn, Teams, Slack)...')
 const contactSectionCode = fs.readFileSync(path.join(baseDir, 'src/components/ContactSection.jsx'), 'utf-8');
 const footerCode = fs.readFileSync(path.join(baseDir, 'src/components/Footer.jsx'), 'utf-8');
 
-assert(contactSectionCode.includes('sparkstudio0@outlook.com'), 'ContactSection has direct email');
+assert(contactSectionCode.includes('hello@thesparkstudio.digital'), 'ContactSection has direct email');
 assert(contactSectionCode.includes('https://www.linkedin.com/company/sparkstudio0'), 'ContactSection has LinkedIn');
 assert(contactSectionCode.includes('https://teams.microsoft.com/l/chat'), 'ContactSection has Microsoft Teams');
 assert(contactSectionCode.includes('https://sparkstudio0.slack.com'), 'ContactSection has Slack');
 
-assert(footerCode.includes('sparkstudio0@outlook.com'), 'Footer has direct email');
+assert(footerCode.includes('hello@thesparkstudio.digital'), 'Footer has direct email');
 assert(footerCode.includes('https://www.linkedin.com/company/sparkstudio0'), 'Footer has LinkedIn');
 assert(footerCode.includes('https://teams.microsoft.com/l/chat'), 'Footer has Microsoft Teams');
 assert(footerCode.includes('https://sparkstudio0.slack.com'), 'Footer has Slack');
