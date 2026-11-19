@@ -14,12 +14,17 @@ CREATE TABLE IF NOT EXISTS public.inquiries (
     source TEXT DEFAULT 'sparkstudio_web'
 );
 
+-- Table privileges for PostgREST API access
+GRANT USAGE ON SCHEMA public TO anon, authenticated, service_role;
+GRANT ALL ON TABLE public.inquiries TO anon, authenticated, service_role;
+
 -- Enable Row Level Security (RLS)
 CREATE TABLE IF NOT EXISTS public.subscribers (
     email TEXT PRIMARY KEY,
     source TEXT NOT NULL,
     created_at TIMESTAMPTZ DEFAULT now() NOT NULL
 );
+GRANT ALL ON TABLE public.subscribers TO anon, authenticated, service_role;
 ALTER TABLE public.subscribers ENABLE ROW LEVEL SECURITY;
 DROP POLICY IF EXISTS "Accept subscriptions" ON public.subscribers;
 CREATE POLICY "Accept subscriptions" ON public.subscribers FOR INSERT TO anon
