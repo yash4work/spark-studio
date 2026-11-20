@@ -57,6 +57,7 @@ try {
     await page.waitForSelector('a[href="/#contact"]::-p-text(Contact us today)');
   }
   await page.goto(preview + '/templates/onyx-atelier');
+  await page.waitForFunction(() => window.dataLayer?.some(event => event[1] === 'view_item'));
   await page.evaluate(() => { window.LemonSqueezy = {Url:{Open() {}}}; });
   await page.click('a[href*="/checkout/buy/"]');
   const starts = await page.evaluate(() => window.dataLayer.filter(e => e[1] === 'begin_checkout').map(e => e[2]));
