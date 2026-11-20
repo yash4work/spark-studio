@@ -7,7 +7,6 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 
 const BASE_URL = 'https://www.thesparkstudio.digital';
-const today = new Date().toISOString().split('T')[0];
 
 const TEMPLATE_SLUGS = [
   'ai-saas',
@@ -69,7 +68,6 @@ ${alternates}
       <image:loc>${BASE_URL}/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio</image:title>
     </image:image>
-    <lastmod>${today}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>`);
@@ -86,7 +84,6 @@ ${alternates}
       <image:loc>${BASE_URL}/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio Blog &amp; Insights</image:title>
     </image:image>
-    <lastmod>${today}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>`);
@@ -94,17 +91,7 @@ ${alternates}
 
 // 3. Blog Articles
 BLOG_SLUGS.forEach(slug => {
-  LANGUAGES.forEach(active => {
-    const loc = `${BASE_URL}${active.prefix}/blog/${slug}`;
-    const alternates = getAlternates(prefix => `${prefix}/blog/${slug}`);
-    entries.push(`  <url>
-    <loc>${loc}</loc>
-${alternates}
-    <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>`);
-  });
+  entries.push(`  <url><loc>${BASE_URL}/blog/${slug}</loc></url>`);
 });
 
 // 4. Template Detail Pages
@@ -115,7 +102,6 @@ TEMPLATE_SLUGS.forEach(slug => {
     entries.push(`  <url>
     <loc>${loc}</loc>
 ${alternates}
-    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`);

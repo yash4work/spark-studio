@@ -51,7 +51,7 @@ export default function BlogSection() {
               >
                 <div>
                   {/* Image */}
-                  <Link to={`${homePrefix}/blog/${post.slug}`} className="block aspect-[16/10] overflow-hidden relative">
+                  <Link to={`/blog/${post.slug}`} className="block aspect-[16/10] overflow-hidden relative">
                     <img
                       src={post.featuredImage}
                       alt={postTitle}
@@ -79,7 +79,7 @@ export default function BlogSection() {
                     </div>
 
                     <h3 className="text-xl font-bold text-[#f7f6fb] font-heading mb-3 group-hover:text-[#8e97f7] transition-colors leading-snug">
-                      <Link to={`${homePrefix}/blog/${post.slug}`}>
+                      <Link to={`/blog/${post.slug}`}>
                         {postTitle}
                       </Link>
                     </h3>
@@ -109,7 +109,7 @@ export default function BlogSection() {
                   </div>
 
                   <Link
-                    to={`${homePrefix}/blog/${post.slug}`}
+                    to={`/blog/${post.slug}`}
                     className="inline-flex items-center gap-1 text-xs font-semibold text-[#8e97f7] group-hover:text-[#ff6a45] transition-colors"
                   >
                     <span>{t('blog.readGuide') || 'Read Guide'}</span>

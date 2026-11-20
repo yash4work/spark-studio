@@ -198,7 +198,7 @@ export default function BundlesSection() {
             <MagneticButton className="w-full">
               <a
                 href={bundle.buyUrl}
-                onClick={(e) => handleLemonCheckout(e, bundle.buyUrl)}
+                onClick={(e) => handleLemonCheckout(e, bundle.buyUrl, { item_id: bundle.id, item_name: bundle.title, price: Number(bundle.price.slice(1)), quantity: 1 })}
                 className={`lemonsqueezy-button w-full py-3 rounded-full text-center text-xs font-semibold cursor-pointer block ${
                   bundle.isFeatured
                     ? 'framer-btn-primary shadow-[0_10px_25px_-5px_rgba(108,79,232,0.4)]'
@@ -264,7 +264,7 @@ export default function BundlesSection() {
               <MagneticButton className="w-full">
                 <a
                   href={pack.buyUrl}
-                  onClick={(e) => handleLemonCheckout(e, pack.buyUrl)}
+                  onClick={(e) => handleLemonCheckout(e, pack.buyUrl, { item_id: pack.id, item_name: pack.title, price: Number(pack.price.slice(1)), quantity: 1 })}
                   className="lemonsqueezy-button framer-btn-secondary w-full py-2.5 rounded-full text-center text-xs font-semibold text-[#f7f6fb] border border-white/20 hover:border-white/40 cursor-pointer block"
                 >
                   {pack.cta}

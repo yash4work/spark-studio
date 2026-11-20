@@ -16,6 +16,18 @@ import { initLemonSqueezy, handleLemonCheckout } from '../lib/lemonsqueezy';
 import { trackEvent } from '../lib/analytics';
 import { getTemplateStorageUrl } from '../lib/supabase';
 
+const galleryDescriptions = {
+  '/assets/template1.png': 'Tablet displaying an editorial website on a woodworking bench',
+  '/assets/template2.png': 'Dark architecture portfolio displayed on a desktop monitor and laptop',
+  '/assets/template3.png': 'Two screens showing a furniture storefront and product catalog',
+  '/assets/template4.png': 'Tablet showing a property website among stone and wood samples'
+};
+
+function thumbnail(url, width) {
+  if (url.startsWith('https://framerusercontent.com/')) return url + '?scale-down-to=' + (width <= 192 ? 512 : 1024);
+  return url.replace(/\.(png|webp)$/, '-' + width + '.webp');
+}
+
 const TEMPLATE_META = {
   'ai-saas': {
     isCustom: true,
@@ -55,9 +67,9 @@ const TEMPLATE_META = {
   },
   'mavric-estate': {
     price: '$69',
-    priceDe: '69 €',
-    priceEs: '69 €',
-    priceFr: '69 €',
+    priceDe: '69 USD',
+    priceEs: '69 USD',
+    priceFr: '69 USD',
     numericPrice: '69.00',
     demoUrl: 'https://mavric-estate.framer.website/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1',
@@ -67,9 +79,9 @@ const TEMPLATE_META = {
   },
   'aurelle-estates': {
     price: '$99',
-    priceDe: '99 €',
-    priceEs: '99 €',
-    priceFr: '99 €',
+    priceDe: '99 USD',
+    priceEs: '99 USD',
+    priceFr: '99 USD',
     numericPrice: '99.00',
     demoUrl: 'https://wandering-variations-344785.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1',
@@ -79,9 +91,9 @@ const TEMPLATE_META = {
   },
   'onyx-atelier': {
     price: '$79',
-    priceDe: '79 €',
-    priceEs: '79 €',
-    priceFr: '79 €',
+    priceDe: '79 USD',
+    priceEs: '79 USD',
+    priceFr: '79 USD',
     numericPrice: '79.00',
     demoUrl: 'https://active-strengthening-218427.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/8ef3a777-6fe5-4148-af7e-e1bb1bba39f7?embed=1',
@@ -91,9 +103,9 @@ const TEMPLATE_META = {
   },
   'vellum-edition': {
     price: '$39',
-    priceDe: '39 €',
-    priceEs: '39 €',
-    priceFr: '39 €',
+    priceDe: '39 USD',
+    priceEs: '39 USD',
+    priceFr: '39 USD',
     numericPrice: '39.00',
     demoUrl: 'https://unlimited-mind-018782.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1',
@@ -103,9 +115,9 @@ const TEMPLATE_META = {
   },
   'halden-edition': {
     price: '$59',
-    priceDe: '59 €',
-    priceEs: '59 €',
-    priceFr: '59 €',
+    priceDe: '59 USD',
+    priceEs: '59 USD',
+    priceFr: '59 USD',
     numericPrice: '59.00',
     demoUrl: 'https://past-network-244230.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1',
@@ -115,9 +127,9 @@ const TEMPLATE_META = {
   },
   'grain-form': {
     price: '$58',
-    priceDe: '58 €',
-    priceEs: '58 €',
-    priceFr: '58 €',
+    priceDe: '58 USD',
+    priceEs: '58 USD',
+    priceFr: '58 USD',
     numericPrice: '58.00',
     demoUrl: 'https://mindful-account-986092.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1',
@@ -139,9 +151,9 @@ const TEMPLATE_META = {
   },
   'terra': {
     price: '$69',
-    priceDe: '69 €',
-    priceEs: '69 €',
-    priceFr: '69 €',
+    priceDe: '69 USD',
+    priceEs: '69 USD',
+    priceFr: '69 USD',
     numericPrice: '69.00',
     demoUrl: 'https://vibrant-checkbox-000943.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1',
@@ -151,9 +163,9 @@ const TEMPLATE_META = {
   },
   'sasso-architect': {
     price: '$69',
-    priceDe: '69 €',
-    priceEs: '69 €',
-    priceFr: '69 €',
+    priceDe: '69 USD',
+    priceEs: '69 USD',
+    priceFr: '69 USD',
     numericPrice: '69.00',
     demoUrl: 'https://small-bookings-302943.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/ec2dbd50-66e1-44d5-b412-588da7f013d8?embed=1',
@@ -163,9 +175,9 @@ const TEMPLATE_META = {
   },
   'tessovra': {
     price: '$69',
-    priceDe: '69 €',
-    priceEs: '69 €',
-    priceFr: '69 €',
+    priceDe: '69 USD',
+    priceEs: '69 USD',
+    priceFr: '69 USD',
     numericPrice: '69.00',
     demoUrl: 'https://hilarious-variations-838642.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/02daec5f-f201-48aa-8636-d120270b5adc?embed=1',
@@ -236,15 +248,14 @@ export default function TemplateDetailPage() {
   const meta = TEMPLATE_META[slug];
   const templateInfo = t(`templateDetails.${slug}`, { returnObjects: true });
 
+  const item = { item_id: slug, item_name: templateInfo?.name || slug, price: Number(meta?.numericPrice), quantity: 1 };
+
   useEffect(() => {
     window.scrollTo(0, 0);
     initLemonSqueezy();
     if (meta) {
       trackEvent('view_item', {
-        item_id: slug,
-        item_name: templateInfo?.title || slug,
-        price: meta.numericPrice,
-        currency: 'USD'
+        items: [item], value: item.price, currency: 'USD'
       });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -292,7 +303,7 @@ export default function TemplateDetailPage() {
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'Product',
+        '@type': meta.isCustom ? 'Service' : 'Product',
         '@id': `${canonicalTemplateUrl}#product`,
         'name': templateInfo.name,
         'description': templateInfo.headline,
@@ -303,7 +314,7 @@ export default function TemplateDetailPage() {
           '@type': 'Brand',
           'name': 'The Spark Studio'
         },
-        'offers': {
+        'offers': meta.isCustom ? undefined : {
           '@type': 'Offer',
           'price': meta.numericPrice,
           'priceCurrency': 'USD',
@@ -354,7 +365,7 @@ export default function TemplateDetailPage() {
   return (
     <div className="min-h-screen pt-28 pb-20">
       <SEOHead
-        title={`${templateInfo.name} ${t('detailPage.metaTitleSuffix') || '— Framer Template by The Spark Studio'}`}
+        title={`${templateInfo.name} — ${templateInfo.headline}`}
         description={templateInfo.headline}
         image={meta.image}
         canonicalUrl={canonicalTemplateUrl}
@@ -443,15 +454,7 @@ export default function TemplateDetailPage() {
                 ) : meta.buyUrl ? (
                   <a
                     href={meta.buyUrl}
-                    onClick={(e) => {
-                      trackEvent('begin_checkout', {
-                        item_id: slug,
-                        item_name: templateInfo?.name || slug,
-                        price: meta.numericPrice,
-                        currency: 'USD'
-                      });
-                      handleLemonCheckout(e, meta.buyUrl);
-                    }}
+                    onClick={(e) => handleLemonCheckout(e, meta.buyUrl, item)}
                     className="lemonsqueezy-button w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-white transition-all shadow-lg hover:opacity-90 active:scale-[0.99]"
                     style={{
                       background: 'linear-gradient(120deg, rgb(108, 79, 232) 0%, rgb(255, 106, 69) 100%)'
@@ -511,7 +514,7 @@ export default function TemplateDetailPage() {
                   </div>
                 </div>
                 <Link
-                  to={currentLang === 'en' ? `/blog/${TEMPLATE_ARTICLE_MAP[slug].slug}` : `/${currentLang}/blog/${TEMPLATE_ARTICLE_MAP[slug].slug}`}
+                  to={`/blog/${TEMPLATE_ARTICLE_MAP[slug].slug}`}
                   className="inline-flex items-center gap-1.5 text-xs font-mono text-purple-300 hover:text-white transition-colors shrink-0 px-3 py-1.5 rounded-lg bg-purple-500/20 hover:bg-purple-500/30"
                 >
                   <span>Read Review</span>
@@ -527,10 +530,12 @@ export default function TemplateDetailPage() {
             <div className="rounded-2xl overflow-hidden border border-white/10 bg-zinc-900/40 shadow-2xl relative aspect-[4/3] group">
               <img
                 src={mainImage}
+                loading="eager"
+                fetchPriority="high"
                 alt={`${templateInfo.name} — Framer Template Showcase`}
                 className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {
-                  e.target.src = '/assets/template1.png';
+                  if (e.currentTarget.getAttribute('src') !== meta.image) e.currentTarget.src = meta.image;
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
@@ -541,11 +546,17 @@ export default function TemplateDetailPage() {
               {meta.gallery?.map((imgUrl, i) => (
                 <div key={i} className="rounded-xl overflow-hidden border border-white/[0.08] bg-zinc-950 aspect-[16/10]">
                   <img
-                    src={imgUrl}
-                    alt={`Preview thumbnail ${i + 1}`}
+                    src={thumbnail(imgUrl, 192)}
+                    srcSet={imgUrl.startsWith('https:') ? undefined : `${thumbnail(imgUrl, 192)} 192w, ${thumbnail(imgUrl, 384)} 384w`}
+                    sizes="(max-width: 768px) 30vw, 160px"
+                    loading="lazy"
+                    width="192"
+                    height="120"
+                    alt={galleryDescriptions[imgUrl] || `${templateInfo.name} homepage preview`}
                     className="w-full h-full object-cover object-top"
                     onError={(e) => {
-                      e.target.src = '/assets/template2.png';
+                      e.currentTarget.removeAttribute('srcset');
+                      if (e.currentTarget.getAttribute('src') !== imgUrl) e.currentTarget.src = imgUrl;
                     }}
                   />
                 </div>

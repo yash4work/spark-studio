@@ -16,7 +16,7 @@ export default function BlogPage() {
     : BLOG_POSTS.filter((post) => post.categorySlug === activeCategory);
 
   const homePrefix = currentLang === 'en' ? '' : `/${currentLang}`;
-  const getPostUrl = (slug) => `${homePrefix}/blog/${slug}`;
+  const getPostUrl = (slug) => `/blog/${slug}`;
 
   // Structured Data for Blog
   const blogSchema = {
@@ -45,7 +45,7 @@ export default function BlogPage() {
       'headline': t(`blogPosts.${post.slug}.title`) || post.title,
       'description': t(`blogPosts.${post.slug}.excerpt`) || post.excerpt,
       'datePublished': post.isoDate,
-      'url': `https://www.thesparkstudio.digital${homePrefix}/blog/${post.slug}`,
+      'url': `https://www.thesparkstudio.digital/blog/${post.slug}`,
       'inLanguage': currentLang,
       'author': {
         '@type': 'Person',
@@ -146,7 +146,7 @@ export default function BlogPage() {
 
                     <h2 className="text-xl sm:text-2xl font-bold text-[#f7f6fb] font-heading mb-3 group-hover:text-[#8e97f7] transition-colors leading-snug">
                       <Link to={getPostUrl(post.slug)}>
-                        {postTitle}
+                        {postTitle}{currentLang !== 'en' && ' (English)'}
                       </Link>
                     </h2>
 

@@ -7,10 +7,10 @@ import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 import HomePage from './pages/HomePage';
 
-const TemplateDetailPage = lazy(() => import('./pages/TemplateDetailPage'));
-const BlogPage = lazy(() => import('./pages/BlogPage'));
-const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
-const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+const TemplateDetailPage = import.meta.env.SSR ? (await import('./pages/TemplateDetailPage')).default : lazy(() => import('./pages/TemplateDetailPage'));
+const BlogPage = import.meta.env.SSR ? (await import('./pages/BlogPage')).default : lazy(() => import('./pages/BlogPage'));
+const BlogPostPage = import.meta.env.SSR ? (await import('./pages/BlogPostPage')).default : lazy(() => import('./pages/BlogPostPage'));
+const NotFoundPage = import.meta.env.SSR ? (await import('./pages/NotFoundPage')).default : lazy(() => import('./pages/NotFoundPage'));
 
 const VALID_SLUGS = [
   'ai-saas',

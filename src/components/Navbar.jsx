@@ -68,6 +68,7 @@ export default function Navbar() {
       }
     }
 
+    if (pathWithoutLang.startsWith('/blog/') && code !== 'en') pathWithoutLang = '/blog';
     if (code === 'en') {
       navigate(pathWithoutLang || '/');
     } else {
@@ -287,3 +288,4 @@ export default function Navbar() {
     </header>
   );
 }
+

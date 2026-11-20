@@ -1,9 +1,11 @@
-import { useEffect } from 'react';
+import { createContext, useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 
 const BASE_URL = 'https://www.thesparkstudio.digital';
 const SUPPORTED_LANGS = ['en', 'de', 'es', 'fr'];
+
+export const HeadContext = createContext(null);
 
 export default function SEOHead({ 
   title, 
@@ -16,6 +18,9 @@ export default function SEOHead({
 }) {
   const { i18n } = useTranslation();
   const location = useLocation();
+
+  const head = useContext(HeadContext);
+  if (head) Object.assign(head, { title, description, image, type, jsonLd, canonicalUrl, noindex });
 
   useEffect(() => {
     // 1. Update Title
@@ -131,10 +136,11 @@ export default function SEOHead({
       link.setAttribute('href', href);
     };
 
-    SUPPORTED_LANGS.forEach((lang) => {
+    document.querySelectorAll('link[hreflang]').forEach(link => link.remove());
+    (noindex ? [] : barePath.startsWith('/blog/') ? ['en'] : SUPPORTED_LANGS).forEach((lang) => {
       setHreflang(lang, getLocalizedUrl(lang));
     });
-    setHreflang('x-default', getLocalizedUrl('en'));
+    if (!noindex) setHreflang('x-default', getLocalizedUrl('en'));
 
     // 6. Inject JSON-LD script if provided
     const scriptId = 'custom-jsonld';

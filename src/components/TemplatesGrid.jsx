@@ -483,7 +483,7 @@ export default function TemplatesGrid() {
                         {template.buyUrl && (
                           <a
                             href={template.buyUrl}
-                            onClick={(e) => handleLemonCheckout(e, template.buyUrl)}
+                            onClick={(e) => handleLemonCheckout(e, template.buyUrl, { item_id: template.slug, item_name: template.name, price: Number(template.price.slice(1)), quantity: 1 })}
                             className="lemonsqueezy-button hidden"
                             aria-hidden="true"
                           >

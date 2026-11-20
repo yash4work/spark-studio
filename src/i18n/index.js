@@ -18,6 +18,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    lng: typeof location === 'undefined' ? 'en' : location.pathname.match(/^\/(de|es|fr)(?:\/|$)/)?.[1] || 'en',
     resources,
     fallbackLng: 'en',
     supportedLngs: ['en', 'de', 'es', 'fr'],
@@ -33,3 +34,4 @@ i18n
   });
 
 export default i18n;
+

@@ -1,60 +1,69 @@
-import fs from 'fs';
-import path from 'path';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import puppeteer from 'puppeteer-core';
 
-const routes = [
-  // English
-  { route: '/', file: 'dist/index.html', lang: 'en', type: 'home' },
-  { route: '/blog', file: 'dist/blog.html', lang: 'en', type: 'blog-index' },
-  { route: '/blog/onyx-atelier-framer-architecture-template-review', file: 'dist/blog/onyx-atelier-framer-architecture-template-review.html', lang: 'en', type: 'blog-post' },
-  { route: '/templates/onyx-atelier', file: 'dist/templates/onyx-atelier.html', lang: 'en', type: 'template-detail' },
-  { route: '/onyx-atelier', file: 'dist/onyx-atelier.html', lang: 'en', type: 'alias' },
-
-  // German
-  { route: '/de', file: 'dist/de.html', lang: 'de', type: 'home' },
-  { route: '/de/blog', file: 'dist/de/blog.html', lang: 'de', type: 'blog-index' },
-  { route: '/de/blog/onyx-atelier-framer-architecture-template-review', file: 'dist/de/blog/onyx-atelier-framer-architecture-template-review.html', lang: 'de', type: 'blog-post' },
-  { route: '/de/templates/onyx-atelier', file: 'dist/de/templates/onyx-atelier.html', lang: 'de', type: 'template-detail' },
-  { route: '/de/onyx-atelier', file: 'dist/de/onyx-atelier.html', lang: 'de', type: 'alias' },
-
-  // Spanish
-  { route: '/es', file: 'dist/es.html', lang: 'es', type: 'home' },
-  { route: '/es/blog', file: 'dist/es/blog.html', lang: 'es', type: 'blog-index' },
-  { route: '/es/blog/onyx-atelier-framer-architecture-template-review', file: 'dist/es/blog/onyx-atelier-framer-architecture-template-review.html', lang: 'es', type: 'blog-post' },
-  { route: '/es/templates/onyx-atelier', file: 'dist/es/templates/onyx-atelier.html', lang: 'es', type: 'template-detail' },
-  { route: '/es/onyx-atelier', file: 'dist/es/onyx-atelier.html', lang: 'es', type: 'alias' },
-
-  // French
-  { route: '/fr', file: 'dist/fr.html', lang: 'fr', type: 'home' },
-  { route: '/fr/blog', file: 'dist/fr/blog.html', lang: 'fr', type: 'blog-index' },
-  { route: '/fr/blog/onyx-atelier-framer-architecture-template-review', file: 'dist/fr/blog/onyx-atelier-framer-architecture-template-review.html', lang: 'fr', type: 'blog-post' },
-  { route: '/fr/templates/onyx-atelier', file: 'dist/fr/templates/onyx-atelier.html', lang: 'fr', type: 'template-detail' },
-  { route: '/fr/onyx-atelier', file: 'dist/fr/onyx-atelier.html', lang: 'fr', type: 'alias' },
-];
-
-console.log('=== RAW HTML PRE-RENDER METADATA AUDIT ===\n');
-
-for (const item of routes) {
-  if (!fs.existsSync(item.file)) {
-    console.error(`[FAIL] File missing: ${item.file}`);
-    continue;
+const preview = process.env.TEST_BASE_URL || 'http://127.0.0.1:4173';
+const sitemap = await readFile('dist/sitemap.xml', 'utf8');
+const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => new URL(m[1]));
+assert.equal(urls.length, 70);
+const paths = new Set(urls.map(u => u.pathname));
+const alternates = new Map();
+const browser = await puppeteer.launch({
+  executablePath: process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe',
+  headless: true, args: ['--no-sandbox', '--disable-dev-shm-usage']
+});
+try {
+  const page = await browser.newPage();
+  const errors = [];
+  page.on('pageerror', error => errors.push(page.url() + ' ' + error.message));
+  await page.setRequestInterception(true);
+  page.on('request', req => req.url().startsWith(preview) ? req.continue() : req.abort());
+  for (const url of urls) {
+    const response = await page.goto(preview + url.pathname, {waitUntil: 'domcontentloaded'});
+    assert.equal(response.status(), 200, url.href);
+    const html = await response.text();
+    assert.equal((html.match(/<h1\b/g) || []).length, 1, url.href);
+    assert.deepEqual([...html.matchAll(/<link rel="canonical" href="([^"]+)"/g)].map(m => m[1]), [url.href]);
+    assert.ok(html.match(/<main\b[\s\S]*?<\/main>/)?.[0].replace(/<[^>]+>/g, '').length > 200, url.href);
+    const links = [...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)];
+    const languages = url.pathname.startsWith('/blog/') ? ['en','x-default'] : ['en','de','es','fr','x-default'];
+    assert.deepEqual(links.map(m => m[1]).sort(), languages.sort());
+    alternates.set(url.href, links.map(m => m[2]));
+    for (const m of html.matchAll(/<a\b[^>]* href="(\/[^"]*)"/g)) {
+      const dest = new URL(m[1], url).pathname.replace(/\/$/, '') || '/';
+      assert.ok(paths.has(dest), url.pathname + ' links to ' + dest);
+    }
+    await page.waitForFunction(() => window.dataLayer?.some(event => event[2]?.page_path === location.pathname));
+    if (url.pathname.startsWith('/blog/')) {
+      for (const lang of ['de','es','fr']) {
+        const redirect = await fetch(preview + '/' + lang + url.pathname, {redirect:'manual'});
+        assert.ok([301,308].includes(redirect.status));
+        assert.equal(new URL(redirect.headers.get('location'), preview).pathname, url.pathname);
+      }
+    }
   }
-  const html = fs.readFileSync(item.file, 'utf8');
-
-  const title = html.match(/<title>([^<]+)<\/title>/)?.[1];
-  const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
-  const hreflangs = [...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map(m => `${m[1]}->${m[2]}`);
-  const ogTitle = html.match(/<meta property="og:title" content="([^"]+)"/)?.[1];
-  const ogDesc = html.match(/<meta property="og:description" content="([^"]+)"/)?.[1];
-  const ogUrl = html.match(/<meta property="og:url" content="([^"]+)"/)?.[1];
-  const twitterTitle = html.match(/<meta (?:name|property)="twitter:title" content="([^"]+)"/)?.[1];
-
-  console.log(`Route: ${item.route} (${item.lang.toUpperCase()} - ${item.type})`);
-  console.log(`  File:        ${item.file}`);
-  console.log(`  Title:       ${title}`);
-  console.log(`  Canonical:   ${canonical}`);
-  console.log(`  og:title:    ${ogTitle}`);
-  console.log(`  og:url:      ${ogUrl}`);
-  console.log(`  Hreflang count: ${hreflangs.length}`);
-  console.log(`  Hreflang sample: ${hreflangs.slice(0, 3).join(' | ')}`);
-  console.log('');
+  for (const [url, links] of alternates) for (const target of links) assert.ok(alternates.get(target)?.includes(url), target);
+  const missing = await page.goto(preview + '/missing-route-for-seo-check');
+  assert.equal(missing.status(),404);
+  assert.equal((await missing.text()).match(/<meta name="robots"/g)?.length,1);
+  const guide = '/blog/figma-to-framer-agency-migration-guide';
+  for (const width of [390, 1440]) {
+    await page.setViewport({width,height:850});
+    await page.goto(preview + guide);
+    await page.click('a[href="/#contact"]::-p-text(Contact us today)');
+    await page.waitForFunction(() => location.pathname === '/' && location.hash === '#contact' && document.querySelector('#contact-name'));
+    await page.goto(preview + '/blog');
+    await page.click('a[href="' + guide + '"]');
+    await page.waitForSelector('a[href="/#contact"]::-p-text(Contact us today)');
+  }
+  await page.goto(preview + '/templates/onyx-atelier');
+  await page.evaluate(() => { window.LemonSqueezy = {Url:{Open() {}}}; });
+  await page.click('a[href*="/checkout/buy/"]');
+  const starts = await page.evaluate(() => window.dataLayer.filter(e => e[1] === 'begin_checkout').map(e => e[2]));
+  assert.equal(starts.length,1);
+  assert.equal(starts[0].items[0].item_id,'onyx-atelier');
+  assert.deepEqual(errors,[]);
+  console.log('Passed 70 retained pages, 30 permanent redirects, reciprocal alternates, hydration, contact navigation and checkout.');
+} finally {
+  await browser.close();
 }

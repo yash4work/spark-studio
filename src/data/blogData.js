@@ -1019,7 +1019,7 @@ By adopting Framer as your agency's primary production canvas:
 - Clients can edit text and images themselves without breaking layouts.
 - You eliminate developer overhead on standard marketing sites.
 
-At The Spark Studio, we specialize in partnering with agencies to migrate their Figma designs into high-performance Framer flagships. [Contact us today to collaborate on your next client build.](/contact)
+At The Spark Studio, we specialize in partnering with agencies to migrate their Figma designs into high-performance Framer flagships. [Contact us today to collaborate on your next client build.](/#contact)
 `
   }
 ];
