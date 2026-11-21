@@ -76,7 +76,7 @@ const TEMPLATES = [
     badge: 'Agent',
     image: '/templates/aurelle-estates.webp',
     demoUrl: 'https://wandering-variations-344785.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1'
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/c111b344-dc0c-4931-aa46-55f1d0dc49c8?embed=1'
   },
   {
     slug: 'onyx-atelier',
@@ -100,7 +100,7 @@ const TEMPLATES = [
     badge: 'Agent',
     image: '/templates/vellum-edition.webp',
     demoUrl: 'https://unlimited-mind-018782.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1'
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/af57a897-c648-4ba7-aa29-b06f4fa4d498?embed=1'
   },
   {
     slug: 'halden-edition',
@@ -124,7 +124,7 @@ const TEMPLATES = [
     badge: null,
     image: '/templates/grain-form.webp',
     demoUrl: 'https://mindful-account-986092.framer.app/',
-    buyUrl: null
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/a0ece10b-8ec0-49ab-8371-1be6935e9eab?embed=1'
   },
   {
     slug: 'slowgrain',

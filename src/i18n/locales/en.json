@@ -170,7 +170,7 @@
         "price": "$99",
         "image": "/templates/aurelle-estates.png",
         "demoUrl": "https://wandering-variations-344785.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/c111b344-dc0c-4931-aa46-55f1d0dc49c8?embed=1",
         "categoryKey": "real-estate"
       },
       {
@@ -192,7 +192,7 @@
         "price": "$39",
         "image": "/templates/vellum-edition.png",
         "demoUrl": "https://unlimited-mind-018782.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/af57a897-c648-4ba7-aa29-b06f4fa4d498?embed=1",
         "categoryKey": "craft"
       },
       {
@@ -214,7 +214,7 @@
         "price": "$58",
         "image": "/templates/grain-form.png",
         "demoUrl": "https://mindful-account-986092.framer.app/",
-        "buyUrl": null,
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/a0ece10b-8ec0-49ab-8371-1be6935e9eab?embed=1",
         "categoryKey": "architecture"
       },
       {
@@ -301,7 +301,7 @@
   },
   "bundles": {
     "tag": "BUNDLE & SAVE",
-    "title": "Save up to 48% with curated template bundles.",
+    "title": "Save up to 53% with curated template bundles.",
     "subtitle": "Strategic pairings and complete studio collections with full commercial licenses.",
     "pickAny3": {
       "badge": "FLEXIBLE CHOICE · SAVE 48%",
@@ -334,8 +334,8 @@
     },
     "agencyVault": {
       "badge": "UNLIMITED CLIENT RIGHTS · SAVE 48%",
-      "title": "The Spark Studio Complete Vault (Agency)",
-      "price": "$499",
+      "title": "Complete Studio Vault (Agency Commercial License)",
+      "price": "$500",
       "regularPrice": "$960",
       "features": [
         "All 7 paid templates + Slowgrain (8 total)",
@@ -345,17 +345,17 @@
         "Complete component libraries & style tokens",
         "Priority studio developer onboarding"
       ],
-      "cta": "Get Agency Vault — $499",
+      "cta": "Get Agency Vault — $500",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
       {
-        "tag": "REAL ESTATE · SAVE $69 (41% OFF)",
-        "title": "Luxury Real Estate Flagship Duo",
-        "price": "$99",
+        "tag": "REAL ESTATE · SAVE $89 (53% OFF)",
+        "title": "Real Estate Flagship Duo",
+        "price": "$79",
         "regularPrice": "$168",
         "desc": "Aurelle Estates ($99) + Mavric Estate ($69). The definitive toolkit for luxury brokerages, property developers, and agents.",
-        "cta": "Get Real Estate Duo — $99",
+        "cta": "Get Real Estate Duo — $79",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
@@ -368,17 +368,17 @@
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {
-        "tag": "COMMERCE & CRAFT · SAVE $67 (36% OFF)",
-        "title": "Artisan Living & E-Commerce Suite",
-        "price": "$119",
+        "tag": "COMMERCE & CRAFT · SAVE $87 (47% OFF)",
+        "title": "Artisan Craft Pack",
+        "price": "$99",
         "regularPrice": "$186",
         "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for bespoke ateliers & boutiques.",
-        "cta": "Get Artisan Suite — $119",
+        "cta": "Get Artisan Suite — $99",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
       }
     ],
     "exclusiveEyebrow": "EXCLUSIVE BUNDLES & VAULT ACCESS",
-    "exclusiveTitle": "Save up to 48% with curated template bundles.",
+    "exclusiveTitle": "Save up to 53% with curated template bundles.",
     "exclusiveDesc": "Production-ready Framer templates bundled for independent creators, studios, and agencies. 100% native, static collection as-is with immediate 1-click remix access.",
     "nicheTitle": "Category-Wise Niche Packs",
     "nicheEyebrow": "TARGETED PAIRS FOR SPECIFIC INDUSTRIES",
@@ -424,9 +424,9 @@
         "id": "agency-vault",
         "badge": "UNLIMITED CLIENT RIGHTS · SAVE 48%",
         "isFeatured": false,
-        "title": "Complete Studio Vault (Agency)",
-        "price": "$499",
-        "regularPrice": "/ $960 commercial value (Save $461 · 48% OFF)",
+        "title": "Complete Studio Vault (Agency Commercial License)",
+        "price": "$500",
+        "regularPrice": "/ $960 commercial value (Save $460 · 48% OFF)",
         "desc": "Complete 7-template library with unlimited commercial licensing. Ship high-ticket client builds and keep 100% of fees.",
         "features": [
           "All 7 paid templates + Slowgrain (8 total)",
@@ -436,16 +436,16 @@
           "Complete component libraries & style tokens",
           "Priority studio developer onboarding"
         ],
-        "cta": "Get Agency Vault — $499",
+        "cta": "Get Agency Vault — $500",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
       }
     ],
     "nicheList": [
       {
         "id": "real-estate-duo",
-        "tag": "REAL ESTATE · SAVE $69 (41% OFF)",
-        "title": "Luxury Real Estate Flagship Duo",
-        "price": "$99",
+        "tag": "REAL ESTATE · SAVE $89 (53% OFF)",
+        "title": "Real Estate Flagship Duo",
+        "price": "$79",
         "regularPrice": "/ $168 regular value",
         "desc": "Aurelle Estates ($99) + Mavric Estate ($69). The definitive toolkit for luxury brokerages, property developers, and agents.",
         "features": [
@@ -454,7 +454,7 @@
           "Complete dynamic CMS collections included",
           "100% visual editing with zero code required"
         ],
-        "cta": "Get Real Estate Duo — $99",
+        "cta": "Get Real Estate Duo — $79",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
@@ -475,9 +475,9 @@
       },
       {
         "id": "artisan-suite",
-        "tag": "COMMERCE & CRAFT · SAVE $67 (36% OFF)",
-        "title": "Artisan Living & E-Commerce Suite",
-        "price": "$119",
+        "tag": "COMMERCE & CRAFT · SAVE $87 (47% OFF)",
+        "title": "Artisan Craft Pack",
+        "price": "$99",
         "regularPrice": "/ $186 regular value",
         "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Curated for bespoke ateliers & boutiques.",
         "features": [
@@ -486,7 +486,7 @@
           "Grain & Form ($58) artisan homeware catalog",
           "SLOWGRAIN museum-grade design tokens included"
         ],
-        "cta": "Get Artisan Suite — $119",
+        "cta": "Get Artisan Suite — $99",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
       }
     ]

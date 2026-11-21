@@ -170,7 +170,7 @@
         "price": "99 €",
         "image": "/templates/aurelle-estates.png",
         "demoUrl": "https://wandering-variations-344785.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/c111b344-dc0c-4931-aa46-55f1d0dc49c8?embed=1",
         "categoryKey": "real-estate"
       },
       {
@@ -192,7 +192,7 @@
         "price": "39 €",
         "image": "/templates/vellum-edition.png",
         "demoUrl": "https://unlimited-mind-018782.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/af57a897-c648-4ba7-aa29-b06f4fa4d498?embed=1",
         "categoryKey": "craft"
       },
       {
@@ -214,7 +214,7 @@
         "price": "58 €",
         "image": "/templates/grain-form.png",
         "demoUrl": "https://mindful-account-986092.framer.app/",
-        "buyUrl": null,
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/a0ece10b-8ec0-49ab-8371-1be6935e9eab?embed=1",
         "categoryKey": "architecture"
       },
       {
@@ -301,7 +301,7 @@
   },
   "bundles": {
     "tag": "PACKS ÉCONOMIQUES",
-    "title": "Économisez jusqu’à 48 % avec nos packs de templates sélectionnés.",
+    "title": "Économisez jusqu’à 53 % avec nos packs de templates sélectionnés.",
     "subtitle": "Combinaisons stratégiques et collection complète du studio avec licences commerciales incluses.",
     "pickAny3": {
       "badge": "CHOIX SUR MESURE · ÉCONOMISEZ 48 %",
@@ -314,7 +314,7 @@
         "Liens instantanés de remix Framer en 1 clic",
         "Mises à jour à vie incluses"
       ],
-      "cta": "Choisir 3 templates — 99 €",
+      "cta": "Choisir 3 templates — $99",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
     },
     "soloVault": {
@@ -334,8 +334,8 @@
     },
     "agencyVault": {
       "badge": "POUR AGENCES · ÉCONOMISEZ 48 %",
-      "title": "The Spark Studio Vault Complet (Agence)",
-      "price": "$499",
+      "title": "Complete Studio Vault (Agency Commercial License)",
+      "price": "$500",
       "regularPrice": "$960",
       "features": [
         "Tous les 7 templates + Slowgrain (8 au total)",
@@ -345,40 +345,40 @@
         "Toutes les bibliothèques de composants et design tokens",
         "Onboarding prioritaire avec les créateurs"
       ],
-      "cta": "Obtenir le Vault Agence — $499",
+      "cta": "Obtenir le Vault Agence — $500",
       "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
     },
     "nichePacks": [
       {
-        "tag": "IMMOBILIER · ÉCONOMISEZ 69 € (41 % DTO)",
-        "title": "Duo Flagship Immobilier de Prestige",
-        "price": "$99",
+        "tag": "IMMOBILIER · ÉCONOMISEZ $89 (53 % DTO)",
+        "title": "Real Estate Flagship Duo",
+        "price": "$79",
         "regularPrice": "$168",
-        "desc": "Aurelle Estates (99 €) + Mavric Estate (69 €). La panoplie idéale pour agences immobilières de prestige et promoteurs.",
-        "cta": "Obtenir le Duo Immobilier — $99",
+        "desc": "Aurelle Estates ($99) + Mavric Estate ($69). La panoplie idéale pour agences immobilières de prestige et promoteurs.",
+        "cta": "Obtenir le Duo Immobilier — $79",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
-        "tag": "ARCHITECTURE · ÉCONOMISEZ 49 € (42 % DTO)",
+        "tag": "ARCHITECTURE · ÉCONOMISEZ $49 (42 % DTO)",
         "title": "Duo Monographie Architecture",
         "price": "$69",
         "regularPrice": "$118",
-        "desc": "Onyx Atelier (79 €) + Vellum Edition (39 €). Conçu sur mesure pour agences d’architecture, designers d’espace et portfolios.",
+        "desc": "Onyx Atelier ($79) + Vellum Edition ($39). Conçu sur mesure pour agences d’architecture, designers d’espace et portfolios.",
         "cta": "Obtenir le Duo Architecture — $69",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {
-        "tag": "ARTISANAT & COMMERCE · ÉCONOMISEZ 67 € (36 % DTO)",
-        "title": "Suite Artisanat d’Art & E-Commerce",
-        "price": "$119",
+        "tag": "ARTISANAT & COMMERCE · ÉCONOMISEZ $87 (47 % DTO)",
+        "title": "Artisan Craft Pack",
+        "price": "$99",
         "regularPrice": "$186",
-        "desc": "TESSOVRA (69 €) + Halden Edition (59 €) + Grain & Form (58 €) (+ Slowgrain inclus). Sélectionné pour ateliers d’art et boutiques.",
-        "cta": "Obtenir la Suite Artisanat — 119 €",
+        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain inclus). Sélectionné pour ateliers d’art et boutiques.",
+        "cta": "Obtenir la Suite Artisanat — $99",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
       }
     ],
     "exclusiveEyebrow": "PACKS EXCLUSIFS & ACCÈS AU VAULT",
-    "exclusiveTitle": "Économisez jusqu’à 48 % avec nos packs de templates sélectionnés.",
+    "exclusiveTitle": "Économisez jusqu’à 53 % avec nos packs de templates sélectionnés.",
     "exclusiveDesc": "Templates Framer prêts pour la production réunis pour créateurs indépendants, studios et agences. 100 % natifs, collection complète avec accès remix immédiat en 1 clic.",
     "nicheTitle": "Packs Thématiques par Secteur",
     "nicheEyebrow": "DUOS CIBLÉS POUR INDUSTRIES SPÉCIFIQUES",
@@ -388,8 +388,8 @@
         "badge": "CHOIX SUR MESURE · ÉCONOMISEZ 48 %",
         "isFeatured": false,
         "title": "Pack Découverte 3 Templates",
-        "price": "99 €",
-        "regularPrice": "/ 190 € valeur catalogue (91 € d’économie · -48 %)",
+        "price": "$99",
+        "regularPrice": "/ $190 valeur catalogue ($91 d’économie · -48 %)",
         "desc": "Choisissez 3 templates au choix dans notre catalogue. Idéal pour freelances avec des projets clients immédiats.",
         "features": [
           "3 templates Framer pour la production au choix",
@@ -398,35 +398,35 @@
           "Archives CMS dynamiques et responsive soigné",
           "Déploiement pour un site en production par template"
         ],
-        "cta": "Choisir 3 templates — 99 €",
+        "cta": "Choisir 3 templates — $99",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/964d9218-93b1-4110-a9cf-c2a897adc31b?embed=1"
       },
       {
         "id": "solo-vault",
-        "badge": "LE PLUS POPULAIRE · ÉCONOMISEZ 227 € (-48 %)",
+        "badge": "LE PLUS POPULAIRE · ÉCONOMISEZ $227 (-48 %)",
         "isFeatured": true,
         "title": "Vault Studio Complet (Solo)",
-        "price": "245 €",
-        "regularPrice": "/ 472 € valeur catalogue",
+        "price": "$245",
+        "regularPrice": "/ $472 valeur catalogue",
         "desc": "Accès immédiat aux 7 templates payants + Slowgrain (Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum). La suite de design la plus complète pour créateurs exigeants.",
         "features": [
           "Les 7 templates payants + Slowgrain (Gratuit)",
-          "Aurelle (99 €) + Onyx (79 €) + Tessovra (69 €)",
-          "Mavric (69 €) + Halden (59 €) + Grain & Form (58 €)",
-          "Vellum Edition (39 €) incluse",
+          "Aurelle ($99) + Onyx ($79) + Tessovra ($69)",
+          "Mavric ($69) + Halden ($59) + Grain & Form ($58)",
+          "Vellum Edition ($39) incluse",
           "Bibliothèques de composants complètes & design tokens",
           "Licence commerciale individuelle par template"
         ],
-        "cta": "Débloquer le Vault Complet — 245 €",
+        "cta": "Débloquer le Vault Complet — $245",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/b482e2fd-0fa0-4433-9fc8-f91db20b9cf1?embed=1"
       },
       {
         "id": "agency-vault",
         "badge": "DROITS CLIENTS ILLIMITÉS · -48 %",
         "isFeatured": false,
-        "title": "Vault Studio Complet (Agence)",
-        "price": "499 €",
-        "regularPrice": "/ 960 € valeur commerciale (Économisez 461 € · -48 %)",
+        "title": "Complete Studio Vault (Agency Commercial License)",
+        "price": "$500",
+        "regularPrice": "/ $960 valeur commerciale (Économisez $460 · -48 %)",
         "desc": "Bibliothèque intégrale des 7 templates avec licence commerciale illimitée. Livrez des projets clients d’élite et conservez 100 % de vos revenus.",
         "features": [
           "Les 7 templates payants + Slowgrain (8 au total)",
@@ -436,57 +436,57 @@
           "Bibliothèques de composants complètes & design tokens",
           "Intégration et support développeur prioritaire"
         ],
-        "cta": "Obtenir le Vault Agence — 499 €",
+        "cta": "Obtenir le Vault Agence — $500",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e4d03d2d-2408-4a55-92e4-84c50735f47d?embed=1"
       }
     ],
     "nicheList": [
       {
         "id": "real-estate-duo",
-        "tag": "IMMOBILIER · ÉCONOMISEZ 69 € (41 % DTO)",
-        "title": "Duo Flagship Immobilier de Prestige",
-        "price": "99 €",
-        "regularPrice": "/ 168 € valeur catalogue",
-        "desc": "Aurelle Estates (99 €) + Mavric Estate (69 €). La boîte à outils incontournable pour agences de prestige et promoteurs.",
+        "tag": "IMMOBILIER · ÉCONOMISEZ $89 (53 % DTO)",
+        "title": "Real Estate Flagship Duo",
+        "price": "$79",
+        "regularPrice": "/ $168 valeur catalogue",
+        "desc": "Aurelle Estates ($99) + Mavric Estate ($69). La boîte à outils incontournable pour agences de prestige et promoteurs.",
         "features": [
-          "Aurelle Estates (99 €) template pour propriétés d’exception",
-          "Mavric Estate (69 €) portail pour courtiers et annonces",
+          "Aurelle Estates ($99) template pour propriétés d’exception",
+          "Mavric Estate ($69) portail pour courtiers et annonces",
           "Collections CMS dynamiques complètes intégrées",
           "Édition 100 % visuelle sans aucune compétence de code"
         ],
-        "cta": "Obtenir le Duo Immobilier — 99 €",
+        "cta": "Obtenir le Duo Immobilier — $79",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
       {
         "id": "architecture-duo",
-        "tag": "ARCHITECTURE · ÉCONOMISEZ 19 € (16 % DTO)",
+        "tag": "ARCHITECTURE · ÉCONOMISEZ $19 (16 % DTO)",
         "title": "Duo Monographie d’Architecture",
-        "price": "99 €",
-        "regularPrice": "/ 118 € valeur catalogue",
-        "desc": "Onyx Atelier (79 €) + Vellum Edition (39 €). Pensé pour les agences d’architecture, concepteurs d’espace et monographies.",
+        "price": "$99",
+        "regularPrice": "/ $118 valeur catalogue",
+        "desc": "Onyx Atelier ($79) + Vellum Edition ($39). Pensé pour les agences d’architecture, concepteurs d’espace et monographies.",
         "features": [
-          "Onyx Atelier (79 €) portfolio sombre d’esprit galerie",
-          "Vellum Edition (39 €) monographie épurée type livre d’art",
+          "Onyx Atelier ($79) portfolio sombre d’esprit galerie",
+          "Vellum Edition ($39) monographie épurée type livre d’art",
           "Grilles typographiques à fort contraste et mises en page",
           "Score 95+ Core Web Vitals garanti sans réglages complexes"
         ],
-        "cta": "Obtenir le Duo Architecture — 99 €",
+        "cta": "Obtenir le Duo Architecture — $99",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
       {
         "id": "artisan-suite",
-        "tag": "COMMERCE & ARTISANAT · ÉCONOMISEZ 67 € (36 % DTO)",
-        "title": "Suite Artisanat d’Art & E-Commerce",
-        "price": "119 €",
-        "regularPrice": "/ 186 € valeur catalogue",
-        "desc": "TESSOVRA (69 €) + Halden Edition (59 €) + Grain & Form (58 €) (+ Slowgrain Gratuit). Idéal pour ateliers d’art et boutiques.",
+        "tag": "COMMERCE & ARTISANAT · ÉCONOMISEZ $87 (47 % DTO)",
+        "title": "Artisan Craft Pack",
+        "price": "$99",
+        "regularPrice": "/ $186 valeur catalogue",
+        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Gratuit). Idéal pour ateliers d’art et boutiques.",
         "features": [
-          "TESSOVRA (69 €) vitrine e-commerce pour matières nobles",
-          "Halden Edition (59 €) mise en valeur de pièces de collection",
-          "Grain & Form (58 €) catalogue art de vivre et objets de créateurs",
+          "TESSOVRA ($69) vitrine e-commerce pour matières nobles",
+          "Halden Edition ($59) mise en valeur de pièces de collection",
+          "Grain & Form ($58) catalogue art de vivre et objets de créateurs",
           "Design tokens muséographiques SLOWGRAIN inclus"
         ],
-        "cta": "Obtenir la Suite Artisanale — 119 €",
+        "cta": "Obtenir la Suite Artisanale — $99",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
       }
     ]
