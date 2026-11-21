@@ -56,8 +56,15 @@ export default function HomePage() {
     '@context': 'https://schema.org',
     '@graph': [
       {
+        '@type': 'WebSite',
+        '@id': 'https://www.thesparkstudio.digital/#website',
+        'url': 'https://www.thesparkstudio.digital/',
+        'name': 'The Spark Studio',
+        'publisher': { '@id': 'https://www.thesparkstudio.digital/#organization' }
+      },
+      {
         '@type': 'ProfessionalService',
-        '@id': `${localizedUrl}#organization`,
+        '@id': 'https://www.thesparkstudio.digital/#organization',
         'name': 'The Spark Studio',
         'alternateName': ['Spark Studio', 'thesparkstudio.digital'],
         'url': localizedUrl,
@@ -69,7 +76,6 @@ export default function HomePage() {
         'priceRange': '$$',
         'sameAs': [
           'https://www.framer.com/@thesparkstudio',
-          'https://www.framer.com/@sparkstudio0',
           'https://www.linkedin.com/company/sparkstudio0'
         ]
       },
