@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import { MagneticButton, ScrambleText } from '../lib/framer-effects';
 import LiquidGradientShader from './LiquidGradientShader';
 
@@ -54,41 +53,28 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 pt-36 sm:pt-44 flex flex-col items-start gap-7">
         
         {/* Eyebrow */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }}
-        >
+        <div>
           <p className="font-mono text-xs uppercase tracking-[0.05em] text-[#8e97f7]">
             {t('hero.eyebrow') || 'PREMIUM FRAMER TEMPLATES & CUSTOM WEB DESIGN'}
           </p>
-        </motion.div>
+        </div>
 
         {/* Headline */}
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
+        <h1
           className="text-4xl sm:text-6xl md:text-[64px] font-extrabold text-[#f7f6fb] tracking-[-0.03em] leading-[1.05] max-w-[840px]"
         >
           {t('hero.title') || 'High-Performance Framer Websites & Templates Engineered to Scale.'}
-        </motion.h1>
+        </h1>
 
         {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
+        <p
           className="text-base sm:text-[17px] md:text-lg text-[#8b87a0] max-w-[620px] font-normal leading-[1.75] tracking-[-0.02em]"
         >
           {t('hero.description') || 'The Spark Studio designs high-performance Framer templates and custom websites for ambitious startups, creative studios, and modern businesses — visually editable, code-free, and built with 90+ PageSpeed scores out of the box.'}
-        </motion.p>
+        </p>
 
         {/* CTA Buttons with Magnetic Physics (Exact match to Image 1: Explore templates / Hire us for custom work) */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.45, ease: [0.2, 0.8, 0.2, 1] }}
+        <div
           className="flex flex-wrap items-center gap-4 pt-2"
         >
           {/* Primary CTA */}
@@ -110,7 +96,7 @@ export default function Hero() {
               <span>{t('hero.customCta') || 'Hire us for custom work'}</span>
             </a>
           </MagneticButton>
-        </motion.div>
+        </div>
 
       </div>
 
