@@ -64,7 +64,7 @@ const TEMPLATES = [
     badge: null,
     image: '/templates/mavric-estate.webp',
     demoUrl: 'https://mavric-estate.framer.website/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1'
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1'
   },
   {
     slug: 'aurelle-estates',
@@ -88,7 +88,7 @@ const TEMPLATES = [
     badge: 'Agent',
     image: '/templates/onyx-atelier.webp',
     demoUrl: 'https://sparkstudio-onyx.framer.website/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/8ef3a777-6fe5-4148-af7e-e1bb1bba39f7?embed=1'
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1'
   },
   {
     slug: 'vellum-edition',
@@ -112,7 +112,7 @@ const TEMPLATES = [
     badge: null,
     image: '/templates/halden-edition.webp',
     demoUrl: 'https://past-network-244230.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1'
+    buyUrl: null
   },
   {
     slug: 'grain-form',

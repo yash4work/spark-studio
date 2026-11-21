@@ -72,7 +72,7 @@ const TEMPLATE_META = {
     priceFr: '69 USD',
     numericPrice: '69.00',
     demoUrl: 'https://mavric-estate.framer.website/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1',
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1',
     remixUrl: 'https://framer.com/remix/A2wFOoozRxj7JhGKve5x',
     image: '/templates/mavric-estate.png',
     gallery: ['/templates/mavric-estate.png', '/assets/template1.png', '/assets/template2.png']
@@ -96,7 +96,7 @@ const TEMPLATE_META = {
     priceFr: '79 USD',
     numericPrice: '79.00',
     demoUrl: 'https://active-strengthening-218427.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/8ef3a777-6fe5-4148-af7e-e1bb1bba39f7?embed=1',
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1',
     remixUrl: 'https://framer.com/remix/qdTLRcAS411L53TOswm9',
     image: '/templates/onyx-atelier.png',
     gallery: ['/templates/onyx-atelier.png', '/assets/template3.png', '/assets/template4.png']
@@ -120,7 +120,7 @@ const TEMPLATE_META = {
     priceFr: '59 USD',
     numericPrice: '59.00',
     demoUrl: 'https://past-network-244230.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1',
+    buyUrl: null,
     remixUrl: 'https://framer.com/remix/y995Rq0IottjMfWKZwpL',
     image: '/templates/halden-edition.png',
     gallery: ['/templates/halden-edition.png', '/assets/template2.png', '/assets/template4.png']

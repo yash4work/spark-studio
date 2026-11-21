@@ -159,7 +159,7 @@
         "price": "69 €",
         "image": "/templates/mavric-estate.png",
         "demoUrl": "https://mavric-estate.framer.website/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1",
         "categoryKey": "real-estate"
       },
       {
@@ -181,7 +181,7 @@
         "price": "79 €",
         "image": "/templates/onyx-atelier.png",
         "demoUrl": "https://active-strengthening-218427.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/8ef3a777-6fe5-4148-af7e-e1bb1bba39f7?embed=1",
+        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1",
         "categoryKey": "architecture"
       },
       {
@@ -203,7 +203,7 @@
         "price": "59 €",
         "image": "/templates/halden-edition.png",
         "demoUrl": "https://past-network-244230.framer.app/",
-        "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1",
+        "buyUrl": null,
         "categoryKey": "real-estate"
       },
       {
