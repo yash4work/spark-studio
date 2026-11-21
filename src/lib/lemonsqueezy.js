@@ -21,10 +21,17 @@ export function initLemonSqueezy() {
             const attributes = order?.attributes || order;
             const id = order?.id || attributes?.identifier;
             if (!id || !attributes.currency || !Number.isFinite(attributes.total) || !checkoutItem) return;
+            const tax = attributes.tax ?? 0;
+            if (!Number.isFinite(tax) || tax < 0 || tax > attributes.total) return;
+            const value = (attributes.total - tax) / 100;
+            const quantity = attributes.first_order_item?.quantity ?? checkoutItem.quantity ?? 1;
+            if (!Number.isInteger(quantity) || quantity < 1) return;
             window.gtag('event', 'purchase', {
               transaction_id: String(id),
-              value: attributes.total / 100,
-              currency: attributes.currency, items: [checkoutItem]
+              value,
+              tax: tax / 100,
+              currency: attributes.currency,
+              items: [{ ...checkoutItem, price: value / quantity, quantity }]
             });
             checkoutItem = undefined;
           }
