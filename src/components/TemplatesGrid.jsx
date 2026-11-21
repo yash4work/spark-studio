@@ -112,7 +112,7 @@ const TEMPLATES = [
     badge: null,
     image: '/templates/halden-edition.webp',
     demoUrl: 'https://past-network-244230.framer.app/',
-    buyUrl: null
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1'
   },
   {
     slug: 'grain-form',
@@ -124,7 +124,7 @@ const TEMPLATES = [
     badge: null,
     image: '/templates/grain-form.webp',
     demoUrl: 'https://mindful-account-986092.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1'
+    buyUrl: null
   },
   {
     slug: 'slowgrain',

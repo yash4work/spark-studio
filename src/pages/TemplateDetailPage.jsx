@@ -120,7 +120,7 @@ const TEMPLATE_META = {
     priceFr: '59 USD',
     numericPrice: '59.00',
     demoUrl: 'https://past-network-244230.framer.app/',
-    buyUrl: null,
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1',
     remixUrl: 'https://framer.com/remix/y995Rq0IottjMfWKZwpL',
     image: '/templates/halden-edition.png',
     gallery: ['/templates/halden-edition.png', '/assets/template2.png', '/assets/template4.png']
@@ -132,7 +132,7 @@ const TEMPLATE_META = {
     priceFr: '58 USD',
     numericPrice: '58.00',
     demoUrl: 'https://mindful-account-986092.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1',
+    buyUrl: null,
     remixUrl: 'https://framer.com/remix/uJLrxhYatV1KDfmU9tMs',
     image: '/templates/grain-form.png',
     gallery: ['/templates/grain-form.png', '/assets/template1.png', '/assets/template3.png']
