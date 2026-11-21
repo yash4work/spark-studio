@@ -1,3 +1,4 @@
+import { localizedArticleSlugs } from '../data/localizedArticles.js';
 import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -68,7 +69,7 @@ export default function Navbar() {
       }
     }
 
-    if (pathWithoutLang.startsWith('/blog/') && code !== 'en') pathWithoutLang = '/blog';
+    if (pathWithoutLang.startsWith('/blog/') && !localizedArticleSlugs.includes(pathWithoutLang.slice(6)) && code !== 'en') pathWithoutLang = '/blog';
     if (code === 'en') {
       navigate(pathWithoutLang || '/');
     } else {

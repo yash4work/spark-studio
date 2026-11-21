@@ -1050,6 +1050,22 @@
       "readTime": "11 min de lectura",
       "date": "Noviembre 2026",
       "excerpt": "Una guía de compra ejecutiva que compara las mejores plantillas de Framer para agentes inmobiliarios de lujo, corredurías boutique y promotores. Cómo la narrativa editorial, la velocidad móvil ultrarrápida y los embudos VIP superan a las webs tradicionales."
+    },
+    "mobile-speed-framer-portfolio": {
+      "title": "Cómo averiguar por qué tarda en cargar un portfolio de Framer en el móvil",
+      "excerpt": "Abre una página de proyecto publicada en tu teléfono. ¿Puedes leer el título mientras esperas la fotografía?",
+      "category": "Rendimiento",
+      "date": "21 de noviembre de 2026",
+      "readTime": "2 min de lectura",
+      "content": "Abre una página de proyecto publicada en tu teléfono. ¿Puedes leer el título mientras esperas la fotografía? ¿O tardan en aparecer ambos? Empezar por esa diferencia te ahorra retocar imágenes cuando el retraso está en otro sitio.\n\nAnaliza la URL en PageSpeed Insights y selecciona la vista móvil. Busca el elemento que la herramienta identifica como LCP, la medida del tiempo que tarda en mostrarse el elemento visible de mayor tamaño. En un portfolio de arquitectura puede ser la foto principal o el propio título. Haz tres mediciones y anota qué elemento aparece en cada una.\n\nSi tarda la imagen, comprueba qué archivo descarga el teléfono. Un plano que se puede ampliar quizá necesite mucha resolución. Una foto de ambiente que ocupa el ancho de la pantalla puede admitir una versión más ligera. Compara ambas en el móvil y fíjate en las juntas, las sombras y los rótulos.\n\nSi tarda el título, duplica la página y desactiva su animación de entrada. Conserva la tipografía, las fotos y la composición. Repite la prueba en las mismas condiciones. Así podrás decidir si merece la pena cambiar la animación antes de rehacer la galería."
+    },
+    "furniture-product-page-photo-guide": {
+      "title": "Qué fotografiar para una ficha de mobiliario que ayude a elegir",
+      "excerpt": "Quien busca una silla para el comedor necesita saber si cabe bajo su mesa, cómo es el acabado y cómo pedir el modelo de la foto. Conviene resolver esas preguntas antes de cerrar la lista de tomas.",
+      "category": "Fotograf?a de mobiliario",
+      "date": "21 de noviembre de 2026",
+      "readTime": "2 min de lectura",
+      "content": "Quien busca una silla para el comedor necesita saber si cabe bajo su mesa, cómo es el acabado y cómo pedir el modelo de la foto. Conviene resolver esas preguntas antes de cerrar la lista de tomas.\n\nEmpieza con una vista completa de la silla. Añade una foto de perfil junto a una mesa y un detalle del ensamble o del tejido. Una segunda toma frontal aporta poco si todavía no se entiende la altura del asiento o la textura del respaldo.\n\nColoca las medidas, sus unidades y el acabado fotografiado en un mismo bloque. Si vendes la silla en roble y nogal, indica cuál se ve en cada imagen. Cuando el pedido se tramita por consulta, deja la referencia del modelo junto al enlace de contacto para que el comprador pueda pedir exactamente esa pieza.\n\nHaz la prueba con un producto real. Abre las vistas previas de Grain & Form y Halden Edition desde nuestro perfil de Framer e imagina tus fotos en ambos diseños. Elige aquel en el que resulte más fácil encontrar la altura del asiento y la forma de hacer el pedido. [Ver las plantillas del estudio en Framer](https://www.framer.com/@thesparkstudio/)"
     }
   }
 }

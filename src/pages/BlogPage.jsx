@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { articlePath } from '../data/localizedArticles.js';
 import { useTranslation } from 'react-i18next';
 import { Clock, Calendar, ArrowRight, Sparkles } from 'lucide-react';
 import SEOHead from '../components/SEOHead';
@@ -16,7 +17,7 @@ export default function BlogPage() {
     : BLOG_POSTS.filter((post) => post.categorySlug === activeCategory);
 
   const homePrefix = currentLang === 'en' ? '' : `/${currentLang}`;
-  const getPostUrl = (slug) => `/blog/${slug}`;
+  const getPostUrl = (slug) => articlePath(slug, homePrefix);
 
   // Structured Data for Blog
   const blogSchema = {
@@ -45,7 +46,7 @@ export default function BlogPage() {
       'headline': t(`blogPosts.${post.slug}.title`) || post.title,
       'description': t(`blogPosts.${post.slug}.excerpt`) || post.excerpt,
       'datePublished': post.isoDate,
-      'url': `https://www.thesparkstudio.digital/blog/${post.slug}`,
+      'url': `https://www.thesparkstudio.digital${getPostUrl(post.slug)}`,
       'inLanguage': currentLang,
       'author': {
         '@type': 'Person',

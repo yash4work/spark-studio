@@ -1,3 +1,4 @@
+import { articlePath } from '../data/localizedArticles.js';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, ArrowRight, Clock, Calendar, Sparkles } from 'lucide-react';
@@ -51,7 +52,7 @@ export default function BlogSection() {
               >
                 <div>
                   {/* Image */}
-                  <Link to={`/blog/${post.slug}`} className="block aspect-[16/10] overflow-hidden relative">
+                  <Link to={articlePath(post.slug, homePrefix)} className="block aspect-[16/10] overflow-hidden relative">
                     <img
                       src={post.featuredImage}
                       alt={postTitle}
@@ -79,7 +80,7 @@ export default function BlogSection() {
                     </div>
 
                     <h3 className="text-xl font-bold text-[#f7f6fb] font-heading mb-3 group-hover:text-[#8e97f7] transition-colors leading-snug">
-                      <Link to={`/blog/${post.slug}`}>
+                      <Link to={articlePath(post.slug, homePrefix)}>
                         {postTitle}
                       </Link>
                     </h3>
@@ -109,7 +110,7 @@ export default function BlogSection() {
                   </div>
 
                   <Link
-                    to={`/blog/${post.slug}`}
+                    to={articlePath(post.slug, homePrefix)}
                     className="inline-flex items-center gap-1 text-xs font-semibold text-[#8e97f7] group-hover:text-[#ff6a45] transition-colors"
                   >
                     <span>{t('blog.readGuide') || 'Read Guide'}</span>

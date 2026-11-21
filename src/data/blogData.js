@@ -1,4 +1,44 @@
 export const BLOG_POSTS = [
+{
+  "title": "How to find what slows down a Framer portfolio on mobile",
+  "excerpt": "Open one published project page on your phone. Watch the first screen.",
+  "category": "Performance",
+  "date": "November 21, 2026",
+  "readTime": "2 min read",
+  "content": "Open one published project page on your phone. Watch the first screen. Does the title appear while the photograph is still empty? Or does the whole screen arrive late? Those two experiences feel equally slow, but they call for different fixes.\n\nRun the same URL through PageSpeed Insights in mobile mode. Find the element identified as Largest Contentful Paint (LCP). On an architecture portfolio it might be a photograph, but it can also be the project title. Record the element and timing over three runs before editing anything.\n\nIf the photograph is late, inspect the image actually downloaded at phone width. A full-resolution architectural elevation may be justified in a detail view, while the opening photograph only needs enough detail for the space it occupies. Try a smaller export. Compare both versions on a phone, paying attention to fine lines, shadows and lettering.\n\nIf the title is late, make a copy of the page and remove its entrance animation. Retest with the same font and layout. If the title appears sooner, you have narrowed the problem without touching the photography. Change one variable at a time and keep the version that makes the project readable sooner.",
+  "slug": "mobile-speed-framer-portfolio",
+  "categorySlug": "engineering",
+  "isoDate": "2026-11-21",
+  "author": {
+    "name": "The Spark Studio",
+    "role": "Studio",
+    "avatar": "/assets/spark_studio_avatar.jpg"
+  },
+  "featuredImage": "/templates/onyx-atelier.webp",
+  "tags": [
+    "Framer"
+  ]
+},
+{
+  "title": "What to put on a furniture product page before your next photo shoot",
+  "excerpt": "A visitor considering a dining chair usually has three practical questions. Will it fit under the table?",
+  "category": "Product photography",
+  "date": "November 21, 2026",
+  "readTime": "2 min read",
+  "content": "A visitor considering a dining chair usually has three practical questions. Will it fit under the table? What does the finish look like up close? How do I order the version in the photo? Build the page around those questions before choosing the final images.\n\nStart with one photograph that shows the whole chair. Follow it with a side view beside a table, then a close-up of the joint or upholstery. Give each photograph a job. A second front view in slightly different light is less useful than a clear measurement from floor to seat.\n\nPut dimensions, units and the photographed finish close together. If the chair comes in oak and walnut, identify which one the visitor is looking at. When orders are made by enquiry, place the product name and finish beside that link so the buyer can ask about a specific piece.\n\nTry this exercise with one real product before choosing a layout. Open the Grain & Form and Halden Edition previews from our Framer profile. Imagine replacing the sample photography with your three shots. Choose the layout in which a visitor can find the seat height and ordering details most easily. [Browse the studio’s Framer templates](https://www.framer.com/@thesparkstudio/)",
+  "slug": "furniture-product-page-photo-guide",
+  "categorySlug": "templates",
+  "isoDate": "2026-11-21",
+  "author": {
+    "name": "The Spark Studio",
+    "role": "Studio",
+    "avatar": "/assets/spark_studio_avatar.jpg"
+  },
+  "featuredImage": "/templates/grain-form.webp",
+  "tags": [
+    "Framer"
+  ]
+},
   {
     slug: 'best-luxury-real-estate-framer-templates-for-brokers',
     title: "Best Luxury Real Estate Framer Templates for Brokers (2026)",

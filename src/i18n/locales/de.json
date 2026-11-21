@@ -1050,6 +1050,22 @@
       "readTime": "11 Min. Lesezeit",
       "date": "November 2026",
       "excerpt": "Ein detaillierter Einkaufsleitfaden für Luxus-Immobilienmakler, Boutique-Agenturen und Bauträger im Vergleich der besten Framer-Vorlagen. Wie redaktionelles Storytelling, blitzschnelle Ladezeiten und diskrete VIP-Lead-Funnels veraltete Makler-Websites übertreffen."
+    },
+    "mobile-speed-framer-portfolio": {
+      "title": "Warum lädt mein Framer-Portfolio auf dem Smartphone langsam?",
+      "excerpt": "Öffne eine veröffentlichte Projektseite auf deinem Smartphone. Ist der Projekttitel sofort lesbar, während das Foto noch fehlt?",
+      "category": "Ladezeit",
+      "date": "21. November 2026",
+      "readTime": "2 Min. Lesezeit",
+      "content": "Öffne eine veröffentlichte Projektseite auf deinem Smartphone. Ist der Projekttitel sofort lesbar, während das Foto noch fehlt? Oder wartest du zunächst auch auf den Text? Diese Beobachtung hilft dir, den ersten Test auszuwählen.\n\nPrüfe die Adresse mit PageSpeed Insights in der mobilen Ansicht. Schau nach, welches Element für den Largest Contentful Paint (LCP) erfasst wurde. Der Wert beschreibt, wann das größte sichtbare Inhaltselement erscheint. In einem Architekturportfolio kann das sowohl die erste Fotografie als auch die Überschrift sein. Wiederhole die Messung dreimal und notiere jeweils das Element und die Zeit.\n\nErscheint das Foto spät, prüfe die Abmessungen der Datei, die das Smartphone tatsächlich lädt. Eine vergrößerbare Bauzeichnung braucht unter Umständen eine hohe Auflösung. Für ein Stimmungsbild in Bildschirmbreite lohnt sich ein kleinerer Export. Vergleiche auf dem Gerät besonders feine Linien, Beschriftungen und Schattenverläufe.\n\nErscheint die Überschrift spät, dupliziere die Seite und deaktiviere nur ihre Einblendanimation. Lass Schrift, Layout und Bilder unverändert. Miss erneut. So kannst du beurteilen, ob der Text früher lesbar wird, bevor du Zeit in die Überarbeitung der gesamten Galerie steckst."
+    },
+    "furniture-product-page-photo-guide": {
+      "title": "Möbel fotografieren: Welche Bilder braucht eine gute Produktseite?",
+      "excerpt": "Bei einem Esszimmerstuhl stellen sich vor dem Kauf drei praktische Fragen. Passt er unter den Tisch?",
+      "category": "M?belfotografie",
+      "date": "21. November 2026",
+      "readTime": "2 Min. Lesezeit",
+      "content": "Bei einem Esszimmerstuhl stellen sich vor dem Kauf drei praktische Fragen. Passt er unter den Tisch? Wie sieht die Oberfläche aus der Nähe aus? Wie bestelle ich genau die abgebildete Ausführung? Diese Fragen ergeben bereits eine brauchbare Aufnahmeliste.\n\nFotografiere zuerst den gesamten Stuhl. Ergänze eine Seitenansicht neben einem Tisch und eine Detailaufnahme der Holzverbindung oder des Bezugs. Ein zweites, fast identisches Frontfoto hilft wenig, wenn Sitzhöhe oder Material noch unklar sind.\n\nPlatziere Maße, Einheiten und die Bezeichnung der gezeigten Oberfläche nah beieinander. Gibt es den Stuhl in Eiche und Nussbaum, sollte unter dem Bild die jeweilige Ausführung stehen. Erfolgt die Bestellung auf Anfrage, gehört die Modellbezeichnung direkt zum Kontaktlink.\n\nTeste den Aufbau mit einem Möbelstück aus deinem Sortiment. Öffne die Vorschau von Grain & Form und Halden Edition über unser Framer-Profil und setze gedanklich deine drei Aufnahmen ein. Bei welchem Entwurf findest du Sitzhöhe und Bestellmöglichkeit auf Anhieb? [Framer-Vorlagen des Studios ansehen](https://www.framer.com/@thesparkstudio/)"
     }
   }
 }

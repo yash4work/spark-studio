@@ -1050,6 +1050,22 @@
       "readTime": "11 min de lecture",
       "date": "Novembre 2026",
       "excerpt": "Guide d'achat comparatif des meilleurs templates Framer pour courtiers en immobilier de luxe, agences haut de gamme et promoteurs. Comment la narration éditoriale, les vitesses mobiles ultra-rapides et les tunnels VIP surpassent les sites traditionnels."
+    },
+    "mobile-speed-framer-portfolio": {
+      "title": "Site Framer lent sur mobile : comment trouver ce qui retarde l’affichage",
+      "excerpt": "Ouvrez une fiche projet sur votre téléphone. Le titre apparaît-il bien avant la photo ?",
+      "category": "Performance",
+      "date": "21 novembre 2026",
+      "readTime": "2 min de lecture",
+      "content": "Ouvrez une fiche projet sur votre téléphone. Le titre apparaît-il bien avant la photo ? Ou attendez-vous plusieurs secondes avant de pouvoir lire le moindre mot ? Cette première observation permet de choisir quoi tester.\n\nAnalysez l’adresse publiée dans PageSpeed Insights en mode mobile. Repérez l’élément associé au LCP, l’indicateur qui mesure le délai d’affichage du plus grand élément visible. Sur un portfolio d’architecture, il peut s’agir de la photo d’ouverture comme du titre du projet. Faites trois essais et notez l’élément identifié à chaque fois.\n\nSi la photo arrive tard, vérifiez les dimensions du fichier téléchargé sur téléphone. Un plan destiné à être agrandi peut justifier une image très détaillée. Pour une photo d’ambiance affichée sur la largeur de l’écran, essayez un export plus léger. Comparez les deux versions sur la finesse des lignes, les ombres et les inscriptions.\n\nSi le titre tarde à apparaître, dupliquez la page et désactivez uniquement son animation d’entrée. Gardez la même police et la même mise en page. Relancez la mesure. Vous saurez ainsi si cette animation retarde la lecture, avant de passer du temps à retravailler toute la galerie."
+    },
+    "furniture-product-page-photo-guide": {
+      "title": "Fiche produit de mobilier : quelles photos prévoir avant la prise de vue ?",
+      "excerpt": "Pour choisir une chaise de salle à manger, il faut pouvoir se représenter sa hauteur sous la table, reconnaître sa finition et savoir comment commander le modèle présenté. Ces trois besoins donnent un fil conducteur à la séance photo.",
+      "category": "Photographie de mobilier",
+      "date": "21 novembre 2026",
+      "readTime": "2 min de lecture",
+      "content": "Pour choisir une chaise de salle à manger, il faut pouvoir se représenter sa hauteur sous la table, reconnaître sa finition et savoir comment commander le modèle présenté. Ces trois besoins donnent un fil conducteur à la séance photo.\n\nPrévoyez d’abord une vue d’ensemble. Photographiez ensuite la chaise de profil, à côté d’une table, puis cadrez un assemblage ou le grain du tissu. Si vous hésitez entre deux vues de face très proches, choisissez plutôt un cliché qui explique un détail encore invisible.\n\nSur la fiche, rapprochez les dimensions, leur unité et le nom de la finition photographiée. Pour une chaise disponible en chêne et en noyer, une simple légende évite de laisser le lecteur deviner. Si la commande passe par une demande de devis, affichez la référence du modèle près du bouton de contact.\n\nFaites l’essai avec une pièce de votre collection. Ouvrez les aperçus de Grain & Form et de Halden Edition sur notre profil Framer. Imaginez vos trois photos dans chaque composition. Dans laquelle retrouve-t-on le plus facilement la hauteur d’assise et les modalités de commande ? [Voir les modèles Framer du studio](https://www.framer.com/@thesparkstudio/)"
     }
   }
 }

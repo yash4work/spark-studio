@@ -1,3 +1,4 @@
+import { localizedArticleSlugs } from '../src/data/localizedArticles.js';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -93,6 +94,15 @@ ${alternates}
 BLOG_SLUGS.forEach(slug => {
   entries.push(`  <url><loc>${BASE_URL}/blog/${slug}</loc></url>`);
 });
+
+for (const slug of localizedArticleSlugs) {
+  const route = prefix => prefix + '/blog/' + slug;
+  for (const lang of LANGUAGES) {
+    entries.push(`  <url><loc>${BASE_URL}${route(lang.prefix)}</loc>
+${getAlternates(route)}
+  </url>`);
+  }
+}
 
 // 4. Template Detail Pages
 TEMPLATE_SLUGS.forEach(slug => {

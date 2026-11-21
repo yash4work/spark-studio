@@ -1,3 +1,4 @@
+import { localizedArticleSlugs } from '../data/localizedArticles.js';
 import { createContext, useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
@@ -137,7 +138,7 @@ export default function SEOHead({
     };
 
     document.querySelectorAll('link[hreflang]').forEach(link => link.remove());
-    (noindex ? [] : barePath.startsWith('/blog/') ? ['en'] : SUPPORTED_LANGS).forEach((lang) => {
+    (noindex ? [] : barePath.startsWith('/blog/') && !localizedArticleSlugs.includes(barePath.slice(6)) ? ['en'] : SUPPORTED_LANGS).forEach((lang) => {
       setHreflang(lang, getLocalizedUrl(lang));
     });
     if (!noindex) setHreflang('x-default', getLocalizedUrl('en'));

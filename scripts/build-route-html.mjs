@@ -1,3 +1,4 @@
+import { localizedArticleSlugs } from '../src/data/localizedArticles.js';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { render } from '../node_modules/.cache/spark-render/render.js';
@@ -25,7 +26,7 @@ for (const route of [...routes, '/404']) {
     .replace(/(<meta (?:name|property)="([^"]+)" content=")[^"]*/g, (all, lead, key) => key in tags ? lead + escape(tags[key]) : all)
     .replace(/(<link rel="canonical" href=")[^"]*/, '$1' + canonical)
     .replace(/<link rel="alternate" hreflang="([^"]+)"[^>]*>/g, (_, code) => {
-      if (head.noindex || (bare.startsWith('/blog/') && !['en','x-default'].includes(code))) return '';
+      if (head.noindex || (bare.startsWith('/blog/') && !localizedArticleSlugs.includes(bare.slice(6)) && !['en','x-default'].includes(code))) return '';
       const prefix = ['en','x-default'].includes(code) ? '' : '/' + code;
       return `<link rel="alternate" hreflang="${code}" href="${base}${(prefix + (bare === '/' ? '' : bare)) || '/'}" />`;
     })

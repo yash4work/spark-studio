@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { articlePath } from '../data/localizedArticles.js';
 import { useTranslation } from 'react-i18next';
 import { ArrowLeft, Clock, Calendar, Share2, Check, Sparkles, ArrowRight } from 'lucide-react';
 import SEOHead from '../components/SEOHead';
@@ -495,7 +496,7 @@ export default function BlogPostPage() {
               return (
                 <Link
                   key={p.slug}
-                  to={`${homePrefix}/blog/${p.slug}`}
+                  to={articlePath(p.slug, homePrefix)}
                   className="group p-6 rounded-2xl bg-[#171523] border border-white/10 hover:border-[#8e97f7]/40 transition-all flex flex-col justify-between"
                 >
                   <div>
