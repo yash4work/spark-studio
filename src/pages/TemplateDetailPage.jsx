@@ -66,14 +66,15 @@ const TEMPLATE_META = {
     gallery: ['/templates/healthcare.webp', '/assets/template3.png', '/assets/template4.png']
   },
   'mavric-estate': {
-    price: '$69',
-    priceDe: '69 USD',
-    priceEs: '69 USD',
-    priceFr: '69 USD',
-    numericPrice: '69.00',
+    price: 'Free',
+    priceDe: 'Kostenlos',
+    priceEs: 'Gratis',
+    priceFr: 'Gratuit',
+    numericPrice: '0.00',
     demoUrl: 'https://mavric-estate.framer.website/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1',
-    remixUrl: 'https://framer.com/remix/A2wFOoozRxj7JhGKve5x',
+    buyUrl: null,
+    remixUrl: 'https://framer.link/a7rXdZO?duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/mavric-estate/',
     image: '/templates/mavric-estate.png',
     gallery: ['/templates/mavric-estate.png', '/assets/template1.png', '/assets/template2.png']
   },
@@ -85,55 +86,60 @@ const TEMPLATE_META = {
     numericPrice: '99.00',
     demoUrl: 'https://wandering-variations-344785.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/c111b344-dc0c-4931-aa46-55f1d0dc49c8?embed=1',
-    remixUrl: 'https://framer.com/remix/kktBLW5OAcjQ8farEylL',
+    remixUrl: 'https://framer.link/P1YdVXM?duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/aurelle-estates/',
     image: '/templates/aurelle-estates.png',
     gallery: ['/templates/aurelle-estates.png', '/assets/template2.png', '/assets/template3.png']
   },
   'onyx-atelier': {
-    price: '$79',
-    priceDe: '79 USD',
-    priceEs: '79 USD',
-    priceFr: '79 USD',
-    numericPrice: '79.00',
-    demoUrl: 'https://active-strengthening-218427.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1',
-    remixUrl: 'https://framer.com/remix/qdTLRcAS411L53TOswm9',
+    price: 'Free',
+    priceDe: 'Kostenlos',
+    priceEs: 'Gratis',
+    priceFr: 'Gratuit',
+    numericPrice: '0.00',
+    demoUrl: 'https://sparkstudio-onyx.framer.website/',
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=JEVoQhQwQzyQ3Bm1MmTB&duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/onyx-atelier/',
     image: '/templates/onyx-atelier.png',
     gallery: ['/templates/onyx-atelier.png', '/assets/template3.png', '/assets/template4.png']
   },
   'vellum-edition': {
-    price: '$39',
-    priceDe: '39 USD',
-    priceEs: '39 USD',
-    priceFr: '39 USD',
-    numericPrice: '39.00',
+    price: 'Free',
+    priceDe: 'Kostenlos',
+    priceEs: 'Gratis',
+    priceFr: 'Gratuit',
+    numericPrice: '0.00',
     demoUrl: 'https://unlimited-mind-018782.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/af57a897-c648-4ba7-aa29-b06f4fa4d498?embed=1',
-    remixUrl: 'https://framer.com/remix/bedsbRAX0HralLdA1OFW',
+    buyUrl: null,
+    remixUrl: 'https://framer.link/gnmQCXS?duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/vellum-edition/',
     image: '/templates/vellum-edition.png',
     gallery: ['/templates/vellum-edition.png', '/assets/template4.png', '/assets/template1.png']
   },
   'halden-edition': {
-    price: '$59',
-    priceDe: '59 USD',
-    priceEs: '59 USD',
-    priceFr: '59 USD',
-    numericPrice: '59.00',
+    price: 'Free',
+    priceDe: 'Kostenlos',
+    priceEs: 'Gratis',
+    priceFr: 'Gratuit',
+    numericPrice: '0.00',
     demoUrl: 'https://past-network-244230.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1',
-    remixUrl: 'https://framer.com/remix/y995Rq0IottjMfWKZwpL',
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=9E30JFnUiTHbMaHTtUrj&duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/halden-edition/',
     image: '/templates/halden-edition.png',
     gallery: ['/templates/halden-edition.png', '/assets/template2.png', '/assets/template4.png']
   },
   'grain-form': {
-    price: '$58',
-    priceDe: '58 USD',
-    priceEs: '58 USD',
-    priceFr: '58 USD',
-    numericPrice: '58.00',
+    price: 'Free',
+    priceDe: 'Kostenlos',
+    priceEs: 'Gratis',
+    priceFr: 'Gratuit',
+    numericPrice: '0.00',
     demoUrl: 'https://mindful-account-986092.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/a0ece10b-8ec0-49ab-8371-1be6935e9eab?embed=1',
-    remixUrl: 'https://framer.com/remix/uJLrxhYatV1KDfmU9tMs',
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=1dnNbY4wtemEHRvd6o8j&duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/grain-form/',
     image: '/templates/grain-form.png',
     gallery: ['/templates/grain-form.png', '/assets/template1.png', '/assets/template3.png']
   },
@@ -145,43 +151,47 @@ const TEMPLATE_META = {
     numericPrice: '0.00',
     demoUrl: 'https://prosperous-statuses-272584.framer.app/style-guide',
     buyUrl: null,
-    remixUrl: 'https://framer.com/remix/52YnIzlJOEXddxCP5O1n',
+    remixUrl: 'https://framer.com/remix/52YnIzlJOEXddxCP5O1n?duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/slowgrain/',
     image: '/templates/slowgrain.png',
     gallery: ['/templates/slowgrain.png', '/assets/template3.png', '/assets/template2.png']
   },
   'terra': {
-    price: '$69',
-    priceDe: '69 USD',
-    priceEs: '69 USD',
-    priceFr: '69 USD',
-    numericPrice: '69.00',
+    price: 'Free',
+    priceDe: 'Kostenlos',
+    priceEs: 'Gratis',
+    priceFr: 'Gratuit',
+    numericPrice: '0.00',
     demoUrl: 'https://vibrant-checkbox-000943.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1',
-    remixUrl: 'https://www.framer.com/marketplace/templates/terra/',
+    buyUrl: null,
+    remixUrl: 'https://framer.com/remix/5khLh82TJAgBeWttovCI?duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/terra/',
     image: 'https://framerusercontent.com/images/H2DMerPuJWTvVUiihF3BX14Wdo.png',
     gallery: ['https://framerusercontent.com/images/H2DMerPuJWTvVUiihF3BX14Wdo.png', '/assets/template1.png', '/assets/template2.png']
   },
   'sasso-architect': {
-    price: '$69',
-    priceDe: '69 USD',
-    priceEs: '69 USD',
-    priceFr: '69 USD',
-    numericPrice: '69.00',
+    price: 'Free',
+    priceDe: 'Kostenlos',
+    priceEs: 'Gratis',
+    priceFr: 'Gratuit',
+    numericPrice: '0.00',
     demoUrl: 'https://small-bookings-302943.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/ec2dbd50-66e1-44d5-b412-588da7f013d8?embed=1',
-    remixUrl: 'https://www.framer.com/marketplace/templates/sasso-architect/',
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=Nx2FW4YFoqGsURIKQjbh&duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/sasso-architect/',
     image: 'https://framerusercontent.com/images/vXQOoXIJexVdw0e3emiEMLvyOds.png',
     gallery: ['https://framerusercontent.com/images/vXQOoXIJexVdw0e3emiEMLvyOds.png', '/assets/template2.png', '/assets/template3.png']
   },
   'tessovra': {
-    price: '$69',
-    priceDe: '69 USD',
-    priceEs: '69 USD',
-    priceFr: '69 USD',
-    numericPrice: '69.00',
+    price: '$89',
+    priceDe: '89 USD',
+    priceEs: '89 USD',
+    priceFr: '89 USD',
+    numericPrice: '89.00',
     demoUrl: 'https://hilarious-variations-838642.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/02daec5f-f201-48aa-8636-d120270b5adc?embed=1',
-    remixUrl: 'https://www.framer.com/marketplace/templates/tessovra/',
+    remixUrl: 'https://framer.link/F4RmFtN?duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/tessovra/',
     image: 'https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png',
     gallery: ['https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png', '/assets/template1.png', '/assets/template3.png']
   }
@@ -449,8 +459,21 @@ export default function TemplateDetailPage() {
               </div>
 
               <div className="flex flex-col sm:flex-row items-center gap-4">
-                {slug === "slowgrain" ? (
-                  <a className="framer-btn-primary" href={meta.remixUrl}>{localizedPrice} · SLOWGRAIN ↗</a>
+                {meta.price === 'Free' && meta.remixUrl ? (
+                  <a
+                    href={meta.remixUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-white transition-all shadow-lg hover:opacity-90 active:scale-[0.99] cursor-pointer"
+                    style={{
+                      background: 'linear-gradient(120deg, rgb(108, 79, 232) 0%, rgb(255, 106, 69) 100%)'
+                    }}
+                  >
+                    <Sparkles className="w-4 h-4" />
+                    <span>
+                      {t('detailPage.remixFree') || 'Remix in Framer (Free) ↗'}
+                    </span>
+                  </a>
                 ) : meta.buyUrl ? (
                   <a
                     href={meta.buyUrl}
@@ -480,6 +503,18 @@ export default function TemplateDetailPage() {
                     <span>
                       {meta.price === 'Free' ? 'Download Free Template' : 'Commission Similar Build →'}
                     </span>
+                  </a>
+                )}
+
+                {meta.marketplaceUrl && (
+                  <a
+                    href={meta.marketplaceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-[#f7f6fb] bg-white/[0.04] hover:bg-white/[0.08] border border-white/20 transition-colors"
+                  >
+                    <span>Framer Marketplace</span>
+                    <ArrowUpRight className="w-4 h-4" />
                   </a>
                 )}
 

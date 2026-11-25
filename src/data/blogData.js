@@ -458,7 +458,7 @@ Absolutely. Interior designers with rich photography collections find Vellum to 
 
 1. Preview the [Live Interactive Demo](https://unlimited-mind-018782.framer.app/)
 2. View Full Template Specs at [Vellum Edition Details](/templates/vellum-edition)
-3. Instant 1-Click Remix on Lemon Squeezy for $39
+3. Instant [Free 1-Click Remix on Framer](https://framer.link/gnmQCXS?duplicateType=siteTemplate&via=thesparkstudio)
 `
   },
   {
@@ -707,7 +707,7 @@ None. SLOWGRAIN is built with 100% native Framer components, ensuring zero exter
 ## How to Get SLOWGRAIN for Free
 
 1. Explore the [Live Interactive Style Guide](https://prosperous-statuses-272584.framer.app/style-guide)
-2. Claim your [Free 1-Click Remix on Framer](https://framer.com/remix/52YnIzlJOEXddxCP5O1n)
+2. Claim your [Free 1-Click Remix on Framer](https://framer.com/remix/52YnIzlJOEXddxCP5O1n?duplicateType=siteTemplate&via=thesparkstudio)
 3. View template details at [SLOWGRAIN Template Page](/templates/slowgrain)
 `
   },

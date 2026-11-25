@@ -60,11 +60,13 @@ const TEMPLATES = [
     category: 'Modern real estate CMS & realtor',
     categoryKey: 'real-estate',
     tagline: 'Generic realtor websites lose leads to Zillow. Mavric Estate is engineered to capture them.',
-    price: '$69',
-    badge: null,
+    price: 'Free',
+    badge: 'Agent',
     image: '/templates/mavric-estate.webp',
     demoUrl: 'https://mavric-estate.framer.website/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1'
+    buyUrl: null,
+    remixUrl: 'https://framer.link/a7rXdZO?duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/mavric-estate/'
   },
   {
     slug: 'aurelle-estates',
@@ -76,7 +78,8 @@ const TEMPLATES = [
     badge: 'Agent',
     image: '/templates/aurelle-estates.webp',
     demoUrl: 'https://wandering-variations-344785.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/c111b344-dc0c-4931-aa46-55f1d0dc49c8?embed=1'
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/c111b344-dc0c-4931-aa46-55f1d0dc49c8?embed=1',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/aurelle-estates/'
   },
   {
     slug: 'onyx-atelier',
@@ -84,11 +87,13 @@ const TEMPLATES = [
     category: 'Monolithic architecture & interior',
     categoryKey: 'architecture',
     tagline: 'Most architecture portfolios look like generic image grids. Onyx Atelier is built like an exhibition monograph.',
-    price: '$79',
+    price: 'Free',
     badge: 'Agent',
     image: '/templates/onyx-atelier.webp',
     demoUrl: 'https://sparkstudio-onyx.framer.website/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1'
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=JEVoQhQwQzyQ3Bm1MmTB&duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/onyx-atelier/'
   },
   {
     slug: 'vellum-edition',
@@ -96,11 +101,13 @@ const TEMPLATES = [
     category: 'Editorial architecture portfolio',
     categoryKey: 'craft',
     tagline: 'A quiet, art-book monograph for architecture studios that let photography and material narratives lead.',
-    price: '$39',
+    price: 'Free',
     badge: 'Agent',
     image: '/templates/vellum-edition.webp',
     demoUrl: 'https://unlimited-mind-018782.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/af57a897-c648-4ba7-aa29-b06f4fa4d498?embed=1'
+    buyUrl: null,
+    remixUrl: 'https://framer.link/gnmQCXS?duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/vellum-edition/'
   },
   {
     slug: 'halden-edition',
@@ -108,11 +115,13 @@ const TEMPLATES = [
     category: 'Custom furniture & object studio',
     categoryKey: 'real-estate',
     tagline: 'Mass-market shop templates kill artisanal value. Halden Edition is curated for collectible craft.',
-    price: '$59',
-    badge: null,
+    price: 'Free',
+    badge: 'Agent',
     image: '/templates/halden-edition.webp',
     demoUrl: 'https://past-network-244230.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1'
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=9E30JFnUiTHbMaHTtUrj&duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/halden-edition/'
   },
   {
     slug: 'grain-form',
@@ -120,11 +129,13 @@ const TEMPLATES = [
     category: 'Artisan homeware & tactile commerce',
     categoryKey: 'architecture',
     tagline: 'Generic online shops feel disposable. Grain & Form makes home decor feel personal and tactile.',
-    price: '$58',
-    badge: null,
+    price: 'Free',
+    badge: 'Agent',
     image: '/templates/grain-form.webp',
     demoUrl: 'https://mindful-account-986092.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/a0ece10b-8ec0-49ab-8371-1be6935e9eab?embed=1'
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=1dnNbY4wtemEHRvd6o8j&duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/grain-form/'
   },
   {
     slug: 'slowgrain',
@@ -136,7 +147,9 @@ const TEMPLATES = [
     badge: null,
     image: '/templates/slowgrain.webp',
     demoUrl: 'https://prosperous-statuses-272584.framer.app/style-guide',
-    buyUrl: null
+    buyUrl: null,
+    remixUrl: 'https://framer.com/remix/52YnIzlJOEXddxCP5O1n?duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/slowgrain/'
   },
   {
     slug: 'terra',
@@ -144,11 +157,12 @@ const TEMPLATES = [
     category: 'Editorial store for furniture & design galleries',
     categoryKey: 'craft',
     tagline: 'A quiet, editorial store template engineered for furniture studios, object makers, and contemporary design galleries.',
-    price: '$69',
+    price: 'Free',
     badge: 'Agent',
     image: 'https://framerusercontent.com/images/H2DMerPuJWTvVUiihF3BX14Wdo.png',
     demoUrl: 'https://vibrant-checkbox-000943.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1',
+    buyUrl: null,
+    remixUrl: 'https://framer.com/remix/5khLh82TJAgBeWttovCI?duplicateType=siteTemplate&via=thesparkstudio',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/terra/'
   },
   {
@@ -157,11 +171,12 @@ const TEMPLATES = [
     category: 'Architecture & interior studio monograph',
     categoryKey: 'architecture',
     tagline: 'Architecture & Interior Studio — Monograph-grade digital flagship for boutique architecture studios, spatial ateliers, and interior practices.',
-    price: '$69',
+    price: 'Free',
     badge: 'Agent',
     image: 'https://framerusercontent.com/images/vXQOoXIJexVdw0e3emiEMLvyOds.png',
     demoUrl: 'https://small-bookings-302943.framer.app/',
-    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/ec2dbd50-66e1-44d5-b412-588da7f013d8?embed=1',
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=Nx2FW4YFoqGsURIKQjbh&duplicateType=siteTemplate&via=thesparkstudio',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/sasso-architect/'
   },
   {
@@ -170,7 +185,7 @@ const TEMPLATES = [
     category: 'Tile & surface ecommerce showroom',
     categoryKey: 'craft',
     tagline: 'Tile & Surface Ecommerce Showroom — Architectural ecommerce crafted for tactile surfaces, custom interiors, and design ateliers.',
-    price: '$69',
+    price: '$89',
     badge: 'Agent',
     image: 'https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png',
     demoUrl: 'https://hilarious-variations-838642.framer.app/',
@@ -478,6 +493,18 @@ export default function TemplatesGrid() {
                           Request build →
                         </a>
                       </MagneticButton>
+                    ) : template.price === 'Free' ? (
+                      <MagneticButton>
+                        <a
+                          href={template.remixUrl || getTemplateLink(template.slug)}
+                          target={template.remixUrl ? "_blank" : undefined}
+                          rel={template.remixUrl ? "noopener noreferrer" : undefined}
+                          className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#8e97f7]/15 hover:bg-[#8e97f7]/30 text-[#f7f6fb] transition-all border border-[#8e97f7]/30 flex items-center gap-1.5 cursor-pointer shadow-sm"
+                        >
+                          <span>Free remix</span>
+                          <ArrowUpRight className="w-3.5 h-3.5 text-[#8e97f7]" />
+                        </a>
+                      </MagneticButton>
                     ) : (
                       <>
                         {template.buyUrl && (
@@ -491,7 +518,7 @@ export default function TemplatesGrid() {
                           </a>
                         )}
                         <span className="font-mono text-sm font-semibold text-[#f7f6fb]">
-                          {template.price === 'Free' ? 'Free remix' : template.price}
+                          {template.price}
                         </span>
                       </>
                     )}
