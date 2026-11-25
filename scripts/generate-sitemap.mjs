@@ -26,7 +26,6 @@ const TEMPLATE_SLUGS = [
 ];
 
 const BLOG_SLUGS = [
-  'best-luxury-real-estate-framer-templates-for-brokers',
   'top-10-framer-templates-for-architects-and-design-studios-2026',
   'onyx-atelier-framer-architecture-template-review',
   'slowgrain-solum-framer-architecture-template-free-review',

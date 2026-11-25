@@ -6,7 +6,7 @@ import Standards from '../components/Standards';
 import AboutSection from '../components/AboutSection';
 import Services from '../components/Services';
 import TemplatesGrid from '../components/TemplatesGrid';
-import BundlesSection from '../components/BundlesSection';
+// import BundlesSection from '../components/BundlesSection';
 import BlogSection from '../components/BlogSection';
 import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
@@ -190,7 +190,7 @@ export default function HomePage() {
       <ScrollReveal><AboutSection /></ScrollReveal>
       <ScrollReveal><Services /></ScrollReveal>
       <ScrollReveal><TemplatesGrid /></ScrollReveal>
-      <ScrollReveal><BundlesSection /></ScrollReveal>
+      {/* Temporarily hidden per user request: <ScrollReveal><BundlesSection /></ScrollReveal> */}
       <ScrollReveal><BlogSection /></ScrollReveal>
       <ScrollReveal><FAQSection /></ScrollReveal>
       <ScrollReveal><ContactSection /></ScrollReveal>
