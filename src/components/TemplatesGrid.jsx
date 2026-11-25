@@ -324,6 +324,7 @@ export default function TemplatesGrid() {
       id="projects" 
       className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-10 sm:gap-12 border-t border-white/10"
     >
+      <div id="templates" className="absolute -top-24" aria-hidden="true" />
       {/* Head: Title on left, Description on right */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
         <h2 className="text-3xl sm:text-4xl md:text-[38px] font-semibold text-[#f7f6fb] font-heading tracking-[-0.02em] leading-tight max-w-xl">
@@ -467,7 +468,7 @@ export default function TemplatesGrid() {
                         href={template.demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`Live demo for ${template.title}`}
+                        aria-label={`Live demo for ${template.name}`}
                         className="inline-flex items-center gap-1.5 text-[13.5px] font-medium text-[#f7f6fb] hover:text-[#8e97f7] transition-colors cursor-pointer"
                       >
                         <span>Live demo</span>
