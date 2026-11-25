@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { articlePath } from '../data/localizedArticles.js';
+import { articlePath, localizedArticleSlugs } from '../data/localizedArticles.js';
 import { useTranslation } from 'react-i18next';
 import { Clock, Calendar, ArrowRight, Sparkles } from 'lucide-react';
 import SEOHead from '../components/SEOHead';
@@ -147,7 +147,7 @@ export default function BlogPage() {
 
                     <h2 className="text-xl sm:text-2xl font-bold text-[#f7f6fb] font-heading mb-3 group-hover:text-[#8e97f7] transition-colors leading-snug">
                       <Link to={getPostUrl(post.slug)}>
-                        {postTitle}{currentLang !== 'en' && ' (English)'}
+                        {postTitle}{currentLang !== 'en' && !localizedArticleSlugs.includes(post.slug) && ' (English)'}
                       </Link>
                     </h2>
 
