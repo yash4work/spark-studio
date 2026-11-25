@@ -35,9 +35,6 @@ export const PRIORITY_INDEXING_URLS = [
   `${BASE_URL}/blog/top-framer-templates-for-real-estate-and-architecture-2026`,
 
   // 4. International Multi-lingual High-Priority URLs (DE, ES, FR)
-  `${BASE_URL}/de/blog/top-10-framer-templates-for-architects-and-design-studios-2026`,
-  `${BASE_URL}/es/blog/top-10-framer-templates-for-architects-and-design-studios-2026`,
-  `${BASE_URL}/fr/blog/top-10-framer-templates-for-architects-and-design-studios-2026`,
   `${BASE_URL}/de/blog/best-luxury-real-estate-framer-templates-for-brokers`,
   `${BASE_URL}/es/blog/best-luxury-real-estate-framer-templates-for-brokers`,
   `${BASE_URL}/fr/blog/best-luxury-real-estate-framer-templates-for-brokers`,
