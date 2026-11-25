@@ -90,7 +90,7 @@ const TEMPLATES = [
     price: 'Free',
     badge: 'Agent',
     image: '/templates/onyx-atelier.webp',
-    demoUrl: 'https://sparkstudio-onyx.framer.website/',
+    demoUrl: 'https://oynx-atelier.framer.ai/',
     buyUrl: null,
     remixUrl: 'https://framer.com/projects/new?duplicate=JEVoQhQwQzyQ3Bm1MmTB&duplicateType=siteTemplate&via=thesparkstudio',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/onyx-atelier/'
@@ -146,7 +146,7 @@ const TEMPLATES = [
     price: 'Free',
     badge: null,
     image: '/templates/slowgrain.webp',
-    demoUrl: 'https://prosperous-statuses-272584.framer.app/style-guide',
+    demoUrl: 'https://prosperous-statuses-272584.framer.app/',
     buyUrl: null,
     remixUrl: 'https://framer.com/remix/52YnIzlJOEXddxCP5O1n?duplicateType=siteTemplate&via=thesparkstudio',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/slowgrain/'
