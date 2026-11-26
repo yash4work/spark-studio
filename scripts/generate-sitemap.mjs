@@ -24,10 +24,13 @@ const newestMtime = paths => day(Math.max(...paths.flatMap(p => {
     ? fs.readdirSync(full).map(f => fs.statSync(path.join(full, f)).mtimeMs)
     : [fs.statSync(full).mtimeMs];
 })));
-const postDate = slug => BLOG_POSTS.find(p => p.slug === slug)?.isoDate;
+const postDate = slug => {
+  const post = BLOG_POSTS.find(p => p.slug === slug);
+  return post?.modifiedDate || post?.isoDate;
+};
 const LASTMOD = {
   home: newestMtime(['src/pages/HomePage.jsx', 'src/components', 'src/i18n/locales']),
-  blogHub: BLOG_POSTS.map(p => p.isoDate).filter(Boolean).sort().at(-1),
+  blogHub: BLOG_POSTS.map(p => p.modifiedDate || p.isoDate).filter(Boolean).sort().at(-1),
   templates: newestMtime(['src/pages/TemplateDetailPage.jsx', 'src/data/templates.js', 'src/i18n/locales']),
 };
 const lastmod = date => (date ? `

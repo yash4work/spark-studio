@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/blog</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog" />
@@ -69,7 +69,7 @@
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/blog</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog" />
@@ -82,7 +82,7 @@
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/blog</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog" />
@@ -95,7 +95,7 @@
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/blog</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog" />
@@ -105,9 +105,6 @@
       <image:loc>https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio Blog &amp; Insights</image:title>
     </image:image>
-  </url>
-  <url><loc>https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026</loc>
-    <lastmod>2026-11-15</lastmod>
   </url>
   <url><loc>https://www.thesparkstudio.digital/blog/vellum-edition-framer-architecture-template-review</loc>
     <lastmod>2026-11-07</lastmod>
@@ -128,10 +125,42 @@
     <lastmod>2026-11-05</lastmod>
   </url>
   <url><loc>https://www.thesparkstudio.digital/blog/top-framer-templates-for-real-estate-and-architecture-2026</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-26</lastmod>
   </url>
   <url><loc>https://www.thesparkstudio.digital/blog/figma-to-framer-agency-migration-guide</loc>
     <lastmod>2026-10-24</lastmod>
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/de/blog/top-10-framer-templates-for-architects-and-design-studios-2026</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/es/blog/top-10-framer-templates-for-architects-and-design-studios-2026</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/fr/blog/top-10-framer-templates-for-architects-and-design-studios-2026</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/blog/mobile-speed-framer-portfolio</loc>
     <lastmod>2026-11-21</lastmod>
@@ -198,7 +227,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/furniture-product-page-photo-guide" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/best-luxury-real-estate-framer-templates-for-brokers" />
@@ -206,7 +235,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/de/blog/best-luxury-real-estate-framer-templates-for-brokers</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/best-luxury-real-estate-framer-templates-for-brokers" />
@@ -214,7 +243,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/es/blog/best-luxury-real-estate-framer-templates-for-brokers</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/best-luxury-real-estate-framer-templates-for-brokers" />
@@ -222,7 +251,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/fr/blog/best-luxury-real-estate-framer-templates-for-brokers</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/best-luxury-real-estate-framer-templates-for-brokers" />

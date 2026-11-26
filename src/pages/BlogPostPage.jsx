@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { articlePath } from '../data/localizedArticles.js';
+import { ARCHITECTURE_TOP_10_SLUG, getArchitectureTop10Content } from '../data/architectureTop10Content.js';
 import { useTranslation } from 'react-i18next';
 import { ArrowLeft, Clock, Calendar, Share2, Check, Sparkles, ArrowRight } from 'lucide-react';
 import SEOHead from '../components/SEOHead';
@@ -12,8 +13,11 @@ export default function BlogPostPage() {
   const { t, i18n } = useTranslation();
   const [copied, setCopied] = useState(false);
 
-  const post = getPostBySlug(slug);
   const currentLang = i18n.language ? i18n.language.slice(0, 2) : 'en';
+  const basePost = getPostBySlug(slug);
+  const post = basePost && slug === ARCHITECTURE_TOP_10_SLUG
+    ? { ...basePost, content: getArchitectureTop10Content(currentLang) }
+    : basePost;
   const homePrefix = currentLang === 'en' ? '' : `/${currentLang}`;
 
   useEffect(() => {
@@ -83,7 +87,7 @@ export default function BlogPostPage() {
     'description': postExcerpt,
     'image': fullImage,
     'datePublished': post.isoDate,
-    'dateModified': post.isoDate,
+    'dateModified': post.modifiedDate || post.isoDate,
     'inLanguage': currentLang,
     'mainEntityOfPage': {
       '@type': 'WebPage',

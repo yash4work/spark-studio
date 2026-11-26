@@ -47,6 +47,7 @@ export const BLOG_POSTS = [
     readTime: "9 min read",
     date: "November 2026",
     isoDate: "2026-11-15",
+    modifiedDate: "2026-11-26",
     author: {
       name: "Yash Parmar",
       role: "Founder & Lead Engineer, The Spark Studio",
@@ -291,7 +292,7 @@ Framer includes a dedicated Content Editor role. Assistants can log into the Fra
     title: "Top 10 Framer Templates for Architects & Design Studios (2026)",
     category: "Template Teardown",
     categorySlug: "templates",
-    readTime: "12 min read",
+    readTime: "9 min read",
     date: "November 2026",
     isoDate: "2026-11-15",
     author: {
@@ -299,7 +300,7 @@ Framer includes a dedicated Content Editor role. Assistants can log into the Fra
       role: "Spatial Systems & Editorial Design Team",
       avatar: "/assets/spark_studio_avatar.jpg"
     },
-    excerpt: "The definitive 2026 comparison guide to the 10 best Framer templates for architecture practices, interior ateliers, and spatial designers. Benchmarking monograph layouts, Day/Night contrast switchers, CMS flexibility, and 95+ Core Web Vitals speed.",
+    excerpt: "A current 2026 comparison of 10 Framer templates for architecture and design studios, including independent Marketplace creators. Compared by project storytelling, CMS depth, responsive design, editing clarity, and inquiry flows.",
     featuredImage: "/templates/onyx-atelier.webp",
     tags: ["Architecture","Framer Templates","Best Architecture Template","Interior Design","Studio Portfolios","Spatial Design","Core Web Vitals","Web Design 2026"],
     content: `## Why Generic Web Design Fails Architects in 2026
@@ -1013,6 +1014,7 @@ If your current site scores under 70, implementing these four principles will im
     readTime: '5 min read',
     date: 'November 2026',
     isoDate: '2026-11-08',
+    modifiedDate: '2026-11-26',
     author: {
       name: 'The Spark Studio Curation Team',
       role: 'Design & Spatial Architecture Team',
@@ -1032,7 +1034,7 @@ Standard WordPress themes and generic IDX plug-ins fail because:
 2. **Sluggish Mobile Performance**: Bloated plugins and massive multi-megabyte photo carousels cause 3+ second delays on mobile devices.
 3. **Zero Emotional Storytelling**: Luxury real estate is about lifestyle, materials, and light. Your site must read like an architectural monograph, not an MLS listing table.
 
-Here are the top 3 production-grade Framer templates engineered specifically for high-ticket property and spatial studios in 2026.
+Here are three production-grade Framer templates for high-ticket property and spatial studios in 2026. To keep this comparison useful, the list includes two Spark Studio products and one independently created Marketplace template.
 
 ---
 
@@ -1062,27 +1064,27 @@ Built for prestige properties, high-rise penthouses, and private estates where e
 
 ---
 
-## 3. Onyx Atelier — Monolithic Architecture & Spatial Design
+## 3. Monarque — Multi-Unit Residential & Developer Platform
 
-Created for award-winning architecture practices, interior designers, and landscape architects who let physical forms and light lead the conversation.
+Created by **Basit A. Khan**, Monarque is an independent Framer Marketplace template for luxury towers, branded residences, penthouse collections, and high-end residential developments.
 
-- **Minimalist Exhibition Grid**: Monograph-style project archives with hover-triggered blueprints and photography previews.
-- **Project Specifications Drawer**: Comprehensive detail panels for square footage, structural materials, project year, and client credits.
-- **Dark Luxury Aesthetic**: Monochromatic palette with micro-delicate borders engineered for discerning spatial clients.
-- **PageSpeed Rating**: 98/100 on Mobile.
+- **Multi-Residence Structure**: Dedicated layouts for floorplates, residence tiers, finishes, amenities, and development narratives.
+- **Developer-Focused Storytelling**: Editorial sections balance architectural vision with practical sales information.
+- **Figma Source Included**: Useful for stakeholder presentations and design approval before the Framer launch.
+- **Polished Micro-Interactions**: Controlled movement keeps plans, specifications, and property imagery easy to explore.
 
-[Explore Onyx Atelier Live Demo →](/templates/onyx-atelier)
+[View Monarque on Framer Marketplace →](https://www.framer.com/marketplace/templates/monarque/)
 
 ---
 
 ## Key Selection Criteria for Your Studio
 
-| Feature | Mavric Estate | Aurelle Estates | Onyx Atelier |
+| Feature | Mavric Estate | Aurelle Estates | Monarque |
 | :--- | :--- | :--- | :--- |
-| **Best For** | Active Realtors & Brokerages | Luxury Estate Reps | Architects & Interior Designers |
-| **CMS Collections** | Properties, Agents, Guides | Exclusive Estates, Press | Monographs, Spatial Archives |
-| **Visual Style** | Sharp, Modern Commercial | High-Fashion Editorial | Monolithic, Minimalist Dark |
-| **Remix & Edit Time** | Under 2 hours | Under 3 hours | Under 1 hour |
+| **Creator** | The Spark Studio | The Spark Studio | Basit A. Khan |
+| **Best For** | Active Realtors & Brokerages | Luxury Estate Reps | Towers & Multi-Unit Developments |
+| **Content Structure** | Properties, Agents, Guides | Exclusive Estates, Press | Residences, Floorplates, Amenities |
+| **Visual Style** | Sharp, Modern Commercial | High-Fashion Editorial | Polished Developer Editorial |
 
 Each of these templates is built natively in Framer with 100% visual editing, zero external code dependencies, and instant 1-click remix capability.
 `
