@@ -51,7 +51,7 @@ export default function Hero() {
       {/* =========================================================================
           HERO CONTENT (EXACT LEFT ALIGNMENT & 1440PX CONTAINER)
           ========================================================================= */}
-      <div className="relative z-10 w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 pt-36 sm:pt-44 flex flex-col items-start gap-7">
+      <div className="hero-content-shell relative z-10 w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 pt-36 sm:pt-44 flex flex-col items-start gap-7">
         
         {/* Eyebrow */}
         <div>
@@ -97,6 +97,20 @@ export default function Hero() {
               <span>{t('hero.customCta') || 'Hire us for custom work'}</span>
             </a>
           </MagneticButton>
+        </div>
+
+        <div className="hero-video-card" aria-label="Animated Spark Studio guide">
+          <video
+            className="hero-video"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            disablePictureInPicture
+          >
+            <source src="/assets/hero-studio-guide.webm" type="video/webm" />
+          </video>
         </div>
 
       </div>
