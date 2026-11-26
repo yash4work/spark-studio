@@ -26,10 +26,9 @@ export async function saveInquiry(data) {
     name: data.name,
     email: data.email,
     project_type: data.projectType || data.project_type || 'General Inquiry',
-    // The form now asks for a timeline instead of a budget. The table has no
-    // timeline column, so it is added to the message (no database change needed).
     budget: data.budget ?? null,
-    message: data.timeline ? `${data.message || ''}\n\nTimeline: ${data.timeline}`.trim() : data.message,
+    timeline: data.timeline ?? null,
+    message: data.message,
     created_at: new Date().toISOString(),
     source: 'sparkstudio_web',
   };

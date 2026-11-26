@@ -42,7 +42,7 @@ Client Form Submit
 | `name` | Client's full name |
 | `email` | Client's contact email |
 | `projectType` | Service category (e.g. *Bespoke Website Build*) |
-| `timeline` | When they want to start (e.g. *Within a month*). In Supabase this is appended to `message` (the table has no timeline column) |
+| `timeline` | When they want to start (e.g. *Within a month*). Stored in the dedicated Supabase `timeline` column. |
 | `message` | Client's project description or message |
 | `_subject` | `New Lead: ${formData.name} - ${formData.projectType}` |
 | `_template` | `table` (formats fields into a clean HTML table) |
