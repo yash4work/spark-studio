@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Check, Bell, Loader2 } from 'lucide-react';
-import { initLemonSqueezy, handleLemonCheckout } from '../lib/lemonsqueezy';
-import { AnimatePresence } from 'framer-motion';
+import { initLemonSqueezy, handleLemonCheckout, loadLemonSqueezy } from '../lib/lemonsqueezy';
+import { AnimatePresence, LayoutGroup, MotionConfig, motion } from 'framer-motion';
 import { MagneticButton } from '../lib/framer-effects';
 import { saveSubscriber } from '../lib/supabase';
 import { trackEvent } from '../lib/analytics';
+import { isValidEmail } from '../lib/formGuard';
+import { templateSrc, templateSrcSet } from '../lib/images';
 
 const TEMPLATES = [
   // --- REAL CLIENT WEBSITES & CUSTOM SOFTWARE ---
@@ -96,6 +98,33 @@ const TEMPLATES = [
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/onyx-atelier/'
   },
   {
+    slug: 'onyx-atelier-pro',
+    name: 'Onyx Atelier Pro',
+    category: 'Dark architecture studio',
+    categoryKey: 'architecture',
+    tagline: 'The complete edition of Onyx Atelier — 20+ pages, 10 CMS collections and Day & Night modes for architecture studios.',
+    price: '$129',
+    badge: 'Agent',
+    image: '/templates/onyx-atelier-pro.webp',
+    demoUrl: 'https://onyx-atelier-pro.framer.website/',
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f296bbd4-31b1-4b7b-acd2-d3dc7b6cec1c?embed=1',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/onyx-atelier-pro/'
+  },
+  {
+    slug: 'lume-field',
+    name: 'LUME FIELD',
+    category: 'Lighting design & architecture',
+    categoryKey: 'architecture',
+    tagline: 'A minimalist editorial portfolio for lighting designers and architecture studios, with before/after comparison sliders.',
+    price: 'Free',
+    badge: null,
+    image: '/templates/lume-field.webp',
+    demoUrl: 'https://tiny-monstera-197989.framer.app/',
+    buyUrl: null,
+    remixUrl: 'https://framer.link/IM60cyF?duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/lume-field/'
+  },
+  {
     slug: 'vellum-edition',
     name: 'Vellum Edition',
     category: 'Editorial architecture portfolio',
@@ -152,6 +181,20 @@ const TEMPLATES = [
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/slowgrain/'
   },
   {
+    slug: 'solum-edition',
+    name: 'SOLUM EDITION',
+    category: 'Furniture atelier monograph',
+    categoryKey: 'craft',
+    tagline: 'A publication-grade monograph for furniture ateliers and makers, with a scroll-driven 6-step making timeline.',
+    price: 'Free',
+    badge: 'Agent',
+    image: '/templates/solum-edition.webp',
+    demoUrl: 'https://past-network-244230.framer.app/',
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=1mnKrTlVBZZj8WSbfpeZ&duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/solum-edition/'
+  },
+  {
     slug: 'terra',
     name: 'TERRA',
     category: 'Editorial store for furniture & design galleries',
@@ -191,6 +234,20 @@ const TEMPLATES = [
     demoUrl: 'https://hilarious-variations-838642.framer.app/',
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/02daec5f-f201-48aa-8636-d120270b5adc?embed=1',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/tessovra/'
+  },
+  {
+    slug: 'hearthflow',
+    name: 'Hearthflow',
+    category: 'Plumbing, heating & HVAC',
+    categoryKey: 'services',
+    tagline: 'A conversion-first template for plumbers and heating engineers — 19 pages, local SEO area pages and click-to-call.',
+    price: 'Free',
+    badge: null,
+    image: '/templates/hearthflow.webp',
+    demoUrl: 'https://aqua-arrow-585437.framer.app/',
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=FQUCFqjqG91SJ0P6keOK&duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/hearthflow/'
   }
 ];
 
@@ -200,14 +257,50 @@ const CATEGORIES = [
   { id: 'websites', label: 'Custom Websites' },
   { id: 'real-estate', label: 'Real estate & living' },
   { id: 'architecture', label: 'Architecture & spatial' },
-  { id: 'craft', label: 'Craft & commerce' }
+  { id: 'craft', label: 'Craft & commerce' },
+  { id: 'services', label: 'Local services' }
 ];
+
+// Solid dark pill that stays readable on light and dark screenshots.
+// "Live …" badges get a pulsing green dot; others a violet dot.
+function CardBadge({ label }) {
+  const live = /^live/i.test(label);
+  return (
+    <div className="absolute top-3.5 right-3.5 z-10 flex items-center gap-2 pl-2.5 pr-3 py-1 rounded-full bg-[#15131f]/85 backdrop-blur-md border border-white/15 shadow-[0_4px_16px_rgba(0,0,0,0.35)] text-[10px] font-mono font-semibold uppercase tracking-wider text-[#f7f6fb]">
+      <span className="relative flex h-1.5 w-1.5" aria-hidden="true">
+        {live && <span className="absolute inline-flex h-full w-full rounded-full bg-[#34d399] opacity-75 animate-ping motion-reduce:animate-none" />}
+        <span className={`relative inline-flex h-1.5 w-1.5 rounded-full ${live ? 'bg-[#34d399]' : 'bg-[#8e97f7]'}`} />
+      </span>
+      {label}
+    </div>
+  );
+}
+
+const cardMotion = {
+  layout: true,
+  initial: { opacity: 0, y: 16, scale: 0.97 },
+  animate: { opacity: 1, y: 0, scale: 1 },
+  exit: { opacity: 0, scale: 0.96, transition: { duration: 0.18 } },
+  transition: { type: 'spring', stiffness: 380, damping: 34, mass: 0.8 },
+};
 
 export default function TemplatesGrid() {
   const { t, i18n } = useTranslation();
   const [activeFilter, setActiveFilter] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
+
+  // Translated filter labels and card text (fall back to the English defaults above)
+  const translatedCategories = t('templates.categories', { returnObjects: true });
+  const categoryLabel = (cat) => (Array.isArray(translatedCategories) && translatedCategories.find(c => c.id === cat.id)?.label) || cat.label;
+  const cardText = (template) => {
+    const info = t(`templateDetails.${template.slug}`, { returnObjects: true });
+    const hasInfo = info && typeof info === 'object';
+    return {
+      category: (hasInfo && info.category) || template.category,
+      tagline: (hasInfo && info.headline) || template.tagline,
+    };
+  };
   const currentLang = i18n.language ? i18n.language.slice(0, 2) : 'en';
 
   useEffect(() => {
@@ -235,8 +328,7 @@ export default function TemplatesGrid() {
     e.preventDefault();
     const cleanEmail = (pipelineEmail || '').trim();
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!cleanEmail || !emailRegex.test(cleanEmail)) {
+    if (!cleanEmail || !isValidEmail(cleanEmail)) {
       setPipelineError(t('templates.pipeline.error') || t('projects.pipeline.error') || 'Please enter a valid email address.');
       setPipelineStatus('error');
       return;
@@ -322,7 +414,7 @@ export default function TemplatesGrid() {
   return (
     <section 
       id="projects" 
-      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-10 sm:gap-12 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-10 sm:gap-12 section-glow section-glow--right"
     >
       <div id="templates" className="absolute -top-24" aria-hidden="true" />
       {/* Head: Title on left, Description on right */}
@@ -337,30 +429,42 @@ export default function TemplatesGrid() {
       </div>
 
       {/* Filter Tabs matching Framer CategoryPills */}
-      <div className="flex flex-wrap items-center gap-2">
+      <MotionConfig reducedMotion="user">
+      <LayoutGroup id="template-filters">
+      <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Filter templates">
         {CATEGORIES.map((cat) => {
           const isActive = activeFilter === cat.id;
           return (
             <button
               key={cat.id}
               onClick={() => handleFilterChange(cat.id)}
-              className={`px-4 py-2 rounded-full text-[12.5px] font-mono transition-all duration-200 cursor-pointer ${
+              aria-pressed={isActive}
+              className={`relative px-4 py-2 rounded-full text-[12.5px] font-mono transition-colors duration-200 cursor-pointer border ${
                 isActive
-                  ? 'bg-[#f7f6fb] text-[#15131f] font-semibold shadow-md'
-                  : 'bg-transparent text-[#8b87a0] hover:text-[#f7f6fb] border border-white/10 hover:border-white/30'
+                  ? 'text-[#15131f] font-semibold border-transparent'
+                  : 'text-[#8b87a0] hover:text-[#f7f6fb] border-white/10 hover:border-white/30'
               }`}
             >
-              {cat.label}
+              {isActive && (
+                <motion.span
+                  layoutId="active-filter-pill"
+                  className="absolute inset-0 rounded-full bg-[#f7f6fb] shadow-md"
+                  transition={{ type: 'spring', stiffness: 420, damping: 36 }}
+                />
+              )}
+              <span className="relative z-10">{categoryLabel(cat)}</span>
             </button>
           );
         })}
       </div>
+      </LayoutGroup>
 
       {/* Templates Grid: 3-COLUMN RESPONSIVE GRID (grid-cols-1 md:grid-cols-2 lg:grid-cols-3) */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
-        <AnimatePresence>
+        <AnimatePresence initial={false} mode="popLayout">
           {displayedItems.map((template) => (
-            <div
+            <motion.div
+              {...cardMotion}
               key={template.slug}
               data-framer-name="Template Card"
               className="framer-template-card group rounded-2xl bg-[#1b1826] border border-white/10 flex flex-col overflow-hidden cursor-pointer"
@@ -376,7 +480,10 @@ export default function TemplatesGrid() {
                 >
                   <div data-framer-background-image-wrapper="true" className="w-full h-full">
                     <img
-                      src={template.image}
+                      src={templateSrc(template.image)}
+                      srcSet={templateSrcSet(template.image)}
+                      sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      decoding="async"
                       alt={`${template.name} — Custom Project by The Spark Studio`}
                       className="framer-card-img w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
@@ -384,9 +491,7 @@ export default function TemplatesGrid() {
                   </div>
 
                   {template.badge && (
-                    <div className="absolute top-3.5 right-3.5 px-3 py-1 rounded-full bg-[#8e97f7]/25 backdrop-blur-md border border-[#8e97f7]/40 text-[10px] font-mono font-semibold uppercase tracking-wider text-[#f7f6fb]">
-                      {template.badge}
-                    </div>
+                    <CardBadge label={template.badge === 'Agent' ? (t('templates.badgeAgent') || 'Agent') : template.badge} />
                   )}
                 </a>
               ) : (
@@ -397,7 +502,10 @@ export default function TemplatesGrid() {
                 >
                   <div data-framer-background-image-wrapper="true" className="w-full h-full">
                     <img
-                      src={template.image}
+                      src={templateSrc(template.image)}
+                      srcSet={templateSrcSet(template.image)}
+                      sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      decoding="async"
                       alt={`${template.name} — Framer Template by The Spark Studio`}
                       className="framer-card-img w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
@@ -408,9 +516,7 @@ export default function TemplatesGrid() {
                   </div>
 
                   {template.badge && (
-                    <div className="absolute top-3.5 right-3.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[10px] font-mono font-semibold uppercase tracking-wider text-white">
-                      {template.badge}
-                    </div>
+                    <CardBadge label={template.badge === 'Agent' ? (t('templates.badgeAgent') || 'Agent') : template.badge} />
                   )}
                 </Link>
               )}
@@ -420,7 +526,7 @@ export default function TemplatesGrid() {
                 <div className="flex flex-col gap-2">
                   <div className="flex items-center justify-between">
                     <span className="text-[11px] font-mono uppercase tracking-[0.05em] text-[#8e97f7]">
-                      {template.category}
+                      {cardText(template).category}
                     </span>
                     {template.techStack && (
                       <span className="text-[10px] font-mono text-[#8b87a0]">
@@ -446,7 +552,7 @@ export default function TemplatesGrid() {
                   </div>
 
                   <p className="text-sm md:text-base text-[#8b87a0] font-normal leading-relaxed line-clamp-2">
-                    {template.tagline}
+                    {cardText(template).tagline}
                   </p>
 
                   {template.techStack && (
@@ -471,7 +577,7 @@ export default function TemplatesGrid() {
                         aria-label={`Live demo for ${template.name}`}
                         className="inline-flex items-center gap-1.5 text-[13.5px] font-medium text-[#f7f6fb] hover:text-[#8e97f7] transition-colors cursor-pointer"
                       >
-                        <span>Live demo</span>
+                        <span>{t('templates.liveDemo') || 'Live demo'}</span>
                         <ArrowUpRight className="w-3.5 h-3.5" />
                       </a>
                     </MagneticButton>
@@ -480,7 +586,7 @@ export default function TemplatesGrid() {
                       to={getTemplateLink(template.slug)}
                       className="text-[13.5px] font-medium text-[#f7f6fb] hover:text-[#8e97f7] transition-colors"
                     >
-                      View details
+                      {t('templates.viewDetails') || 'View details'}
                     </Link>
                   )}
 
@@ -491,7 +597,7 @@ export default function TemplatesGrid() {
                           href="#contact"
                           className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#8e97f7]/15 text-[#8e97f7] hover:bg-[#8e97f7]/30 transition-all border border-[#8e97f7]/30"
                         >
-                          Request build →
+                          {t('templates.requestBuild') || 'Request build →'}
                         </a>
                       </MagneticButton>
                     ) : template.price === 'Free' ? (
@@ -502,7 +608,7 @@ export default function TemplatesGrid() {
                           rel={template.remixUrl ? "noopener noreferrer" : undefined}
                           className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#8e97f7]/15 hover:bg-[#8e97f7]/30 text-[#f7f6fb] transition-all border border-[#8e97f7]/30 flex items-center gap-1.5 cursor-pointer shadow-sm"
                         >
-                          <span>Free remix</span>
+                          <span>{t('templates.freeRemix') || 'Free remix'}</span>
                           <ArrowUpRight className="w-3.5 h-3.5 text-[#8e97f7]" />
                         </a>
                       </MagneticButton>
@@ -511,6 +617,8 @@ export default function TemplatesGrid() {
                         {template.buyUrl && (
                           <a
                             href={template.buyUrl}
+                            onPointerEnter={loadLemonSqueezy}
+                            onFocus={loadLemonSqueezy}
                             onClick={(e) => handleLemonCheckout(e, template.buyUrl, { item_id: template.slug, item_name: template.name, price: Number(template.price.slice(1)), quantity: 1 })}
                             className="lemonsqueezy-button hidden"
                             aria-hidden="true"
@@ -527,7 +635,7 @@ export default function TemplatesGrid() {
                 </div>
 
               </div>
-            </div>
+            </motion.div>
           ))}
         </AnimatePresence>
 
@@ -627,6 +735,7 @@ export default function TemplatesGrid() {
           </div>
         )}
       </div>
+      </MotionConfig>
 
       {/* Pagination Controls */}
       {totalPages > 1 && (

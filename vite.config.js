@@ -37,6 +37,8 @@ export default defineConfig({
     },
   ],
   build: {
+    // Used by scripts/build-route-html.mjs to preload each page's language file.
+    manifest: true,
     rollupOptions: {
       output: {
         manualChunks(id) {

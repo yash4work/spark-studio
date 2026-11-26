@@ -28,22 +28,22 @@ const PROCESS_STEPS = [
 const SERVICES_LIST = [
   {
     num: '01',
-    title: 'Template Customization ($499 – $899)',
+    title: 'Template Customization',
     desc: 'Brand typography, color palette, logo swap, content migration, custom section additions, responsive breakpoint audit. Turnaround: 3–5 days.'
   },
   {
     num: '02',
-    title: 'Bespoke Framer Website Development ($2,500 – $6,000+)',
+    title: 'Bespoke Framer Website Development',
     desc: 'Custom UI/UX design, native Framer component build, fluid animations, dynamic CMS architecture, Core Web Vitals optimization. Turnaround: 2–3 weeks.'
   },
   {
     num: '03',
-    title: 'Figma to Framer Conversion ($1,500 – $3,500)',
+    title: 'Figma to Framer Conversion',
     desc: '1:1 pixel-perfect translation of your Figma files into interactive, production-ready Framer pages with interactive components. Turnaround: 7–10 days.'
   },
   {
     num: '04',
-    title: 'Framer Speed Boost / Performance ($350 – $600)',
+    title: 'Framer Speed Boost / Performance',
     desc: 'Font weight consolidation, image compression, script deferral, and layout shift fixes to guarantee 90+ mobile PageSpeed scores. Turnaround: 24–48 hours.'
   }
 ];
@@ -57,7 +57,8 @@ export default function Services() {
   const servicesList = Array.isArray(rawServices) && rawServices.length > 0
     ? rawServices.map((s, idx) => ({
         num: s.num || `0${idx + 1}`,
-        title: s.price ? `${s.title} (${s.price})` : s.title,
+        // No prices on service cards on purpose: cost ranges put people off getting in touch.
+        title: s.title,
         desc: s.turnaround ? `${s.desc} ${s.turnaround}.` : s.desc
       }))
     : SERVICES_LIST;
@@ -65,7 +66,7 @@ export default function Services() {
   return (
     <section 
       id="services" 
-      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-14 sm:gap-16 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col gap-14 sm:gap-16 section-glow"
     >
       {/* =========================================================================
           PART 1: HOW WE WORK (4 PROCESS STEPS)

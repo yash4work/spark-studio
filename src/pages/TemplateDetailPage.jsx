@@ -12,9 +12,11 @@ import {
   Database 
 } from 'lucide-react';
 import SEOHead from '../components/SEOHead';
-import { initLemonSqueezy, handleLemonCheckout } from '../lib/lemonsqueezy';
+import { initLemonSqueezy, handleLemonCheckout, preloadLemonSqueezy, loadLemonSqueezy } from '../lib/lemonsqueezy';
 import { trackEvent } from '../lib/analytics';
 import { getTemplateStorageUrl } from '../lib/supabase';
+import { templateSrc, templateSrcSet } from '../lib/images';
+import { ORG_REF } from '../data/organization';
 
 const galleryDescriptions = {
   '/assets/template1.png': 'Tablet displaying an editorial website on a woodworking bench',
@@ -75,8 +77,8 @@ const TEMPLATE_META = {
     buyUrl: null,
     remixUrl: 'https://framer.link/a7rXdZO?duplicateType=siteTemplate&via=thesparkstudio',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/mavric-estate/',
-    image: '/templates/mavric-estate.png',
-    gallery: ['/templates/mavric-estate.png', '/assets/template1.png', '/assets/template2.png']
+    image: '/templates/mavric-estate.webp',
+    gallery: ['/templates/mavric-estate.webp', '/assets/template1.png', '/assets/template2.png']
   },
   'aurelle-estates': {
     price: '$99',
@@ -88,8 +90,8 @@ const TEMPLATE_META = {
     buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/c111b344-dc0c-4931-aa46-55f1d0dc49c8?embed=1',
     remixUrl: 'https://framer.link/P1YdVXM?duplicateType=siteTemplate&via=thesparkstudio',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/aurelle-estates/',
-    image: '/templates/aurelle-estates.png',
-    gallery: ['/templates/aurelle-estates.png', '/assets/template2.png', '/assets/template3.png']
+    image: '/templates/aurelle-estates.webp',
+    gallery: ['/templates/aurelle-estates.webp', '/assets/template2.png', '/assets/template3.png']
   },
   'onyx-atelier': {
     price: 'Free',
@@ -101,8 +103,8 @@ const TEMPLATE_META = {
     buyUrl: null,
     remixUrl: 'https://framer.com/projects/new?duplicate=JEVoQhQwQzyQ3Bm1MmTB&duplicateType=siteTemplate&via=thesparkstudio',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/onyx-atelier/',
-    image: '/templates/onyx-atelier.png',
-    gallery: ['/templates/onyx-atelier.png', '/assets/template3.png', '/assets/template4.png']
+    image: '/templates/onyx-atelier.webp',
+    gallery: ['/templates/onyx-atelier.webp', '/assets/template3.png', '/assets/template4.png']
   },
   'vellum-edition': {
     price: 'Free',
@@ -114,8 +116,8 @@ const TEMPLATE_META = {
     buyUrl: null,
     remixUrl: 'https://framer.link/gnmQCXS?duplicateType=siteTemplate&via=thesparkstudio',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/vellum-edition/',
-    image: '/templates/vellum-edition.png',
-    gallery: ['/templates/vellum-edition.png', '/assets/template4.png', '/assets/template1.png']
+    image: '/templates/vellum-edition.webp',
+    gallery: ['/templates/vellum-edition.webp', '/assets/template4.png', '/assets/template1.png']
   },
   'halden-edition': {
     price: 'Free',
@@ -127,8 +129,8 @@ const TEMPLATE_META = {
     buyUrl: null,
     remixUrl: 'https://framer.com/projects/new?duplicate=9E30JFnUiTHbMaHTtUrj&duplicateType=siteTemplate&via=thesparkstudio',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/halden-edition/',
-    image: '/templates/halden-edition.png',
-    gallery: ['/templates/halden-edition.png', '/assets/template2.png', '/assets/template4.png']
+    image: '/templates/halden-edition.webp',
+    gallery: ['/templates/halden-edition.webp', '/assets/template2.png', '/assets/template4.png']
   },
   'grain-form': {
     price: 'Free',
@@ -140,8 +142,8 @@ const TEMPLATE_META = {
     buyUrl: null,
     remixUrl: 'https://framer.com/projects/new?duplicate=1dnNbY4wtemEHRvd6o8j&duplicateType=siteTemplate&via=thesparkstudio',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/grain-form/',
-    image: '/templates/grain-form.png',
-    gallery: ['/templates/grain-form.png', '/assets/template1.png', '/assets/template3.png']
+    image: '/templates/grain-form.webp',
+    gallery: ['/templates/grain-form.webp', '/assets/template1.png', '/assets/template3.png']
   },
   'slowgrain': {
     price: 'Free',
@@ -153,8 +155,8 @@ const TEMPLATE_META = {
     buyUrl: null,
     remixUrl: 'https://framer.com/remix/52YnIzlJOEXddxCP5O1n?duplicateType=siteTemplate&via=thesparkstudio',
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/slowgrain/',
-    image: '/templates/slowgrain.png',
-    gallery: ['/templates/slowgrain.png', '/assets/template3.png', '/assets/template2.png']
+    image: '/templates/slowgrain.webp',
+    gallery: ['/templates/slowgrain.webp', '/assets/template3.png', '/assets/template2.png']
   },
   'terra': {
     price: 'Free',
@@ -194,6 +196,61 @@ const TEMPLATE_META = {
     marketplaceUrl: 'https://www.framer.com/marketplace/templates/tessovra/',
     image: 'https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png',
     gallery: ['https://framerusercontent.com/images/3KolCsLSc048U4flMKf2dXWo.png', '/assets/template1.png', '/assets/template3.png']
+  },
+  'onyx-atelier-pro': {
+    price: '$129',
+    priceDe: '129 USD',
+    priceEs: '129 USD',
+    priceFr: '129 USD',
+    numericPrice: '129.00',
+    demoUrl: 'https://onyx-atelier-pro.framer.website/',
+    buyUrl: 'https://yashparmar.lemonsqueezy.com/checkout/buy/f296bbd4-31b1-4b7b-acd2-d3dc7b6cec1c?embed=1',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/onyx-atelier-pro/',
+    image: '/templates/onyx-atelier-pro.webp',
+    // cover + two real screenshots of the live preview
+    gallery: ['/templates/onyx-atelier-pro.webp', '/templates/onyx-atelier-pro-shot-1.webp', '/templates/onyx-atelier-pro-shot-2.webp']
+  },
+  'lume-field': {
+    price: 'Free',
+    priceDe: 'Kostenlos',
+    priceEs: 'Gratis',
+    priceFr: 'Gratuit',
+    numericPrice: '0.00',
+    demoUrl: 'https://tiny-monstera-197989.framer.app/',
+    buyUrl: null,
+    remixUrl: 'https://framer.link/IM60cyF?duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/lume-field/',
+    image: '/templates/lume-field.webp',
+    // cover + two real screenshots of the live preview
+    gallery: ['/templates/lume-field.webp', '/templates/lume-field-shot-1.webp', '/templates/lume-field-shot-2.webp']
+  },
+  'solum-edition': {
+    price: 'Free',
+    priceDe: 'Kostenlos',
+    priceEs: 'Gratis',
+    priceFr: 'Gratuit',
+    numericPrice: '0.00',
+    demoUrl: 'https://past-network-244230.framer.app/',
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=1mnKrTlVBZZj8WSbfpeZ&duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/solum-edition/',
+    image: '/templates/solum-edition.webp',
+    // cover + two real screenshots of the live preview
+    gallery: ['/templates/solum-edition.webp', '/templates/solum-edition-shot-1.webp', '/templates/solum-edition-shot-2.webp']
+  },
+  'hearthflow': {
+    price: 'Free',
+    priceDe: 'Kostenlos',
+    priceEs: 'Gratis',
+    priceFr: 'Gratuit',
+    numericPrice: '0.00',
+    demoUrl: 'https://aqua-arrow-585437.framer.app/',
+    buyUrl: null,
+    remixUrl: 'https://framer.com/projects/new?duplicate=FQUCFqjqG91SJ0P6keOK&duplicateType=siteTemplate&via=thesparkstudio',
+    marketplaceUrl: 'https://www.framer.com/marketplace/templates/hearthflow/',
+    image: '/templates/hearthflow.webp',
+    // cover + two real screenshots of the live preview
+    gallery: ['/templates/hearthflow.webp', '/templates/hearthflow-shot-1.webp', '/templates/hearthflow-shot-2.webp']
   }
 };
 
@@ -263,6 +320,7 @@ export default function TemplateDetailPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
     initLemonSqueezy();
+    if (meta?.buyUrl) preloadLemonSqueezy(); // buying is likely here: fetch lemon.js when idle
     if (meta) {
       trackEvent('view_item', {
         items: [item], value: item.price, currency: 'USD'
@@ -330,10 +388,7 @@ export default function TemplateDetailPage() {
           'priceCurrency': 'USD',
           'availability': 'https://schema.org/InStock',
           'url': canonicalTemplateUrl,
-          'seller': {
-            '@type': 'Organization',
-            'name': 'The Spark Studio'
-          }
+          'seller': ORG_REF
         }
       },
       {
@@ -375,7 +430,7 @@ export default function TemplateDetailPage() {
   return (
     <div className="min-h-screen pt-28 pb-20">
       <SEOHead
-        title={`${templateInfo.name} — ${templateInfo.headline}`}
+        title={`${templateInfo.name} — ${templateInfo.category}`}
         description={templateInfo.headline}
         image={meta.image}
         canonicalUrl={canonicalTemplateUrl}
@@ -453,7 +508,11 @@ export default function TemplateDetailPage() {
                 <div className="text-right">
                   <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#8e97f7] bg-[#8e97f7]/10 px-3 py-1 rounded-full border border-[#8e97f7]/20">
                     <Check className="w-3 h-3" />
-                    {meta.isCustom ? 'Full Codebase & Setup' : (t('detailPage.instantRemix') || 'Instant 1-Click Remix')}
+                    {meta.isCustom
+                      ? 'Full Codebase & Setup'
+                      : meta.buyUrl
+                        ? (t('detailPage.licenseIncluded') || 'Commercial License Included') // paid: bought, not remixed
+                        : (t('detailPage.instantRemix') || 'Instant 1-Click Remix')}
                   </span>
                 </div>
               </div>
@@ -477,6 +536,8 @@ export default function TemplateDetailPage() {
                 ) : meta.buyUrl ? (
                   <a
                     href={meta.buyUrl}
+                    onPointerEnter={loadLemonSqueezy}
+                    onFocus={loadLemonSqueezy}
                     onClick={(e) => handleLemonCheckout(e, meta.buyUrl, item)}
                     className="lemonsqueezy-button w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-white transition-all shadow-lg hover:opacity-90 active:scale-[0.99]"
                     style={{
@@ -564,12 +625,17 @@ export default function TemplateDetailPage() {
           <div className="lg:col-span-5">
             <div className="rounded-2xl overflow-hidden border border-white/10 bg-zinc-900/40 shadow-2xl relative aspect-[4/3] group">
               <img
-                src={mainImage}
+                src={mainImage === meta.image ? templateSrc(mainImage) : mainImage}
+                srcSet={mainImage === meta.image ? templateSrcSet(mainImage) : undefined}
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                width="1024"
+                height="768"
                 loading="eager"
                 fetchPriority="high"
                 alt={`${templateInfo.name} — Framer Template Showcase`}
                 className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {
+                  e.currentTarget.removeAttribute('srcset');
                   if (e.currentTarget.getAttribute('src') !== meta.image) e.currentTarget.src = meta.image;
                 }}
               />
@@ -609,7 +675,7 @@ export default function TemplateDetailPage() {
             
             {/* Overview */}
             <div>
-              <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 block mb-3">
+              <span className="text-xs font-mono uppercase tracking-widest text-zinc-400 block mb-3">
                 {templateInfo.overviewTitle || 'OVERVIEW'}
               </span>
               <p className="text-base sm:text-lg text-zinc-300 leading-relaxed font-normal">
@@ -711,7 +777,7 @@ export default function TemplateDetailPage() {
                 <p className="text-[11px] leading-relaxed">
                   {t('detailPage.licenseDesc') || 'Single production site deployment per license. 100% code-free visual canvas editing.'}
                 </p>
-                <div className="pt-2 border-t border-white/[0.05] flex items-center justify-between text-[11px] text-zinc-500 font-mono">
+                <div className="pt-2 border-t border-white/[0.05] flex items-center justify-between text-[11px] text-zinc-400 font-mono">
                   <span>{t('detailPage.support') || 'Support'}</span>
                   <span>hello@thesparkstudio.digital</span>
                 </div>
@@ -726,7 +792,7 @@ export default function TemplateDetailPage() {
         <div className="pt-24 border-t border-white/[0.08] mt-20">
           <div className="flex items-center justify-between mb-10">
             <div>
-              <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 block mb-1">
+              <span className="text-xs font-mono uppercase tracking-widest text-zinc-400 block mb-1">
                 {t('detailPage.studioCatalog') || 'STUDIO CATALOG'}
               </span>
               <h2 className="text-2xl sm:text-4xl font-bold text-white font-heading">
@@ -753,10 +819,17 @@ export default function TemplateDetailPage() {
                     className="block aspect-[16/10] overflow-hidden bg-zinc-950"
                   >
                     <img
-                      src={item.meta.image}
+                      src={templateSrc(item.meta.image)}
+                      srcSet={templateSrcSet(item.meta.image)}
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                      loading="lazy"
+                      decoding="async"
+                      width="768"
+                      height="480"
                       alt={item.info?.name ? `${item.info.name} — Framer Template by The Spark Studio` : 'The Spark Studio Framer Template'}
                       className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       onError={(e) => {
+                        e.target.removeAttribute('srcset');
                         e.target.src = '/assets/template1.png';
                       }}
                     />

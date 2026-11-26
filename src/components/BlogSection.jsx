@@ -12,7 +12,7 @@ export default function BlogSection() {
   const featuredPosts = BLOG_POSTS.slice(0, 3);
 
   return (
-    <section id="resources" className="py-24 sm:py-32 border-t border-white/10 bg-[#12101a] relative">
+    <section id="resources" className="py-24 sm:py-32 bg-[#12101a] relative section-glow">
       <div className="max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16">
         
         {/* Section Header */}
@@ -96,8 +96,12 @@ export default function BlogSection() {
                   <div className="flex items-center gap-2.5">
                     <div className="w-6 h-6 rounded-full overflow-hidden border border-white/20 bg-[#15131f] shrink-0 shadow-sm">
                       <img
-                        src={post.author.avatar || '/assets/spark_studio_avatar.jpg'}
-                        alt={post.author.name}
+                        src="/assets/spark_studio_avatar-96.webp"
+                        alt=""
+                        width="48"
+                        height="48"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover"
                         onError={(e) => {
                           e.target.src = '/assets/spark_studio_avatar.jpg';

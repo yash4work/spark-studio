@@ -26,7 +26,8 @@ export default function Hero() {
         {/* Layer 2: The Liquid Aurora WebGL Shader covering the FULL SCREEN (100% width) */}
         <LiquidGradientShader 
           className="absolute inset-0 w-full h-full opacity-85"
-          fallbackImage="/assets/hero-shader.png"
+          fallbackImage="/assets/hero-shader.webp"
+          fallbackImageMobile="/assets/hero-shader-mobile.webp"
           mouseEnabled={true}
         />
 

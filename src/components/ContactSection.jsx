@@ -1,34 +1,37 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Send, CheckCircle2 } from 'lucide-react';
 import { LinkedInIcon, TeamsIcon, SlackIcon, MailIcon } from './SocialIcons';
 import { saveInquiry } from '../lib/supabase';
 import { trackEvent } from '../lib/analytics';
 import { MagneticButton } from '../lib/framer-effects';
+import { isLikelySpam } from '../lib/formGuard';
 
 export default function ContactSection() {
   const { t, i18n } = useTranslation();
 
   const contact = t('contact', { returnObjects: true });
   const typeOptions = contact?.typeOptions || [
-    'Template Customization ($499+)',
-    'Bespoke Website Build ($2,500+)',
-    'Figma to Framer ($1,500+)',
-    'Speed Optimization ($350+)',
+    'Template Customization',
+    'Bespoke Website Build',
+    'Figma to Framer',
+    'Speed Optimization',
     'Other / Question'
   ];
-  const budgetOptions = contact?.budgetOptions || [
-    '< $1,000',
-    '$1,000 – $3,000',
-    '$3,000 – $6,000',
-    '$6,000+'
+  // No prices anywhere in the form: visitors who see cost ranges often don't get in touch.
+  // "Timeline" tells us how ready a lead is instead.
+  const timelineOptions = contact?.timelineOptions || [
+    'As soon as possible',
+    'Within a month',
+    'In 1–3 months',
+    'Just exploring'
   ];
 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     projectType: typeOptions[0],
-    budget: budgetOptions[1] || budgetOptions[0],
+    timeline: timelineOptions[1] || timelineOptions[0],
     message: '',
   });
 
@@ -36,12 +39,17 @@ export default function ContactSection() {
   const [deliveryError, setDeliveryError] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  // Spam protection: hidden honeypot field + time the form was first shown
+  const honeypotRef = useRef(null);
+  const startedAtRef = useRef(null);
+  useEffect(() => { startedAtRef.current = Date.now(); }, [submitted]);
+
   useEffect(() => {
     setFormData((prev) => {
       const newProjectType = typeOptions.includes(prev.projectType) ? prev.projectType : typeOptions[0];
-      const newBudget = budgetOptions.includes(prev.budget) ? prev.budget : (budgetOptions[1] || budgetOptions[0]);
-      if (newProjectType === prev.projectType && newBudget === prev.budget) return prev;
-      return { ...prev, projectType: newProjectType, budget: newBudget };
+      const newTimeline = timelineOptions.includes(prev.timeline) ? prev.timeline : (timelineOptions[1] || timelineOptions[0]);
+      if (newProjectType === prev.projectType && newTimeline === prev.timeline) return prev;
+      return { ...prev, projectType: newProjectType, timeline: newTimeline };
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [i18n.language]);
@@ -49,6 +57,13 @@ export default function ContactSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setDeliveryError(false);
+
+    // Bots: pretend it worked, but send nothing
+    if (isLikelySpam({ honeypot: honeypotRef.current?.value, startedAt: startedAtRef.current })) {
+      setSubmitted(true);
+      return;
+    }
+
     setLoading(true);
 
     try {
@@ -63,11 +78,12 @@ export default function ContactSection() {
           name: formData.name,
           email: formData.email,
           projectType: formData.projectType,
-          budget: formData.budget,
+          timeline: formData.timeline,
           message: formData.message,
           _subject: `New Lead: ${formData.name} - ${formData.projectType}`,
           _template: 'table',
-          _captcha: 'false'
+          _captcha: 'false',
+          _honey: honeypotRef.current?.value || ''
         })
       });
 
@@ -80,14 +96,14 @@ export default function ContactSection() {
 
       trackEvent('generate_lead', {
         project_type: formData.projectType,
-        budget: formData.budget,
+        timeline: formData.timeline,
       });
       setSubmitted(true);
       setFormData({
         name: '',
         email: '',
         projectType: typeOptions[0],
-        budget: budgetOptions[1] || budgetOptions[0],
+        timeline: timelineOptions[1] || timelineOptions[0],
         message: '',
       });
     } catch (err) {
@@ -101,7 +117,7 @@ export default function ContactSection() {
   return (
     <section 
       id="contact" 
-      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col xl:flex-row items-start justify-between gap-12 lg:gap-16 xl:gap-20 border-t border-white/10"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative flex flex-col xl:flex-row items-start justify-between gap-12 lg:gap-16 xl:gap-20 section-glow"
     >
       {/* Left Column: Full-width stacked on mobile & tablet (up to 1024px), fixed width on desktop xl+ */}
       <div className="w-full xl:w-[460px] flex-shrink-0 flex flex-col items-start gap-6">
@@ -209,6 +225,11 @@ export default function ContactSection() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+            {/* Honeypot: hidden from people and screen readers; bots fill it in */}
+            <div aria-hidden="true" style={{ position: 'absolute', left: '-10000px', width: 1, height: 1, overflow: 'hidden' }}>
+              <label htmlFor="contact-website">Leave this field empty</label>
+              <input id="contact-website" name="_honey" type="text" tabIndex={-1} autoComplete="off" ref={honeypotRef} defaultValue="" />
+            </div>
             {/* Row 1: Name and Email side-by-side on desktop */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
@@ -246,7 +267,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* Row 2: Service Needed and Budget side-by-side */}
+            {/* Row 2: Service Needed and Timeline side-by-side */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
                 <label htmlFor="contact-project-type" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
@@ -269,18 +290,18 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="contact-budget" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
-                  {t('contact.formBudget') || 'Budget'}
+                <label htmlFor="contact-timeline" className="block text-xs font-mono uppercase tracking-wider text-[#8b87a0] mb-2">
+                  {t('contact.formTimeline') || 'Timeline'}
                 </label>
                 <select
-                  id="contact-budget"
-                  name="budget"
-                  aria-label={t('contact.formBudget') || 'Budget'}
-                  value={formData.budget}
-                  onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
+                  id="contact-timeline"
+                  name="timeline"
+                  aria-label={t('contact.formTimeline') || 'Timeline'}
+                  value={formData.timeline}
+                  onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
                   className="w-full px-4 py-3.5 rounded-xl bg-[#15131f] border border-white/10 text-sm md:text-base text-[#f7f6fb] focus:outline-none focus:border-[#8e97f7] transition-colors cursor-pointer"
                 >
-                  {budgetOptions.map((opt) => (
+                  {timelineOptions.map((opt) => (
                     <option key={opt} value={opt} className="bg-[#1b1826] text-[#f7f6fb]">
                       {opt}
                     </option>

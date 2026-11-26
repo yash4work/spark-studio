@@ -1,9 +1,38 @@
 /**
  * LemonSqueezy Checkout Helper
- * Manages overlay modal setup and fallback navigation
+ * Manages overlay modal setup and fallback navigation.
+ *
+ * lemon.js is no longer loaded on every page. It is fetched:
+ *  - when someone clicks a Buy button (handleLemonCheckout), or
+ *  - ahead of time on template pages / when hovering a Buy button (preloadLemonSqueezy).
  */
 
+const LEMON_SRC = 'https://assets.lemonsqueezy.com/lemon.js';
 let checkoutItem;
+let loadPromise = null;
+
+export function loadLemonSqueezy() {
+  if (typeof window === 'undefined') return Promise.resolve(false);
+  if (window.LemonSqueezy) return Promise.resolve(true);
+  if (!loadPromise) {
+    loadPromise = new Promise((resolve) => {
+      const script = document.createElement('script');
+      script.src = LEMON_SRC;
+      script.async = true;
+      script.onload = () => { initLemonSqueezy(); resolve(Boolean(window.LemonSqueezy)); };
+      script.onerror = () => { loadPromise = null; resolve(false); };
+      document.head.appendChild(script);
+    });
+  }
+  return loadPromise;
+}
+
+// Warm-up: fetch lemon.js when the browser is idle (template pages) or on Buy-button hover.
+export function preloadLemonSqueezy() {
+  if (typeof window === 'undefined' || window.LemonSqueezy || loadPromise) return;
+  if ('requestIdleCallback' in window) window.requestIdleCallback(() => loadLemonSqueezy(), { timeout: 5000 });
+  else window.setTimeout(loadLemonSqueezy, 2000);
+}
 
 export function initLemonSqueezy() {
   if (typeof window === 'undefined') return;
@@ -60,16 +89,34 @@ export function handleLemonCheckout(e, checkoutUrl, item) {
     } catch {}
   }
 
+  if (typeof window === 'undefined') return;
   initLemonSqueezy();
 
-  if (typeof window !== 'undefined' && window.LemonSqueezy?.Url?.Open) {
+  const openOverlay = () => {
     try {
-      e?.preventDefault?.();
       window.LemonSqueezy.Url.Open(checkoutUrl);
-      return;
     } catch {
       window.location.assign(checkoutUrl);
     }
+  };
+
+  // Already loaded: open the overlay straight away.
+  if (window.LemonSqueezy?.Url?.Open) {
+    e?.preventDefault?.();
+    openOverlay();
+    return;
   }
-  // Default behavior will open href directly
+
+  // Not loaded yet: fetch lemon.js, then open the overlay.
+  // If it fails or takes over 4s, go to the checkout page instead.
+  e?.preventDefault?.();
+  let done = false;
+  const fallback = window.setTimeout(() => { if (!done) { done = true; window.location.assign(checkoutUrl); } }, 4000);
+  loadLemonSqueezy().then((ok) => {
+    if (done) return;
+    done = true;
+    window.clearTimeout(fallback);
+    if (ok && window.LemonSqueezy?.Url?.Open) openOverlay();
+    else window.location.assign(checkoutUrl);
+  });
 }

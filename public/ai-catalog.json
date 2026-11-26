@@ -57,12 +57,6 @@
       "description": "Bespoke architectural monograph portfolio with publication-grade layout."
     },
     {
-      "name": "SOLUM",
-      "type": "template",
-      "url": "https://www.thesparkstudio.digital/templates/solum",
-      "description": "Tactile Scandinavian craft, furniture monograph, and studio showcase template."
-    },
-    {
       "name": "Aurelle Estates",
       "type": "template",
       "url": "https://www.thesparkstudio.digital/templates/aurelle-estates",
@@ -91,6 +85,48 @@
       "type": "template",
       "url": "https://www.thesparkstudio.digital/templates/slowgrain",
       "description": "Heirloom woodworking and bespoke cabinetry portfolio template."
+    },
+    {
+      "name": "Onyx Atelier Pro",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/onyx-atelier-pro",
+      "description": "The complete $129 edition of Onyx Atelier: 20+ pages, 10 CMS collections, Day & Night modes and technical-drawing lightbox for architecture and interior studios."
+    },
+    {
+      "name": "LUME FIELD",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/lume-field",
+      "description": "Free minimalist editorial portfolio for lighting designers and architecture studios, with before/after comparison sliders."
+    },
+    {
+      "name": "SOLUM EDITION",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/solum-edition",
+      "description": "Free publication-grade monograph for furniture ateliers and makers, with a 6-step making timeline and filterable collection."
+    },
+    {
+      "name": "Hearthflow",
+      "type": "template",
+      "url": "https://www.thesparkstudio.digital/templates/hearthflow",
+      "description": "Free conversion-first template for plumbers, heating engineers and HVAC companies: 19 pages, local SEO area pages and click-to-call."
+    },
+    {
+      "name": "AI SaaS Platform",
+      "type": "case-study",
+      "url": "https://www.thesparkstudio.digital/templates/ai-saas",
+      "description": "Custom-built AI SaaS platform (Next.js, React, Tailwind CSS) with workflow-automation demos, tiered pricing and developer docs."
+    },
+    {
+      "name": "Luxury Restaurant",
+      "type": "case-study",
+      "url": "https://www.thesparkstudio.digital/templates/luxury-restaurant",
+      "description": "Custom-built fine-dining website with seasonal tasting menus, table reservations and private-dining enquiries."
+    },
+    {
+      "name": "Premium Healthcare",
+      "type": "case-study",
+      "url": "https://www.thesparkstudio.digital/templates/premium-healthcare",
+      "description": "Custom-built clinic website with a doctor directory, multi-step appointment booking and treatment library."
     }
   ]
 }

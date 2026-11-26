@@ -1,5 +1,6 @@
 -- ==============================================================================
 -- The Spark Studio — Supabase Database & Storage Setup
+-- (Fresh setup. For an existing database, run supabase/migrations/2026-11-26-permissions-and-timeline.sql)
 -- ==============================================================================
 
 -- 1. Create inquiries table for contact form submissions
@@ -11,12 +12,14 @@ CREATE TABLE IF NOT EXISTS public.inquiries (
     project_type TEXT,
     budget TEXT,
     message TEXT,
-    source TEXT DEFAULT 'sparkstudio_web'
+    source TEXT DEFAULT 'sparkstudio_web',
+    timeline TEXT -- added 2026-11-26 (contact form asks Timeline instead of Budget)
 );
 
 -- Table privileges for PostgREST API access
 GRANT USAGE ON SCHEMA public TO anon, authenticated, service_role;
-GRANT ALL ON TABLE public.inquiries TO anon, authenticated, service_role;
+GRANT ALL ON TABLE public.inquiries TO authenticated, service_role;
+GRANT INSERT ON TABLE public.inquiries TO anon; -- anonymous visitors may only add rows
 
 -- Enable Row Level Security (RLS)
 CREATE TABLE IF NOT EXISTS public.subscribers (
@@ -24,7 +27,8 @@ CREATE TABLE IF NOT EXISTS public.subscribers (
     source TEXT NOT NULL,
     created_at TIMESTAMPTZ DEFAULT now() NOT NULL
 );
-GRANT ALL ON TABLE public.subscribers TO anon, authenticated, service_role;
+GRANT ALL ON TABLE public.subscribers TO authenticated, service_role;
+GRANT INSERT ON TABLE public.subscribers TO anon;
 ALTER TABLE public.subscribers ENABLE ROW LEVEL SECURITY;
 DROP POLICY IF EXISTS "Accept subscriptions" ON public.subscribers;
 CREATE POLICY "Accept subscriptions" ON public.subscribers FOR INSERT TO anon

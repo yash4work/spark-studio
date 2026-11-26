@@ -116,7 +116,7 @@ export default function CustomCursor() {
         <span
           style={{
             color: 'rgb(247, 246, 251)',
-            fontFamily: '"Hanken Grotesk", sans-serif',
+            fontFamily: 'var(--font-sans)',
             fontSize: '13px',
             fontWeight: 500,
             letterSpacing: '0.02em',

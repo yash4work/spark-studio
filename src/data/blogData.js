@@ -4,8 +4,8 @@ export const BLOG_POSTS = [
   "excerpt": "Open one published project page on your phone. Watch the first screen.",
   "category": "Performance",
   "date": "November 21, 2026",
-  "readTime": "2 min read",
-  "content": "Open one published project page on your phone. Watch the first screen. Does the title appear while the photograph is still empty? Or does the whole screen arrive late? Those two experiences feel equally slow, but they call for different fixes.\n\nRun the same URL through PageSpeed Insights in mobile mode. Find the element identified as Largest Contentful Paint (LCP). On an architecture portfolio it might be a photograph, but it can also be the project title. Record the element and timing over three runs before editing anything.\n\nIf the photograph is late, inspect the image actually downloaded at phone width. A full-resolution architectural elevation may be justified in a detail view, while the opening photograph only needs enough detail for the space it occupies. Try a smaller export. Compare both versions on a phone, paying attention to fine lines, shadows and lettering.\n\nIf the title is late, make a copy of the page and remove its entrance animation. Retest with the same font and layout. If the title appears sooner, you have narrowed the problem without touching the photography. Change one variable at a time and keep the version that makes the project readable sooner.",
+  "readTime": "4 min read",
+  "content": "Open one published project page on your phone. Watch the first screen. Does the title appear while the photograph is still empty? Or does the whole screen arrive late? Those two experiences feel equally slow, but they call for different fixes.\n\n## How do you find the slow element on a Framer page?\n\nRun the same URL through PageSpeed Insights in mobile mode. Find the element identified as Largest Contentful Paint (LCP). On an architecture portfolio it might be a photograph, but it can also be the project title. Record the element and timing over three runs before editing anything.\n\n## What if the photograph appears late?\n\nIf the photograph is late, inspect the image actually downloaded at phone width. A full-resolution architectural elevation may be justified in a detail view, while the opening photograph only needs enough detail for the space it occupies. Try a smaller export. Compare both versions on a phone, paying attention to fine lines, shadows and lettering.\n\nWhile you are on that page, open your browser’s developer tools, switch to the Network panel and reload at a phone-sized width. Sort by size. If the opening photograph is several megabytes, or is followed by a second large image that only appears further down, you have found where the first seconds go.\n\n## What if the title appears late?\n\nIf the title is late, make a copy of the page and remove its entrance animation. Retest with the same font and layout. If the title appears sooner, you have narrowed the problem without touching the photography. Change one variable at a time and keep the version that makes the project readable sooner.\n\nFonts are the other common cause. If the title waits for a custom web font, every extra weight and style adds another download. Keep the weights you actually use, and check whether the same family is loaded twice under different names.\n\n## What else slows a portfolio down on mobile?\n\nLook at everything that is not part of the design itself: embedded maps, background videos, chat widgets, booking tools and tracking scripts. Each one runs on the phone’s processor while the page is starting. Remove one at a time on a copy of the page and measure again. If the page improves a lot, load that item later or replace it with a static image that links out.\n\n## How do you know the fix worked?\n\nRepeat the same three PageSpeed runs and compare the middle result, not the best one. Then open the live page on a real phone over mobile data. Field data from real visitors appears in the Core Web Vitals report in Google Search Console, which is based on the previous 28 days, so give a change about a month before judging it there.",
   "slug": "mobile-speed-framer-portfolio",
   "categorySlug": "engineering",
   "isoDate": "2026-11-21",
@@ -24,8 +24,8 @@ export const BLOG_POSTS = [
   "excerpt": "A visitor considering a dining chair usually has three practical questions. Will it fit under the table?",
   "category": "Product photography",
   "date": "November 21, 2026",
-  "readTime": "2 min read",
-  "content": "A visitor considering a dining chair usually has three practical questions. Will it fit under the table? What does the finish look like up close? How do I order the version in the photo? Build the page around those questions before choosing the final images.\n\nStart with one photograph that shows the whole chair. Follow it with a side view beside a table, then a close-up of the joint or upholstery. Give each photograph a job. A second front view in slightly different light is less useful than a clear measurement from floor to seat.\n\nPut dimensions, units and the photographed finish close together. If the chair comes in oak and walnut, identify which one the visitor is looking at. When orders are made by enquiry, place the product name and finish beside that link so the buyer can ask about a specific piece.\n\nTry this exercise with one real product before choosing a layout. Open the Grain & Form and Halden Edition previews from our Framer profile. Imagine replacing the sample photography with your three shots. Choose the layout in which a visitor can find the seat height and ordering details most easily. [Browse the studio’s Framer templates](https://www.framer.com/@thesparkstudio/)",
+  "readTime": "4 min read",
+  "content": "A visitor considering a dining chair usually has three practical questions. Will it fit under the table? What does the finish look like up close? How do I order the version in the photo? Build the page around those questions before choosing the final images.\n\n## Which photos should a furniture product page show?\n\nStart with one photograph that shows the whole chair. Follow it with a side view beside a table, then a close-up of the joint or upholstery. Give each photograph a job. A second front view in slightly different light is less useful than a clear measurement from floor to seat.\n\nA simple shot list for most pieces: the whole piece at a three-quarter angle, a side view next to something familiar for scale, a close-up of the joint or material, the finish in natural light, and one photo of the piece in a real room. If the back or underside is visible in use, as with a sofa in the middle of a room, photograph that too.\n\n## Where should dimensions and finishes go?\n\nPut dimensions, units and the photographed finish close together. If the chair comes in oak and walnut, identify which one the visitor is looking at. When orders are made by enquiry, place the product name and finish beside that link so the buyer can ask about a specific piece.\n\nGive height, width and depth, plus the measurements people check before buying: seat height for chairs, clearance under a table, the opening size of a cabinet. If you sell across countries, show both centimetres and inches. Lead time, delivery area and care instructions belong in the same block, not on a separate page.\n\n## How should ordering or enquiries work?\n\nIf each piece is made to order, the enquiry button should sit next to the product name and selected finish, and the form should arrive already filled in with them. State the lead time near the button so the visitor knows what to expect before writing. A buyer who has to retype what they are looking at is a buyer who may not send the message.\n\n## How do you test the layout before the photo shoot?\n\nTry this exercise with one real product before choosing a layout. Open the Grain & Form and Halden Edition previews from our Framer profile. Imagine replacing the sample photography with your three shots. Choose the layout in which a visitor can find the seat height and ordering details most easily. [Browse the studio’s Framer templates](https://www.framer.com/@thesparkstudio/)",
   "slug": "furniture-product-page-photo-guide",
   "categorySlug": "templates",
   "isoDate": "2026-11-21",
@@ -77,7 +77,7 @@ Below is an honest, curated breakdown of the **10 best Framer templates for luxu
 | # | Template Name | Creator | Price | Best For | Core Advantage | Link |
 | :-: | :--- | :--- | :-: | :--- | :--- | :--- |
 | **01** | **Onyx Atelier Pro** | The Spark Studio | $129 | Trophy Estates & Architectural Residences | Day/Night ambient lighting switch & monograph archives | [Live Demo](https://onyx-atelier-pro.framer.website/) |
-| **02** | **Onyx Atelier** | The Spark Studio | $79 | Minimalist Compounds & Off-Market Works | High-contrast spatial layout & discrete VIP inquiry desk | [Live Demo](https://active-strengthening-218427.framer.app/) |
+| **02** | **Onyx Atelier** | The Spark Studio | Free | Minimalist Compounds & Off-Market Works | High-contrast spatial layout & discrete VIP inquiry desk | [Live Demo](https://active-strengthening-218427.framer.app/) |
 | **03** | **Monarque** | Basit A. Khan | $99 | High-Rise Developments & Penthouses | Dedicated penthouse CMS & multi-residence floorplate tours | [Marketplace](https://www.framer.com/marketplace/templates/monarque/) |
 | **04** | **Ardène** | Sasha Mozdir | $99 | Scandinavian Architecture & Boutique Agencies | Restrained typography, subtle depth & Framer Basic plan ready | [Marketplace](https://www.framer.com/marketplace/templates/ardene/) |
 | **05** | **Havyn** | WORKSHOP99 | $69 | Editorial Boutique Brokerages & Agent Teams | Dual Property & Market Journal CMS with agent rosters | [Marketplace](https://www.framer.com/marketplace/templates/havyn/) |
@@ -106,7 +106,7 @@ Onyx Atelier Pro represents the pinnacle of monograph-style property presentatio
 
 ---
 
-### 02. Onyx Atelier — Minimalist Spatial Compound ($79)
+### 02. Onyx Atelier — Minimalist Spatial Compound (Free)
 * **Creator:** The Spark Studio (Yash Parmar)  
 * **Live Demo:** [active-strengthening-218427.framer.app](https://active-strengthening-218427.framer.app/)  
 * **Remix Link:** [framer.com/remix/qdTLRcAS411L53TOswm9](https://framer.com/remix/qdTLRcAS411L53TOswm9)  
@@ -118,7 +118,7 @@ The standard edition of Onyx Atelier strips away extraneous decorative styling t
 - **Curated Off-Market Aesthetic:** Designed for whisper listings and confidential developer portfolios where subtle authority matters more than flashy marketing banners.
 - **Discrete VIP Inquiry Intake:** Built-in representation intake modules allow buyer representatives to submit NDAs and schedule private viewings directly.
 - **CMS Architecture:** Clean data schema handling property year, lot acreage, architect credit, and high-resolution blueprint downloads.
-- *Executive Note on Aurelle Estates:* For brokerages requiring an alternate multi-listing portal with a cinematic 4K video hero and password-protected listings, Spark Studio's dedicated residential template **Aurelle Estates** ($89, [Live Demo](https://wandering-variations-344785.framer.app/)) provides a turnkey multi-property structure.
+- *Executive Note on Aurelle Estates:* For brokerages requiring an alternate multi-listing portal with a cinematic 4K video hero and password-protected listings, Spark Studio's dedicated residential template **Aurelle Estates** ($99, [Live Demo](https://wandering-variations-344785.framer.app/)) provides a turnkey multi-property structure.
 
 ---
 
@@ -277,7 +277,7 @@ Framer includes a dedicated Content Editor role. Assistants can log into the Fra
 | Your Brokerage Profile | Recommended Template | Why It Wins |
 | :--- | :--- | :--- |
 | **Trophy Estates & Architectural Landmarks** | **Onyx Atelier Pro** ($129) | Day/Night lighting switch, monograph archives, museum-grade materiality tables. |
-| **Minimalist Estates & Off-Market Portfolios** | **Onyx Atelier** ($79) | Clean architectural contrast, discreet buyer inquiry desk, zero visual clutter. |
+| **Minimalist Estates & Off-Market Portfolios** | **Onyx Atelier** (Free) | Clean architectural contrast, discreet buyer inquiry desk, zero visual clutter. |
 | **Luxury High-Rise & Multi-Unit Developments** | **Monarque** ($99) | Floorplate viewports, penthouse CMS, included copywriting framework. |
 | **Boutique Brokerage & Multi-Agent Teams** | **Havyn** ($69) or **Veyora** (Free) | Built-in agent directories, neighborhood guides, complete multi-page architecture. |
 | **Standalone $10M+ Single-Property Campaigns** | **VALE House** ($99) | Purpose-built single-asset narrative with dedicated specs and private viewing desk. |
@@ -321,20 +321,20 @@ Below is our comprehensive benchmark and buyer's guide to the **Top 10 Framer Te
 
 | Template | Price | Primary Aesthetic | Best For | CMS Collections | Mobile Speed |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Onyx Atelier** | $79 | Monolithic Brutalism & Monograph | High-End Architecture & Interior Ateliers | 4 Collections | 98/100 |
-| **SASSO Architect** | $69 | Minimalist Editorial Grid | Boutique Spatial Studios & Urban Planners | 3 Collections | 97/100 |
-| **Vellum Edition** | $39 | Tactile Art-Book Monograph | Spatial Photographers & Independent Ateliers | 3 Collections | 99/100 |
+| **Onyx Atelier** | Free | Monolithic Brutalism & Monograph | High-End Architecture & Interior Ateliers | 4 Collections | 98/100 |
+| **SASSO Architect** | Free | Minimalist Editorial Grid | Boutique Spatial Studios & Urban Planners | 3 Collections | 97/100 |
+| **Vellum Edition** | Free | Tactile Art-Book Monograph | Spatial Photographers & Independent Ateliers | 3 Collections | 99/100 |
 | **SLOWGRAIN (Solum)** | Free | Raw Architectural Monograph | Emerging Architects & Graduate Portfolios | 2 Collections | 99/100 |
-| **Terra** | $69 | Warm Organic Modernism | Landscape, Eco & Sustainable Architects | 3 Collections | 96/100 |
-| **Tessovra** | $69 | High-Contrast Spatial Magazine | Interior Architects & Furniture Design Studios | 4 Collections | 97/100 |
-| **Halden Edition** | $59 | Nordic Monograph & Technical Grid | Structural Engineers & Minimalist Studios | 3 Collections | 98/100 |
-| **Grain & Form** | $58 | Material Narrative & Tactile Grain | Industrial Designers & Spatial Fabricators | 3 Collections | 98/100 |
+| **Terra** | Free | Warm Organic Modernism | Landscape, Eco & Sustainable Architects | 3 Collections | 96/100 |
+| **Tessovra** | $89 | High-Contrast Spatial Magazine | Interior Architects & Furniture Design Studios | 4 Collections | 97/100 |
+| **Halden Edition** | Free | Nordic Monograph & Technical Grid | Structural Engineers & Minimalist Studios | 3 Collections | 98/100 |
+| **Grain & Form** | Free | Material Narrative & Tactile Grain | Industrial Designers & Spatial Fabricators | 3 Collections | 98/100 |
 | **Aurelle Estates** | $99 | Ultra-Prime Luxury Monograph | High-End Residential Architects & Estates | 4 Collections | 96/100 |
-| **Mavric Estate** | $69 | Contemporary Architectural Showcase | Architectural Developers & Property Studios | 4 Collections | 96/100 |
+| **Mavric Estate** | Free | Contemporary Architectural Showcase | Architectural Developers & Property Studios | 4 Collections | 96/100 |
 
 ---
 
-## 1. Onyx Atelier — The Monolithic Exhibition Monograph ($79)
+## 1. Onyx Atelier — The Monolithic Exhibition Monograph (Free)
 
 **Onyx Atelier** is the gold standard for high-end architectural practices that want their website to evoke the feeling of a private architectural gallery in Milan or Tokyo. Engineered by The Spark Studio, it replaces traditional scrolling clutter with calm, expansive horizontal monograph strips and museum-grade typography.
 
@@ -348,7 +348,7 @@ Below is our comprehensive benchmark and buyer's guide to the **Top 10 Framer Te
 
 ---
 
-## 2. SASSO Architect — Spatial Precision & Brutalist Monograph ($69)
+## 2. SASSO Architect — Spatial Precision & Brutalist Monograph (Free)
 
 For studios defined by clean geometric concrete, mass timber, and brutalist forms, **SASSO Architect** provides an uncompromising structural canvas. It treats typography as architectural structure, utilizing large sans-serif headers paired with precise technical metadata (square footage, client, completion year, latitude/longitude).
 
@@ -361,9 +361,9 @@ For studios defined by clean geometric concrete, mass timber, and brutalist form
 
 ---
 
-## 3. Vellum Edition — Quiet Art-Book Monograph ($39)
+## 3. Vellum Edition — Quiet Art-Book Monograph (Free)
 
-At an accessible price point of just $39, **Vellum Edition** is inspired by Japanese architectural monographs and Swiss fine-art books. Designed for spatial photographers, independent design practitioners, and boutique interior ateliers who believe that silence speaks louder than noise.
+Free to remix, **Vellum Edition** is inspired by Japanese architectural monographs and Swiss fine-art books. Designed for spatial photographers, independent design practitioners, and boutique interior ateliers who believe that silence speaks louder than noise.
 
 ### Key Highlights & Features:
 - **Warm Paper-Toned Palette**: Subtly off-white background (#fbfaf7) that makes natural timber, limestone, and concrete photography sing.
@@ -387,7 +387,7 @@ Built to empower emerging architects, graduate spatial designers, and independen
 
 ---
 
-## 5. Terra — Warm Organic Modernism for Sustainable Practices ($69)
+## 5. Terra — Warm Organic Modernism for Sustainable Practices (Free)
 
 Landscape architects, biophilic design practices, and studios specializing in mass timber and rammed earth need a visual language that reflects the natural world. **Terra** delivers an earthy, tactile palette of warm stone, terracotta, and forest hues paired with fluid smooth-scroll interactions.
 
@@ -400,7 +400,7 @@ Landscape architects, biophilic design practices, and studios specializing in ma
 
 ---
 
-## 6. Tessovra — High-Contrast Spatial & Interior Atelier ($69)
+## 6. Tessovra — High-Contrast Spatial & Interior Atelier ($89)
 
 Interior architecture practices and bespoke spatial studios require extreme typographical contrast and deep black presentation to make interior textures, bespoke lighting fixtures, and finishes pop. **Tessovra** is engineered with an editorial magazine sensibility.
 
@@ -413,7 +413,7 @@ Interior architecture practices and bespoke spatial studios require extreme typo
 
 ---
 
-## 7. Halden Edition — Nordic Minimalism & Blueprint Case Studies ($59)
+## 7. Halden Edition — Nordic Minimalism & Blueprint Case Studies (Free)
 
 Embodying Scandinavian restraint and rationalist clarity, **Halden Edition** is ideal for structural engineers, modern residential architects, and modular construction practices. Its stark grid layout highlights precision, engineering drawings, and sustainability metrics.
 
@@ -426,7 +426,7 @@ Embodying Scandinavian restraint and rationalist clarity, **Halden Edition** is 
 
 ---
 
-## 8. Grain & Form — Tactile Material Storytelling ($58)
+## 8. Grain & Form — Tactile Material Storytelling (Free)
 
 Architectural ateliers that fabricate their own furniture, lighting, or architectural hardware need a template that bridges building scale and object scale. **Grain & Form** is crafted specifically for design-and-make studios and spatial fabricators.
 
@@ -452,7 +452,7 @@ When your practice designs $10M+ private estates, Alpine chalets, or coastal meg
 
 ---
 
-## 10. Mavric Estate — Contemporary Architectural & Developer Flagship ($69)
+## 10. Mavric Estate — Contemporary Architectural & Developer Flagship (Free)
 
 Bridging the gap between pure architecture practice and boutique architectural development, **Mavric Estate** provides modern studios with a dynamic CMS platform that presents both built works and future residential developments.
 
@@ -491,8 +491,8 @@ Yes. You can link any custom domain (e.g., yourstudio.com) to Framer with automa
 
 ## Final Recommendation: Which Template Should You Pick?
 
-- **For established high-end architecture practices**: Choose [Onyx Atelier](/templates/onyx-atelier) ($79) for its Day/Night lighting switcher, monograph pacing, and museum-grade spatial presentation.
-- **For boutique studios on a lean budget**: Choose [Vellum Edition](/templates/vellum-edition) ($39) for its calm art-book layout, or start with [SLOWGRAIN](/templates/slowgrain) (Free).
+- **For established high-end architecture practices**: Choose [Onyx Atelier](/templates/onyx-atelier) (Free) for its Day/Night lighting switcher, monograph pacing, and museum-grade spatial presentation.
+- **For boutique studios on a lean budget**: Choose [Vellum Edition](/templates/vellum-edition) (Free) for its calm art-book layout, or start with [SLOWGRAIN](/templates/slowgrain) (Free).
 - **For residential specialists & luxury estate architects**: Choose [Aurelle Estates](/templates/aurelle-estates) ($99) for its cinematic presentation and private project gating.`
   },
   {
@@ -508,13 +508,13 @@ Yes. You can link any custom domain (e.g., yourstudio.com) to Framer with automa
       role: "Spatial Design & Systems Team",
       avatar: "/assets/spark_studio_avatar.jpg"
     },
-    excerpt: "An architectural review of Vellum Edition: a quiet, $39 art-book monograph Framer template for architecture studios that let photography and material narratives lead.",
+    excerpt: "An architectural review of Vellum Edition: a quiet, free art-book monograph Framer template for architecture studios that let photography and material narratives lead.",
     featuredImage: "/templates/vellum-edition.webp",
     tags: ["Vellum Edition","Architecture","Art Book","Minimalism","Framer Template"],
     content: `
 ## What Is Vellum Edition?
 
-**Vellum Edition** is an art-book monograph Framer template designed for architectural practices, spatial photographers, and interior ateliers that believe silence speaks louder than noise. At an accessible price of just **$39**, Vellum provides a sophisticated editorial aesthetic that usually costs thousands in bespoke development.
+**Vellum Edition** is an art-book monograph Framer template designed for architectural practices, spatial photographers, and interior ateliers that believe silence speaks louder than noise. Free to remix, Vellum provides a sophisticated editorial aesthetic that usually costs thousands in bespoke development.
 
 Inspired by physical Swiss monographs and Japanese architectural journals, Vellum removes all gratuitous decorative elements to let pure spatial photography and tactile materiality lead.
 
@@ -525,7 +525,7 @@ Inspired by physical Swiss monographs and Japanese architectural journals, Vellu
 | Specification | Details |
 | :--- | :--- |
 | **Product Name** | Vellum Edition |
-| **Price** | $39 (Commercial License) |
+| **Price** | Free (1-click Framer remix) |
 | **Primary Niche** | Architecture Photographers, Spatial Designers, Independent Ateliers |
 | **Platform** | Framer (Native Visual Canvas) |
 | **CMS Collections** | 3 (Visual Monographs, Material Observations, Studio Notes) |
@@ -674,7 +674,7 @@ For architectural principals looking to win six-figure commercial commissions or
 | :--- | :--- |
 | **Product Name** | SASSO Architect |
 | **Marketplace Status** | Official Framer Marketplace Certified |
-| **Price** | $69 (Commercial License) |
+| **Price** | Free (1-click Framer remix) |
 | **Primary Niche** | Boutique Architecture Studios, Spatial Designers, Urban Planners |
 | **Platform** | Framer (Native Visual Canvas) |
 | **CMS Collections** | 4 (Works & Folios, Monograph Articles, Studio Philosophy, Recognition & Awards) |
@@ -784,9 +784,9 @@ No manual HTML editing:
 
 ## Free vs. Premium Architectural Templates: What's the Difference?
 
-| Feature | SLOWGRAIN (Free) | Onyx Atelier ($79 Premium) |
+| Feature | SLOWGRAIN (Free) | Onyx Atelier Pro ($129 Premium) |
 | :--- | :--- | :--- |
-| **Price** | **$0 (Free)** | $79 |
+| **Price** | **$0 (Free)** | $129 |
 | **Day/Night Lighting Switcher** | No | **Yes (Native Ambient Toggle)** |
 | **Horizontal Monograph Strip** | No | **Yes (Scroll-Linked)** |
 | **Pre-Qualifying Intake Desk** | Standard Form | **Custom Prequalification Flow** |
@@ -847,7 +847,7 @@ Built natively in Framer by The Spark Studio, Onyx Atelier requires **zero lines
 | **Product Name** | Onyx Atelier |
 | **Primary Niche** | Architecture Practices, Interior Ateliers, Landscape Architects |
 | **Platform** | Framer (Native Visual Canvas) |
-| **Price** | $79 (Single Commercial License) |
+| **Price** | Free (1-click Framer remix) |
 | **CMS Collections** | 4 (Project Monographs, Case Studies, Publications, Team Profiles) |
 | **PageSpeed Score** | 98/100 Mobile & Desktop Certified |
 | **Responsive Breakpoints** | Desktop (1440px+), Tablet (810px), Mobile (390px) |

@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { ArrowLeft, Clock, Calendar, Share2, Check, Sparkles, ArrowRight } from 'lucide-react';
 import SEOHead from '../components/SEOHead';
 import { getPostBySlug, BLOG_POSTS } from '../data/blogData';
+import { ORG_REF } from '../data/organization';
 
 export default function BlogPostPage() {
   const { slug } = useParams();
@@ -93,14 +94,7 @@ export default function BlogPostPage() {
       'name': post.author.name,
       'jobTitle': post.author.role
     },
-    'publisher': {
-      '@type': 'Organization',
-      'name': 'The Spark Studio',
-      'logo': {
-        '@type': 'ImageObject',
-        'url': 'https://www.thesparkstudio.digital/logo.png'
-      }
-    }
+    'publisher': ORG_REF
   };
 
   // Helper to parse inline markdown (bold, code, links)
@@ -374,8 +368,12 @@ export default function BlogPostPage() {
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full border border-white/20 overflow-hidden bg-[#15131f] flex items-center justify-center shrink-0 shadow-sm">
                 <img
-                  src={post.author.avatar || '/assets/spark_studio_avatar.jpg'}
-                  alt={post.author.name}
+                  src="/assets/spark_studio_avatar-96.webp"
+                  alt=""
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     e.target.src = '/assets/spark_studio_avatar.jpg';

@@ -1,7 +1,44 @@
+import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 import { LinkedInIcon, TeamsIcon, SlackIcon, MailIcon } from './SocialIcons';
 import { ArrowUpRight } from 'lucide-react';
+
+// Giant footer wordmark: a violet->coral spotlight follows the cursor (desktop);
+// on touch screens it sweeps across slowly while the footer is on screen.
+function Wordmark() {
+  const ref = useRef(null);
+  const frame = useRef(0);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return undefined;
+    const io = new IntersectionObserver(([entry]) => el.classList.toggle('is-visible', entry.isIntersecting));
+    io.observe(el);
+    return () => { io.disconnect(); cancelAnimationFrame(frame.current); };
+  }, []);
+
+  const onPointerMove = (e) => {
+    const el = ref.current;
+    if (!el || frame.current) return;
+    const { clientX, clientY } = e;
+    frame.current = requestAnimationFrame(() => {
+      frame.current = 0;
+      const r = el.getBoundingClientRect();
+      el.style.setProperty('--mx', ((clientX - r.left) / r.width) * 100 + '%');
+      el.style.setProperty('--my', ((clientY - r.top) / r.height) * 100 + '%');
+    });
+  };
+
+  return (
+    <div
+      ref={ref}
+      onPointerMove={onPointerMove}
+      data-text="THE SPARK STUDIO"
+      className="footer-wordmark font-heading font-extrabold text-[13vw] md:text-[170px] lg:text-[184px] leading-none tracking-[-0.04em] text-[#f7f6fb]/[0.18] text-center whitespace-nowrap uppercase"
+    />
+  );
+}
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
@@ -20,14 +57,7 @@ export default function Footer() {
         
         {/* Massive Editorial Wordmark */}
         <div className="w-full overflow-hidden select-none py-2 sm:py-4 border-b border-white/5" aria-hidden="true">
-          <h2 
-            className="font-heading font-extrabold text-[13vw] md:text-[170px] lg:text-[184px] leading-none tracking-[-0.04em] text-[#f7f6fb]/[0.18] text-center whitespace-nowrap uppercase transition-colors duration-500 hover:text-[#f7f6fb]/[0.26]"
-            style={{
-              fontFamily: '"Bricolage Grotesque", sans-serif'
-            }}
-          >
-            THE SPARK STUDIO
-          </h2>
+          <Wordmark />
         </div>
 
         {/* Top Info Bar: Brand Tagline, Live Status, and Official Vector Social Icons */}
@@ -251,7 +281,7 @@ export default function Footer() {
           <div>
             {t('footer.rights') || '© 2026 The Spark Studio. All rights reserved.'}
           </div>
-          <div className="flex items-center gap-2 text-[#8b87a0]/80">
+          <div className="flex items-center gap-2 text-[#8b87a0]">
             <span>{t('footer.builtWith') || 'Engineered for 95+ Core Web Vitals · High-Conversion Web Architecture'}</span>
           </div>
         </div>

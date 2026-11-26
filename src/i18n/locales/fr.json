@@ -92,25 +92,21 @@
     "items": [
       {
         "title": "Personnalisation de template",
-        "price": "499 € – 899 €",
         "turnaround": "Délai : 3–5 jours",
         "desc": "Typographie et palette de marque, intégration du logo, migration des contenus, ajout de sections personnalisées et audit responsive."
       },
       {
         "title": "Développement de site Framer sur mesure",
-        "price": "2 500 € – 6 000 €+",
         "turnaround": "Délai : 2–3 semaines",
         "desc": "Design UI/UX sur mesure, développement natif en composants Framer, animations fluides, architecture CMS avancée et optimisation Core Web Vitals."
       },
       {
         "title": "Intégration Figma vers Framer",
-        "price": "1 500 € – 3 500 €",
         "turnaround": "Délai : 7–10 jours",
         "desc": "Traduction 1:1 pixel-perfect de vos fichiers Figma en pages Framer interactives prêtes pour la mise en ligne avec composants dynamiques."
       },
       {
         "title": "Optimisation vitesse & performance Framer",
-        "price": "350 € – 600 €",
         "turnaround": "Délai : 2–3 jours",
         "desc": "Réduction des polices de caractères, compression AVIF/WebP, optimisation du chargement des scripts et élimination des décalages visuels pour 90+ garanti."
       }
@@ -157,7 +153,7 @@
         "category": "CMS immobilier moderne & agence",
         "tagline": "Les sites d’agences immobilières génériques perdent leurs prospects face aux portails de masse. Mavric Estate est conçu pour les capturer.",
         "price": "69 €",
-        "image": "/templates/mavric-estate.png",
+        "image": "/templates/mavric-estate.webp",
         "demoUrl": "https://mavric-estate.framer.website/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1",
         "categoryKey": "real-estate"
@@ -168,7 +164,7 @@
         "category": "Immobilier de prestige éditorial",
         "tagline": "Les acquéreurs fortunés ne consultent pas les portails grand public — ils recherchent une autorité architecturale.",
         "price": "99 €",
-        "image": "/templates/aurelle-estates.png",
+        "image": "/templates/aurelle-estates.webp",
         "demoUrl": "https://wandering-variations-344785.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/c111b344-dc0c-4931-aa46-55f1d0dc49c8?embed=1",
         "categoryKey": "real-estate"
@@ -179,7 +175,7 @@
         "category": "Architecture monolithique & intérieur",
         "tagline": "La plupart des portfolios d’architecture ressemblent à des grilles d’images banales. Onyx Atelier est conçu comme une monographie d’exposition.",
         "price": "79 €",
-        "image": "/templates/onyx-atelier.png",
+        "image": "/templates/onyx-atelier.webp",
         "demoUrl": "https://active-strengthening-218427.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1",
         "categoryKey": "architecture"
@@ -190,7 +186,7 @@
         "category": "Portfolio d’architecture éditorial",
         "tagline": "Une monographie paisible au format livre d’art pour agences d’architecture où l’image et la matière priment.",
         "price": "39 €",
-        "image": "/templates/vellum-edition.png",
+        "image": "/templates/vellum-edition.webp",
         "demoUrl": "https://unlimited-mind-018782.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/af57a897-c648-4ba7-aa29-b06f4fa4d498?embed=1",
         "categoryKey": "craft"
@@ -201,7 +197,7 @@
         "category": "Studio d’objets & mobilier artisanal",
         "tagline": "Les boutiques en ligne standard banalisent l’artisanat. Halden Edition est conçu pour les pièces de collection.",
         "price": "59 €",
-        "image": "/templates/halden-edition.png",
+        "image": "/templates/halden-edition.webp",
         "demoUrl": "https://past-network-244230.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1",
         "categoryKey": "real-estate"
@@ -212,7 +208,7 @@
         "category": "Objets pour la maison & commerce tactile",
         "tagline": "Les boutiques en ligne classiques manquent d’âme. Grain & Form apporte relief et sensibilité à la décoration.",
         "price": "58 €",
-        "image": "/templates/grain-form.png",
+        "image": "/templates/grain-form.webp",
         "demoUrl": "https://mindful-account-986092.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/a0ece10b-8ec0-49ab-8371-1be6935e9eab?embed=1",
         "categoryKey": "architecture"
@@ -223,7 +219,7 @@
         "category": "Mobilier en bois massif & artisanat",
         "tagline": "Un template éditorial digne d’un musée pour ateliers d’ébénisterie et créateurs de mobilier massif.",
         "price": "Gratuit",
-        "image": "/templates/slowgrain.png",
+        "image": "/templates/slowgrain.webp",
         "demoUrl": "https://prosperous-statuses-272584.framer.app/style-guide",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1",
         "categoryKey": "craft"
@@ -268,7 +264,15 @@
     "categories": [
       {
         "id": "all",
-        "label": "Tous les templates"
+        "label": "Tous les projets & templates"
+      },
+      {
+        "id": "software",
+        "label": "Logiciels & SaaS sur mesure"
+      },
+      {
+        "id": "websites",
+        "label": "Sites sur mesure"
       },
       {
         "id": "real-estate",
@@ -281,6 +285,10 @@
       {
         "id": "craft",
         "label": "Artisanat & commerce"
+      },
+      {
+        "id": "services",
+        "label": "Services de proximité"
       }
     ],
     "pipeline": {
@@ -297,7 +305,8 @@
     },
     "viewDetails": "Voir les détails",
     "freeRemix": "Remix gratuit",
-    "badgeAgent": "Agent"
+    "badgeAgent": "Agent",
+    "requestBuild": "Demander un projet →"
   },
   "bundles": {
     "tag": "PACKS ÉCONOMIQUES",
@@ -354,7 +363,7 @@
         "title": "Real Estate Flagship Duo",
         "price": "$79",
         "regularPrice": "$168",
-        "desc": "Aurelle Estates ($99) + Mavric Estate ($69). La panoplie idéale pour agences immobilières de prestige et promoteurs.",
+        "desc": "Aurelle Estates ($99) + Mavric Estate (Gratuit). La panoplie idéale pour agences immobilières de prestige et promoteurs.",
         "cta": "Obtenir le Duo Immobilier — $79",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
@@ -363,7 +372,7 @@
         "title": "Duo Monographie Architecture",
         "price": "$69",
         "regularPrice": "$118",
-        "desc": "Onyx Atelier ($79) + Vellum Edition ($39). Conçu sur mesure pour agences d’architecture, designers d’espace et portfolios.",
+        "desc": "Onyx Atelier (Gratuit) + Vellum Edition (Gratuit). Conçu sur mesure pour agences d’architecture, designers d’espace et portfolios.",
         "cta": "Obtenir le Duo Architecture — $69",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
@@ -372,7 +381,7 @@
         "title": "Artisan Craft Pack",
         "price": "$99",
         "regularPrice": "$186",
-        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain inclus). Sélectionné pour ateliers d’art et boutiques.",
+        "desc": "TESSOVRA ($89) + Halden Edition (Gratuit) + Grain & Form (Gratuit) (+ Slowgrain inclus). Sélectionné pour ateliers d’art et boutiques.",
         "cta": "Obtenir la Suite Artisanat — $99",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
       }
@@ -411,9 +420,9 @@
         "desc": "Accès immédiat aux 7 templates payants + Slowgrain (Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum). La suite de design la plus complète pour créateurs exigeants.",
         "features": [
           "Les 7 templates payants + Slowgrain (Gratuit)",
-          "Aurelle ($99) + Onyx ($79) + Tessovra ($69)",
-          "Mavric ($69) + Halden ($59) + Grain & Form ($58)",
-          "Vellum Edition ($39) incluse",
+          "Aurelle ($99) + Onyx (Gratuit) + Tessovra ($89)",
+          "Mavric (Gratuit) + Halden (Gratuit) + Grain & Form (Gratuit)",
+          "Vellum Edition (Gratuit) incluse",
           "Bibliothèques de composants complètes & design tokens",
           "Licence commerciale individuelle par template"
         ],
@@ -447,10 +456,10 @@
         "title": "Real Estate Flagship Duo",
         "price": "$79",
         "regularPrice": "/ $168 valeur catalogue",
-        "desc": "Aurelle Estates ($99) + Mavric Estate ($69). La boîte à outils incontournable pour agences de prestige et promoteurs.",
+        "desc": "Aurelle Estates ($99) + Mavric Estate (Gratuit). La boîte à outils incontournable pour agences de prestige et promoteurs.",
         "features": [
           "Aurelle Estates ($99) template pour propriétés d’exception",
-          "Mavric Estate ($69) portail pour courtiers et annonces",
+          "Mavric Estate (Gratuit) portail pour courtiers et annonces",
           "Collections CMS dynamiques complètes intégrées",
           "Édition 100 % visuelle sans aucune compétence de code"
         ],
@@ -463,10 +472,10 @@
         "title": "Duo Monographie d’Architecture",
         "price": "$99",
         "regularPrice": "/ $118 valeur catalogue",
-        "desc": "Onyx Atelier ($79) + Vellum Edition ($39). Pensé pour les agences d’architecture, concepteurs d’espace et monographies.",
+        "desc": "Onyx Atelier (Gratuit) + Vellum Edition (Gratuit). Pensé pour les agences d’architecture, concepteurs d’espace et monographies.",
         "features": [
-          "Onyx Atelier ($79) portfolio sombre d’esprit galerie",
-          "Vellum Edition ($39) monographie épurée type livre d’art",
+          "Onyx Atelier (Gratuit) portfolio sombre d’esprit galerie",
+          "Vellum Edition (Gratuit) monographie épurée type livre d’art",
           "Grilles typographiques à fort contraste et mises en page",
           "Score 95+ Core Web Vitals garanti sans réglages complexes"
         ],
@@ -479,11 +488,11 @@
         "title": "Artisan Craft Pack",
         "price": "$99",
         "regularPrice": "/ $186 valeur catalogue",
-        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Gratuit). Idéal pour ateliers d’art et boutiques.",
+        "desc": "TESSOVRA ($89) + Halden Edition (Gratuit) + Grain & Form (Gratuit) (+ Slowgrain Gratuit). Idéal pour ateliers d’art et boutiques.",
         "features": [
-          "TESSOVRA ($69) vitrine e-commerce pour matières nobles",
-          "Halden Edition ($59) mise en valeur de pièces de collection",
-          "Grain & Form ($58) catalogue art de vivre et objets de créateurs",
+          "TESSOVRA ($89) vitrine e-commerce pour matières nobles",
+          "Halden Edition (Gratuit) mise en valeur de pièces de collection",
+          "Grain & Form (Gratuit) catalogue art de vivre et objets de créateurs",
           "Design tokens muséographiques SLOWGRAIN inclus"
         ],
         "cta": "Obtenir la Suite Artisanale — $99",
@@ -510,7 +519,7 @@
       },
       {
         "question": "Comment démarrer notre collaboration ?",
-        "answer": "Envoyez directement votre brief par e-mail à The Spark Studio à sparkstudio0@outlook.com. Nous analysons vos besoins et vous répondons sous 24 heures avec un devis détaillé au forfait et une date de démarrage."
+        "answer": "Envoyez directement votre brief par e-mail à The Spark Studio à hello@thesparkstudio.digital. Nous analysons vos besoins et vous répondons sous 24 heures avec un devis détaillé au forfait et une date de démarrage."
       }
     ]
   },
@@ -518,23 +527,23 @@
     "tag": "ENGAGER LA CONVERSATION",
     "title": "Créons ensemble quelque chose d’exceptionnel.",
     "subtitle": "Une question sur un template, une intégration spécifique ou prêt à nous confier la création de votre site sur mesure ? Nous vous répondons sous 24 heures.",
-    "email": "sparkstudio0@outlook.com",
+    "email": "hello@thesparkstudio.digital",
     "formName": "Votre Nom",
     "formEmail": "Adresse E-mail",
     "formType": "Type de Projet",
     "typeOptions": [
-      "Personnalisation de template (dès 499 €)",
-      "Site sur mesure (dès 2 500 €)",
-      "Intégration Figma vers Framer (dès 1 500 €)",
-      "Optimisation vitesse (dès 350 €)",
+      "Personnalisation de template",
+      "Site sur mesure",
+      "Intégration Figma vers Framer",
+      "Optimisation vitesse",
       "Autre / Question"
     ],
-    "formBudget": "Budget estimé",
-    "budgetOptions": [
-      "< 1 000 €",
-      "1 000 € – 3 000 €",
-      "3 000 € – 6 000 €",
-      "6 000 €+"
+    "formTimeline": "Délai",
+    "timelineOptions": [
+      "Dès que possible",
+      "Dans le mois",
+      "D'ici 1 à 3 mois",
+      "Je me renseigne"
     ],
     "formMessage": "Parlez-nous de votre projet...",
     "submitBtn": "Envoyer la demande →",
@@ -824,79 +833,179 @@
       "cmsDesc": "Accueil, Catalogue, Produit (CMS), Panier, Moodboard, Échantillons, Showroom, Devis et 404."
     },
     "ai-saas": {
-      "name": "AI SaaS Platform",
-      "category": "Web Application & SaaS",
-      "headline": "AI That Works While You Sleep — A high-converting AI SaaS platform engineered with Next.js, React, and Tailwind CSS.",
-      "overviewTitle": "OVERVIEW",
-      "overview": "A production-grade, high-converting AI SaaS platform engineered with Next.js, React, and Tailwind CSS. Built for workflow automation, AI agents, and enterprise developer tools with high-converting pricing tiers, live product demos, and frictionless user onboarding.",
-      "featuresTitle": "Original Features Built for SaaS Products",
+      "name": "Plateforme SaaS IA",
+      "category": "Application web & SaaS",
+      "headline": "Une IA qui travaille pendant que vous dormez — une plateforme SaaS IA à forte conversion, développée avec Next.js, React et Tailwind CSS.",
+      "overviewTitle": "PRÉSENTATION",
+      "overview": "Une plateforme SaaS IA prête pour la production et à forte conversion, développée avec Next.js, React et Tailwind CSS. Conçue pour l’automatisation des workflows, les agents IA et les outils pour développeurs en entreprise, avec des offres tarifaires convaincantes, des démos produit en direct et un onboarding fluide.",
+      "featuresTitle": "Fonctionnalités originales pour produits SaaS",
       "features": [
-        "Next.js App Router Architecture — Instant page transitions, server-side rendering, and sub-second TTFB.",
-        "Interactive Workflow Automation Demos — Visual workflow canvas highlighting product capability.",
-        "Tiered Subscription Pricing Matrix — High-conversion comparison grids with monthly and annual toggles.",
-        "Dark Mode First Architectural Palette — Crafted for modern developer and AI tool aesthetics.",
-        "Enterprise Security & Compliance Blocks — SOC2, GDPR, and enterprise trust signals built-in.",
-        "Developer API Documentation Preview — Interactive code syntax tabs and live integration guides."
+        "Architecture Next.js App Router — Transitions de page instantanées, rendu côté serveur et TTFB inférieur à une seconde.",
+        "Démos interactives d’automatisation — Canevas visuel de workflows qui met en valeur le produit.",
+        "Grille d’abonnements par paliers — Tableaux comparatifs à forte conversion avec bascule mensuel/annuel.",
+        "Palette pensée pour le mode sombre — Conçue pour l’esthétique des outils modernes de développement et d’IA.",
+        "Blocs sécurité & conformité entreprise — Signaux de confiance SOC2, RGPD et entreprise intégrés.",
+        "Aperçu de la documentation API — Onglets de code interactifs et guides d’intégration en direct."
       ],
-      "includedTitle": "What's Included",
+      "includedTitle": "Ce qui est inclus",
       "included": [
-        "Complete production-ready Next.js & React codebase",
-        "Full Tailwind CSS design system with custom components",
-        "Figma UI kit and responsive breakpoints",
-        "Support direct du code par The Spark Studio"
+        "Base de code Next.js & React complète, prête pour la production",
+        "Design system Tailwind CSS complet avec composants sur mesure",
+        "Kit UI Figma et breakpoints responsive",
+        "Support direct sur le code par The Spark Studio"
       ],
-      "cmsTitle": "Structured Architecture",
-      "cmsDesc": "Changelog, Documentation, Product Features, Customer Stories, Pricing Tiers."
+      "cmsTitle": "Architecture structurée",
+      "cmsDesc": "Changelog, documentation, fonctionnalités produit, témoignages clients, offres tarifaires."
     },
     "luxury-restaurant": {
-      "name": "Luxury Restaurant",
-      "category": "Custom Hospitality Website",
-      "headline": "Crafting Culinary Poetry — A premium restaurant landing page crafted to showcase fine dining through immersive storytelling and fluid reservations.",
-      "overviewTitle": "OVERVIEW",
-      "overview": "A Michelin-tier hospitality and fine dining website crafted to elevate culinary perception. Features immersive full-bleed imagery, seasonal tasting menu showcase, and fluid table reservation booking flows.",
-      "featuresTitle": "Original Features Built for Fine Dining & Hospitality",
+      "name": "Restaurant de luxe",
+      "category": "Site d’hôtellerie-restauration sur mesure",
+      "headline": "Poésie culinaire — un site premium pour restaurant qui met en scène la haute gastronomie avec une narration immersive et des réservations fluides.",
+      "overviewTitle": "PRÉSENTATION",
+      "overview": "Un site de haute gastronomie et d’hôtellerie conçu pour sublimer la perception culinaire. Images immersives pleine largeur, mise en avant du menu dégustation de saison et parcours de réservation de table fluides.",
+      "featuresTitle": "Fonctionnalités originales pour la haute gastronomie",
       "features": [
-        "Interactive Seasonal Tasting Menu — Dynamic category navigation for lunch, dinner, and wine pairings.",
-        "Table Reservation Booking Flow — Integrated OpenTable / Resy booking integration.",
-        "Private Dining & Events Showcase — Dedicated inquiry forms for weddings and executive private dinners.",
-        "Cinematic Culinary Reel — Full-bleed video and photography showcase with smooth parallax.",
-        "Sommelier & Chef Monograph — Storytelling sections spotlighting executive chefs and cellar curation.",
-        "Location, Valet & Hours Module — Dynamic hours status with interactive Google Maps."
+        "Menu dégustation de saison interactif — Navigation dynamique entre déjeuner, dîner et accords mets-vins.",
+        "Parcours de réservation de table — Réservation intégrée via OpenTable / Resy.",
+        "Salons privés & événements — Formulaires dédiés pour mariages et dîners privés d’entreprise.",
+        "Film culinaire cinématographique — Vidéo et photographie pleine largeur avec parallaxe douce.",
+        "Portrait du sommelier & du chef — Sections narratives sur les chefs et la sélection de la cave.",
+        "Module accès, voiturier & horaires — Statut d’ouverture dynamique avec Google Maps interactif."
       ],
-      "includedTitle": "What's Included",
+      "includedTitle": "Ce qui est inclus",
       "included": [
-        "Production-ready Next.js & React website codebase",
-        "Dynamic seasonal menu management structure",
-        "Integrated reservation and inquiry modal",
-        "Support technique direct par The Spark Studio et guide d'installation"
+        "Base de code du site Next.js & React prête pour la production",
+        "Structure dynamique de gestion des menus de saison",
+        "Fenêtre intégrée de réservation et de demande",
+        "Support technique direct de The Spark Studio & guide d’installation"
       ],
-      "cmsTitle": "Structured Architecture",
-      "cmsDesc": "Seasonal Menus, Wine Cellar, Private Dining Events, Press & Accolades."
+      "cmsTitle": "Architecture structurée",
+      "cmsDesc": "Menus de saison, cave à vins, événements privés, presse & distinctions."
     },
     "premium-healthcare": {
-      "name": "Premium Healthcare",
-      "category": "Healthcare & Patient Portal",
-      "headline": "Expert Care You Can Trust — A modern healthcare website designed to build patient trust through a clean interface and intuitive booking.",
-      "overviewTitle": "OVERVIEW",
-      "overview": "A clinical-grade healthcare and wellness website engineered for private medical clinics, dental specialists, and wellness centers. Designed with reassuring clinical clarity, accessibility standards, and intuitive appointment booking.",
-      "featuresTitle": "Original Features Built for Medical & Clinical Practices",
+      "name": "Santé premium",
+      "category": "Santé & portail patient",
+      "headline": "Des soins experts en toute confiance — un site de santé moderne qui inspire confiance grâce à une interface claire et une prise de rendez-vous intuitive.",
+      "overviewTitle": "PRÉSENTATION",
+      "overview": "Un site santé et bien-être de qualité clinique pour cliniques privées, spécialistes dentaires et centres de bien-être. Conçu avec une clarté clinique rassurante, des standards d’accessibilité et une prise de rendez-vous intuitive.",
+      "featuresTitle": "Fonctionnalités originales pour cabinets et cliniques",
       "features": [
-        "Interactive Doctor & Specialist Directory — Searchable bios, credentials, and specialties.",
-        "Frictionless Patient Appointment Flow — Multi-step consultation booking system.",
-        "Treatments & Procedures Library — Comprehensive patient education guides with FAQs.",
-        "Patient Trust & Verified Testimonials — HIPAA-compliant reviews and patient outcome stories.",
-        "Insurance & Financing Accordions — Transparent insurance carrier verification and cost calculators.",
-        "Telehealth & Remote Care Portal — Video consultation scheduling and intake forms."
+        "Annuaire interactif des médecins & spécialistes — Profils, diplômes et spécialités consultables.",
+        "Prise de rendez-vous fluide — Système de réservation de consultation en plusieurs étapes.",
+        "Bibliothèque des soins & actes — Guides complets pour les patients avec FAQ.",
+        "Confiance & témoignages vérifiés — Avis conformes HIPAA et retours d’expérience patients.",
+        "Accordéons assurance & financement — Vérification transparente des mutuelles et simulateurs de coûts.",
+        "Portail de téléconsultation — Planification des consultations vidéo et formulaires d’admission."
       ],
-      "includedTitle": "What's Included",
+      "includedTitle": "Ce qui est inclus",
       "included": [
-        "Production-ready Next.js & React clinical website",
-        "Structured doctor profiles and treatment catalogs",
-        "Patient intake and appointment inquiry forms",
-        "Support technique direct par The Spark Studio et optimisation Core Web Vitals"
+        "Site clinique Next.js & React prêt pour la production",
+        "Profils de médecins et catalogues de soins structurés",
+        "Formulaires d’admission et de demande de rendez-vous",
+        "Support technique direct de The Spark Studio & optimisation des Core Web Vitals"
       ],
-      "cmsTitle": "Structured Architecture",
-      "cmsDesc": "Doctors & Specialists, Treatments & Services, Patient FAQs, Clinical Insights."
+      "cmsTitle": "Architecture structurée",
+      "cmsDesc": "Médecins & spécialistes, soins & services, FAQ patients, articles cliniques."
+    },
+    "onyx-atelier-pro": {
+      "name": "Onyx Atelier Pro",
+      "category": "Studio d’architecture sombre",
+      "headline": "L’édition complète d’Onyx Atelier — un template éditorial premium pour agences d’architecture, architectes d’intérieur et studios créatifs.",
+      "overviewTitle": "PRÉSENTATION",
+      "overview": "Photographie grand format, angles nets, filets délicats et une touche de bronze sobre mettent l’architecture au premier plan. Le CMS permet de gérer projets, articles, équipe, recrutement, services et distinctions sans toucher à la mise en page. Modes jour et nuit, bandeau cookies et formulaire de demande prêt à l’emploi inclus.",
+      "featuresTitle": "Fonctionnalités pour agences d’architecture & d’intérieur",
+      "features": [
+        "Pages projet complètes — Chiffres clés, récit, galeries, crédits, distinctions et projets associés.",
+        "Lightbox pour dessins techniques — Visionneuse plein écran pour plans et dessins.",
+        "Réalisations & journal filtrables — Liens filtrés partageables, comme /work?category=Cultural.",
+        "Journal éditorial — Catégories, pages auteur, liens de partage, barre de lecture et articles associés.",
+        "Modes jour & nuit — Basculez tout le site entre une présentation claire et sombre.",
+        "Conçu pour l’agent IA de Framer — 7 skills pour modifier contenus et mises en page."
+      ],
+      "includedTitle": "Ce qui est inclus",
+      "included": [
+        "Plus de 20 pages, de l’accueil aux réalisations, carrières, presse et guide de style",
+        "10 collections CMS",
+        "Bandeau cookies et formulaire de demande prêt à l’emploi",
+        "Pages guide du template et guide de style"
+      ],
+      "cmsTitle": "Collections CMS",
+      "cmsDesc": "Projets, Journal, Services, Équipe, Postes, Témoignages, Distinctions, Monographies, Studios, Canaux de contact."
+    },
+    "lume-field": {
+      "name": "LUME FIELD",
+      "category": "Conception lumière & architecture",
+      "headline": "Un portfolio éditorial et minimaliste pour concepteurs lumière indépendants, agences d’architecture et artistes visuels.",
+      "overviewTitle": "PRÉSENTATION",
+      "overview": "Grâce à une typographie précise, des collections CMS dynamiques et des comparateurs avant/après interactifs, LUME FIELD présente l’aménagement et les installations lumineuses comme une exposition numérique digne d’un musée.",
+      "featuresTitle": "Fonctionnalités pour portfolios lumière & architecture",
+      "features": [
+        "Mise en page éditoriale — Pensée pour les concepteurs lumière et les architectes.",
+        "Contenu piloté par le CMS — Projets, études de cas et journal dans le CMS Framer.",
+        "Comparateurs avant/après — Montrent de façon interactive l’effet de l’éclairage.",
+        "Esthétique sombre et raffinée — Animations subtiles et transitions fluides.",
+        "Entièrement responsive — Mises en page pour ordinateur, tablette et mobile.",
+        "Chargement rapide — Optimisé pour la performance."
+      ],
+      "includedTitle": "Ce qui est inclus",
+      "included": [
+        "Site portfolio complet de plusieurs pages",
+        "CMS projets, études de cas et journal",
+        "Comparateurs avant/après interactifs",
+        "Remix gratuit sur le Framer Marketplace"
+      ],
+      "cmsTitle": "Collections CMS",
+      "cmsDesc": "Projets, Études de cas, Journal."
+    },
+    "solum-edition": {
+      "name": "SOLUM EDITION",
+      "category": "Monographie d’atelier de mobilier",
+      "headline": "Une monographie numérique de qualité éditoriale pour ateliers de mobilier sur mesure, ébénistes et créateurs indépendants.",
+      "overviewTitle": "PRÉSENTATION",
+      "overview": "SOLUM est un template apaisé pour ateliers de mobilier, agences d’architecture, designers industriels et artisans qui présentent leur travail comme une monographie tactile plutôt qu’une grille de produits — avec une sobriété scandinave, une typographie à empattements et des interactions mesurées.",
+      "featuresTitle": "Fonctionnalités pour ateliers de mobilier & créateurs",
+      "features": [
+        "Frise de fabrication en 6 étapes — Un parcours au défilement, du bois séché à l’air jusqu’à la livraison.",
+        "Pages pièce monographiques — Essences de bois, dessins cotés et délais de fabrication.",
+        "Collection filtrable — Assises, tables, rangements et luminaires, en grille ou en fiche technique.",
+        "CMS natif — Collections pour le mobilier et le journal de l’atelier.",
+        "Prêt pour l’agent IA de Framer — Skills pour ajouter des pièces, personnaliser l’atelier et vérifier avant la mise en ligne.",
+        "Design éditorial scandinave — Typographie à empattements et interactions mesurées."
+      ],
+      "includedTitle": "Ce qui est inclus",
+      "included": [
+        "Site monographique complet de plusieurs pages",
+        "CMS mobilier et journal de l’atelier",
+        "Frise de fabrication et catalogue filtrable",
+        "Remix gratuit sur le Framer Marketplace"
+      ],
+      "cmsTitle": "Collections CMS",
+      "cmsDesc": "Mobilier, Journal de l’atelier."
+    },
+    "hearthflow": {
+      "name": "Hearthflow",
+      "category": "Plomberie, chauffage & climatisation",
+      "headline": "Un template orienté conversion pour plombiers, chauffagistes, entreprises de climatisation et artisans locaux qui vivent des appels et des demandes de devis.",
+      "overviewTitle": "PRÉSENTATION",
+      "overview": "Chaque page est pensée pour transformer les visiteurs en interventions : bandeau urgence 24h/24, barre fixe « Appeler / Devis gratuit » sur mobile, boutons d’appel et WhatsApp, formulaire de rappel, grilles tarifaires transparentes et signaux de confiance comme les avis, certifications et garanties dès le premier écran.",
+      "featuresTitle": "Fonctionnalités pour plombiers & artisans du bâtiment",
+      "features": [
+        "Pages zones pour le SEO local — Ajoutez une ville dans le CMS pour obtenir une page avec son méta-titre, son H1 et son texte.",
+        "Barre d’appel & de devis sur mobile — Boutons fixes d’appel, de devis et WhatsApp.",
+        "Réalisations avant/après — Comparateur à faire glisser, avec chiffres et études de cas.",
+        "Tarifs transparents & confiance — Grilles tarifaires, avis, certifications et garanties dès le premier écran.",
+        "Blog — Article à la une, catégories, temps de lecture et articles associés.",
+        "Conçu pour les agents IA de Framer — Demandez à l’agent d’ajouter articles, réalisations ou zones, ou de changer l’identité."
+      ],
+      "includedTitle": "Ce qui est inclus",
+      "included": [
+        "19 pages, dont 4 pages services, Tarifs, Zones et un guide du template",
+        "10 collections CMS",
+        "Carte des zones d’intervention, section vidéo et badges d’avis",
+        "Contenu de démo sans région imposée"
+      ],
+      "cmsTitle": "Collections CMS",
+      "cmsDesc": "Services, Pannes, Tarifs, Avis, FAQ, Équipe, Certifications, Zones, Articles, Réalisations."
     }
   },
   "about": {
@@ -1058,16 +1167,16 @@
       "excerpt": "Ouvrez une fiche projet sur votre téléphone. Le titre apparaît-il bien avant la photo ?",
       "category": "Performance",
       "date": "21 novembre 2026",
-      "readTime": "2 min de lecture",
-      "content": "Ouvrez une fiche projet sur votre téléphone. Le titre apparaît-il bien avant la photo ? Ou attendez-vous plusieurs secondes avant de pouvoir lire le moindre mot ? Cette première observation permet de choisir quoi tester.\n\nAnalysez l’adresse publiée dans PageSpeed Insights en mode mobile. Repérez l’élément associé au LCP, l’indicateur qui mesure le délai d’affichage du plus grand élément visible. Sur un portfolio d’architecture, il peut s’agir de la photo d’ouverture comme du titre du projet. Faites trois essais et notez l’élément identifié à chaque fois.\n\nSi la photo arrive tard, vérifiez les dimensions du fichier téléchargé sur téléphone. Un plan destiné à être agrandi peut justifier une image très détaillée. Pour une photo d’ambiance affichée sur la largeur de l’écran, essayez un export plus léger. Comparez les deux versions sur la finesse des lignes, les ombres et les inscriptions.\n\nSi le titre tarde à apparaître, dupliquez la page et désactivez uniquement son animation d’entrée. Gardez la même police et la même mise en page. Relancez la mesure. Vous saurez ainsi si cette animation retarde la lecture, avant de passer du temps à retravailler toute la galerie."
+      "readTime": "4 min de lecture",
+      "content": "Ouvrez une fiche projet sur votre téléphone. Le titre apparaît-il bien avant la photo ? Ou attendez-vous plusieurs secondes avant de pouvoir lire le moindre mot ? Cette première observation permet de choisir quoi tester.\n\n## Comment trouver l’élément lent d’une page Framer ?\n\nAnalysez l’adresse publiée dans PageSpeed Insights en mode mobile. Repérez l’élément associé au LCP, l’indicateur qui mesure le délai d’affichage du plus grand élément visible. Sur un portfolio d’architecture, il peut s’agir de la photo d’ouverture comme du titre du projet. Faites trois essais et notez l’élément identifié à chaque fois.\n\n## Et si la photographie apparaît tard ?\n\nSi la photo arrive tard, vérifiez les dimensions du fichier téléchargé sur téléphone. Un plan destiné à être agrandi peut justifier une image très détaillée. Pour une photo d’ambiance affichée sur la largeur de l’écran, essayez un export plus léger. Comparez les deux versions sur la finesse des lignes, les ombres et les inscriptions.\n\nSur cette même page, ouvrez les outils de développement du navigateur, passez à l’onglet « Réseau » et rechargez en largeur mobile. Triez par taille. Si la première photographie pèse plusieurs mégaoctets, ou si elle est suivie d’une deuxième grande image qui n’apparaît que plus bas, vous savez où passent les premières secondes.\n\n## Et si le titre apparaît tard ?\n\nSi le titre tarde à apparaître, dupliquez la page et désactivez uniquement son animation d’entrée. Gardez la même police et la même mise en page. Relancez la mesure. Vous saurez ainsi si cette animation retarde la lecture, avant de passer du temps à retravailler toute la galerie.\n\nLes polices sont l’autre cause fréquente. Si le titre attend une police web personnalisée, chaque graisse et chaque style ajoutent un téléchargement. Gardez seulement les graisses réellement utilisées, et vérifiez que la même famille n’est pas chargée deux fois sous des noms différents.\n\n## Qu’est-ce qui ralentit encore un portfolio sur mobile ?\n\nRegardez tout ce qui ne fait pas partie du design lui-même : cartes intégrées, vidéos d’arrière-plan, widgets de chat, outils de réservation et scripts de suivi. Chacun sollicite le processeur du téléphone pendant le démarrage de la page. Retirez-les un par un sur une copie de la page et mesurez à nouveau. Si la page s’améliore nettement, chargez cet élément plus tard ou remplacez-le par une image fixe avec un lien.\n\n## Comment savoir si la correction a fonctionné ?\n\nRefaites les trois mêmes mesures PageSpeed et comparez le résultat médian, pas le meilleur. Ouvrez ensuite la page en ligne sur un vrai téléphone en données mobiles. Les données des visiteurs réels apparaissent dans le rapport Core Web Vitals de Google Search Console, qui porte sur les 28 derniers jours : laissez environ un mois à une modification avant de la juger là-bas."
     },
     "furniture-product-page-photo-guide": {
       "title": "Fiche produit de mobilier : quelles photos prévoir avant la prise de vue ?",
       "excerpt": "Pour choisir une chaise de salle à manger, il faut pouvoir se représenter sa hauteur sous la table, reconnaître sa finition et savoir comment commander le modèle présenté. Ces trois besoins donnent un fil conducteur à la séance photo.",
       "category": "Photographie de mobilier",
       "date": "21 novembre 2026",
-      "readTime": "2 min de lecture",
-      "content": "Pour choisir une chaise de salle à manger, il faut pouvoir se représenter sa hauteur sous la table, reconnaître sa finition et savoir comment commander le modèle présenté. Ces trois besoins donnent un fil conducteur à la séance photo.\n\nPrévoyez d’abord une vue d’ensemble. Photographiez ensuite la chaise de profil, à côté d’une table, puis cadrez un assemblage ou le grain du tissu. Si vous hésitez entre deux vues de face très proches, choisissez plutôt un cliché qui explique un détail encore invisible.\n\nSur la fiche, rapprochez les dimensions, leur unité et le nom de la finition photographiée. Pour une chaise disponible en chêne et en noyer, une simple légende évite de laisser le lecteur deviner. Si la commande passe par une demande de devis, affichez la référence du modèle près du bouton de contact.\n\nFaites l’essai avec une pièce de votre collection. Ouvrez les aperçus de Grain & Form et de Halden Edition sur notre profil Framer. Imaginez vos trois photos dans chaque composition. Dans laquelle retrouve-t-on le plus facilement la hauteur d’assise et les modalités de commande ? [Voir les modèles Framer du studio](https://www.framer.com/@thesparkstudio/)"
+      "readTime": "4 min de lecture",
+      "content": "Pour choisir une chaise de salle à manger, il faut pouvoir se représenter sa hauteur sous la table, reconnaître sa finition et savoir comment commander le modèle présenté. Ces trois besoins donnent un fil conducteur à la séance photo.\n\n## Quelles photos montrer sur une page produit de mobilier ?\n\nPrévoyez d’abord une vue d’ensemble. Photographiez ensuite la chaise de profil, à côté d’une table, puis cadrez un assemblage ou le grain du tissu. Si vous hésitez entre deux vues de face très proches, choisissez plutôt un cliché qui explique un détail encore invisible.\n\nUne liste simple pour la plupart des pièces : la pièce entière de trois quarts, une vue de profil à côté d’un objet familier pour l’échelle, un gros plan de l’assemblage ou de la matière, la finition en lumière naturelle et une photo dans une vraie pièce. Si l’arrière ou le dessous est visible à l’usage, comme un canapé au milieu d’un salon, photographiez-le aussi.\n\n## Où placer les dimensions et les finitions ?\n\nSur la fiche, rapprochez les dimensions, leur unité et le nom de la finition photographiée. Pour une chaise disponible en chêne et en noyer, une simple légende évite de laisser le lecteur deviner. Si la commande passe par une demande de devis, affichez la référence du modèle près du bouton de contact.\n\nIndiquez hauteur, largeur et profondeur, ainsi que les mesures vérifiées avant l’achat : la hauteur d’assise d’une chaise, le dégagement sous une table, l’ouverture d’un meuble. Si vous vendez dans plusieurs pays, affichez centimètres et pouces. Délai, zone de livraison et entretien vont dans le même bloc, pas sur une autre page.\n\n## Comment organiser la commande ou la demande ?\n\nSi chaque pièce est fabriquée sur commande, le bouton de demande doit se trouver à côté du nom du produit et de la finition choisie, et le formulaire doit arriver déjà rempli avec ces informations. Indiquez le délai près du bouton pour que le visiteur sache à quoi s’attendre avant d’écrire. Un acheteur qui doit retaper ce qu’il regarde n’enverra peut-être jamais son message.\n\n## Comment tester la mise en page avant la séance photo ?\n\nFaites l’essai avec une pièce de votre collection. Ouvrez les aperçus de Grain & Form et de Halden Edition sur notre profil Framer. Imaginez vos trois photos dans chaque composition. Dans laquelle retrouve-t-on le plus facilement la hauteur d’assise et les modalités de commande ? [Voir les modèles Framer du studio](https://www.framer.com/@thesparkstudio/)"
     }
   }
 }

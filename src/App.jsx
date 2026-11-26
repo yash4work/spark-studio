@@ -1,4 +1,4 @@
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { useRef, useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, useLocation, useParams, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { trackPageView } from './lib/analytics';
@@ -6,27 +6,15 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 import HomePage from './pages/HomePage';
+import { TEMPLATE_SLUGS } from './data/templates';
 
 const TemplateDetailPage = import.meta.env.SSR ? (await import('./pages/TemplateDetailPage')).default : lazy(() => import('./pages/TemplateDetailPage'));
 const BlogPage = import.meta.env.SSR ? (await import('./pages/BlogPage')).default : lazy(() => import('./pages/BlogPage'));
 const BlogPostPage = import.meta.env.SSR ? (await import('./pages/BlogPostPage')).default : lazy(() => import('./pages/BlogPostPage'));
 const NotFoundPage = import.meta.env.SSR ? (await import('./pages/NotFoundPage')).default : lazy(() => import('./pages/NotFoundPage'));
 
-const VALID_SLUGS = [
-  'ai-saas',
-  'luxury-restaurant',
-  'premium-healthcare',
-  'mavric-estate',
-  'aurelle-estates',
-  'onyx-atelier',
-  'vellum-edition',
-  'halden-edition',
-  'grain-form',
-  'slowgrain',
-  'terra',
-  'sasso-architect',
-  'tessovra',
-];
+// Template slugs live in src/data/templates.js (single source of truth)
+const VALID_SLUGS = TEMPLATE_SLUGS;
 
 // Language synchronizer & hash scroll restoration
 function RouteManager() {
@@ -99,21 +87,34 @@ function LocalizedSlugRouteHandler() {
 
 // Scroll Progress Bar component from Framer Spark Core
 function ScrollProgressBar() {
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const barRef = useRef(null);
 
+  // Update the bar's transform directly (no React state -> no re-renders),
+  // batched to one write per animation frame.
   useEffect(() => {
-    const handleScroll = () => {
+    let frame = 0;
+    const update = () => {
+      frame = 0;
       const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
-      if (totalScroll > 0) {
-        setScrollProgress(window.scrollY / totalScroll);
-      }
+      const progress = totalScroll > 0 ? Math.min(window.scrollY / totalScroll, 1) : 0;
+      if (barRef.current) barRef.current.style.transform = `scaleX(${progress})`;
     };
+    const handleScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
   }, []);
 
   return (
     <div
+      ref={barRef}
       aria-hidden="true"
       style={{
         position: 'fixed',
@@ -122,7 +123,7 @@ function ScrollProgressBar() {
         width: '100%',
         height: '2px',
         transformOrigin: '0 50%',
-        transform: `scaleX(${scrollProgress})`,
+        transform: 'scaleX(0)',
         background: 'linear-gradient(90deg, rgb(142, 151, 247), rgb(255, 106, 69))',
         zIndex: 9998,
         pointerEvents: 'none',

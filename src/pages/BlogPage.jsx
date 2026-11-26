@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Clock, Calendar, ArrowRight, Sparkles } from 'lucide-react';
 import SEOHead from '../components/SEOHead';
 import { BLOG_POSTS, BLOG_CATEGORIES } from '../data/blogData';
+import { ORG_REF } from '../data/organization';
 import { motion } from 'framer-motion';
 
 export default function BlogPage() {
@@ -33,14 +34,7 @@ export default function BlogPage() {
     'description': t('blog.subtitle') || 'Technical teardowns, Core Web Vitals optimization guides, and production Framer web design insights from The Spark Studio.',
     'url': `https://www.thesparkstudio.digital${homePrefix}/blog`,
     'inLanguage': currentLang,
-    'publisher': {
-      '@type': 'Organization',
-      'name': 'The Spark Studio',
-      'logo': {
-        '@type': 'ImageObject',
-        'url': 'https://www.thesparkstudio.digital/logo.png'
-      }
-    },
+    'publisher': ORG_REF,
     'blogPost': filteredPosts.map((post) => ({
       '@type': 'BlogPosting',
       'headline': t(`blogPosts.${post.slug}.title`) || post.title,
@@ -162,8 +156,12 @@ export default function BlogPage() {
                   <div className="flex items-center gap-2.5">
                     <div className="w-7 h-7 rounded-full overflow-hidden border border-white/20 bg-[#15131f] shrink-0 shadow-sm">
                       <img
-                        src={post.author.avatar || '/assets/spark_studio_avatar.jpg'}
-                        alt={post.author.name}
+                        src="/assets/spark_studio_avatar-96.webp"
+                        alt=""
+                        width="48"
+                        height="48"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover"
                         onError={(e) => {
                           e.target.src = '/assets/spark_studio_avatar.jpg';

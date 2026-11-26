@@ -11,12 +11,21 @@ The Spark Studio builds production-ready digital flagships engineered for 95+ Pa
 - [TESSOVRA](https://www.thesparkstudio.digital/templates/tessovra): Architectural stone, surface, and luxury tile showroom template with interactive specifiers.
 - [TERRA](https://www.thesparkstudio.digital/templates/terra): Quiet, editorial furniture and object design atelier showcase with tactile layout.
 - [SASSO Architect](https://www.thesparkstudio.digital/templates/sasso-architect): Bespoke architectural monograph portfolio engineered for high-ticket design firms.
-- [SOLUM](https://www.thesparkstudio.digital/templates/solum): Tactile craft, joinery workshop, and artisan lighting monograph with interactive making timeline.
 - [Aurelle Estates](https://www.thesparkstudio.digital/templates/aurelle-estates): Ultra-luxury flagship real estate brokerage and development portfolio template.
 - [Vellum Edition](https://www.thesparkstudio.digital/templates/vellum-edition): Editorial monograph typography and studio portfolio for architects and interior designers.
 - [Halden Edition](https://www.thesparkstudio.digital/templates/halden-edition): Nordic minimalist furniture atelier, objects catalogue, and studio template.
 - [Grain & Form](https://www.thesparkstudio.digital/templates/grain-form): Solid timber craft, bespoke joinery, and Scandinavian furniture studio template.
 - [Slowgrain](https://www.thesparkstudio.digital/templates/slowgrain): Heirloom solid timber furniture and architectural craft portfolio template.
+- [Onyx Atelier Pro](https://www.thesparkstudio.digital/templates/onyx-atelier-pro): The complete $129 edition of Onyx Atelier: 20+ pages, 10 CMS collections, Day & Night modes and technical-drawing lightbox for architecture and interior studios.
+- [LUME FIELD](https://www.thesparkstudio.digital/templates/lume-field): Free minimalist editorial portfolio for lighting designers and architecture studios, with before/after comparison sliders.
+- [SOLUM EDITION](https://www.thesparkstudio.digital/templates/solum-edition): Free publication-grade monograph for furniture ateliers and makers, with a 6-step making timeline and filterable collection.
+- [Hearthflow](https://www.thesparkstudio.digital/templates/hearthflow): Free conversion-first template for plumbers, heating engineers and HVAC companies: 19 pages, local SEO area pages and click-to-call.
+
+## Custom Builds (Case Studies)
+
+- [AI SaaS Platform](https://www.thesparkstudio.digital/templates/ai-saas): Custom-built AI SaaS platform (Next.js, React, Tailwind CSS) with workflow-automation demos, tiered pricing and developer docs.
+- [Luxury Restaurant](https://www.thesparkstudio.digital/templates/luxury-restaurant): Custom-built fine-dining website with seasonal tasting menus, table reservations and private-dining enquiries.
+- [Premium Healthcare](https://www.thesparkstudio.digital/templates/premium-healthcare): Custom-built clinic website with a doctor directory, multi-step appointment booking and treatment library.
 
 ## Services & Custom Engineering
 

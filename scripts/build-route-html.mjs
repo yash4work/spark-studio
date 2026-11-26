@@ -1,5 +1,5 @@
 import { localizedArticleSlugs } from '../src/data/localizedArticles.js';
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { render } from '../node_modules/.cache/spark-render/render.js';
 
@@ -7,6 +7,9 @@ const base = 'https://www.thesparkstudio.digital';
 const shell = await readFile('dist/index.html', 'utf8');
 const sitemap = await readFile('dist/sitemap.xml', 'utf8');
 const routes = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => new URL(match[1]).pathname);
+// Preload each page's language chunk so it downloads in parallel with the main script.
+const manifest = JSON.parse(await readFile('dist/.vite/manifest.json', 'utf8'));
+const localeChunk = lang => manifest[`src/i18n/locales/${lang}.json`]?.file;
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 
 for (const route of [...routes, '/404']) {
@@ -31,9 +34,14 @@ for (const route of [...routes, '/404']) {
       return `<link rel="alternate" hreflang="${code}" href="${base}${(prefix + (bare === '/' ? '' : bare)) || '/'}" />`;
     })
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => head.jsonLd ? '<script id="custom-jsonld" type="application/ld+json">' + JSON.stringify(head.jsonLd).replaceAll('<', '\\u003c') + '</script>' : '')
+    .replace('</head>', () => localeChunk(lang) ? `  <link rel="modulepreload" crossorigin href="/${localeChunk(lang)}">
+  </head>` : '</head>')
     .replace(/<div id="root">[\s\S]*?<\/div>(?=\s*(?:<script|<\/body>))/, () => '<div id="root" data-rendered="' + route + '">' + body + '</div>');
   if (!html.includes('data-rendered="' + route + '"') || (body.match(/<h1\b/g) || []).length !== 1) throw Error('Invalid rendered page ' + route);
   const file = join('dist', (route.slice(1) || 'index') + '.html');
   await mkdir(dirname(file), { recursive: true });
   await writeFile(file, html);
 }
+
+// The manifest was only needed above; don't deploy it.
+await rm('dist/.vite', { recursive: true, force: true });

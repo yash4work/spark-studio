@@ -144,12 +144,12 @@ export default function Navbar() {
               type="button"
               onClick={() => setLangDropdownOpen(!langDropdownOpen)}
               className="framer-btn-secondary flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono font-medium text-[#f7f6fb] border border-white/25 hover:border-white/50 transition-colors cursor-pointer shrink-0"
-              aria-label="Select Language"
+              aria-label={`${currentLang.toUpperCase()} - Select language`}
             >
               <div className="w-[18px] h-[18px] rounded-full overflow-hidden border border-white/20 shrink-0">
                 <img 
                   src={currentLangObj.flag} 
-                  alt={currentLangObj.code} 
+                  alt=""
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -180,7 +180,7 @@ export default function Navbar() {
                         <div className="w-[20px] h-[20px] rounded-full overflow-hidden border border-white/20 shrink-0">
                           <img 
                             src={lang.flag} 
-                            alt={lang.code} 
+                            alt=""
                             className="w-full h-full object-cover"
                           />
                         </div>
@@ -210,10 +210,10 @@ export default function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-[#8b87a0] hover:text-white bg-white/5 border border-white/10 cursor-pointer"
-            aria-label="Select language"
+            aria-label={`${currentLang.toUpperCase()} - Select language`}
           >
             <div className="w-4 h-4 rounded-full overflow-hidden border border-white/20 shrink-0">
-              <img src={currentLangObj.flag} alt={currentLangObj.code} className="w-full h-full object-cover" />
+              <img src={currentLangObj.flag} alt="" className="w-full h-full object-cover" />
             </div>
             <span className="font-mono text-xs uppercase text-[#f7f6fb] font-semibold">{currentLang}</span>
           </button>
@@ -251,7 +251,7 @@ export default function Navbar() {
                   >
                     <div className="flex items-center gap-2">
                       <div className="w-4 h-4 rounded-full overflow-hidden border border-white/20">
-                        <img src={lang.flag} alt={lang.code} className="w-full h-full object-cover" />
+                        <img src={lang.flag} alt="" className="w-full h-full object-cover" />
                       </div>
                       <span>{lang.label}</span>
                     </div>

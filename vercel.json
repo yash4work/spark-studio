@@ -7,8 +7,26 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'self'"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
       ]
     }
   ],
@@ -19,12 +37,12 @@
       "permanent": true
     },
     {
-      "source": "/:slug(ai-saas|luxury-restaurant|premium-healthcare|mavric-estate|aurelle-estates|onyx-atelier|vellum-edition|halden-edition|grain-form|slowgrain|terra|sasso-architect|tessovra)",
+      "source": "/:slug(ai-saas|luxury-restaurant|premium-healthcare|mavric-estate|aurelle-estates|onyx-atelier|vellum-edition|halden-edition|grain-form|slowgrain|terra|sasso-architect|tessovra|onyx-atelier-pro|lume-field|solum-edition|hearthflow)",
       "destination": "/templates/:slug",
       "permanent": true
     },
     {
-      "source": "/:lang(de|es|fr)/:slug(ai-saas|luxury-restaurant|premium-healthcare|mavric-estate|aurelle-estates|onyx-atelier|vellum-edition|halden-edition|grain-form|slowgrain|terra|sasso-architect|tessovra)",
+      "source": "/:lang(de|es|fr)/:slug(ai-saas|luxury-restaurant|premium-healthcare|mavric-estate|aurelle-estates|onyx-atelier|vellum-edition|halden-edition|grain-form|slowgrain|terra|sasso-architect|tessovra|onyx-atelier-pro|lume-field|solum-edition|hearthflow)",
       "destination": "/:lang/templates/:slug",
       "permanent": true
     }

@@ -25,7 +25,6 @@ src/
   pages/        Route-level pages (HomePage, TemplateDetailPage)
   lib/          Integrations (Supabase client, Lemon Squeezy, Framer effects)
   i18n/         i18next setup + locales/ (en, de, es, fr)
-  assets/       Images/icons bundled by Vite
   App.jsx       Routes + language/slug handling
   main.jsx      App entry point
 
@@ -35,26 +34,55 @@ docs/
   bundle-pricing.md          Catalog pricing, vault bundles & 48% discount documentation
   contact-form-pipeline.md   Contact form delivery & Zoho Mail pipeline
   screenshots/               Reference screenshots of the live site
-dev/            Scraping/inspection scripts used during development
-                (not part of the shipped app — see dev/README.md)
 ```
 
 ## Notes
 - Routes are language-prefixed (`/de`, `/es`, `/fr`, default `en`); see
   `RouteManager` in `src/App.jsx`.
-- Template detail pages are lazy-loaded and validated against `VALID_SLUGS`
-  in `src/App.jsx`.
+- Template detail pages are lazy-loaded. Valid template URLs come from
+  `src/data/templates.js` (see **Adding a new template** below).
 
 ## Contact Form & Email Delivery Pipeline
 
-The contact form in `src/components/ContactSection.jsx` delivers inquiries straight to **Zoho Mail**:
+The contact form (`src/components/ContactSection.jsx`) is live and working. On submit it does two things at the same time:
 
-- **Target Inbox:** `hello@thesparkstudio.digital` / `yashparmar@thesparkstudio.digital` (Zoho Mail)
-- **Email Relay:** [FormSubmit](https://formsubmit.co) AJAX endpoint (`https://formsubmit.co/ajax/hello@thesparkstudio.digital`)
-  - Form activated for `https://www.thesparkstudio.digital/` (confirmation token: `2d6f508ef2845b9fc01eef8596816b63`)
-  - Configured with `_template: "table"` for clean lead formatting and `_captcha: "false"`.
-  - Dynamic subject lines formatted as: `New Lead: <Name> - <ProjectType>`.
-- **Dual Delivery & Persistence:**
-  - Concurrent cloud persistence via Supabase (`saveInquiry` in `src/lib/supabase.js`)
-  - Direct relay via FormSubmit to Zoho Mail (`hello@thesparkstudio.digital`)
-- **Event Tracking:** Dispatches Google Analytics 4 (`generate_lead`) event upon submission.
+1. **Email** — posts to the [FormSubmit](https://formsubmit.co) relay
+   (`https://formsubmit.co/ajax/hello@thesparkstudio.digital`). FormSubmit sends the email
+   to `hello@thesparkstudio.digital`, a mailbox hosted on **Zoho Mail**.
+   The site never talks to Zoho directly — FormSubmit is the sender (`submissions@formsubmit.co`).
+2. **Database** — saves a copy to the Supabase `inquiries` table (`saveInquiry` in `src/lib/supabase.js`).
+
+The visitor sees "sent" if **either** succeeds. A GA4 `generate_lead` event is then recorded.
+
+**Spam protection** (`src/lib/formGuard.js`):
+- A hidden *honeypot* field (`_honey`) that people never see. If a bot fills it in, the form
+  shows "sent" but nothing is delivered. FormSubmit also drops any message where `_honey` is filled.
+- Submissions made less than 3 seconds after the form appeared are treated as bots the same way.
+- FormSubmit's own CAPTCHA stays off (`_captcha: "false"`) so real visitors get no popup.
+
+Full details: `docs/contact-form-pipeline.md`.
+
+## Adding a new template
+
+Template URLs are listed **once**, in `src/data/templates.js`. Routes (`src/App.jsx`),
+the sitemap and the short-URL redirects in `vercel.json` are all generated from it.
+
+To add a template (example slug `my-template`):
+
+1. **`src/data/templates.js`** — add `'my-template'` to `TEMPLATE_SLUGS`.
+2. **`src/components/TemplatesGrid.jsx`** — add a card to `TEMPLATES` with `slug: 'my-template'`
+   (name, price, image, category, buy/remix link).
+3. **`src/pages/TemplateDetailPage.jsx`** — add a `'my-template': { ... }` entry to `TEMPLATE_META`
+   (prices per language, demo URL, buy URL, main image, gallery).
+4. **`src/i18n/locales/{en,de,es,fr}.json`** — add `templateDetails.my-template` text in all 4 languages.
+5. **Images** — put `my-template.webp` (plus `-192.webp` and `-384.webp` thumbnails) in `public/templates/`.
+6. Run **`npm test`**. It lists anything you forgot, by file. Then run `npm run build`, which
+   also updates `vercel.json` and the sitemap automatically. Commit the changed `vercel.json`.
+
+## Tests
+
+`npm test` runs:
+- `scripts/test-templates.mjs` — every template is wired up (grid card, detail meta, 4 languages, vercel.json).
+- `scripts/test-forms.mjs` — email validation and the spam guard.
+- `scripts/test-subscriber.mjs` — forms report failure (not fake success) when Supabase is unavailable.
+- `scripts/verify-pipeline.mjs` — the newsletter form text exists in all 4 languages.

@@ -92,25 +92,21 @@
     "items": [
       {
         "title": "Vorlagen-Anpassung",
-        "price": "499 € – 899 €",
         "turnaround": "Dauer: 3–5 Tage",
         "desc": "Anpassung von Schriften und Farben, Logo-Tausch, Inhaltsübertragung, zusätzliche Abschnitte und Prüfung aller Bildschirmgrößen."
       },
       {
         "title": "Individuelle Framer-Website",
-        "price": "2.500 € – 6.000 €+",
         "turnaround": "Dauer: 2–3 Wochen",
         "desc": "Individuelles UI/UX-Design, native Framer-Komponenten, flüssige Animationen, dynamisches CMS und maximale Performance-Optimierung."
       },
       {
         "title": "Figma-zu-Framer-Umsetzung",
-        "price": "1.500 € – 3.500 €",
         "turnaround": "Dauer: 7–10 Tage",
         "desc": "Pixelgenaue 1:1-Übersetzung Ihrer Figma-Designs in interaktive, einsatzbereite Framer-Seiten mit sauberen Komponenten."
       },
       {
         "title": "Framer-Performance-Optimierung",
-        "price": "350 € – 600 €",
         "turnaround": "Dauer: 2–3 Tage",
         "desc": "Konsolidierung von Webfonts, Bildkomprimierung in AVIF/WebP, Skript-Optimierung und Behebung von Layout-Shifts für 90+ PageSpeed."
       }
@@ -157,7 +153,7 @@
         "category": "Modernes Immobilien-CMS & Makler",
         "tagline": "Generische Makler-Websites verlieren Leads an große Immobilienportale. Mavric Estate wurde entwickelt, um qualifizierte Anfragen zu gewinnen.",
         "price": "69 €",
-        "image": "/templates/mavric-estate.png",
+        "image": "/templates/mavric-estate.webp",
         "demoUrl": "https://mavric-estate.framer.website/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/aaf77205-9810-4ffd-9b12-05cb48912e71?embed=1",
         "categoryKey": "real-estate"
@@ -168,7 +164,7 @@
         "category": "Redaktionelle Luxus-Immobilien",
         "tagline": "Vermögende Käufer suchen keine Standardportale — sie erwarten architektonische Autorität.",
         "price": "99 €",
-        "image": "/templates/aurelle-estates.png",
+        "image": "/templates/aurelle-estates.webp",
         "demoUrl": "https://wandering-variations-344785.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/c111b344-dc0c-4931-aa46-55f1d0dc49c8?embed=1",
         "categoryKey": "real-estate"
@@ -179,7 +175,7 @@
         "category": "Monolithische Architektur & Interieur",
         "tagline": "Die meisten Architektur-Portfolios sind simple Bilder-Raster. Onyx Atelier ist wie eine Ausstellungsmonografie aufgebaut.",
         "price": "79 €",
-        "image": "/templates/onyx-atelier.png",
+        "image": "/templates/onyx-atelier.webp",
         "demoUrl": "https://active-strengthening-218427.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172?embed=1",
         "categoryKey": "architecture"
@@ -190,7 +186,7 @@
         "category": "Redaktionelles Architektur-Portfolio",
         "tagline": "Eine ruhige Kunstbuch-Monografie für Architekturbüros, bei denen Fotografie und Materialität führen.",
         "price": "39 €",
-        "image": "/templates/vellum-edition.png",
+        "image": "/templates/vellum-edition.webp",
         "demoUrl": "https://unlimited-mind-018782.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/af57a897-c648-4ba7-aa29-b06f4fa4d498?embed=1",
         "categoryKey": "craft"
@@ -201,7 +197,7 @@
         "category": "Individuelles Möbel- & Objektstudio",
         "tagline": "Massenmarkt-Shop-Templates zerstören handwerklichen Wert. Halden Edition ist für Sammlerstücke kuratiert.",
         "price": "59 €",
-        "image": "/templates/halden-edition.png",
+        "image": "/templates/halden-edition.webp",
         "demoUrl": "https://past-network-244230.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/5fa7e190-f8a1-4c9a-ac9c-0cf78e79c8e7?embed=1",
         "categoryKey": "real-estate"
@@ -212,7 +208,7 @@
         "category": "Handgefertigte Wohnkultur & E-Commerce",
         "tagline": "Generische Online-Shops wirken austauschbar. Grain & Form verleiht Wohnkultur Haptik und Persönlichkeit.",
         "price": "58 €",
-        "image": "/templates/grain-form.png",
+        "image": "/templates/grain-form.webp",
         "demoUrl": "https://mindful-account-986092.framer.app/",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/a0ece10b-8ec0-49ab-8371-1be6935e9eab?embed=1",
         "categoryKey": "architecture"
@@ -223,7 +219,7 @@
         "category": "Massivholz & traditionelles Handwerk",
         "tagline": "Eine redaktionelle Vorlage in Museumsqualität für Massivholz-Ateliers und Schreinereien.",
         "price": "Kostenlos",
-        "image": "/templates/slowgrain.png",
+        "image": "/templates/slowgrain.webp",
         "demoUrl": "https://prosperous-statuses-272584.framer.app/style-guide",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2202bb1a-4d15-4b53-8b36-73d57153733f?embed=1",
         "categoryKey": "craft"
@@ -268,7 +264,15 @@
     "categories": [
       {
         "id": "all",
-        "label": "Alle Vorlagen"
+        "label": "Alle Projekte & Vorlagen"
+      },
+      {
+        "id": "software",
+        "label": "Individuelle Software & SaaS"
+      },
+      {
+        "id": "websites",
+        "label": "Individuelle Websites"
       },
       {
         "id": "real-estate",
@@ -281,6 +285,10 @@
       {
         "id": "craft",
         "label": "Handwerk & Handel"
+      },
+      {
+        "id": "services",
+        "label": "Lokale Dienstleister"
       }
     ],
     "pipeline": {
@@ -297,7 +305,8 @@
     },
     "viewDetails": "Details ansehen",
     "freeRemix": "Kostenloser Remix",
-    "badgeAgent": "Agent"
+    "badgeAgent": "Agent",
+    "requestBuild": "Projekt anfragen →"
   },
   "bundles": {
     "tag": "BUNDLE & SPAREN",
@@ -354,7 +363,7 @@
         "title": "Real Estate Flagship Duo",
         "price": "$79",
         "regularPrice": "$168",
-        "desc": "Aurelle Estates ($99) + Mavric Estate ($69). Das maßgebliche Toolkit für Luxusmakler und Projektentwickler.",
+        "desc": "Aurelle Estates ($99) + Mavric Estate (Gratis). Das maßgebliche Toolkit für Luxusmakler und Projektentwickler.",
         "cta": "Immobilien-Duo holen — $79",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/e3f375d8-3a4c-4d46-9b37-f5c27bfd6f98?embed=1"
       },
@@ -363,7 +372,7 @@
         "title": "Monografie-Architektur-Duo",
         "price": "$69",
         "regularPrice": "$118",
-        "desc": "Onyx Atelier ($79) + Vellum Edition ($39). Entwickelt für Architekturbüros, Raumplaner und Monografien.",
+        "desc": "Onyx Atelier (Gratis) + Vellum Edition (Gratis). Entwickelt für Architekturbüros, Raumplaner und Monografien.",
         "cta": "Architektur-Duo holen — $69",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/2daaa04b-a936-499a-abec-1d66c1c4f859?embed=1"
       },
@@ -372,7 +381,7 @@
         "title": "Artisan Craft Pack",
         "price": "$99",
         "regularPrice": "$186",
-        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Free). Kuratiert für Ateliers und Boutiquen.",
+        "desc": "TESSOVRA ($89) + Halden Edition (Gratis) + Grain & Form (Gratis) (+ Slowgrain Free). Kuratiert für Ateliers und Boutiquen.",
         "cta": "Handwerks-Suite holen — $99",
         "buyUrl": "https://yashparmar.lemonsqueezy.com/checkout/buy/bc9f4aac-c012-4609-8b58-2781198aba64?embed=1"
       }
@@ -411,9 +420,9 @@
         "desc": "Sofortiger Zugriff auf alle 7 Premium-Vorlagen + Slowgrain (Aurelle, Onyx, Tessovra, Mavric, Halden, Grain & Form, Vellum). Das ultimative High-End-Design-Vault für anspruchsvolle Entwickler.",
         "features": [
           "Alle 7 Premium-Vorlagen + Slowgrain (Gratis)",
-          "Aurelle ($99) + Onyx ($79) + Tessovra ($69)",
-          "Mavric ($69) + Halden ($59) + Grain & Form ($58)",
-          "Vellum Edition ($39) inklusive",
+          "Aurelle ($99) + Onyx (Gratis) + Tessovra ($89)",
+          "Mavric (Gratis) + Halden (Gratis) + Grain & Form (Gratis)",
+          "Vellum Edition (Gratis) inklusive",
           "Vollständige Komponentenbibliotheken & Design-Tokens",
           "Kommerzielle Solo-Lizenz pro Vorlage"
         ],
@@ -447,10 +456,10 @@
         "title": "Real Estate Flagship Duo",
         "price": "$79",
         "regularPrice": "/ $168 regulärer Wert",
-        "desc": "Aurelle Estates ($99) + Mavric Estate ($69). Das ultimative Set für Luxusmakler, Projektentwickler und Agenturen.",
+        "desc": "Aurelle Estates ($99) + Mavric Estate (Gratis). Das ultimative Set für Luxusmakler, Projektentwickler und Agenturen.",
         "features": [
           "Aurelle Estates ($99) Luxusresidenzen-Vorlage",
-          "Mavric Estate ($69) Makler- & Angebotsportal",
+          "Mavric Estate (Gratis) Makler- & Angebotsportal",
           "Vollständige dynamische CMS-Sammlungen inklusive",
           "100% visuelle Bearbeitung ganz ohne Code"
         ],
@@ -463,10 +472,10 @@
         "title": "Monografie-Architektur-Duo",
         "price": "$99",
         "regularPrice": "/ $118 regulärer Wert",
-        "desc": "Onyx Atelier ($79) + Vellum Edition ($39). Entwickelt für Architekturbüros, Raumdesign-Studios und Werkmonografien.",
+        "desc": "Onyx Atelier (Gratis) + Vellum Edition (Gratis). Entwickelt für Architekturbüros, Raumdesign-Studios und Werkmonografien.",
         "features": [
-          "Onyx Atelier ($79) dunkles Ausstellungs-Portfolio",
-          "Vellum Edition ($39) zurückhaltende Kunstbuch-Monografie",
+          "Onyx Atelier (Gratis) dunkles Ausstellungs-Portfolio",
+          "Vellum Edition (Gratis) zurückhaltende Kunstbuch-Monografie",
           "Kontraststarke Rastersysteme und Galerie-Ansichten",
           "Core Web Vitals 95+ Ladezeiten ab Werk"
         ],
@@ -479,11 +488,11 @@
         "title": "Artisan Craft Pack",
         "price": "$99",
         "regularPrice": "/ $186 regulärer Wert",
-        "desc": "TESSOVRA ($69) + Halden Edition ($59) + Grain & Form ($58) (+ Slowgrain Gratis). Maßgeschneidert für Ateliers und Boutiquen.",
+        "desc": "TESSOVRA ($89) + Halden Edition (Gratis) + Grain & Form (Gratis) (+ Slowgrain Gratis). Maßgeschneidert für Ateliers und Boutiquen.",
         "features": [
-          "TESSOVRA ($69) Luxus-Flaggschiff E-Commerce-Layout",
-          "Halden Edition ($59) Handwerks- und Unikat-Präsentation",
-          "Grain & Form ($58) Katalog für edle Wohnaccessoires",
+          "TESSOVRA ($89) Luxus-Flaggschiff E-Commerce-Layout",
+          "Halden Edition (Gratis) Handwerks- und Unikat-Präsentation",
+          "Grain & Form (Gratis) Katalog für edle Wohnaccessoires",
           "SLOWGRAIN Design-Tokens in Museumsqualität inklusive"
         ],
         "cta": "Artisan Suite sichern — $99",
@@ -510,7 +519,7 @@
       },
       {
         "question": "Wie können wir starten?",
-        "answer": "Senden Sie Ihr Projektbriefing direkt an The Spark Studio unter sparkstudio0@outlook.com. Wir prüfen Ihre Anforderungen und melden uns innerhalb von 24 Stunden mit einem klaren Angebot und einem möglichen Starttermin."
+        "answer": "Senden Sie Ihr Projektbriefing direkt an The Spark Studio unter hello@thesparkstudio.digital. Wir prüfen Ihre Anforderungen und melden uns innerhalb von 24 Stunden mit einem klaren Angebot und einem möglichen Starttermin."
       }
     ]
   },
@@ -518,23 +527,23 @@
     "tag": "KONTAKT AUFNEHMEN",
     "title": "Bereit für Ihr nächstes Webprojekt?",
     "subtitle": "Fragen zu einer Vorlage, einer individuellen Integration oder bereit für eine maßgeschneiderte Website? Wir antworten innerhalb von 24 Stunden.",
-    "email": "sparkstudio0@outlook.com",
+    "email": "hello@thesparkstudio.digital",
     "formName": "Ihr Name",
     "formEmail": "E-Mail-Adresse",
     "formType": "Projekttyp",
     "typeOptions": [
-      "Template-Anpassung (ab 499 €)",
-      "Individuelle Website (ab 2.500 €)",
-      "Figma zu Framer (ab 1.500 €)",
-      "Speed-Optimierung (ab 350 €)",
+      "Template-Anpassung",
+      "Individuelle Website",
+      "Figma zu Framer",
+      "Speed-Optimierung",
       "Sonstiges / Frage"
     ],
-    "formBudget": "Budgetrahmen",
-    "budgetOptions": [
-      "< 1.000 €",
-      "1.000 € – 3.000 €",
-      "3.000 € – 6.000 €",
-      "6.000 €+"
+    "formTimeline": "Zeitrahmen",
+    "timelineOptions": [
+      "So schnell wie möglich",
+      "Innerhalb eines Monats",
+      "In 1–3 Monaten",
+      "Ich informiere mich nur"
     ],
     "formMessage": "Beschreiben Sie Ihr Projekt...",
     "submitBtn": "Anfrage senden →",
@@ -824,79 +833,179 @@
       "cmsDesc": "Startseite, Shop, Produkt (CMS), Warenkorb, Moodboard, Muster, Showroom, Anfrage und 404."
     },
     "ai-saas": {
-      "name": "AI SaaS Platform",
-      "category": "Web Application & SaaS",
-      "headline": "AI That Works While You Sleep — A high-converting AI SaaS platform engineered with Next.js, React, and Tailwind CSS.",
-      "overviewTitle": "OVERVIEW",
-      "overview": "A production-grade, high-converting AI SaaS platform engineered with Next.js, React, and Tailwind CSS. Built for workflow automation, AI agents, and enterprise developer tools with high-converting pricing tiers, live product demos, and frictionless user onboarding.",
-      "featuresTitle": "Original Features Built for SaaS Products",
+      "name": "KI-SaaS-Plattform",
+      "category": "Web-Applikation & SaaS",
+      "headline": "KI, die arbeitet, während Sie schlafen — eine konversionsstarke KI-SaaS-Plattform, entwickelt mit Next.js, React und Tailwind CSS.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Eine produktionsreife, konversionsstarke KI-SaaS-Plattform, entwickelt mit Next.js, React und Tailwind CSS. Gebaut für Workflow-Automatisierung, KI-Agenten und Enterprise-Entwicklertools – mit überzeugenden Preisstufen, Live-Produktdemos und reibungslosem Onboarding.",
+      "featuresTitle": "Originale Features für SaaS-Produkte",
       "features": [
-        "Next.js App Router Architecture — Instant page transitions, server-side rendering, and sub-second TTFB.",
-        "Interactive Workflow Automation Demos — Visual workflow canvas highlighting product capability.",
-        "Tiered Subscription Pricing Matrix — High-conversion comparison grids with monthly and annual toggles.",
-        "Dark Mode First Architectural Palette — Crafted for modern developer and AI tool aesthetics.",
-        "Enterprise Security & Compliance Blocks — SOC2, GDPR, and enterprise trust signals built-in.",
-        "Developer API Documentation Preview — Interactive code syntax tabs and live integration guides."
+        "Next.js App-Router-Architektur — Sofortige Seitenwechsel, serverseitiges Rendering und TTFB unter einer Sekunde.",
+        "Interaktive Workflow-Automatisierungs-Demos — Visueller Workflow-Canvas, der die Produktfähigkeiten zeigt.",
+        "Gestaffelte Abo-Preismatrix — Konversionsstarke Vergleichstabellen mit Monats- und Jahresumschalter.",
+        "Dark-Mode-First-Farbpalette — Gestaltet für die Ästhetik moderner Entwickler- und KI-Tools.",
+        "Enterprise-Sicherheits- & Compliance-Blöcke — SOC2-, DSGVO- und Enterprise-Vertrauenssignale integriert.",
+        "Vorschau der Entwickler-API-Dokumentation — Interaktive Code-Tabs und Live-Integrationsanleitungen."
       ],
-      "includedTitle": "What's Included",
+      "includedTitle": "Was enthalten ist",
       "included": [
-        "Complete production-ready Next.js & React codebase",
-        "Full Tailwind CSS design system with custom components",
-        "Figma UI kit and responsive breakpoints",
-        "Direkter Codebase-Support von The Spark Studio"
+        "Vollständige, produktionsreife Next.js- & React-Codebasis",
+        "Komplettes Tailwind-CSS-Designsystem mit eigenen Komponenten",
+        "Figma-UI-Kit und responsive Breakpoints",
+        "Direkter Codebasis-Support von The Spark Studio"
       ],
-      "cmsTitle": "Structured Architecture",
-      "cmsDesc": "Changelog, Documentation, Product Features, Customer Stories, Pricing Tiers."
+      "cmsTitle": "Strukturierte Architektur",
+      "cmsDesc": "Changelog, Dokumentation, Produktfunktionen, Kundengeschichten, Preisstufen."
     },
     "luxury-restaurant": {
-      "name": "Luxury Restaurant",
-      "category": "Custom Hospitality Website",
-      "headline": "Crafting Culinary Poetry — A premium restaurant landing page crafted to showcase fine dining through immersive storytelling and fluid reservations.",
-      "overviewTitle": "OVERVIEW",
-      "overview": "A Michelin-tier hospitality and fine dining website crafted to elevate culinary perception. Features immersive full-bleed imagery, seasonal tasting menu showcase, and fluid table reservation booking flows.",
-      "featuresTitle": "Original Features Built for Fine Dining & Hospitality",
+      "name": "Luxus-Restaurant",
+      "category": "Individuelle Gastronomie-Website",
+      "headline": "Kulinarische Poesie — eine Premium-Restaurant-Website, die gehobene Küche mit immersivem Storytelling und fließender Tischreservierung präsentiert.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Eine Website für Spitzengastronomie und Fine Dining, die die kulinarische Wahrnehmung aufwertet. Mit randlosen, immersiven Bildern, einer Präsentation des saisonalen Degustationsmenüs und fließenden Reservierungsabläufen.",
+      "featuresTitle": "Originale Features für Fine Dining & Gastronomie",
       "features": [
-        "Interactive Seasonal Tasting Menu — Dynamic category navigation for lunch, dinner, and wine pairings.",
-        "Table Reservation Booking Flow — Integrated OpenTable / Resy booking integration.",
-        "Private Dining & Events Showcase — Dedicated inquiry forms for weddings and executive private dinners.",
-        "Cinematic Culinary Reel — Full-bleed video and photography showcase with smooth parallax.",
-        "Sommelier & Chef Monograph — Storytelling sections spotlighting executive chefs and cellar curation.",
-        "Location, Valet & Hours Module — Dynamic hours status with interactive Google Maps."
+        "Interaktives saisonales Degustationsmenü — Dynamische Navigation für Mittagessen, Abendessen und Weinbegleitung.",
+        "Tischreservierung — Integrierte Buchung über OpenTable / Resy.",
+        "Private Dining & Events — Eigene Anfrageformulare für Hochzeiten und private Geschäftsessen.",
+        "Kinematografisches Kulinarik-Reel — Randlose Video- und Fotopräsentation mit sanftem Parallax.",
+        "Sommelier- & Küchenchef-Porträt — Storytelling-Bereiche über Küchenchefs und die Weinauswahl.",
+        "Standort-, Valet- & Öffnungszeiten-Modul — Dynamischer Öffnungsstatus mit interaktiver Google-Karte."
       ],
-      "includedTitle": "What's Included",
+      "includedTitle": "Was enthalten ist",
       "included": [
-        "Production-ready Next.js & React website codebase",
-        "Dynamic seasonal menu management structure",
-        "Integrated reservation and inquiry modal",
-        "Direkter technischer Support von The Spark Studio & Setup-Anleitung"
+        "Produktionsreife Next.js- & React-Website-Codebasis",
+        "Dynamische Struktur zur Verwaltung saisonaler Menüs",
+        "Integriertes Reservierungs- und Anfrage-Modal",
+        "Direkter technischer Support von The Spark Studio & Einrichtungsanleitung"
       ],
-      "cmsTitle": "Structured Architecture",
-      "cmsDesc": "Seasonal Menus, Wine Cellar, Private Dining Events, Press & Accolades."
+      "cmsTitle": "Strukturierte Architektur",
+      "cmsDesc": "Saisonale Menüs, Weinkeller, Private-Dining-Events, Presse & Auszeichnungen."
     },
     "premium-healthcare": {
-      "name": "Premium Healthcare",
-      "category": "Healthcare & Patient Portal",
-      "headline": "Expert Care You Can Trust — A modern healthcare website designed to build patient trust through a clean interface and intuitive booking.",
-      "overviewTitle": "OVERVIEW",
-      "overview": "A clinical-grade healthcare and wellness website engineered for private medical clinics, dental specialists, and wellness centers. Designed with reassuring clinical clarity, accessibility standards, and intuitive appointment booking.",
-      "featuresTitle": "Original Features Built for Medical & Clinical Practices",
+      "name": "Premium-Gesundheitswesen",
+      "category": "Gesundheitswesen & Patientenportal",
+      "headline": "Expertise, der Sie vertrauen können — eine moderne Gesundheits-Website, die mit klarer Oberfläche und intuitiver Terminbuchung Patientenvertrauen aufbaut.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Eine Gesundheits- und Wellness-Website in klinischer Qualität für Privatpraxen, Zahnspezialisten und Wellnesszentren. Gestaltet mit beruhigender klinischer Klarheit, Barrierefreiheits-Standards und intuitiver Terminbuchung.",
+      "featuresTitle": "Originale Features für Arztpraxen & Kliniken",
       "features": [
-        "Interactive Doctor & Specialist Directory — Searchable bios, credentials, and specialties.",
-        "Frictionless Patient Appointment Flow — Multi-step consultation booking system.",
-        "Treatments & Procedures Library — Comprehensive patient education guides with FAQs.",
-        "Patient Trust & Verified Testimonials — HIPAA-compliant reviews and patient outcome stories.",
-        "Insurance & Financing Accordions — Transparent insurance carrier verification and cost calculators.",
-        "Telehealth & Remote Care Portal — Video consultation scheduling and intake forms."
+        "Interaktives Ärzte- & Spezialistenverzeichnis — Durchsuchbare Profile, Qualifikationen und Fachgebiete.",
+        "Reibungsloser Terminablauf — Mehrstufiges System zur Buchung von Beratungsterminen.",
+        "Behandlungs- & Leistungsbibliothek — Umfassende Patienteninformationen mit FAQs.",
+        "Patientenvertrauen & verifizierte Bewertungen — HIPAA-konforme Bewertungen und Erfahrungsberichte.",
+        "Versicherungs- & Finanzierungs-Akkordeons — Transparente Prüfung der Krankenversicherung und Kostenrechner.",
+        "Telemedizin- & Fernbetreuungsportal — Planung von Videosprechstunden und Aufnahmeformulare."
       ],
-      "includedTitle": "What's Included",
+      "includedTitle": "Was enthalten ist",
       "included": [
-        "Production-ready Next.js & React clinical website",
-        "Structured doctor profiles and treatment catalogs",
-        "Patient intake and appointment inquiry forms",
-        "Direkter technischer Support von The Spark Studio & Core Web Vitals Optimierung"
+        "Produktionsreife Next.js- & React-Klinik-Website",
+        "Strukturierte Ärzteprofile und Behandlungskataloge",
+        "Patientenaufnahme- und Terminanfrageformulare",
+        "Direkter technischer Support von The Spark Studio & Core-Web-Vitals-Optimierung"
       ],
-      "cmsTitle": "Structured Architecture",
-      "cmsDesc": "Doctors & Specialists, Treatments & Services, Patient FAQs, Clinical Insights."
+      "cmsTitle": "Strukturierte Architektur",
+      "cmsDesc": "Ärzte & Spezialisten, Behandlungen & Leistungen, Patienten-FAQs, Klinische Einblicke."
+    },
+    "onyx-atelier-pro": {
+      "name": "Onyx Atelier Pro",
+      "category": "Dunkles Architekturstudio",
+      "headline": "Die Komplettversion von Onyx Atelier — eine Premium-Editorial-Vorlage für Architekturbüros, Innenarchitekten und Kreativstudios.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Großformatige Fotografie, scharfe Kanten, feine Haarlinien und ein zurückhaltender Bronzeakzent stellen die Architektur in den Mittelpunkt. Über das CMS verwalten Büros Projekte, Journalartikel, Teammitglieder, Stellen, Leistungen und Auszeichnungen, ohne das Layout anzufassen. Tag- und Nachtmodus, ein Cookie-Banner und ein fertiges Anfrageformular sind enthalten.",
+      "featuresTitle": "Features für Architektur- & Innenarchitekturbüros",
+      "features": [
+        "Ausführliche Projektseiten — Fakten, Geschichten, Galerien, Credits, Auszeichnungen und verwandte Projekte.",
+        "Lightbox für technische Zeichnungen — Vollbildansicht für Pläne und Zeichnungen.",
+        "Filterbare Arbeiten & Journal — Teilbare Filterlinks wie /work?category=Cultural.",
+        "Redaktionelles Journal — Kategorien, Autorenseiten, Teilen-Links, Lesefortschritt und verwandte Artikel.",
+        "Tag- & Nachtmodus — Die gesamte Website lässt sich zwischen hell und dunkel umschalten.",
+        "Für Framers KI-Agent gebaut — 7 Agent-Skills zum Bearbeiten von Inhalten und Layouts."
+      ],
+      "includedTitle": "Was enthalten ist",
+      "included": [
+        "20+ Seiten, von Startseite und Arbeiten bis Karriere, Presse und Styleguide",
+        "10 CMS-Sammlungen",
+        "Cookie-Banner und fertiges Anfrageformular",
+        "Vorlagen-Guide und Styleguide-Seiten"
+      ],
+      "cmsTitle": "CMS-Sammlungen",
+      "cmsDesc": "Projekte, Journal, Leistungen, Team, Stellen, Referenzen, Auszeichnungen, Monografien, Studios, Anfragekanäle."
+    },
+    "lume-field": {
+      "name": "LUME FIELD",
+      "category": "Lichtplanung & Architektur",
+      "headline": "Ein minimalistisches, redaktionelles Portfolio für unabhängige Lichtplaner, Architekturbüros und bildende Künstler.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Mit klarer typografischer Präzision, dynamischen CMS-Sammlungen und interaktiven Vorher-Nachher-Slidern präsentiert LUME FIELD Raumgestaltung und Lichtinstallationen wie eine digitale Ausstellung in Museumsqualität.",
+      "featuresTitle": "Features für Licht- & Architektur-Portfolios",
+      "features": [
+        "Redaktionelles Portfolio-Layout — Gestaltet für Lichtplaner und Architekten.",
+        "CMS-gestützte Inhalte — Projekte, Fallstudien und ein Journal im Framer-CMS.",
+        "Vorher-Nachher-Slider — Interaktive Vergleiche, die die Wirkung des Lichts zeigen.",
+        "Edle dunkle Ästhetik — Dezente Bewegung und weiche Übergänge.",
+        "Voll responsiv — Layouts für Desktop, Tablet und Smartphone.",
+        "Schnelle Ladezeiten — Auf Performance optimiert."
+      ],
+      "includedTitle": "Was enthalten ist",
+      "included": [
+        "Vollständige mehrseitige Portfolio-Website",
+        "CMS für Projekte, Fallstudien und Journal",
+        "Interaktive Vorher-Nachher-Slider",
+        "Kostenloser Remix im Framer Marketplace"
+      ],
+      "cmsTitle": "CMS-Sammlungen",
+      "cmsDesc": "Projekte, Fallstudien, Journal."
+    },
+    "solum-edition": {
+      "name": "SOLUM EDITION",
+      "category": "Monografie für Möbelateliers",
+      "headline": "Eine digitale Monografie in Druckqualität für Möbelateliers, Tischler und unabhängige Gestalter.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "SOLUM ist eine ruhige Vorlage für Möbelwerkstätten, Architekturateliers, Industriedesigner und Kunsthandwerker, die ihre Arbeit als haptische Monografie statt als Warenraster zeigen — mit skandinavischer Zurückhaltung, Serifenschrift und bewussten Interaktionen.",
+      "featuresTitle": "Features für Möbelateliers & Gestalter",
+      "features": [
+        "Herstellungs-Zeitleiste in 6 Schritten — Eine scrollgesteuerte Reise vom luftgetrockneten Stamm bis zur Auslieferung.",
+        "Monografische Objektseiten — Holzarten, Maßzeichnungen und Lieferzeit-Badges.",
+        "Filterbare Kollektion — Sitzmöbel, Tische, Stauraum und Leuchten, als Raster oder Spezifikationsliste.",
+        "Natives CMS — Sammlungen für Möbel und das Werkstatt-Journal.",
+        "Bereit für Framers KI-Agent — Skills zum Hinzufügen von Stücken, Personalisieren und für Checks vor dem Launch.",
+        "Skandinavisches Editorial-Design — Serifenschrift und ruhige, bewusste Interaktionen."
+      ],
+      "includedTitle": "Was enthalten ist",
+      "included": [
+        "Vollständige mehrseitige Monografie-Website",
+        "CMS für Möbel und Werkstatt-Journal",
+        "Herstellungs-Zeitleiste und filterbarer Katalog",
+        "Kostenloser Remix im Framer Marketplace"
+      ],
+      "cmsTitle": "CMS-Sammlungen",
+      "cmsDesc": "Möbel, Werkstatt-Journal."
+    },
+    "hearthflow": {
+      "name": "Hearthflow",
+      "category": "Sanitär, Heizung & Klima",
+      "headline": "Eine auf Anfragen ausgerichtete Vorlage für Installateure, Heizungsbauer, Klimatechnik-Betriebe und lokale Handwerksbetriebe, die von Anrufen und Angebotsanfragen leben.",
+      "overviewTitle": "ÜBERSICHT",
+      "overview": "Jede Seite ist darauf ausgelegt, aus Besuchern Aufträge zu machen: ein 24/7-Notdienst-Banner, eine feste „Jetzt anrufen / Kostenloses Angebot“-Leiste auf dem Smartphone, Anruf- und WhatsApp-Buttons, ein Rückrufformular, transparente Preiskarten und Vertrauenssignale wie Bewertungen, Zulassungen und Garantien direkt im sichtbaren Bereich.",
+      "featuresTitle": "Features für Sanitär- & Handwerksbetriebe",
+      "features": [
+        "Lokale SEO-Gebietsseiten — Ort im CMS anlegen und eine Gebietsseite mit eigenem Meta-Titel, H1 und Text erhalten.",
+        "Anruf- & Angebotsleiste auf dem Smartphone — Feste Buttons für Anruf, Angebot und WhatsApp.",
+        "Vorher-Nachher-Projekte — Verschiebbarer Vergleichsslider mit Fakten und Fallbeschreibungen.",
+        "Transparente Preise & Vertrauen — Preiskarten, Bewertungen, Zulassungen und Garantien im sichtbaren Bereich.",
+        "Blog — Hervorgehobener Beitrag, Kategorien, Lesezeit und verwandte Artikel.",
+        "Für Framers KI-Agenten gebaut — Beiträge, Projekte oder Gebietsseiten hinzufügen oder die Marke anpassen lassen."
+      ],
+      "includedTitle": "Was enthalten ist",
+      "included": [
+        "19 Seiten, darunter 4 Leistungsseiten, Preise, Einsatzgebiete und ein Vorlagen-Guide",
+        "10 CMS-Sammlungen",
+        "Einsatzgebiet-Karte, Videobereich und Bewertungs-Badges",
+        "Regionsneutrale Demo-Inhalte"
+      ],
+      "cmsTitle": "CMS-Sammlungen",
+      "cmsDesc": "Leistungen, Problemfälle, Preise, Bewertungen, FAQs, Team, Zertifizierungen, Einsatzgebiete, Blogbeiträge, Projekte."
     }
   },
   "about": {
@@ -1036,7 +1145,7 @@
       "category": "Vorlagen-Analyse",
       "readTime": "6 Min. Lesezeit",
       "date": "November 2026",
-      "excerpt": "Architektur-Test von Vellum Edition: eine ruhige 39 € Kunstbuch-Framer-Vorlage für Architekturbüros, bei denen Fotografie und Materialerzählungen im Mittelpunkt stehen."
+      "excerpt": "Architektur-Test von Vellum Edition: eine ruhige, kostenlose Kunstbuch-Framer-Vorlage für Architekturbüros, bei denen Fotografie und Materialerzählungen im Mittelpunkt stehen."
     },
     "top-10-framer-templates-for-architects-and-design-studios-2026": {
       "title": "Die 10 besten Framer-Vorlagen für Architekten & Designstudios (2026)",
@@ -1051,23 +1160,23 @@
       "category": "Vorlagen-Analyse",
       "date": "November 2026",
       "readTime": "9 Min. Lesezeit",
-      "content": "## Das Dilemma des Maklers: Warum standardisierte Portale vermögende Käufer verlieren\n\nBei der Vermarktung von Liegenschaften im achtstelligen Preissegment versagen herkömmliche Immobilien-Websites.\n\nDie meisten Maklerplattformen basieren auf veralteten MLS/IDX-Vorlagen, die vor über einem Jahrzehnt konzipiert wurden. Sie überfrachten den Bildschirm mit Registrierungs-Popups, unübersichtlichen 50-Felder-Suchmasken, niedrig aufgelösten Vorschaubildern und überladenen JavaScript-Skripten, die auf mobilen Endgeräten vier bis sechs Sekunden Ladezeit beanspruchen.\n\nFür Käufer im Segment von 5 bis über 50 Millionen Euro zerstört diese Präsentation den wahrgenommenen Wert der Liegenschaft:\n- **Vermögende Privatkunden (HNWI) kaufen Emotion, Provenienz und Diskretion.** Sie betrachten Immobilien nicht wie Konsumgüter in einem Online-Shop, sondern wie Sammler in einer Monographie des *Architectural Digest* oder in einem Katalog renommierter Auktionshäuser.\n- **Träge Ladezeiten untergraben Professionalität.** Entscheidungsträger und Family-Office-Berater greifen zwischen Terminen und Reisen über mobile Verbindungen auf Exposés zu. Wenn eine Seite ruckelt oder Sekunden benötigt, um Architekturfotografien darzustellen, verlassen sie das Angebot.\n- **Generische Kontaktformulare wirken distanzlos.** Vermögende Interessenten vor der Einsicht in Grundrisse nach ihrer Telefonnummer zu fragen, schreckt ab. High-End-Transaktionen erfordern maßgeschneiderte VIP-Anfragemodule und diskrete Vertraulichkeitsvereinbarungen (NDAs).\n\nAus diesem Grund ersetzen führende Makler, Bauträger-Marketingteams und unabhängige Luxusberater standardisierte WordPress-Systeme zunehmend durch **native Framer-Websites**. Framer liefert Inhalte direkt über globale Edge-CDNs aus, garantiert flüssige 60fps-Interaktionen, rendert Typografie in Schweizer Magazin-Qualität und erzielt auf Mobilgeräten PageSpeed-Werte von 95+.\n\nNachfolgend finden Sie eine verifizierte Analyse der **10 besten Framer-Templates für Luxusimmobilien-Makler im Jahr 2026**, bewertet nach editorischer Autorität, handwerklicher Qualität und Konversionsstärke.\n\n---\n\n## Executive-Vergleich: Die 10 besten Immobilien-Templates in Framer\n\n| # | Template-Name | Creator | Preis | Ideal für | Kernvorteil | Link |\n| :-: | :--- | :--- | :-: | :--- | :--- | :--- |\n| **01** | **Onyx Atelier Pro** | The Spark Studio | $129 | Trophäen-Residenzen & Architektur-Monographien | Tag/Nacht-Beleuchtungswechsel & Monographie-Archiv | [Live-Demo](https://onyx-atelier-pro.framer.website/) |\n| **02** | **Onyx Atelier** | The Spark Studio | $79 | Minimalistische Anwesen & Off-Market-Objekte | Kontrastreiches Layout & diskretes VIP-Anfragedesk | [Live-Demo](https://active-strengthening-218427.framer.app/) |\n| **03** | **Monarque** | Basit A. Khan | $99 | Luxus-Hochhäuser & Penthouse-Entwicklungen | Penthouse-CMS & Etagen-Grundriss-Navigation | [Marketplace](https://www.framer.com/marketplace/templates/monarque/) |\n| **04** | **Ardène** | Sasha Mozdir | $99 | Skandinavische Architektur & Boutique-Büros | Zurückhaltende Typografie & Framer Basic-kompatibel | [Marketplace](https://www.framer.com/marketplace/templates/ardene/) |\n| **05** | **Havyn** | WORKSHOP99 | $69 | Editorische Boutique-Agenturen & Maklerteams | Duales CMS für Objekte & Marktreports mit Team-Roster | [Marketplace](https://www.framer.com/marketplace/templates/havyn/) |\n| **06** | **Lumare** | Lidia Terecia | $79 | Küstenvillen & Private Insel-Refugien | Maus-reaktiver Wasserwellen-Hero & 12 Motion-Komponenten | [Marketplace](https://www.framer.com/marketplace/templates/lumare/) |\n| **07** | **VALE House** | Klub Haus | $99 | Einzelobjekt-Kampagnen ab 10 Mio. € | 6-seitiges Single-Asset-Narrativ mit VIP-Desk | [Marketplace](https://www.framer.com/marketplace/templates/vale-house/) |\n| **08** | **Veyora** | Arbi Khan | Kostenlos | Umfassendes Maklerbüro & Agenten-Verzeichnis | 12-seitige Struktur mit Status-Tags & Filtersystem | [Marketplace](https://www.framer.com/marketplace/templates/veyora/) |\n| **09** | **Estalio** | Grabui Library | $59 | Portale mit großem Objektbestand & Filtersuche | 12+ Layouts, Facettensuche & Verifizierungs-Badges | [Marketplace](https://www.framer.com/marketplace/templates/estalio/) |\n| **10** | **The Maison** | Prasidh Nishchal | Kostenlos | Unabhängige Berater & Private Consultants | Kunstbuch-Ästhetik mit Portfolio- und Beratungs-CMS | [Marketplace](https://www.framer.com/marketplace/templates/the-maison/) |\n\n---\n\n## Detaillierte Analyse: Die 10 besten Luxusimmobilien-Templates\n\n### 01. Onyx Atelier Pro — Die Architektur-Monographie als Flaggschiff ($129)\n* **Creator:** The Spark Studio (Yash Parmar)  \n* **Live-Demo:** [onyx-atelier-pro.framer.website](https://onyx-atelier-pro.framer.website/)  \n* **Erwerb:** [The Spark Studio Lemon Squeezy Store](https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172)  \n\nOnyx Atelier Pro setzt den Standard für die monographieartige Präsentation exklusiver Residenzen. Entwickelt für architektonische Meisterwerke, Penthäuser und private Landgüter, inszeniert dieses Template jede Immobilie wie ein Ausstellungsstück in einem Museum für moderne Kunst.\n\n#### Warum Makler dieses Template wählen:\n- **Interaktiver Tag/Nacht-Beleuchtungswechsel:** Interessenten können nahtlos zwischen Tageslicht und Dämmerungsbeleuchtung wechseln. Dies visualisiert Lichtstimmungen und Innenraum-Atmosphäre ohne Neuladen der Seite.\n- **Material- und Provenienz-Verzeichnis:** Strukturierte Datenübersichten dokumentieren architektonische Details wie italienischen Travertin, individuelle Schreinerarbeiten und Wohnflächen mit typografischer Klarheit.\n- **Monographische Archiv-Layouts:** Flüssige horizontale und vertikale Galerie-Ansichten lassen die Architekturfotografie ohne störende Banner zur Geltung kommen.\n- **Ladezeiten unter einer Sekunde:** Nativ optimierte Animationen ohne externe JavaScript-Bibliotheken erzielen 98/100 Punkte im Google Mobile PageSpeed-Test.\n\n---\n\n### 02. Onyx Atelier — Minimalistische Raummonographie ($79)\n* **Creator:** The Spark Studio (Yash Parmar)  \n* **Live-Demo:** [active-strengthening-218427.framer.app](https://active-strengthening-218427.framer.app/)  \n* **Remix-Link:** [framer.com/remix/qdTLRcAS411L53TOswm9](https://framer.com/remix/qdTLRcAS411L53TOswm9)  \n* **Marketplace-Eintrag:** [Onyx Atelier im Framer Marketplace](https://www.framer.com/marketplace/templates/onyx-atelier/)  \n\nDie Standard-Edition von Onyx Atelier verzichtet bewusst auf dekoratives Beiwerk und konzentriert sich auf eine scharfe, kontrastreiche Schwarz-Weiß-Ästhetik. Sie richtet sich an Makler von brutalistischen Bauten, denkmalgeschützten Villen und vertraulichen Off-Market-Portfolios.\n\n#### Warum Makler dieses Template wählen:\n- **Diskrete Off-Market-Ästhetik:** Maßgeschneidert für diskrete Verkäufe, bei denen Zurückhaltung und Exklusivität entscheidend sind.\n- **VIP-Anfragemodul mit Vorqualifizierung:** Integrierte Formulare ermöglichen es Vertretern von Käufern, Vertraulichkeitserklärungen einzureichen und private Besichtigungstermine zu vereinbaren.\n- **CMS-Struktur für Baudaten:** Präzise Datenfelder für Baujahr, Grundstücksgröße, Architektennachweis und Grundriss-Downloads.\n- *Hinweis zu Aurelle Estates:* Für Maklerbüros, die eine Multi-Listing-Struktur mit cinematischem 4K-Video-Hero und passwortgeschützten Objekten bevorzugen, bietet Spark Studios **Aurelle Estates** ($89, [Live-Demo](https://wandering-variations-344785.framer.app/)) eine schlüsselfertige Alternative.\n\n---\n\n### 03. Monarque — Premium-Türme & Penthouse-Entwicklungen ($99)\n* **Creator:** Basit A. Khan  \n* **Marketplace-Eintrag:** [Monarque im Framer Marketplace](https://www.framer.com/marketplace/templates/monarque/)  \n\nSpeziell für Hochhaus-Entwicklungen, Wohntürme und Neubauprojekte konzipiert, verbindet Monarque Markenästhetik mit zielgerichteter Konversion.\n\n#### Warum Makler dieses Template wählen:\n- **CMS für Mehrfamilien- und Turmprojekte:** Spezifische Datenfelder für Etagen, Penthouse-Kollektionen und Ausstattungsstufen.\n- **Inkludiertes Textkonzept:** Vorstrukturierte, verkaufsstarke Textstrukturen für die gehobene Wohnimmobilien-Vermarktung.\n- **Figma-Quelldatei enthalten:** Das gesamte Designsystem steht in Figma zur Verfügung, um Vorababstimmungen mit Bauträgern zu erleichtern.\n- **Flüssige Mikro-Interaktionen:** Sanfte Übergänge zwischen Etagen-Grundrissen und Ausstattungslisten.\n\n---\n\n### 04. Ardène — Skandinavisches Design & Boutique-Agenturen ($99)\n* **Creator:** Sasha Mozdir (TMPL Studio)  \n* **Marketplace-Eintrag:** [Ardène im Framer Marketplace](https://www.framer.com/marketplace/templates/ardene/)  \n\nArdène überträgt skandinavische Design-Ruhe auf den Immobiliensektor. Mit großzügigen Bildräumen, feiner Typografie und dezenten Tiefenübergängen passt es hervorragend zu europäischen Boutique-Büros.\n\n#### Warum Makler dieses Template wählen:\n- **Zurückhaltende Typografie:** Strukturierte Hierarchien setzen die Architektur in Szene, ohne aufdringliche Verkaufselemente zu verwenden.\n- **Optimiert für Framer Basic:** Läuft performant auf Framers Basis-Tarif ohne Zusatzkosten für komplexe Pläne.\n- **Projekt- & Angebots-CMS:** Flexible Sammlungen für abgeschlossene Architekturprojekte und aktive Verkaufsangebote.\n- **Stabile Bildwiederholrate:** Flüssige 60fps-Bewegungen auf mobilen Endgeräten wie Safari und Chrome.\n\n---\n\n### 05. Havyn — Das redaktionelle Makler-Magazin ($69)\n* **Creator:** WORKSHOP99  \n* **Marketplace-Eintrag:** [Havyn im Framer Marketplace](https://www.framer.com/marketplace/templates/havyn/)  \n\nHavyn richtet sich an partnerschaftlich geführte Maklerbüros und regionale Luxusteams, die Wert auf persönliche Ausstrahlung und redaktionelle Marktreports legen.\n\n#### Warum Makler dieses Template wählen:\n- **Duales CMS-System:** Getrennte Sammlungen für Immobilienangebote und ein Markt-Journal für Stadtteilberichte und Analysen.\n- **Agenten- und Teampflege:** Eigene Bereiche für Profile, Transaktionshistorien und Vermittlungserfolge zur Vertrauensbildung.\n- **Kauf- & Verkaufsleitfaden:** Schrittweise Beratungselemente, die anspruchsvolle Kunden durch den Akquisitionsprozess führen.\n- **Warme Farbgestaltung:** Eine beruhigende, neutrale Farbpalette schafft eine ansprechende Markenidentität.\n\n---\n\n### 06. Lumare — Küstenvillen & Exklusive Ferienresidenzen ($79)\n* **Creator:** Lidia Terecia  \n* **Marketplace-Eintrag:** [Lumare im Framer Marketplace](https://www.framer.com/marketplace/templates/lumare/)  \n\nLumare erzeugt eine besondere visuelle Tiefe. Rund um Wasser-, Licht- und Glaselemente gestaltet, eignet es sich für Luxusresidenzen an Küsten, Seen und privaten Rückzugsorten.\n\n#### Warum Makler dieses Template wählen:\n- **Maus-reaktiver Wasserwellen-Effekt:** Ein spezieller Shader im Header erzeugt sanfte Wasserwellen und vermittelt sofort ein maritimes Lebensgefühl.\n- **12 native Bewegungskomponenten:** Individuell erstellte Interaktionen ohne externe JavaScript-Bibliotheken gewährleisten minimale Ladezeiten.\n- **4 CMS-Sammlungen:** Residenzen, Magazin, Maklerverzeichnis und Lage-FAQs.\n- **3D-Galerie:** Eine kreisförmige Bildergalerie zur eindrucksvollen Darstellung von Panoramablicken und Terrassen.\n\n---\n\n### 07. VALE House — Einzelobjekt-Präsentation ab 10 Mio. € ($99)\n* **Creator:** Klub Haus  \n* **Marketplace-Eintrag:** [VALE House im Framer Marketplace](https://www.framer.com/marketplace/templates/vale-house/)  \n\nErhält ein Makler den Alleinauftrag für ein historisches Denkmal oder ein modernes Architektenhaus, verliert das Objekt in einer Sammelübersicht oft seine Strahlkraft. VALE House ist ein spezialisiertes 6-Seiten-Template für die gezielte Vermarktung unter einer eigenen Adresse (z. B. *villa-am-see.de*).\n\n#### Warum Makler dieses Template wählen:\n- **Dedizierte Einzelobjekt-Erzählung:** Sechs abgestimmte Unterseiten (Startseite, Ausstattungsdetails, Lage, Diskrete Anfrage, Datenschutz, Leitfaden).\n- **Cinematische Bildfolgen:** Großflächige Aufnahmen, Grundrisse und Raum-für-Raum-Rundgänge.\n- **Diskretes Anfrageformular:** Vorqualifizierte Eingabefelder für solvente Kaufinteressenten und deren Vermögensverwalter.\n- **Eigene Domain im Handumdrehen:** Kann über Framers DNS-System in wenigen Minuten mit einer individuellen Webadresse verbunden werden.\n\n---\n\n### 08. Veyora — Komplettes Maklerportal mit Team-Verzeichnis (Kostenlos)\n* **Creator:** Arbi Khan  \n* **Marketplace-Eintrag:** [Veyora im Framer Marketplace](https://www.framer.com/marketplace/templates/veyora/)  \n\nVeyora gehört zu den vielseitigsten kostenfreien Templates im Framer Marketplace. Es ermöglicht aufstrebenden Maklerbüros den Aufbau einer professionellen Unternehmenspräsenz ohne Lizenzkosten.\n\n#### Warum Makler dieses Template wählen:\n- **12-teilige Gesamtstruktur:** Umfasst Seiten für Verkaufen, Betreuung, Stadtteilführer, Über uns, Team und Kontakt.\n- **Differenziertes CMS-Schema:** Felder für Kaufpreis, Grundstücksmaße, Wohnfläche, Zimmeranzahl und Status-Kennzeichnungen (Aktiv, Reserviert, Verkauft).\n- **Stadtteil-Suchfilter:** Ermöglicht Kaufinteressenten die Filterung nach Lage, Infrastruktur und Lebensstil.\n- **Keine Anschaffungskosten:** Als Community-Vorlage nutzbar, wodurch Budgets gezielt in Fotografie und Akquise fließen können.\n\n---\n\n### 09. Estalio — Strukturierte Objektsuche & Filtersystem ($59)\n* **Creator:** Grabui Library  \n* **Marketplace-Eintrag:** [Estalio im Framer Marketplace](https://www.framer.com/marketplace/templates/estalio/)  \n\nEstalio wurde für Maklerhäuser mit umfangreichem Liegenschaftsbestand entwickelt, bei denen intuitive Suche, rasche Filterung und klare Kontaktpfade im Vordergrund stehen.\n\n#### Warum Makler dieses Template wählen:\n- **Echtzeit-Facettensuche:** Schnelle clientseitige Filterung nach Standort, Immobilientyp, Preisrahmen und Angebotsart (Kauf vs. Miete).\n- **Über 12 durchdachte Seiten:** Detaillierte Exposé-Vorlagen, Agentenprofile, Kundenstimmen und Marktübersichten.\n- **Vertrauenselemente:** Integrierte Siegel für geprüfte Objekte, Maklerzertifikate und Transaktionsstatistiken.\n- **Einfache Anpassung:** Basierend auf modernen Framer-Komponenten lassen sich Firmenfarben und Hausschriften zügig konfigurieren.\n\n---\n\n### 10. The Maison — Kunstbuch-Design für unabhängige Berater (Kostenlos)\n* **Creator:** Prasidh Nishchal  \n* **Marketplace-Eintrag:** [The Maison im Framer Marketplace](https://www.framer.com/marketplace/templates/the-maison/)  \n\nThe Maison wählt eine dezente, kuratierte Buch-Ästhetik für selbstständige Immobilienberater und Akquisitions-Boutiquen, die einen erlesenen Kundenkreis betreuen.\n\n#### Warum Makler dieses Template wählen:\n- **Kuratierte Typografie:** Feine Serifen und großzügige Leerräume vermitteln den Charakter eines exklusiven Auktionskatalogs.\n- **Kompaktes CMS für Portfolio & Beratung:** Schlanke Sammlungen für ausgewählte Residenzen und Beratungsleistungen.\n- **Diskrete Besichtigungsanfrage:** Minimale Formulare für gezielte Termine statt anonymer Massenanfragen.\n- **Kostenfrei im Framer Marketplace:** Ermöglicht einen anspruchsvollen Markenauftritt ohne Initialinvestition in ein Template.\n\n---\n\n## Die 5 Säulen einer hochkonvertierenden Luxusimmobilien-Website\n\nEine überzeugende Website im Premiumsegment verlangt nach klaren technischen und gestalterischen Grundsätzen. Achten Sie bei der Individualisierung Ihres Templates auf diese fünf Säulen:\n\n### 1. Cinematische Ansprache unter einer Sekunde\nVermögende Interessenten bewerten ein Angebot innerhalb von drei Sekunden. Vermeiden Sie träge Slider oder langsame Video-Einbettungen. Setzen Sie auf komprimierte MP4/WebM-Schleifen unter 4 MB auf einem globalen CDN, kombiniert mit typografisch präzisen Titeln, die den Charakter des Objekts sofort unterstreichen.\n\n### 2. Detaillierte Lage- und Lebensstil-Dokumentation\nKäufer erwerben stets das Umfeld mit. Widmen Sie Unterseiten privaten Flugplätzen, gehobener Gastronomie, internationalen Privatschulen, Yachthäfen und Golfclubs. Havyn und Veyora zeigen beispielhaft, wie lokales Fachwissen Vertrauen aufbaut.\n\n### 3. Exakte Pläne und Materialnachweise\nAnspruchsvolle Käufer verlangen technische Klarheit: Deckenhöhen, Naturstein-Provenienzen, Haustechnik und Baupläne. Vorlagen wie Onyx Atelier Pro bieten detaillierte Übersichten, die den Preis einer Immobilie sachlich untermauern.\n\n### 4. Diskretes VIP-Anfragemodul\nErsetzen Sie herkömmliche Standardformulare durch ein diskretes Anfrage-Modul. Integrieren Sie Auswahlfelder für Vertretungsverhältnisse (Eigennutzer, Family Office, beauftragter Makler) und Vertraulichkeitsabkommen. Das filtert Anfragen und schützt die Privatsphäre der Käufer.\n\n### 5. Globale Edge-CDN-Geschwindigkeit\nKäufer agieren international zwischen Zürich, Frankfurt, London, Dubai und Übersee. Framer stellt Websites über ein weltweites Edge-Netzwerk bereit, nutzt Brotli-Kompression und WebP-Bilder. Sorgen Sie dafür, dass der First Contentful Paint (FCP) auch mobil unter einer Sekunde bleibt.\n\n---\n\n## Häufig gestellte Fragen von Immobilienmaklern\n\n### Kann ich eine MLS- oder Maklersoftware-Schnittstelle mit Framer verbinden?\nJa. Zwar besitzt Framer kein klassisches WordPress-Plugin, moderne Maklerbüros synchronisieren ihre Objektdaten jedoch unkompliziert über Schnittstellen (Make, Zapier oder Webhooks) direkt in das Framer CMS. Viele Spitzenmakler pflegen zudem ihre 15 bis 30 wichtigsten Luxusobjekte manuell im Framer CMS, um maximale Bildqualität zu gewährleisten.\n\n### Wie schalte ich eine eigene Webadresse für ein Einzelobjekt frei?\nMit Templates wie VALE House oder Onyx Atelier ist die Aufschaltung einer eigenen Domain (z. B. *villa-seeblick.com*) in wenigen Schritten erledigt:\n1. Domain beim Provider registrieren.\n2. Domain in den Framer-Projekteinstellungen eintragen.\n3. Die von Framer genannten A-Records und den CNAME-Eintrag beim Domain-Provider hinterlegen.\n4. Das SSL-Zertifikat wird innerhalb von fünf Minuten automatisch bereitgestellt.\n\n### Wie pflegen Mitarbeiter ohne Programmierkenntnisse neue Angebote ein?\nFramer bietet eine eigene Editor-Rolle für Teammitglieder. Mitarbeiter loggen sich ein, laden Bilder hoch, passen Preise oder Flächen an und veröffentlichen Änderungen sofort – ohne die Programmierung oder das Design verändern zu können.\n\n---\n\n## Fazit & Empfehlung für Ihr Maklerbüro\n\n| Maklerprofil | Empfohlenes Template | Entscheidender Vorteil |\n| :--- | :--- | :--- |\n| **Architektur-Ikonen & Trophäen-Residenzen** | **Onyx Atelier Pro** ($129) | Tag/Nacht-Lichtwechsel, Monographie-Archiv, edle Materialnachweise. |\n| **Minimalistische Anwesen & Off-Market-Verkäufe** | **Onyx Atelier** ($79) | Diskrete Ästhetik, VIP-Anfragemodul, klare visuelle Ruhe. |\n| **Wohntürme & Bauträger-Entwicklungen** | **Monarque** ($99) | Etagen-Navigation, Penthouse-CMS, passendes Textkonzept. |\n| **Boutique-Büros & Wachsende Maklerteams** | **Havyn** ($69) oder **Veyora** (Kostenlos) | Team-Profile, Stadtteilführer, vollständige Seitenarchitektur. |\n| **Einzelvermarktung ab 10 Mio. €** | **VALE House** ($99) | Eigenständiges Narrativ für ein einzelnes Spitzenobjekt. |\n\n---\n\n*Benötigen Sie individuelle Framer-Entwicklung, ein maßgeschneidertes CMS oder eine professionelle Migration Ihrer bestehenden Website? Kontaktieren Sie **The Spark Studio** auf [LinkedIn](https://www.linkedin.com/company/145341738/) oder besuchen Sie unsere Leistungsübersicht auf [thesparkstudio.digital](https://www.thesparkstudio.digital/).*"
+      "content": "## Das Dilemma des Maklers: Warum standardisierte Portale vermögende Käufer verlieren\n\nBei der Vermarktung von Liegenschaften im achtstelligen Preissegment versagen herkömmliche Immobilien-Websites.\n\nDie meisten Maklerplattformen basieren auf veralteten MLS/IDX-Vorlagen, die vor über einem Jahrzehnt konzipiert wurden. Sie überfrachten den Bildschirm mit Registrierungs-Popups, unübersichtlichen 50-Felder-Suchmasken, niedrig aufgelösten Vorschaubildern und überladenen JavaScript-Skripten, die auf mobilen Endgeräten vier bis sechs Sekunden Ladezeit beanspruchen.\n\nFür Käufer im Segment von 5 bis über 50 Millionen Euro zerstört diese Präsentation den wahrgenommenen Wert der Liegenschaft:\n- **Vermögende Privatkunden (HNWI) kaufen Emotion, Provenienz und Diskretion.** Sie betrachten Immobilien nicht wie Konsumgüter in einem Online-Shop, sondern wie Sammler in einer Monographie des *Architectural Digest* oder in einem Katalog renommierter Auktionshäuser.\n- **Träge Ladezeiten untergraben Professionalität.** Entscheidungsträger und Family-Office-Berater greifen zwischen Terminen und Reisen über mobile Verbindungen auf Exposés zu. Wenn eine Seite ruckelt oder Sekunden benötigt, um Architekturfotografien darzustellen, verlassen sie das Angebot.\n- **Generische Kontaktformulare wirken distanzlos.** Vermögende Interessenten vor der Einsicht in Grundrisse nach ihrer Telefonnummer zu fragen, schreckt ab. High-End-Transaktionen erfordern maßgeschneiderte VIP-Anfragemodule und diskrete Vertraulichkeitsvereinbarungen (NDAs).\n\nAus diesem Grund ersetzen führende Makler, Bauträger-Marketingteams und unabhängige Luxusberater standardisierte WordPress-Systeme zunehmend durch **native Framer-Websites**. Framer liefert Inhalte direkt über globale Edge-CDNs aus, garantiert flüssige 60fps-Interaktionen, rendert Typografie in Schweizer Magazin-Qualität und erzielt auf Mobilgeräten PageSpeed-Werte von 95+.\n\nNachfolgend finden Sie eine verifizierte Analyse der **10 besten Framer-Templates für Luxusimmobilien-Makler im Jahr 2026**, bewertet nach editorischer Autorität, handwerklicher Qualität und Konversionsstärke.\n\n---\n\n## Executive-Vergleich: Die 10 besten Immobilien-Templates in Framer\n\n| # | Template-Name | Creator | Preis | Ideal für | Kernvorteil | Link |\n| :-: | :--- | :--- | :-: | :--- | :--- | :--- |\n| **01** | **Onyx Atelier Pro** | The Spark Studio | $129 | Trophäen-Residenzen & Architektur-Monographien | Tag/Nacht-Beleuchtungswechsel & Monographie-Archiv | [Live-Demo](https://onyx-atelier-pro.framer.website/) |\n| **02** | **Onyx Atelier** | The Spark Studio | Gratis | Minimalistische Anwesen & Off-Market-Objekte | Kontrastreiches Layout & diskretes VIP-Anfragedesk | [Live-Demo](https://active-strengthening-218427.framer.app/) |\n| **03** | **Monarque** | Basit A. Khan | $99 | Luxus-Hochhäuser & Penthouse-Entwicklungen | Penthouse-CMS & Etagen-Grundriss-Navigation | [Marketplace](https://www.framer.com/marketplace/templates/monarque/) |\n| **04** | **Ardène** | Sasha Mozdir | $99 | Skandinavische Architektur & Boutique-Büros | Zurückhaltende Typografie & Framer Basic-kompatibel | [Marketplace](https://www.framer.com/marketplace/templates/ardene/) |\n| **05** | **Havyn** | WORKSHOP99 | $69 | Editorische Boutique-Agenturen & Maklerteams | Duales CMS für Objekte & Marktreports mit Team-Roster | [Marketplace](https://www.framer.com/marketplace/templates/havyn/) |\n| **06** | **Lumare** | Lidia Terecia | $79 | Küstenvillen & Private Insel-Refugien | Maus-reaktiver Wasserwellen-Hero & 12 Motion-Komponenten | [Marketplace](https://www.framer.com/marketplace/templates/lumare/) |\n| **07** | **VALE House** | Klub Haus | $99 | Einzelobjekt-Kampagnen ab 10 Mio. € | 6-seitiges Single-Asset-Narrativ mit VIP-Desk | [Marketplace](https://www.framer.com/marketplace/templates/vale-house/) |\n| **08** | **Veyora** | Arbi Khan | Kostenlos | Umfassendes Maklerbüro & Agenten-Verzeichnis | 12-seitige Struktur mit Status-Tags & Filtersystem | [Marketplace](https://www.framer.com/marketplace/templates/veyora/) |\n| **09** | **Estalio** | Grabui Library | $59 | Portale mit großem Objektbestand & Filtersuche | 12+ Layouts, Facettensuche & Verifizierungs-Badges | [Marketplace](https://www.framer.com/marketplace/templates/estalio/) |\n| **10** | **The Maison** | Prasidh Nishchal | Kostenlos | Unabhängige Berater & Private Consultants | Kunstbuch-Ästhetik mit Portfolio- und Beratungs-CMS | [Marketplace](https://www.framer.com/marketplace/templates/the-maison/) |\n\n---\n\n## Detaillierte Analyse: Die 10 besten Luxusimmobilien-Templates\n\n### 01. Onyx Atelier Pro — Die Architektur-Monographie als Flaggschiff ($129)\n* **Creator:** The Spark Studio (Yash Parmar)  \n* **Live-Demo:** [onyx-atelier-pro.framer.website](https://onyx-atelier-pro.framer.website/)  \n* **Erwerb:** [The Spark Studio Lemon Squeezy Store](https://yashparmar.lemonsqueezy.com/checkout/buy/f22889c0-30a4-45d5-87c0-730fb44cc172)  \n\nOnyx Atelier Pro setzt den Standard für die monographieartige Präsentation exklusiver Residenzen. Entwickelt für architektonische Meisterwerke, Penthäuser und private Landgüter, inszeniert dieses Template jede Immobilie wie ein Ausstellungsstück in einem Museum für moderne Kunst.\n\n#### Warum Makler dieses Template wählen:\n- **Interaktiver Tag/Nacht-Beleuchtungswechsel:** Interessenten können nahtlos zwischen Tageslicht und Dämmerungsbeleuchtung wechseln. Dies visualisiert Lichtstimmungen und Innenraum-Atmosphäre ohne Neuladen der Seite.\n- **Material- und Provenienz-Verzeichnis:** Strukturierte Datenübersichten dokumentieren architektonische Details wie italienischen Travertin, individuelle Schreinerarbeiten und Wohnflächen mit typografischer Klarheit.\n- **Monographische Archiv-Layouts:** Flüssige horizontale und vertikale Galerie-Ansichten lassen die Architekturfotografie ohne störende Banner zur Geltung kommen.\n- **Ladezeiten unter einer Sekunde:** Nativ optimierte Animationen ohne externe JavaScript-Bibliotheken erzielen 98/100 Punkte im Google Mobile PageSpeed-Test.\n\n---\n\n### 02. Onyx Atelier — Minimalistische Raummonographie (Gratis)\n* **Creator:** The Spark Studio (Yash Parmar)  \n* **Live-Demo:** [active-strengthening-218427.framer.app](https://active-strengthening-218427.framer.app/)  \n* **Remix-Link:** [framer.com/remix/qdTLRcAS411L53TOswm9](https://framer.com/remix/qdTLRcAS411L53TOswm9)  \n* **Marketplace-Eintrag:** [Onyx Atelier im Framer Marketplace](https://www.framer.com/marketplace/templates/onyx-atelier/)  \n\nDie Standard-Edition von Onyx Atelier verzichtet bewusst auf dekoratives Beiwerk und konzentriert sich auf eine scharfe, kontrastreiche Schwarz-Weiß-Ästhetik. Sie richtet sich an Makler von brutalistischen Bauten, denkmalgeschützten Villen und vertraulichen Off-Market-Portfolios.\n\n#### Warum Makler dieses Template wählen:\n- **Diskrete Off-Market-Ästhetik:** Maßgeschneidert für diskrete Verkäufe, bei denen Zurückhaltung und Exklusivität entscheidend sind.\n- **VIP-Anfragemodul mit Vorqualifizierung:** Integrierte Formulare ermöglichen es Vertretern von Käufern, Vertraulichkeitserklärungen einzureichen und private Besichtigungstermine zu vereinbaren.\n- **CMS-Struktur für Baudaten:** Präzise Datenfelder für Baujahr, Grundstücksgröße, Architektennachweis und Grundriss-Downloads.\n- *Hinweis zu Aurelle Estates:* Für Maklerbüros, die eine Multi-Listing-Struktur mit cinematischem 4K-Video-Hero und passwortgeschützten Objekten bevorzugen, bietet Spark Studios **Aurelle Estates** ($99, [Live-Demo](https://wandering-variations-344785.framer.app/)) eine schlüsselfertige Alternative.\n\n---\n\n### 03. Monarque — Premium-Türme & Penthouse-Entwicklungen ($99)\n* **Creator:** Basit A. Khan  \n* **Marketplace-Eintrag:** [Monarque im Framer Marketplace](https://www.framer.com/marketplace/templates/monarque/)  \n\nSpeziell für Hochhaus-Entwicklungen, Wohntürme und Neubauprojekte konzipiert, verbindet Monarque Markenästhetik mit zielgerichteter Konversion.\n\n#### Warum Makler dieses Template wählen:\n- **CMS für Mehrfamilien- und Turmprojekte:** Spezifische Datenfelder für Etagen, Penthouse-Kollektionen und Ausstattungsstufen.\n- **Inkludiertes Textkonzept:** Vorstrukturierte, verkaufsstarke Textstrukturen für die gehobene Wohnimmobilien-Vermarktung.\n- **Figma-Quelldatei enthalten:** Das gesamte Designsystem steht in Figma zur Verfügung, um Vorababstimmungen mit Bauträgern zu erleichtern.\n- **Flüssige Mikro-Interaktionen:** Sanfte Übergänge zwischen Etagen-Grundrissen und Ausstattungslisten.\n\n---\n\n### 04. Ardène — Skandinavisches Design & Boutique-Agenturen ($99)\n* **Creator:** Sasha Mozdir (TMPL Studio)  \n* **Marketplace-Eintrag:** [Ardène im Framer Marketplace](https://www.framer.com/marketplace/templates/ardene/)  \n\nArdène überträgt skandinavische Design-Ruhe auf den Immobiliensektor. Mit großzügigen Bildräumen, feiner Typografie und dezenten Tiefenübergängen passt es hervorragend zu europäischen Boutique-Büros.\n\n#### Warum Makler dieses Template wählen:\n- **Zurückhaltende Typografie:** Strukturierte Hierarchien setzen die Architektur in Szene, ohne aufdringliche Verkaufselemente zu verwenden.\n- **Optimiert für Framer Basic:** Läuft performant auf Framers Basis-Tarif ohne Zusatzkosten für komplexe Pläne.\n- **Projekt- & Angebots-CMS:** Flexible Sammlungen für abgeschlossene Architekturprojekte und aktive Verkaufsangebote.\n- **Stabile Bildwiederholrate:** Flüssige 60fps-Bewegungen auf mobilen Endgeräten wie Safari und Chrome.\n\n---\n\n### 05. Havyn — Das redaktionelle Makler-Magazin ($69)\n* **Creator:** WORKSHOP99  \n* **Marketplace-Eintrag:** [Havyn im Framer Marketplace](https://www.framer.com/marketplace/templates/havyn/)  \n\nHavyn richtet sich an partnerschaftlich geführte Maklerbüros und regionale Luxusteams, die Wert auf persönliche Ausstrahlung und redaktionelle Marktreports legen.\n\n#### Warum Makler dieses Template wählen:\n- **Duales CMS-System:** Getrennte Sammlungen für Immobilienangebote und ein Markt-Journal für Stadtteilberichte und Analysen.\n- **Agenten- und Teampflege:** Eigene Bereiche für Profile, Transaktionshistorien und Vermittlungserfolge zur Vertrauensbildung.\n- **Kauf- & Verkaufsleitfaden:** Schrittweise Beratungselemente, die anspruchsvolle Kunden durch den Akquisitionsprozess führen.\n- **Warme Farbgestaltung:** Eine beruhigende, neutrale Farbpalette schafft eine ansprechende Markenidentität.\n\n---\n\n### 06. Lumare — Küstenvillen & Exklusive Ferienresidenzen ($79)\n* **Creator:** Lidia Terecia  \n* **Marketplace-Eintrag:** [Lumare im Framer Marketplace](https://www.framer.com/marketplace/templates/lumare/)  \n\nLumare erzeugt eine besondere visuelle Tiefe. Rund um Wasser-, Licht- und Glaselemente gestaltet, eignet es sich für Luxusresidenzen an Küsten, Seen und privaten Rückzugsorten.\n\n#### Warum Makler dieses Template wählen:\n- **Maus-reaktiver Wasserwellen-Effekt:** Ein spezieller Shader im Header erzeugt sanfte Wasserwellen und vermittelt sofort ein maritimes Lebensgefühl.\n- **12 native Bewegungskomponenten:** Individuell erstellte Interaktionen ohne externe JavaScript-Bibliotheken gewährleisten minimale Ladezeiten.\n- **4 CMS-Sammlungen:** Residenzen, Magazin, Maklerverzeichnis und Lage-FAQs.\n- **3D-Galerie:** Eine kreisförmige Bildergalerie zur eindrucksvollen Darstellung von Panoramablicken und Terrassen.\n\n---\n\n### 07. VALE House — Einzelobjekt-Präsentation ab 10 Mio. € ($99)\n* **Creator:** Klub Haus  \n* **Marketplace-Eintrag:** [VALE House im Framer Marketplace](https://www.framer.com/marketplace/templates/vale-house/)  \n\nErhält ein Makler den Alleinauftrag für ein historisches Denkmal oder ein modernes Architektenhaus, verliert das Objekt in einer Sammelübersicht oft seine Strahlkraft. VALE House ist ein spezialisiertes 6-Seiten-Template für die gezielte Vermarktung unter einer eigenen Adresse (z. B. *villa-am-see.de*).\n\n#### Warum Makler dieses Template wählen:\n- **Dedizierte Einzelobjekt-Erzählung:** Sechs abgestimmte Unterseiten (Startseite, Ausstattungsdetails, Lage, Diskrete Anfrage, Datenschutz, Leitfaden).\n- **Cinematische Bildfolgen:** Großflächige Aufnahmen, Grundrisse und Raum-für-Raum-Rundgänge.\n- **Diskretes Anfrageformular:** Vorqualifizierte Eingabefelder für solvente Kaufinteressenten und deren Vermögensverwalter.\n- **Eigene Domain im Handumdrehen:** Kann über Framers DNS-System in wenigen Minuten mit einer individuellen Webadresse verbunden werden.\n\n---\n\n### 08. Veyora — Komplettes Maklerportal mit Team-Verzeichnis (Kostenlos)\n* **Creator:** Arbi Khan  \n* **Marketplace-Eintrag:** [Veyora im Framer Marketplace](https://www.framer.com/marketplace/templates/veyora/)  \n\nVeyora gehört zu den vielseitigsten kostenfreien Templates im Framer Marketplace. Es ermöglicht aufstrebenden Maklerbüros den Aufbau einer professionellen Unternehmenspräsenz ohne Lizenzkosten.\n\n#### Warum Makler dieses Template wählen:\n- **12-teilige Gesamtstruktur:** Umfasst Seiten für Verkaufen, Betreuung, Stadtteilführer, Über uns, Team und Kontakt.\n- **Differenziertes CMS-Schema:** Felder für Kaufpreis, Grundstücksmaße, Wohnfläche, Zimmeranzahl und Status-Kennzeichnungen (Aktiv, Reserviert, Verkauft).\n- **Stadtteil-Suchfilter:** Ermöglicht Kaufinteressenten die Filterung nach Lage, Infrastruktur und Lebensstil.\n- **Keine Anschaffungskosten:** Als Community-Vorlage nutzbar, wodurch Budgets gezielt in Fotografie und Akquise fließen können.\n\n---\n\n### 09. Estalio — Strukturierte Objektsuche & Filtersystem ($59)\n* **Creator:** Grabui Library  \n* **Marketplace-Eintrag:** [Estalio im Framer Marketplace](https://www.framer.com/marketplace/templates/estalio/)  \n\nEstalio wurde für Maklerhäuser mit umfangreichem Liegenschaftsbestand entwickelt, bei denen intuitive Suche, rasche Filterung und klare Kontaktpfade im Vordergrund stehen.\n\n#### Warum Makler dieses Template wählen:\n- **Echtzeit-Facettensuche:** Schnelle clientseitige Filterung nach Standort, Immobilientyp, Preisrahmen und Angebotsart (Kauf vs. Miete).\n- **Über 12 durchdachte Seiten:** Detaillierte Exposé-Vorlagen, Agentenprofile, Kundenstimmen und Marktübersichten.\n- **Vertrauenselemente:** Integrierte Siegel für geprüfte Objekte, Maklerzertifikate und Transaktionsstatistiken.\n- **Einfache Anpassung:** Basierend auf modernen Framer-Komponenten lassen sich Firmenfarben und Hausschriften zügig konfigurieren.\n\n---\n\n### 10. The Maison — Kunstbuch-Design für unabhängige Berater (Kostenlos)\n* **Creator:** Prasidh Nishchal  \n* **Marketplace-Eintrag:** [The Maison im Framer Marketplace](https://www.framer.com/marketplace/templates/the-maison/)  \n\nThe Maison wählt eine dezente, kuratierte Buch-Ästhetik für selbstständige Immobilienberater und Akquisitions-Boutiquen, die einen erlesenen Kundenkreis betreuen.\n\n#### Warum Makler dieses Template wählen:\n- **Kuratierte Typografie:** Feine Serifen und großzügige Leerräume vermitteln den Charakter eines exklusiven Auktionskatalogs.\n- **Kompaktes CMS für Portfolio & Beratung:** Schlanke Sammlungen für ausgewählte Residenzen und Beratungsleistungen.\n- **Diskrete Besichtigungsanfrage:** Minimale Formulare für gezielte Termine statt anonymer Massenanfragen.\n- **Kostenfrei im Framer Marketplace:** Ermöglicht einen anspruchsvollen Markenauftritt ohne Initialinvestition in ein Template.\n\n---\n\n## Die 5 Säulen einer hochkonvertierenden Luxusimmobilien-Website\n\nEine überzeugende Website im Premiumsegment verlangt nach klaren technischen und gestalterischen Grundsätzen. Achten Sie bei der Individualisierung Ihres Templates auf diese fünf Säulen:\n\n### 1. Cinematische Ansprache unter einer Sekunde\nVermögende Interessenten bewerten ein Angebot innerhalb von drei Sekunden. Vermeiden Sie träge Slider oder langsame Video-Einbettungen. Setzen Sie auf komprimierte MP4/WebM-Schleifen unter 4 MB auf einem globalen CDN, kombiniert mit typografisch präzisen Titeln, die den Charakter des Objekts sofort unterstreichen.\n\n### 2. Detaillierte Lage- und Lebensstil-Dokumentation\nKäufer erwerben stets das Umfeld mit. Widmen Sie Unterseiten privaten Flugplätzen, gehobener Gastronomie, internationalen Privatschulen, Yachthäfen und Golfclubs. Havyn und Veyora zeigen beispielhaft, wie lokales Fachwissen Vertrauen aufbaut.\n\n### 3. Exakte Pläne und Materialnachweise\nAnspruchsvolle Käufer verlangen technische Klarheit: Deckenhöhen, Naturstein-Provenienzen, Haustechnik und Baupläne. Vorlagen wie Onyx Atelier Pro bieten detaillierte Übersichten, die den Preis einer Immobilie sachlich untermauern.\n\n### 4. Diskretes VIP-Anfragemodul\nErsetzen Sie herkömmliche Standardformulare durch ein diskretes Anfrage-Modul. Integrieren Sie Auswahlfelder für Vertretungsverhältnisse (Eigennutzer, Family Office, beauftragter Makler) und Vertraulichkeitsabkommen. Das filtert Anfragen und schützt die Privatsphäre der Käufer.\n\n### 5. Globale Edge-CDN-Geschwindigkeit\nKäufer agieren international zwischen Zürich, Frankfurt, London, Dubai und Übersee. Framer stellt Websites über ein weltweites Edge-Netzwerk bereit, nutzt Brotli-Kompression und WebP-Bilder. Sorgen Sie dafür, dass der First Contentful Paint (FCP) auch mobil unter einer Sekunde bleibt.\n\n---\n\n## Häufig gestellte Fragen von Immobilienmaklern\n\n### Kann ich eine MLS- oder Maklersoftware-Schnittstelle mit Framer verbinden?\nJa. Zwar besitzt Framer kein klassisches WordPress-Plugin, moderne Maklerbüros synchronisieren ihre Objektdaten jedoch unkompliziert über Schnittstellen (Make, Zapier oder Webhooks) direkt in das Framer CMS. Viele Spitzenmakler pflegen zudem ihre 15 bis 30 wichtigsten Luxusobjekte manuell im Framer CMS, um maximale Bildqualität zu gewährleisten.\n\n### Wie schalte ich eine eigene Webadresse für ein Einzelobjekt frei?\nMit Templates wie VALE House oder Onyx Atelier ist die Aufschaltung einer eigenen Domain (z. B. *villa-seeblick.com*) in wenigen Schritten erledigt:\n1. Domain beim Provider registrieren.\n2. Domain in den Framer-Projekteinstellungen eintragen.\n3. Die von Framer genannten A-Records und den CNAME-Eintrag beim Domain-Provider hinterlegen.\n4. Das SSL-Zertifikat wird innerhalb von fünf Minuten automatisch bereitgestellt.\n\n### Wie pflegen Mitarbeiter ohne Programmierkenntnisse neue Angebote ein?\nFramer bietet eine eigene Editor-Rolle für Teammitglieder. Mitarbeiter loggen sich ein, laden Bilder hoch, passen Preise oder Flächen an und veröffentlichen Änderungen sofort – ohne die Programmierung oder das Design verändern zu können.\n\n---\n\n## Fazit & Empfehlung für Ihr Maklerbüro\n\n| Maklerprofil | Empfohlenes Template | Entscheidender Vorteil |\n| :--- | :--- | :--- |\n| **Architektur-Ikonen & Trophäen-Residenzen** | **Onyx Atelier Pro** ($129) | Tag/Nacht-Lichtwechsel, Monographie-Archiv, edle Materialnachweise. |\n| **Minimalistische Anwesen & Off-Market-Verkäufe** | **Onyx Atelier** (Gratis) | Diskrete Ästhetik, VIP-Anfragemodul, klare visuelle Ruhe. |\n| **Wohntürme & Bauträger-Entwicklungen** | **Monarque** ($99) | Etagen-Navigation, Penthouse-CMS, passendes Textkonzept. |\n| **Boutique-Büros & Wachsende Maklerteams** | **Havyn** ($69) oder **Veyora** (Kostenlos) | Team-Profile, Stadtteilführer, vollständige Seitenarchitektur. |\n| **Einzelvermarktung ab 10 Mio. €** | **VALE House** ($99) | Eigenständiges Narrativ für ein einzelnes Spitzenobjekt. |\n\n---\n\n*Benötigen Sie individuelle Framer-Entwicklung, ein maßgeschneidertes CMS oder eine professionelle Migration Ihrer bestehenden Website? Kontaktieren Sie **The Spark Studio** auf [LinkedIn](https://www.linkedin.com/company/145341738/) oder besuchen Sie unsere Leistungsübersicht auf [thesparkstudio.digital](https://www.thesparkstudio.digital/).*"
     },
     "mobile-speed-framer-portfolio": {
       "title": "Warum lädt mein Framer-Portfolio auf dem Smartphone langsam?",
       "excerpt": "Öffne eine veröffentlichte Projektseite auf deinem Smartphone. Ist der Projekttitel sofort lesbar, während das Foto noch fehlt?",
       "category": "Ladezeit",
       "date": "21. November 2026",
-      "readTime": "2 Min. Lesezeit",
-      "content": "Öffne eine veröffentlichte Projektseite auf deinem Smartphone. Ist der Projekttitel sofort lesbar, während das Foto noch fehlt? Oder wartest du zunächst auch auf den Text? Diese Beobachtung hilft dir, den ersten Test auszuwählen.\n\nPrüfe die Adresse mit PageSpeed Insights in der mobilen Ansicht. Schau nach, welches Element für den Largest Contentful Paint (LCP) erfasst wurde. Der Wert beschreibt, wann das größte sichtbare Inhaltselement erscheint. In einem Architekturportfolio kann das sowohl die erste Fotografie als auch die Überschrift sein. Wiederhole die Messung dreimal und notiere jeweils das Element und die Zeit.\n\nErscheint das Foto spät, prüfe die Abmessungen der Datei, die das Smartphone tatsächlich lädt. Eine vergrößerbare Bauzeichnung braucht unter Umständen eine hohe Auflösung. Für ein Stimmungsbild in Bildschirmbreite lohnt sich ein kleinerer Export. Vergleiche auf dem Gerät besonders feine Linien, Beschriftungen und Schattenverläufe.\n\nErscheint die Überschrift spät, dupliziere die Seite und deaktiviere nur ihre Einblendanimation. Lass Schrift, Layout und Bilder unverändert. Miss erneut. So kannst du beurteilen, ob der Text früher lesbar wird, bevor du Zeit in die Überarbeitung der gesamten Galerie steckst."
+      "readTime": "4 Min. Lesezeit",
+      "content": "Öffne eine veröffentlichte Projektseite auf deinem Smartphone. Ist der Projekttitel sofort lesbar, während das Foto noch fehlt? Oder wartest du zunächst auch auf den Text? Diese Beobachtung hilft dir, den ersten Test auszuwählen.\n\n## Wie findest du das langsame Element auf einer Framer-Seite?\n\nPrüfe die Adresse mit PageSpeed Insights in der mobilen Ansicht. Schau nach, welches Element für den Largest Contentful Paint (LCP) erfasst wurde. Der Wert beschreibt, wann das größte sichtbare Inhaltselement erscheint. In einem Architekturportfolio kann das sowohl die erste Fotografie als auch die Überschrift sein. Wiederhole die Messung dreimal und notiere jeweils das Element und die Zeit.\n\n## Was tun, wenn das Foto zu spät erscheint?\n\nErscheint das Foto spät, prüfe die Abmessungen der Datei, die das Smartphone tatsächlich lädt. Eine vergrößerbare Bauzeichnung braucht unter Umständen eine hohe Auflösung. Für ein Stimmungsbild in Bildschirmbreite lohnt sich ein kleinerer Export. Vergleiche auf dem Gerät besonders feine Linien, Beschriftungen und Schattenverläufe.\n\nÖffne auf derselben Seite die Entwicklertools deines Browsers, wechsle in den Bereich „Netzwerk“ und lade die Seite in Smartphone-Breite neu. Sortiere nach Größe. Ist das erste Foto mehrere Megabyte groß oder folgt ihm ein zweites großes Bild, das erst weiter unten sichtbar wird, weißt du, wohin die ersten Sekunden gehen.\n\n## Was tun, wenn der Titel zu spät erscheint?\n\nErscheint die Überschrift spät, dupliziere die Seite und deaktiviere nur ihre Einblendanimation. Lass Schrift, Layout und Bilder unverändert. Miss erneut. So kannst du beurteilen, ob der Text früher lesbar wird, bevor du Zeit in die Überarbeitung der gesamten Galerie steckst.\n\nDie zweite häufige Ursache sind Schriften. Wartet der Titel auf eine eigene Webschrift, bedeutet jeder zusätzliche Schnitt einen weiteren Download. Behalte nur die Schnitte, die du wirklich nutzt, und prüfe, ob dieselbe Schriftfamilie unter verschiedenen Namen doppelt geladen wird.\n\n## Was bremst ein Portfolio auf dem Smartphone noch aus?\n\nSieh dir alles an, was nicht zum eigentlichen Design gehört: eingebettete Karten, Hintergrundvideos, Chat-Widgets, Buchungstools und Tracking-Skripte. Jedes davon belastet den Prozessor des Smartphones, während die Seite startet. Entferne sie auf einer Kopie der Seite einzeln und miss erneut. Wird die Seite deutlich schneller, lade das Element später oder ersetze es durch ein statisches Bild mit Link.\n\n## Woran erkennst du, dass die Änderung wirkt?\n\nWiederhole dieselben drei PageSpeed-Messungen und vergleiche den mittleren Wert, nicht den besten. Öffne die Live-Seite danach auf einem echten Smartphone im Mobilfunknetz. Felddaten echter Besucher erscheinen im Bericht „Core Web Vitals“ der Google Search Console. Er basiert auf den letzten 28 Tagen – gib einer Änderung dort also etwa einen Monat Zeit."
     },
     "furniture-product-page-photo-guide": {
       "title": "Möbel fotografieren: Welche Bilder braucht eine gute Produktseite?",
       "excerpt": "Bei einem Esszimmerstuhl stellen sich vor dem Kauf drei praktische Fragen. Passt er unter den Tisch?",
       "category": "M?belfotografie",
       "date": "21. November 2026",
-      "readTime": "2 Min. Lesezeit",
-      "content": "Bei einem Esszimmerstuhl stellen sich vor dem Kauf drei praktische Fragen. Passt er unter den Tisch? Wie sieht die Oberfläche aus der Nähe aus? Wie bestelle ich genau die abgebildete Ausführung? Diese Fragen ergeben bereits eine brauchbare Aufnahmeliste.\n\nFotografiere zuerst den gesamten Stuhl. Ergänze eine Seitenansicht neben einem Tisch und eine Detailaufnahme der Holzverbindung oder des Bezugs. Ein zweites, fast identisches Frontfoto hilft wenig, wenn Sitzhöhe oder Material noch unklar sind.\n\nPlatziere Maße, Einheiten und die Bezeichnung der gezeigten Oberfläche nah beieinander. Gibt es den Stuhl in Eiche und Nussbaum, sollte unter dem Bild die jeweilige Ausführung stehen. Erfolgt die Bestellung auf Anfrage, gehört die Modellbezeichnung direkt zum Kontaktlink.\n\nTeste den Aufbau mit einem Möbelstück aus deinem Sortiment. Öffne die Vorschau von Grain & Form und Halden Edition über unser Framer-Profil und setze gedanklich deine drei Aufnahmen ein. Bei welchem Entwurf findest du Sitzhöhe und Bestellmöglichkeit auf Anhieb? [Framer-Vorlagen des Studios ansehen](https://www.framer.com/@thesparkstudio/)"
+      "readTime": "4 Min. Lesezeit",
+      "content": "Bei einem Esszimmerstuhl stellen sich vor dem Kauf drei praktische Fragen. Passt er unter den Tisch? Wie sieht die Oberfläche aus der Nähe aus? Wie bestelle ich genau die abgebildete Ausführung? Diese Fragen ergeben bereits eine brauchbare Aufnahmeliste.\n\n## Welche Fotos gehören auf eine Möbel-Produktseite?\n\nFotografiere zuerst den gesamten Stuhl. Ergänze eine Seitenansicht neben einem Tisch und eine Detailaufnahme der Holzverbindung oder des Bezugs. Ein zweites, fast identisches Frontfoto hilft wenig, wenn Sitzhöhe oder Material noch unklar sind.\n\nEine einfache Shotliste für die meisten Stücke: das ganze Möbel im Dreiviertelwinkel, eine Seitenansicht neben etwas Vertrautem als Größenvergleich, eine Nahaufnahme der Verbindung oder des Materials, die Oberfläche bei Tageslicht und ein Foto im echten Raum. Ist die Rückseite oder Unterseite im Gebrauch sichtbar – etwa bei einem Sofa mitten im Raum –, fotografiere auch sie.\n\n## Wohin gehören Maße und Oberflächen?\n\nPlatziere Maße, Einheiten und die Bezeichnung der gezeigten Oberfläche nah beieinander. Gibt es den Stuhl in Eiche und Nussbaum, sollte unter dem Bild die jeweilige Ausführung stehen. Erfolgt die Bestellung auf Anfrage, gehört die Modellbezeichnung direkt zum Kontaktlink.\n\nNenne Höhe, Breite und Tiefe sowie die Maße, die Käufer vorher prüfen: Sitzhöhe bei Stühlen, Beinfreiheit unter einem Tisch, die Öffnungsmaße eines Schranks. Verkaufst du international, zeige Zentimeter und Zoll. Lieferzeit, Liefergebiet und Pflegehinweise gehören in denselben Block, nicht auf eine separate Seite.\n\n## Wie sollten Bestellung oder Anfrage funktionieren?\n\nWird jedes Stück auf Bestellung gefertigt, sollte der Anfrage-Button direkt neben Produktname und gewählter Oberfläche stehen – und das Formular beides bereits enthalten. Nenne die Lieferzeit in der Nähe des Buttons, damit Besucher vor dem Schreiben wissen, was sie erwartet. Wer erst abtippen muss, was er gerade ansieht, schickt die Nachricht vielleicht nie ab.\n\n## Wie testest du das Layout vor dem Fotoshooting?\n\nTeste den Aufbau mit einem Möbelstück aus deinem Sortiment. Öffne die Vorschau von Grain & Form und Halden Edition über unser Framer-Profil und setze gedanklich deine drei Aufnahmen ein. Bei welchem Entwurf findest du Sitzhöhe und Bestellmöglichkeit auf Anhieb? [Framer-Vorlagen des Studios ansehen](https://www.framer.com/@thesparkstudio/)"
     }
   }
 }

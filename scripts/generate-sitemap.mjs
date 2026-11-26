@@ -1,4 +1,6 @@
 import { localizedArticleSlugs } from '../src/data/localizedArticles.js';
+import { TEMPLATE_SLUGS } from '../src/data/templates.js';
+import { BLOG_POSTS } from '../src/data/blogData.js';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -9,33 +11,27 @@ const rootDir = path.resolve(__dirname, '..');
 
 const BASE_URL = 'https://www.thesparkstudio.digital';
 
-const TEMPLATE_SLUGS = [
-  'ai-saas',
-  'luxury-restaurant',
-  'premium-healthcare',
-  'mavric-estate',
-  'aurelle-estates',
-  'onyx-atelier',
-  'vellum-edition',
-  'halden-edition',
-  'grain-form',
-  'slowgrain',
-  'terra',
-  'sasso-architect',
-  'tessovra'
-];
 
-const BLOG_SLUGS = [
-  'top-10-framer-templates-for-architects-and-design-studios-2026',
-  'onyx-atelier-framer-architecture-template-review',
-  'slowgrain-solum-framer-architecture-template-free-review',
-  'sasso-architect-framer-template-review',
-  'aurelle-estates-framer-architecture-template-review',
-  'vellum-edition-framer-architecture-template-review',
-  'how-we-achieve-90-plus-pagespeed-on-framer-sites',
-  'top-framer-templates-for-real-estate-and-architecture-2026',
-  'figma-to-framer-agency-migration-guide'
-];
+// English-only posts (localized ones get their own entries below). Comes straight from
+// src/data/blogData.js, so new posts are added to the sitemap automatically.
+const BLOG_SLUGS = BLOG_POSTS.map(p => p.slug).filter(slug => !localizedArticleSlugs.includes(slug));
+
+// <lastmod> = date of the last real change (Google & AI crawlers use it for freshness).
+const day = d => new Date(d).toISOString().slice(0, 10);
+const newestMtime = paths => day(Math.max(...paths.flatMap(p => {
+  const full = path.join(rootDir, p);
+  return fs.statSync(full).isDirectory()
+    ? fs.readdirSync(full).map(f => fs.statSync(path.join(full, f)).mtimeMs)
+    : [fs.statSync(full).mtimeMs];
+})));
+const postDate = slug => BLOG_POSTS.find(p => p.slug === slug)?.isoDate;
+const LASTMOD = {
+  home: newestMtime(['src/pages/HomePage.jsx', 'src/components', 'src/i18n/locales']),
+  blogHub: BLOG_POSTS.map(p => p.isoDate).filter(Boolean).sort().at(-1),
+  templates: newestMtime(['src/pages/TemplateDetailPage.jsx', 'src/data/templates.js', 'src/i18n/locales']),
+};
+const lastmod = date => (date ? `
+    <lastmod>${date}</lastmod>` : '');
 
 const LANGUAGES = [
   { code: 'en', prefix: '' },
@@ -62,14 +58,12 @@ LANGUAGES.forEach(active => {
   const loc = `${BASE_URL}${active.prefix || '/'}`;
   const alternates = getAlternates(prefix => prefix || '/');
   entries.push(`  <url>
-    <loc>${loc}</loc>
+    <loc>${loc}</loc>${lastmod(LASTMOD.home)}
 ${alternates}
     <image:image>
       <image:loc>${BASE_URL}/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio</image:title>
     </image:image>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>`);
 });
 
@@ -78,26 +72,25 @@ LANGUAGES.forEach(active => {
   const loc = `${BASE_URL}${active.prefix}/blog`;
   const alternates = getAlternates(prefix => `${prefix}/blog`);
   entries.push(`  <url>
-    <loc>${loc}</loc>
+    <loc>${loc}</loc>${lastmod(LASTMOD.blogHub)}
 ${alternates}
     <image:image>
       <image:loc>${BASE_URL}/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio Blog &amp; Insights</image:title>
     </image:image>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
   </url>`);
 });
 
 // 3. Blog Articles
 BLOG_SLUGS.forEach(slug => {
-  entries.push(`  <url><loc>${BASE_URL}/blog/${slug}</loc></url>`);
+  entries.push(`  <url><loc>${BASE_URL}/blog/${slug}</loc>${lastmod(postDate(slug))}
+  </url>`);
 });
 
 for (const slug of localizedArticleSlugs) {
   const route = prefix => prefix + '/blog/' + slug;
   for (const lang of LANGUAGES) {
-    entries.push(`  <url><loc>${BASE_URL}${route(lang.prefix)}</loc>
+    entries.push(`  <url><loc>${BASE_URL}${route(lang.prefix)}</loc>${lastmod(postDate(slug))}
 ${getAlternates(route)}
   </url>`);
   }
@@ -109,10 +102,8 @@ TEMPLATE_SLUGS.forEach(slug => {
     const loc = `${BASE_URL}${active.prefix}/templates/${slug}`;
     const alternates = getAlternates(prefix => `${prefix}/templates/${slug}`);
     entries.push(`  <url>
-    <loc>${loc}</loc>
+    <loc>${loc}</loc>${lastmod(LASTMOD.templates)}
 ${alternates}
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>`);
   });
 });

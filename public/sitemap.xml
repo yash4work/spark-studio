@@ -4,6 +4,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.thesparkstudio.digital/</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es" />
@@ -13,11 +14,10 @@
       <image:loc>https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio</image:title>
     </image:image>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es" />
@@ -27,11 +27,10 @@
       <image:loc>https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio</image:title>
     </image:image>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es" />
@@ -41,11 +40,10 @@
       <image:loc>https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio</image:title>
     </image:image>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es" />
@@ -55,11 +53,10 @@
       <image:loc>https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio</image:title>
     </image:image>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/blog</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog" />
@@ -69,11 +66,10 @@
       <image:loc>https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio Blog &amp; Insights</image:title>
     </image:image>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/blog</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog" />
@@ -83,11 +79,10 @@
       <image:loc>https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio Blog &amp; Insights</image:title>
     </image:image>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/blog</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog" />
@@ -97,11 +92,10 @@
       <image:loc>https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio Blog &amp; Insights</image:title>
     </image:image>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/blog</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog" />
@@ -111,19 +105,36 @@
       <image:loc>https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg</image:loc>
       <image:title>The Spark Studio Blog &amp; Insights</image:title>
     </image:image>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
   </url>
-  <url><loc>https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026</loc></url>
-  <url><loc>https://www.thesparkstudio.digital/blog/onyx-atelier-framer-architecture-template-review</loc></url>
-  <url><loc>https://www.thesparkstudio.digital/blog/slowgrain-solum-framer-architecture-template-free-review</loc></url>
-  <url><loc>https://www.thesparkstudio.digital/blog/sasso-architect-framer-template-review</loc></url>
-  <url><loc>https://www.thesparkstudio.digital/blog/aurelle-estates-framer-architecture-template-review</loc></url>
-  <url><loc>https://www.thesparkstudio.digital/blog/vellum-edition-framer-architecture-template-review</loc></url>
-  <url><loc>https://www.thesparkstudio.digital/blog/how-we-achieve-90-plus-pagespeed-on-framer-sites</loc></url>
-  <url><loc>https://www.thesparkstudio.digital/blog/top-framer-templates-for-real-estate-and-architecture-2026</loc></url>
-  <url><loc>https://www.thesparkstudio.digital/blog/figma-to-framer-agency-migration-guide</loc></url>
+  <url><loc>https://www.thesparkstudio.digital/blog/top-10-framer-templates-for-architects-and-design-studios-2026</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/blog/vellum-edition-framer-architecture-template-review</loc>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/blog/aurelle-estates-framer-architecture-template-review</loc>
+    <lastmod>2026-11-08</lastmod>
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/blog/sasso-architect-framer-template-review</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/blog/slowgrain-solum-framer-architecture-template-free-review</loc>
+    <lastmod>2026-11-10</lastmod>
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/blog/onyx-atelier-framer-architecture-template-review</loc>
+    <lastmod>2026-11-10</lastmod>
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/blog/how-we-achieve-90-plus-pagespeed-on-framer-sites</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/blog/top-framer-templates-for-real-estate-and-architecture-2026</loc>
+    <lastmod>2026-11-08</lastmod>
+  </url>
+  <url><loc>https://www.thesparkstudio.digital/blog/figma-to-framer-agency-migration-guide</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
   <url><loc>https://www.thesparkstudio.digital/blog/mobile-speed-framer-portfolio</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/mobile-speed-framer-portfolio" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/mobile-speed-framer-portfolio" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/mobile-speed-framer-portfolio" />
@@ -131,6 +142,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/mobile-speed-framer-portfolio" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/de/blog/mobile-speed-framer-portfolio</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/mobile-speed-framer-portfolio" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/mobile-speed-framer-portfolio" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/mobile-speed-framer-portfolio" />
@@ -138,6 +150,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/mobile-speed-framer-portfolio" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/es/blog/mobile-speed-framer-portfolio</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/mobile-speed-framer-portfolio" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/mobile-speed-framer-portfolio" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/mobile-speed-framer-portfolio" />
@@ -145,6 +158,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/mobile-speed-framer-portfolio" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/fr/blog/mobile-speed-framer-portfolio</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/mobile-speed-framer-portfolio" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/mobile-speed-framer-portfolio" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/mobile-speed-framer-portfolio" />
@@ -152,6 +166,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/mobile-speed-framer-portfolio" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/blog/furniture-product-page-photo-guide</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/furniture-product-page-photo-guide" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/furniture-product-page-photo-guide" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/furniture-product-page-photo-guide" />
@@ -159,6 +174,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/furniture-product-page-photo-guide" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/de/blog/furniture-product-page-photo-guide</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/furniture-product-page-photo-guide" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/furniture-product-page-photo-guide" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/furniture-product-page-photo-guide" />
@@ -166,6 +182,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/furniture-product-page-photo-guide" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/es/blog/furniture-product-page-photo-guide</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/furniture-product-page-photo-guide" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/furniture-product-page-photo-guide" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/furniture-product-page-photo-guide" />
@@ -173,6 +190,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/furniture-product-page-photo-guide" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/fr/blog/furniture-product-page-photo-guide</loc>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/furniture-product-page-photo-guide" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/furniture-product-page-photo-guide" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/furniture-product-page-photo-guide" />
@@ -180,6 +198,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/furniture-product-page-photo-guide" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers</loc>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/best-luxury-real-estate-framer-templates-for-brokers" />
@@ -187,6 +206,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/de/blog/best-luxury-real-estate-framer-templates-for-brokers</loc>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/best-luxury-real-estate-framer-templates-for-brokers" />
@@ -194,6 +214,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/es/blog/best-luxury-real-estate-framer-templates-for-brokers</loc>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/best-luxury-real-estate-framer-templates-for-brokers" />
@@ -201,6 +222,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
   </url>
   <url><loc>https://www.thesparkstudio.digital/fr/blog/best-luxury-real-estate-framer-templates-for-brokers</loc>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/blog/best-luxury-real-estate-framer-templates-for-brokers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/blog/best-luxury-real-estate-framer-templates-for-brokers" />
@@ -209,522 +231,614 @@
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/ai-saas</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/ai-saas" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/ai-saas</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/ai-saas" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/ai-saas</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/ai-saas" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/ai-saas</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/ai-saas" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/ai-saas" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/luxury-restaurant</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/luxury-restaurant" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/luxury-restaurant</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/luxury-restaurant" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/luxury-restaurant</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/luxury-restaurant" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/luxury-restaurant</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/luxury-restaurant" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/luxury-restaurant" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/premium-healthcare</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/premium-healthcare" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/premium-healthcare</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/premium-healthcare" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/premium-healthcare</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/premium-healthcare" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/premium-healthcare</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/premium-healthcare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/premium-healthcare" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/mavric-estate</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/mavric-estate" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/mavric-estate</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/mavric-estate" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/mavric-estate</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/mavric-estate" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/mavric-estate</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/mavric-estate" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/mavric-estate" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/aurelle-estates</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/aurelle-estates" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/aurelle-estates</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/aurelle-estates" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/aurelle-estates</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/aurelle-estates" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/aurelle-estates</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/aurelle-estates" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/aurelle-estates" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/onyx-atelier</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/onyx-atelier" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/onyx-atelier</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/onyx-atelier" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/onyx-atelier</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/onyx-atelier" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/onyx-atelier</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/onyx-atelier" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/onyx-atelier" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/vellum-edition</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/vellum-edition" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/vellum-edition</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/vellum-edition" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/vellum-edition</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/vellum-edition" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/vellum-edition</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/vellum-edition" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/vellum-edition" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/halden-edition</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/halden-edition" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/halden-edition</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/halden-edition" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/halden-edition</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/halden-edition" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/halden-edition</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/halden-edition" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/halden-edition" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/grain-form</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/grain-form" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/grain-form</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/grain-form" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/grain-form</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/grain-form" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/grain-form</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/grain-form" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/grain-form" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/slowgrain</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/slowgrain" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/slowgrain</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/slowgrain" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/slowgrain</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/slowgrain" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/slowgrain</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/slowgrain" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/slowgrain" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/terra</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/terra" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/terra" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/terra" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/terra" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/terra" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/terra</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/terra" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/terra" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/terra" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/terra" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/terra" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/terra</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/terra" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/terra" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/terra" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/terra" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/terra" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/terra</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/terra" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/terra" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/terra" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/terra" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/terra" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/sasso-architect</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/sasso-architect" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/sasso-architect</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/sasso-architect" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/sasso-architect</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/sasso-architect" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/sasso-architect</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/sasso-architect" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/sasso-architect" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/templates/tessovra</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/tessovra" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/de/templates/tessovra</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/tessovra" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/es/templates/tessovra</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/tessovra" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.thesparkstudio.digital/fr/templates/tessovra</loc>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/tessovra" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/tessovra" />
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/templates/onyx-atelier-pro</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/onyx-atelier-pro" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/de/templates/onyx-atelier-pro</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/onyx-atelier-pro" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/es/templates/onyx-atelier-pro</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/onyx-atelier-pro" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/fr/templates/onyx-atelier-pro</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/onyx-atelier-pro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/onyx-atelier-pro" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/templates/lume-field</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/lume-field" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/de/templates/lume-field</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/lume-field" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/es/templates/lume-field</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/lume-field" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/fr/templates/lume-field</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/lume-field" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/lume-field" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/templates/solum-edition</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/solum-edition" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/de/templates/solum-edition</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/solum-edition" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/es/templates/solum-edition</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/solum-edition" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/fr/templates/solum-edition</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/solum-edition" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/solum-edition" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/templates/hearthflow</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/hearthflow" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/de/templates/hearthflow</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/hearthflow" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/es/templates/hearthflow</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/hearthflow" />
+  </url>
+  <url>
+    <loc>https://www.thesparkstudio.digital/fr/templates/hearthflow</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thesparkstudio.digital/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.thesparkstudio.digital/de/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.thesparkstudio.digital/es/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.thesparkstudio.digital/fr/templates/hearthflow" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.thesparkstudio.digital/templates/hearthflow" />
   </url>
 </urlset>

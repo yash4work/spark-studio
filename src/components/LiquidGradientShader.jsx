@@ -27,6 +27,10 @@ import { useEffect, useMemo, useRef, useState } from 'react';
  *  maxFps                frame cap (default: 30 mobile, 60 desktop)
  *  freezeAfterSeconds    stop animating after N seconds (0 = never)
  *  fallbackImage         URL of a pre-rendered frame shown until/unless the shader runs
+ *  fallbackImageMobile   smaller fallback frame for screens under 768px (optional)
+ *  liteOnMobile          phones/tablets run a lighter version of the same shader:
+ *                        fewer turbulence passes, lower resolution, 24fps, later start
+ *                        (default true; desktop is unchanged)
  *  respectReducedMotion  show static fallback when prefers-reduced-motion (default true)
  * ----------------------------------------------------------------------- */
 
@@ -532,6 +536,8 @@ export default function LiquidGradientShader({
   maxFps,
   freezeAfterSeconds = 0,
   fallbackImage,
+  fallbackImageMobile,
+  liteOnMobile = true,
   respectReducedMotion = true,
 }) {
   const canvasRef = useRef(null);
@@ -542,7 +548,7 @@ export default function LiquidGradientShader({
   const uniformsKey = JSON.stringify(userUniforms);
 
   const fallbackBackground = useMemo(() => {
-    if (fallbackImage) return `url(${fallbackImage}) center / cover no-repeat`;
+    if (fallbackImage) return null; // drawn by the .lgs-fallback CSS class (picks the mobile image under 768px)
     const u = { ...DEFAULT_UNIFORMS, ...JSON.parse(uniformsKey) };
     const stops = u.colors.length > 1 ? u.colors : [u.colors[0] || '#000', u.colors[0] || '#000'];
     return `linear-gradient(135deg, ${stops.join(', ')})`;
@@ -561,11 +567,17 @@ export default function LiquidGradientShader({
       const start = () => {
         if (!cancelled) setMounted(true);
       };
-      if ('requestIdleCallback' in window) {
-        idleHandle = window.requestIdleCallback(start, { timeout: 2500 });
-      } else {
-        timeoutHandle = window.setTimeout(start, 1500);
-      }
+      // Lite (mobile) mode starts later so it never competes with page start-up.
+      const lite = liteOnMobile && isMobileLike();
+      const begin = () => {
+        if ('requestIdleCallback' in window) {
+          idleHandle = window.requestIdleCallback(start, { timeout: lite ? 4000 : 2500 });
+        } else {
+          timeoutHandle = window.setTimeout(start, lite ? 3000 : 1500);
+        }
+      };
+      if (lite) timeoutHandle = window.setTimeout(begin, 1500);
+      else begin();
     };
 
     if (document.readyState === 'complete') schedule();
@@ -577,7 +589,7 @@ export default function LiquidGradientShader({
       if (idleHandle !== null && 'cancelIdleCallback' in window) window.cancelIdleCallback(idleHandle);
       if (timeoutHandle !== null) window.clearTimeout(timeoutHandle);
     };
-  }, [respectReducedMotion]);
+  }, [respectReducedMotion, liteOnMobile]);
 
   /* The GL renderer. */
   useEffect(() => {
@@ -586,6 +598,7 @@ export default function LiquidGradientShader({
     if (!canvas) return undefined;
 
     const mobile = isMobileLike();
+    const lite = liteOnMobile && mobile;
     const useMouse = mouseEnabled && !isCoarsePointer();
 
     const gl = canvas.getContext('webgl2', {
@@ -612,7 +625,8 @@ export default function LiquidGradientShader({
     while (colorVecs.length < 8) colorVecs.push([0, 0, 0]);
     const colorsFlat = new Float32Array(colorVecs.flat());
 
-    const turbIter = Math.max(2, Math.min(13, Math.floor(u.turbIter)));
+    // Lite mode: one fewer turbulence pass (the most expensive part of the shader).
+    const turbIter = Math.max(2, Math.min(lite ? 3 : 13, Math.floor(u.turbIter) - (lite ? 1 : 0)));
     const mainDefines = [
       `#define TURB_ITER ${turbIter}`,
       useMouse ? '#define USE_PUSH' : '',
@@ -675,7 +689,8 @@ export default function LiquidGradientShader({
     gl.bindFramebuffer(gl.FRAMEBUFFER, null);
 
     /* --- Sizing --- */
-    const scale = resolutionScale ?? (mobile ? 0.6 : 0.75);
+    // Lite mode renders at ~40% resolution; the gradient is soft, so upscaling is invisible.
+    const scale = resolutionScale ?? (lite ? 0.4 : mobile ? 0.6 : 0.75);
     const dprCap = mobile ? 1 : 2;
     let width = 0;
     let height = 0;
@@ -812,7 +827,7 @@ export default function LiquidGradientShader({
     render(1 / 60);
 
     /* --- Loop control: fps cap, pause offscreen / hidden tab, optional freeze --- */
-    const fps = maxFps ?? (mobile ? 30 : 60);
+    const fps = maxFps ?? (lite ? 24 : mobile ? 30 : 60);
     const frameInterval = 1000 / fps;
     let rafId = 0;
     let lastDraw = 0;
@@ -898,7 +913,7 @@ export default function LiquidGradientShader({
       gl.deleteBuffer(vbo);
       gl.deleteVertexArray(vao);
     };
-  }, [mounted, failed, uniformsKey, mouseEnabled, resolutionScale, maxFps, freezeAfterSeconds]);
+  }, [mounted, failed, uniformsKey, mouseEnabled, resolutionScale, maxFps, freezeAfterSeconds, liteOnMobile]);
 
   return (
     <div className={className} style={{ display: 'block', width: '100%', height: '100%', ...style }}>
@@ -906,7 +921,10 @@ export default function LiquidGradientShader({
         {/* Static layer: shown to PageSpeed, reduced-motion users, and while the shader boots. */}
         <div
           aria-hidden="true"
-          style={{ position: 'absolute', inset: 0, background: fallbackBackground }}
+          className={fallbackImage ? 'lgs-fallback' : undefined}
+          style={fallbackImage
+            ? { position: 'absolute', inset: 0, '--lgs-fb': `url(${fallbackImage})`, '--lgs-fb-mobile': `url(${fallbackImageMobile || fallbackImage})` }
+            : { position: 'absolute', inset: 0, background: fallbackBackground }}
         />
         {mounted && !failed && (
           <canvas

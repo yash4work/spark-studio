@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "test": "node scripts/test-subscriber.mjs && node scripts/verify-pipeline.mjs",
+    "test": "node scripts/test-templates.mjs && node scripts/test-forms.mjs && node scripts/test-subscriber.mjs && node scripts/verify-pipeline.mjs",
     "dev": "vite",
     "sitemap": "node scripts/generate-sitemap.mjs",
-    "build": "node scripts/generate-sitemap.mjs && vite build && vite build --ssr src/render.jsx --outDir node_modules/.cache/spark-render && node scripts/build-route-html.mjs",
+    "build": "node scripts/sync-template-redirects.mjs && node scripts/generate-sitemap.mjs && vite build && vite build --ssr src/render.jsx --outDir node_modules/.cache/spark-render && node scripts/build-route-html.mjs",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync-templates": "node scripts/sync-template-redirects.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.119.0",

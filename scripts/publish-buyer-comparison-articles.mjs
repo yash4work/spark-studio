@@ -262,7 +262,7 @@ Yes. You can link any custom domain (e.g., yourstudio.com) to Framer with automa
       avatar: '/assets/spark_studio_avatar.jpg'
     },
     excerpt: "An executive buyer's guide comparing the best Framer templates for luxury real estate brokers, boutique brokerages, and high-end property developers. How editorial storytelling, sub-second mobile speeds, and VIP inquiry funnels outperform commoditized MLS/IDX websites.",
-    featuredImage: '/templates/mavric-estate.png',
+    featuredImage: '/templates/mavric-estate.webp',
     tags: ['Luxury Real Estate', 'Real Estate Templates', 'Framer Real Estate', 'Brokers', 'High-End Property', 'Aurelle Estates', 'Mavric Estate', 'Lead Generation'],
     i18n: {
       en: {

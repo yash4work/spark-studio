@@ -41,7 +41,7 @@ export default function Standards() {
   return (
     <section 
       id="standards" 
-      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative"
+      className="w-full max-w-[1680px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-20 sm:py-28 relative section-glow"
     >
       {/* Head: Title on left, Subtitle on right (Exact Framer .framer-1deueaw) */}
       <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12 pb-4">

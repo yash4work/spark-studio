@@ -2,6 +2,7 @@ import { localizedArticleSlugs } from '../data/localizedArticles.js';
 import { createContext, useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
+import { fitTitle, fitDescription } from '../lib/seoText';
 
 const BASE_URL = 'https://www.thesparkstudio.digital';
 const SUPPORTED_LANGS = ['en', 'de', 'es', 'fr'];
@@ -9,8 +10,8 @@ const SUPPORTED_LANGS = ['en', 'de', 'es', 'fr'];
 export const HeadContext = createContext(null);
 
 export default function SEOHead({ 
-  title, 
-  description, 
+  title: rawTitle,
+  description: rawDescription,
   image = '/assets/spark-studio-og-image.jpg', 
   type = 'website',
   jsonLd = null,
@@ -18,6 +19,9 @@ export default function SEOHead({
   noindex = false
 }) {
   const { i18n } = useTranslation();
+  // Keep titles <= 60 and descriptions <= 160 characters (what Google shows).
+  const title = fitTitle(rawTitle);
+  const description = fitDescription(rawDescription);
   const location = useLocation();
 
   const head = useContext(HeadContext);

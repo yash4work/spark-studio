@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import SEOHead from '../components/SEOHead';
+import { ORG_EMAIL } from '../data/organization';
 import Hero from '../components/Hero';
 import TechStackBar from '../components/TechStackBar';
 import Standards from '../components/Standards';
@@ -18,12 +19,12 @@ export default function HomePage() {
   const currentLang = i18n.language ? i18n.language.slice(0, 2) : 'en';
 
   const title = currentLang === 'de'
-    ? 'The Spark Studio — High-Performance Framer Vorlagen & Webdesign'
+    ? 'The Spark Studio — Framer-Vorlagen & individuelles Webdesign'
     : currentLang === 'es'
-    ? 'The Spark Studio — Plantillas Framer de Alto Rendimiento y Diseño Web a Medida'
+    ? 'The Spark Studio — Plantillas Framer y diseño web a medida'
     : currentLang === 'fr'
-    ? 'The Spark Studio — Templates Framer Haute Performance & Sites Web Sur Mesure'
-    : 'The Spark Studio — Websites, Custom Software & Framer Engineering';
+    ? 'The Spark Studio — Templates Framer & sites sur mesure'
+    : 'The Spark Studio — Websites, Software & Framer Engineering';
 
   const description = currentLang === 'de'
     ? 'The Spark Studio entwickelt schnelle Framer-Templates, Web-Apps und individuelle Websites für Start-ups — 99+ PageSpeed.'
@@ -31,7 +32,7 @@ export default function HomePage() {
     ? 'The Spark Studio diseña aplicaciones web, sitios a medida y plantillas Framer de alto rendimiento para startups — con 99+ PageSpeed.'
     : currentLang === 'fr'
     ? 'The Spark Studio conçoit des applications web sur mesure, des templates Framer et des sites haute performance avec scores 90+.'
-    : 'The Spark Studio designs and engineers high-performance custom websites, web applications, and bespoke Framer platforms for ambitious startups and businesses — built with 90+ PageSpeed scores.';
+    : 'The Spark Studio designs high-performance custom websites, web apps and Framer platforms for ambitious startups and businesses — built for 90+ PageSpeed.';
 
   const homePrefix = currentLang === 'en' ? '' : `/${currentLang}`;
   const localizedUrl = `https://www.thesparkstudio.digital${homePrefix || '/'}`;
@@ -72,7 +73,7 @@ export default function HomePage() {
         'image': 'https://www.thesparkstudio.digital/assets/spark-studio-og-image.jpg',
         'description': description,
         'inLanguage': currentLang,
-        'email': 'sparkstudio0@outlook.com',
+        'email': ORG_EMAIL,
         'priceRange': '$$',
         'sameAs': [
           'https://www.framer.com/@thesparkstudio',
